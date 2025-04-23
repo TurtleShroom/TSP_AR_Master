@@ -1,0 +1,2 @@
+# TSP_AR_Master
+ Thank you for downloading the Koni Ancient Rim Mod series!  This is a continuation of the Ancient Rim Mod, by Mlie, and previously by an user named Koni. It has been done with Mlie's explicit permission, and will be constituted as its official, combined replacement. Rather than continuing each of the Mods individually, which is a pain to update and control, I will instead be merging them all at once.  -TURTLESHROOM
