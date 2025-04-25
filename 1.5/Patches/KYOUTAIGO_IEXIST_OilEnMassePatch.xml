@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This code was provided by the user 'I Exist', and then butchered and simplified on Dub's Discord chat room by Kyoutaigo -->
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>Defs/ThingDef[defName="PlantOil"]</xpath>
+    <!-- If it does, LET'S FASTING GOOOOOOOOOO!!! -->
+    <match Class="PatchOperationSequence">
+      <!-- <success>Always</success> -->
+      <operations>
+        <li Class="PatchOperationInsert">
+          <xpath>Defs/RecipeDef/ingredients/li/filter/thingDefs/li[text()="PlantOil"]</xpath>
+          <success>Always</success>
+          <value>
+            <li>AR_OliveOil</li>
+			<li MayRequire="sarg.alphacrafts">AC_Oil</li>
+			<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
+          </value>
+        </li>
+        <li Class="PatchOperationInsert">
+          <xpath>Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="PlantOil"]</xpath>
+          <success>Always</success>
+          <value>
+            <li>AR_OliveOil</li>
+			<li MayRequire="sarg.alphacrafts">AC_Oil</li>
+			<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
+          </value>
+        </li>
+        <li Class="PatchOperationInsert">
+          <xpath>Defs/RecipeDef/defaultIngredientFilter/thingDefs/li[text()="PlantOil"]</xpath>
+          <success>Always</success>
+          <value>
+            <li>AR_OliveOil</li>
+			<li MayRequire="sarg.alphacrafts">AC_Oil</li>
+          </value>
+        </li>
+        <li Class="PatchOperationInsert">
+          <xpath>Defs/RecipeDef/ingredients/li/filter/thingDefs/li[text()="PlantOil"]</xpath>
+          <success>Always</success>
+          <value>
+            <li>AR_OliveOil</li>
+			<li MayRequire="sarg.alphacrafts">AC_Oil</li>
+			<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
+          </value>
+        </li>
+        <li Class="PatchOperationInsert">
+          <xpath>Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="PlantOil"]</xpath>
+          <success>Always</success>
+          <value>
+            <li>AR_OliveOil</li>
+			<li MayRequire="sarg.alphacrafts">AC_Oil</li>
+			<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
+          </value>
+        </li>
+			<!--
+				<li Class="PatchOperationInsert">
+					<xpath>Defs/ThingDef/comps/li/fuelFilter/thingDefs/li[text()="PlantOil"]</xpath>
+					<success>Always</success>
+					<value>
+						<li>AR_OliveOil</li>
+					</value>
+				</li>
+				-->
+        <li Class="PatchOperationInsert">
+          <xpath>Defs/RecipeDef/ingredients/li/filter/thingDefs/li[text()="AR_OliveOil"]</xpath>
+          <success>Always</success>
+          <value>
+            <li>PlantOil</li>
+			<li MayRequire="sarg.alphacrafts">AC_Oil</li>
+			<!-- <li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li> -->
+          </value>
+        </li>
+        <li Class="PatchOperationInsert">
+          <xpath>Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="AR_OliveOil"]</xpath>
+          <success>Always</success>
+          <value>
+            <li>PlantOil</li>
+			<li MayRequire="sarg.alphacrafts">AC_Oil</li>
+			<!-- <li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li> -->
+          </value>
+        </li>
+        <li Class="PatchOperationInsert">
+          <xpath>Defs/RecipeDef/defaultIngredientFilter/thingDefs/li[text()="AR_OliveOil"]</xpath>
+          <success>Always</success>
+          <value>
+            <li>PlantOil</li>
+			<li MayRequire="sarg.alphacrafts">AC_Oil</li>
+			<!-- <li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li> -->
+          </value>
+        </li>
+        <li Class="PatchOperationInsert">
+          <xpath>Defs/RecipeDef/ingredients/li/filter/thingDefs/li[text()="AR_OliveOil"]</xpath>
+          <success>Always</success>
+          <value>
+            <li>PlantOil</li>
+			<li MayRequire="sarg.alphacrafts">AC_Oil</li>
+			<!-- <li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li> -->
+          </value>
+        </li>
+        <li Class="PatchOperationInsert">
+          <xpath>Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="AR_OliveOil"]</xpath>
+          <success>Always</success>
+          <value>
+            <li>PlantOil</li>
+			<li MayRequire="sarg.alphacrafts">AC_Oil</li>
+			<!-- <li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li> -->
+          </value>
+        </li>
+        <li Class="PatchOperationInsert">
+          <xpath>Defs/RecipeDef/defaultIngredientFilter/thingDefs/li[text()="AR_OliveOil"]</xpath>
+          <success>Always</success>
+          <value>
+            <li>PlantOil</li>
+			<li MayRequire="sarg.alphacrafts">AC_Oil</li>
+			<!-- <li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li> -->
+          </value>
+        </li>
+        <li Class="PatchOperationInsert">
+          <xpath>Defs/ThingDef/comps/li/fuelFilter/thingDefs/li[text()="AR_OliveOil"]</xpath>
+          <success>Always</success>
+          <value>
+            <li>PlantOil</li>
+			<li MayRequire="sarg.alphacrafts">AC_Oil</li>
+			<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
+          </value>
+        </li>
+        <li Class="PatchOperationInsert">
+          <xpath>Defs/RecipeDef/ingredients/li/filter/thingDefs/li[text()="Chemfuel"]</xpath>
+          <success>Always</success>
+          <value>
+            <li>PlantOil</li>
+			<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
+          </value>
+        </li>
+        <li Class="PatchOperationInsert">
+          <xpath>Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="Chemfuel"]</xpath>
+          <success>Always</success>
+          <value>
+            <li>PlantOil</li>
+			<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
+          </value>
+        </li>
+        <li Class="PatchOperationInsert">
+          <xpath>Defs/RecipeDef/defaultIngredientFilter/thingDefs/li[text()="Chemfuel"]</xpath>
+          <success>Always</success>
+          <value>
+            <li>PlantOil</li>
+			<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
+          </value>
+        </li>
+        <li Class="PatchOperationInsert">
+          <xpath>Defs/ThingDef/comps/li/fuelFilter/thingDefs/li[text()="Chemfuel"]</xpath>
+          <success>Always</success>
+          <value>
+            <li>PlantOil</li>
+			<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>Defs/ThingDef[defName="AR_OliveOil"]</xpath>
+    <!-- If it does, LET'S FASTING GOOOOOOOOOO!!! -->
+    <match Class="PatchOperationSequence">
+      <!-- <success>Always</success> -->
+      <operations>
+        <li Class="PatchOperationInsert">
+          <xpath>Defs/RecipeDef/ingredients/li/filter/thingDefs/li[text()="AR_OliveOil"]</xpath>
+          <success>Always</success>
+          <value>
+			<li MayRequire="sarg.alphacrafts">AC_Oil</li>
+          </value>
+        </li>
+        <li Class="PatchOperationInsert">
+          <xpath>Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="AR_OliveOil"]</xpath>
+          <success>Always</success>
+          <value>
+			<li MayRequire="sarg.alphacrafts">AC_Oil</li>
+          </value>
+        </li>
+        <li Class="PatchOperationInsert">
+          <xpath>Defs/RecipeDef/defaultIngredientFilter/thingDefs/li[text()="AR_OliveOil"]</xpath>
+          <success>Always</success>
+          <value>
+			<li MayRequire="sarg.alphacrafts">AC_Oil</li>
+          </value>
+        </li>
+        <li Class="PatchOperationInsert">
+          <xpath>Defs/RecipeDef/ingredients/li/filter/thingDefs/li[text()="AR_OliveOil"]</xpath>
+          <success>Always</success>
+          <value>
+			<li MayRequire="sarg.alphacrafts">AC_Oil</li>
+          </value>
+        </li>
+        <li Class="PatchOperationInsert">
+          <xpath>Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="AR_OliveOil"]</xpath>
+          <success>Always</success>
+          <value>
+			<li MayRequire="sarg.alphacrafts">AC_Oil</li>
+          </value>
+        </li>
+        <li Class="PatchOperationInsert">
+          <xpath>Defs/RecipeDef/ingredients/li/filter/thingDefs/li[text()="AC_Oil"]</xpath>
+          <success>Always</success>
+          <value>
+            <li>AR_OliveOil</li>
+          </value>
+        </li>
+        <li Class="PatchOperationInsert">
+          <xpath>Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="AC_Oil"]</xpath>
+          <success>Always</success>
+          <value>
+				<li>AR_OliveOil</li>
+          </value>
+        </li>
+        <li Class="PatchOperationInsert">
+          <xpath>Defs/RecipeDef/defaultIngredientFilter/thingDefs/li[text()="AR_OliveOil"]</xpath>
+          <success>Always</success>
+          <value>
+			<li MayRequire="sarg.alphacrafts">AC_Oil</li>
+          </value>
+        </li>
+        <li Class="PatchOperationInsert">
+          <xpath>Defs/RecipeDef/ingredients/li/filter/thingDefs/li[text()="AR_OliveOil"]</xpath>
+          <success>Always</success>
+          <value>
+			<li MayRequire="sarg.alphacrafts">AC_Oil</li>
+          </value>
+        </li>
+        <li Class="PatchOperationInsert">
+          <xpath>Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="AR_OliveOil"]</xpath>
+          <success>Always</success>
+          <value>
+			<li MayRequire="sarg.alphacrafts">AC_Oil</li>
+          </value>
+        </li>
+        <li Class="PatchOperationInsert">
+          <xpath>Defs/RecipeDef/defaultIngredientFilter/thingDefs/li[text()="AR_OliveOil"]</xpath>
+          <success>Always</success>
+          <value>
+			<li MayRequire="sarg.alphacrafts">AC_Oil</li>
+          </value>
+        </li>
+        <li Class="PatchOperationInsert">
+          <xpath>Defs/ThingDef/comps/li/fuelFilter/thingDefs/li[text()="AR_OliveOil"]</xpath>
+          <success>Always</success>
+          <value>
+			<li MayRequire="sarg.alphacrafts">AC_Oil</li>
+          </value>
+        </li>
+        <li Class="PatchOperationInsert">
+          <xpath>Defs/ThingDef/recipeMaker/recipeUsers/li[text()="AC_OilPressWorkshop"]</xpath>
+          <success>Always</success>
+          <value>
+			<li>AR_Press</li>
+          </value>
+        </li>
+        <li Class="PatchOperationInsert">
+          <xpath>Defs/RecipeDef/recipeMaker/recipeUsers/li[text()="AC_OilPressWorkshop"]</xpath>
+          <success>Always</success>
+          <value>
+			<li>AR_Press</li>
+          </value>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/ThingDef/recipeMaker/recipeUsers/li[text()="AC_OilPressWorkshop"]</xpath>
+          <success>Always</success>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/RecipeDef/recipeMaker/recipeUsers/li[text()="AC_OilPressWorkshop"]</xpath>
+          <success>Always</success>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/RecipeDef[defName="AC_PressOil"]/ingredients/li/filter/thingDefs</xpath>
+		<!-- If it DOES NOT, add this. -->
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/RecipeDef[defName="AC_PressOil"]/ingredients/li/filter/thingDefs</xpath>
+			<success>Always</success>
+			<value>
+				<li>AR_RawOlives</li>
+				<li MayRequire="sumika.nanohana">PlantOil</li>
+			</value>
+		</nomatch>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+    </Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/RecipeDef[defName="AC_PressOil"]/fixedIngredientFilter/thingDefs</xpath>
+		<!-- If it DOES NOT, add this. -->
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/RecipeDef[defName="AC_PressOil"]/fixedIngredientFilter/thingDefs</xpath>
+			<success>Always</success>
+			<value>
+				<li>AR_RawOlives</li>
+				<li MayRequire="sumika.nanohana">PlantOil</li>
+			</value>
+		</nomatch>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+    </Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/RecipeDef[defName="AC_PressOil"]/defaultIngredientFilter/thingDefs</xpath>
+		<!-- If it DOES NOT, add this. -->
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/RecipeDef[defName="AC_PressOil"]/defaultIngredientFilter/thingDefs</xpath>
+			<success>Always</success>
+			<value>
+				<li>AR_RawOlives</li>
+				<li MayRequire="sumika.nanohana">PlantOil</li>
+			</value>
+		</nomatch>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+    </Operation>
+</Patch>

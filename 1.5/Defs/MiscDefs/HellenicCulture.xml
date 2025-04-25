@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <CultureDef>
+    <defName>Romulus</defName>
+    <label>Romulus</label>
+    <description>The great Roman culture.</description>
+    <pawnNameMaker>NamerPersonRome</pawnNameMaker>
+	<pawnNameMakerFemale>NamerPersonRome</pawnNameMakerFemale>
+    <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoCorunan</ideoNameMaker>
+    <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityCorunan</deityNameMaker>
+    <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerCorunan</deityTypeMaker>
+    <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalCorunan</festivalNameMaker>
+    <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">LeaderTitleMaker_Corunan</leaderTitleMaker>
+    <allowedPlaceTags>
+      <li>TSP_AR_Origin_AncientRim_GreeceRome</li>
+    </allowedPlaceTags>
+    <iconPath>Icon/LupaGreyscale</iconPath>
+    <iconColor>(0.8, 0.8, 0.8)</iconColor>
+    <preferredWeaponClasses>
+      <noble>Neolithic</noble>
+      <despised>Ultratech</despised>
+    </preferredWeaponClasses>
+    <thingStyleCategories>
+      <li MayRequire="vanillaexpanded.vmemese">
+        <category MayRequire="vanillaexpanded.vmemese">VME_Hedonist</category>
+        <priority MayRequire="vanillaexpanded.vmemese">2</priority>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <category>Totemic</category>
+        <priority>1</priority>
+      </li>
+    </thingStyleCategories>
+    <styleItemTags>
+      <li>
+        <tag>Roman</tag>
+        <baseWeight>2</baseWeight>
+        <weightFactor>1.05</weightFactor>
+      </li>
+      <li>
+        <tag>Tribal</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>NoBeard</tag>
+        <baseWeight>20</baseWeight>
+        <weightFactor>2</weightFactor>
+      </li>
+      <li>
+        <tag>BeardTribal</tag>
+        <baseWeight>0</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>TattooFaceTribal</tag>
+        <baseWeight>0.4</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>TattooBodyTribal</tag>
+        <baseWeight>0.2</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>NoTattoo</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+    </styleItemTags>
+  </CultureDef>
+  <CultureDef>
+    <defName>Hellian</defName>
+    <label>Hellian</label>
+    <description>The ancient Hellan culture.</description>
+    <pawnNameMaker>NamerPersonGreek</pawnNameMaker>
+	<pawnNameMakerFemale>NamerPersonHellenFemale</pawnNameMakerFemale>
+    <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoCorunan</ideoNameMaker>
+    <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityCorunan</deityNameMaker>
+    <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerCorunan</deityTypeMaker>
+    <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalCorunan</festivalNameMaker>
+    <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">LeaderTitleMaker_Corunan</leaderTitleMaker>
+    <allowedPlaceTags>
+      <li>TSP_AR_Origin_AncientRim_GreeceRome</li>
+    </allowedPlaceTags>
+    <iconPath>Icon/LaurelWreath</iconPath>
+    <iconColor>(0.8, 0.8, 0.8)</iconColor>
+    <preferredWeaponClasses>
+      <noble>Neolithic</noble>
+      <despised>Ultratech</despised>
+    </preferredWeaponClasses>
+    <thingStyleCategories>
+      <li MayRequire="vanillaexpanded.vmemese">
+        <category MayRequire="vanillaexpanded.vmemese">VME_Hedonist</category>
+        <priority MayRequire="vanillaexpanded.vmemese">1</priority>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <category>Totemic</category>
+        <priority>2</priority>
+      </li>
+    </thingStyleCategories>
+    <styleItemTags>
+     <li>
+        <tag>Roman</tag>
+        <baseWeight>3</baseWeight>
+        <weightFactor>2</weightFactor>
+      </li>
+      <li>
+        <tag>Rural</tag>
+        <baseWeight>0.5</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>Urban</tag>
+        <baseWeight>0.1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>Rural</tag>
+        <baseWeight>0.5</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>Misc</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>NoBeard</tag>
+        <baseWeight>10</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>BeardRural</tag>
+        <baseWeight>0.1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>TattooBodyTribal</tag>
+        <baseWeight>0.1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>TattooBodyMisc</tag>
+        <baseWeight>0.1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>NoTattoo</tag>
+        <baseWeight>10</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+    </styleItemTags>
+  </CultureDef>
+</Defs>

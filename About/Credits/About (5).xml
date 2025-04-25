@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Ancient Rim - SPQRim (Continued)</name>
+  <packageId>Mlie.AncientRimSPQRim</packageId>
+  <author>koni</author>
+  <url>https://github.com/emipa606/AncientRimSPQRim</url>
+  <supportedVersions>
+    <li>1.0</li>
+    <li>1.1</li>
+    <li>1.2</li>
+    <li>1.3</li>
+    <li>1.4</li>
+    <li>1.5</li>
+  </supportedVersions>
+  <modDependencies>
+    <li>
+      <packageId>jecrell.jecstools</packageId>
+      <displayName>JecsTools</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/932008009</steamWorkshopUrl>
+    </li>
+    <li>
+      <packageId>CarnySenpai.EnableOversizedWeapons</packageId>
+      <displayName>Enable Oversized Weapons</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2543371889</steamWorkshopUrl>
+    </li>
+    <li>
+      <packageId>Mlie.AncientRimCore</packageId>
+      <displayName>Ancient Rim - Core</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2458180650</steamWorkshopUrl>
+      <downloadUrl>https://github.com/emipa606/AncientRimCore/releases/latest</downloadUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>jecrell.jecstools</li>
+    <li>CarnySenpai.EnableOversizedWeapons</li>
+    <li>Mlie.AncientRimCore</li>
+    <li>wvc.sergkart.itt.techtreepatch</li>
+    <li>oskarpotocki.vfe.classical</li>
+    <li>shavius.classical.flavour</li>
+    <li>zal.legionaryequipment</li>
+    <li>zal.greeksculptures</li>
+    <li>vanillaexpanded.vnutriente</li>
+	<li>sarg.alphacrafts</li>
+  </loadAfter>
+  <description>[img]https://i.imgur.com/buuPQel.png[/img]
+Update of konis mod
+https://steamcommunity.com/sharedfiles/filedetails/?id=1734141653
+
+- Added integrations with [url=https://steamcommunity.com/sharedfiles/filedetails/?id=836308268]Dubs Bad Hygiene[/url]
+  * The fountains are considered Basins
+  * Aqueduct can carry water as pipes
+  * Added a water-cistern as a water storage (via Hydromancerx) that fills up with rainwater
+
+- Added grapes and olives from [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2007061826]VGP[/url] to recipes
+- Scenario can be found using [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2608733073]The Ancient Rims[/url] by Raven
+- Added support for [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2574489704]Simple FX: Smoke[/url]
+- Added support for [url=https://steamcommunity.com/sharedfiles/filedetails/?id=852103845][K]Extra Stone[/url] for mosaik-floors
+
+[img]https://i.imgur.com/pufA0kM.png[/img]
+
+[table]
+    [tr]
+        [td][url=https://dsc.gg/mlie][img]https://i.imgur.com/zdzzBrc.png[/img][/url][/td]
+        [td][url=https://github.com/emipa606/AncientRimSPQRim][img]https://i.imgur.com/kTkpTOE.png[/img][/url][/td]
+    [/tr]
+    [tr]
+        [td][img]https://i.imgur.com/WjDSfUn.png[/img][/td]
+        [td][img]https://i.imgur.com/Be8E2qJ.png[/img][/td]
+    [/tr]
+[/table]
+	
+[img]https://i.imgur.com/Z4GOv8H.png[/img]
+Ancient Rim is a mod series that expands the cultural and technological timeline beyond the vanilla neolithic, industrial and spacer stages.
+This submod contains everything related to the ancient civilizations of Rome and the various city states of Greece.
+
+Details:
+Ancient Rim - Mediterranean Edition has following content:
+Furniture: Beds, tables, stools and oil lamps that can be placed on tables, fountains and aqueducts that are pleasant to look at and do constantly cool any room, if placed inside.
+Agriculture: Crops and meals that were important to ancient Roman cuisine, as well as wine
+Work stations: A fueled smithy only for Mediterranean items and an oil press
+Weapons: Swords, a belly bow and siege engines
+Shields: variants of the Hoplon and Scutum shields and the light Roman Parma Shield
+Armor: Various helmets and armors like the famous Lorica Segmentata
+Apparel: Anything a proper citizen of Rome would wear.
+
+Compatibility:
+I haven't tested the mod much for compatibility issues with other mods but Ancient Rim supports fuel for its crafting stations from Medieval Times and Rice Cultivating Civilization. If you need more compatibilities let me know.
+
+[img]https://i.imgur.com/PwoNOj4.png[/img]
+[list]
+[*] See if the the error persists if you just have this mod and its requirements active.
+[*] If not, try adding your other mods until it happens again.
+[*] Post your error-log using [url=https://steamcommunity.com/workshop/filedetails/?id=818773962]HugsLib[/url] or the standalone [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404]Uploader[/url] and command Ctrl+F12
+[*] For best support, please use the Discord-channel for error-reporting.
+[*] Do not report errors by making a discussion-thread, I get no notification of that.
+[*] If you have the solution for a problem, please post it to the GitHub repository.
+[*] Use [url=https://github.com/RimSort/RimSort/releases/latest]RimSort[/url] to sort your mods
+[/list]
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/changelog/2458182631][img]https://img.shields.io/github/v/release/emipa606/AncientRimSPQRim?label=latest%20version&amp;style=plastic&amp;color=9f1111&amp;labelColor=black[/img][/url]</description>
+  <modVersion IgnoreIfNoMatchingField="True">1.5.1</modVersion>
+</ModMetaData>
