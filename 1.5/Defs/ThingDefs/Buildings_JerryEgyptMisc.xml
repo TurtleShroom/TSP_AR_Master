@@ -23,7 +23,7 @@
 		<costStuffCount>80</costStuffCount>
 	</ThingDef>
 	  
-	   <ThingDef ParentName="ObeliskSAM_Jerry">
+	<ThingDef ParentName="ObeliskSAM_Jerry">
 		<defName>SAM_ObeliskBig_SpouterOfWater</defName>
 		<label>strange Egyptian obelisk</label>
 		<description>A monolithic, rectangular pillar that has strange symbols on it. Viewers get a suspicious feeling that they are being insulted by its writings when they stare at it long enough.</description>

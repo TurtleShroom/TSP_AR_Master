@@ -489,4 +489,287 @@
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
 	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist?? -->
+		<xpath>/Defs/ResearchProjectDef[defName="VFEM2_Wine"]</xpath>
+		<!-- If it does, LET'S FASTING GOOOOOOOOOO!!! -->
+		<match Class="PatchOperationSequence">
+			<!-- <success>Always</success> -->
+			<operations>
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef/prerequisites/li[text()="VFEM2_Wine"]</xpath>
+					<value>
+						<li>Brewing</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="VFEM2_Wine"]</xpath>
+					<value>
+						<li>Brewing</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="VFEM2_Wine"]</xpath>
+					<value>
+						<li>Brewing</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="VFEM2_Wine"]</xpath>
+					<value>
+						<li>Brewing</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef/recipeMaker/researchPrerequisites/li[text()="VFEM2_Wine"]</xpath>
+					<value>
+						<li>Brewing</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/plant/sowResearchPrerequisites/li[text()="VFEM2_Wine"]</xpath>
+					<value>
+						<li>Brewing</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef[defName="VFEM2_Wine"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef/prerequisites/li[text()="VFEM2_Wine"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="VFEM2_Wine"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="VFEM2_Wine"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef/prerequisites/li[text()="VFEM2_Wine"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="VFEM2_Wine"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="VFEM2_Wine"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef/researchPrerequisites/li[text()="VFEM2_Wine"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/plant/sowResearchPrerequisites/li[text()="VFEM2_Wine"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef[researchPrerequisite="VFEM2_Wine"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>Brewing</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef[researchPrerequisite="VFEM2_Wine"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>Brewing</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker[researchPrerequisite="VFEM2_Wine"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>Brewing</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/TerrainDef[researchPrerequisite="VFEM2_Wine"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>Brewing</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="TA_Pike"]/recipeMaker/researchPrerequisite</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="TA_Pike"]/recipeMaker/researchPrerequisite</xpath>
+			<value>
+				<researchPrerequisite>AR_Project_Polearms</researchPrerequisite>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="DankPyon_MeleeWeapon_Pike"]/recipeMaker/researchPrerequisite</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="DankPyon_MeleeWeapon_Pike"]/recipeMaker/researchPrerequisite</xpath>
+			<value>
+				<researchPrerequisite>AR_Project_Polearms</researchPrerequisite>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="TC_Halberd"]/recipeMaker/researchPrerequisite</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="TC_Halberd"]/recipeMaker/researchPrerequisite</xpath>
+			<value>
+				<researchPrerequisite>AR_Project_Polearms</researchPrerequisite>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="TC_Lance"]/recipeMaker/researchPrerequisite</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="TC_Lance"]/recipeMaker/researchPrerequisite</xpath>
+			<value>
+				<researchPrerequisite>AR_Project_Polearms</researchPrerequisite>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="TC_Pike"]/recipeMaker/researchPrerequisite</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="TC_Pike"]/recipeMaker/researchPrerequisite</xpath>
+			<value>
+				<researchPrerequisite>AR_Project_Polearms</researchPrerequisite>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="VWE_MeleeWeapon_Halberd"]/recipeMaker/researchPrerequisite</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="VWE_MeleeWeapon_Halberd"]/recipeMaker/researchPrerequisite</xpath>
+			<value>
+				<researchPrerequisite>AR_Project_Polearms</researchPrerequisite>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="TA_Lance"]/recipeMaker/researchPrerequisite</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="TA_Lance"]/recipeMaker/researchPrerequisite</xpath>
+			<value>
+				<researchPrerequisite>AR_Project_Polearms</researchPrerequisite>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="CGF1_MWP_Pike"]/recipeMaker/researchPrerequisite</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="CGF1_MWP_Pike"]/recipeMaker/researchPrerequisite</xpath>
+			<value>
+				<researchPrerequisite>AR_Project_Polearms</researchPrerequisite>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="CGF1_MWP_Halberd"]/recipeMaker/researchPrerequisite</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="CGF1_MWP_Halberd"]/recipeMaker/researchPrerequisite</xpath>
+			<value>
+				<researchPrerequisite>AR_Project_Polearms</researchPrerequisite>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="CGF1_MWP_HewingSpear"]/recipeMaker/researchPrerequisite</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="CGF1_MWP_HewingSpear"]/recipeMaker/researchPrerequisite</xpath>
+			<value>
+				<researchPrerequisite>AR_Project_Polearms</researchPrerequisite>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+	</Operation>
 </Patch>
