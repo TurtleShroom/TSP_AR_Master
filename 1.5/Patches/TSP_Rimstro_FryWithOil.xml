@@ -13,7 +13,7 @@
 					<li>
 						<filter>
 							<thingDefs>
-								<li MayRequire="mlie.ancientrimspqrim">AR_OliveOil</li>
+								<li MayRequire="Mlie.AncientRimCore">AR_OliveOil</li>
 								<li MayRequire="sumika.nanohana">PlantOil</li>
 								<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
 								<li MayRequire="sarg.alphacrafts">AC_Oil</li>
@@ -28,7 +28,7 @@
 							</categories>
 							<disallowedThingDefs>
 								<li>Chemfuel</li>
-								<li MayRequire="mlie.ancientrimspqrim">AR_OliveOil</li>
+								<li MayRequire="Mlie.AncientRimCore">AR_OliveOil</li>
 								<li MayRequire="sumika.nanohana">PlantOil</li>
 								<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
 								<li MayRequire="sarg.alphacrafts">AC_Oil</li>
@@ -56,7 +56,7 @@
 					</categories>
 					<thingDefs>
 						<li>Chemfuel</li>
-						<li MayRequire="mlie.ancientrimspqrim">AR_OliveOil</li>
+						<li MayRequire="Mlie.AncientRimCore">AR_OliveOil</li>
 						<li MayRequire="sumika.nanohana">PlantOil</li>
 						<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
 						<li MayRequire="sarg.alphacrafts">AC_Oil</li>
@@ -79,7 +79,7 @@
 					<li>
 						<filter>
 							<thingDefs>
-								<li MayRequire="mlie.ancientrimspqrim">AR_OliveOil</li>
+								<li MayRequire="Mlie.AncientRimCore">AR_OliveOil</li>
 								<li MayRequire="sumika.nanohana">PlantOil</li>
 								<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
 								<li MayRequire="sarg.alphacrafts">AC_Oil</li>
@@ -94,7 +94,7 @@
 							</categories>
 							<disallowedThingDefs>
 								<li>Chemfuel</li>
-								<li MayRequire="mlie.ancientrimspqrim">AR_OliveOil</li>
+								<li MayRequire="Mlie.AncientRimCore">AR_OliveOil</li>
 								<li MayRequire="sumika.nanohana">PlantOil</li>
 								<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
 								<li MayRequire="sarg.alphacrafts">AC_Oil</li>
@@ -122,7 +122,7 @@
 					</categories>
 					<thingDefs>
 						<li>Chemfuel</li>
-						<li MayRequire="mlie.ancientrimspqrim">AR_OliveOil</li>
+						<li MayRequire="Mlie.AncientRimCore">AR_OliveOil</li>
 						<li MayRequire="sumika.nanohana">PlantOil</li>
 						<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
 						<li MayRequire="sarg.alphacrafts">AC_Oil</li>
