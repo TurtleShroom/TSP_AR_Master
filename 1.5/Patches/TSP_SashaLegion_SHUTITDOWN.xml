@@ -1,28 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+
 <Patch>
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/ThingDef[defName="Roman_Standard"]</xpath>
-    <!-- If they do, SHUT IT DOWN. -->
-    <match Class="PatchOperationRemove">
-      <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="Apparel_Toga"]</xpath>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/ThingDef[defName="Roman_Standard"]</xpath>
-    <!-- If they do, SHUT IT DOWN. -->
-    <match Class="PatchOperationRemove">
-      <success>Always</success>
-      <xpath>/Defs/PawnKindDef/apparelRequired/li[text()="Apparel_Toga"]</xpath>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/ThingDef[defName="Roman_Standard"]</xpath>
+    <xpath>/Defs/ThingDef[defName="Roman_Scutum"]</xpath>
     <!-- If they do, SHUT IT DOWN. -->
     <match Class="PatchOperationRemove">
       <success>Always</success>
@@ -32,7 +13,7 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/ThingDef[defName="Roman_Standard"]</xpath>
+    <xpath>/Defs/PawnKindDef/apparelRequired/li[text()="Roman_Scutum"]</xpath>
     <!-- If they do, SHUT IT DOWN. -->
     <match Class="PatchOperationRemove">
       <success>Always</success>
@@ -42,7 +23,7 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/ThingDef[defName="Roman_Standard"]</xpath>
+    <xpath>/Defs/HairDef[defName="Roman_Hair_Carthage"]</xpath>
     <!-- If they do, SHUT IT DOWN. -->
     <match Class="PatchOperationRemove">
       <success>Always</success>
@@ -53,7 +34,7 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/ThingDef[defName="Roman_Standard"]</xpath>
+    <xpath>/Defs/HairDef[defName="Roman_Hair_Cleopatra"]</xpath>
     <!-- If they do, SHUT IT DOWN. -->
     <match Class="PatchOperationRemove">
       <success>Always</success>
@@ -63,7 +44,7 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/ThingDef[defName="Roman_Standard"]</xpath>
+    <xpath>/Defs/ThingCategoryDef[defName="RomanMelee"]</xpath>
     <!-- If they do, SHUT IT DOWN. -->
     <match Class="PatchOperationRemove">
       <success>Always</success>
@@ -73,7 +54,7 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/ThingDef[defName="Roman_Standard"]</xpath>
+    <xpath>/Defs/ThingCategoryDef[defName="RomanWeaponsRanged"]</xpath>
     <!-- If they do, SHUT IT DOWN. -->
     <match Class="PatchOperationRemove">
       <success>Always</success>
@@ -83,7 +64,7 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/ThingDef[defName="Roman_Standard"]</xpath>
+    <xpath>/Defs/ThingCategoryDef[defName="RomanHeadgear"]</xpath>
     <!-- If they do, SHUT IT DOWN. -->
     <match Class="PatchOperationRemove">
       <success>Always</success>
@@ -93,7 +74,7 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/ThingDef[defName="Roman_Standard"]</xpath>
+    <xpath>/Defs/ThingDef[defName="Apparel_Legionarmor"]/thingSetMakerTags</xpath>
     <!-- If they do, SHUT IT DOWN. -->
     <match Class="PatchOperationRemove">
       <success>Always</success>
@@ -103,7 +84,7 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/ThingDef[defName="Roman_Standard"]</xpath>
+    <xpath>/Defs/ThingDef[defName="Roman_Gladius"]</xpath>
     <!-- If they do, SHUT IT DOWN. -->
     <match Class="PatchOperationRemove">
       <success>Always</success>
@@ -113,7 +94,7 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/ThingDef[defName="Roman_Standard"]</xpath>
+    <xpath>/Defs/ThingDef[defName="Apparel_Legionarmorhelmet"]/costList</xpath>
     <!-- If they do, SHUT IT DOWN. -->
     <match Class="PatchOperationRemove">
       <success>Always</success>
@@ -123,7 +104,7 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/ThingDef[defName="Roman_Standard"]</xpath>
+    <xpath>/Defs/ThingDef[defName="Apparel_LegionOfficerhelmet"]/costList</xpath>
     <!-- If they do, SHUT IT DOWN. -->
     <match Class="PatchOperationRemove">
       <success>Always</success>
@@ -133,7 +114,7 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/ThingDef[defName="Roman_Standard"]</xpath>
+    <xpath>/Defs/ThingDef[defName="Apparel_Segmentata"]</xpath>
     <!-- If they do, SHUT IT DOWN. -->
     <match Class="PatchOperationRemove">
       <success>Always</success>
@@ -143,7 +124,7 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/ThingDef[defName="Roman_Standard"]</xpath>
+    <xpath>/Defs/PawnKindDef/apparelRequired/li[text()="Apparel_Segmentata"]</xpath>
     <!-- If they do, SHUT IT DOWN. -->
     <match Class="PatchOperationRemove">
       <success>Always</success>
@@ -153,7 +134,7 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/ThingDef[defName="Roman_Standard"]</xpath>
+    <xpath>/Defs/ThingDef[defName="Apparel_Laurel"]</xpath>
     <!-- If they do, SHUT IT DOWN. -->
     <match Class="PatchOperationRemove">
       <success>Always</success>
@@ -163,7 +144,7 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/ThingDef[defName="Roman_Standard"]</xpath>
+    <xpath>/Defs/PawnKindDef/apparelRequired/li[text()="Apparel_Laurel"]</xpath>
     <!-- If they do, SHUT IT DOWN. -->
     <match Class="PatchOperationRemove">
       <success>Always</success>
@@ -173,7 +154,7 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/ThingDef[defName="Roman_Standard"]</xpath>
+    <xpath>/Defs/ThingDef[@Name="Roman_BaseShield"]</xpath>
     <!-- If they do, SHUT IT DOWN. -->
     <match Class="PatchOperationRemove">
       <success>Always</success>
@@ -208,7 +189,7 @@
 	<!-- WHY DOESN'T SETTING THE PRICE DOWN WORK, THEY STILL SPAWN WITH NOTHING BUT THIS ON -->
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="Apparel_FurStandard"]</xpath>
+    <xpath>/Defs/ThingDef[defName="Apparel_FurStandard"]/apparel/tags</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>

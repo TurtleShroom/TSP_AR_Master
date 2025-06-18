@@ -24,6 +24,7 @@
 							<li>EgyptianBasic</li>
 						</apparelTags>
 						<modExtensions>
+							<!--
 						  <li Class="AR_PawnShields.ShieldPawnGeneratorProperties" Inherit="False">
 							<shieldMoney Inherit="False">
 							  <min>100</min>
@@ -36,6 +37,7 @@
 							  <li>ShieldAnkhah</li>
 							</shieldTags>
 						  </li>
+						  -->
 						</modExtensions>
 				</PawnKindDef>
 				  <PawnKindDef Name="EgyptNoble_InAnkhaZone" ParentName="TSP_Egypt_InAnkhaZone" Abstract="True">

@@ -41,7 +41,7 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="AM_BlocksPristineLimestone"]</xpath>
+    <xpath>/Defs/ThingDef[defName="AM_BlocksPristineLimestone"]/generateCommonality</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
@@ -54,7 +54,7 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="AM_BlocksPristineLimestone"]</xpath>
+    <xpath>/Defs/ThingDef[defName="AM_BlocksPristineLimestone"]/generateAllowChance</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>

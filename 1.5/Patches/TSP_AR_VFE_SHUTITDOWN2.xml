@@ -274,10 +274,11 @@
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
   </Operation>
+  <!--
   <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
+    Does this exist?
     <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
-    <!-- If it does, add compatibility for this Mod Comp. -->
+    If it does, add compatibility for this Mod Comp.
     <match Class="PatchOperationAddModExtension">
       <success>Always</success>
       <xpath>/Defs/PawnKindDef[defName="VFEC_TownGuard"]</xpath>
@@ -294,8 +295,9 @@
         </li>
       </value>
     </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
+    If the first XPATH does not exist, the original code stands.
   </Operation>
+  -->
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
     <xpath>/Defs/PawnKindDef[defName="VFEC_RepublicTrader"]/weaponMoney</xpath>

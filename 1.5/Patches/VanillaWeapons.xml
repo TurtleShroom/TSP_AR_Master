@@ -55,4 +55,58 @@
       <li>ClassicalArcher</li>
     </value>
   </Operation>
+  
+  
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="VFEM2_MeleeWeapon_Halberd"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "VFEM2_MeleeWeapon_Halberd"]/weaponTags</xpath>
+			<value>
+				<li>SpearMen</li>
+				<li>Spear</li>
+				<li>HellenicHeavy</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="VFEM2_MeleeWeapon_Standard"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "VFEM2_MeleeWeapon_Standard"]/weaponTags</xpath>
+			<value>
+				<li>PeeledWeapon</li>
+				<li>PeeledMelee</li>
+				<li>WoodBeetJoe</li>
+				<li>JeubMelee</li>
+				<li>JeubWeapon</li>
+				<li>RomeBannerman</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="VFEM2_MeleeWeapon_Pike"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "VFEM2_MeleeWeapon_Pike"]/weaponTags</xpath>
+			<value>
+				<li>SpearMen</li>
+				<li>Spear</li>
+				<li>RomeSoldier</li>
+				<li>Barbarian</li>
+				<li>GnomeMelee</li>
+				<li>GoblinMelee</li>
+				<li>BeanManMelee</li>
+				<li>BeanManRanged</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
 </Patch>

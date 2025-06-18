@@ -309,4 +309,26 @@
       </value>
     </nomatch>
   </Operation>
+  
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AC_OilPressWorkshop"]/thingCategories</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="AC_OilPressWorkshop"]</xpath>
+      <success>Always</success>
+      <value>
+        <thingCategories></thingCategories>
+      </value>
+    </nomatch>
+  </Operation>
+  
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AC_OilPressWorkshop"]/minifiedDef</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="AC_OilPressWorkshop"]</xpath>
+      <success>Always</success>
+      <value>
+        <minifiedDef>MinifiedThing</minifiedDef>
+      </value>
+    </nomatch>
+  </Operation>
 </Patch>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<ThingCategoryDef>
+		<defName>RomanMelee</defName>
+		<label>Roman melee weapons</label>
+		<parent Inherit="False"></parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>RomanWeaponsRanged</defName>
+		<label>Roman ranged weapons</label>
+		<parent Inherit="False"></parent>
+	</ThingCategoryDef>
+
+
+	<ThingCategoryDef>
+		<defName>RomanHeadgear</defName>
+		<label>Roman headgear</label>
+		<parent Inherit="False"></parent>
+	</ThingCategoryDef>
+</Defs>
