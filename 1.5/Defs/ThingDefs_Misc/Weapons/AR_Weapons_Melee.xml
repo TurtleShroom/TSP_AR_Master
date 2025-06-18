@@ -47,7 +47,6 @@
 		<li MayRequire="kerbinfiber.chronos">WYD_Chitin</li>
 		<!-- <li MayRequire="gguake.race.vivi">VV_Wax</li> -->
     </stuffCategories>
-    <costStuffCount>30</costStuffCount>
     <thingCategories Inherit="False">
       <li>TSP_AR_RomanMelee</li>
     </thingCategories>
