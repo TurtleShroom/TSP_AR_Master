@@ -7,6 +7,10 @@
         <race>Human</race>
         <defaultFactionType>PlayerHellenes</defaultFactionType>
         <chemicalAddictionChance>0.085</chemicalAddictionChance>
+		<backstoryCategories>
+			<li>Tribal</li>
+			<li MayRequire="shavius.classical.flavour">Classical</li>
+		</backstoryCategories>
         <apparelTags>
             <li>Neolithic</li>
 			<li>Tribal</li>
@@ -17,18 +21,19 @@
 			<li>K4GRock</li>
 			<li>BowMen</li>
 		</weaponTags>
-        <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+        <apparelAllowHeadgearChance>0.1</apparelAllowHeadgearChance>
         <apparelMoney>
             <min>500</min>
             <max>1000</max>
         </apparelMoney>
-        <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+        <backstoryCryptosleepCommonality>0.005</backstoryCryptosleepCommonality>
         <techHediffsMoney>
             <min>50</min>
             <max>350</max>
         </techHediffsMoney>
         <techHediffsTags>
             <li>Poor</li>
+			<li>Common</li>
         </techHediffsTags>
         <techHediffsChance>0.02</techHediffsChance>
         <initialResistanceRange>1~4</initialResistanceRange>

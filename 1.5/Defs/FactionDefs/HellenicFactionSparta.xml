@@ -28,12 +28,14 @@
     <settlementNameMaker>NamerSettlementGreek</settlementNameMaker>
     <techLevel>Neolithic</techLevel>
     <backstoryFilters>
+		<!--
       <li MayRequire="shavius.classical.flavour">
         <categories MayRequire="shavius.classical.flavour">
           <li MayRequire="shavius.classical.flavour">ClassicalLegion</li>
         </categories>
         <commonality MayRequire="shavius.classical.flavour">1.5</commonality>
       </li>
+	  -->
       <li>
         <categories>
           <li>Sadist</li>

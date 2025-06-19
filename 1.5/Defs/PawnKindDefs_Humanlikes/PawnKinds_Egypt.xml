@@ -113,7 +113,7 @@
     <labelPlural>fellahin</labelPlural>
     <combatPower>20</combatPower>
     <itemQuality>Poor</itemQuality>
-    <isFighter>false</isFighter>
+    <isFighter>true</isFighter>
     <initialWillRange>1~2</initialWillRange>
     <initialResistanceRange>10~20</initialResistanceRange>
     <gearHealthRange>

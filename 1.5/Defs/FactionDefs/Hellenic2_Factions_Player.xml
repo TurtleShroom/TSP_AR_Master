@@ -18,12 +18,14 @@
 		</backstoryCategories>
 		-->
 		<backstoryFilters>
+			<!--
 			<li MayRequire="shavius.classical.flavour">
-				<categories>
+				<categories MayRequire="shavius.classical.flavour">
 					<li MayRequire="shavius.classical.flavour">Classical</li>
 				</categories>
 				<commonality MayRequire="shavius.classical.flavour">10</commonality>
 			</li>
+			-->
 			<li>
 				<categories>
 					<li>Tribal</li>

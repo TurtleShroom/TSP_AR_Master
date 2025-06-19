@@ -65,12 +65,14 @@
     </xenotypeSet>
 	-->
     <backstoryFilters>
+		<!--
       <li MayRequire="shavius.classical.flavour">
         <categories>
           <li MayRequire="shavius.classical.flavour">Classical</li>
         </categories>
         <commonality MayRequire="shavius.classical.flavour">2</commonality>
       </li>
+	  -->
       <li>
         <categories>
             <li MayRequire="shavius.Classical.Flavour">Classical</li>
@@ -85,11 +87,11 @@
         <li>Leather_Pig</li>
         <li>AR_Bronze</li>
 		<li MayRequire="TSP.Isengriff.Storytime">Leather_Jeub</li>
-        <!-- <li MayRequire="oskarpotocki.vfe.classical">VFEC_Tyrian</li> -->
       </thingDefs>
       <disallowedThingDefs>
         <li>Steel</li>
         <li>Plasteel</li>
+		<li MayRequire="oskarpotocki.vfe.classical">VFEC_Tyrian</li>
       </disallowedThingDefs>
     </apparelStuffFilter>
     <caravanTraderKinds>
@@ -228,9 +230,9 @@
 		  <TSP_AR_Legate>3</TSP_AR_Legate>
 		  <VFEC_ScorpionOperator MayRequire="oskarpotocki.vfe.classical">5</VFEC_ScorpionOperator>
 		  <VFEC_TownGuard MayRequire="oskarpotocki.vfe.classical">5</VFEC_TownGuard>
-          <VFEC_RepublicVillager MayRequire="oskarpotocki.fge.classical">5</VFEC_RepublicVillager>
-          <VFEC_Legionnaire MayRequire="oskarpotocki.fge.classical">8</VFEC_Legionnaire>
-          <VFEC_RepublicSenator MayRequire="oskarpotocki.fge.classical">1</VFEC_RepublicSenator>
+          <VFEC_RepublicVillager MayRequire="oskarpotocki.vfe.classical">5</VFEC_RepublicVillager>
+          <VFEC_Legionnaire MayRequire="oskarpotocki.vfe.classical">8</VFEC_Legionnaire>
+          <VFEC_RepublicSenator MayRequire="oskarpotocki.vfe.classical">1</VFEC_RepublicSenator>
           <VFEC_RepublicArcher MayRequire="oskarpotocki.vfe.classical">6</VFEC_RepublicArcher>
           <VFEC_RepublicAuxilia MayRequire="oskarpotocki.vfe.classical">5</VFEC_RepublicAuxilia>
           <VFEC_Centurion MayRequire="oskarpotocki.vfe.classical">3</VFEC_Centurion>
@@ -265,10 +267,10 @@
 		  <TSP_AR_Legate>3</TSP_AR_Legate>
 		  <Tribal_Child MayRequire="Ludeon.RimWorld.Biotech">14</Tribal_Child>
 		  <VFEC_TownGuard MayRequire="oskarpotocki.vfe.classical">5</VFEC_TownGuard>
-          <VFEC_RepublicVillager MayRequire="oskarpotocki.fge.classical">10</VFEC_RepublicVillager>
+          <VFEC_RepublicVillager MayRequire="oskarpotocki.vfe.classical">10</VFEC_RepublicVillager>
           <VFEC_ScorpionOperator MayRequire="oskarpotocki.vfe.classical">5</VFEC_ScorpionOperator>
-          <VFEC_Legionnaire MayRequire="oskarpotocki.fge.classical">5</VFEC_Legionnaire>
-          <VFEC_RepublicSenator MayRequire="oskarpotocki.fge.classical">10</VFEC_RepublicSenator>
+          <VFEC_Legionnaire MayRequire="oskarpotocki.vfe.classical">5</VFEC_Legionnaire>
+          <VFEC_RepublicSenator MayRequire="oskarpotocki.vfe.classical">10</VFEC_RepublicSenator>
           <TSP_AR_Aquilifer MayRequire="Mlie.AncientRimCore">2</TSP_AR_Aquilifer>
         </options>
       </li>
@@ -290,32 +292,32 @@
           <Donkey>13</Donkey>
         </carriers>
         <guards>
-          <Tribal_Warrior>7</Tribal_Warrior>
-          <Tribal_Archer>10</Tribal_Archer>
-          <Tribal_Hunter>10</Tribal_Hunter>
-          <Tribal_HeavyArcher>10</Tribal_HeavyArcher>
-          <Tribal_Berserker>7</Tribal_Berserker>
-          <AR_Citizen>5</AR_Citizen>
-          <TSP_AR_CitizenGirl>5</TSP_AR_CitizenGirl>
-          <AR_Councilman>20</AR_Councilman>
-          <AR_HellenicSword>10</AR_HellenicSword>
-          <AR_Hoplite>10</AR_Hoplite>
-          <AR_Peltast>5</AR_Peltast>
-          <AR_Toxotes>5</AR_Toxotes>
-          <AR_Psilos>5</AR_Psilos>
-          <AR_HopliteHeavy>10</AR_HopliteHeavy>
+			<Tribal_Warrior>7</Tribal_Warrior>
+			<Tribal_Archer>10</Tribal_Archer>
+			<Tribal_Hunter>10</Tribal_Hunter>
+			<Tribal_HeavyArcher>10</Tribal_HeavyArcher>
+			<Tribal_Berserker>7</Tribal_Berserker>
+			<AR_Citizen>5</AR_Citizen>
+			<TSP_AR_CitizenGirl>5</TSP_AR_CitizenGirl>
+			<AR_Councilman>20</AR_Councilman>
+			<AR_HellenicSword>10</AR_HellenicSword>
+			<AR_Hoplite>10</AR_Hoplite>
+			<AR_Peltast>5</AR_Peltast>
+			<AR_Toxotes>5</AR_Toxotes>
+			<AR_Psilos>5</AR_Psilos>
+			<AR_HopliteHeavy>10</AR_HopliteHeavy>
 			<AR_Spartan>3</AR_Spartan>
 			<AR_Preatorian>5</AR_Preatorian>
 			<TSP_AR_GunSpartan>1</TSP_AR_GunSpartan>
 			<AR_HopliteMakedon>5</AR_HopliteMakedon>
 			<VFEC_ScorpionOperator MayRequire="oskarpotocki.vfe.classical">5</VFEC_ScorpionOperator>
 			<VFEC_TownGuard MayRequire="oskarpotocki.vfe.classical">5</VFEC_TownGuard>
-          <VFEC_RepublicVillager MayRequire="oskarpotocki.fge.classical">5</VFEC_RepublicVillager>
-          <VFEC_Legionnaire MayRequire="oskarpotocki.fge.classical">5</VFEC_Legionnaire>
-          <VFEC_RepublicSenator MayRequire="oskarpotocki.fge.classical">1</VFEC_RepublicSenator>
-          <TSP_AR_Aquilifer MayRequire="Mlie.AncientRimCore">2</TSP_AR_Aquilifer>
-          <VFEC_RepublicArcher MayRequire="oskarpotocki.vfe.classical">5</VFEC_RepublicArcher>
-          <VFEC_RepublicAuxilia MayRequire="oskarpotocki.vfe.classical">4</VFEC_RepublicAuxilia>
+			<VFEC_RepublicVillager MayRequire="oskarpotocki.vfe.classical">5</VFEC_RepublicVillager>
+			<VFEC_Legionnaire MayRequire="oskarpotocki.vfe.classical">5</VFEC_Legionnaire>
+			<VFEC_RepublicSenator MayRequire="oskarpotocki.vfe.classical">1</VFEC_RepublicSenator>
+			<TSP_AR_Aquilifer MayRequire="Mlie.AncientRimCore">2</TSP_AR_Aquilifer>
+			<VFEC_RepublicArcher MayRequire="oskarpotocki.vfe.classical">5</VFEC_RepublicArcher>
+			<VFEC_RepublicAuxilia MayRequire="oskarpotocki.vfe.classical">4</VFEC_RepublicAuxilia>
         </guards>
       </li>
       <li>
@@ -342,9 +344,9 @@
 		  <TSP_AR_GunSpartan>1</TSP_AR_GunSpartan>
 		  <AR_HopliteMakedon>5</AR_HopliteMakedon>
 		  <VFEC_TownGuard MayRequire="oskarpotocki.vfe.classical">5</VFEC_TownGuard>
-          <VFEC_RepublicVillager MayRequire="oskarpotocki.fge.classical">8</VFEC_RepublicVillager>
-          <VFEC_Legionnaire MayRequire="oskarpotocki.fge.classical">5</VFEC_Legionnaire>
-          <VFEC_RepublicSenator MayRequire="oskarpotocki.fge.classical">1</VFEC_RepublicSenator>
+          <VFEC_RepublicVillager MayRequire="oskarpotocki.vfe.classical">8</VFEC_RepublicVillager>
+          <VFEC_Legionnaire MayRequire="oskarpotocki.vfe.classical">5</VFEC_Legionnaire>
+          <VFEC_RepublicSenator MayRequire="oskarpotocki.vfe.classical">1</VFEC_RepublicSenator>
           <TSP_AR_Aquilifer MayRequire="Mlie.AncientRimCore">2</TSP_AR_Aquilifer>
 		  <VFEC_ScorpionOperator MayRequire="oskarpotocki.vfe.classical">5</VFEC_ScorpionOperator>
           <VFEC_RepublicArcher MayRequire="oskarpotocki.vfe.classical">5</VFEC_RepublicArcher>
@@ -360,7 +362,7 @@
 		  <AR_Spartan>1</AR_Spartan>
 		  <AR_HopliteMakedon>1</AR_HopliteMakedon>
 		  <VFEC_TownGuard MayRequire="oskarpotocki.vfe.classical">2</VFEC_TownGuard>
-		  <VFEC_RepublicVillager MayRequire="oskarpotocki.fge.classical">3</VFEC_RepublicVillager>
+		  <VFEC_RepublicVillager MayRequire="oskarpotocki.vfe.classical">3</VFEC_RepublicVillager>
           <VFEC_RepublicArcher MayRequire="oskarpotocki.vfe.classical">1</VFEC_RepublicArcher>
           <VFEC_RepublicAuxilia MayRequire="oskarpotocki.vfe.classical">1</VFEC_RepublicAuxilia>
         </options>
@@ -375,7 +377,7 @@
 		  <TSP_AR_GunSpartan>6</TSP_AR_GunSpartan>
 		  <AR_HopliteMakedon>1</AR_HopliteMakedon>
 		  <VFEC_TownGuard MayRequire="oskarpotocki.vfe.classical">2</VFEC_TownGuard>
-		  <VFEC_RepublicVillager MayRequire="oskarpotocki.fge.classical">3</VFEC_RepublicVillager>
+		  <VFEC_RepublicVillager MayRequire="oskarpotocki.vfe.classical">3</VFEC_RepublicVillager>
           <VFEC_RepublicArcher MayRequire="oskarpotocki.vfe.classical">5</VFEC_RepublicArcher>
           <VFEC_RepublicAuxilia MayRequire="oskarpotocki.vfe.classical">2</VFEC_RepublicAuxilia>
         </options>
@@ -389,7 +391,7 @@
 		  <AR_Spartan>3</AR_Spartan>
 		  <AR_HopliteMakedon>1</AR_HopliteMakedon>
 		  <VFEC_TownGuard MayRequire="oskarpotocki.vfe.classical">2</VFEC_TownGuard>
-		  <VFEC_RepublicVillager MayRequire="oskarpotocki.fge.classical">3</VFEC_RepublicVillager>
+		  <VFEC_RepublicVillager MayRequire="oskarpotocki.vfe.classical">3</VFEC_RepublicVillager>
 		  <VFEC_RepublicArcher MayRequire="oskarpotocki.vfe.classical">1</VFEC_RepublicArcher>
           <VFEC_RepublicAuxilia MayRequire="oskarpotocki.vfe.classical">1</VFEC_RepublicAuxilia>
         </options>
@@ -404,7 +406,7 @@
 		  <AR_Citizen>5</AR_Citizen>
 		  <TSP_AR_CitizenGirl>11</TSP_AR_CitizenGirl>
 		  <VFEC_TownGuard MayRequire="oskarpotocki.vfe.classical">2</VFEC_TownGuard>
-		  <VFEC_RepublicVillager MayRequire="oskarpotocki.fge.classical">3</VFEC_RepublicVillager>
+		  <VFEC_RepublicVillager MayRequire="oskarpotocki.vfe.classical">3</VFEC_RepublicVillager>
           <VFEC_RepublicArcher MayRequire="oskarpotocki.vfe.classical">1</VFEC_RepublicArcher>
           <VFEC_RepublicAuxilia MayRequire="oskarpotocki.vfe.classical">2</VFEC_RepublicAuxilia>
         </options>
