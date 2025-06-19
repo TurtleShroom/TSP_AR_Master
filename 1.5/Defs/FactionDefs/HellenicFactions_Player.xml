@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <FactionDef ParentName="HellenesBase">
+  <FactionDef ParentName="PlayerFactionBase">
     <defName>AR_PlayerFaction</defName>
     <label>Hellenic colony</label>
     <description>Your own Greek colony.</description>
