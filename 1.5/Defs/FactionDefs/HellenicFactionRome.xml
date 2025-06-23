@@ -119,9 +119,29 @@
     <pawnGroupMakers>
       <li>
         <kindDef>Peaceful</kindDef>
+		<commonality>100</commonality>
         <options>
           <AR_Citizen>100</AR_Citizen>
           <TSP_AR_CitizenGirl>95</TSP_AR_CitizenGirl>
+          <AR_Councilman>20</AR_Councilman>
+          <AR_Sagittarius>30</AR_Sagittarius>
+          <AR_Hastatus>30</AR_Hastatus>
+          <AR_Legionary>50</AR_Legionary>
+          <AR_Hoplite>30</AR_Hoplite>
+          <AR_HopliteHeavy>10</AR_HopliteHeavy>
+          <AR_General>1</AR_General>
+          <VFEC_RepublicVillager MayRequire="oskarpotocki.vfe.classical">20</VFEC_RepublicVillager>
+          <VFEC_Legionnaire MayRequire="oskarpotocki.vfe.classical">15</VFEC_Legionnaire>
+          <VFEC_RepublicSenator MayRequire="oskarpotocki.vfe.classical">7</VFEC_RepublicSenator>
+          <VFEC_ScorpionOperator MayRequire="oskarpotocki.vfe.classical">5</VFEC_ScorpionOperator>
+          <TSP_AR_Aquilifer MayRequire="Mlie.AncientRimCore">2</TSP_AR_Aquilifer>
+          <TSP_AR_Legate>3</TSP_AR_Legate>
+        </options>
+      </li>
+      <li>
+        <kindDef>Peaceful</kindDef>
+		<commonality>45</commonality>
+        <options>
           <AR_Councilman>20</AR_Councilman>
           <AR_Sagittarius>30</AR_Sagittarius>
           <AR_Hastatus>30</AR_Hastatus>
@@ -189,8 +209,8 @@
 			<!--
 			<AR_Citizen>100</AR_Citizen>
 			<TSP_AR_CitizenGirl>55</TSP_AR_CitizenGirl>
-			-->
 			<AR_Councilman>10</AR_Councilman>
+			-->
 			<VFEC_RepublicSenator MayRequire="oskarpotocki.vfe.classical">10</VFEC_RepublicSenator>
 			<AR_Hastatus>275</AR_Hastatus>
 			<AR_Sagittarius>300</AR_Sagittarius>

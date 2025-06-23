@@ -212,7 +212,6 @@
 			<AR_ESlinger>50</AR_ESlinger>
 			<AR_ESkirmisher>50</AR_ESkirmisher>
 			<AR_Pharao>15</AR_Pharao>
-
 			<TSP_AR_ELight_InAnkhaZone MayRequire="razar1.ankharace">15</TSP_AR_ELight_InAnkhaZone>
 			<TSP_AR_ESpear_InAnkhaZone MayRequire="razar1.ankharace">15</TSP_AR_ESpear_InAnkhaZone>
 			<TSP_AR_EArcher_InAnkhaZone MayRequire="razar1.ankharace">15</TSP_AR_EArcher_InAnkhaZone>
@@ -242,9 +241,9 @@
         </options>
       </li>
 	  <li MayRequire="razar1.ankharace">
-		<kindDef>Combat</kindDef>
-		<commonality>50</commonality>
-		<options>
+		<kindDef MayRequire="razar1.ankharace">Combat</kindDef>
+		<commonality MayRequire="razar1.ankharace">50</commonality>
+		<options MayRequire="razar1.ankharace">
 			<TSP_AR_EPeasant_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_EPeasant_InAnkhaZone>
 			<TSP_AR_ELight_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_ELight_InAnkhaZone>
 			<TSP_AR_ESpear_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_ESpear_InAnkhaZone>

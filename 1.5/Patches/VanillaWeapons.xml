@@ -104,7 +104,9 @@
 				<li>GnomeMelee</li>
 				<li>GoblinMelee</li>
 				<li>BeanManMelee</li>
-				<li>BeanManRanged</li>
+				<li>HopliteSimple</li>
+				<li>SimpleHoplite</li>
+				<li>NeolithicHeavy</li>
 			</value>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. -->
