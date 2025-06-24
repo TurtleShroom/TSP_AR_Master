@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/HairDef[defName="Roman_Hair_Ceasar"]/hairTags</xpath>
+    <!-- If it does, do this replacement. -->
+    <match Class="PatchOperationReplace">
+      <success>Always</success>
+      <xpath>/Defs/HairDef[defName="Roman_Hair_Ceasar"]/hairTags</xpath>
+      <value>
+        <category>Royal</category>
+        <hairTags>
+          <li>Roman</li>
+          <li>Royal</li>
+          <li>Rural</li>
+        </hairTags>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/HairDef[defName="Roman_Hair_Helena"]/hairTags</xpath>
+    <!-- If it does, do this replacement. -->
+    <match Class="PatchOperationReplace">
+      <success>Always</success>
+      <xpath>/Defs/HairDef[defName="Roman_Hair_Helena"]/hairTags</xpath>
+      <value>
+        <category>Royal</category>
+        <hairTags>
+          <li>Roman</li>
+          <li>Royal</li>
+          <li>Urban</li>
+          <li>Rural</li>
+        </hairTags>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/HairDef[defName="Roman_Hair_Scipio"]/hairTags</xpath>
+    <!-- If it does, do this replacement. -->
+    <match Class="PatchOperationReplace">
+      <success>Always</success>
+      <xpath>/Defs/HairDef[defName="Roman_Hair_Scipio"]/hairTags</xpath>
+      <value>
+        <category>Soldier</category>
+        <hairTags>
+          <li>Roman</li>
+          <li>Soldier</li>
+          <li>Tribal</li>
+        </hairTags>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="Roman_Pilas"]/weaponTags</xpath>
+    <!-- If it does, do this replacement. -->
+    <match Class="PatchOperationReplace">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="Roman_Pilas"]/weaponTags</xpath>
+      <value>
+        <weaponTags>
+          <li>ClassicalSimple</li>
+          <li>Hellenic</li>
+          <li>Macedon</li>
+          <li>NeolithicRangedBasic</li>
+		  <li>NeolithicRanged</li>
+          <li>ClassicalRangedJavelin</li>
+          <li>Hastatus</li>
+        </weaponTags>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="Pilum_Thrown"]/projectile/damageAmountBase</xpath>
+    <!-- If it does, do this replacement. -->
+    <match Class="PatchOperationReplace">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="Pilum_Thrown"]/projectile/damageAmountBase</xpath>
+      <value>
+        <damageAmountBase>15</damageAmountBase>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="Roman_Gladius"]/label</xpath>
+    <!-- If it does, do this replacement. -->
+    <match Class="PatchOperationReplace">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="Roman_Gladius"]/label</xpath>
+      <value>
+        <label>light gladius</label>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="Roman_Gladius"]/weaponTags</xpath>
+    <!-- If it does, do this replacement. -->
+    <match Class="PatchOperationReplace">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="Roman_Gladius"]/weaponTags</xpath>
+      <value>
+        <weaponTags>
+			<li>NeolithicMelee</li>
+			<li>NeolithicMeleeDecent</li>
+			<li>Hastatus</li>
+        </weaponTags>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="Roman_Gladius"]/tools</xpath>
+    <!-- If it does, do this replacement. -->
+    <match Class="PatchOperationReplace">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="Roman_Gladius"]/tools</xpath>
+      <value>
+        <tools>
+          <li>
+            <label>handle</label>
+            <capacities>
+              <li>Blunt</li>
+            </capacities>
+            <power>9</power>
+            <cooldownTime>1.5</cooldownTime>
+            <chanceFactor>0.1</chanceFactor>
+          </li>
+          <li>
+            <label>point</label>
+            <capacities>
+              <li>Stab</li>
+            </capacities>
+            <power>10</power>
+            <cooldownTime>1.5</cooldownTime>
+          </li>
+          <li>
+            <label>edge</label>
+            <capacities>
+              <li>Cut</li>
+            </capacities>
+            <power>10</power>
+            <cooldownTime>1.5</cooldownTime>
+          </li>
+        </tools>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="RomanGladius"]/stuffCategories</xpath>
+    <!-- If it does, do this replacement. -->
+    <match Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="RomanGladius"]/stuffCategories</xpath>
+      <value>
+        <li>Stony</li>
+        <!-- Mod support -->
+        <li MayRequire="Dubwise.Rimefeller">Plastic</li>
+        <li MayRequire="Dubwise.Rimefeller">Composite</li>
+        <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+        <li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
+        <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+        <li MayRequire="biomesteam.biomescore">BMT_ChitinStuff</li>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="Apparel_Tunic"]</xpath>
+    <!-- If it does, do this replacement. -->
+    <match Class="PatchOperationReplace">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="Apparel_Tunic"]/tradeability</xpath>
+      <value>
+        <tradeability>All</tradeability>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="Apparel_Tunic"]/statBases/StuffEffectMultiplierInsulation_Cold</xpath>
+    <!-- If it does, do this replacement. -->
+    <match Class="PatchOperationReplace">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="Apparel_Tunic"]/statBases/StuffEffectMultiplierInsulation_Cold</xpath>
+      <value>
+        <StuffEffectMultiplierInsulation_Cold>0.8</StuffEffectMultiplierInsulation_Cold>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="Apparel_Tunic"]/statBases/StuffEffectMultiplierInsulation_Heat</xpath>
+    <!-- If it does, do this replacement. -->
+    <match Class="PatchOperationReplace">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="Apparel_Tunic"]/statBases/StuffEffectMultiplierInsulation_Heat</xpath>
+      <value>
+        <StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <!--
+  <Operation Class="PatchOperationConditional">
+    Does this exist?
+    <xpath>/Defs/ThingDef[defName="Apparel_Tunic"]/thingCategories</xpath>
+    If it does, do this replacement.
+    <match Class="PatchOperationReplace">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="Apparel_Tunic"]/thingCategories</xpath>
+      <value>
+        <thingCategories>
+          <li>TSP_AR_RomanClothing</li>
+        </thingCategories>
+      </value>
+    </match>
+    If the first XPATH does not exist, the original code stands.
+  </Operation>
+  -->
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="Apparel_Tunic"]/statBases</xpath>
+    <!-- If it does, do this replacement. -->
+    <match Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="Apparel_Tunic"]/statBases</xpath>
+      <value>
+        <MarketValue>17</MarketValue>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="Apparel_Tunic"]</xpath>
+    <!-- If it does, do this replacement. -->
+    <match Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="Apparel_Tunic"]</xpath>
+      <value>
+        <generateCommonality>0.3</generateCommonality>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="Apparel_Cloth"]/apparel/tags</xpath>
+    <!-- If it does, do this replacement. -->
+    <match Class="PatchOperationReplace">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="Apparel_Cloth"]/apparel/tags</xpath>
+      <value>
+        <tags>
+          <li>Roman</li>
+          <li>RomeNoble</li>
+          <li>Praetorian</li>
+          <li>ClassicalMilitaryClassy</li>
+          <li>Cape</li>
+          <li>RomeRoyal</li>
+          <li>RomeEmperor</li>
+          <li>RomeOfficer</li>
+          <li>Centurion</li>
+          <li>Legate</li>
+          <li>RomeBannerman</li>
+        </tags>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+</Patch>

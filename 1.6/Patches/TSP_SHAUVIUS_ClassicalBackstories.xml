@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+	<!-- Do any of the following Mods exist? -->
+		<mods>
+			<li>Shavius's Classical Flavour Pack</li>
+		</mods>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/FactionDef[defName = "AR_Faction_Rome" or defName = "AR_Faction_Macedonia" or defName = "AR_Faction_Hellas"]/backstoryFilters</xpath>
+			<value>
+				<li MayRequire="shavius.classical.flavour">
+					<categories MayRequire="shavius.classical.flavour">
+						<li MayRequire="shavius.classical.flavour">Classical</li>
+					</categories>
+					<commonality MayRequire="shavius.classical.flavour">2</commonality>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+	<!-- Do any of the following Mods exist? -->
+		<mods>
+			<li>Shavius's Classical Flavour Pack</li>
+		</mods>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/FactionDef[@Name="HellenesBase"]/backstoryFilters</xpath>
+			<value>
+				<li MayRequire="shavius.classical.flavour">
+					<categories MayRequire="shavius.classical.flavour">
+						<li MayRequire="shavius.classical.flavour">Classical</li>
+					</categories>
+					<commonality MayRequire="shavius.classical.flavour">2</commonality>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+	<!-- Do any of the following Mods exist? -->
+		<mods>
+			<li>Shavius's Classical Flavour Pack</li>
+		</mods>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/FactionDef[defName="AR_Faction_Sparta"]/backstoryFilters</xpath>
+			<value>
+				<li MayRequire="shavius.classical.flavour">
+					<categories MayRequire="shavius.classical.flavour">
+						<li MayRequire="shavius.classical.flavour">ClassicalLegion</li> <!-- Spartans aren't actually Legionnaires, but this represents classical antiquity martial prowess and is not exclusive to Rome -->
+					</categories>
+					<commonality MayRequire="shavius.classical.flavour">1.5</commonality>
+				</li>
+			</value>
+		</match>
+	</Operation>
+</Patch>

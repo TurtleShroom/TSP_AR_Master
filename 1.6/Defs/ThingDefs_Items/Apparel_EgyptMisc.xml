@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef Name="AncientEgyptApparelMakeBase" ParentName="AncientApparelMakeableBase" Abstract="True">
+    <tradeability>All</tradeability>
+	<!--
+    <thingCategories Inherit="False">
+      <li>TSP_AR_RomanClothing</li>
+    </thingCategories>
+	-->
+    <apparel>
+      <tags>
+        <li>Egypt</li>
+      </tags>
+	  <canBeGeneratedToSatisfyWarmth Inherit="False">false</canBeGeneratedToSatisfyWarmth>
+    </apparel>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Tailor</effectWorking>
+      <soundWorking>Recipe_Tailor</soundWorking>
+	  <!--
+      <recipeUsers Inherit="False">
+        <li>HandTailoringBench</li>
+        <li>ElectricTailoringBench</li>
+      </recipeUsers>
+	  -->
+      <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+    </recipeMaker>
+	<tradeTags>
+		<li>Egypt</li>
+		<li>EgyptClothing</li>
+	</tradeTags>
+  </ThingDef>
+  <ThingDef Name="OrientArmourMakeableBase" ParentName="AncientArmourMakeableBase" Abstract="True">
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>2</DeteriorationRate>
+      <Beauty>0</Beauty>
+      <SellPriceFactor>0.70</SellPriceFactor>
+    </statBases>
+    <apparel>
+      <tags>
+        <li>Egypt</li>
+      </tags>
+    </apparel>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+      </recipeUsers>
+      <defaultIngredientFilter>
+        <categories>
+          <li>Root</li>
+        </categories>
+        <disallowedThingDefs>
+          <li>Gold</li>
+          <li>Silver</li>
+          <li>Plasteel</li>
+          <li>Jade</li>
+          <li>Uranium</li>
+		  <!-- <li>Steel</li> -->
+        </disallowedThingDefs>
+      </defaultIngredientFilter>
+    </recipeMaker>
+	  <tradeTags>
+		<li>Egypt</li>
+		<li>EgyptArmor</li>
+	  </tradeTags>
+  </ThingDef>
+  <!-- Civil -->
+  <thingDef ParentName="AncientEgyptApparelMakeBase">
+    <defName>AR_Shendyt</defName>
+    <label>Shendyt</label>
+    <description>A rectangular piece of clothing which is wrappped around the waist. Men wore this without a shirt to cover themselves appropriately when working.</description>
+    <graphicData>
+      <texPath>Items/Apparel/ShendytOnMap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>35</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <statBases>
+		<MarketValue>9</MarketValue>
+      <WorkToMake>1000</WorkToMake>
+      <StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>1</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+      <Mass>0.3</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.1</SlaveSuppressionOffset>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Items/Apparel/Shendyt/Shendyt</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+	  <gender>Male</gender>
+      <tags>
+        <li>EgyptianBasic</li>
+		<li>EgyptianAdvanced</li>
+		<li>EgyptianNoble</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+        <li>Slave</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>20</weight>
+          <only>(1,1,1,1)</only>
+        </li>
+        <li>
+          <weight>5</weight>
+          <only>(0.7,0.63,0.2,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+    <recipeMaker>
+      <researchPrerequisite>AR_Project_Oriental_Culture</researchPrerequisite>
+      <recipeUsers>
+        <!-- Should be able to inherit this -->
+        <li>CraftingSpot</li>
+      </recipeUsers>
+    </recipeMaker>
+  </thingDef>
+  <thingDef ParentName="AncientEgyptApparelMakeBase">
+    <defName>AR_EgyptSimple</defName>
+    <label>simple Egyptian dress</label>
+    <description>A simple dress in Egyptian fashion. Ancient Egyptian women would wear a straight dress covering their entire breasts and down to their knees, usually with one or two shoulder straps.</description>
+    <graphicData>
+      <texPath>Items/Apparel/SimpleDressOnMap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>60</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+    </stuffCategories>
+    <statBases>
+		<MarketValue>9</MarketValue>
+      <WorkToMake>2000</WorkToMake>
+      <StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.16</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>1.25</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+      <Mass>0.4</Mass>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>Legs</li>
+        <li>Torso</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Items/Apparel/SimpleDress/Simple</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <tags>
+        <li>EgyptianBasic</li>
+		<li>EgyptianAdvanced</li>
+		<li>EgyptianLight</li>
+		<li>EgyptianMedium</li>
+		<li>EgyptianHeavy</li>
+		<li>Medieval</li>
+		<li>NeolithicDecent</li>
+		<li>OrientalLight</li>
+		<li>OrientalMedium</li>
+		<li>OrientalHeavy</li>
+		<li>Tribal</li>
+		<li>Neolithic</li>
+		<li>EgyptDress</li>
+      </tags>
+      <gender>Female</gender>
+	  <canBeGeneratedToSatisfyWarmth Inherit="False">true</canBeGeneratedToSatisfyWarmth>
+      <defaultOutfitTags>
+        <li>Worker</li>
+		<li>Soldier</li>
+        <li>Slave</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>20</weight>
+          <only>(1,1,1,1)</only>
+        </li>
+        <li>
+          <weight>5</weight>
+          <only>(0.7,0.63,0.2,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+    <recipeMaker>
+      <researchPrerequisites>
+		<li>AR_Project_Oriental_Culture</li>
+	  </researchPrerequisites>
+      <recipeUsers>
+        <!-- This should inherit from the Base -->
+        <li>CraftingSpot</li>
+      </recipeUsers>
+    </recipeMaker>
+	  <tradeTags>
+		<li>ClothingSimple</li>
+		<li>Egypt</li>
+		<li>ClothingBasic</li>
+		<li>Clothing</li>
+	  </tradeTags>
+  </thingDef>
+  <thingDef ParentName="AncientEgyptApparelMakeBase">
+    <defName>AR_NetDress</defName>
+    <label>net dress</label>
+    <description>A see-through dress covering just enough not to feel entirely naked. Nudists don't mind wearing it. Do not wear it when it is cold out.</description>
+    <graphicData>
+      <texPath>Items/Apparel/NetDressOnMap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>80</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <statBases>
+		<MarketValue>22</MarketValue>
+      <WorkToMake>3000</WorkToMake>
+      <StuffEffectMultiplierArmor>0</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>-0.33</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>2.2</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>0.01</EquipDelay>
+      <Mass>0.1</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <SocialImpact>0.1</SocialImpact>
+    </equippedStatOffsets>
+    <generateCommonality>0.5</generateCommonality>
+    <apparel>
+      <bodyPartGroups>
+        <li>Legs</li>
+        <li>Torso</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Items/Apparel/NetDress/Net</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <tags>
+        <li>EgyptianNoble</li>
+		<li>EgyptDress_Fancy</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+      <gender>Female</gender>
+      <canBeGeneratedToSatisfyWarmth Inherit="False">false</canBeGeneratedToSatisfyWarmth>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>20</weight>
+          <only>(0.7,0.63,0.2,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+    <recipeMaker>
+      <researchPrerequisites>
+		<li>AR_Project_Oriental_Culture</li>
+	  </researchPrerequisites>
+      <recipeUsers>
+        <!-- This should inherit from the Base -->
+        <li>CraftingSpot</li>
+      </recipeUsers>
+    </recipeMaker>
+  </thingDef>
+  <thingDef ParentName="AncientEgyptApparelMakeBase">
+    <defName>AR_EgyptFancy</defName>
+    <label>fancy Egyptian dress</label>
+    <description>An elegant dress of thin woven textiles.</description>
+    <graphicData>
+      <texPath>Items/Apparel/FancyDressOnMap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <costStuffCount>80</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+	  <li>Leathery</li>
+    </stuffCategories>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <statBases>
+		<MarketValue>23</MarketValue>
+      <WorkToMake>4000</WorkToMake>
+      <StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Heat>1</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+      <Mass>0.4</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <SocialImpact>0.2</SocialImpact>
+      <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.3</SlaveSuppressionOffset>
+    </equippedStatOffsets>
+    <generateCommonality>1.1</generateCommonality>
+    <apparel>
+      <bodyPartGroups>
+        <li>Legs</li>
+        <li>Torso</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Items/Apparel/FancyDress/Fancy</wornGraphicPath>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <layers>
+        <li>Middle</li>
+      </layers>
+      <tags>
+        <li>EgyptianNoble</li>
+        <li>EgyptialRoyal</li>
+		<li>EgyptianAdvanced</li>
+		<li>EgyptDress_Fancy</li>
+		<li>Royal</li>
+		<li>RoyalTier1</li>
+		<li>RoyalTier2</li>
+		<li>RoyalTier3</li>
+      </tags>
+      <gender>Female</gender>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>20</weight>
+          <only>(1,1,1,1)</only>
+        </li>
+        <li>
+          <weight>5</weight>
+          <only>(0.7,0.63,0.2,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+    <recipeMaker>
+      <researchPrerequisite>AR_Project_Oriental_Culture</researchPrerequisite>
+    </recipeMaker>
+	<tradeTags Inherit="False">
+		<li>EgyptRoyal</li>
+	</tradeTags>
+  </thingDef>
+  <!-- Military -->
+  <thingDef ParentName="OrientArmourMakeableBase">
+    <defName>AR_PaddedCuirass</defName>
+    <description>A chest covering set of laminar padding.</description>
+    <label>padded cuirass</label>
+    <graphicData>
+      <texPath>Items/Apparel/PaddedCuirassOnMap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>100</costStuffCount>
+    <stuffCategories>
+		<li>Fabric</li>
+		<li>Leathery</li>
+		<li MayRequire="kerbinfiber.chronos">WYD_Chitin</li>
+		<li MayRequire="kerbinfiber.chronos">WYD_Padding</li> <!-- Reinforced leather -->
+		<li MayRequire="biomesteam.biomescore">BMT_ChitinStuff</li>
+		<li MayRequire="sarg.rimbees">RB_Waxy</li>
+		<li MayRequire="eltwofour.mantodeanrace">L24_Stuff_MantodeanOrganic</li>
+    </stuffCategories>
+    <statBases>
+		<MarketValue>15</MarketValue>
+      <MaxHitPoints>500</MaxHitPoints>
+      <WorkToMake>4000</WorkToMake>
+      <Mass>5</Mass>
+      <StuffEffectMultiplierArmor>0.75</StuffEffectMultiplierArmor>
+	  <StuffEffectMultiplierInsulation_Cold>0.43</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>1</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>5</EquipDelay>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Items/Apparel/PaddedCuirass/Padded</wornGraphicPath>
+      <layers>
+        <li>Middle</li>
+      </layers>
+      <tags>
+        <li>OrientalLight</li>
+        <li>EgyptianLight</li>
+        <li>MedievalArmorBasic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <recipeMaker>
+      <researchPrerequisite>AR_Project_Light_Armour</researchPrerequisite>
+      <recipeUsers>
+        <!-- This should inherit -->
+        <li>CraftingSpot</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>1</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </thingDef>
+  <thingDef ParentName="OrientArmourMakeableBase">
+    <defName>AR_ScaleCuirass</defName>
+    <description>A light armor made of material organized in layers of scales.</description>
+    <label>scale cuirass armor</label>
+    <graphicData>
+      <texPath>Items/Apparel/ScaleCuirassOnMap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>100</costStuffCount>
+    <stuffCategories>
+		<li>Metallic</li>
+		<li>Stony</li>
+		<li>Woody</li>
+		<!-- Mod Support -->
+		<li MayRequire="Dubwise.Rimefeller">Plastic</li>
+		<li MayRequire="Dubwise.Rimefeller">Composite</li>
+		<li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+		<li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
+		<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+		<li MayRequire="biomesteam.biomescore">BMT_ChitinStuff</li>
+		<li MayRequire="kerbinfiber.chronos">WYD_Chitin</li>
+    </stuffCategories>
+    <statBases>
+		<MarketValue>35</MarketValue>
+      <WorkToMake>14000</WorkToMake>
+      <Mass>10</Mass>
+      <StuffEffectMultiplierArmor>0.7</StuffEffectMultiplierArmor>
+	  <StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>1</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>5</EquipDelay>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Items/Apparel/ScaleCuirass/Scale</wornGraphicPath>
+      <layers>
+        <li>Middle</li>
+      </layers>
+      <tags>
+        <li>OrientalMedium</li>
+        <li>EgyptianMedium</li>
+        <li>MedievalMilitary</li>
+        <li>MedievalArmorDecent</li>
+		<li>PlateArmor</li>
+		<li>PlateArmour</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <recipeMaker>
+      <researchPrerequisite>AR_Project_Chainmail</researchPrerequisite>
+      <recipeUsers>
+        <!-- This should inherit -->
+        <li>TableMachining</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </thingDef>
+  <thingDef ParentName="OrientArmourMakeableBase">
+    <defName>AR_ScaleArmour</defName>
+    <description>Heavy armor laid in such a fashion as to resemble layers of scales. Unexpectedly effective to this day, and resistant to almost all melee weapons and even some bullets!</description>
+    <label>heavy scale armor</label>
+    <graphicData>
+      <texPath>Items/Apparel/ScaleArmourOnMap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>200</costStuffCount>
+    <stuffCategories>
+		<li>Metallic</li>
+		<!-- Mod Support -->
+		<li MayRequire="Dubwise.Rimefeller">Plastic</li>
+		<li MayRequire="Dubwise.Rimefeller">Composite</li>
+		<li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+		<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+		<li MayRequire="biomesteam.biomescore">BMT_ChitinStuff</li>
+    </stuffCategories>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.25</MoveSpeed>
+    </equippedStatOffsets>
+    <statBases>
+      <WorkToMake>19000</WorkToMake>
+      <Mass>12</Mass>
+      <StuffEffectMultiplierArmor>0.75</StuffEffectMultiplierArmor>
+      <!-- By comparison, FLAK armor is 0.7 -->
+	  <StuffEffectMultiplierInsulation_Cold>0.02</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>1</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>10</EquipDelay>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Items/Apparel/ScaleArmour/Scale</wornGraphicPath>
+      <layers>
+        <li>Middle</li>
+      </layers>
+      <tags>
+        <li>OrientalHeavy</li>
+        <li>EgyptianHeavy</li>
+        <li>MedievalMilitary</li>
+        <li>MedievalArmorDecent</li>
+        <li>MedievalArmorElite</li>
+		<li>PrestigeCombatGear</li> <!-- As it exceeds FLAK Armor -->
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <recipeMaker>
+      <researchPrerequisite>AR_Project_Chainmail</researchPrerequisite>
+      <recipeUsers>
+        <!-- This should inherit -->
+        <li>TableMachining</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <comps>
+      <li Class="CompProperties_Biocodable"></li>
+    </comps>
+  </thingDef>
+  <thingDef ParentName="OrientArmourMakeableBase">
+    <defName>AR_VultureArmour</defName>
+	<label>vulture armor</label>
+    <description>Beautiful, eavy armor made of metallic scales and decorated with golden wings. Its protection exceeds that of almost all modern day armor, with the sole exception of Spacer Tech and Ultra Tech protection. The methods of its creation are a closely guarded secret. Gaining the ability to build them will require technology significantly advanced beyond the Egyptians that hold the Vulture Armor's hidden knowledge.</description>
+	<descriptionHyperlinks>
+		<ResearchProjectDef>MultiAnalyzer</ResearchProjectDef>
+	</descriptionHyperlinks>
+    <graphicData>
+      <texPath>Items/Apparel/VultureArmourOnMap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <tradeability>Sellable</tradeability>
+    <costStuffCount>300</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+      <!-- Mod Support -->
+      <li MayRequire="Dubwise.Rimefeller">Plastic</li>
+      <li MayRequire="Dubwise.Rimefeller">Composite</li>
+      <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+    </stuffCategories>
+    <costList>
+      <Gold>30</Gold>
+    </costList>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.25</MoveSpeed>
+      <SocialImpact>0.30</SocialImpact>
+      <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.6</SlaveSuppressionOffset>
+      <Beauty>1</Beauty>
+    </equippedStatOffsets>
+    <statBases>
+      <WorkToMake>30000</WorkToMake>
+      <Mass>6</Mass>
+      <StuffEffectMultiplierArmor>0.85</StuffEffectMultiplierArmor>
+      <!-- By comparison, FLAK Armor is 0.7 and Cataphract Armor is 1 -->
+      <StuffEffectMultiplierInsulation_Heat>1</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>10</EquipDelay>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Legs</li>
+        <li>Arms</li>
+        <li>Feet</li>
+        <li>Neck</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Items/Apparel/VultureArmour/Vulture</wornGraphicPath>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <tags>
+        <li>EgyptianRoyal</li>
+		<li>PrestigeCombatGear</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <recipeMaker>
+		<researchPrerequisites>
+			<li>AR_Project_Chainmail</li>
+			<li>AR_Project_Oriental_Culture</li>
+			<li>MultiAnalyzer</li>
+		</researchPrerequisites>
+      <recipeUsers>
+        <!-- This should be inherited -->
+        <li>TableMachining</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <comps>
+      <li Class="CompProperties_Biocodable"></li>
+    </comps>
+  </thingDef>
+</Defs>

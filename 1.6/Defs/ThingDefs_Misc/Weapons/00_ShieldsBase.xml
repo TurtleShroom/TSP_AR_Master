@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+    <ThingDef Name="Sasha_Roman_BaseShield" ParentName="BaseMeleeWeapon_Blunt_Quality" Abstract="True">
+        <techLevel>Neolithic</techLevel>
+        <thingCategories Inherit="False">
+            <li>VFEC_Shields</li>
+        </thingCategories>
+        <equippedStatOffsets>
+            <ShootingAccuracyPawn>-0.1</ShootingAccuracyPawn>
+            <MeleeHitChance>-1</MeleeHitChance>
+            <MeleeDodgeChance>-1</MeleeDodgeChance>
+        </equippedStatOffsets>
+		<thingClass>VFECore.Apparel_Shield</thingClass>
+		<apparel>
+			<defaultOutfitTags>
+				<li>Roman</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<bodyPartGroups>
+				<li>Hands</li>
+			</bodyPartGroups>
+			<layers>
+				<li>VFEC_OuterShell</li>
+			</layers>
+		<countsAsClothingForNudity>false</countsAsClothingForNudity>
+		<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+		</apparel>
+        <comps>
+            <li>
+                <compClass>CompColorable</compClass>
+            </li>
+        </comps>
+        <equippedAngleOffset>-30</equippedAngleOffset>
+		<costStuffCount>120</costStuffCount>
+        <stuffCategories>
+            <li>Leathery</li>
+			<li>Woody</li>
+        </stuffCategories>
+        <tools>
+            <li>
+                <label>base</label>
+                <capacities>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>centre</label>
+                <labelUsedInLogging>false</labelUsedInLogging>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+
+	<!--
+    <ThingDef ParentName="Roman_BaseShield">
+        <defName>Roman_Scutum</defName>
+        <label>Scutum</label>
+        <description>The famous Roman Shield signaling the arrival of the Legions.</description>
+        <graphicData>
+            <texPath>Things/Pawn/Weapons/Shields/Scutum</texPath>
+            <graphicClass>Graphic_single</graphicClass>
+            <drawSize>0.83</drawSize>
+        </graphicData>
+        <costStuffCount>25</costStuffCount>
+        <costList>
+            <WoodLog>70</WoodLog>
+			<Steel>30</Steel>
+        </costList>
+        <statBases>
+            <MaxHitPoints>120</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+            <ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.65</ArmorRating_Heat>
+            <WorkToMake>3000</WorkToMake>
+            <Mass>2.5</Mass>
+        </statBases>
+        <comps>            
+            <li Class="VFECore.CompProperties_Shield">
+                <shieldTags>
+                    <li>Scutum</li>
+                </shieldTags>
+                <useDeflectMetalEffect>false</useDeflectMetalEffect>
+                <coveredBodyPartGroups>
+                    <li>Neck</li>
+                    <li>Torso</li>
+                    <li>Arms</li>
+                    <li>Hands</li>
+					<li>Legs</li>
+                </coveredBodyPartGroups>
+                <offHandGraphicData>
+                    <texPath>Things/Pawn/Weapons/Shields/Scutum</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <shaderType>CutoutComplex</shaderType>
+                    <drawSize>1.6</drawSize>
+                </offHandGraphicData>
+                <offHandHoldOffset>
+                    <northDefault>
+                        <offset>(0, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </northDefault>
+                    <east>
+                        <offset>(-0.1, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </east>
+                    <south>
+                        <offset>(-0.1, -0.04, 0.2)</offset>
+                    </south>
+                    <west>
+                        <offset>(0.1, 0, 0.2)</offset>
+                    </west>
+                </offHandHoldOffset>
+            </li>
+        </comps>
+    </ThingDef>
+	-->
+	
+	<ApparelLayerDef>
+	  <defName>TSP_Aquila</defName>
+	  <label>Aquila</label>
+	  <drawOrder>450</drawOrder>
+	</ApparelLayerDef>
+	
+            <ThingDef ParentName="RomeShields">
+              <defName>Roman_Standard</defName>
+              <label>Aquilia</label>
+              <description>The Aquilla or eagle standard, the prized possession of the legion in serves with.</description>
+              <thingClass>ThingWithComps</thingClass>
+              <graphicData>
+                <texPath>Things/Pawn/Weapons/Shields/Standard</texPath>
+                <graphicClass>Graphic_single</graphicClass>
+                <drawSize>0.83</drawSize>
+              </graphicData>
+              <statBases>
+                <MarketValue>1000</MarketValue>
+                <Mass>2.5</Mass>
+                <MaxHitPoints>500</MaxHitPoints>
+                <Flammability>1</Flammability>
+                <StuffEffectMultiplierArmor>0.9</StuffEffectMultiplierArmor>
+                <WorkToMake>38000</WorkToMake>
+                <EquipDelay>0.01</EquipDelay>
+                <ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+                <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+                <ArmorRating_Heat>0.65</ArmorRating_Heat>
+              </statBases>
+              <costStuffCount Inherit="False">70</costStuffCount>
+              <stuffCategories Inherit="False">
+                <li>Metallic</li>
+                <li>Woody</li>
+                <li>Stony</li>
+                <!-- Mod support -->
+                <li MayRequire="Dubwise.Rimefeller">Plastic</li>
+                <li MayRequire="Dubwise.Rimefeller">Composite</li>
+                <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+                <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+                <li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
+                <li MayRequire="biomesteam.biomescore">BMT_ChitinStuff</li>
+                <li MayRequire="sarg.rimbees">RB_Waxy</li>
+              </stuffCategories>
+              <costList>
+                <Gold>30</Gold>
+              </costList>
+              <recipeMaker>
+                <recipeUsers Inherit="False">
+                  <li>ElectricSmithy</li>
+                  <li>FueledSmithy</li>
+                  <li>TableMachining</li>
+                </recipeUsers>
+                <skillRequirements>
+                  <Crafting>10</Crafting>
+                </skillRequirements>
+                <researchPrerequisites>
+                  <li>AR_Project_Segmental_Armour</li>
+                  <li>NobleApparel</li>
+                </researchPrerequisites>
+              </recipeMaker>
+              <equipmentType Inherit="False">None</equipmentType>
+              <thingCategories Inherit="False">
+                <li>AR_CategoryShields</li>
+                <li>ApparelNoble</li>
+              </thingCategories>
+              <weaponTags Inherit="False">
+                <li>Aquila</li>
+              </weaponTags>
+        <comps>            
+            <li Class="VFECore.CompProperties_Shield">
+                <shieldTags>
+                    <li>Sasha_RomeStandard</li>
+                </shieldTags>
+                <useDeflectMetalEffect>true</useDeflectMetalEffect>
+                <coveredBodyPartGroups>
+                    <li>Neck</li>
+                    <li>Torso</li>
+                    <li>Arms</li>
+                    <li>Hands</li>
+                </coveredBodyPartGroups>
+                <offHandGraphicData>
+                    <texPath>Things/Pawn/Weapons/Shields/Standard</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <shaderType>CutoutComplex</shaderType>
+                    <drawSize>1.6</drawSize>
+                </offHandGraphicData>
+                <offHandHoldOffset>
+                    <northDefault>
+                        <offset>(0, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </northDefault>
+                    <east>
+                        <offset>(-0.1, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </east>
+                    <south>
+                        <offset>(-0.1, -0.04, 0.2)</offset>
+                    </south>
+                    <west>
+                        <offset>(0.1, 0, 0.2)</offset>
+                    </west>
+                </offHandHoldOffset>
+            </li>
+                <li>
+                  <compClass>CompQuality</compClass>
+                </li>
+                <li Class="CompProperties_Art">
+                  <nameMaker>NamerArtWeaponMelee</nameMaker>
+                  <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+                  <minQualityForArtistic>Awful</minQualityForArtistic>
+                </li>
+                <li Class="CompProperties_Forbiddable"></li>
+                <li>
+                  <compClass>CompEquippable</compClass>
+                </li>
+        </comps>
+    </ThingDef>
+
+  <ThingDef Name="RomeShields" Abstract="True" ParentName="Sasha_Roman_BaseShield">
+    <recipeMaker>
+      <recipeUsers>
+        <li>FueledSmithy</li>
+        <li>ElectricSmithy</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+</Defs>
