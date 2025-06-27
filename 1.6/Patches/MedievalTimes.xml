@@ -25,7 +25,7 @@
               <li>
                 <filter>
                   <thingDefs>
-                    <li>AR_Iron</li>
+                    <li MayRequire="mlie.ancientrimcore">AR_Iron</li>
                   </thingDefs>
                 </filter>
                 <count>10</count>
@@ -33,7 +33,7 @@
               <li>
                 <filter>
                   <thingDefs>
-                    <li>AR_Copper</li>
+                    <li MayRequire="mlie.ancientrimcore">AR_Copper</li>
                   </thingDefs>
                 </filter>
                 <count>1</count>
@@ -49,8 +49,8 @@
             </ingredients>
             <fixedIngredientFilter>
               <thingDefs>
-                <li>AR_Iron</li>
-                <li>AR_Copper</li>
+                <li MayRequire="mlie.ancientrimcore">AR_Iron</li>
+                <li MayRequire="mlie.ancientrimcore">AR_Copper</li>
                 <li>MedTimes_Resource_Coal</li>
               </thingDefs>
             </fixedIngredientFilter>
@@ -76,7 +76,7 @@
               <li>
                 <filter>
                   <thingDefs>
-                    <li>AR_Iron</li>
+                    <li MayRequire="mlie.ancientrimcore">AR_Iron</li>
                   </thingDefs>
                 </filter>
                 <count>50</count>
@@ -84,7 +84,7 @@
               <li>
                 <filter>
                   <thingDefs>
-                    <li>AR_Copper</li>
+                    <li MayRequire="mlie.ancientrimcore">AR_Copper</li>
                   </thingDefs>
                 </filter>
                 <count>5</count>
@@ -100,8 +100,8 @@
             </ingredients>
             <fixedIngredientFilter>
               <thingDefs>
-                <li>AR_Iron</li>
-                <li>AR_Copper</li>
+                <li MayRequire="mlie.ancientrimcore">AR_Iron</li>
+                <li MayRequire="mlie.ancientrimcore">AR_Copper</li>
                 <li>MedTimes_Resource_Coal</li>
               </thingDefs>
             </fixedIngredientFilter>
