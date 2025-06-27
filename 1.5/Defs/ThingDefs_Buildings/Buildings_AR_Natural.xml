@@ -43,6 +43,7 @@
       <isResourceRock>true</isResourceRock>
       <mineableThing>AR_Copper</mineableThing>
       <mineableYield>35</mineableYield>
+	  <mineableDropChance>1</mineableDropChance>
       <mineableScatterCommonality>1.5</mineableScatterCommonality>
       <mineableScatterLumpSizeRange>
         <min>20</min>
@@ -68,6 +69,7 @@
       <isResourceRock>true</isResourceRock>
       <mineableThing>AR_Iron</mineableThing>
       <mineableYield>40</mineableYield>
+	  <mineableDropChance>1</mineableDropChance>
       <mineableScatterCommonality>2</mineableScatterCommonality>
       <mineableScatterLumpSizeRange>
         <min>30</min>
