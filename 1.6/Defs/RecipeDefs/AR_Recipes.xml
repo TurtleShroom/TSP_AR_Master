@@ -33,7 +33,7 @@
       </li>
     </ingredients>
     <products>
-      <AR_Bronze>15</AR_Bronze>
+      <AR_Bronze MayRequire="mlie.ancientrimcore">15</AR_Bronze>
     </products>
     <fixedIngredientFilter>
       <thingDefs>
@@ -181,7 +181,7 @@
       </li>
     </ingredients>
     <products>
-      <AR_Bronze>75</AR_Bronze>
+      <AR_Bronze MayRequire="mlie.ancientrimcore">75</AR_Bronze>
     </products>
     <fixedIngredientFilter>
       <thingDefs>
@@ -278,7 +278,7 @@
       </li>
     </ingredients>
     <products>
-      <AR_Bronze>150</AR_Bronze>
+      <AR_Bronze MayRequire="mlie.ancientrimcore">150</AR_Bronze>
     </products>
     <fixedIngredientFilter>
       <thingDefs>

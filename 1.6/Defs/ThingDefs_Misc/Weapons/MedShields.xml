@@ -17,7 +17,7 @@
     </equippedStatOffsets>
     <equippedAngleOffset>0</equippedAngleOffset>
     <costList>
-      <AR_Bronze>40</AR_Bronze>
+      <AR_Bronze MayRequire="mlie.ancientrimcore">40</AR_Bronze>
       <!-- <WoodLog>120</WoodLog> -->
     </costList>
     <weaponTags>
@@ -397,7 +397,7 @@
     </equippedStatOffsets>
     <equippedAngleOffset>0</equippedAngleOffset>
     <costList>
-      <AR_Bronze>40</AR_Bronze>
+      <AR_Bronze MayRequire="mlie.ancientrimcore">40</AR_Bronze>
       <WoodLog>50</WoodLog>
     </costList>
     <weaponTags>
@@ -502,7 +502,7 @@
     <equippedAngleOffset>0</equippedAngleOffset>
 	<costStuffCount>80</costStuffCount>
     <costList>
-      <AR_Bronze>40</AR_Bronze>
+      <AR_Bronze MayRequire="mlie.ancientrimcore">40</AR_Bronze>
       <!-- <WoodLog>80</WoodLog> -->
     </costList>
     <tools>

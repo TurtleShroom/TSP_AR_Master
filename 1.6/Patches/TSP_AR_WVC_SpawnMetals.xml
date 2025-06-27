@@ -12,14 +12,14 @@
           <defName>TSP_AR_WVC_SpawnIron</defName>
           <label>Convert to Iron (AR)</label>
           <products Inherit="False">
-            <AR_Iron>30</AR_Iron>
+            <AR_Iron MayRequire="mlie.ancientrimcore">30</AR_Iron>
           </products>
         </RecipeDef>
         <RecipeDef MayRequire="mlie.ancientrimcore" ParentName="GirlyWorkRecipeAbstractResources_WVC">
           <defName>TSP_AR_WVC_SpawnCopper</defName>
           <label>Convert to Copper (AR)</label>
           <products Inherit="False">
-            <AR_Copper>30</AR_Copper>
+            <AR_Copper MayRequire="mlie.ancientrimcore">30</AR_Copper>
           </products>
         </RecipeDef>
         <RecipeDef MayRequire="oskarpotocki.vfe.classical" ParentName="GirlyWorkRecipeAbstractResources_WVC">

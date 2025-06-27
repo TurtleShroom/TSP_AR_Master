@@ -223,7 +223,7 @@
     </stuffCategories>
     <costStuffCount>15</costStuffCount>
     <costList>
-      <AR_Copper>5</AR_Copper>
+      <AR_Copper MayRequire="mlie.ancientrimcore">5</AR_Copper>
     </costList>
     <pathCost>13</pathCost>
     <fillPercent>0.30</fillPercent>
