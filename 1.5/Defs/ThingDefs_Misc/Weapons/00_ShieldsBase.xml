@@ -66,7 +66,7 @@
 	  <drawOrder>450</drawOrder>
 	</ApparelLayerDef>
 	
-	<ThingDef ParentName="RomeShields">
+	<ThingDef ParentName="Sasha_Roman_BaseShield">
 		  <defName>Roman_Standard</defName>
 		  <label>Aquilia</label>
 		  <description>The Aquilla or eagle standard, the prized possession of the legion in serves with.</description>
