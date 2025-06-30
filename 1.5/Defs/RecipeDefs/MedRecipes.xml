@@ -177,8 +177,9 @@
       <li>
         <filter>
           <thingDefs>
-            <li>AR_RawGrapes</li>
-            <li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_Plant_Grape</li>
+				<li>AR_RawGrapes</li>
+				<li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_RawGrapes</li>
+				<li MayRequire="oskarpotocki.vfe.medieval2">VFEM2_RawGrapes</li>
           </thingDefs>
         </filter>
         <count>25</count>
@@ -186,10 +187,16 @@
     </ingredients>
     <fixedIngredientFilter>
       <thingDefs>
-        <li>AR_RawGrapes</li>
-        <li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_Plant_Grape</li>
+			<li>AR_RawGrapes</li>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_RawGrapes</li>
+			<li MayRequire="oskarpotocki.vfe.medieval2">VFEM2_RawGrapes</li>
       </thingDefs>
     </fixedIngredientFilter>
+	<defaultIngredientFilter>
+		<thingDefs>
+			<li>AR_RawGrapes</li>
+		</thingDefs>
+	</defaultIngredientFilter>
     <products>
       <AR_Mash>5</AR_Mash>
     </products>

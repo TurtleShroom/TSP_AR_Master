@@ -1,54 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <ThingDef ParentName="BuildingBase">
-    <defName>AR_Pillar</defName>
-    <label>pillar</label>
-    <description>Holds rooves with style.</description>
-    <designationCategory>Structure</designationCategory>
-    <altitudeLayer>Building</altitudeLayer>
-    <passability>PassThroughOnly</passability>
-    <fillPercent>0.25</fillPercent>
-    <pathCost>0</pathCost>
-    <statBases>
-      <MaxHitPoints>200</MaxHitPoints>
-      <WorkToBuild>750</WorkToBuild>
-      <Mass>10</Mass>
-      <Flammability>0.9</Flammability>
-      <Beauty>7</Beauty>
-    </statBases>
-    <stuffCategories>
-      <li>Metallic</li>
-      <li>Woody</li>
-      <li>Stony</li>
-      <!-- Mod support -->
-      <li MayRequire="Dubwise.Rimefeller">Plastic</li>
-      <li MayRequire="Dubwise.Rimefeller">Composite</li>
-      <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
-      <li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
-      <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
-    </stuffCategories>
-    <costStuffCount>15</costStuffCount>
-    <holdsRoof>true</holdsRoof>
-    <canOverlapZones>false</canOverlapZones>
-    <rotatable>false</rotatable>
-    <graphicData>
-      <texPath>Buildings/Structure/Pillar</texPath>
-      <drawSize>(1,2)</drawSize>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shadowData>
-        <volume>(0.4, 0.5, 0.4)</volume>
-        <offset>(0,0,-0.23)</offset>
-      </shadowData>
-      <damageData>
-        <rect>(0.2,0.2,0.6,0.6)</rect>
-      </damageData>
-    </graphicData>
-    <uiIconScale>1.5</uiIconScale>
-    <researchPrerequisites>
-      <li>ComplexFurniture</li>
-      <li>AR_Project_Mediterranean_Culture</li>
-    </researchPrerequisites>
-  </ThingDef>
+	<ThingDef ParentName="BuildingBase">
+		<defName>AR_Pillar</defName>
+		<label>pillar</label>
+		<description>Holds rooves with style.</description>
+		<designationCategory>Structure</designationCategory>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.25</fillPercent>
+		<pathCost>0</pathCost>
+		<statBases>
+		  <MaxHitPoints>200</MaxHitPoints>
+		  <WorkToBuild>750</WorkToBuild>
+		  <Mass>10</Mass>
+		  <Flammability>0.9</Flammability>
+		  <Beauty>7</Beauty>
+		</statBases>
+		<stuffCategories>
+		  <li>Metallic</li>
+		  <li>Woody</li>
+		  <li>Stony</li>
+		  <!-- Mod support -->
+		  <li MayRequire="Dubwise.Rimefeller">Plastic</li>
+		  <li MayRequire="Dubwise.Rimefeller">Composite</li>
+		  <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+		  <li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
+		  <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+		</stuffCategories>
+		<costStuffCount>15</costStuffCount>
+		<holdsRoof>true</holdsRoof>
+		<canOverlapZones>false</canOverlapZones>
+		<rotatable>false</rotatable>
+		<building>
+		  <paintable>true</paintable>
+		  <supportsWallAttachments>true</supportsWallAttachments>
+		</building>
+		<graphicData>
+		  <texPath>Buildings/Structure/Pillar</texPath>
+		  <drawSize>(1,2)</drawSize>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shadowData>
+			<volume>(0.4, 0.5, 0.4)</volume>
+			<offset>(0,0,-0.23)</offset>
+		  </shadowData>
+		  <damageData>
+			<rect>(0.2,0.2,0.6,0.6)</rect>
+		  </damageData>
+		</graphicData>
+		<uiIconScale>1.5</uiIconScale>
+		<researchPrerequisites>
+		  <li>ComplexFurniture</li>
+		  <li>AR_Project_Mediterranean_Culture</li>
+		</researchPrerequisites>
+	</ThingDef>
   <!--========================= Walls =============================-->
   <ThingDef ParentName="BuildingBase" Name="WallRome">
     <defName>AR_RedWall</defName>
@@ -120,6 +124,8 @@
     <building>
       <isInert>true</isInert>
       <ai_chillDestination>false</ai_chillDestination>
+      <paintable>false</paintable>
+	  <supportsWallAttachments>true</supportsWallAttachments>
       <blueprintGraphicData>
         <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
       </blueprintGraphicData>
@@ -135,7 +141,7 @@
       </li>
     </damageMultipliers>
     <researchPrerequisites>
-      <li>ComplexFurniture</li>
+      <!-- <li>ComplexFurniture</li> -->
       <li>AR_Project_Mediterranean_Culture</li>
       <li MayRequire="VanillaExpanded.VFEArt">VFE_Res_Wallpapers</li>
     </researchPrerequisites>

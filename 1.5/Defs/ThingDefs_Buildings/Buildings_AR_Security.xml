@@ -59,6 +59,7 @@
         <li>Barricade</li>
       </relatedBuildCommands>
       <paintable>true</paintable>
+	  <supportsWallAttachments>true</supportsWallAttachments>
     </building>
     <placingDraggableDimensions>1</placingDraggableDimensions>
     <stuffCategories>

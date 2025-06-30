@@ -50,6 +50,8 @@
 		<building>
 			<ai_chillDestination>true</ai_chillDestination>
 			<isInert>true</isInert>
+			<paintable>true</paintable>
+			<supportsWallAttachments>true</supportsWallAttachments>
 		</building>
 		<stuffCategories>
 			<li>Woody</li>
