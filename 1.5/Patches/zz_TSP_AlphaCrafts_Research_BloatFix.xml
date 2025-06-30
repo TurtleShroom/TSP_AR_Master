@@ -104,7 +104,9 @@
 					<success>Always</success>
 					<xpath>/Defs/ThingDef[defName="AC_OilPressWorkshop"]/thingCategories</xpath>
 					<value>
-						<thingCategories Inherit="False"></thingCategories>
+						<thingCategories Inherit="False">
+							<li>BuildingsProduction</li>
+						</thingCategories>
 					</value>
 				</li>
 				
@@ -113,9 +115,16 @@
 					<xpath>/Defs/ThingDef[defName="AC_OilPressWorkshop"]/researchPrerequisites</xpath>
 				</li>
 				
+				<!--
 				<li Class="PatchOperationRemove">
 					<success>Always</success>
 					<xpath>/Defs/ThingDef[defName="AC_OilPressWorkshop"]/designationCategory</xpath>
+				</li>
+				-->
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef[defName="AC_OilPressWorkshop"]/costList</xpath>
 				</li>
 				
 				<li Class="PatchOperationRemove">

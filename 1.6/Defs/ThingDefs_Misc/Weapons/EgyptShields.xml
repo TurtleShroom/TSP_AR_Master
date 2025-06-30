@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ThingDef Name="OrientShields" Abstract="True" ParentName="Sasha_Roman_BaseShield">
+	<thingClass>VEF.Apparels.Apparel_Shield</thingClass>
     <recipeMaker>
       <recipeUsers>
         <li>ElectricSmithy</li>

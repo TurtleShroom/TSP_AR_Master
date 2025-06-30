@@ -230,6 +230,20 @@
       <li>EgyptianBasic</li>
     </apparelTags>
   </PawnKindDef>
+  <modExtensions>
+		<li Class="VFECore.PawnKindDefExtension">
+			<shieldMoney>
+				<min>100</min>
+				<max>500</max>
+			</shieldMoney>
+			<shieldTags>
+				<li>ShieldsOrientLight</li>
+				<li>ShieldsOrientHeavy</li>
+				<li>ShieldAnkhah</li>
+			</shieldTags>
+		</li>
+
+  </modExtensions>
   <PawnKindDef ParentName="EgyptBaseFighter">
     <defName>AR_ESpear</defName>
     <label>light spearman</label>
@@ -250,6 +264,16 @@
         </shieldTags>
       </li>
 	  -->
+		<li Class="VFECore.PawnKindDefExtension">
+			<shieldMoney>
+				<min>300</min>
+				<max>1500</max>
+			</shieldMoney>
+			<shieldTags>
+				<li>ShieldsOrientHeavy</li>
+			</shieldTags>
+		</li>
+
     </modExtensions>
     <apparelMoney>
       <min>350</min>
@@ -284,6 +308,18 @@
       <li>EgyptianLight</li>
       <li>EgyptianBasic</li>
     </apparelTags>
+	<modExtensions>
+		<li Class="VFECore.PawnKindDefExtension">
+			<shieldMoney>
+				<min>10</min>
+				<max>500</max>
+			</shieldMoney>
+			<shieldTags>
+				<li>ShieldsOrientLight</li>
+			</shieldTags>
+		</li>
+
+	</modExtensions>
   </PawnKindDef>
   <PawnKindDef ParentName="EgyptBaseFighter">
     <defName>AR_ESlinger</defName>
@@ -333,6 +369,19 @@
       <li>OrientalMedium</li>
       <li>EgyptianBasic</li>
     </apparelTags>
+	<modExtensions>
+		<li Class="VFECore.PawnKindDefExtension">
+			<shieldMoney>
+				<min>100</min>
+				<max>500</max>
+			</shieldMoney>
+			<shieldTags>
+				<li>ShieldsOrientLight</li>
+				<li>ShieldsOrientHeavy</li>
+				<li>ShieldAnkhah</li>
+			</shieldTags>
+		</li>
+	</modExtensions>
   </PawnKindDef>
   <PawnKindDef ParentName="EgyptBaseFighterB">
     <defName>AR_EHeavy</defName>
@@ -355,6 +404,16 @@
         </shieldTags>
       </li>
 	  -->
+		<li Class="VFECore.PawnKindDefExtension">
+			<shieldMoney>
+				<min>1000</min>
+				<max>2500</max>
+			</shieldMoney>
+			<shieldTags>
+				<li>ShieldsOrientHeavy</li>
+			</shieldTags>
+		</li>
+
     </modExtensions>
     <apparelMoney>
       <min>500</min>
@@ -406,6 +465,16 @@
         </shieldTags>
       </li>
 	  -->
+		<li Class="VFECore.PawnKindDefExtension">
+			<shieldMoney>
+				<min>500</min>
+				<max>1500</max>
+			</shieldMoney>
+			<shieldTags>
+				<li>ShieldsOrientHeavy</li>
+			</shieldTags>
+		</li>
+
     </modExtensions>
   </PawnKindDef>
   <PawnKindDef ParentName="EgyptBaseFighterB">

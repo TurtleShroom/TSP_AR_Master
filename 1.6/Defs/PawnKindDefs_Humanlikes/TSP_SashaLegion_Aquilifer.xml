@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Patch>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="Roman_Standard"]</xpath>
-    <!-- If it does, add this. -->
-    <match Class="PatchOperationAdd">
-      <success>Always</success>
-      <xpath>/Defs</xpath>
-      <value>
-        <PawnKindDef ParentName="RomePatrician">
+
+<Defs>
+	<PawnKindDef ParentName="RomePatrician">
           <defName>TSP_AR_Aquilifer</defName>
           <label>Aqulifer</label>
           <labelPlural>Aquiliferis</labelPlural>
@@ -54,6 +47,7 @@
           <weaponTags Inherit="False">
             <!-- <li>Aquila</li> -->
             <!-- Duplicate of the Shield Tags -->
+			<li>RomeBannerman</li>
             <li>Lance</li>
             <li>LongSword</li>
             <li>RomeOfficer</li>
@@ -110,10 +104,16 @@
               </shieldTags>
             </li>
 			-->
+				<li Class="VFECore.PawnKindDefExtension">
+					<shieldMoney>
+						<min>9300</min>
+						<max>11500</max>
+					</shieldMoney>
+					<shieldTags>
+						<li>Aquila</li>
+						<li>Sasha_RomeStandard</li>
+					</shieldTags>
+				</li>
           </modExtensions>
-        </PawnKindDef>
-      </value>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
-</Patch>
+	</PawnKindDef>
+</Defs>

@@ -128,7 +128,7 @@
     </statBases>
     <size>(1,1)</size>
     <costList>
-      <AR_Bronze MayRequire="mlie.ancientrimcore">200</AR_Bronze>
+      <AR_Bronze>200</AR_Bronze>
     </costList>
     <stuffCategories>
       <li>Stony</li>

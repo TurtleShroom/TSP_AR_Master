@@ -333,6 +333,15 @@
         </shieldTags>
       </li>
 	  -->
+		<li Class="VFECore.PawnKindDefExtension">
+			<shieldMoney>
+				<min>400</min>
+				<max>2500</max>
+			</shieldMoney>
+			<shieldTags>
+				<li>ShieldsRomeLegion</li>
+			</shieldTags>
+		</li>
     </modExtensions>
   </PawnKindDef>
   <PawnKindDef ParentName="PawnRomeBase">
@@ -392,6 +401,15 @@
         </shieldTags>
       </li>
 	  -->
+		<li Class="VFECore.PawnKindDefExtension">
+			<shieldMoney>
+				<min>1100</min>
+				<max>4500</max>
+			</shieldMoney>
+			<shieldTags>
+				<li>ShieldsRomeLegion</li>
+			</shieldTags>
+		</li>
     </modExtensions>
   </PawnKindDef>
   <PawnKindDef ParentName="PawnRomeBase">
@@ -442,8 +460,7 @@
       <li>RomeSoldier</li>
       <li>RomeCivil</li>
     </apparelTags>
-    <apparelRequired>
-    </apparelRequired>
+    <apparelRequired></apparelRequired>
   </PawnKindDef>
   <PawnKindDef ParentName="PawnRomeBase">
     <defName>AR_Triarius</defName>
@@ -510,6 +527,15 @@
         </shieldTags>
       </li>
 	  -->
+		<li Class="VFECore.PawnKindDefExtension">
+			<shieldMoney>
+				<min>2100</min>
+				<max>3500</max>
+			</shieldMoney>
+			<shieldTags>
+				<li>ShieldsRomeLegion</li>
+			</shieldTags>
+		</li>
     </modExtensions>
   </PawnKindDef>
   <PawnKindDef ParentName="PawnRomeBase">
@@ -580,6 +606,16 @@
         </shieldTags>
       </li>
 	  -->
+		<li Class="VFECore.PawnKindDefExtension">
+			<shieldMoney>
+				<min>1100</min>
+				<max>2500</max>
+			</shieldMoney>
+			<shieldTags>
+				<li>ShieldsRomeLegion</li>
+			</shieldTags>
+		</li>
+
     </modExtensions>
   </PawnKindDef>
   <PawnKindDef ParentName="PawnRomeBase">
@@ -660,6 +696,16 @@
         </shieldTags>
       </li>
 	  -->
+		<li Class="VFECore.PawnKindDefExtension">
+			<shieldMoney>
+				<min>1100</min>
+				<max>2500</max>
+			</shieldMoney>
+			<shieldTags>
+				<li>ShieldsRomeLegion</li>
+			</shieldTags>
+		</li>
+
     </modExtensions>
   </PawnKindDef>
   <PawnKindDef ParentName="PawnRomeBase">
@@ -744,6 +790,17 @@
         </shieldTags>
       </li>
 	  -->
+		<li Class="VFECore.PawnKindDefExtension">
+			<shieldMoney>
+				<min>500</min>
+				<max>2500</max>
+			</shieldMoney>
+			<shieldTags>
+				<li>ShieldsGreek</li>
+				<li>ShieldsGreekHeavy</li>
+			</shieldTags>
+		</li>
+
     </modExtensions>
   </PawnKindDef>
   <PawnKindDef ParentName="PawnRomeBase">
@@ -831,6 +888,16 @@
         </shieldTags>
       </li>
 	  -->
+		<li Class="VFECore.PawnKindDefExtension">
+			<shieldMoney>
+				<min>2100</min>
+				<max>4500</max>
+			</shieldMoney>
+			<shieldTags>
+				<li>ShieldsRomeLegion</li>
+			</shieldTags>
+		</li>
+
     </modExtensions>
   </PawnKindDef>
   <PawnKindDef ParentName="RomePatrician">
@@ -973,9 +1040,19 @@
         </shieldTags>
       </li>
 	  -->
+		<li Class="VFECore.PawnKindDefExtension">
+			<shieldMoney>
+				<min>5100</min>
+				<max>10500</max>
+			</shieldMoney>
+			<shieldTags>
+				<li>ShieldsRomeLegion</li>
+			</shieldTags>
+		</li>
     </modExtensions>
     <initialResistanceRange>40~60</initialResistanceRange>
   </PawnKindDef>
+  
   <!--hellenic pawns -->
   <PawnKindDef ParentName="PawnRomeBase">
     <defName>AR_HellenicSword</defName>
@@ -1026,6 +1103,16 @@
         </shieldTags>
       </li>
 	  -->
+		<li Class="VFECore.PawnKindDefExtension">
+			<shieldMoney>
+				<min>1100</min>
+				<max>2500</max>
+			</shieldMoney>
+			<shieldTags>
+				<li>ShieldsGreek</li>
+			</shieldTags>
+		</li>
+
     </modExtensions>
   </PawnKindDef>
   <PawnKindDef ParentName="PawnRomeBase">
@@ -1076,6 +1163,17 @@
         </shieldTags>
       </li>
 	  -->
+		<li Class="VFECore.PawnKindDefExtension">
+			<shieldMoney>
+				<min>1100</min>
+				<max>2500</max>
+			</shieldMoney>
+			<shieldTags>
+				<li>Hoplite</li>
+				<li>ShieldsGreek</li>
+			</shieldTags>
+		</li>
+
     </modExtensions>
   </PawnKindDef>
   <PawnKindDef ParentName="PawnRomeBase">
@@ -1126,6 +1224,17 @@
         </shieldTags>
       </li>
 		-->
+		<li Class="VFECore.PawnKindDefExtension">
+			<shieldMoney>
+				<min>1100</min>
+				<max>2500</max>
+			</shieldMoney>
+			<shieldTags>
+				<li>ShieldsGreek</li>
+				<li>ShieldsGreekHeavy</li>
+			</shieldTags>
+		</li>
+
     </modExtensions>
   </PawnKindDef>
   <PawnKindDef ParentName="PawnRomeBase">
@@ -1178,7 +1287,7 @@
       <li>Macedon</li>
       <li>HellenicHeavy</li>
     </apparelTags>
-    <modExtensions>
+    <modExtensions Inherit="False">
 		<!--
       <li Class="AR_PawnShields.ShieldPawnGeneratorProperties">
         <shieldMoney>
@@ -1190,6 +1299,16 @@
         </shieldTags>
       </li>
 	  -->
+		<li Class="VFECore.PawnKindDefExtension" Inherit="False">
+			<shieldMoney>
+				<min>1100</min>
+				<max>2500</max>
+			</shieldMoney>
+			<shieldTags>
+				<li>ShieldsGreekMacedon</li>
+			</shieldTags>
+		</li>
+
     </modExtensions>
   </PawnKindDef>
   <PawnKindDef ParentName="PawnRomeBase">
@@ -1232,7 +1351,7 @@
     <apparelTags>
       <li>Macedon</li>
     </apparelTags>
-    <modExtensions>
+    <modExtensions Inherit="False">
 		<!--
       <li Class="AR_PawnShields.ShieldPawnGeneratorProperties">
         <shieldMoney>
@@ -1244,6 +1363,16 @@
         </shieldTags>
       </li>
 	  -->
+		<li Class="VFECore.PawnKindDefExtension" Inherit="False">
+			<shieldMoney>
+				<min>1100</min>
+				<max>2500</max>
+			</shieldMoney>
+			<shieldTags>
+				<li>ShieldsGreekMacedon</li>
+			</shieldTags>
+		</li>
+
     </modExtensions>
   </PawnKindDef>
   <PawnKindDef ParentName="PawnRomeBase">
@@ -1326,7 +1455,7 @@
     <apparelRequired>
       <li>AR_Chalmys</li>
     </apparelRequired>
-    <modExtensions>
+    <modExtensions Inherit="False">
 		<!--
       <li Class="AR_PawnShields.ShieldPawnGeneratorProperties">
         <shieldMoney>
@@ -1338,6 +1467,16 @@
         </shieldTags>
       </li>
 	  -->
+		<li Class="VFECore.PawnKindDefExtension" Inherit="False">
+			<shieldMoney>
+				<min>2100</min>
+				<max>10500</max>
+			</shieldMoney>
+			<shieldTags>
+				<li>ShieldsGreekSparta</li>
+			</shieldTags>
+		</li>
+
     </modExtensions>
     <initialWillRange>5~15</initialWillRange>
     <initialResistanceRange>40~50</initialResistanceRange>
@@ -1417,12 +1556,12 @@
 		<li>Praetorian</li>
 		-->
       <li>Toxotes</li>
-	  <li>ShieldsGreekSparta</li>
+	  <!-- <li>ShieldsGreekSparta</li> -->
     </apparelTags>
     <apparelRequired>
       <li>AR_Chalmys</li>
     </apparelRequired>
-    <modExtensions>
+    <modExtensions Inherit="False">
 		<!--
       <li Class="AR_PawnShields.ShieldPawnGeneratorProperties">
         <shieldMoney>
@@ -1434,6 +1573,16 @@
         </shieldTags>
       </li>
 	  -->
+		<li Class="VFECore.PawnKindDefExtension" Inherit="False">
+			<shieldMoney>
+				<min>10100</min>
+				<max>20500</max>
+			</shieldMoney>
+			<shieldTags>
+				<li>ShieldsGreekSparta</li>
+			</shieldTags>
+		</li>
+
     </modExtensions>
   </PawnKindDef>
   <PawnKindDef ParentName="PawnRomeBase">
@@ -1484,6 +1633,16 @@
         </shieldTags>
       </li>
 	  -->
+		<li Class="VFECore.PawnKindDefExtension">
+			<shieldMoney>
+				<min>500</min>
+				<max>1500</max>
+			</shieldMoney>
+			<shieldTags>
+				<li>ShieldsGreekLight</li>
+			</shieldTags>
+		</li>
+
     </modExtensions>
   </PawnKindDef>
   <PawnKindDef ParentName="PawnRomeBase">
@@ -1534,6 +1693,16 @@
         </shieldTags>
       </li>
 	  -->
+		<li Class="VFECore.PawnKindDefExtension">
+			<shieldMoney>
+				<min>10</min>
+				<max>500</max>
+			</shieldMoney>
+			<shieldTags>
+				<li>ShieldsGreekLight</li>
+			</shieldTags>
+		</li>
+
     </modExtensions>
   </PawnKindDef>
   <PawnKindDef ParentName="PawnRomeBase">
@@ -1601,6 +1770,16 @@
         </shieldTags>
       </li>
 	  -->
+		<li Class="VFECore.PawnKindDefExtension">
+			<shieldMoney>
+				<min>1100</min>
+				<max>1500</max>
+			</shieldMoney>
+			<shieldTags>
+				<li>ShieldsGreekLight</li>
+			</shieldTags>
+		</li>
+
     </modExtensions>
   </PawnKindDef>
 </Defs>

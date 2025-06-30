@@ -38,6 +38,20 @@
 							</shieldTags>
 						  </li>
 						  -->
+
+							<li Class="VFECore.PawnKindDefExtension">
+								<shieldMoney>
+									<min>100</min>
+									<max>500</max>
+								</shieldMoney>
+								<shieldTags>
+									<li>ShieldsOrientLight</li>
+									<li>ShieldsOrientHeavy</li>
+									<li>ShieldsNubian</li>
+									<li>ShieldAnkhah</li>
+								</shieldTags>
+							</li>
+
 						</modExtensions>
 				</PawnKindDef>
 				  <PawnKindDef Name="EgyptNoble_InAnkhaZone" ParentName="TSP_Egypt_InAnkhaZone" Abstract="True">

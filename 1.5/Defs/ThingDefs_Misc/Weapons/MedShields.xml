@@ -2,7 +2,7 @@
 
 <Defs>
   <!--0==============================0 Roman 0==============================0 -->
-  <ThingDef ParentName="Sasha_Roman_BaseShield" Name="Scutum" Abstract="true">
+  <ThingDef ParentName="Sasha_Roman_BaseShield" Name="AR_Scutum" Abstract="true">
     <description>The "scales" that make up a turtle's shell are called "scutes", and this is the reason why. A scutum is a rectangular shield known to be used by the Legions of Rome. Its shape is ideal to perform the 'testudo' formation (from where "testudines," meaning "turtle," originates), where the Legionaries create a cube of shields, nearly immune to arrow fire. It is made of three glued layers of wood with a bronze overlay.</description>
     <equipmentType>None</equipmentType>
     <techLevel>Neolithic</techLevel>
@@ -43,17 +43,21 @@
       </li>
     </tools>
     <recipeMaker>
-      <researchPrerequisite>AR_Project_Segmental_Armour</researchPrerequisite>
+      <researchPrerequisites>
+		<li>AR_Project_Segmental_Armour</li>
+	  </researchPrerequisites>
       <skillRequirements>
         <Crafting>5</Crafting>
       </skillRequirements>
     </recipeMaker>
 	<comps>
+			<!--
             <li Class="VFECore.CompProperties_Shield">
                 <shieldTags>
                     <li>ShieldsRomeLegion</li>
+					<li>Scutum</li>
                 </shieldTags>
-                <useDeflectMetalEffect>false</useDeflectMetalEffect>
+                <useDeflectMetalEffect>true</useDeflectMetalEffect>
                 <coveredBodyPartGroups>
                     <li>Neck</li>
                     <li>Torso</li>
@@ -84,9 +88,10 @@
                     </west>
                 </offHandHoldOffset>
             </li>
+			-->
 	</comps>
   </ThingDef>
-  <ThingDef ParentName="Scutum">
+  <ThingDef ParentName="AR_Scutum">
     <defName>AR_ScutumA</defName>
     <label>Scutum (lightning)</label>
     <graphicData>
@@ -158,7 +163,7 @@
             </li>
     </comps>
   </ThingDef>
-  <ThingDef ParentName="Scutum">
+  <ThingDef ParentName="AR_Scutum">
     <defName>AR_ScutumB</defName>
     <label>Scutum (laurel wreath)</label>
     <graphicData>
@@ -230,7 +235,7 @@
 		-->
     </comps>
   </ThingDef>
-  <ThingDef ParentName="Scutum">
+  <ThingDef ParentName="AR_Scutum">
     <defName>AR_ScutumC</defName>
     <label>Scutum (wings)</label>
     <equipmentType>None</equipmentType>
@@ -303,7 +308,7 @@
 		-->
     </comps>
   </ThingDef>
-  <ThingDef ParentName="Scutum">
+  <ThingDef ParentName="AR_Scutum">
     <defName>AR_ScutumD</defName>
     <label>Scutum (testudo)</label>
     <equipmentType>None</equipmentType>
@@ -376,6 +381,65 @@
 		-->
     </comps>
   </ThingDef>
+  
+    <ThingDef ParentName="AR_Scutum">
+        <defName>Roman_Scutum</defName>
+        <label>Scutum</label>
+        <description>The famous Roman Shield signaling the arrival of the Legions.</description>
+        <graphicData>
+            <texPath>Things/Pawn/Weapons/Shields/Scutum</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.83</drawSize>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>120</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+            <ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.65</ArmorRating_Heat>
+            <WorkToMake>3000</WorkToMake>
+            <Mass>2.5</Mass>
+        </statBases>
+        <comps>            
+            <li Class="VFECore.CompProperties_Shield">
+                <shieldTags>
+					<li>ShieldsRomeLegion</li>
+                    <li>Scutum</li>
+                </shieldTags>
+                <useDeflectMetalEffect>true</useDeflectMetalEffect>
+                <coveredBodyPartGroups>
+                    <li>Neck</li>
+                    <li>Torso</li>
+                    <li>Arms</li>
+                    <li>Hands</li>
+					<li>Legs</li>
+                </coveredBodyPartGroups>
+                <offHandGraphicData>
+                    <texPath>Things/Pawn/Weapons/Shields/Scutum</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <shaderType>CutoutComplex</shaderType>
+                    <drawSize>1.6</drawSize>
+                </offHandGraphicData>
+                <offHandHoldOffset>
+                    <northDefault>
+                        <offset>(0, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </northDefault>
+                    <east>
+                        <offset>(-0.1, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </east>
+                    <south>
+                        <offset>(-0.1, -0.04, 0.2)</offset>
+                    </south>
+                    <west>
+                        <offset>(0.1, 0, 0.2)</offset>
+                    </west>
+                </offHandHoldOffset>
+            </li>
+        </comps>
+    </ThingDef>  
+  
   <ThingDef ParentName="RomeShields">
     <defName>AR_Parma</defName>
     <label>Parma</label>
