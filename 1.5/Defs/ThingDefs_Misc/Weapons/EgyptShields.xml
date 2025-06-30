@@ -21,6 +21,7 @@
     <defName>AR_TowerShield</defName>
     <label>tower shield</label>
     <description Inherit="False">A tall and heavy shield. Tower shields are the size of a man and designed to protect its user from all projectiles, covering him from head to toe.</description>
+	<thingClass>VEF.Apparels.Apparel_Shield</thingClass>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
       <texPath>Items/Shields/Tower_south</texPath>
