@@ -85,7 +85,7 @@
                 <filter>
                   <thingDefs>
                     <li MayRequire="mlie.ancientrimcore">AR_Copper</li>
-                    <li MayRequire="TSP.Isengriff.Storytime">ST_Copper</li>
+                    <li MayRequire="TSP.Isengriff.BronzeCopperTin.Split">ST_Copper</li>
                   </thingDefs>
                 </filter>
                 <count>5</count>
@@ -103,7 +103,7 @@
               <thingDefs>
                 <li MayRequire="mlie.ancientrimcore">AR_Iron</li>
                 <li MayRequire="mlie.ancientrimcore">AR_Copper</li>
-                <li MayRequire="TSP.Isengriff.Storytime">ST_Copper</li>
+                <li MayRequire="TSP.Isengriff.BronzeCopperTin.Split">ST_Copper</li>
                 <li>WDCoal</li>
               </thingDefs>
             </fixedIngredientFilter>

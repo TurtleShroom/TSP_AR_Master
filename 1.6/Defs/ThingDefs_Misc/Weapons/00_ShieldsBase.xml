@@ -66,27 +66,28 @@
 	  <drawOrder>450</drawOrder>
 	</ApparelLayerDef>
 	
-	<ThingDef ParentName="RomeShields">
+	<ThingDef ParentName="Sasha_Roman_BaseShield">
 		  <defName>Roman_Standard</defName>
 		  <label>Aquilia</label>
 		  <description>The Aquilla or eagle standard, the prized possession of the legion in serves with.</description>
-		  <thingClass>VEF.Apparels.Apparel_Shield</thingClass>
+		  <thingClass>VFECore.Apparel_Shield</thingClass>
 		  <graphicData>
 			<texPath>Things/Pawn/Weapons/Shields/Standard</texPath>
-			<graphicClass>Graphic_single</graphicClass>
-			<drawSize>0.83</drawSize>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
 		  </graphicData>
 		  <statBases>
 			<MarketValue>1000</MarketValue>
 			<Mass>2.5</Mass>
-			<MaxHitPoints>500</MaxHitPoints>
-			<Flammability>1</Flammability>
-			<StuffEffectMultiplierArmor>0.9</StuffEffectMultiplierArmor>
+			<MaxHitPoints>5500</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<StuffEffectMultiplierArmor>1.05</StuffEffectMultiplierArmor>
 			<WorkToMake>38000</WorkToMake>
 			<EquipDelay>0.01</EquipDelay>
 			<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.65</ArmorRating_Heat>
+			<ArmorRating_Blunt>0.85</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.75</ArmorRating_Heat>
+			<Beauty>14</Beauty>
 		  </statBases>
 		  <costStuffCount Inherit="False">70</costStuffCount>
 		  <stuffCategories Inherit="False">
@@ -120,7 +121,7 @@
 			</researchPrerequisites>
 		  </recipeMaker>
 		  <equipmentType Inherit="False">None</equipmentType>
-		  <thingCategories Inherit="False">
+		  <thingCategories>
 			<li>AR_CategoryShields</li>
 			<li>ApparelNoble</li>
 		  </thingCategories>
@@ -172,9 +173,11 @@
 			  <minQualityForArtistic>Awful</minQualityForArtistic>
 			</li>
 			<li Class="CompProperties_Forbiddable"></li>
+			<!--
 			<li>
 			  <compClass>CompEquippable</compClass>
 			</li>
+			-->
 		</comps>
 	</ThingDef>
 
