@@ -36,7 +36,7 @@
       <li>ShieldsOrientLight</li>
     </weaponTags>
     <comps>
-            <li Class="VFECore.CompProperties_Shield">
+            <li Class="VFECore.CompProperties_Shield" MayRequire="TSP.VFEBustedStupidOskar">
                 <shieldTags>
 					<li>ShieldsGreek</li>
 					<li>ShieldsGreekLight</li>

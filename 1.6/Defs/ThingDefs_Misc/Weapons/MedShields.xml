@@ -4,7 +4,7 @@
   <!--0==============================0 Roman 0==============================0 -->
   <ThingDef ParentName="Sasha_Roman_BaseShield" Name="AR_Scutum" Abstract="true">
     <description>The "scales" that make up a turtle's shell are called "scutes", and this is the reason why. A scutum is a rectangular shield known to be used by the Legions of Rome. Its shape is ideal to perform the 'testudo' formation (from where "testudines," meaning "turtle," originates), where the Legionaries create a cube of shields, nearly immune to arrow fire. It is made of three glued layers of wood with a bronze overlay.</description>
-	<thingClass>VFECore.Apparel_Shield</thingClass>
+	<thingClass>VEF.Apparels.Apparel_Shield</thingClass>
     <equipmentType>None</equipmentType>
     <techLevel>Neolithic</techLevel>
     <statBases>
@@ -53,7 +53,7 @@
     </recipeMaker>
 	<comps>
 			<!--
-            <li Class="VFECore.CompProperties_Shield">
+            <li Class="VFECore.CompProperties_Shield" MayRequire="TSP.VFEBustedStupidOskar">
                 <shieldTags>
                     <li>ShieldsRomeLegion</li>
 					<li>Scutum</li>
@@ -127,7 +127,7 @@
 			<damageToFatigueFactor>0.005</damageToFatigueFactor>
 		</li>
 		-->
-            <li Class="VFECore.CompProperties_Shield">
+            <li Class="VFECore.CompProperties_Shield" MayRequire="TSP.VFEBustedStupidOskar">
                 <shieldTags>
                     <li>ShieldsRomeLegion</li>
                 </shieldTags>
@@ -173,7 +173,7 @@
       <drawSize>(1.2, 1.2)</drawSize>
     </graphicData>
     <comps>
-            <li Class="VFECore.CompProperties_Shield">
+            <li Class="VFECore.CompProperties_Shield" MayRequire="TSP.VFEBustedStupidOskar">
                 <shieldTags>
                     <li>ShieldsRomeLegion</li>
                 </shieldTags>
@@ -246,7 +246,7 @@
       <drawSize>(1.2, 1.2)</drawSize>
     </graphicData>
     <comps>
-            <li Class="VFECore.CompProperties_Shield">
+            <li Class="VFECore.CompProperties_Shield" MayRequire="TSP.VFEBustedStupidOskar">
                 <shieldTags>
                     <li>ShieldsRomeLegion</li>
                 </shieldTags>
@@ -319,7 +319,7 @@
       <drawSize>(1.2, 1.2)</drawSize>
     </graphicData>
     <comps>
-            <li Class="VFECore.CompProperties_Shield">
+            <li Class="VFECore.CompProperties_Shield" MayRequire="TSP.VFEBustedStupidOskar">
                 <shieldTags>
                     <li>ShieldsRomeLegion</li>
                 </shieldTags>
@@ -402,7 +402,7 @@
             <Mass>2.5</Mass>
         </statBases>
         <comps>            
-            <li Class="VFECore.CompProperties_Shield">
+            <li Class="VFECore.CompProperties_Shield" MayRequire="TSP.VFEBustedStupidOskar">
                 <shieldTags>
 					<li>ShieldsRomeLegion</li>
                     <li>Scutum</li>
@@ -488,7 +488,7 @@
       </li>
     </tools>
     <comps>
-            <li Class="VFECore.CompProperties_Shield">
+            <li Class="VFECore.CompProperties_Shield" MayRequire="TSP.VFEBustedStupidOskar">
                 <shieldTags>
                     <li>ShieldsRomeLight</li>
                 </shieldTags>
@@ -601,7 +601,7 @@
       <li>ShieldHoplite</li>
     </weaponTags>
     <comps>
-            <li Class="VFECore.CompProperties_Shield">
+            <li Class="VFECore.CompProperties_Shield" MayRequire="TSP.VFEBustedStupidOskar">
                 <shieldTags>
                     <li>ShieldsGreek</li>
 					<li>ShieldHoplite</li>
@@ -680,7 +680,7 @@
       <li>ShieldsGreekMacedon</li>
     </weaponTags>
     <comps>
-            <li Class="VFECore.CompProperties_Shield">
+            <li Class="VFECore.CompProperties_Shield" MayRequire="TSP.VFEBustedStupidOskar">
                 <shieldTags>
                     <li>ShieldsGreek</li>
 					<li>ShieldHoplite</li>
@@ -759,7 +759,7 @@
       <li>ShieldsGreekSparta</li>
     </weaponTags>
     <comps>
-            <li Class="VFECore.CompProperties_Shield">
+            <li Class="VFECore.CompProperties_Shield" MayRequire="TSP.VFEBustedStupidOskar">
                 <shieldTags>
                     <li>ShieldsGreek</li>
 					<li>ShieldHoplite</li>

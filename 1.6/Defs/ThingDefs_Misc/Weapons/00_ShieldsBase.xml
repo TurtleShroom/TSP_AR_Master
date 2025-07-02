@@ -11,7 +11,7 @@
             <MeleeHitChance>-1</MeleeHitChance>
             <MeleeDodgeChance>-1</MeleeDodgeChance>
         </equippedStatOffsets>
-		<thingClass>VFECore.Apparel_Shield</thingClass>
+		<thingClass>VEF.Apparels.Apparel_Shield</thingClass>
 		<apparel>
 			<defaultOutfitTags>
 				<li>Roman</li>
@@ -70,7 +70,7 @@
 		  <defName>Roman_Standard</defName>
 		  <label>Aquilia</label>
 		  <description>The Aquilla or eagle standard, the prized possession of the legion in serves with.</description>
-		  <thingClass>VFECore.Apparel_Shield</thingClass>
+		  <thingClass>VEF.Apparels.Apparel_Shield</thingClass>
 		  <graphicData>
 			<texPath>Things/Pawn/Weapons/Shields/Standard</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -129,7 +129,7 @@
 			<li>Aquila</li>
 		  </weaponTags>
 		  <comps>
-			<li Class="VFECore.CompProperties_Shield">
+			<li Class="VFECore.CompProperties_Shield" MayRequire="TSP.VFEBustedStupidOskar">
 				<shieldTags>
 					<li>Sasha_RomeStandard</li>
 					<li>Aquilia</li>
@@ -182,7 +182,7 @@
 	</ThingDef>
 
 	<ThingDef Name="RomeShields" Abstract="True" ParentName="Sasha_Roman_BaseShield">
-		<thingClass>VFECore.Apparel_Shield</thingClass>
+		<thingClass>VEF.Apparels.Apparel_Shield</thingClass>
 		<recipeMaker>
 			<recipeUsers>
 				<li>FueledSmithy</li>
