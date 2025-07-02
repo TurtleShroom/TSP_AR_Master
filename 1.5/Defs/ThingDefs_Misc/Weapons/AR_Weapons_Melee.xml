@@ -11,7 +11,7 @@
       </recipeUsers>
     </recipeMaker>
     <weaponClasses>
-      <li>VFEM2_Medieval</li>
+      <li MayRequire="oskarpotocki.vfe.medieval2">VFEM2_Medieval</li>
     </weaponClasses>
   </ThingDef>
   <ThingDef ParentName="BaseMeleeWeapon_Ancient">
