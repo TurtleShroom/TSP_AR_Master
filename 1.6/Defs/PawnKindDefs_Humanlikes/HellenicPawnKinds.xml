@@ -333,7 +333,6 @@
         </shieldTags>
       </li>
 	  -->
-		<!--
 		<li Class="VFECore.PawnKindDefExtension" MayRequire="TSP.VFEBustedStupidOskar">
 			<shieldMoney>
 				<min>400</min>
