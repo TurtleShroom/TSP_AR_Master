@@ -187,8 +187,8 @@
 		<li>Neolithic</li>
 		<li>EgyptDress</li>
       </tags>
-      <gender>Female</gender>
-	  <canBeGeneratedToSatisfyWarmth Inherit="False">true</canBeGeneratedToSatisfyWarmth>
+      <gender Inherit="False">Female</gender>
+	  <canBeGeneratedToSatisfyWarmth Inherit="False">false</canBeGeneratedToSatisfyWarmth> <!-- This is causing male Pawns to spawn with it!! -->
       <defaultOutfitTags>
         <li>Worker</li>
 		<li>Soldier</li>
