@@ -121,6 +121,7 @@
         <li>Soldier</li>
         <li>Slave</li>
       </defaultOutfitTags>
+	  <canBeGeneratedToSatisfyWarmth Inherit="False">false</canBeGeneratedToSatisfyWarmth>
     </apparel>
     <colorGenerator Class="ColorGenerator_Options">
       <options>
