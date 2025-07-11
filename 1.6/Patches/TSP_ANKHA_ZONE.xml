@@ -39,7 +39,7 @@
 						  </li>
 						  -->
 
-							<li Class="VFECore.PawnKindDefExtension" MayRequire="TSP.VFEBustedStupidOskar">
+							<li Class="VEF.Apparels.CompProperties_Shield">
 								<shieldMoney>
 									<min>100</min>
 									<max>500</max>

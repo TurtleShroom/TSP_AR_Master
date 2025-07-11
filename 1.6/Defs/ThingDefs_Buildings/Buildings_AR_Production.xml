@@ -91,7 +91,7 @@
       <li>Smithing</li>
     </researchPrerequisites>
     <modExtensions>
-      <li Class="RecipeInheritance.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+      <li Class="VEF.Buildings.RecipeInheritanceExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
         <inheritRecipesFrom MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
           <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">ElectricSmelter</li>
         </inheritRecipesFrom>

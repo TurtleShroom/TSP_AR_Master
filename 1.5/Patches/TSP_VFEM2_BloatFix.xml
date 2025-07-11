@@ -22,7 +22,6 @@
 							<defName>VFEM2_Palisade</defName>
 							<label>VFEM2 Palisade</label>
 							<description>The Ancient Rim Mod removes the Vanilla Factions Expanded Medieval II Mod's Palisade. If you are seeing this, you are witnessing an error. Please report it to TurtleShroom.</description>
-								<selectable>true</selectable>
 							<statBases>
 									<MarketValue>0</MarketValue>
 									<Beauty>0</Beauty>
@@ -32,6 +31,7 @@
 									<texPath>Things/Building/Linked/Palisade/Palisade_MenuIcon</texPath>
 									<graphicClass>Graphic_Single</graphicClass>
 							</graphicData>
+							<selectable>true</selectable>
 							<filth>
 								<ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
 								<disappearsInDays>0.001~0.05</disappearsInDays>
