@@ -138,7 +138,7 @@
       <li>AR_Project_OliveTree</li>
     </researchPrerequisites>
 	<modExtensions>
-		<li Class="VEF.Buildings.RecipeInheritanceExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+		<li Class="RecipeInheritance.ThingDefExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
 			<inheritRecipesFrom MayRequire="oskarpotocki.vanillafactionsexpanded.core">
 				<li MayRequire="oskarpotocki.vanillafactionsexpanded.core,sarg.alphacrafts">AC_OilPressWorkshop</li>
 			</inheritRecipesFrom>

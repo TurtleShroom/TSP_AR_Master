@@ -231,7 +231,7 @@
     </apparelTags>
   </PawnKindDef>
   <modExtensions>
-		 <li Class="VEF.Pawns.PawnKindDefExtension">
+		<li Class="VFECore.PawnKindDefExtension" MayRequire="TSP.VFEBustedStupidOskar">
 			<shieldMoney>
 				<min>100</min>
 				<max>500</max>
@@ -264,7 +264,7 @@
         </shieldTags>
       </li>
 	  -->
-		 <li Class="VEF.Pawns.PawnKindDefExtension">
+		<li Class="VFECore.PawnKindDefExtension" MayRequire="TSP.VFEBustedStupidOskar">
 			<shieldMoney>
 				<min>300</min>
 				<max>1500</max>
@@ -309,7 +309,7 @@
       <li>EgyptianBasic</li>
     </apparelTags>
 	<modExtensions>
-		 <li Class="VEF.Pawns.PawnKindDefExtension">
+		<li Class="VFECore.PawnKindDefExtension" MayRequire="TSP.VFEBustedStupidOskar">
 			<shieldMoney>
 				<min>10</min>
 				<max>500</max>
@@ -370,7 +370,7 @@
       <li>EgyptianBasic</li>
     </apparelTags>
 	<modExtensions>
-		 <li Class="VEF.Pawns.PawnKindDefExtension">
+		<li Class="VFECore.PawnKindDefExtension" MayRequire="TSP.VFEBustedStupidOskar">
 			<shieldMoney>
 				<min>100</min>
 				<max>500</max>
@@ -404,7 +404,7 @@
         </shieldTags>
       </li>
 	  -->
-		 <li Class="VEF.Pawns.PawnKindDefExtension">
+		<li Class="VFECore.PawnKindDefExtension" MayRequire="TSP.VFEBustedStupidOskar">
 			<shieldMoney>
 				<min>1000</min>
 				<max>2500</max>
@@ -465,7 +465,7 @@
         </shieldTags>
       </li>
 	  -->
-		 <li Class="VEF.Pawns.PawnKindDefExtension">
+		<li Class="VFECore.PawnKindDefExtension" MayRequire="TSP.VFEBustedStupidOskar">
 			<shieldMoney>
 				<min>500</min>
 				<max>1500</max>

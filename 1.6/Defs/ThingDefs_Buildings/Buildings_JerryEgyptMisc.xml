@@ -12,7 +12,7 @@
 		  <texPath>Things/Building/Obelisk/ObeliskBigB</texPath>
 		  <drawSize>(9,9)</drawSize>
 		</graphicData>
-		<size>(2,3)</size>
+		<size>(2,4)</size>
 		<statBases>
 		  <MaxHitPoints>350</MaxHitPoints>
 		  <Beauty>100</Beauty>
@@ -32,7 +32,7 @@
 		  <texPath>Things/Building/Obelisk/ObeliskBigD</texPath>
 		  <drawSize>(9,9)</drawSize>
 		</graphicData>
-		<size>(2,2)</size>
+		<size>(2,4)</size>
 		<statBases>
 		  <MaxHitPoints>350</MaxHitPoints>
 		  <Beauty>100</Beauty>

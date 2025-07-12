@@ -104,7 +104,7 @@
               </shieldTags>
             </li>
 			-->
-				 <li Class="VEF.Pawns.PawnKindDefExtension">
+				<li Class="VFECore.PawnKindDefExtension" MayRequire="TSP.VFEBustedStupidOskar">
 					<shieldMoney>
 						<min>9300</min>
 						<max>11500</max>

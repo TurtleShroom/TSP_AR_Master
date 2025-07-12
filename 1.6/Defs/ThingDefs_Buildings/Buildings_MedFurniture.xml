@@ -437,7 +437,7 @@
     </stuffCategories>
     <costStuffCount>30</costStuffCount>
     <costList>
-      <!-- <AR_OliveOil>10</AR_OliveOil> -->
+      <AR_OliveOil>10</AR_OliveOil>
     </costList>
     <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
     <placeWorkers>
@@ -456,7 +456,7 @@
 			<li>Chemfuel</li>
           </thingDefs>
         </fuelFilter>
-        <initialFuelPercent>0</initialFuelPercent>
+        <initialFuelPercent>1</initialFuelPercent>
         <destroyOnNoFuel>false</destroyOnNoFuel>
       </li>
       <li Class="CompProperties_Glower">

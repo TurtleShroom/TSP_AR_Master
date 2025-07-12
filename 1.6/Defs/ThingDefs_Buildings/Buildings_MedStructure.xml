@@ -137,7 +137,7 @@
       </li>
       <li>
         <damageDef>Flame</damageDef>
-        <multiplier>1.125</multiplier>
+        <multiplier>1.025</multiplier>
       </li>
     </damageMultipliers>
     <researchPrerequisites>
