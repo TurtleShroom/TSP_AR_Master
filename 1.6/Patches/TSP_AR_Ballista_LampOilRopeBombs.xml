@@ -2,7 +2,7 @@
 <Patch>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="Sm_oil_barrel"]</xpath>
+    <xpath>/Defs/ThingDef[defName="Sm_oil_barrel"]/thingCategories</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>

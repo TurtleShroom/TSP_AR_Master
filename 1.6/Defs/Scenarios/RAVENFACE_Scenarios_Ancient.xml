@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <Defs>
   <ScenarioDef Name="RAVENFACE_AncientRim">
     <defName>RAVENFACE_AncientRim</defName>
@@ -10,6 +11,18 @@
         <def>PlayerFaction</def>
         <factionDef>AR_PlayerFaction</factionDef>
       </playerFaction>
+      <surfaceLayer Inherit="False">
+        <def>SurfaceLayerFixed</def>
+        <tag>Surface</tag>
+        <layer>Surface</layer>
+        <settingsDef>Surface</settingsDef>
+        <hide>true</hide>
+        <connections>
+          <Orbit MayRequire="Ludeon.RimWorld.Odyssey">
+            <zoomMode>ZoomOut</zoomMode>
+          </Orbit>
+        </connections>
+      </surfaceLayer>
       <parts>
         <li Class="ScenPart_GameStartDialog">
           <def>GameStartDialog</def>

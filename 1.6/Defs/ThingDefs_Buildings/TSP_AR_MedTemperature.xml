@@ -24,8 +24,7 @@
       <Flammability>0</Flammability>
       <Beauty>7</Beauty>
       <Cleanliness>6.5</Cleanliness>
-      <MarketValue Inherit="False">10</MarketValue>
-      <!-- Lessen wealth calculations -->
+      <MarketValue Inherit="False">7</MarketValue> <!-- Lessen wealth calculations -->
       <MeditationFocusGain MayRequire="arquebus.stagzmerfolk">0.065</MeditationFocusGain>
     </statBases>
     <stuffCategories>
@@ -50,12 +49,14 @@
     <fillPercent>0.33</fillPercent>
     <!-- Bridges over one's head -->
     <coversFloor>false</coversFloor>
-    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <!-- <placingDraggableDimensions>1</placingDraggableDimensions> -->
+	<drawStyleCategory>Foundations</drawStyleCategory>
     <tickerType>Normal</tickerType>
     <rotatable>false</rotatable>
     <selectable>true</selectable>
     <neverMultiSelect>false</neverMultiSelect>
-    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+	<!-- <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded> -->
+    <terrainAffordanceNeeded>Walkable</terrainAffordanceNeeded>
     <holdsRoof>true</holdsRoof>
     <staticSunShadowHeight>1.0</staticSunShadowHeight>
     <blockLight>false</blockLight>
@@ -65,14 +66,18 @@
 	<clearBuildingArea>false</clearBuildingArea>
     <building>
 		<ai_chillDestination>false</ai_chillDestination>
-      <isInert>true</isInert>
-      <isEdifice>false</isEdifice>
-      <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+		<isInert>true</isInert>
+		<isEdifice>false</isEdifice>
+		<canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
     </building>
     <placeWorkers>
       <li>PlaceWorker_CoolerSimple</li>
     </placeWorkers>
     <drawPlaceWorkersWhileSelected>false</drawPlaceWorkersWhileSelected>
+	<!--
+    <destroyEffect>Bridge_Collapse</destroyEffect>
+    <destroyEffectWater>Bridge_CollapseWater</destroyEffectWater>
+	-->
     <comps>
       <li Class="CompProperties_HeatPusher">
         <heatPerSecond>-5</heatPerSecond>
@@ -144,7 +149,7 @@
     <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
     <comps>
       <li Class="CompProperties_Refuelable">
-        <fuelConsumptionRate>10</fuelConsumptionRate>
+        <fuelConsumptionRate>13</fuelConsumptionRate>
         <fuelCapacity>50</fuelCapacity>
         <fuelConsumptionPerTickInRain>0</fuelConsumptionPerTickInRain>
         <!-- RL Hypocausts were literally built under the floor and sealed to avoid water damage -->
@@ -156,7 +161,7 @@
             <li MayRequire="syrchalis.harpy">RawHarpyChilis</li>
           </thingDefs>
         </fuelFilter>
-        <initialFuelPercent>0.4</initialFuelPercent>
+        <initialFuelPercent>0.14</initialFuelPercent>
       </li>
       <li Class="CompProperties_HeatPusher">
         <compClass>CompHeatPusherPowered</compClass>

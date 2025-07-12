@@ -13,7 +13,7 @@
       <linkType>CornerFiller</linkType>
       <linkFlags>
         <li>Wall</li>
-        <li>Rock</li>
+        <!-- <li>Rock</li> -->
       </linkFlags>
       <damageData>
         <cornerTL>Damage/Corner</cornerTL>
@@ -29,9 +29,9 @@
     <uiIconPath>Icon/HieroglyphicWall_MenuIcon</uiIconPath>
     <dominantStyleCategory MayRequire="Sarg.AlphaMemes">AM_Kemetic</dominantStyleCategory>
     <statBases>
-      <MaxHitPoints>350</MaxHitPoints>
+      <MaxHitPoints>400</MaxHitPoints>
       <WorkToBuild>400</WorkToBuild>
-      <Flammability>0.5</Flammability>
+      <Flammability>0.25</Flammability>
       <Beauty>7</Beauty>
       <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">15</StyleDominance>
     </statBases>
@@ -44,7 +44,8 @@
     <castEdgeShadows>true</castEdgeShadows>
     <fillPercent>1</fillPercent>
     <coversFloor>true</coversFloor>
-    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <!-- <placingDraggableDimensions>1</placingDraggableDimensions> -->
+	<drawStyleCategory>Walls</drawStyleCategory>
     <tickerType>Never</tickerType>
     <rotatable>false</rotatable>
     <selectable>true</selectable>
@@ -55,30 +56,39 @@
     <blockLight>true</blockLight>
     <canOverlapZones>false</canOverlapZones>
     <stuffCategories>
-      <li>Metallic</li>
-      <li>Woody</li>
-      <li>Stony</li>
-      <!-- Mod Support -->
-      <li MayRequire="Dubwise.Rimefeller">Plastic</li>
-      <li MayRequire="Dubwise.Rimefeller">Composite</li>
-      <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
-      <li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
-      <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
-      <li MayRequire="taoschagic.igloo">Snowy</li>
+		<li>Metallic</li>
+		<li>Woody</li>
+		<li>Stony</li>
+		<!-- Mod Support -->
+		<li MayRequire="Dubwise.Rimefeller">Plastic</li>
+		<li MayRequire="Dubwise.Rimefeller">Composite</li>
+		<li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+		<li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
+		<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+		<li MayRequire="taoschagic.igloo">Snowy</li>
+		<li MayRequire="biomesteam.biomescore">BMT_ChitinStuff</li>
+		<li MayRequire="sarg.rimbees">RB_Waxy</li>
+		<li MayRequire="kerbinfiber.chronos">WYD_Chitin</li>
+		<li MayRequire="kerbinfiber.chronos">WYD_Padding</li> 
     </stuffCategories>
     <building>
       <isInert>true</isInert>
       <ai_chillDestination>false</ai_chillDestination>
+	  <isWall>true</isWall>
+	  <paintable>false</paintable>
+	  <ai_neverTrashThis>true</ai_neverTrashThis>
       <blueprintGraphicData>
         <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
       </blueprintGraphicData>
       <paintable>true</paintable>
 	  <supportsWallAttachments>true</supportsWallAttachments>
+	  <!-- <isAirtight MayRequire="ludeon.rimworld.odyssey">true</isAirtight> -->
+	  <isStuffableAirtight MayRequire="ludeon.rimworld.odyssey">true</isStuffableAirtight>
     </building>
     <damageMultipliers>
       <li>
         <damageDef>Bomb</damageDef>
-        <multiplier>2</multiplier>
+        <multiplier>1.25</multiplier>
       </li>
     </damageMultipliers>
     <researchPrerequisites Inherit="False">

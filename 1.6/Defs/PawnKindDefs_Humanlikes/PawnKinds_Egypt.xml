@@ -156,7 +156,7 @@
     <maxGenerationAge>75</maxGenerationAge>
     <combatPower>15</combatPower>
     <apparelRequired>
-      <li MayRequire="ludeon.rimworld.ideology">Apparel_Robe</li>
+      <li>Apparel_Robe</li>
 	  <li MayRequire="ludeon.rimworld.ideology">Apparel_HatHood</li>
     </apparelRequired>
     <gearHealthRange>
@@ -188,7 +188,7 @@
     <labelPlural>Nile tradesmen</labelPlural>
     <trader>true</trader>
     <apparelRequired>
-      <li MayRequire="ludeon.rimworld.ideology">Apparel_Robe</li>
+      <li>Apparel_Robe</li>
     </apparelRequired>
     <apparelMoney>
       <min>900</min>
@@ -229,21 +229,22 @@
       <li>EgyptianLight</li>
       <li>EgyptianBasic</li>
     </apparelTags>
-  </PawnKindDef>
-  <modExtensions>
-		<li Class="VFECore.PawnKindDefExtension" MayRequire="TSP.VFEBustedStupidOskar">
-			<shieldMoney>
-				<min>100</min>
-				<max>500</max>
-			</shieldMoney>
-			<shieldTags>
-				<li>ShieldsOrientLight</li>
-				<li>ShieldsOrientHeavy</li>
-				<li>ShieldAnkhah</li>
-			</shieldTags>
-		</li>
+		<modExtensions Inherit="False">
+			<li Class="VEF.Pawns.PawnKindDefExtension">
+				<shieldMoney>
+					<min>100</min>
+					<max>500</max>
+				</shieldMoney>
+				<shieldTags>
+					<li>ShieldsOrientLight</li>
+					<li>ShieldsOrientHeavy</li>
+					<li>ShieldAnkhah</li>
+				</shieldTags>
+			</li>
 
-  </modExtensions>
+		</modExtensions>
+  </PawnKindDef>
+
   <PawnKindDef ParentName="EgyptBaseFighter">
     <defName>AR_ESpear</defName>
     <label>light spearman</label>
@@ -252,7 +253,7 @@
     <weaponTags>
       <li>SpearMen</li>
     </weaponTags>
-    <modExtensions>
+    <modExtensions Inherit="False">
 		<!--
       <li Class="AR_PawnShields.ShieldPawnGeneratorProperties">
         <shieldMoney>
@@ -264,7 +265,7 @@
         </shieldTags>
       </li>
 	  -->
-		<li Class="VFECore.PawnKindDefExtension" MayRequire="TSP.VFEBustedStupidOskar">
+		<li Class="VEF.Pawns.PawnKindDefExtension">
 			<shieldMoney>
 				<min>300</min>
 				<max>1500</max>
@@ -308,8 +309,8 @@
       <li>EgyptianLight</li>
       <li>EgyptianBasic</li>
     </apparelTags>
-	<modExtensions>
-		<li Class="VFECore.PawnKindDefExtension" MayRequire="TSP.VFEBustedStupidOskar">
+	<modExtensions Inherit="False">
+		<li Class="VEF.Pawns.PawnKindDefExtension">
 			<shieldMoney>
 				<min>10</min>
 				<max>500</max>
@@ -369,8 +370,8 @@
       <li>OrientalMedium</li>
       <li>EgyptianBasic</li>
     </apparelTags>
-	<modExtensions>
-		<li Class="VFECore.PawnKindDefExtension" MayRequire="TSP.VFEBustedStupidOskar">
+	<modExtensions Inherit="False">
+		<li Class="VEF.Pawns.PawnKindDefExtension">
 			<shieldMoney>
 				<min>100</min>
 				<max>500</max>
@@ -392,7 +393,7 @@
       <li>EgyptianHeavy</li>
       <li>Lance</li>
     </weaponTags>
-    <modExtensions>
+    <modExtensions Inherit="False">
 		<!--
       <li Class="AR_PawnShields.ShieldPawnGeneratorProperties">
         <shieldMoney>
@@ -404,7 +405,7 @@
         </shieldTags>
       </li>
 	  -->
-		<li Class="VFECore.PawnKindDefExtension" MayRequire="TSP.VFEBustedStupidOskar">
+		<li Class="VEF.Pawns.PawnKindDefExtension">
 			<shieldMoney>
 				<min>1000</min>
 				<max>2500</max>
@@ -453,7 +454,7 @@
       <li>OrientalHeavy</li>
       <li>EgyptianBasic</li>
     </apparelTags>
-    <modExtensions>
+    <modExtensions Inherit="False">
 		<!--
       <li Class="AR_PawnShields.ShieldPawnGeneratorProperties">
         <shieldMoney>
@@ -465,7 +466,7 @@
         </shieldTags>
       </li>
 	  -->
-		<li Class="VFECore.PawnKindDefExtension" MayRequire="TSP.VFEBustedStupidOskar">
+		<li Class="VEF.Pawns.PawnKindDefExtension">
 			<shieldMoney>
 				<min>500</min>
 				<max>1500</max>

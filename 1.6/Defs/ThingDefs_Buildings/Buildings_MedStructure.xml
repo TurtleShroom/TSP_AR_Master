@@ -81,12 +81,16 @@
       </damageData>
     </graphicData>
     <uiIconPath>Icon/RedWall_MenuIcon</uiIconPath>
+		<replaceTags>
+			<li>Wall</li>
+		</replaceTags>
     <statBases>
       <MaxHitPoints>315</MaxHitPoints>
       <WorkToBuild>150</WorkToBuild>
       <Flammability>1</Flammability>
       <Beauty>7</Beauty>
     </statBases>
+	<drawStyleCategory>Walls</drawStyleCategory>
     <costStuffCount>3</costStuffCount>
     <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
     <costList>
@@ -95,11 +99,12 @@
     <altitudeLayer>Building</altitudeLayer>
     <passability>Impassable</passability>
     <blockWind>true</blockWind>
-    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <castEdgeShadows>true</castEdgeShadows>
     <fillPercent>1</fillPercent>
     <coversFloor>true</coversFloor>
-    <placingDraggableDimensions>1</placingDraggableDimensions>
+	<drawStyleCategory>Walls</drawStyleCategory>
+    <!-- <placingDraggableDimensions>1</placingDraggableDimensions> -->
     <tickerType>Never</tickerType>
     <rotatable>false</rotatable>
     <selectable>true</selectable>
@@ -110,22 +115,27 @@
     <blockLight>true</blockLight>
     <canOverlapZones>false</canOverlapZones>
     <stuffCategories>
-      <li>Metallic</li>
-      <li>Woody</li>
-      <li>Stony</li>
-      <!-- Mod support -->
-      <li MayRequire="Dubwise.Rimefeller">Plastic</li>
-      <li MayRequire="Dubwise.Rimefeller">Composite</li>
-      <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
-      <li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
-      <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
-      <li MayRequire="taoschagic.igloo">Snowy</li>
+		<li>Metallic</li>
+		<li>Woody</li>
+		<li>Stony</li>
+		<!-- Mod support -->
+		<li MayRequire="Dubwise.Rimefeller">Plastic</li>
+		<li MayRequire="Dubwise.Rimefeller">Composite</li>
+		<li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+		<li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
+		<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+		<li MayRequire="taoschagic.igloo">Snowy</li>
+		<li MayRequire="biomesteam.biomescore">BMT_ChitinStuff</li>
+		<li MayRequire="sarg.rimbees">RB_Waxy</li>
+		<li MayRequire="kerbinfiber.chronos">WYD_Chitin</li>
+		<li MayRequire="kerbinfiber.chronos">WYD_Padding</li> 
     </stuffCategories>
     <building>
       <isInert>true</isInert>
       <ai_chillDestination>false</ai_chillDestination>
       <paintable>false</paintable>
 	  <supportsWallAttachments>true</supportsWallAttachments>
+	  <isWall>true</isWall>
       <blueprintGraphicData>
         <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
       </blueprintGraphicData>
@@ -137,7 +147,7 @@
       </li>
       <li>
         <damageDef>Flame</damageDef>
-        <multiplier>1.025</multiplier>
+        <multiplier>1.125</multiplier>
       </li>
     </damageMultipliers>
     <researchPrerequisites>
@@ -151,6 +161,7 @@
     <label Inherit="False">green dyed wall</label>
     <graphicData>
       <texPath>Buildings/Structure/GreenWall_Atlas</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <uiIconPath>Icon/GreenWall_MenuIcon</uiIconPath>
   </ThingDef>
@@ -159,6 +170,7 @@
     <label Inherit="False">blue dyed wall</label>
     <graphicData>
       <texPath>Buildings/Structure/BlueWall_Atlas</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <uiIconPath>Icon/BlueWall_MenuIcon</uiIconPath>
   </ThingDef>

@@ -419,7 +419,8 @@
           </researchPrerequisites>
           <leaveResourcesWhenKilled Inherit="False">True</leaveResourcesWhenKilled>
           <!-- Pyramids comes with their own foundations and, in RL, were built on unstable, soft, fine sand. Therefore, the presence of mud or any dirt is meaningless. Sadly, there is no such thing as an "anything but water" category, so this is the closest possible substitute. -->
-          <terrainAffordanceNeeded Inherit="False">Light</terrainAffordanceNeeded>
+          <!-- <terrainAffordanceNeeded Inherit="False">Light</terrainAffordanceNeeded> -->
+		  <terrainAffordanceNeeded>Walkable</terrainAffordanceNeeded>
           <!--
 					<recipeMaker>
 						<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -478,7 +479,7 @@
               </focusTypes>
               <offsets>
                 <li Class="FocusStrengthOffset_GraveFull">
-                  <offset>0.35</offset>
+                  <offset>0.5</offset>
                 </li>
                 <li Class="FocusStrengthOffset_GraveCorpseRelationship">
                   <offset>1</offset>
@@ -495,7 +496,7 @@
                   <!-- <offsetPerBuilding>0.015</offsetPerBuilding> -->
                   <radius>80</radius>
                   <maxBuildings>40</maxBuildings>
-                  <focusPerFullGrave>0.09</focusPerFullGrave>
+                  <focusPerFullGrave>0.14</focusPerFullGrave>
                   <explanationKey>MeditationFocusPerGrave</explanationKey>
                   <explanationKeyAbstract>MeditationFocusPerGraveAbstract</explanationKeyAbstract>
                 </li>
@@ -579,7 +580,7 @@
 						<WorkToBuild>400000</WorkToBuild>
 						<Flammability>0</Flammability>
 						<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">2000</StyleDominance>
-						<MeditationFocusStrength>0.5</MeditationFocusStrength>
+						<MeditationFocusStrength>0.66</MeditationFocusStrength>
 					</statBases>
 					<building>
 						<sowTag>SupportPlantsOnly</sowTag>
@@ -614,7 +615,8 @@
 					</researchPrerequisites>
 					<leaveResourcesWhenKilled Inherit="False">True</leaveResourcesWhenKilled>
 					<!-- Pyramids comes with their own foundations and, in RL, were built on unstable, soft, fine sand. Therefore, the presence of mud or any dirt is meaningless. Sadly, there is no such thing as an "anything but water" category, so this is the closest possible substitute. -->
-					<terrainAffordanceNeeded Inherit="False">Light</terrainAffordanceNeeded>
+					<!-- <terrainAffordanceNeeded Inherit="False">Light</terrainAffordanceNeeded> -->
+					<terrainAffordanceNeeded>Walkable</terrainAffordanceNeeded>
 					<placeWorkers>
 						<li>PlaceWorker_RitualFocusNoArrow</li>
 						<li>PlaceWorker_MeditationOffsetBuildingsNear</li>
@@ -657,7 +659,7 @@
 									<!-- <offsetPerBuilding>0.015</offsetPerBuilding> -->
 									<radius>120</radius>
 									<maxBuildings>80</maxBuildings>
-									<focusPerFullGrave>0.12</focusPerFullGrave>
+									<focusPerFullGrave>0.33</focusPerFullGrave>
 									<explanationKey>MeditationFocusPerGrave</explanationKey>
 									<explanationKeyAbstract>MeditationFocusPerGraveAbstract</explanationKeyAbstract>
 								</li>

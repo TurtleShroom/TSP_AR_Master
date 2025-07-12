@@ -119,12 +119,12 @@
             <thingDef>AR_ClassicalSculpture</thingDef>
             <stuff>BlocksMarble</stuff>
           </li>
-          <li Class="ScenPart_StartingThing_Defined" MayRequire="zal.legionaryequipment">
-            <def MayRequire="zal.legionaryequipment">StartingThing_Defined</def>
-            <thingDef MayRequire="zal.legionaryequipment">Roman_Standard</thingDef>
-            <stuff MayRequire="zal.legionaryequipment">AR_Bronze</stuff>
-            <count MayRequire="zal.legionaryequipment">1</count>
-            <allowRoofed MayRequire="zal.legionaryequipment">True</allowRoofed>
+          <li Class="ScenPart_StartingThing_Defined">
+            <def>StartingThing_Defined</def>
+            <thingDef>Roman_Standard</thingDef>
+            <stuff>AR_Bronze</stuff>
+            <count>1</count>
+            <allowRoofed>True</allowRoofed>
           </li>
           <!-- Scatter some things near player start -->
           <li Class="ScenPart_ScatterThingsNearPlayerStart">
@@ -155,43 +155,43 @@
               <li>VFEC_Camp5</li>
             </chooseFrom>
           </li>
-          <li Class="VFECore.ScenPart_ForcedFactionGoodwill">
+          <li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
             <factionDef>VFEC_CentralRepublic</factionDef>
             <affectStartingGoodwill>True</affectStartingGoodwill>
             <startingGoodwillRange>-75~-100</startingGoodwillRange>
             <def>VFEC_ForcedFactionGoodwill</def>
           </li>
-          <li Class="VFECore.ScenPart_ForcedFactionGoodwill">
+          <li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
             <factionDef>VFEC_WesternRepublic</factionDef>
             <affectStartingGoodwill>True</affectStartingGoodwill>
             <startingGoodwillRange>-75~-100</startingGoodwillRange>
             <def>VFEC_ForcedFactionGoodwill</def>
           </li>
-          <li Class="VFECore.ScenPart_ForcedFactionGoodwill">
+          <li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
             <factionDef>VFEC_EasternRepublic</factionDef>
             <affectStartingGoodwill>True</affectStartingGoodwill>
             <startingGoodwillRange>-75~-100</startingGoodwillRange>
             <def>VFEC_ForcedFactionGoodwill</def>
           </li>
-          <li Class="VFECore.ScenPart_ForcedFactionGoodwill">
+          <li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
             <factionDef>AR_Faction_Rome</factionDef>
             <affectStartingGoodwill>True</affectStartingGoodwill>
             <startingGoodwillRange>-99~-100</startingGoodwillRange>
             <def>VFEC_ForcedFactionGoodwill</def>
           </li>
-          <li Class="VFECore.ScenPart_ForcedFactionGoodwill">
+          <li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
             <factionDef>AR_Faction_Hellas</factionDef>
             <affectStartingGoodwill>True</affectStartingGoodwill>
             <startingGoodwillRange>-75~-100</startingGoodwillRange>
             <def>VFEC_ForcedFactionGoodwill</def>
           </li>
-          <li Class="VFECore.ScenPart_ForcedFactionGoodwill">
+          <li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
             <factionDef>AR_Faction_Sparta</factionDef>
             <affectStartingGoodwill>True</affectStartingGoodwill>
             <startingGoodwillRange>-99~-100</startingGoodwillRange>
             <def>VFEC_ForcedFactionGoodwill</def>
           </li>
-          <li Class="VFECore.ScenPart_ForcedFactionGoodwill">
+          <li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
             <factionDef>HellenesCivil</factionDef>
             <affectStartingGoodwill>True</affectStartingGoodwill>
             <startingGoodwillRange>-99~-100</startingGoodwillRange>
@@ -206,14 +206,14 @@
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
   </Operation>
-  <Operation Class="PatchOperationConditional">
+  <Operation Class="PatchOperationConditional" MayRequire="oskarpotocki.vfe.classical">
     <!-- Dpes this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
+    <xpath MayRequire="oskarpotocki.vfe.classical">/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
     <!-- If it does, do this replacement. -->
-    <match Class="PatchOperationReplace">
-      <success>Always</success>
-      <xpath>/Defs/ScenarioDef[defName="VFEC_NewEmpire"]</xpath>
-      <value>
+    <match Class="PatchOperationReplace" MayRequire="oskarpotocki.vfe.classical">
+      <success MayRequire="oskarpotocki.vfe.classical">Always</success>
+      <xpath MayRequire="oskarpotocki.vfe.classical">/Defs/ScenarioDef[defName="VFEC_NewEmpire"]</xpath>
+      <value MayRequire="oskarpotocki.vfe.classical">
         <ScenarioDef MayRequire="oskarpotocki.vfe.classical">
           <defName>TSP_VFEC_AR_NewEmpire_Substitute</defName>
           <label>Ave You! (New Empire)</label>
@@ -225,6 +225,18 @@
               <def MayRquire="oskarpotocki.vfe.classical">PlayerFaction</def>
               <factionDef MayRequire="oskarpotocki.vfe.classical">VFEC_NewEmpire</factionDef>
             </playerFaction>
+			  <surfaceLayer Inherit="False" MayRequire="oskarpotocki.vfe.classical">
+				<def MayRequire="oskarpotocki.vfe.classical">SurfaceLayerFixed</def>
+				<tag MayRequire="oskarpotocki.vfe.classical">Surface</tag>
+				<layer MayRequire="oskarpotocki.vfe.classical">Surface</layer>
+				<settingsDef MayRequire="oskarpotocki.vfe.classical">Surface</settingsDef>
+				<hide MayRequire="oskarpotocki.vfe.classical">false</hide>
+				<connections MayRequire="oskarpotocki.vfe.classical">
+				  <Orbit MayRequire="Ludeon.RimWorld.Odyssey,oskarpotocki.vfe.classical">
+					<zoomMode MayRequire="Ludeon.RimWorld.Odyssey,oskarpotocki.vfe.classical">ZoomOut</zoomMode>
+				  </Orbit>
+				</connections>
+			  </surfaceLayer>
             <parts MayRequire="oskarpotocki.vfe.classical">
               <!-- Game start dialog -->
               <li Class="ScenPart_GameStartDialog" MayRequire="oskarpotocki.vfe.classical">
@@ -359,7 +371,7 @@ AVE CAESAR!
                 <def>StartingAnimal</def>
                 <animalKind>Horse</animalKind>
                 <count>7</count>
-                <bondToRandomPlayerPawnChance>0.78</bondToRandomPlayerPawnChance>
+                <bondToRandomPlayerPawnChance>1</bondToRandomPlayerPawnChance>
               </li>
               <li Class="KCSG.ScenPart_AddStartingStructure" MayRequire="oskarpotocki.vfe.classical">
                 <def MayRequire="oskarpotocki.vfe.classical">VFEC_AddStartingStructure</def>
@@ -373,7 +385,7 @@ AVE CAESAR!
                   <li>VFEC_Camp5</li>
                 </chooseFrom>
               </li>
-              <li Class="VFECore.ScenPart_ForcedFactionGoodwill">
+              <li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
                 <factionDef>VFEC_CentralRepublic</factionDef>
                 <alwaysHostile>True</alwaysHostile>
                 <affectStartingGoodwill>True</affectStartingGoodwill>
@@ -382,7 +394,7 @@ AVE CAESAR!
                 <naturalGoodwillRange>-100~-99</naturalGoodwillRange>
                 <def>VFEC_ForcedFactionGoodwill</def>
               </li>
-              <li Class="VFECore.ScenPart_ForcedFactionGoodwill">
+              <li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
                 <factionDef>VFEC_WesternRepublic</factionDef>
                 <alwaysHostile>True</alwaysHostile>
                 <affectStartingGoodwill>True</affectStartingGoodwill>
@@ -391,7 +403,7 @@ AVE CAESAR!
                 <naturalGoodwillRange>-100~-99</naturalGoodwillRange>
                 <def>VFEC_ForcedFactionGoodwill</def>
               </li>
-              <li Class="VFECore.ScenPart_ForcedFactionGoodwill">
+              <li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
                 <factionDef>VFEC_EasternRepublic</factionDef>
                 <alwaysHostile>True</alwaysHostile>
                 <affectStartingGoodwill>True</affectStartingGoodwill>
@@ -400,7 +412,7 @@ AVE CAESAR!
                 <naturalGoodwillRange>-100~-99</naturalGoodwillRange>
                 <def>VFEC_ForcedFactionGoodwill</def>
               </li>
-              <li Class="VFECore.ScenPart_ForcedFactionGoodwill">
+              <li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
                 <factionDef>AR_Faction_Rome</factionDef>
                 <alwaysHostile>True</alwaysHostile>
                 <affectStartingGoodwill>True</affectStartingGoodwill>
@@ -409,7 +421,7 @@ AVE CAESAR!
                 <naturalGoodwillRange>-100~-99</naturalGoodwillRange>
                 <def>VFEC_ForcedFactionGoodwill</def>
               </li>
-              <li Class="VFECore.ScenPart_ForcedFactionGoodwill">
+              <li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
                 <factionDef>AR_Faction_Sparta</factionDef>
                 <alwaysHostile>True</alwaysHostile>
                 <affectStartingGoodwill>True</affectStartingGoodwill>
@@ -418,16 +430,18 @@ AVE CAESAR!
                 <naturalGoodwillRange>-100~-99</naturalGoodwillRange>
                 <def>VFEC_ForcedFactionGoodwill</def>
               </li>
-              <li Class="VFECore.ScenPart_ForcedFactionGoodwill">
+              <li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
                 <factionDef>AR_Faction_Hellas</factionDef>
+				<alwaysHostile>False</alwaysHostile>
                 <affectStartingGoodwill>True</affectStartingGoodwill>
                 <startingGoodwillRange>-100~99</startingGoodwillRange>
                 <affectNaturalGoodwill>True</affectNaturalGoodwill>
                 <naturalGoodwillRange>-100~-99</naturalGoodwillRange>
                 <def>VFEC_ForcedFactionGoodwill</def>
               </li>
-              <li Class="VFECore.ScenPart_ForcedFactionGoodwill">
+              <li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
                 <factionDef>AR_Faction_Egypt</factionDef>
+				<alwaysHostile>False</alwaysHostile>
                 <affectStartingGoodwill>True</affectStartingGoodwill>
                 <startingGoodwillRange>-65~-50</startingGoodwillRange>
                 <affectNaturalGoodwill>True</affectNaturalGoodwill>

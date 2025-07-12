@@ -10,6 +10,18 @@
         <def>PlayerFaction</def>
         <factionDef>AR_PlayerFaction</factionDef>
       </playerFaction>
+      <surfaceLayer Inherit="False">
+        <def>SurfaceLayerFixed</def>
+        <tag>Surface</tag>
+        <layer>Surface</layer>
+        <settingsDef>Surface</settingsDef>
+        <hide>true</hide>
+        <connections>
+          <Orbit MayRequire="Ludeon.RimWorld.Odyssey">
+            <zoomMode>ZoomOut</zoomMode>
+          </Orbit>
+        </connections>
+      </surfaceLayer>
       <parts>
         <li Class="ScenPart_GameStartDialog">
           <def>GameStartDialog</def>
@@ -156,14 +168,14 @@ Will your city-state survive at all?</text>
           <incident>TraderCaravanArrival</incident>
           <intervalDays>0.1</intervalDays>
         </li>
-        <li Class="VFECore.ScenPart_ForcedFactionGoodwill" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+        <li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
           <factionDef MayRequire="oskarpotocki.vanillafactionsexpanded.core">AR_Faction_Sparta</factionDef>
           <alwaysHostile MayRequire="oskarpotocki.vanillafactionsexpanded.core">True</alwaysHostile>
           <startingGoodwillRange MayRequire="oskarpotocki.vanillafactionsexpanded.core">-99~-100</startingGoodwillRange>
           <naturalGoodwillRange MayRequire="oskarpotocki.vanillafactionsexpanded.core">-99~-100</naturalGoodwillRange>
           <def MayRequire="oskarpotocki.vanillafactionsexpanded.core">VFEC_ForcedFactionGoodwill</def>
         </li>
-        <li Class="VFECore.ScenPart_ForcedFactionGoodwill" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+        <li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
           <factionDef MayRequire="oskarpotocki.vanillafactionsexpanded.core">AR_Faction_Hellas</factionDef>
           <affectStartingGoodwill MayRequire="oskarpotocki.vanillafactionsexpanded.core">True</affectStartingGoodwill>
           <startingGoodwillRange MayRequire="oskarpotocki.vanillafactionsexpanded.core">76~100</startingGoodwillRange>

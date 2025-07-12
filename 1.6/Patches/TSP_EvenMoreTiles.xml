@@ -3,7 +3,7 @@
 <Patch>
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="ElTwoFour_Leather_MantoHide"]</xpath>
+		<xpath>/Defs/ThingDef[defName="L24_Manto_Carapace"]</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
 			<xpath>/Defs</xpath>
@@ -18,7 +18,7 @@
 					<texturePath MayRequire="eltwofour.mantodeanrace">Floors/roundishnegative</texturePath>
 					<color MayRequire="eltwofour.mantodeanrace">(195,210,150)</color>
 					<costList MayRequire="eltwofour.mantodeanrace">
-						<ElTwoFour_Leather_MantoHide MayRequire="eltwofour.mantodeanrace">25</ElTwoFour_Leather_MantoHide>
+						<L24_Manto_Carapace MayRequire="eltwofour.mantodeanrace">25</L24_Manto_Carapace>
 					</costList>
 				</TerrainDef>
 			</value>
@@ -28,7 +28,7 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="ElTwoFour_MantodeanChitin"]</xpath>
+		<xpath>/Defs/ThingDef[defName="L24_Manto_Chitin"]</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
 			<xpath>/Defs</xpath>
@@ -43,7 +43,32 @@
 					<texturePath MayRequire="eltwofour.mantodeanrace">Floors/roundishnegative</texturePath>
 					<color MayRequire="eltwofour.mantodeanrace">(84,98,62)</color>
 					<costList MayRequire="eltwofour.mantodeanrace">
-						<ElTwoFour_MantodeanChitin MayRequire="eltwofour.mantodeanrace">10</ElTwoFour_MantodeanChitin>
+						<L24_Manto_Chitin MayRequire="eltwofour.mantodeanrace">10</L24_Manto_Chitin>
+					</costList>
+				</TerrainDef>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="L24_Manto_Propolis"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<success>Always</success>
+			<value>
+				<TerrainDef ParentName="RoundMosaikBase" MayRequire="eltwofour.mantodeanrace">
+					<defName MayRequire="eltwofour.mantodeanrace">TSP_AR_Mantodean_Propolis_ChitinA</defName>
+					<label MayRequire="eltwofour.mantodeanrace">roundish Mantodean mosaic C</label>
+					<description>Taking a very long time to lay, the mosaic is the most attractive flooring that can be found in a Roman home. It can also be found in any mansion of other civilized peoples. \n \n		
+					Empire Report: \n
+					Mantodean propolis-stone is a strong and oddly beautiful material. Nothing says "home sweet home" like walking into one's noble manor and stomping on the plunder you took from your enemies. By the Emperor, I hate those bugs.</description>
+					<texturePath MayRequire="eltwofour.mantodeanrace">Floors/roundishnegative</texturePath>
+					<color MayRequire="eltwofour.mantodeanrace">(110,140,75)</color>
+					<costList MayRequire="eltwofour.mantodeanrace">
+						<L24_Manto_Propolis MayRequire="eltwofour.mantodeanrace">10</L24_Manto_Propolis>
 					</costList>
 				</TerrainDef>
 			</value>
@@ -103,13 +128,13 @@
 			<xpath>/Defs</xpath>
 			<success>Always</success>
 			<value>
-				<TerrainDef ParentName="RoundMosaikBase" MayRequire="hrg.asbestos.mod">
-					<defName MayRequire="hrg.asbestos.mod">TSP_AR_Mesothelioma_Mosaik</defName>
-					<label MayRequire="hrg.asbestos.mod">roundish asbestos mosaic</label>
-					<texturePath MayRequire="hrg.asbestos.mod">Floors/roundishnegative</texturePath>
-					<color MayRequire="hrg.asbestos.mod" Inherit="False">(145,157,118)</color>
-					<costList MayRequire="hrg.asbestos.mod">
-						<Asbestos_Tile MayRequire="hrg.asbestos.mod">10</Asbestos_Tile>
+				<TerrainDef ParentName="RoundMosaikBase" MayRequire="TSP.Isengriff.Storytime">
+					<defName MayRequire="TSP.Isengriff.Storytime">TSP_AR_Mesothelioma_Mosaik</defName>
+					<label MayRequire="TSP.Isengriff.Storytime">roundish asbestine mosaic</label>
+					<texturePath MayRequire="TSP.Isengriff.Storytime">Floors/roundishnegative</texturePath>
+					<color MayRequire="TSP.Isengriff.Storytime" Inherit="False">(145,157,118)</color>
+					<costList MayRequire="TSP.Isengriff.Storytime">
+						<Asbestos_Tile MayRequire="TSP.Isengriff.Storytime">10</Asbestos_Tile>
 					</costList>
 				</TerrainDef>
 			</value>
@@ -117,14 +142,14 @@
 		<!-- If the first XPATH does not exist, the original code stands. -->
 	</Operation>
 	
-	<Operation Class="PatchOperationConditional">
+	<Operation Class="PatchOperationConditional" MayRequire="oskarpotocki.vfe.classical">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="TSP_AR_VFE_Mosaik_BloatConcrete"]</xpath>
+		<xpath MayRequire="oskarpotocki.vfe.classical">/Defs/ThingDef[defName="VFEC_BlocksConcrete"]</xpath>
 		<!-- If it does, add this. -->
-		<match Class="PatchOperationAdd">
-			<xpath>/Defs</xpath>
-			<success>Always</success>
-			<value>
+		<match Class="PatchOperationAdd" MayRequire="oskarpotocki.vfe.classical">
+			<xpath MayRequire="oskarpotocki.vfe.classical">/Defs</xpath>
+			<success MayRequire="oskarpotocki.vfe.classical">Always</success>
+			<value MayRequire="oskarpotocki.vfe.classical">
 				<TerrainDef ParentName="RoundMosaikBase" MayRequire="oskarpotocki.vfe.classical">
 					<defName MayRequire="oskarpotocki.vfe.classical">TSP_AR_VFE_Mosaik_BloatConcrete</defName>
 					<label MayRequire="oskarpotocki.vfe.classical">roundish concrete mosaic</label>

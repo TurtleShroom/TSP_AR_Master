@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<!-- Could not resolve cross-reference: No RimWorld.ColorDef named (99,3,48) found to give to Verse.PawnKindDef AR_Trader -->
+	<ColorDef ParentName="StructureColorBase">
+		<defName>TSP_AR_RomanPlum</defName>
+		<label>Roman plum</label>
+		<color>(99, 3, 48)</color>
+	</ColorDef>
+</Defs>

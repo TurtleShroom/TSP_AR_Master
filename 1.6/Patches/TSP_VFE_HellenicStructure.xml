@@ -9,7 +9,7 @@
 			<success>Always</success>
 			<xpath>/Defs/FactionDef[defName="HellenesCivil"]/requiredMemes/li[1]</xpath>
 			<value>
-				<li MayRequire="shavius.classical.flavour,Ludeon.RimWorld.Ideology">Structure_OriginHellenic</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Structure_OriginHellenic</li>
 			</value>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. -->

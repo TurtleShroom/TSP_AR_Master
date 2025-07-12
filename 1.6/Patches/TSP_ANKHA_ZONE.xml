@@ -22,8 +22,9 @@
 						</backstoryCategories>
 						<apparelTags>
 							<li>EgyptianBasic</li>
+							<li>EgyptDress</li>
 						</apparelTags>
-						<modExtensions>
+						<modExtensions Inherit="False">
 							<!--
 						  <li Class="AR_PawnShields.ShieldPawnGeneratorProperties" Inherit="False">
 							<shieldMoney Inherit="False">
@@ -39,7 +40,7 @@
 						  </li>
 						  -->
 
-							<li Class="VFECore.PawnKindDefExtension" MayRequire="TSP.VFEBustedStupidOskar">
+							<li Class="VEF.Pawns.PawnKindDefExtension">
 								<shieldMoney>
 									<min>100</min>
 									<max>500</max>
@@ -219,7 +220,7 @@
 						<apparelRequired>
 							<li>AR_NetDress</li>
 							<li MayRequire="ludeon.rimworld.ideology">Apparel_HatHood</li>
-							<li MayRequire="ludeon.rimworld.ideology">Apparel_Robe</li>
+							<li>Apparel_Robe</li>
 						</apparelRequired>
 						<apparelTags>
 						  <li>EgyptianNoble</li>
@@ -250,7 +251,11 @@
 						  <li>EgyptianNoble</li>
 						  <li>EgyptianAdvanced</li>
 						  <li>EgyptianBasic</li>
+						  <li>EgyptianScribe</li>
 						</apparelTags>
+						<apparelRequired>
+							<li>Apparel_Robe</li>
+						</apparelRequired>
 						<weaponTags>
 						  <li>EgyptianNoble</li>
 						  <li>OrientalMedium</li>

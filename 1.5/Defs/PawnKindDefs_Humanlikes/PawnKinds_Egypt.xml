@@ -156,7 +156,7 @@
     <maxGenerationAge>75</maxGenerationAge>
     <combatPower>15</combatPower>
     <apparelRequired>
-      <li MayRequire="ludeon.rimworld.ideology">Apparel_Robe</li>
+      <li>Apparel_Robe</li>
 	  <li MayRequire="ludeon.rimworld.ideology">Apparel_HatHood</li>
     </apparelRequired>
     <gearHealthRange>
@@ -188,7 +188,7 @@
     <labelPlural>Nile tradesmen</labelPlural>
     <trader>true</trader>
     <apparelRequired>
-      <li MayRequire="ludeon.rimworld.ideology">Apparel_Robe</li>
+      <li>Apparel_Robe</li>
     </apparelRequired>
     <apparelMoney>
       <min>900</min>

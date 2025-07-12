@@ -207,7 +207,7 @@
     <factionLeader>true</factionLeader>
     <isFighter>true</isFighter>
 	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
-	<favoriteColor>(99,3,48)</favoriteColor>
+	<favoriteColor>TSP_AR_RomanPlum</favoriteColor>
     <!-- <fixedGender>Male</fixedGender> -->
     <!-- They may complain about wearing a men's garment, and this is intended, but Senators on the Rim shouldn't neccessarily be all male -->
     <backstoryFiltersOverride>
@@ -333,7 +333,7 @@
         </shieldTags>
       </li>
 	  -->
-		<li Class="VFECore.PawnKindDefExtension" MayRequire="TSP.VFEBustedStupidOskar">
+		<li Class="VEF.Pawns.PawnKindDefExtension">
 			<shieldMoney>
 				<min>400</min>
 				<max>2500</max>
@@ -401,7 +401,7 @@
         </shieldTags>
       </li>
 	  -->
-		<li Class="VFECore.PawnKindDefExtension" MayRequire="TSP.VFEBustedStupidOskar">
+		<li Class="VEF.Pawns.PawnKindDefExtension">
 			<shieldMoney>
 				<min>1100</min>
 				<max>4500</max>
@@ -527,7 +527,7 @@
         </shieldTags>
       </li>
 	  -->
-		<li Class="VFECore.PawnKindDefExtension" MayRequire="TSP.VFEBustedStupidOskar">
+		<li Class="VEF.Pawns.PawnKindDefExtension">
 			<shieldMoney>
 				<min>2100</min>
 				<max>3500</max>
@@ -606,7 +606,7 @@
         </shieldTags>
       </li>
 	  -->
-		<li Class="VFECore.PawnKindDefExtension" MayRequire="TSP.VFEBustedStupidOskar">
+		<li Class="VEF.Pawns.PawnKindDefExtension">
 			<shieldMoney>
 				<min>1100</min>
 				<max>2500</max>
@@ -627,7 +627,7 @@
     <itemQuality>Excellent</itemQuality>
     <maxGenerationAge>50</maxGenerationAge>
     <factionLeader>true</factionLeader>
-	<favoriteColor>(99,3,48)</favoriteColor>
+	<favoriteColor>TSP_AR_RomanPlum</favoriteColor>
     <backstoryFiltersOverride Inherit="False">
       <li>
         <categoriesAdulthood>
@@ -696,7 +696,7 @@
         </shieldTags>
       </li>
 	  -->
-		<li Class="VFECore.PawnKindDefExtension" MayRequire="TSP.VFEBustedStupidOskar">
+		<li Class="VEF.Pawns.PawnKindDefExtension">
 			<shieldMoney>
 				<min>1100</min>
 				<max>2500</max>
@@ -719,7 +719,7 @@
     <minGenerationAge>30</minGenerationAge>
     <maxGenerationAge>65</maxGenerationAge>
     <factionLeader>true</factionLeader>
-	<favoriteColor>(99,3,48)</favoriteColor>
+	<favoriteColor>TSP_AR_RomanPlum</favoriteColor>
     <backstoryFiltersOverride Inherit="False">
       <li>
         <categoriesAdulthood>
@@ -790,7 +790,7 @@
         </shieldTags>
       </li>
 	  -->
-		<li Class="VFECore.PawnKindDefExtension" MayRequire="TSP.VFEBustedStupidOskar">
+		<li Class="VEF.Pawns.PawnKindDefExtension">
 			<shieldMoney>
 				<min>500</min>
 				<max>2500</max>
@@ -814,7 +814,7 @@
     <minGenerationAge>30</minGenerationAge>
     <maxGenerationAge>65</maxGenerationAge>
     <factionLeader>true</factionLeader>
-	<favoriteColor>(99,3,48)</favoriteColor>
+	<favoriteColor>TSP_AR_RomanPlum</favoriteColor>
     <backstoryFiltersOverride Inherit="False" MayRequire="shavius.classical.flavour">
       <li MayRequire="shavius.classical.flavour">
         <categoriesAdulthood MayRequire="shavius.classical.flavour">
@@ -888,7 +888,7 @@
         </shieldTags>
       </li>
 	  -->
-		<li Class="VFECore.PawnKindDefExtension" MayRequire="TSP.VFEBustedStupidOskar">
+		<li Class="VEF.Pawns.PawnKindDefExtension">
 			<shieldMoney>
 				<min>2100</min>
 				<max>4500</max>
@@ -906,7 +906,7 @@
     <labelFemale>Imperatrix</labelFemale>
     <race>Human</race>
     <fixedGender>Male</fixedGender>
-	<favoriteColor>(99,3,48)</favoriteColor>
+	<favoriteColor>TSP_AR_RomanPlum</favoriteColor>
     <backstoryCryptosleepCommonality>0.31</backstoryCryptosleepCommonality>
 	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
     <backstoryFiltersOverride Inherit="False">
@@ -1040,7 +1040,7 @@
         </shieldTags>
       </li>
 	  -->
-		<li Class="VFECore.PawnKindDefExtension" MayRequire="TSP.VFEBustedStupidOskar">
+		<li Class="VEF.Pawns.PawnKindDefExtension">
 			<shieldMoney>
 				<min>5100</min>
 				<max>10500</max>
@@ -1103,7 +1103,7 @@
         </shieldTags>
       </li>
 	  -->
-		<li Class="VFECore.PawnKindDefExtension" MayRequire="TSP.VFEBustedStupidOskar">
+		<li Class="VEF.Pawns.PawnKindDefExtension">
 			<shieldMoney>
 				<min>1100</min>
 				<max>2500</max>
@@ -1163,7 +1163,7 @@
         </shieldTags>
       </li>
 	  -->
-		<li Class="VFECore.PawnKindDefExtension" MayRequire="TSP.VFEBustedStupidOskar">
+		<li Class="VEF.Pawns.PawnKindDefExtension">
 			<shieldMoney>
 				<min>1100</min>
 				<max>2500</max>
@@ -1224,7 +1224,7 @@
         </shieldTags>
       </li>
 		-->
-		<li Class="VFECore.PawnKindDefExtension" MayRequire="TSP.VFEBustedStupidOskar">
+		<li Class="VEF.Pawns.PawnKindDefExtension">
 			<shieldMoney>
 				<min>1100</min>
 				<max>2500</max>
@@ -1299,7 +1299,7 @@
         </shieldTags>
       </li>
 	  -->
-		<li Class="VFECore.PawnKindDefExtension" Inherit="False">
+		<li Class="VEF.Pawns.PawnKindDefExtension">
 			<shieldMoney>
 				<min>1100</min>
 				<max>2500</max>
@@ -1363,7 +1363,7 @@
         </shieldTags>
       </li>
 	  -->
-		<li Class="VFECore.PawnKindDefExtension" Inherit="False">
+		<li Class="VEF.Pawns.PawnKindDefExtension">
 			<shieldMoney>
 				<min>1100</min>
 				<max>2500</max>
@@ -1467,7 +1467,7 @@
         </shieldTags>
       </li>
 	  -->
-		<li Class="VFECore.PawnKindDefExtension" Inherit="False">
+		<li Class="VEF.Pawns.PawnKindDefExtension">
 			<shieldMoney>
 				<min>2100</min>
 				<max>10500</max>
@@ -1573,7 +1573,7 @@
         </shieldTags>
       </li>
 	  -->
-		<li Class="VFECore.PawnKindDefExtension" Inherit="False">
+		<li Class="VEF.Pawns.PawnKindDefExtension">
 			<shieldMoney>
 				<min>10100</min>
 				<max>20500</max>
@@ -1633,7 +1633,7 @@
         </shieldTags>
       </li>
 	  -->
-		<li Class="VFECore.PawnKindDefExtension" MayRequire="TSP.VFEBustedStupidOskar">
+		<li Class="VEF.Pawns.PawnKindDefExtension">
 			<shieldMoney>
 				<min>500</min>
 				<max>1500</max>
@@ -1693,7 +1693,7 @@
         </shieldTags>
       </li>
 	  -->
-		<li Class="VFECore.PawnKindDefExtension" MayRequire="TSP.VFEBustedStupidOskar">
+		<li Class="VEF.Pawns.PawnKindDefExtension">
 			<shieldMoney>
 				<min>10</min>
 				<max>500</max>
@@ -1770,7 +1770,7 @@
         </shieldTags>
       </li>
 	  -->
-		<li Class="VFECore.PawnKindDefExtension" MayRequire="TSP.VFEBustedStupidOskar">
+		<li Class="VEF.Pawns.PawnKindDefExtension">
 			<shieldMoney>
 				<min>1100</min>
 				<max>1500</max>
