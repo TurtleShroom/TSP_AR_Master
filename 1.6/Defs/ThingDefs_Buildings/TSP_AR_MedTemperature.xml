@@ -126,7 +126,18 @@
     <canOverlapZones>false</canOverlapZones>
     <blockLight>false</blockLight>
 	<!-- <blockHeat>false</blockHeat> -->
-    <neverMultiSelect>true</neverMultiSelect>
+    <neverMultiSelect>false</neverMultiSelect>
+    <blockLight>false</blockLight>
+	<blockPlants>true</blockPlants>
+	<blockWind>false</blockWind>
+    <canOverlapZones>true</canOverlapZones>
+	<clearBuildingArea>false</clearBuildingArea>
+    <building>
+		<ai_chillDestination>false</ai_chillDestination>
+		<isInert>true</isInert>
+		<isEdifice>false</isEdifice>
+		<canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+    </building>
     <statBases>
       <MaxHitPoints>5000</MaxHitPoints>
       <WorkToBuild>5000</WorkToBuild>
@@ -157,6 +168,7 @@
           <thingDefs>
             <li>WoodLog</li>
             <li>Chemfuel</li>
+			<li>Hay</li>
             <li MayRequire="sihv.rombones">BoneItem</li>
             <li MayRequire="syrchalis.harpy">RawHarpyChilis</li>
           </thingDefs>

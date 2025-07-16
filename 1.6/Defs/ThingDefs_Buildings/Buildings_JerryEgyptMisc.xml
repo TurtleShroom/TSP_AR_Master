@@ -11,6 +11,7 @@
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <texPath>Things/Building/Obelisk/ObeliskBigB</texPath>
 		  <drawSize>(9,9)</drawSize>
+		  <drawOffset>(0,0,2)</drawOffset>
 		</graphicData>
 		<size>(2,3)</size>
 		<statBases>
@@ -31,6 +32,7 @@
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <texPath>Things/Building/Obelisk/ObeliskBigD</texPath>
 		  <drawSize>(9,9)</drawSize>
+		  <drawOffset>(0,0,2)</drawOffset>
 		</graphicData>
 		<size>(2,2)</size>
 		<statBases>
