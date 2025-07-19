@@ -3,7 +3,7 @@
 <Defs>
 	  <!--Obelisk new-->
 	  
-	   <ThingDef ParentName="ObeliskSAM_Jerry">
+	   <ThingDef ParentName="ObeliskSAM_Jerry_NormalArt">
 		<defName>SAM_ObeliskBig</defName>
 		<label>rectangular Egyptian obelisk</label>
 		<description>A monolithic, rectangular pillar that has strange symbols on it.</description>
@@ -24,7 +24,7 @@
 		<costStuffCount>80</costStuffCount>
 	</ThingDef>
 	  
-	<ThingDef ParentName="ObeliskSAM_Jerry">
+	<ThingDef ParentName="ObeliskSAM_Jerry_NormalArt">
 		<defName>SAM_ObeliskBig_SpouterOfWater</defName>
 		<label>strange Egyptian obelisk</label>
 		<description>A monolithic, rectangular pillar that has strange symbols on it. Viewers get a suspicious feeling that they are being insulted by its writings when they stare at it long enough.</description>
@@ -45,7 +45,7 @@
 		<costStuffCount>80</costStuffCount>
 	</ThingDef>
   
-     <ThingDef ParentName="ObeliskSAM_Jerry">
+     <ThingDef ParentName="ObeliskSAM_Jerry_NormalArt">
 		<defName>Sam_Monolith</defName>
 		<label>Monolith of the Royal Beasts</label>
 		<description>A monolith carved with hieroglyphics that describe forgotten events of the past.</description>
@@ -63,12 +63,13 @@
 		  <Flammability>0</Flammability>
 		</statBases>
 		<costStuffCount>300</costStuffCount>
+		<comps></comps>
 	</ThingDef>
 	
     <ThingDef ParentName="ObeliskSAM_Jerry">
 		<defName>Jerry_statue_small</defName>
 		<label>Jerry of the Flame statue</label>
-		<description>A cute statue of a physically stunning Egyptian deity, apparently named Jery.</description>
+		<description>A cute statue of a physically stunning Egyptian Pharaoh, apparently named Jerry.</description>
 		<graphicData>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <texPath>Things/Building/Obelisk/Jerry</texPath>
@@ -83,12 +84,20 @@
 		  <Flammability>0</Flammability>
 		</statBases>
 		<costStuffCount>100</costStuffCount>
+		<comps>
+			<li Class="CompProperties_Art" Inherit="False">
+				<nameMaker>NamerArtSculpture</nameMaker>
+				<descriptionMaker>ArtDescription_TSP_AR_JerryArt_FLAME</descriptionMaker>
+				<canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+				<minQualityForArtistic>Awful</minQualityForArtistic>
+			</li>
+		</comps>
 	</ThingDef>
   
 	<ThingDef ParentName="ObeliskSAM_Jerry">
 		<defName>Jerry_statue_big</defName>
-		<label>Jerry of the Flame relief</label>
-		<description>A cute, man-sized statue of a physically stunning Egyptian deity, apparently named Jerry.</description>
+		<label>Pharaoh Jerry relief</label>
+		<description>A cute, man-sized statue of a physically stunning Pharaoh deity, apparently named Jerry.</description>
 		<graphicData>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <texPath>Things/Building/Obelisk/Jerry</texPath>
@@ -103,6 +112,14 @@
 		  <Flammability>0</Flammability>
 		</statBases>
 		<costStuffCount>100</costStuffCount>
+			<comps>
+				<li Class="CompProperties_Art" Inherit="False">
+					<nameMaker>NamerArtSculpture</nameMaker>
+					<descriptionMaker>ArtDescription_TSP_AR_JerryArt_FLAME</descriptionMaker>
+					<canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+					<minQualityForArtistic>Awful</minQualityForArtistic>
+				</li>
+			</comps>
 	</ThingDef>
   
   
@@ -124,6 +141,14 @@
 			  <Flammability>0</Flammability>
 			</statBases>
 			<costStuffCount>300</costStuffCount>
+			<comps>
+				<li Class="CompProperties_Art" Inherit="False">
+					<nameMaker>NamerArtSarcophagusPlate</nameMaker>
+					<descriptionMaker>ArtDescription_TSP_AR_JerryArt_SOV</descriptionMaker>
+					<canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+					<minQualityForArtistic>Awful</minQualityForArtistic>
+				</li>
+			</comps>
 		</ThingDef>
   
   
@@ -145,5 +170,13 @@
 			  <Flammability>0</Flammability>
 			</statBases>
 			<costStuffCount>300</costStuffCount>
+			<comps>
+				<li Class="CompProperties_Art" Inherit="False">
+					<nameMaker>NamerArtWeapon</nameMaker>
+					<descriptionMaker>ArtDescription_TSP_AR_JerryArt_WES</descriptionMaker>
+					<canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+					<minQualityForArtistic>Awful</minQualityForArtistic>
+				</li>
+			</comps>
 		</ThingDef>
 </Defs>

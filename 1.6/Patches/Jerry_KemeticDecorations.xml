@@ -41,6 +41,32 @@
 		</value>
 	</Operation>
 	
+	<!-- Aelanna's Model No-Match Detector and Insertion Code -->
+	<!-- Special thanks to Aelanna for straight-up saving me scores of headaches! -->
+	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName="GS_HieroglyphicWall"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="GS_HieroglyphicWall"]</xpath>
+			<success>Always</success>
+			<value>
+				<comps></comps>
+			</value>
+		</nomatch>
+	</Operation>
+	
+	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName="GS_HieroglyphicWall"]/drawStyleCategory</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="GS_HieroglyphicWall"]</xpath>
+			<success>Always</success>
+			<value>
+				<drawStyleCategory>Walls</drawStyleCategory>
+			</value>
+		</nomatch>
+	</Operation>
+	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
 		<xpath>/Defs/TerrainDef[@Name="AM_KemeticTileStoneBase"]/designationCategory</xpath>
@@ -264,13 +290,13 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="GSE_ObeliskBig"]</xpath>
+		<xpath>/Defs/ThingDef[@Name="Obelisk"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="GSE_ObeliskBig"]</xpath>
+			<xpath>/Defs/ThingDef[@Name="Obelisk"]</xpath>
 			<value>
-				<ThingDef Name="Obelisk" ParentName="ObeliskSAM_Jerry" Abstract="True">
+				<ThingDef Name="Obelisk" ParentName="ObeliskSAM_Jerry_NormalArt" Abstract="True">
 					<!--
 					<defName>GSE_ObeliskBig</defName>
 					<label>rectangular Egyptian obelisk</label>
@@ -290,9 +316,8 @@
 					<altitudeLayer>MoteOverhead</altitudeLayer>
 					<passability>Impassable</passability>
 					<pathCost>50</pathCost>
-					<blockWind>false</blockWind>
 					<fillPercent>0.5</fillPercent>
-					<size>(2,4)</size>
+					<size>(3,3)</size>
 					<statBases>
 						<MaxHitPoints>350</MaxHitPoints>
 						<Beauty>100</Beauty>
@@ -309,33 +334,48 @@
 					<rotatable>false</rotatable>
 					<canOverlapZones>false</canOverlapZones>
 					<!--<constructEffect>ConstructMetal</constructEffect>-->
+					<disableImpassableShotOverConfigError>true</disableImpassableShotOverConfigError>
+					<blockLight>false</blockLight>
+					<blockWind>true</blockWind>
 					<designationCategory>Jerry</designationCategory>
 					<researchPrerequisites Inherit="False">
 						<li>AR_Project_Oriental_Culture</li>
 						<li MayRequire="VanillaExpanded.VFEArt">VFE_Res_Obelisk</li>
 					</researchPrerequisites>
 				</ThingDef>
+			</value>
+			<!-- If the first XPATH does not exist, the original code stands. -->
+		</match>
+	</Operation>
 				
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="GSE_ObeliskBig"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="GSE_ObeliskBig"]</xpath>
+			<value>
 				<ThingDef ParentName="Obelisk">
 					<defName>GSE_ObeliskBig</defName>
-					<label>rectangular Egyptian obelisk</label>
-					<description>A monolithic rectangular pillar that has strange symbols on it.</description>
+					<label>Egyptian monolith</label>
+					<description>A monolithic stele structure that has strange symbols on it.</description>
 					<thingClass>Building_Art</thingClass>
 					<drawerType>MapMeshAndRealTime</drawerType>
 					<graphicData>
 						<graphicClass>Graphic_Single</graphicClass>
-						<texPath>Things/Building/Obelisk/ObeliskBig</texPath>
-						<drawSize>(9,9)</drawSize>
+						<texPath>Things/Building/Obelisk/eaeula</texPath>
+						<drawSize>(1.5,3)</drawSize>
 					</graphicData>
 					<altitudeLayer>MoteOverhead</altitudeLayer>
 					<passability>Impassable</passability>
 					<pathCost>50</pathCost>
 					<blockWind>false</blockWind>
-					<fillPercent>0.5</fillPercent>
-					<size>(2,4)</size>
+					<fillPercent>1</fillPercent>
+					<size>(3,3)</size>
 					<statBases>
 						<MaxHitPoints>350</MaxHitPoints>
-						<Beauty>100</Beauty>
+						<Beauty>110</Beauty>
 						<Mass>80</Mass>
 						<WorkToMake>5000</WorkToMake>
 						<Flammability>0</Flammability>
@@ -350,6 +390,7 @@
 					<canOverlapZones>false</canOverlapZones>
 					<!--<constructEffect>ConstructMetal</constructEffect>-->
 					<designationCategory>Jerry</designationCategory>
+					<dominantStyleCategory MayRequire="Sarg.AlphaMemes">AM_Kemetic</dominantStyleCategory>
 					<researchPrerequisites Inherit="False">
 						<li>AR_Project_Oriental_Culture</li>
 						<li MayRequire="VanillaExpanded.VFEArt">VFE_Res_Obelisk</li>
@@ -358,5 +399,16 @@
 			</value>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- DO THE GENTILES KNOW? -->
+		<xpath>/Defs/ThingDef[defName="GS_HieroglyphicWall"]/placingDraggableDimensions</xpath>
+		<!-- If they do, SHUT IT DOWN. -->
+		<match Class="PatchOperationRemove">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="GS_HieroglyphicWall"]/placingDraggableDimensions</xpath>
+		</match>
+		<!-- If the original XPATH does not exist, the original code stands. -->
 	</Operation>
 </Patch>

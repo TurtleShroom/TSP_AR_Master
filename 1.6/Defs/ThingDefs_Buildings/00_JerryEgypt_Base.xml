@@ -45,7 +45,7 @@
 		<canGenerateDefaultDesignator>true</canGenerateDefaultDesignator>
 		<statBases>
 			<StyleDominance MayRequire="Sarg.AlphaMemes">30</StyleDominance>
-			<SellPriceFactor>1.11</SellPriceFactor>
+			<SellPriceFactor>1.25</SellPriceFactor>
 		</statBases>
 		<building>
 			<ai_chillDestination>true</ai_chillDestination>
@@ -73,7 +73,7 @@
 		<researchPrerequisites Inherit="False">
 			<li>AR_Project_Oriental_Culture</li>
 		</researchPrerequisites>
-		<inspectorTabs Inherit="False">
+		<inspectorTabs>
 			<li>ITab_Art</li>
 		</inspectorTabs>
 		<tradeTags>
@@ -88,12 +88,14 @@
 			<li>
 				<compClass>CompQuality</compClass>
 			</li>
+			<!--
 			<li Class="CompProperties_Art">
 				<nameMaker>NamerArtSculpture</nameMaker>
 				<descriptionMaker>ArtDescription_SarcophagusPlate</descriptionMaker>
 				<canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
 				<minQualityForArtistic>Awful</minQualityForArtistic>
 			</li>
+			-->
 			<li Class="CompProperties_MeditationFocus">
 				<statDef>MeditationFocusStrength</statDef>
 				<focusTypes>
@@ -157,6 +159,18 @@
 				</plantsToNotOverwrite>
 			</li>
 			<li Class="CompProperties_Styleable"></li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef Name="ObeliskSAM_Jerry_NormalArt" ParentName="ObeliskSAM_Jerry" Abstract="True">
+		<thingClass>Building_Art</thingClass>
+		<comps>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtSarcophagusPlate</nameMaker>
+				<descriptionMaker>ArtDescription_SarcophagusPlate</descriptionMaker>
+				<canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+				<minQualityForArtistic>Awful</minQualityForArtistic>
+			</li>
 		</comps>
 	</ThingDef>
 </Defs>

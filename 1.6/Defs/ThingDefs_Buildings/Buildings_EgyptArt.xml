@@ -239,7 +239,7 @@
     </graphicData>
     <dominantStyleCategory MayRequire="Sarg.AlphaMemes">AM_Kemetic</dominantStyleCategory>
     <altitudeLayer>MoteOverhead</altitudeLayer>
-    <size>(1,2)</size>
+    <size>(2,1)</size>
     <fillPercent>1</fillPercent>
     <rotatable>true</rotatable>
     <canOverlapZones>false</canOverlapZones>

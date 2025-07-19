@@ -38,15 +38,35 @@
     <defName>NamerFactionEgypt</defName>
     <rulePack>
       <rulesStrings>
-        <li>name-> Kemet</li>
-        <li>name-> Aegyptus</li>
-        <li>name-> Pharaonic Empire</li>
-        <li>name-> Black Lands</li>
-        <li>name-> Egypt</li>
-        <li>name-> Ju Ahet</li>
-        <li>name-> Ptolomey Land</li>
-        <li>name-> Thirty-Fifth Dynasty</li>
-        <li>name-> Thirty-Fifth Dynasty of Egypt</li>
+        <li>name->Kemet</li>
+        <li>name->Aegyptus</li>
+        <li>name->Pharaonic Empire</li>
+        <li>name->Black Lands</li>
+        <li>name->Egypt</li>
+        <li>name->Ju Ahet</li>
+        <li>name->Ptolomey Land</li>
+        <li>name->Thirty-Fifth Dynasty of Egypt</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>NamerFactionEgyptReference</defName>
+	<include>
+		<li>NamerFactionEgypt</li>
+	</include>
+    <rulePack>
+      <rulesStrings>
+        <li>NamerFactionEgypt->Kemet</li>
+        <li>NamerFactionEgypt->Aegyptus</li>
+        <li>NamerFactionEgypt->the Pharaonic Empire</li>
+        <li>NamerFactionEgypt->the Black Lands</li>
+        <li>NamerFactionEgypt->Egypt</li>
+        <li>NamerFactionEgypt->Ju Ahet</li>
+        <li>NamerFactionEgypt->Ptolomey Land</li>
+        <li>NamerFactionEgypt->the Thirty-Fifth Dynasty of Egypt</li>
+		<li>NamerFactionEgypt->Ancient Egypt</li>
+		<li>NamerFactionEgypt(p=0.05)-> Jerry's Domain</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>

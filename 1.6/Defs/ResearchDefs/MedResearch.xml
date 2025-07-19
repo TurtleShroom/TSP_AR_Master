@@ -53,6 +53,7 @@
       <li>EgyptStart</li>
 	  <li>LowHellenicStart</li>
       <li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
+	  <li MayRequire="TSP.Isengriff.Storytime">TSP_GnomeStart</li>
     </tags>
     <techLevel>Neolithic</techLevel>
     <tab>AR_ResearchTab</tab>
@@ -71,6 +72,7 @@
       <li>TribalStart</li>
 	  <li>LowHellenicStart</li>
       <li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
+	  <li MayRequire="TSP.Isengriff.Storytime">TSP_GnomeStart</li>
     </tags>
     <techLevel>Neolithic</techLevel>
     <tab>AR_ResearchTab</tab>
