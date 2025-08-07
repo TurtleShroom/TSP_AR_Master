@@ -28,7 +28,7 @@
     <techLevel>Neolithic</techLevel>
     <tags>
       <li>ClassicStart</li>
-      <li>RomanStart</li>
+      <li MayRequire="mlie.ancientrimcore">RomanStart</li>
       <li>EgyptStart</li>
       <li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
       <li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_MedievalStart</li>
@@ -52,8 +52,8 @@
       <li>ClassicStart</li>
       <li>EgyptStart</li>
       <li>GaulStart</li>
-      <li>RomanStart</li>
-	  <li>LowHellenicStart</li>
+      <li MayRequire="mlie.ancientrimcore">RomanStart</li>
+	  <li MayRequire="mlie.ancientrimcore">LowHellenicStart</li>
       <li MayRequire="morishep.tarojun.onioftherim">OotR_OniStart</li>
       <li MayRequire="sz.tw.new.guohun">SZ_Start</li>
       <li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
@@ -171,7 +171,7 @@
       <li MayRequire="sz.tw.new.guohun">SZ_Start</li>
       <li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_MedievalStart</li>
       <li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
-      <li>RomanStart</li>
+      <li MayRequire="mlie.ancientrimcore">RomanStart</li>
     </tags>
     <tab>AR_ResearchTab</tab>
     <researchViewX>4</researchViewX>
@@ -207,7 +207,7 @@
     <tags>
       <li>ClassicStart</li>
       <li>TribalStart</li>
-      <li>RomanStart</li>
+      <li MayRequire="mlie.ancientrimcore">RomanStart</li>
       <li>EgyptStart</li>
       <li>GaulStart</li>
       <li MayRequire="sz.tw.new.guohun">SZ_Start</li>

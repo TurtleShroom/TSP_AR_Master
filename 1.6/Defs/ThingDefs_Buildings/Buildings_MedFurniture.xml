@@ -399,7 +399,8 @@
       <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
     </building>
     <researchPrerequisites>
-      <li>AR_Project_OliveTree</li>
+      <!-- <li>AR_Project_OliveTree</li> -->
+	  <li>AR_Project_Mediterranean_Culture</li>
     </researchPrerequisites>
     <description>A simple Lamp. Burns oil to work.</description>
     <category>Building</category>

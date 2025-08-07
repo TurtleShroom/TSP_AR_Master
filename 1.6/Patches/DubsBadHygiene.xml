@@ -6,14 +6,55 @@
     <match Class="PatchOperationSequence">
       <success>Always</success>
       <operations>
-        <li Class="PatchOperationAdd">
-          <xpath>Defs/ThingDef[defName = "AR_1x2Fountain"  or defName = "AR_2x2Fountain"]/comps</xpath>
-          <value>
-            <li Class="DubsBadHygiene.CompProperties_Pipe">
-              <mode>Sewage</mode>
-            </li>
-            <li Class="CompProperties_Forbiddable" />
-          </value>
+        <li Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName = "AR_1x2Fountain"  or defName = "AR_2x2Fountain"]/comps</xpath>
+			<value>
+				<comps Inherit="False">
+					<li>
+						<compClass>CompQuality</compClass>
+					</li>
+					<li Class="CompProperties_HeatPusher">
+						<heatPerSecond>-20</heatPerSecond>
+						<heatPushMinTemperature>26</heatPushMinTemperature>
+					</li>
+					<li Class="DubsBadHygiene.CompProperties_Pipe">
+						<mode>Sewage</mode>
+					</li>
+					<li Class="CompProperties_Forbiddable"></li>
+					<li Class="CompProperties_Art">
+						<nameMaker>NamerArtFurniture</nameMaker>
+						<descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
+						<minQualityForArtistic>Awful</minQualityForArtistic>
+						<canBeEnjoyedAsArt>false</canBeEnjoyedAsArt> <!-- Causes error between Joy Job and Joy Kind, disabled -->
+					</li>
+					<li>
+						<compClass>CompGatherSpot</compClass>
+					</li>
+					<li Class="CompProperties_MeditationFocus">
+						<statDef>MeditationFocusStrength</statDef>
+						<focusTypes>
+							<li>Artistic</li>
+							<li>Dignified</li>
+							<li MayRequire="arquebus.stagzmerfolk">Stagz_Water</li>
+						</focusTypes>
+						<offsets>
+							<li Class="FocusStrengthOffset_Quality">
+								<curve>
+									<points>
+										<li>(0,0.1)</li> <!-- awful -->
+										<li>(1,0.15)</li> <!-- poor -->
+										<li>(2,0.21)</li> <!-- normal -->
+										<li>(3,0.25)</li> <!-- good -->
+										<li>(4,0.28)</li> <!-- excellent -->
+										<li>(5,0.3)</li> <!-- masterwork -->
+										<li>(6,0.38)</li> <!-- legendary -->
+									</points>
+								</curve>
+							</li>
+						</offsets>
+					</li>
+				</comps>
+			</value>
         </li>
         <li Class="PatchOperationReplace">
           <xpath>Defs/ThingDef[defName = "AR_1x2Fountain" or defName = "AR_2x2Fountain"]/thingClass</xpath>
@@ -64,12 +105,12 @@
 	<!-- Aelanna's Model No-Match Detector and Insertion Code -->
 	<!-- Special thanks to Aelanna for straight-up saving me scores of headaches! -->
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
-	<Operation Class="PatchOperationConditional" MayRequire="dubwise.dubsbadhygiene">
-		<xpath MayRequire="dubwise.dubsbadhygiene">/Defs/ResearchProjectDef[defName="Plumbing"]/prerequisites</xpath>
-		<nomatch Class="PatchOperationAdd" MayRequire="dubwise.dubsbadhygiene">
-			<xpath MayRequire="dubwise.dubsbadhygiene">/Defs/ResearchProjectDef[defName="Plumbing"]</xpath>
-			<success MayRequire="dubwise.dubsbadhygiene">Always</success>
-			<value MayRequire="dubwise.dubsbadhygiene">
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ResearchProjectDef[defName="Plumbing"]/prerequisites</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ResearchProjectDef[defName="Plumbing"]</xpath>
+			<success>Always</success>
+			<value>
 				<prerequisites></prerequisites>
 			</value>
 		</nomatch>
@@ -93,8 +134,8 @@
 	  <success>Always</success>
       <value>
         <!-- <li>ClassicStart</li> -->
-        <li>RomanStart</li>
-		<li>LowHellenicStart</li>
+        <li MayRequire="mlie.ancientrimcore">RomanStart</li>
+		<li MayRequire="mlie.ancientrimcore">LowHellenicStart</li>
         <li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
         <li MayRequire="sz.tw.new.guohun">SZ_Start</li>
         <li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_MedievalStart</li>
@@ -109,26 +150,30 @@
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ResearchProjectDef[defName="AR_Project_Water_Cooling"]/prerequisites</xpath>
+	  <success>Always</success>
       <value>
         <prerequisites>
-          <li>Plumbing</li>
+          <li MayRequire="dubwise.dubsbadhygiene">Plumbing</li>
           <li>PassiveCooler</li>
         </prerequisites>
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
   </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="MultiSplitAirCon"]</xpath>
-    <!-- If it does, add this. -->
-    <match Class="PatchOperationAdd">
-      <xpath>/Defs/ResearchProjectDef[defName="MultiSplitAirCon"]/prerequisites</xpath>
-      <value>
-        <!-- <li MayRequire="dubwise.dubsbadhygiene">Plumbing</li> -->
-        <li>AR_Project_Water_Cooling</li>
-      </value>
-    </match>
+  
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ResearchProjectDef[defName="AR_Project_Water_Cooling"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+		<xpath>/Defs/ResearchProjectDef[defName="MultiSplitAirCon"]/prerequisites</xpath>
+			<value>
+				<prerequisites>
+					<!-- <li MayRequire="dubwise.dubsbadhygiene">Plumbing</li> -->
+					<li MayRequire="mlie.ancientrimcore">AR_Project_Water_Cooling</li>
+				</prerequisites>
+			</value>
+		</match>
     <!-- If the first XPATH does not exist, the original code stands. -->
   </Operation>
 </Patch>

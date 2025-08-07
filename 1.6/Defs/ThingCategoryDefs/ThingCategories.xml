@@ -13,7 +13,6 @@
 		<parent Inherit="False"></parent>
 	</ThingCategoryDef>
 
-
 	<ThingCategoryDef>
 		<defName>RomanHeadgear</defName>
 		<label>Roman headgear</label>

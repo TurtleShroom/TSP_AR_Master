@@ -145,7 +145,7 @@
             <li Class="DubsBadHygiene.CompProperties_Pipe">
               <mode>Sewage</mode>
             </li>
-            <li Class="CompProperties_Forbiddable" />
+            <li Class="CompProperties_Forbiddable"></li>
           </value>
         </li>
         <li Class="PatchOperationAdd">

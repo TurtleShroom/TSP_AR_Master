@@ -1,0 +1,2518 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="DankPyon_RoxHorn"]</xpath>
+		<!-- If it does, LET'S FASTING GOOOOOOOO!! -->
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="DankPyon_Crossbow"]</xpath>
+					<value>
+						<li>AR_Project_Mechanical_Weapons</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="DankPyon_Crossbow"]</xpath>
+					<value>
+						<li>AR_Project_Mechanical_Weapons</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="DankPyon_Crossbow"]</xpath>
+					<value>
+						<li>AR_Project_Mechanical_Weapons</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef/researchPrerequisites/li[text()="DankPyon_Crossbow"]</xpath>
+					<value>
+						<li>AR_Project_Mechanical_Weapons</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef/prerequisites/li[text()="DankPyon_Crossbow"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="DankPyon_Crossbow"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="DankPyon_Crossbow"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="DankPyon_Crossbow"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef/researchPrerequisites/li[text()="DankPyon_Crossbow"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef[researchPrerequisite="DankPyon_Crossbow"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>AR_Project_Mechanical_Weapons</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker[researchPrerequisite="DankPyon_Crossbow"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>AR_Project_Mechanical_Weapons</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef[researchPrerequisite="DankPyon_Crossbow"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>AR_Project_Mechanical_Weapons</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef[defName="DankPyon_Crossbow"]</xpath>
+				</li>
+
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="DankPyon_HeavyCrossbow"]</xpath>
+					<value>
+						<li>AR_Project_Mechanical_Weapons</li>
+						<!-- <li>Greatbow</li> -->
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="DankPyon_HeavyCrossbow"]</xpath>
+					<value>
+						<li>AR_Project_Mechanical_Weapons</li>
+						<!-- <li>Greatbow</li> -->
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="DankPyon_HeavyCrossbow"]</xpath>
+					<value>
+						<li>AR_Project_Mechanical_Weapons</li>
+						<!-- <li>Greatbow</li> -->
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef/researchPrerequisites/li[text()="DankPyon_HeavyCrossbow"]</xpath>
+					<value>
+						<li>AR_Project_Mechanical_Weapons</li>
+						<!-- <li>Greatbow</li> -->
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef/prerequisites/li[text()="DankPyon_HeavyCrossbow"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="DankPyon_HeavyCrossbow"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="DankPyon_HeavyCrossbow"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="DankPyon_HeavyCrossbow"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef/researchPrerequisites/li[text()="DankPyon_HeavyCrossbow"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef[researchPrerequisite="DankPyon_HeavyCrossbow"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>AR_Project_Mechanical_Weapons</li>
+							<!-- <li>Greatbow</li> -->
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker[researchPrerequisite="DankPyon_HeavyCrossbow"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>AR_Project_Mechanical_Weapons</li>
+							<!-- <li>Greatbow</li> -->
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef[researchPrerequisite="DankPyon_HeavyCrossbow"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>AR_Project_Mechanical_Weapons</li>
+							<!-- <li>Greatbow</li> -->
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef[defName="DankPyon_HeavyCrossbow"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef/prerequisites/li[text()="DankPyon_HuntingBow"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="DankPyon_HuntingBow"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="DankPyon_HuntingBow"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="DankPyon_HuntingBow"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef/researchPrerequisites/li[text()="DankPyon_HuntingBow"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef[researchPrerequisite="DankPyon_HuntingBow"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>RecurveBow</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker[researchPrerequisite="DankPyon_HuntingBow"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>RecurveBow</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef[researchPrerequisite="DankPyon_HuntingBow"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>RecurveBow</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef[defName="DankPyon_HuntingBow"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef/prerequisites/li[text()="DankPyon_WarBow"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="DankPyon_WarBow"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="DankPyon_WarBow"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="DankPyon_WarBow"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef/researchPrerequisites/li[text()="DankPyon_WarBow"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef[researchPrerequisite="DankPyon_WarBow"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>Greatbow</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker[researchPrerequisite="DankPyon_WarBow"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>Greatbow</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef[researchPrerequisite="DankPyon_WarBow"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>Greatbow</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef[defName="DankPyon_WarBow"]</xpath>
+				</li>
+			</operations>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="DankPyon_RoxHorn"]</xpath>
+		<!-- If it does, LET'S FASTING GOOOOOOOO!! -->
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!-- MOSAICS -->
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="DankPyon_Ballista"]</xpath>
+					<value>
+						<li>AR_Project_Ballistae</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="DankPyon_Ballista"]</xpath>
+					<value>
+						<li>AR_Project_Ballistae</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="DankPyon_Ballista"]</xpath>
+					<value>
+						<li>AR_Project_Ballistae</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef/researchPrerequisites/li[text()="DankPyon_Ballista"]</xpath>
+					<value>
+						<li>AR_Project_Ballistae</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef/prerequisites/li[text()="DankPyon_Ballista"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="DankPyon_Ballista"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="DankPyon_Ballista"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="DankPyon_Ballista"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef/researchPrerequisites/li[text()="DankPyon_Ballista"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef[researchPrerequisite="DankPyon_Ballista"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>AR_Project_Ballistae</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker[researchPrerequisite="DankPyon_Ballista"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>AR_Project_Ballistae</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef[researchPrerequisite="DankPyon_Ballista"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>AR_Project_Ballistae</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef[defName="DankPyon_Ballista"]</xpath>
+				</li>
+
+
+				<!-- BALLISTA SIEGE ENGINES -->
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="DankPyon_Ballista"]</xpath>
+					<value>
+						<li>AR_Project_Ballistae</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="DankPyon_Ballista"]</xpath>
+					<value>
+						<li>AR_Project_Ballistae</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="DankPyon_Ballista"]</xpath>
+					<value>
+						<li>AR_Project_Ballistae</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef/researchPrerequisites/li[text()="DankPyon_Ballista"]</xpath>
+					<value>
+						<li>AR_Project_Ballistae</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef/prerequisites/li[text()="DankPyon_Ballista"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="DankPyon_Ballista"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="DankPyon_Ballista"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="DankPyon_Ballista"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef/researchPrerequisites/li[text()="DankPyon_Ballista"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef[researchPrerequisite="DankPyon_Ballista"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>AR_Project_Ballistae</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker[researchPrerequisite="DankPyon_Ballista"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>AR_Project_Ballistae</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef[researchPrerequisite="DankPyon_Ballista"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>AR_Project_Ballistae</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef[defName="DankPyon_Ballista"]</xpath>
+				</li>
+			</operations>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ResearchProjectDef[defName="DankPyon_Trebuchet"]</xpath>
+		<!-- If it does, LET'S FASTING GOOOOOOOO!! -->
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef[defName="DankPyon_Trebuchet"]/tab</xpath>
+					<value>
+						<tab>AR_ResearchTab</tab>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef[defName="DankPyon_Trebuchet"]/researchViewX</xpath>
+					<value>
+						<researchViewX>6</researchViewX>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef[defName="DankPyon_Trebuchet"]/researchViewY</xpath>
+					<value>
+						<researchViewY>3</researchViewY>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef[defName="DankPyon_Trebuchet"]/prerequisites</xpath>
+					<value>
+						<prerequisites>
+							<li>AR_Project_Ballistae</li>
+						</prerequisites>
+					</value>
+				</li>
+
+				<!-- REPEATING ARTILLERY -->
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="DankPyon_RepeaterBallista"]</xpath>
+					<value>
+						<li>DankPyon_Trebuchet</li>
+						<li>AR_Project_Metal_II</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="DankPyon_RepeaterBallista"]</xpath>
+					<value>
+						<li>DankPyon_Trebuchet</li>
+						<li>AR_Project_Metal_II</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="DankPyon_RepeaterBallista"]</xpath>
+					<value>
+						<li>DankPyon_Trebuchet</li>
+						<li>AR_Project_Metal_II</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef/researchPrerequisites/li[text()="DankPyon_RepeaterBallista"]</xpath>
+					<value>
+						<li>DankPyon_Trebuchet</li>
+						<li>AR_Project_Metal_II</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef/prerequisites/li[text()="DankPyon_RepeaterBallista"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="DankPyon_RepeaterBallista"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="DankPyon_RepeaterBallista"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="DankPyon_RepeaterBallista"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef/researchPrerequisites/li[text()="DankPyon_RepeaterBallista"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef[researchPrerequisite="DankPyon_RepeaterBallista"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>DankPyon_Trebuchet</li>
+							<li>AR_Project_Metal_II</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker[researchPrerequisite="DankPyon_RepeaterBallista"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>DankPyon_Trebuchet</li>
+							<li>AR_Project_Metal_II</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef[researchPrerequisite="DankPyon_RepeaterBallista"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>DankPyon_Trebuchet</li>
+							<li>AR_Project_Metal_II</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef[defName="DankPyon_RepeaterBallista"]</xpath>
+				</li>
+			</operations>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="DankPyon_RoxHorn"]</xpath>
+		<!-- If it does, LET'S FASTING GOOOOOOOO!! -->
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!-- POLEARMS -->
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="DankPyon_BasicPolearms"]</xpath>
+					<value>
+						<li>AR_Project_Polearms</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="DankPyon_BasicPolearms"]</xpath>
+					<value>
+						<li>AR_Project_Polearms</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="DankPyon_BasicPolearms"]</xpath>
+					<value>
+						<li>AR_Project_Polearms</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef/researchPrerequisites/li[text()="DankPyon_BasicPolearms"]</xpath>
+					<value>
+						<li>AR_Project_Polearms</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef/prerequisites/li[text()="DankPyon_BasicPolearms"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="DankPyon_BasicPolearms"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="DankPyon_BasicPolearms"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="DankPyon_BasicPolearms"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef/researchPrerequisites/li[text()="DankPyon_BasicPolearms"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef[researchPrerequisite="DankPyon_BasicPolearms"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>AR_Project_Polearms</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker[researchPrerequisite="DankPyon_BasicPolearms"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>AR_Project_Polearms</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef[researchPrerequisite="DankPyon_BasicPolearms"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>AR_Project_Polearms</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef[defName="DankPyon_BasicPolearms"]</xpath>
+				</li>
+				
+				
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="DankPyon_MilitaryPolearms"]</xpath>
+					<value>
+						<li>AR_Project_Polearms</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="DankPyon_MilitaryPolearms"]</xpath>
+					<value>
+						<li>AR_Project_Polearms</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="DankPyon_MilitaryPolearms"]</xpath>
+					<value>
+						<li>AR_Project_Polearms</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef/researchPrerequisites/li[text()="DankPyon_MilitaryPolearms"]</xpath>
+					<value>
+						<li>AR_Project_Polearms</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef/prerequisites/li[text()="DankPyon_MilitaryPolearms"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="DankPyon_MilitaryPolearms"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="DankPyon_MilitaryPolearms"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="DankPyon_MilitaryPolearms"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef/researchPrerequisites/li[text()="DankPyon_MilitaryPolearms"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef[researchPrerequisite="DankPyon_MilitaryPolearms"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>AR_Project_Polearms</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker[researchPrerequisite="DankPyon_MilitaryPolearms"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>AR_Project_Polearms</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef[researchPrerequisite="DankPyon_MilitaryPolearms"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>AR_Project_Polearms</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef[defName="DankPyon_MilitaryPolearms"]</xpath>
+				</li>
+				
+				
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="DankPyon_NoblePolearms"]</xpath>
+					<value>
+						<li>AR_Project_Polearms</li>
+						<li MayRequire="Ludeon.Royalty">NobleApparel</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="DankPyon_NoblePolearms"]</xpath>
+					<value>
+						<li>AR_Project_Polearms</li>
+						<li MayRequire="Ludeon.Royalty">NobleApparel</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="DankPyon_NoblePolearms"]</xpath>
+					<value>
+						<li>AR_Project_Polearms</li>
+						<li MayRequire="Ludeon.Royalty">NobleApparel</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef/researchPrerequisites/li[text()="DankPyon_NoblePolearms"]</xpath>
+					<value>
+						<li>AR_Project_Polearms</li>
+						<li MayRequire="Ludeon.Royalty">NobleApparel</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef/prerequisites/li[text()="DankPyon_NoblePolearms"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="DankPyon_NoblePolearms"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="DankPyon_NoblePolearms"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="DankPyon_NoblePolearms"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef/researchPrerequisites/li[text()="DankPyon_NoblePolearms"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef[researchPrerequisite="DankPyon_NoblePolearms"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>AR_Project_Polearms</li>
+							<li MayRequire="Ludeon.Royalty">NobleApparel</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker[researchPrerequisite="DankPyon_NoblePolearms"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>AR_Project_Polearms</li>
+							<li MayRequire="Ludeon.Royalty">NobleApparel</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef[researchPrerequisite="DankPyon_NoblePolearms"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>AR_Project_Polearms</li>
+							<li MayRequire="Ludeon.Royalty">NobleApparel</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef[defName="DankPyon_NoblePolearms"]</xpath>
+				</li>
+
+
+
+
+				<!-- MACES -->
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef/prerequisites/li[text()="DankPyon_BasicMaces"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="DankPyon_BasicMaces"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="DankPyon_BasicMaces"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="DankPyon_BasicMaces"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef/researchPrerequisites/li[text()="DankPyon_BasicMaces"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef[researchPrerequisite="DankPyon_BasicMaces"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>Smithing</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker[researchPrerequisite="DankPyon_BasicMaces"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>Smithing</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef[researchPrerequisite="DankPyon_BasicMaces"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>Smithing</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef[defName="DankPyon_BasicMaces"]</xpath>
+				</li>
+				
+				
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="DankPyon_MilitaryMaces"]</xpath>
+					<value>
+						<li>Smithing</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="DankPyon_MilitaryMaces"]</xpath>
+					<value>
+						<li>Smithing</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="DankPyon_MilitaryMaces"]</xpath>
+					<value>
+						<li>Smithing</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef/researchPrerequisites/li[text()="DankPyon_MilitaryMaces"]</xpath>
+					<value>
+						<li>Smithing</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef/prerequisites/li[text()="DankPyon_MilitaryMaces"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="DankPyon_MilitaryMaces"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="DankPyon_MilitaryMaces"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="DankPyon_MilitaryMaces"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef/researchPrerequisites/li[text()="DankPyon_MilitaryMaces"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef[researchPrerequisite="DankPyon_MilitaryMaces"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>Smithing</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker[researchPrerequisite="DankPyon_MilitaryMaces"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>Smithing</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef[researchPrerequisite="DankPyon_MilitaryMaces"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>Smithing</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef[defName="DankPyon_MilitaryMaces"]</xpath>
+				</li>
+				
+				
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="DankPyon_NobleMaces"]</xpath>
+					<value>
+						<li>Smithing</li>
+						<li MayRequire="Ludeon.Royalty">NobleApparel</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="DankPyon_NobleMaces"]</xpath>
+					<value>
+						<li>Smithing</li>
+						<li MayRequire="Ludeon.Royalty">NobleApparel</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="DankPyon_NobleMaces"]</xpath>
+					<value>
+						<li>Smithing</li>
+						<li MayRequire="Ludeon.Royalty">NobleApparel</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef/researchPrerequisites/li[text()="DankPyon_NobleMaces"]</xpath>
+					<value>
+						<li>Smithing</li>
+						<li MayRequire="Ludeon.Royalty">NobleApparel</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef/prerequisites/li[text()="DankPyon_NobleMaces"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="DankPyon_NobleMaces"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="DankPyon_NobleMaces"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="DankPyon_NobleMaces"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef/researchPrerequisites/li[text()="DankPyon_NobleMaces"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef[researchPrerequisite="DankPyon_NobleMaces"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>Smithing</li>
+							<li MayRequire="Ludeon.Royalty">NobleApparel</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker[researchPrerequisite="DankPyon_NobleMaces"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>Smithing</li>
+							<li MayRequire="Ludeon.Royalty">NobleApparel</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef[researchPrerequisite="DankPyon_NobleMaces"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>Smithing</li>
+							<li MayRequire="Ludeon.Royalty">NobleApparel</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef[defName="DankPyon_NobleMaces"]</xpath>
+				</li>
+				
+				
+				
+				
+				<!-- LONG BLADES -->
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="DankPyon_BasicBlades"]</xpath>
+					<value>
+						<li>LongBlades</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="DankPyon_BasicBlades"]</xpath>
+					<value>
+						<li>LongBlades</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="DankPyon_BasicBlades"]</xpath>
+					<value>
+						<li>LongBlades</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef/researchPrerequisites/li[text()="DankPyon_BasicBlades"]</xpath>
+					<value>
+						<li>LongBlades</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef/prerequisites/li[text()="DankPyon_BasicBlades"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="DankPyon_BasicBlades"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="DankPyon_BasicBlades"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="DankPyon_BasicBlades"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef/researchPrerequisites/li[text()="DankPyon_BasicBlades"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef[researchPrerequisite="DankPyon_BasicBlades"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>LongBlades</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker[researchPrerequisite="DankPyon_BasicBlades"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>LongBlades</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef[researchPrerequisite="DankPyon_BasicBlades"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>LongBlades</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef[defName="DankPyon_BasicBlades"]</xpath>
+				</li>
+				
+				
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="DankPyon_MilitaryBlades"]</xpath>
+					<value>
+						<li>LongBlades</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="DankPyon_MilitaryBlades"]</xpath>
+					<value>
+						<li>LongBlades</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="DankPyon_MilitaryBlades"]</xpath>
+					<value>
+						<li>LongBlades</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef/researchPrerequisites/li[text()="DankPyon_MilitaryBlades"]</xpath>
+					<value>
+						<li>LongBlades</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef/prerequisites/li[text()="DankPyon_MilitaryBlades"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="DankPyon_MilitaryBlades"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="DankPyon_MilitaryBlades"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="DankPyon_MilitaryBlades"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef/researchPrerequisites/li[text()="DankPyon_MilitaryBlades"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef[researchPrerequisite="DankPyon_MilitaryBlades"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>LongBlades</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker[researchPrerequisite="DankPyon_MilitaryBlades"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>LongBlades</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef[researchPrerequisite="DankPyon_MilitaryBlades"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>LongBlades</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef[defName="DankPyon_MilitaryBlades"]</xpath>
+				</li>
+			</operations>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="DankPyon_RoxHorn"]</xpath>
+		<!-- If it does, LET'S FASTING GOOOOOOOO!! -->
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!-- STEEL -->
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="DankPyon_Steel"]</xpath>
+					<value>
+						<li>AR_Project_Metal_II</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="DankPyon_Steel"]</xpath>
+					<value>
+						<li>AR_Project_Metal_II</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="DankPyon_Steel"]</xpath>
+					<value>
+						<li>AR_Project_Metal_II</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef/researchPrerequisites/li[text()="DankPyon_Steel"]</xpath>
+					<value>
+						<li>AR_Project_Metal_II</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef/prerequisites/li[text()="DankPyon_Steel"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="DankPyon_Steel"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="DankPyon_Steel"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="DankPyon_Steel"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef/researchPrerequisites/li[text()="DankPyon_Steel"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef[researchPrerequisite="DankPyon_Steel"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>AR_Project_Metal_II</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker[researchPrerequisite="DankPyon_Steel"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>AR_Project_Metal_II</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef[researchPrerequisite="DankPyon_Steel"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>AR_Project_Metal_II</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef[defName="DankPyon_Steel"]</xpath>
+				</li>
+				
+				
+				
+				<!-- PLASTEEL -->
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="DankPyon_Plasteel"]</xpath>
+					<value>
+						<li>AR_Project_Metal_III</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="DankPyon_Plasteel"]</xpath>
+					<value>
+						<li>AR_Project_Metal_III</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="DankPyon_Plasteel"]</xpath>
+					<value>
+						<li>AR_Project_Metal_III</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef/researchPrerequisites/li[text()="DankPyon_Plasteel"]</xpath>
+					<value>
+						<li>AR_Project_Metal_III</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef/prerequisites/li[text()="DankPyon_Plasteel"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="DankPyon_Plasteel"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="DankPyon_Plasteel"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="DankPyon_Plasteel"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef/researchPrerequisites/li[text()="DankPyon_Plasteel"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef[researchPrerequisite="DankPyon_Plasteel"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>AR_Project_Metal_III</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker[researchPrerequisite="DankPyon_Plasteel"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>AR_Project_Metal_III</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef[researchPrerequisite="DankPyon_Plasteel"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>AR_Project_Metal_III</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef[defName="DankPyon_Plasteel"]</xpath>
+				</li>
+			</operations>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="DankPyon_RoxHorn"]</xpath>
+		<!-- If it does, LET'S FASTING GOOOOOOOO!! -->
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!-- STEEL -->
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="DankPyon_ProtectiveClothing"]</xpath>
+					<value>
+						<li>AR_Project_Light_Armour</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="DankPyon_ProtectiveClothing"]</xpath>
+					<value>
+						<li>AR_Project_Light_Armour</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="DankPyon_ProtectiveClothing"]</xpath>
+					<value>
+						<li>AR_Project_Light_Armour</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef/researchPrerequisites/li[text()="DankPyon_ProtectiveClothing"]</xpath>
+					<value>
+						<li>AR_Project_Light_Armour</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef/prerequisites/li[text()="DankPyon_ProtectiveClothing"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="DankPyon_ProtectiveClothing"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="DankPyon_ProtectiveClothing"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="DankPyon_ProtectiveClothing"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef/researchPrerequisites/li[text()="DankPyon_ProtectiveClothing"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef[researchPrerequisite="DankPyon_ProtectiveClothing"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>AR_Project_Light_Armour</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker[researchPrerequisite="DankPyon_ProtectiveClothing"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>AR_Project_Light_Armour</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef[researchPrerequisite="DankPyon_ProtectiveClothing"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>AR_Project_Light_Armour</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef[defName="DankPyon_ProtectiveClothing"]</xpath>
+				</li>
+				
+				
+				
+				<!-- PLASTEEL -->
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="DankPyon_ChainArmor"]</xpath>
+					<value>
+						<li>AR_Project_Chainmail</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="DankPyon_ChainArmor"]</xpath>
+					<value>
+						<li>AR_Project_Chainmail</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="DankPyon_ChainArmor"]</xpath>
+					<value>
+						<li>AR_Project_Chainmail</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef/researchPrerequisites/li[text()="DankPyon_ChainArmor"]</xpath>
+					<value>
+						<li>AR_Project_Chainmail</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef/prerequisites/li[text()="DankPyon_ChainArmor"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="DankPyon_ChainArmor"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="DankPyon_ChainArmor"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="DankPyon_ChainArmor"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef/researchPrerequisites/li[text()="DankPyon_ChainArmor"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef[researchPrerequisite="DankPyon_ChainArmor"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>AR_Project_Chainmail</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker[researchPrerequisite="DankPyon_ChainArmor"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>AR_Project_Chainmail</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef[researchPrerequisite="DankPyon_ChainArmor"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>AR_Project_Chainmail</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef[defName="DankPyon_ChainArmor"]</xpath>
+				</li>
+				
+				
+				
+				<!-- PRESTIGE PLATE ARMOR -->
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="DankPyon_AdornedArmor"]</xpath>
+					<value>
+						<li>AR_Project_Segmental_Armour</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="DankPyon_AdornedArmor"]</xpath>
+					<value>
+						<li>AR_Project_Segmental_Armour</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="DankPyon_AdornedArmor"]</xpath>
+					<value>
+						<li>AR_Project_Segmental_Armour</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef/researchPrerequisites/li[text()="DankPyon_AdornedArmor"]</xpath>
+					<value>
+						<li>AR_Project_Segmental_Armour</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef/prerequisites/li[text()="DankPyon_AdornedArmor"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="DankPyon_AdornedArmor"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="DankPyon_AdornedArmor"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="DankPyon_AdornedArmor"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef/researchPrerequisites/li[text()="DankPyon_AdornedArmor"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef[researchPrerequisite="DankPyon_AdornedArmor"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>AR_Project_Segmental_Armour</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker[researchPrerequisite="DankPyon_AdornedArmor"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>AR_Project_Segmental_Armour</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef[researchPrerequisite="DankPyon_AdornedArmor"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>AR_Project_Segmental_Armour</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef[defName="DankPyon_AdornedArmor"]</xpath>
+				</li>
+			</operations>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ResearchProjectDef[defName="VFEM2_Matchlocks"]</xpath>
+		<!-- If it does, LET'S FASTING GOOOOOOOO!! -->
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="DankPyon_Gunpowder"]</xpath>
+					<value>
+						<li>VFEM2_Matchlocks</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="DankPyon_Gunpowder"]</xpath>
+					<value>
+						<li>VFEM2_Matchlocks</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="DankPyon_Gunpowder"]</xpath>
+					<value>
+						<li>VFEM2_Matchlocks</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef/researchPrerequisites/li[text()="DankPyon_Gunpowder"]</xpath>
+					<value>
+						<li>VFEM2_Matchlocks</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef/prerequisites/li[text()="DankPyon_Gunpowder"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="DankPyon_Gunpowder"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="DankPyon_Gunpowder"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="DankPyon_Gunpowder"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef/researchPrerequisites/li[text()="DankPyon_Gunpowder"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef[researchPrerequisite="DankPyon_Gunpowder"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>VFEM2_Matchlocks</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker[researchPrerequisite="DankPyon_Gunpowder"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>VFEM2_Matchlocks</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef[researchPrerequisite="DankPyon_Gunpowder"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>VFEM2_Matchlocks</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef[defName="DankPyon_Gunpowder"]</xpath>
+				</li>
+			</operations>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	
+	
+
+
+
+
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="DankPyon_Schematic_MilitaryBlades"]/comps/li/doers</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName="DankPyon_Schematic_MilitaryBlades"]/comps/li/doers</xpath>
+			<success>Always</success>
+			<value>
+				<doers>
+					<li Class="MedievalOverhaul.BookOutcomeProperties_GainResearchDefinable">
+						<researchProjects>
+							<li>
+								<researchProject>AR_Project_Polearms</researchProject>
+								<gainMultiplier>1</gainMultiplier>
+							</li>
+						</researchProjects>
+					</li>
+				</doers>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+    </Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="DankPyon_Schematic_MilitaryPolearms"]/comps/li/doers</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName="DankPyon_Schematic_MilitaryPolearms"]/comps/li/doers</xpath>
+			<success>Always</success>
+			<value>
+				<doers>
+					<li Class="MedievalOverhaul.BookOutcomeProperties_GainResearchDefinable">
+						<researchProjects>
+							<li>
+								<researchProject>AR_Project_Polearms</researchProject>
+								<gainMultiplier>2</gainMultiplier>
+							</li>
+						</researchProjects>
+					</li>
+				</doers>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+    </Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="DankPyon_Schematic_NoblePolearms"]/comps/li/doers</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName="DankPyon_Schematic_NoblePolearms"]/comps/li/doers</xpath>
+			<success>Always</success>
+			<value>
+				<doers>
+					<li Class="MedievalOverhaul.BookOutcomeProperties_GainResearchDefinable">
+						<researchProjects>
+							<li>
+								<researchProject>AR_Project_Polearms</researchProject>
+								<gainMultiplier>3.5</gainMultiplier>
+							</li>
+						</researchProjects>
+					</li>
+				</doers>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+    </Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="DankPyon_Schematic_Crossbow"]/comps/li/doers</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName="DankPyon_Schematic_Crossbow"]/comps/li/doers</xpath>
+			<success>Always</success>
+			<value>
+				<doers>
+					<li Class="MedievalOverhaul.BookOutcomeProperties_GainResearchDefinable">
+						<researchProjects>
+							<li>
+								<researchProject>AR_Project_Mechanical_Weapons</researchProject>
+								<gainMultiplier>1</gainMultiplier>
+							</li>
+						</researchProjects>
+					</li>
+				</doers>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+    </Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="DankPyon_Schematic_HeavyCrossbow"]/comps/li/doers</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName="DankPyon_Schematic_HeavyCrossbow"]/comps/li/doers</xpath>
+			<success>Always</success>
+			<value>
+				<doers>
+					<li Class="MedievalOverhaul.BookOutcomeProperties_GainResearchDefinable">
+						<researchProjects>
+							<li>
+								<researchProject>AR_Project_Mechanical_Weapons</researchProject>
+								<gainMultiplier>2</gainMultiplier>
+							</li>
+						</researchProjects>
+					</li>
+				</doers>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+    </Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="DankPyon_Schematic_Steel"]/comps/li/doers</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName="DankPyon_Schematic_Steel"]/comps/li/doers</xpath>
+			<success>Always</success>
+			<value>
+				<doers>
+					<li Class="MedievalOverhaul.BookOutcomeProperties_GainResearchDefinable">
+						<researchProjects>
+							<li>
+								<researchProject>AR_Project_Metal_I</researchProject>
+								<gainMultiplier>3</gainMultiplier>
+							</li>
+							<li>
+								<researchProject>AR_Project_Metal_II</researchProject>
+								<gainMultiplier>2</gainMultiplier>
+							</li>
+							<li>
+								<researchProject>AR_Project_Metal_III</researchProject>
+								<gainMultiplier>1</gainMultiplier>
+							</li>
+						</researchProjects>
+					</li>
+				</doers>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+    </Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="DankPyon_Schematic_Gunpowder"]/comps/li/doers</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName="DankPyon_Schematic_Gunpowder"]/comps/li/doers</xpath>
+			<success>Always</success>
+			<value>
+				<doers>
+					<li Class="MedievalOverhaul.BookOutcomeProperties_GainResearchDefinable">
+						<researchProjects>
+							<li>
+								<researchProject>Machining</researchProject>
+								<gainMultiplier>1</gainMultiplier>
+							</li>
+							<li>
+								<researchProject>Gunsmithing</researchProject>
+								<gainMultiplier>0.25</gainMultiplier>
+							</li>
+						</researchProjects>
+					</li>
+				</doers>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+    </Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ResearchProjectDef[defName="VFEM2_Matchlocks"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName="DankPyon_Schematic_Gunpowder"]/comps/li/doers</xpath>
+			<success>Always</success>
+			<value>
+				<doers>
+					<li Class="MedievalOverhaul.BookOutcomeProperties_GainResearchDefinable" MayRequire="oskarpotocki.vfe.medieval2">
+						<researchProjects MayRequire="oskarpotocki.vfe.medieval2">
+							<li MayRequire="oskarpotocki.vfe.medieval2">
+								<researchProject>VFEM2_Matchlocks</researchProject>
+								<gainMultiplier>1</gainMultiplier>
+							</li>
+						</researchProjects>
+					</li>
+				</doers>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+    </Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="DankPyon_Schematic_HeavyCrossbow"]/comps/li/doers</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName="DankPyon_Schematic_HeavyCrossbow"]/comps/li/doers</xpath>
+			<success>Always</success>
+			<value>
+				<doers>
+					<li Class="MedievalOverhaul.BookOutcomeProperties_GainResearchDefinable">
+						<researchProjects>
+							<li>
+								<researchProject>AR_Project_Mechanical_Weapons</researchProject>
+								<gainMultiplier>2</gainMultiplier>
+							</li>
+						</researchProjects>
+					</li>
+				</doers>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+    </Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="DankPyon_Schematic_Gunpowder"]/comps/li/doers</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName="DankPyon_Schematic_Gunpowder"]/comps/li/doers</xpath>
+			<success>Always</success>
+			<value>
+				<doers>
+					<li Class="MedievalOverhaul.BookOutcomeProperties_GainResearchDefinable">
+						<researchProjects>
+							<li>
+								<researchProject>Machining</researchProject>
+								<gainMultiplier>1</gainMultiplier>
+							</li>
+							<li>
+								<researchProject>Gunsmithing</researchProject>
+								<gainMultiplier>0.1</gainMultiplier>
+							</li>
+						</researchProjects>
+					</li>
+				</doers>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+    </Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ResearchProjectDef[defName="VFEM2_Matchlocks"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName="DankPyon_Schematic_Gunpowder"]/comps/li/doers</xpath>
+			<success>Always</success>
+			<value>
+				<doers>
+					<li Class="MedievalOverhaul.BookOutcomeProperties_GainResearchDefinable">
+						<researchProjects>
+							<li>
+								<researchProject>Machining</researchProject>
+								<gainMultiplier>0.5</gainMultiplier>
+							</li>
+							<li>
+								<researchProject>Gunsmithing</researchProject>
+								<gainMultiplier>0.1</gainMultiplier>
+							</li>
+							<li>
+								<researchProject>VFEM2_Matchlocks</researchProject>
+								<gainMultiplier>1</gainMultiplier>
+							</li>
+						</researchProjects>
+					</li>
+				</doers>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+    </Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="DankPyon_Schematic_WarBow"]/comps/li/doers</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName="DankPyon_Schematic_WarBow"]/comps/li/doers</xpath>
+			<success>Always</success>
+			<value>
+				<doers>
+					<li Class="MedievalOverhaul.BookOutcomeProperties_GainResearchDefinable">
+						<researchProjects>
+							<li>
+								<researchProject>AR_Project_Ballistae</researchProject>
+								<gainMultiplier>1</gainMultiplier>
+							</li>
+						</researchProjects>
+					</li>
+				</doers>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+    </Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="DankPyon_Schematic_IntermediateCooking"]/comps/li/doers</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName="DankPyon_Schematic_IntermediateCooking"]/comps/li/doers</xpath>
+			<success>Always</success>
+			<value>
+				<doers>
+					<li Class="MedievalOverhaul.BookOutcomeProperties_GainResearchDefinable">
+						<researchProjects>
+							<li>
+								<researchProject>Pemmican</researchProject>
+								<gainMultiplier>1</gainMultiplier>
+							</li>
+						</researchProjects>
+					</li>
+				</doers>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+    </Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="DankPyon_Schematic_AdvancedCooking"]/li/doers</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName="DankPyon_Schematic_AdvancedCooking"]/li/doers</xpath>
+			<success>Always</success>
+			<value>
+				<doers>
+					<li Class="MedievalOverhaul.BookOutcomeProperties_GainResearchDefinable">
+						<researchProjects>
+							<li>
+								<researchProject>DrugProduction</researchProject>
+								<gainMultiplier>1</gainMultiplier>
+							</li>
+						</researchProjects>
+					</li>
+				</doers>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+    </Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="DankPyon_Schematic_BallistaRepeater"]/comps/li/doers</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName="DankPyon_Schematic_BallistaRepeater"]/comps/li/doers</xpath>
+			<success>Always</success>
+			<value>
+				<doers>
+					<li Class="MedievalOverhaul.BookOutcomeProperties_GainResearchDefinable">
+						<researchProjects>
+							<li>
+								<researchProject>DankPyon_Trebuchet</researchProject>
+								<gainMultiplier>1</gainMultiplier>
+							</li>
+						</researchProjects>
+					</li>
+				</doers>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+    </Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ResearchProjectDef[defName="advancedCooking"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName="DankPyon_Schematic_AdvancedCooking"]/comps/li/doers</xpath>
+			<success>Always</success>
+			<value>
+				<doers>
+					<li Class="MedievalOverhaul.BookOutcomeProperties_GainResearchDefinable">
+						<researchProjects>
+							<li>
+								<researchProject>advancedCooking</researchProject>
+								<gainMultiplier>3</gainMultiplier>
+							</li>
+							<li>
+								<researchProject>DrugProduction</researchProject>
+								<gainMultiplier>1</gainMultiplier>
+							</li>
+						</researchProjects>
+					</li>
+				</doers>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+    </Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="DankPyon_Schematic_MilitaryMaces"]/comps/li/doers</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName="DankPyon_Schematic_MilitaryMaces"]/comps/li/doers</xpath>
+			<success>Always</success>
+			<value>
+				<doers>
+					<li Class="MedievalOverhaul.BookOutcomeProperties_GainResearchDefinable">
+						<researchProjects>
+							<li>
+								<researchProject>LongBlades</researchProject>
+								<gainMultiplier>2</gainMultiplier>
+							</li>
+						</researchProjects>
+					</li>
+				</doers>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+    </Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="DankPyon_Schematic_NobleMaces"]/comps/li/doers</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName="DankPyon_Schematic_NobleMaces"]/comps/li/doers</xpath>
+			<success>Always</success>
+			<value>
+				<doers>
+					<li Class="MedievalOverhaul.BookOutcomeProperties_GainResearchDefinable">
+						<researchProjects>
+							<li>
+								<researchProject>LongBlades</researchProject>
+								<gainMultiplier>3</gainMultiplier>
+							</li>
+						</researchProjects>
+					</li>
+				</doers>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+    </Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- DO THE GENTILES KNOW? -->
+		<xpath>/Defs/ThingDef[defName="DankPyon_Tree_Mulberry"]</xpath>
+		<!-- If they do, SHUT IT DOWN. -->
+		<match Class="PatchOperationRemove">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef/plant/sowResearchPrerequisites/li[text()="DankPyon_BasicAgriculture"]</xpath>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- DO THE GENTILES KNOW? -->
+		<xpath>/Defs/ThingDef[defName="DankPyon_Tree_Mulberry"]</xpath>
+		<!-- If they do, SHUT IT DOWN. -->
+		<match Class="PatchOperationRemove">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef/plant/sowResearchPrerequisites/li[text()="DankPyon_IntermediateAgriculture"]</xpath>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- DO THE GENTILES KNOW? -->
+		<xpath>/Defs/ThingDef[defName="DankPyon_Tree_Mulberry"]</xpath>
+		<!-- If they do, SHUT IT DOWN. -->
+		<match Class="PatchOperationRemove">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef/plant/sowResearchPrerequisites/li[text()="DankPyon_AdvancedAgriculture"]</xpath>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef/plant/sowTags</xpath>
+		<!-- If it does, insert this in the same bracket as the XPATH. -->
+		<match Class="PatchOperationInsert">
+			<xpath>/Defs/ThingDef[defName="DankPyon_Plant_Cabbages"]/plant/sowTags/li[text()="DankPyon_VinePost"]</xpath>
+			<success>Always</success>
+			<value>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</value>
+		</match>
+		<!--If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="DankPyon_BallistaBolt"]/thingCategories</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName = "DankPyon_ScorpioBolt" or defName = "DankPyon_BallistaBolt"]/thingCategories</xpath>
+			<success>Always</success>
+			<value>
+				<thingCategories Inherit="False">
+					<li>AR_CategoryAmmo</li>
+				</thingCategories>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+    </Operation>
+</Patch>

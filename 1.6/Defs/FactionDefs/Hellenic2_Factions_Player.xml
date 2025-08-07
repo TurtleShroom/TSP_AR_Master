@@ -43,7 +43,7 @@
         </allowedCultures>
       <startingResearchTags>
             <li>TribalStart</li>
-			<li>LowHellenicStart</li>
+			<li MayRequire="mlie.ancientrimcore">LowHellenicStart</li>
         </startingResearchTags>
    	 <forageabilityFactor>2</forageabilityFactor>
    	 <startingTechprintsResearchTags>

@@ -849,7 +849,7 @@
       <xpath>/Defs/ResearchProjectDef[defName="VFEC_CraftingBench"]/tags</xpath>
       <value>
         <li>ClassicStart</li>
-        <li>RomanStart</li>
+        <li MayRequire="mlie.ancientrimcore">RomanStart</li>
         <li>EgyptStart</li>
         <li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_MedievalStart</li>
       </value>

@@ -47,6 +47,7 @@
       <li>AR_Smelter</li>
       <li>ElectricSmelter</li>
       <li MayRequire="mlie.takisrandomstuff">PrimitiveSmelter</li>
+	  <li MayRequire="dankpyon.medieval.overhaul">DankPyon_Furnace</li>
     </recipeUsers>
     <researchPrerequisite>AR_Project_Metal_I</researchPrerequisite>
   </RecipeDef>
@@ -92,6 +93,7 @@
       <li>AR_Smelter</li>
       <li>ElectricSmelter</li>
       <li MayRequire="mlie.takisrandomstuff">PrimitiveSmelter</li>
+	  <li MayRequire="dankpyon.medieval.overhaul">DankPyon_Furnace</li>
     </recipeUsers>
     <researchPrerequisite>AR_Project_Metal_II</researchPrerequisite>
   </RecipeDef>
@@ -196,6 +198,7 @@
       <li>AR_Smelter</li>
       <li>ElectricSmelter</li>
       <li MayRequire="mlie.takisrandomstuff">PrimitiveSmelter</li>
+	  <li MayRequire="dankpyon.medieval.overhaul">DankPyon_Furnace</li>
     </recipeUsers>
     <researchPrerequisite>AR_Project_Metal_I</researchPrerequisite>
   </RecipeDef>
@@ -241,6 +244,7 @@
       <li>AR_Smelter</li>
       <li>ElectricSmelter</li>
       <li MayRequire="mlie.takisrandomstuff">PrimitiveSmelter</li>
+	  <li MayRequire="dankpyon.medieval.overhaul">DankPyon_Furnace</li>
     </recipeUsers>
     <researchPrerequisite>AR_Project_Metal_II</researchPrerequisite>
   </RecipeDef>
@@ -293,6 +297,7 @@
       <li>AR_Smelter</li>
       <li>ElectricSmelter</li>
       <li MayRequire="mlie.takisrandomstuff">PrimitiveSmelter</li>
+	  <li MayRequire="dankpyon.medieval.overhaul">DankPyon_Furnace</li>
     </recipeUsers>
     <researchPrerequisite>AR_Project_Metal_I</researchPrerequisite>
   </RecipeDef>
@@ -338,6 +343,7 @@
       <li>AR_Smelter</li>
       <li>ElectricSmelter</li>
       <li MayRequire="mlie.takisrandomstuff">PrimitiveSmelter</li>
+	  <li MayRequire="dankpyon.medieval.overhaul">DankPyon_Furnace</li>
     </recipeUsers>
     <researchPrerequisite>AR_Project_Metal_II</researchPrerequisite>
   </RecipeDef>

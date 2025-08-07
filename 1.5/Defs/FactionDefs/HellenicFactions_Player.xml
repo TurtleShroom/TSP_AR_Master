@@ -37,7 +37,7 @@
     <geneticVariance>1</geneticVariance>
     <startingResearchTags>
       <li>TribalStart</li>
-      <li>RomanStart</li>
+      <li MayRequire="mlie.ancientrimcore">RomanStart</li>
       <li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
     </startingResearchTags>
     <allowedCultures>

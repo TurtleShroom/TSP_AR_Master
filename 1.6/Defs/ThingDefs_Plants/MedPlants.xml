@@ -647,7 +647,7 @@
       </wildBiomes>
       <interferesWithRoof>false</interferesWithRoof>
       <sowResearchPrerequisites>
-        <li>AR_Project_OliveTree</li>
+        <li>AR_Project_Mediterranean_Culture</li>
       </sowResearchPrerequisites>
     </plant>
   </ThingDef>
@@ -922,8 +922,8 @@
       <harvestAfterGrowth>0.2</harvestAfterGrowth>
       <interferesWithRoof>false</interferesWithRoof>
       <sowResearchPrerequisites>
-        <li>AR_Project_PomegranteTree</li>
-      </sowResearchPrerequisites>
+		<li>TreeSowing</li>
+	  </sowResearchPrerequisites>
     </plant>
   </ThingDef>
 </Defs>

@@ -153,7 +153,7 @@
     <disableImpassableShotOverConfigError>true</disableImpassableShotOverConfigError>
     <tickerType>Normal</tickerType>
     <drawerType>RealtimeOnly</drawerType>
-    <coversFloor>true</coversFloor>
+    <coversFloor>false</coversFloor>
     <statBases>
       <WorkToBuild>5500</WorkToBuild>
       <MaxHitPoints>3000</MaxHitPoints>

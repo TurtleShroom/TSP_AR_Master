@@ -218,7 +218,7 @@
 		<li MayRequire="kerbinfiber.chronos">WYD_Padding</li> <!-- Reinforced leather -->
     </stuffCategories>
     <costList>
-      <Gold>15</Gold>
+      <Gold>1</Gold> <!-- Multiplied by ten -->
     </costList>
     <statBases>
       <WorkToMake>10000</WorkToMake>
@@ -298,7 +298,7 @@
     </stuffCategories>
     <costList>
       <Dye>3</Dye>
-      <Gold>10</Gold>
+      <Gold>5</Gold>
     </costList>
     <statBases>
       <WorkToMake>17000</WorkToMake>
@@ -510,7 +510,7 @@
     </graphicData>
     <costList>
       <Dye>25</Dye>
-      <Gold>100</Gold>
+      <Gold>10</Gold> <!-- Gold always multiplies by ten -->
     </costList>
     <tradeability>Sellable</tradeability>
     <statBases>
@@ -538,6 +538,7 @@
       <tags>
         <li>EgyptianRoyal</li>
         <li>Egypt</li>
+		<li>RoyalTier5</li>
 		<li>RoyalTier6</li>
 		<li>RoyalTier7</li>
       </tags>

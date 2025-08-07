@@ -11,8 +11,8 @@
 	  <!-- <li MayRequire="vanillaexpanded.vfeart">VFEC_Mosaics</li> -->
     </prerequisites>
     <tags Inherit="False">
-      <li>RomanStart</li>
-	  <li>LowHellenicStart</li>
+      <li MayRequire="mlie.ancientrimcore">RomanStart</li>
+	  <li MayRequire="mlie.ancientrimcore">LowHellenicStart</li>
       <li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
     </tags>
     <tab>AR_ResearchTab</tab>
@@ -31,7 +31,7 @@
     <techLevel>Neolithic</techLevel>
     <tags>
 		<!-- <li>ClassicStart</li> -->
-		<li>RomanStart</li>
+		<li MayRequire="mlie.ancientrimcore">RomanStart</li>
 		<li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
         <!-- <li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_MedievalStart</li> -->
         <!-- <li MayRequire="morishep.tarojun.onioftherim">OotR_OniStart</li> -->
@@ -49,9 +49,9 @@
       <li>TreeSowing</li>
     </prerequisites>
     <tags>
-      <li>RomanStart</li>
+      <li MayRequire="mlie.ancientrimcore">RomanStart</li>
       <li>EgyptStart</li>
-	  <li>LowHellenicStart</li>
+	  <li MayRequire="mlie.ancientrimcore">LowHellenicStart</li>
       <li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
     </tags>
     <techLevel>Neolithic</techLevel>
@@ -69,7 +69,7 @@
     </prerequisites>
     <tags>
       <li>TribalStart</li>
-	  <li>LowHellenicStart</li>
+	  <li MayRequire="mlie.ancientrimcore">LowHellenicStart</li>
       <li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
     </tags>
     <techLevel>Neolithic</techLevel>

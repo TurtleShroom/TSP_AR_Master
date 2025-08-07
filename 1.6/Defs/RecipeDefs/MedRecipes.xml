@@ -937,6 +937,7 @@
         <li>WoodLog</li>
         <li MayRequire="sumika.nanohana">PlantOil</li>
         <li MayRequire="sihv.rombones">BoneItem</li>
+		<li MayRequire="dankpyon.medieval.overhaul">DankPyon_Tar</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>

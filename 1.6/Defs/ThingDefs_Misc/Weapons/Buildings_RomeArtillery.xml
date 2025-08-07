@@ -105,6 +105,7 @@
         <filter>
           <categories>
             <li>AR_CategoryAmmo</li>
+			<li MayRequire="dankpyon.medieval.overhaul">DankPyon_TrebuchetAmmo</li>
           </categories>
         </filter>
       </fixedStorageSettings>
@@ -112,6 +113,7 @@
         <filter>
           <categories>
             <li>AR_CategoryAmmo</li>
+			<li MayRequire="dankpyon.medieval.overhaul">DankPyon_TrebuchetAmmo</li>
           </categories>
         </filter>
       </defaultStorageSettings>
@@ -258,7 +260,7 @@
       <WoodLog>80</WoodLog>
     </costList>
     <comps>
-      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Forbiddable"></li>
       <li Class="CompProperties_Mannable">
         <manWorkType>Violent</manWorkType>
       </li>

@@ -175,4 +175,37 @@
       </li>
     </value>
   </Operation>
+  
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/TraderKindDef[defName="DankPyon_Base_Medieval_Standard"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/TraderKindDef[defName = "DankPyon_Base_Medieval_Standard" or defName = "DankPyon_Caravan_Medieval_BulkGoodsMerchant" or defName = "DankPyon_Caravan_Medieval_RuinsMerchant" or defName = "DankPyon_Caravan_Medieval_BulkGoodsMerchant_Soren"]/stockGenerators</xpath>
+			<value>
+				<li Class="StockGenerator_SingleDef">
+					<thingDef>AR_Bronze</thingDef>
+					<countRange>
+						<min>75</min>
+						<max>150</max>
+					</countRange>
+				</li>
+				<li Class="StockGenerator_SingleDef">
+					<thingDef>AR_Copper</thingDef>
+					<countRange>
+						<min>500</min>
+						<max>800</max>
+					</countRange>
+				</li>
+				<li Class="StockGenerator_SingleDef">
+					<thingDef>AR_Iron</thingDef>
+					<countRange>
+						<min>500</min>
+						<max>800</max>
+					</countRange>
+				</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
 </Patch>

@@ -135,12 +135,13 @@
       </buildingTags>
     </building>
     <researchPrerequisites>
-      <li>AR_Project_OliveTree</li>
+      <!-- <li>AR_Project_OliveTree</li> -->
+	  <li>AR_Project_Mediterranean_Culture</li>
     </researchPrerequisites>
 	<modExtensions>
 		<li Class="VEF.Buildings.RecipeInheritanceExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
 			<inheritRecipesFrom MayRequire="oskarpotocki.vanillafactionsexpanded.core">
-				<li MayRequire="oskarpotocki.vanillafactionsexpanded.core,sarg.alphacrafts">AC_OilPressWorkshop</li>
+				<li MayRequire="sarg.alphacrafts">AC_OilPressWorkshop</li>
 			</inheritRecipesFrom>
 		</li>
 	</modExtensions>

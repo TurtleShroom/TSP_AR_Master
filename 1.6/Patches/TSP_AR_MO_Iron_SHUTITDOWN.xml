@@ -1,0 +1,822 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="DankPyon_RoxHorn"]</xpath>
+    <!-- If it does, LET'S FASTING GOOOOOOOOOO!!! -->
+    <match Class="PatchOperationSequence">
+      <!-- <success>Always</success> -->
+      <operations>
+        <li Class="PatchOperationInsert">
+          <xpath>/Defs/RecipeDef/ingredients/li/filter/thingDefs/li[text()="DankPyon_IronIngot"]</xpath>
+          <success>Always</success>
+          <value>
+            <li>AR_Iron</li>
+          </value>
+        </li>
+        <li Class="PatchOperationInsert">
+          <xpath>/Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="DankPyon_IronIngot"]</xpath>
+          <success>Always</success>
+          <value>
+			<li>AR_Iron</li>
+          </value>
+        </li>
+        <li Class="PatchOperationInsert">
+          <xpath>/Defs/RecipeDef/defaultIngredientFilter/thingDefs/li[text()="DankPyon_IronIngot"]</xpath>
+          <success>Always</success>
+          <value>
+			<li>AR_Iron</li>
+          </value>
+        </li>
+        <li Class="PatchOperationRemove">
+          <success>Always</success>
+          <xpath>/Defs/RecipeDef/ingredients/li/filter/li/thingDefs/li[text()="DankPyon_IronIngot"]</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <success>Always</success>
+          <xpath>/Defs/RecipeDef/ingredients/li/filter/li/thingDefs/li[text()="DankPyon_IronIngot"]</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <success>Always</success>
+          <xpath>/Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="DankPyon_IronIngot"]</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <success>Always</success>
+          <xpath>/Defs/RecipeDef/defaultIngredientFilter/thingDefs/li[text()="DankPyon_IronIngot"]</xpath>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef/costList/DankPyon_IronIngot</xpath>
+			<value>
+				<AR_Iron>12</AR_Iron>
+			</value>
+		</li>
+        <li Class="PatchOperationRemove">
+          <success>Always</success>
+          <xpath>/Defs/ThingDef[defName="DankPyon_IronIngot"]</xpath>
+        </li>
+        <li Class="PatchOperationAdd">
+          <success>Always</success>
+          <xpath>/Defs</xpath>
+          <value>
+				<ThingDef ParentName="BaseFilth">
+					<defName>DankPyon_IronIngot</defName>
+					<label>Medieval Overhaul Iron (ERROR)</label>
+					<category>Filth</category>
+					<description>The Ancient Rim Mod adds iron to the game, and removes the iron from the Medieval Overhaul Mod. If this is ever encountered in the game as an item, you are seeing an error. Please report it to TurtleShroom.</description>
+					<graphicData>
+						<texPath>Things/Item/Resource/IronOre</texPath>
+						<graphicClass>Graphic_StackCount</graphicClass>
+					</graphicData>
+					<altitudeLayer>Filth</altitudeLayer>
+					<selectable>true</selectable>
+					<statBases>
+						<Flammability>0</Flammability>
+					</statBases>
+					<filth Inherit="False">
+						<ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+						<disappearsInDays>0.001~0.05</disappearsInDays>
+						<rainWashes>true</rainWashes>
+						<cleaningWorkToReduceThickness>1</cleaningWorkToReduceThickness>
+						<canFilthAttach>false</canFilthAttach>
+						<cleaningSound Inherit="False">Vomit</cleaningSound>
+					</filth>
+				</ThingDef>
+          </value>
+        </li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="DankPyon_IronOre"]/butcherProducts</xpath>
+			<value>
+				<butcherProducts>
+					<AR_Iron>30</AR_Iron>
+				</butcherProducts>
+			</value>
+		</li>
+        <li Class="PatchOperationInsert">
+          <xpath>/Defs/FactionDef/apparelStuffFilter/thingDefs/li[text()="DankPyon_IronIngot"]</xpath>
+          <success>Always</success>
+          <value>
+			<li>AR_Iron</li>
+          </value>
+        </li>
+        <li Class="PatchOperationRemove">
+          <success>Always</success>
+          <xpath>/Defs/FactionDef/apparelStuffFilter/thingDefs/li[text()="DankPyon_IronIngot"]</xpath>
+        </li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ProcessorFramework.ProcessDef[defName="DankPyon_SmeltingOre_Iron"]/thingDef</xpath>
+			<value>
+				<thingDef>AR_Iron</thingDef>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ProcessorFramework.ProcessDef[defName="DankPyon_SmeltingOre_Steel"]/ingredientFilter</xpath>
+			<value>
+				<ingredientFilter>
+					<thingDefs>
+						<li>AR_Iron</li>
+						<li>AR_Copper</li>
+					</thingDefs>
+				</ingredientFilter>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ProcessorFramework.ProcessDef[defName="DankPyon_SmeltingOre_Iron_Industrial"]/thingDef</xpath>
+			<value>
+				<thingDef>AR_Iron</thingDef>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ProcessorFramework.ProcessDef[defName="DankPyon_SmeltingOre_Steel_Industrial"]/ingredientFilter</xpath>
+			<value>
+				<ingredientFilter>
+					<thingDefs>
+						<li>AR_Iron</li>
+						<li>AR_Copper</li>
+					</thingDefs>
+				</ingredientFilter>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="DankPyon_MakeIngots_Iron"]/products</xpath>
+			<value>
+				<products>
+					<AR_Iron>30</AR_Iron>
+				</products>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="DankPyon_MakeIngots_IronBulk"]/products</xpath>
+			<value>
+				<products>
+					<AR_Iron>900</AR_Iron>
+				</products>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="DankPyon_MakeIngots_IronExtraBulk"]/products</xpath>
+			<value>
+				<products>
+					<AR_Iron>1800</AR_Iron>
+				</products>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ScenarioDef/scenario/parts/li[thingDef="DankPyon_IronIngot"]/thingDef</xpath>
+			<value>
+				<thingDef>AR_Iron</thingDef>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ScenarioDef/scenario/parts/li[stuff="DankPyon_IronIngot"]/stuff</xpath>
+			<value>
+				<stuff>AR_Iron</stuff>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/KCSG.SymbolDef[stuff="DankPyon_IronIngot"]/stuff</xpath>
+			<value>
+				<stuff>AR_Iron</stuff>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/TerrainDef[defName="IronTile"]/costList</xpath>
+			<value>
+				<costList>
+					<AR_Iron>7</AR_Iron>
+				</costList>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="DankPyon_BarrelWater"]/costList</xpath>
+			<value>
+				<costList></costList>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="DankPyon_LampPost"]/costList</xpath>
+			<value>
+				<costList></costList>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="DankPyon_ReinforcedRusticTable1x1c"]/costList</xpath>
+			<value>
+				<costList>
+					<AR_Iron>5</AR_Iron>
+				</costList>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="DankPyon_ReinforcedRusticTable1x2c"]/costList</xpath>
+			<value>
+				<costList>
+					<AR_Iron>10</AR_Iron>
+				</costList>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="DankPyon_ReinforcedRusticTable2x2c"]/costList</xpath>
+			<value>
+				<costList>
+					<AR_Iron>15</AR_Iron>
+				</costList>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="DankPyon_ReinforcedTable2x4c"]/costList</xpath>
+			<value>
+				<costList>
+					<AR_Iron>30</AR_Iron>
+				</costList>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="DankPyon_MetalStrongbox"]/costList</xpath>
+			<value>
+				<costList>
+					<AR_Iron>20</AR_Iron>
+				</costList>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="DankPyon_ToolRack"]/costList</xpath>
+			<value>
+				<costList></costList>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="DankPyon_QuenchingBucket"]/costList</xpath>
+			<value>
+				<costList></costList>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="DankPyon_Bellows"]/costList</xpath>
+			<value>
+				<costList>
+					<AR_Iron>10</AR_Iron>
+				</costList>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="DankPyon_RusticCookingTools"]/costList</xpath>
+			<value>
+				<costList>
+					<AR_Iron>5</AR_Iron>
+				</costList>
+			</value>
+		</li>
+		<li Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="DankPyon_RuinedBonePile1x2c"]/modExtensions/li/randomItems</xpath>
+			<value>
+				<li>AR_Iron</li>
+				<li>AR_Iron</li>
+				<li>AR_Copper</li>
+				<li>AR_Copper</li>
+				<li>AR_Bronze</li>
+				<li>AR_Bronze</li>
+				<li MayRequire="tsp.isengriff.bronzecoppertin.split">ST_Tin</li>
+				<li MayRequire="tsp.isengriff.bronzecoppertin.split">ST_Tin</li>
+			</value>
+		</li>
+		<li Class="PatchOperationRemove">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="DankPyon_RuinedBonePile1x2c"]/modExtensions/li/randomItems[text()="DankPyon_IronIngot"]</xpath>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="DankPyon_RusticCookingTools"]/costList</xpath>
+			<value>
+				<costList>
+					<AR_Iron>5</AR_Iron>
+				</costList>
+			</value>
+		</li>
+		<li Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="DankPyon_LootableShelf_IronIngot"]/modExtensions/li/randomItems</xpath>
+			<value>
+				<li>AR_Iron</li>
+				<li>AR_Iron</li>
+				<li>AR_Iron</li>
+				<li>AR_Iron</li>
+				<li>AR_Iron</li>
+				<li>AR_Iron</li>
+				<li>AR_Iron</li>
+				<li>AR_Iron</li>
+				<li>AR_Iron</li>
+				<li>AR_Iron</li>
+				<li>AR_Iron</li>
+				<li>AR_Iron</li>
+				<li>AR_Iron</li>
+				<li>AR_Iron</li>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="DankPyon_LootableChest_RoyalChest"]/costList</xpath>
+			<value>
+				<costList>
+					<AR_Bronze>30</AR_Bronze>
+					<Gold>25</Gold>
+				</costList>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="DankPyon_Turret_Scorpio"]/costList</xpath>
+			<value>
+				<costList>
+					<AR_Bronze>30</AR_Bronze>
+				</costList>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="DankPyon_Turret_BallistaDankPyon_Turret_Ballista"]/costList</xpath>
+			<value>
+				<costList>
+					<AR_Bronze>35</AR_Bronze>
+				</costList>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[@Name="DankPyon_IronIngotStackBase"]/costList</xpath>
+			<value>
+				<costList></costList>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[@Name="DankPyon_IronIngotStackBase"]/costList</xpath>
+			<value>
+				<costList>
+					<AR_Iron>1</AR_Iron>
+				</costList>
+			</value>
+		</li>
+        <li Class="PatchOperationInsert">
+			<xpath>/Defs/ThingDef/building/fixedStorageSettings/filter/thingDefs/li[text()="DankPyon_IronIngot"]</xpath>
+			<success>Always</success>
+			<value>
+				<li>AR_Iron</li>
+			</value>
+        </li>
+        <li Class="PatchOperationInsert">
+			<xpath>/Defs/ThingDef/building/defaultStorageSettings/filter/thingDefs/li[text()="DankPyon_IronIngot"]</xpath>
+			<success>Always</success>
+			<value>
+				<li>AR_Iron</li>
+			</value>
+        </li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="DankPyon_IronIngots1x2c"]/costList</xpath>
+			<value>
+				<costList>
+					<AR_Iron>20</AR_Iron>
+				</costList>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="DankPyon_IronIngots2x2c"]/costList</xpath>
+			<value>
+				<costList>
+					<AR_Iron>40</AR_Iron>
+				</costList>
+			</value>
+		</li>
+		<li Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="DankPyon_HideoutShelfFilledIngot"]/modExtensions/li/randomItems</xpath>
+			<value>
+				<li>AR_Iron</li>
+				<li>AR_Iron</li>
+				<li>AR_Iron</li>
+				<li>AR_Copper</li>
+				<li>AR_Copper</li>
+				<li>AR_Copper</li>
+				<li>AR_Bronze</li>
+				<li>AR_Bronze</li>
+				<li MayRequire="tsp.isengriff.bronzecoppertin.split">ST_Tin</li>
+				<li MayRequire="tsp.isengriff.bronzecoppertin.split">ST_Tin</li>
+				<li MayRequire="tsp.isengriff.bronzecoppertin.split">ST_Tin</li>
+			</value>
+		</li>
+		<li Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="DankPyon_IngotStack1x1_Iron"]/modExtensions/li/randomItems</xpath>
+			<value>
+				<li>AR_Iron</li>
+				<li>AR_Iron</li>
+				<li>AR_Iron</li>
+				<li>AR_Iron</li>
+				<li>AR_Iron</li>
+				<li>AR_Iron</li>
+				<li>AR_Iron</li>
+				<li>AR_Iron</li>
+				<li>AR_Iron</li>
+				<li>AR_Iron</li>
+				<li>AR_Iron</li>
+				<li>AR_Iron</li>
+				<li>AR_Iron</li>
+				<li>AR_Iron</li>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="DankPyon_Cauldron"]/costList</xpath>
+			<value>
+				<costList>
+					<AR_Bronze>25</AR_Bronze>
+				</costList>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="DankPyon_Presser"]/costList</xpath>
+			<value>
+				<costList>
+					<DankPyon_ComponentBasic>1</DankPyon_ComponentBasic>
+				</costList>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="DankPyon_Press_Paper"]/costList</xpath>
+			<value>
+				<costList>
+					<DankPyon_ComponentBasic>2</DankPyon_ComponentBasic>
+				</costList>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="DankPyon_Smoker"]/costList</xpath>
+			<value>
+				<costList></costList>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="DankPyon_SilkBed"]/costList</xpath>
+			<value>
+				<costList></costList>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="DankPyon_WindMill"]/costList</xpath>
+			<value>
+				<costList>
+					<ComponentIndustrial>1</ComponentIndustrial>
+					<WoodLog>200</WoodLog>
+					<AR_Bronze>80</AR_Bronze>
+					<DankPyon_ComponentBasic>20</DankPyon_ComponentBasic>
+				</costList>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="DankPyon_WaterMill"]/costList</xpath>
+			<value>
+				<costList>
+					<ComponentIndustrial>1</ComponentIndustrial>
+					<WoodLog>200</WoodLog>
+					<AR_Bronze>80</AR_Bronze>
+					<DankPyon_ComponentBasic>20</DankPyon_ComponentBasic>
+				</costList>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="DankPyon_AlchemyBench"]/costList</xpath>
+			<value>
+				<costList>
+					<AR_Bronze>75</AR_Bronze>
+				</costList>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="DankPyon_AdvancedResearchBench"]/costList</xpath>
+			<value>
+				<costList>
+					<AR_Bronze>10</AR_Bronze>
+					<DankPyon_ComponentBasic>10</DankPyon_ComponentBasic>
+				</costList>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="DankPyon_MineShaft"]/costList</xpath>
+			<value>
+				<costList>
+					<AR_Bronze>100</AR_Bronze>
+					<DankPyon_ComponentBasic>25</DankPyon_ComponentBasic>
+					<ComponentIndustrial>1</ComponentIndustrial>
+				</costList>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="DankPyon_Apiary"]/costList</xpath>
+			<value>
+				<costList>
+					<DankPyon_QueenBee>1</DankPyon_QueenBee>
+				</costList>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="DankPyon_SlopPot"]/costList</xpath>
+			<value>
+				<costList>
+					<AR_Copper>40</AR_Copper>
+				</costList>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="DankPyon_SlopPot_Stew"]/costList</xpath>
+			<value>
+				<costList>
+					<AR_Copper>40</AR_Copper>
+				</costList>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="DankPyon_SlopPot_Fondue"]/costList</xpath>
+			<value>
+				<costList>
+					<AR_Copper>40</AR_Copper>
+				</costList>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="DankPyon_BrokenWeapons"]/smeltProducts</xpath>
+			<value>
+				<smeltProducts>
+					<AR_Copper>10</AR_Copper>
+					<AR_Iron>10</AR_Iron>
+					<AR_Bronze>10</AR_Bronze>
+					<Steel>5</Steel>
+					<ST_Tin MayRequire="tsp.isengriff.bronzecoppertin.split">30</ST_Tin>
+				</smeltProducts>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="DankPyon_ScorpioBolt"]/costList</xpath>
+			<value>
+				<costList>
+					<AR_Iron>1</AR_Iron>
+				</costList>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="DankPyon_BallistaBolt"]/costList</xpath>
+			<value>
+				<costList>
+					<AR_Bronze>2</AR_Bronze>
+				</costList>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="DankPyon_Crossbow"]/costList</xpath>
+			<value>
+				<costList>
+					<AR_Iron>30</AR_Iron>
+				</costList>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="DankPyon_CrossbowHeavy"]/costList</xpath>
+			<value>
+				<costList>
+					<AR_Bronze>30</AR_Bronze>
+				</costList>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="DankPyon_Handgonne"]/costList</xpath>
+			<value>
+				<costList>
+					<AR_Bronze>75</AR_Bronze>
+				</costList>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/TraderKindDef/stockGenerators/li[thingDef="DankPyon_IronIngot"]/thingDef</xpath>
+			<value>
+				<thingDef>AR_Iron</thingDef>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="DankPyon_IronIngot"]/costList</xpath>
+			<value>
+				<costList>
+					<AR_Bronze>5</AR_Bronze>
+				</costList>
+			</value>
+		</li>
+		<li Class="PatchOperationRemove">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="ChristmasTree"]/costList/DankPyon_IronIngot</xpath>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="BarrelProcessor"]/costList</xpath>
+			<value>
+				<costList></costList>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/TerrainDef[defName="DankPyon_VFEArch_FineIronTile"]/costList</xpath>
+			<value>
+				<costList>
+					<AR_Iron>20</AR_Iron>
+				</costList>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="TableSculpting"]/costList</xpath>
+			<value>
+				<costList></costList>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="TableStonecutter"]/costList</xpath>
+			<value>
+				<costList></costList>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="Brewery"]/costList</xpath>
+			<value>
+				<costList></costList>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="DrugLab"]/costList</xpath>
+			<value>
+				<costList>
+					<DankPyon_ComponentBasic>6</DankPyon_ComponentBasic>
+				</costList>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>Defs/ThingDef/building[mineableThing="DankPyon_IronIngot"]/mineableThing</xpath>
+			<value>
+				<costList>
+					<mineableThing>DankPyon_IronIngot</mineableThing>
+				</costList>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="DankPyon_Golem_Iron"]/butcherProducts</xpath>
+			<value>
+				<butcherProducts>
+					<AR_Iron>300</AR_Iron>
+				</butcherProducts>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>Defs/ThingDef/building[mineableThing="DankPyon_IronIngot"]/mineableThing</xpath>
+			<value>
+				<mineableThing>DankPyon_IronIngot</mineableThing>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="DankPyon_MineableIron"]/building/mineableScatterCommonality</xpath>
+			<value>
+				<mineableScatterCommonality>0</mineableScatterCommonality>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="DankPyon_MineableIron"]/building/mineableScatterLumpSizeRange</xpath>
+			<value>
+				<mineableScatterLumpSizeRange>1</mineableScatterLumpSizeRange>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="DankPyon_MineableIron"]/building/veinMineable</xpath>
+			<value>
+				<veinMineable>false</veinMineable>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="DankPyon_MineableIron"]/building/mineableThing</xpath>
+			<value>
+				<mineableThing>AR_Iron</mineableThing>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="DankPyon_MineableIron"]/building/mineableYield</xpath>
+			<value>
+				<mineableYield>200</mineableYield>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="AR_IronMineral"]/building/mineableThing</xpath>
+			<value>
+				<mineableThing>DankPyon_IronOre</mineableThing>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="AR_IronMineral"]/building/mineableYield</xpath>
+			<value>
+				<mineableYield>2</mineableYield>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName="DankPyon_NaturalWall_Clay"]/building</xpath>
+			<success>Always</success>
+			<value>
+				<building>
+					<isResourceRock>true</isResourceRock>
+					<isNaturalRock>false</isNaturalRock>
+					<mineableThing>DankPyon_ChunkClay</mineableThing>
+					<mineableYield>2</mineableYield>
+					<mineableDropChance>2</mineableDropChance>
+					<smoothedThing>DankPyon_SmoothedClay</smoothedThing>
+					<mineableScatterCommonality>2</mineableScatterCommonality>
+					<mineableScatterLumpSizeRange>29~47</mineableScatterLumpSizeRange>
+					<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+					<claimable>false</claimable>
+					<paintable>true</paintable>
+				</building>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName="DankPyon_SmoothedClay"]/building</xpath>
+			<success>Always</success>
+			<value>
+				<building Inherit="False">
+					<isResourceRock>false</isResourceRock>
+					<isNaturalRock>false</isNaturalRock>
+					<mineableThing>DankPyon_ChunkClay</mineableThing>
+					<mineableYield>2</mineableYield>
+					<mineableDropChance>1</mineableDropChance>
+					<smoothedThing />
+					<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+					<claimable>true</claimable>
+					<paintable>true</paintable>
+				</building>
+			</value>
+		</li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

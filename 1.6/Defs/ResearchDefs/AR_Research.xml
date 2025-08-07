@@ -28,7 +28,7 @@
     <techLevel>Neolithic</techLevel>
     <tags>
       <li>ClassicStart</li>
-      <li>RomanStart</li>
+      <li MayRequire="mlie.ancientrimcore">RomanStart</li>
       <li>EgyptStart</li>
       <li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
       <li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_MedievalStart</li>
@@ -52,8 +52,8 @@
       <li>ClassicStart</li>
       <li>EgyptStart</li>
       <li>GaulStart</li>
-      <li>RomanStart</li>
-	  <li>LowHellenicStart</li>
+      <li MayRequire="mlie.ancientrimcore">RomanStart</li>
+	  <li MayRequire="mlie.ancientrimcore">LowHellenicStart</li>
       <li MayRequire="morishep.tarojun.onioftherim">OotR_OniStart</li>
       <li MayRequire="sz.tw.new.guohun">SZ_Start</li>
       <li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
@@ -127,7 +127,7 @@
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>AR_Project_Chainmail</defName>
-    <label>chainmail scale armor</label>
+    <label>chainmail armor</label>
     <description>The idea of making metals as easily wearable as clothes, in order to gain better protection in battle. This unlocks many helmets from classical antiquity.</description>
     <baseCost>600</baseCost>
     <!-- Same as Plate Armor if you are Medieval -->
@@ -171,7 +171,7 @@
       <li MayRequire="sz.tw.new.guohun">SZ_Start</li>
       <li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_MedievalStart</li>
       <li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
-      <li>RomanStart</li>
+      <li MayRequire="mlie.ancientrimcore">RomanStart</li>
     </tags>
     <tab>AR_ResearchTab</tab>
     <researchViewX>4</researchViewX>
@@ -186,6 +186,7 @@
     <techLevel>Medieval</techLevel>
     <prerequisites>
       <li>AR_Project_Mechanical_Weapons</li>
+	  <li MayRequire="dankpyon.medieval.overhaul">DankPyon_Engineering</li>
     </prerequisites>
     <tags>
       <li MayRequire="sz.tw.new.guohun">SZ_Start</li>
@@ -199,15 +200,13 @@
     <label>light armor</label>
     <description>Glueing many layers of cloth together or just using hardened leather makes them suitable as weaker armor. This is worse at protection than metal, but it is easier and faster to craft.</description>
     <baseCost>300</baseCost>
-    <!--
     <prerequisites>
-      <li>ComplexClothing</li>
+      <li MayRequire="dankpyon.medieval.overhaul">DankPyon_LeatherTanning</li>
     </prerequisites>
-	-->
     <tags>
       <li>ClassicStart</li>
       <li>TribalStart</li>
-      <li>RomanStart</li>
+      <li MayRequire="mlie.ancientrimcore">RomanStart</li>
       <li>EgyptStart</li>
       <li>GaulStart</li>
       <li MayRequire="sz.tw.new.guohun">SZ_Start</li>

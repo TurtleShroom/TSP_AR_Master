@@ -3,7 +3,7 @@
 <Patch>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>Defs/ThingDef[defName="PlantOil"]</xpath>
+    <xpath>Defs/ThingDef[defName="AR_OliveOil"]</xpath>
     <!-- If it does, LET'S FASTING GOOOOOOOOOO!!! -->
     <match Class="PatchOperationSequence">
       <!-- <success>Always</success> -->
@@ -58,6 +58,7 @@
 					<success>Always</success>
 					<value>
 						<li>AR_OliveOil</li>
+						<li MayRequire="dankpyon.medieval.overhaul">DankPyon_Tar</li>
 					</value>
 				</li>
 				-->
@@ -65,7 +66,7 @@
           <xpath>Defs/RecipeDef/ingredients/li/filter/thingDefs/li[text()="AR_OliveOil"]</xpath>
           <success>Always</success>
           <value>
-            <li>PlantOil</li>
+            <li MayRequire="sumika.nanohana">PlantOil</li>
 			<li MayRequire="sarg.alphacrafts">AC_Oil</li>
 			<!-- <li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li> -->
           </value>
@@ -74,7 +75,7 @@
           <xpath>Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="AR_OliveOil"]</xpath>
           <success>Always</success>
           <value>
-            <li>PlantOil</li>
+            <li MayRequire="sumika.nanohana">PlantOil</li>
 			<li MayRequire="sarg.alphacrafts">AC_Oil</li>
 			<!-- <li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li> -->
           </value>
@@ -83,7 +84,7 @@
           <xpath>Defs/RecipeDef/defaultIngredientFilter/thingDefs/li[text()="AR_OliveOil"]</xpath>
           <success>Always</success>
           <value>
-            <li>PlantOil</li>
+            <li MayRequire="sumika.nanohana">PlantOil</li>
 			<li MayRequire="sarg.alphacrafts">AC_Oil</li>
 			<!-- <li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li> -->
           </value>
@@ -92,7 +93,7 @@
           <xpath>Defs/RecipeDef/ingredients/li/filter/thingDefs/li[text()="AR_OliveOil"]</xpath>
           <success>Always</success>
           <value>
-            <li>PlantOil</li>
+            <li MayRequire="sumika.nanohana">PlantOil</li>
 			<li MayRequire="sarg.alphacrafts">AC_Oil</li>
 			<!-- <li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li> -->
           </value>
@@ -101,7 +102,7 @@
           <xpath>Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="AR_OliveOil"]</xpath>
           <success>Always</success>
           <value>
-            <li>PlantOil</li>
+            <li MayRequire="sumika.nanohana">PlantOil</li>
 			<li MayRequire="sarg.alphacrafts">AC_Oil</li>
 			<!-- <li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li> -->
           </value>
@@ -110,7 +111,7 @@
           <xpath>Defs/RecipeDef/defaultIngredientFilter/thingDefs/li[text()="AR_OliveOil"]</xpath>
           <success>Always</success>
           <value>
-            <li>PlantOil</li>
+            <li MayRequire="sumika.nanohana">PlantOil</li>
 			<li MayRequire="sarg.alphacrafts">AC_Oil</li>
 			<!-- <li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li> -->
           </value>
@@ -119,41 +120,49 @@
           <xpath>Defs/ThingDef/comps/li/fuelFilter/thingDefs/li[text()="AR_OliveOil"]</xpath>
           <success>Always</success>
           <value>
-            <li>PlantOil</li>
+            <li MayRequire="sumika.nanohana">PlantOil</li>
 			<li MayRequire="sarg.alphacrafts">AC_Oil</li>
 			<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
+			<li MayRequire="dankpyon.medieval.overhaul">DankPyon_Tar</li>
           </value>
         </li>
         <li Class="PatchOperationInsert">
           <xpath>Defs/RecipeDef/ingredients/li/filter/thingDefs/li[text()="Chemfuel"]</xpath>
           <success>Always</success>
           <value>
-            <li>PlantOil</li>
+            <li MayRequire="sumika.nanohana">PlantOil</li>
 			<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
+			<li MayRequire="dankpyon.medieval.overhaul">DankPyon_Tar</li>
           </value>
         </li>
         <li Class="PatchOperationInsert">
           <xpath>Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="Chemfuel"]</xpath>
           <success>Always</success>
           <value>
-            <li>PlantOil</li>
+            <li MayRequire="sumika.nanohana">PlantOil</li>
 			<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
+			<li MayRequire="dankpyon.medieval.overhaul">DankPyon_Tar</li>
           </value>
         </li>
         <li Class="PatchOperationInsert">
           <xpath>Defs/RecipeDef/defaultIngredientFilter/thingDefs/li[text()="Chemfuel"]</xpath>
           <success>Always</success>
           <value>
-            <li>PlantOil</li>
+            <li MayRequire="sumika.nanohana">PlantOil</li>
 			<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
+			<li MayRequire="dankpyon.medieval.overhaul">DankPyon_Tar</li>
           </value>
         </li>
         <li Class="PatchOperationInsert">
           <xpath>Defs/ThingDef/comps/li/fuelFilter/thingDefs/li[text()="Chemfuel"]</xpath>
           <success>Always</success>
           <value>
-            <li>PlantOil</li>
+			<!--
+            <li MayRequire="sumika.nanohana">PlantOil</li>
 			<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
+			-->
+			<li MayRequire="dankpyon.medieval.overhaul">DankPyon_Tar</li>
+			<li MayRequire="dankpyon.medieval.overhaul">DankPyon_Coal</li>
           </value>
         </li>
       </operations>
@@ -249,6 +258,8 @@
           <success>Always</success>
           <value>
 			<li MayRequire="sarg.alphacrafts">AC_Oil</li>
+			<li MayRequire="dankpyon.medieval.overhaul">DankPyon_Tar</li>
+			<li MayRequire="dankpyon.medieval.overhaul">DankPyon_Coal</li>
           </value>
         </li>
         <li Class="PatchOperationInsert">
@@ -259,7 +270,7 @@
           </value>
         </li>
         <li Class="PatchOperationInsert">
-          <xpath>Defs/RecipeDef/recipeMaker/recipeUsers/li[text()="AC_OilPressWorkshop"]</xpath>
+          <xpath>Defs/RecipeDef/recipeUsers/li[text()="AC_OilPressWorkshop"]</xpath>
           <success>Always</success>
           <value>
 			<li>AR_Press</li>
@@ -270,7 +281,7 @@
           <success>Always</success>
         </li>
         <li Class="PatchOperationRemove">
-          <xpath>Defs/RecipeDef/recipeMaker/recipeUsers/li[text()="AC_OilPressWorkshop"]</xpath>
+          <xpath>Defs/RecipeDef/recipeUsers/li[text()="AC_OilPressWorkshop"]</xpath>
           <success>Always</success>
         </li>
       </operations>
