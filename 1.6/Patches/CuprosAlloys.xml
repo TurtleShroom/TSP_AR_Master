@@ -195,9 +195,8 @@
 			<xpath>/Defs/TerrainDef[defName="CopperSterileTile"]/costList</xpath>
 			<value>
 				<costList>
-					<AR_Copper MayRequire="mlie.ancientrimcore">7</AR_Copper>
-					<Steel>1</Steel>
-					<Silver>1</Silver>
+					<AR_Copper MayRequire="mlie.ancientrimcore">10</AR_Copper>
+					<Silver>3</Silver>
 				</costList>
 			</value>
 		</match>

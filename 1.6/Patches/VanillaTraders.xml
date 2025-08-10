@@ -13,15 +13,15 @@
       <li Class="StockGenerator_SingleDef">
         <thingDef>AR_Copper</thingDef>
         <countRange>
-          <min>500</min>
-          <max>800</max>
+          <min>1500</min>
+          <max>2800</max>
         </countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
         <thingDef>AR_Iron</thingDef>
         <countRange>
-          <min>500</min>
-          <max>800</max>
+          <min>1500</min>
+          <max>2800</max>
         </countRange>
       </li>
     </value>
@@ -39,15 +39,15 @@
       <li Class="StockGenerator_SingleDef">
         <thingDef>AR_Copper</thingDef>
         <countRange>
-          <min>500</min>
-          <max>800</max>
+          <min>100</min>
+          <max>400</max>
         </countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
         <thingDef>AR_Iron</thingDef>
         <countRange>
-          <min>500</min>
-          <max>800</max>
+          <min>100</min>
+          <max>400</max>
         </countRange>
       </li>
     </value>
@@ -65,15 +65,15 @@
       <li Class="StockGenerator_SingleDef">
         <thingDef>AR_Copper</thingDef>
         <countRange>
-          <min>500</min>
-          <max>800</max>
+          <min>1500</min>
+          <max>3800</max>
         </countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
         <thingDef>AR_Iron</thingDef>
         <countRange>
-          <min>500</min>
-          <max>800</max>
+          <min>1500</min>
+          <max>3800</max>
         </countRange>
       </li>
     </value>

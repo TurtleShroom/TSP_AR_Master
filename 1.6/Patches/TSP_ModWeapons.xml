@@ -1043,6 +1043,7 @@
       <value>
         <li>Lance</li>
 		<li>SpearMen</li>
+		<li>ClassicalTrader</li>
 	  </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
@@ -1075,6 +1076,8 @@
         <li>Lance</li>
 		<li>SpearMen</li>
 		<li>HarrierMelee</li>
+		<li>DankPyon_Pike</li>
+		<li>ClassicalTrader</li>
 	  </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
@@ -1092,8 +1095,583 @@
 		<li>SpearMen</li>
 		<li>HarrierMelee</li>
 		<li>SurvivalistMelee</li>
+		<li>DankPyon_Pike</li>
+		<li>ClassicalTrader</li>
 	  </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
   </Operation>
+  
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="DankPyon_MeleeWeapon_MilitiaSpear"]/weaponTags</xpath>
+    <!-- If it does, add this. -->
+    <match Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="DankPyon_MeleeWeapon_MilitiaSpear"]/weaponTags</xpath>
+      <value>
+		<li>SurvivalistMelee</li>
+		<li>SimpleSpear</li>
+		<li>ClassicalSimple</li>
+	  </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="DankPyon_MeleeWeapon_BoarSpear"]/weaponTags</xpath>
+    <!-- If it does, add this. -->
+    <match Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="DankPyon_MeleeWeapon_BoarSpear"]/weaponTags</xpath>
+      <value>
+		<li>SpearMen</li>
+		<li>Spear</li>
+		<li>HarrierMelee</li>
+		<li>BeetMelee</li>
+		<li>WoodBeetMelee</li>
+	  </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="DankPyon_MeleeWeapon_FightingSpear"]/weaponTags</xpath>
+    <!-- If it does, add this. -->
+    <match Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="DankPyon_MeleeWeapon_FightingSpear"]/weaponTags</xpath>
+      <value>
+		  <li>HellenicHeavy</li>
+		  <li>ClassicalAdvanced</li>
+		  <li>VFEM2_Medieval</li>
+		  <li>ClassicalTrader</li>
+	  </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="DankPyon_MeleeWeapon_Warfork"]/weaponTags</xpath>
+    <!-- If it does, add this. -->
+    <match Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="DankPyon_MeleeWeapon_Warfork"]/weaponTags</xpath>
+      <value>
+		<li>SimpleSpear</li>
+		<li>SpearMen</li>
+		<li>CallOfCthulhu_Farmer</li>
+		<li>PeeledWeapon</li>
+		<li>PeeledWeaponBasic</li>
+		<li>PeeledWeaponDecent</li>
+		<li>Medieval</li>
+		<li>MedievalMeleeBasic</li>
+		<li>RWPMelee</li>
+		<li>GnomeMelee</li>
+		<li>GnomeSimpleMelee</li>
+		<li>BeetMelee</li>
+		<li>WoodBeetMelee</li>
+		<li>GoblinMelee</li>
+		<li>FrogmanMelee</li>
+		<li>SurvivalistMelee</li>
+		<li>JeubMelee</li>
+		<li>HSEdoClanPeasant</li>
+	  </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="DankPyon_MeleeWeapon_Pitchfork"]/weaponTags</xpath>
+    <!-- If it does, add this. -->
+    <match Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="DankPyon_MeleeWeapon_Pitchfork"]/weaponTags</xpath>
+      <value>
+		<li>Toolagri</li>
+		<li>CallOfCthulhu_Farmer</li>
+		<li>PeeledWeapon</li>
+		<li>PeeledWeaponBasic</li>
+		<li>PeeledWeaponDecent</li>
+		<li>Medieval</li>
+		<li>MedievalMeleeBasic</li>
+		<li>Toolagri</li>
+		<li>RWPMelee</li>
+		<li>GnomeMelee</li>
+		<li>GnomeSimpleMelee</li>
+		<li>BeetMelee</li>
+		<li>WoodBeetMelee</li>
+		<li>GoblinMelee</li>
+		<li>FrogmanMelee</li>
+		<li>SurvivalistMelee</li>
+		<li>JeubMelee</li>
+		<li>HSEdoClanPeasant</li>
+		<li>SurvivalistMelee</li>
+	  </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="DankPyon_MeleeWeapon_Swordlance"]/weaponTags</xpath>
+    <!-- If it does, add this. -->
+    <match Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="DankPyon_MeleeWeapon_Swordlance"]/weaponTags</xpath>
+      <value>
+		<li>Lance</li>
+		<li>PeeledWeapon</li>
+		<li>PeeledWeaponBasic</li>
+		<li>PeeledWeaponDecent</li>
+		<li>Medieval</li>
+		<li>GnomeMelee</li>
+		<li>BeetMelee</li>
+		<li>WoodBeetMelee</li>
+		<li>GoblinMelee</li>
+		<li>FrogmanMelee</li>
+		<li>HarrierMelee</li>
+		<li>ClassicalTrader</li>
+	  </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="DankPyon_MeleeWeapon_Pike"]/weaponTags</xpath>
+    <!-- If it does, add this. -->
+    <match Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="DankPyon_MeleeWeapon_Pike"]/weaponTags</xpath>
+      <value>
+        <li>Lance</li>
+		<!-- <li>SpearMen</li> -->
+		<li>HarrierMelee</li>
+		<li>SurvivalistMelee</li>
+		<li>DankPyon_Pike</li>
+		<li>HopliteHeavy</li>
+		<li>GnomeMelee</li>
+	  </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="DankPyon_MeleeWeapon_Billhook"]/weaponTags</xpath>
+    <!-- If it does, add this. -->
+    <match Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="DankPyon_MeleeWeapon_Billhook"]/weaponTags</xpath>
+      <value>
+		<!-- <li>SpearMen</li> -->
+		<li>HarrierMelee</li>
+		<li>CallOfCthulhu_TownsfolkAngler</li>
+		<li>CallOfCthulhu_Angler</li>
+		<li>CallOfCthulhu_CoastalMelee</li>
+	  </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="Bow_War"]/weaponTags</xpath>
+    <!-- If it does, add this. -->
+    <match Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="Bow_War"]/weaponTags</xpath>
+      <value>
+		<li>BowMen</li>
+		<li>WoodBeetRanged</li>
+		<li>JeubRanged</li>
+	  </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="DankPyon_Bow_Hunting"]/weaponTags</xpath>
+    <!-- If it does, add this. -->
+    <match Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="DankPyon_Bow_Hunting"]/weaponTags</xpath>
+      <value>
+		<li>BowMen</li>
+		<li>BeetRanged</li>
+		<li>SurvivalistRanged</li>
+		<li>WoodBeetRanged</li>
+		<li>JeubRanged</li>
+	  </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="DankPyon_MeleeWeapon_NobleSword"]/weaponTags</xpath>
+    <!-- If it does, add this. -->
+    <match Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="DankPyon_MeleeWeapon_NobleSword"]/weaponTags</xpath>
+      <value>
+		<li>Praetorian</li>
+		<li>RomeOfficer</li>
+	  </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="DankPyon_MeleeWeapon_FightingSpear"]/weaponTags</xpath>
+    <!-- If it does, add this. -->
+    <match Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="DankPyon_MeleeWeapon_FightingSpear"]/weaponTags</xpath>
+      <value>
+		<li>SpearMen</li>
+		<li>Hastatus</li>
+		<li>SimpleHoplite</li>
+	  </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="DankPyon_MeleeWeapon_ArmingSword"]/weaponTags</xpath>
+    <!-- If it does, add this. -->
+    <match Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="DankPyon_MeleeWeapon_ArmingSword"]/weaponTags</xpath>
+      <value>
+		<li>RomeSoldier</li>
+		<li>ClassicalAdvanced</li>
+	  </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  
+  
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="VFEC_MeleeWeapon_Dagger"]/weaponTags</xpath>
+    <!-- If it does, add this. -->
+    <match Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="VFEC_MeleeWeapon_Dagger"]/weaponTags</xpath>
+      <value>
+		<li>Dagger</li>
+		<li>Knife</li>
+	  </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="DankPyon_MeleeWeapon_FencingSword"]/weaponTags</xpath>
+    <!-- If it does, add this. -->
+    <match Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="DankPyon_MeleeWeapon_FencingSword"]/weaponTags</xpath>
+      <value>
+			<li>PeeledMelee</li>
+			<li>PeeledMeleeDecent</li>
+			<li>PeeledDecent</li>
+			<li>Gnoble</li>
+			<li>JeubMelee</li>
+			<li>CaravaneerMelee</li>
+	  </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="DankPyon_MeleeWeapon_Greatsword"]/weaponTags</xpath>
+    <!-- If it does, add this. -->
+    <match Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="DankPyon_MeleeWeapon_Greatsword"]/weaponTags</xpath>
+		<value>
+			<li>LongSword</li>
+		</value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="DankPyon_MeleeWeapon_Longsword"]/weaponTags</xpath>
+    <!-- If it does, add this. -->
+    <match Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="DankPyon_MeleeWeapon_Longsword"]/weaponTags</xpath>
+      <value>
+		<li>LongSword</li>
+		<li>RomeOfficer</li>
+		<li>NeolithicMeleeAdvanced</li>
+		<li>Macedon</li>
+		<li>HellenicHeavy</li>
+		<li>ClassicalTrader</li>
+	  </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="Gun_Revolver"]</xpath>
+		<!-- If it does, insert this in the same bracket as the sibling bracket. -->
+		<match Class="PatchOperationInsert">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef/weaponTags/li[text()="Longsword"]</xpath>
+			<value>
+				<li>LongSword</li>
+				<li>DankPyon_Longsword</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="Gun_Revolver"]</xpath>
+		<!-- If it does, insert this in the same bracket as the sibling bracket. -->
+		<match Class="PatchOperationInsert">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef/weaponTags/li[text()="LongSword"]</xpath>
+			<value>
+				<li>Longsword</li>
+				<li>DankPyon_Longsword</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="Gun_Revolver"]</xpath>
+		<!-- If it does, insert this in the same bracket as the sibling bracket. -->
+		<match Class="PatchOperationInsert">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef/weaponTags/li[text()="DankPyon_Longsword"]</xpath>
+			<value>
+				<li>Longsword</li>
+				<li>LongSword</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="Gun_Revolver"]</xpath>
+		<!-- If it does, insert this in the same bracket as the sibling bracket. -->
+		<match Class="PatchOperationInsert">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef/weaponTags/li[text()="Knife"]</xpath>
+			<value>
+				<li>K4GKnife</li>
+				<li>Dagger</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="Gun_Revolver"]</xpath>
+		<!-- If it does, insert this in the same bracket as the sibling bracket. -->
+		<match Class="PatchOperationInsert">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef/weaponTags/li[text()="K4GKnife"]</xpath>
+			<value>
+				<li>Knife</li>
+				<li>Dagger</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="Gun_Revolver"]</xpath>
+		<!-- If it does, insert this in the same bracket as the sibling bracket. -->
+		<match Class="PatchOperationInsert">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef/weaponTags/li[text()="DankPyon_Hatchet"]</xpath>
+			<value>
+				<li>Axe</li>
+				<li>CallOfCthulhu_Lumberjack</li>
+				<li>WoodcuttingHatchet</li>
+				<li>SurvivalistMelee</li>
+				<li>DankPyon_WoodcuttersAxe</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="Gun_Revolver"]</xpath>
+		<!-- If it does, insert this in the same bracket as the sibling bracket. -->
+		<match Class="PatchOperationInsert">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef/weaponTags/li[text()="Axe"]</xpath>
+			<value>
+				<li>CallOfCthulhu_Lumberjack</li>
+				<li>WoodcuttingHatchet</li>
+				<li>SurvivalistMelee</li>
+				<li>DankPyon_Hatchet</li>
+				<li>DankPyon_WoodcuttersAxe</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="Gun_Revolver"]</xpath>
+		<!-- If it does, insert this in the same bracket as the sibling bracket. -->
+		<match Class="PatchOperationInsert">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef/weaponTags/li[text()="CallOfCthulhu_Lumberjack"]</xpath>
+			<value>
+				<li>WoodcuttingHatchet</li>
+				<li>SurvivalistMelee</li>
+				<li>DankPyon_Hatchet</li>
+				<li>Axe</li>
+				<li>DankPyon_WoodcuttersAxe</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="Gun_Revolver"]</xpath>
+		<!-- If it does, insert this in the same bracket as the sibling bracket. -->
+		<match Class="PatchOperationInsert">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef/weaponTags/li[text()="DankPyon_WoodcuttersAxe"]</xpath>
+			<value>
+				<li>WoodcuttingHatchet</li>
+				<li>SurvivalistMelee</li>
+				<li>DankPyon_Hatchet</li>
+				<li>Axe</li>
+				<li>CallOfCthulhu_Lumberjack</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="VFEM2_MeleeWeapon_Halberd"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "VFEM2_MeleeWeapon_Halberd"]/weaponTags</xpath>
+			<value>
+				<li>SpearMen</li>
+				<li>Spear</li>
+				<li>HellenicHeavy</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="VFEM2_MeleeWeapon_Standard"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "VFEM2_MeleeWeapon_Standard"]/weaponTags</xpath>
+			<value>
+				<li>PeeledWeapon</li>
+				<li>PeeledMelee</li>
+				<li>WoodBeetJoe</li>
+				<li>JeubMelee</li>
+				<li>JeubWeapon</li>
+				<li>RomeBannerman</li>
+				<li>CaravaneerMelee</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="VFEM2_MeleeWeapon_Pike"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "VFEM2_MeleeWeapon_Pike"]/weaponTags</xpath>
+			<value>
+				<li>SpearMen</li>
+				<li>Spear</li>
+				<li>RomeSoldier</li>
+				<li>Barbarian</li>
+				<li>GnomeMelee</li>
+				<li>GoblinMelee</li>
+				<li>BeanManMelee</li>
+				<li>HopliteSimple</li>
+				<li>SimpleHoplite</li>
+				<li>NeolithicHeavy</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="Gun_Revolver"]</xpath>
+		<!-- If it does, insert this in the same bracket as the sibling bracket. -->
+		<match Class="PatchOperationInsert">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef/weaponTags/li[text()="Longsword"]</xpath>
+			<value>
+				<li>LongSword</li>
+				<li>DankPyon_Longsword</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="Gun_Revolver"]</xpath>
+		<!-- If it does, insert this in the same bracket as the sibling bracket. -->
+		<match Class="PatchOperationInsert">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef/weaponTags/li[text()="LongSword"]</xpath>
+			<value>
+				<li>Longsword</li>
+				<li>DankPyon_Longsword</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="Gun_Revolver"]</xpath>
+		<!-- If it does, insert this in the same bracket as the sibling bracket. -->
+		<match Class="PatchOperationInsert">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef/weaponTags/li[text()="DankPyon_Longsword"]</xpath>
+			<value>
+				<li>LongSword</li>
+				<li>Longsword</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+	</Operation>
 </Patch>

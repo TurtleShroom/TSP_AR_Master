@@ -3,31 +3,6 @@
 <Patch>
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="L24_Manto_Carapace"]</xpath>
-		<!-- If it does, add this. -->
-		<match Class="PatchOperationAdd">
-			<xpath>/Defs</xpath>
-			<success>Always</success>
-			<value>
-				<TerrainDef ParentName="RoundMosaikBase" MayRequire="eltwofour.mantodeanrace">
-					<defName MayRequire="eltwofour.mantodeanrace">TSP_AR_Mantodean_Mosaik_ChitinB</defName>
-					<label MayRequire="eltwofour.mantodeanrace">roundish Mantodean mosaic B</label>
-					<description>Taking a very long time to lay, the mosaic is the most attractive flooring that can be found in a Roman home. It can also be found in any mansion of other civilized peoples. \n \n		
-					Empire Report: \n
-					Nothing says "home sweet home" like walking into one's noble manor and stomping on the floors made out of the ground up bodies of your enemies. By the Emperor, I hate those bugs.</description>
-					<texturePath MayRequire="eltwofour.mantodeanrace">Floors/roundishnegative</texturePath>
-					<color MayRequire="eltwofour.mantodeanrace">(195,210,150)</color>
-					<costList MayRequire="eltwofour.mantodeanrace">
-						<L24_Manto_Carapace MayRequire="eltwofour.mantodeanrace">25</L24_Manto_Carapace>
-					</costList>
-				</TerrainDef>
-			</value>
-		</match>
-		<!-- If the first XPATH does not exist, the original code stands. -->
-	</Operation>
-	
-	<Operation Class="PatchOperationConditional">
-	<!-- Does this exist? -->
 		<xpath>/Defs/ThingDef[defName="L24_Manto_Chitin"]</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
@@ -53,6 +28,31 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="L24_Manto_Carapace"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<success>Always</success>
+			<value>
+				<TerrainDef ParentName="RoundMosaikBase" MayRequire="eltwofour.mantodeanrace">
+					<defName MayRequire="eltwofour.mantodeanrace">TSP_AR_Mantodean_Mosaik_ChitinB</defName>
+					<label MayRequire="eltwofour.mantodeanrace">roundish Mantodean mosaic B</label>
+					<description>Taking a very long time to lay, the mosaic is the most attractive flooring that can be found in a Roman home. It can also be found in any mansion of other civilized peoples. \n \n		
+					Empire Report: \n
+					Nothing says "home sweet home" like walking into one's noble manor and stomping on the floors made out of the ground up bodies of your enemies. By the Emperor, I hate those bugs.</description>
+					<texturePath MayRequire="eltwofour.mantodeanrace">Floors/roundishnegative</texturePath>
+					<color MayRequire="eltwofour.mantodeanrace">(195,210,150)</color>
+					<costList MayRequire="eltwofour.mantodeanrace">
+						<L24_Manto_Carapace MayRequire="eltwofour.mantodeanrace">25</L24_Manto_Carapace>
+					</costList>
+				</TerrainDef>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
 		<xpath>/Defs/ThingDef[defName="L24_Manto_Propolis"]</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
@@ -60,7 +60,7 @@
 			<success>Always</success>
 			<value>
 				<TerrainDef ParentName="RoundMosaikBase" MayRequire="eltwofour.mantodeanrace">
-					<defName MayRequire="eltwofour.mantodeanrace">TSP_AR_Mantodean_Propolis_ChitinA</defName>
+					<defName MayRequire="eltwofour.mantodeanrace">TSP_AR_Mantodean_Propolis_ChitinC</defName>
 					<label MayRequire="eltwofour.mantodeanrace">roundish Mantodean mosaic C</label>
 					<description>Taking a very long time to lay, the mosaic is the most attractive flooring that can be found in a Roman home. It can also be found in any mansion of other civilized peoples. \n \n		
 					Empire Report: \n

@@ -76,16 +76,18 @@
     </statBases>
     <generateCommonality>0.55</generateCommonality>
     <weaponTags Inherit="False">
-      <li>BowMen</li>
-      <li>NeolithicAdvanced</li>
-      <li>NeolithicHeavy</li>
-      <li>NeolithicChief</li>
-      <li>NeolithicRangedAdvanced</li>
-      <li>NeolithicRangedHeavy</li>
-      <li>NeolithicRangedChief</li>
-      <li>Gastraphates</li>
-      <li>ClassicalArcher</li>
-      <!-- <li>ClassicalScorpion</li> -->
+		<li>BowMen</li>
+		<li>NeolithicAdvanced</li>
+		<li>NeolithicHeavy</li>
+		<li>NeolithicChief</li>
+		<li>NeolithicRangedAdvanced</li>
+		<li>NeolithicRangedHeavy</li>
+		<li>NeolithicRangedChief</li>
+		<li>Gastraphates</li>
+		<li>ClassicalArcher</li>
+		<li>DankPyon_Crossbow</li>
+		<li>DankPyon_Arbelest</li>
+		<!-- <li>ClassicalScorpion</li> -->
     </weaponTags>
     <verbs>
       <li>

@@ -33,5 +33,6 @@
         </li>
       </operations>
     </match>
+	<!-- If the first XPATH does not exist, the original code stands. -->
   </Operation>
 </Patch>

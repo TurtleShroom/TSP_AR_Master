@@ -111,6 +111,9 @@
       <li>NeolithicMelee</li>
       <li>NeolithicMeleeBasic</li>
       <li>Knife</li>
+	  <li>DankPyon_Warfork</li>
+	  <li>DankPyon_Pitchfork</li>
+	  <!-- <li>K4GSimpleTool</li> -->
     </weaponTags>
     <techHediffsMoney>
       <min>200</min>
@@ -175,6 +178,9 @@
       <li>NeolithicMelee</li>
       <li>NeolithicMeleeBasic</li>
       <li>NeolithicMeleeDestructive</li>
+	  <li>DankPyon_Pitchfork</li>
+	  <li>DankPyon_Warfork</li>
+	  <li>K4GSimpleTool</li>
     </weaponTags>
 	<!-- <mustBeCapableOfViolence>false</mustBeCapableOfViolence> -->
     <techHediffsMoney>
@@ -371,6 +377,8 @@
       <li>SimpleSpear</li>
       <li>SimpleHoplite</li>
       <li>Hastatus</li>
+	  <li>DankPyon_Warfork</li>
+	  <li>DankPyon_Falchion</li>
     </weaponTags>
     <techHediffsMoney>
       <min>90</min>
@@ -444,6 +452,7 @@
     <weaponTags>
       <li>BowMen</li>
       <li>ClassicalArcher</li>
+	  <li>MedievalRanged</li>
       <li>MedievalRangedBasic</li>
       <li>MedievalRangedDecent</li>
     </weaponTags>
@@ -571,6 +580,9 @@
     <weaponTags>
       <li>LongSword</li>
       <li>Lance</li>
+	  <li>RomeOfficer</li>
+	  <li>DankPyon_Longsword</li>
+	  <li>DankPyon_Greatsword</li>
     </weaponTags>
     <techHediffsMoney>
       <min>200</min>
@@ -751,6 +763,7 @@
       <li>LongSword</li>
       <li>Lance</li>
 	  <li>ClassicalAdvanced</li>
+	  <li>DankPyon_MeleeWeapon_NobleSword</li>
     </weaponTags>
     <techHediffsMoney>
       <min>200</min>
@@ -844,6 +857,7 @@
       <!-- <li>RomeSoldier</li> -->
       <li>LongSword</li>
 	  <li>ClassicalAdvanced</li>
+	  <li>DankPyon_MeleeWeapon_NobleSword</li>
     </weaponTags>
     <techHediffsMoney>
       <min>200</min>
@@ -957,6 +971,7 @@
       <li>LongSword</li>
       <li>Lance</li>
 	  <li>ClassicalAdvanced</li>
+	  <li>DankPyon_NobleSword</li>
     </weaponTags>
     <techHediffsMoney>
       <min>200</min>
@@ -1137,6 +1152,7 @@
     <weaponTags>
       <li>SimpleHoplite</li>
       <li>SimpleSpear</li>
+	  <li>SpearMen</li>
     </weaponTags>
     <techHediffsMoney>
       <min>200</min>
@@ -1198,6 +1214,8 @@
     </weaponMoney>
     <weaponTags>
       <li>Lance</li>
+	  <li>Hoplite</li>
+	  <li>DankPyon_Spetum</li>
     </weaponTags>
     <techHediffsMoney>
       <min>200</min>
@@ -1333,6 +1351,8 @@
     <weaponTags>
       <li>SimpleHoplite</li>
       <li>SimpleSpear</li>
+	  <li>DankPyon_Spetum</li>
+	  <li>SpearMen</li>
     </weaponTags>
 	<!--
     <requiredWorkTags>
@@ -1434,6 +1454,7 @@
       <li>HellenicHeavy</li>
       <li>Lance</li>
 	  <li>ClassicalTrader</li>
+	  <li>DankPyon_Spetum</li>
     </weaponTags>
     <invFoodDef Inherit="False">AR_FryedMeat</invFoodDef>
     <techHediffsMoney>
@@ -1668,6 +1689,7 @@
     <weaponTags>
       <li>Slinger</li>
 	  <li>K4GRock</li>
+	  <li>DankPyon_Falchion</li>
     </weaponTags>
     <techHediffsMoney>
       <min>200</min>

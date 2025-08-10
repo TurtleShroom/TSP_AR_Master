@@ -130,9 +130,11 @@
       <max>750</max>
     </weaponMoney>
     <weaponTags>
-      <li>NeolithicMeleeBasic</li>
-      <li>EgyptianLight</li>
-	  <li>Toolagri</li>
+		<li>NeolithicMeleeBasic</li>
+		<li>EgyptianLight</li>
+		<li>Toolagri</li>
+		<li>DankPyon_Warfork</li>
+		<li>DankPyon_Pitchfork</li>
     </weaponTags>
     <techHediffsMoney>
       <min>200</min>
@@ -294,7 +296,10 @@
     <defName>AR_EArcher</defName>
     <label>Egyptian archer</label>
     <weaponTags>
-      <li>BowMen</li>
+		<li>BowMen</li>
+		<li>DankPyon_GreatBow</li>
+		<li>DankPyon_Warbow</li>
+		<li>DankPyon_BrigandMarksman</li>
     </weaponTags>
     <apparelMoney>
       <min>350</min>
@@ -392,6 +397,7 @@
     <weaponTags>
       <li>EgyptianHeavy</li>
       <li>Lance</li>
+	  <li>DankPyon_Spetum</li>
     </weaponTags>
     <modExtensions Inherit="False">
 		<!--

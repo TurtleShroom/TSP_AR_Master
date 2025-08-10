@@ -820,7 +820,7 @@
       <xpath>/Defs/ThingDef[defName="VFEC_TheatreStage"]</xpath>
       <value>
         <researchPrerequisites Inherit="False">
-          <li>ComplexFurniture</li>
+          <!-- <li>ComplexFurniture</li> -->
           <li>AR_Project_Mediterranean_Culture</li>
         </researchPrerequisites>
       </value>
@@ -1146,238 +1146,7 @@
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
   </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
-    <!-- If it does, do this replacement. -->
-    <match Class="PatchOperationReplace">
-      <success>Always</success>
-      <xpath>/Defs/ResearchProjectDef[defName="VFEC_Scorpion"]/label</xpath>
-      <value>
-        <label>Manuballista</label>
-      </value>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
-    <!-- If it does, do this replacement. -->
-    <match Class="PatchOperationReplace">
-      <success>Always</success>
-      <xpath>/Defs/ResearchProjectDef[defName="VFEC_Scorpion"]/description</xpath>
-      <value>
-        <description>Construct Manuballistae, which are basically miniaturized, portable Scorpioes. Like its predecessors, a Manuballista was a torsion-based siege engines, except they were small enough to be used like later hand held crossbows.</description>
-      </value>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
-    <!-- If it does, do this replacement. -->
-    <match Class="PatchOperationReplace">
-      <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]/label</xpath>
-      <value>
-        <label>Manuballista</label>
-      </value>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
-    <!-- If it does, do this replacement. -->
-    <match Class="PatchOperationReplace">
-      <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]/description</xpath>
-      <value>
-        <description>The masterpiece of Roman siege technology. The Manuballista was invented as a further, portable improvement to the Scorpio. A Manuballista was a torsion-based siege engine small enough to be a hand held crossbow (as opposed to ballistae and the Scorpio). As with its predecessors, its shooting involved "storing" kinetic energy by applying torque (force applied to a rotating object) to ropes. Releasing this launched the missile to spectacular results. It shoots diverse kinds of munitions, such as jagged stones and single pointed bolts.</description>
-      </value>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
-    <!-- If it does, do this replacement. -->
-    <match Class="PatchOperationReplace">
-      <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]/thingClass</xpath>
-      <value>
-        <thingClass>ThingWithComps</thingClass>
-      </value>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Turret_Scorpion"]</xpath>
-    <!-- If they do, SHUT IT DOWN. -->
-    <match Class="PatchOperationRemove">
-      <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="VFEC_Turret_Scorpion"]</xpath>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_TurretGun_Scorpion"]/minifiedDef</xpath>
-    <!-- If it does, do this replacement. -->
-    <match Class="PatchOperationReplace">
-      <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="VFEC_TurretGun_Scorpion"]/minifiedDef</xpath>
-      <value>
-        <minifiedDef>MinifiedThing</minifiedDef>
-      </value>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_TurretGun_Scorpion"]/statBases/MarketValue</xpath>
-    <!-- If it does, do this replacement. -->
-    <match Class="PatchOperationReplace">
-      <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="VFEC_TurretGun_Scorpion"]/statBases/MarketValue</xpath>
-      <value>
-        <MarketValue>350</MarketValue>
-      </value>
-    </match>
-    <!-- If it DOES NOT, add this. -->
-    <nomatch Class="PatchOperationAdd">
-      <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="VFEC_TurretGun_Scorpion"]/statBases</xpath>
-      <value>
-        <MarketValue>350</MarketValue>
-      </value>
-    </nomatch>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_TurretGun_Scorpion"]/tradeability</xpath>
-    <!-- If it does, do this replacement. -->
-    <match Class="PatchOperationReplace">
-      <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="VFEC_TurretGun_Scorpion"]/tradeability</xpath>
-      <value>
-        <tradeability>All</tradeability>
-      </value>
-    </match>
-    <!-- If it DOES NOT, add this. -->
-    <nomatch Class="PatchOperationAdd">
-      <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="VFEC_TurretGun_Scorpion"]</xpath>
-      <value>
-        <tradeability>All</tradeability>
-      </value>
-    </nomatch>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_TurretGun_Scorpion"]</xpath>
-    <!-- If they do, SHUT IT DOWN. -->
-    <match Class="PatchOperationRemove">
-      <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="VFEC_TurretGun_Scorpion"]</xpath>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
-  <!--
-  <Operation Class="PatchOperationConditional">
-    DO THE GENTILES KNOW?
-    <xpath>/Defs/JobDef[defName="VFEC_SetupScorpion"]</xpath>
-    If they do, SHUT IT DOWN.
-    <match Class="PatchOperationRemove">
-      <success>Always</success>
-      <xpath>/Defs/JobDef[defName="VFEC_SetupScorpion"]</xpath>
-    </match>
-    If the first XPATH does not exist, the original code stands.
-  </Operation>
-  -->
-  <Operation Class="PatchOperationConditional">
-    <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/RaidStrategyDef[defName="VFEC_ScorpionRaid"]</xpath>
-    <!-- If they do, SHUT IT DOWN. -->
-    <match Class="PatchOperationRemove">
-      <success>Always</success>
-      <xpath>/Defs/RaidStrategyDef[defName="VFEC_ScorpionRaid"]</xpath>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
-	<!-- Aelanna's Model No-Match Detector and Insertion Code -->
-	<!-- Special thanks to Aelanna for straight-up saving me scores of headaches! -->
-	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
-	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]/weaponTags</xpath>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]</xpath>
-			<success>Always</success>
-			<value>
-				<weaponTags></weaponTags>
-			</value>
-		</nomatch>
-	</Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]/weaponTags</xpath>
-    <!-- If it does, add this. -->
-    <match Class="PatchOperationAdd">
-      <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]/weaponTags</xpath>
-      <value>
-        <li>NeolithicRangedChief</li>
-        <li>NeolithicChief</li>
-        <li>NeolithicRangedHeavy</li>
-        <li>NeolithicRangedAdvanced</li>
-        <li>MedievalRangedHeavy</li>
-        <li>MedievalRangedAdvanced</li>
-        <li>Manuballista</li>
-      </value>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
-	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
-	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]/recipeMaker</xpath>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]</xpath>
-			<success>Always</success>
-			<value>
-				<recipeMaker></recipeMaker>
-			</value>
-		</nomatch>
-	</Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]/recipeMaker</xpath>
-    <!-- If it does, do this replacement. -->
-    <match Class="PatchOperationReplace">
-      <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]/recipeMaker</xpath>
-      <value>
-        <recipeMaker>
-          <skillRequirements>
-            <Crafting>8</Crafting>
-          </skillRequirements>
-          <researchPrerequisite>VFEC_Scorpion</researchPrerequisite>
-          <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
-          <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-          <workSkill>Crafting</workSkill>
-          <effectWorking>Smith</effectWorking>
-          <soundWorking>Recipe_Smith</soundWorking>
-          <recipeUsers>
-            <li>ElectricSmithy</li>
-            <li>FueledSmithy</li>
-          </recipeUsers>
-        </recipeMaker>
-      </value>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
+
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
     <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
@@ -1402,20 +1171,20 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
+    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]/statBases/WorkToMake</xpath>
     <!-- If it does, add this. -->
-    <match Class="PatchOperationAdd">
+    <nomatch Class="PatchOperationAdd">
       <success>Always</success>
       <xpath>/Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]/statBases</xpath>
       <value>
         <WorkToMake>18000</WorkToMake>
       </value>
-    </match>
+    </nomatch>
     <!-- If the first XPATH does not exist, the original code stands. -->
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="Roman_Standard"]</xpath>
+    <xpath>/Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]/thingCategories</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
@@ -1457,82 +1226,7 @@
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
   </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
-    <!-- If it does, do this replacement. -->
-    <match Class="PatchOperationReplace">
-      <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]/verbs/li/defaultProjectile</xpath>
-      <value>
-        <defaultProjectile>AR_Bullet_Scorpio</defaultProjectile>
-      </value>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
-    <!-- If it does, do this replacement. -->
-    <match Class="PatchOperationReplace">
-      <success>Always</success>
-      <xpath>/Defs/ResearchProjectDef[defName="VFEC_Scorpion"]/researchViewX</xpath>
-      <value>
-        <researchViewX>6</researchViewX>
-      </value>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
-    <!-- If it does, do this replacement. -->
-    <match Class="PatchOperationReplace">
-      <success>Always</success>
-      <xpath>/Defs/ResearchProjectDef[defName="VFEC_Scorpion"]/researchViewY</xpath>
-      <value>
-        <researchViewY>3</researchViewY>
-      </value>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
-    <!-- If it does, add this. -->
-    <match Class="PatchOperationAdd">
-      <success>Always</success>
-      <xpath>/Defs/ResearchProjectDef[defName="VFEC_Scorpion"]/prerequisites</xpath>
-      <value>
-        <li>AR_Project_Ballistae</li>
-      </value>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
-    <!-- If it does, do this replacement. -->
-    <match Class="PatchOperationReplace">
-      <success>Always</success>
-      <xpath>/Defs/ResearchProjectDef[defName="VFEC_Scorpion"]/tab</xpath>
-      <value>
-        <tab>AR_ResearchTab</tab>
-      </value>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
-  <!-- This is too advanced to start out having it. -->
-  <Operation Class="PatchOperationConditional">
-    <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/ResearchProjectDef[defName="VFEC_Scorpion"]</xpath>
-    <!-- If they do, SHUT IT DOWN. -->
-    <match Class="PatchOperationRemove">
-      <success>Always</success>
-      <xpath>/Defs/ResearchProjectDef[defName="VFEC_Scorpion"]/tags</xpath>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
+
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
     <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>

@@ -10,10 +10,10 @@
 			<xpath>/Defs/ThingDef[defName="Mashed_Ashlands_Plant_AshPomegranate"]/plant/sowResearchPrerequisites</xpath>
 			<value>
 				<sowResearchPrerequisites Inherit="False">
-					<li>AR_Project_PomegranteTree</li>
+					<li>AR_Project_Mediterranean_Culture</li>
 				</sowResearchPrerequisites>
 			</value>
 		</match>
-	<!-- If the first XPATH does not exist, the original code stands. -->
+		<!-- If the first XPATH does not exist, the original code stands. -->
 	</Operation>
 </Patch>

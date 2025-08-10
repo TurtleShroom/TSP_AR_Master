@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
 <Defs>
-  <FactionDef ParentName="FactionBase" Name="HellenesBase" Abstract="True">
+  <FactionDef ParentName="FactionBase" Name="HellenesFaction_Base" Abstract="True">
     <pawnSingular>Hellen</pawnSingular>
     <pawnsPlural>Hellenic party</pawnsPlural>
     <categoryTag>Tribal</categoryTag>
@@ -116,7 +116,7 @@
     <leaderTitle>strategos</leaderTitle>
   </FactionDef>
 
-  <FactionDef ParentName="HellenesBase">
+  <FactionDef ParentName="HellenesFaction_Base">
     <defName>HellenesCivil</defName>
     <label>Pan-Hellenic coalition</label>
     <description>A peaceful union of Hellenic cities, combining elements of the Roman, Macedonian, and several various Greek Factions, alongside assimilated Corunan tribesmen. This Faction was formed from the union of dozens of smaller Mediterranean-cultured city states alongside several minor Corunan tribes. Unlike their peers and constituent parts, this Faction is open-minded and seeks to enjoy the company of other cultures and civilizations. \n \n They are eager to expand their combined power primarily by trade and cultural influence, not war. \n However, this does not make them push overs: though pacifistic, they believe strongly in self-defense and maintain standing regiments of soldiers to protect themselves from aggresion. For this reason, attacking them is harder to do than most tribesmen. Their Pan-Hellenic ethos comprises courage, hospitality, wisdom and individualism.</description>

@@ -1,32 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
 <Patch>
+	<!--
 	<Operation Class="PatchOperationConditional">
-		<!-- Does this exist? -->
+		Does this exist?
 		<xpath>/Defs/FactionDef[defName="VFEC_EasternRepublic"]</xpath>
-		<!-- If so, alter the inheritance of this. -->
+		If so, alter the inheritance of this.
 		<match Class="PatchOperationAttributeSet">
 			<xpath>/Defs/FactionDef[@Name="VFEC_RepublicBase"]</xpath>
 			<attribute>ParentName</attribute>
-			<value>HellenesBase</value>
+			<value>HellenesFaction_Base</value>
 		</match>
-		<!-- If the first XPATH does not exist, the original code stands. -->
+		If the first XPATH does not exist, the original code stands.
 	</Operation>
+	-->
 
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
     <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
-    <!-- If it does, do this replacement. -->
-    <match Class="PatchOperationReplace">
+    <!-- If it does, add this. -->
+    <match Class="PatchOperationAdd">
       <success>Always</success>
       <xpath>/Defs/FactionDef[defName="AR_Faction_Hellas"]/caravanTraderKinds</xpath>
       <value>
-        <caravanTraderKinds>
           <li MayRequire="oskarpotocki.vfe.classical">VFEC_Caravan_Republic_BulkGoods</li>
           <li MayRequire="oskarpotocki.vfe.classical">VFEC_Caravan_Republic_WarMerchant</li>
           <li MayRequire="oskarpotocki.vfe.classical">VFEC_Caravan_Republic_Slaver</li>
           <li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_Caravan_Medieval_WineMerchant</li>
-        </caravanTraderKinds>
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
@@ -370,17 +370,15 @@
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
     <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
-    <!-- If it does, do this replacement. -->
-    <match Class="PatchOperationReplace">
+    <!-- If it does, add this. -->
+    <match Class="PatchOperationAdd">
       <success>Always</success>
       <xpath>/Defs/PawnKindDef[defName="VFEC_Legionnaire"]/weaponTags</xpath>
       <value>
-        <weaponTags>
           <li>RomeSoldier</li>
           <li>Sword</li>
           <li>LongSword</li>
           <li>Lance</li>
-        </weaponTags>
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
@@ -401,16 +399,14 @@
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
     <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
-    <!-- If it does, do this replacement. -->
-    <match Class="PatchOperationReplace">
+    <!-- If it does, add this. -->
+    <match Class="PatchOperationAdd">
       <success>Always</success>
       <xpath>/Defs/PawnKindDef[defName="VFEC_Centurion"]/weaponTags</xpath>
       <value>
-        <weaponTags>
           <li>RomeSoldier</li>
           <li>LongSword</li>
           <li>Lance</li>
-        </weaponTags>
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
@@ -446,6 +442,7 @@
         <li>NeolithicHeavy</li>
         <li>NeolithicMeleeHeavy</li>
         <li>NeolithicMeleeAdvanced</li>
+		<li>Praetorian</li>
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
@@ -487,7 +484,7 @@
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>/Defs/FactionDef[@Name="VFEC_RepublicBase"]/pawnGroupMakers/li[kindDef="Trader"]/traders</xpath>
+      <xpath>/Defs/FactionDef[@Name="VFEC_RepublicBase"]/pawnGroupMakers/li/traders</xpath>
       <value>
         <AR_Trader>1</AR_Trader>
       </value>
@@ -547,12 +544,11 @@
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
     <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
-    <!-- If it does, do this replacement. -->
-    <match Class="PatchOperationReplace">
+    <!-- If it does, add this. -->
+    <match Class="PatchOperationAdd">
       <success>Always</success>
       <xpath>/Defs/FactionDef[@Name="VFEC_RepublicBase"]/pawnGroupMakers/li[kindDef="Settlement_RangedOnly"]/options</xpath>
       <value>
-        <options>
           <VFEC_RepublicArcher>40</VFEC_RepublicArcher>
           <VFEC_RepublicAuxilia>50</VFEC_RepublicAuxilia>
           <VFEC_ScorpionOperator>10</VFEC_ScorpionOperator>
@@ -560,7 +556,6 @@
           <AR_Toxotes>45</AR_Toxotes>
           <AR_General>50</AR_General>
           <TSP_AR_Aquilifer MayRequire="zal.legionaryequipment">1</TSP_AR_Aquilifer>
-        </options>
       </value>
     </match>
   </Operation>
