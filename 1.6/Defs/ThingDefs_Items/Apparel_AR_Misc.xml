@@ -124,6 +124,9 @@
         <li>ClassicalMilitary</li>
         <li>ClassicalSimple</li>
         <li>Muslim_apparel</li>
+		<li>DankPyon_Peasant</li>
+		<li>DankPyon_Mercenary</li>
+		<li>DankPyon_BrigandThug</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
@@ -197,6 +200,7 @@
 		<li>HellenicLight</li>
 		<li>HellenicMedium</li>
 		<li>HellenicHeavy</li>
+		<li>DankPyon_BrigandThug</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
@@ -267,6 +271,8 @@
         <li>Cape</li>
         <li>King</li>
         <li>Classical</li>
+		<li>DankPyon_BrigandThug</li>
+		<li>DankPyon_Raider</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
@@ -320,6 +326,7 @@
         <li>BarbarianNoble</li>
         <li>Cape</li>
         <li>ClassicalMilitary</li>
+		<li>DankPyon_BrigandLeader</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
@@ -373,13 +380,15 @@
         <li>Middle</li>
       </layers>
       <tags>
-        <li>RomeSoldier</li>
-        <li>Neolithic</li>
-        <li>Tribal</li>
-        <li>BeetWear</li>
-        <li>JeubWear</li>
-        <li>ClassicalMilitary</li>
-        <!-- <li>Military</li> -->
+		<li>RomeSoldier</li>
+		<li>Neolithic</li>
+		<li>Tribal</li>
+		<li>BeetWear</li>
+		<li>JeubWear</li>
+		<li>ClassicalMilitary</li>
+		<li>DankPyon_Mercenary</li>
+		<li>DankPyon_Footman</li>
+		<li>DankPyon_FootmanHelmet</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>

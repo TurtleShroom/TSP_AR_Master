@@ -115,6 +115,7 @@
         <li>EgyptianBasic</li>
 		<li>EgyptianAdvanced</li>
 		<li>EgyptianNoble</li>
+		<li>Slave</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
@@ -336,6 +337,7 @@
 		<li>RoyalTier1</li>
 		<li>RoyalTier2</li>
 		<li>RoyalTier3</li>
+		<li>Aristocrat</li>
       </tags>
       <gender>Female</gender>
       <defaultOutfitTags>
@@ -399,9 +401,15 @@
         <li>Middle</li>
       </layers>
       <tags>
-        <li>OrientalLight</li>
-        <li>EgyptianLight</li>
-        <li>MedievalArmorBasic</li>
+		<li>OrientalLight</li>
+		<li>EgyptianLight</li>
+		<li>MedievalArmorBasic</li>
+		<li>MedievalMilitaryBasic</li>
+		<li>DankPyon_Archer</li>
+		<li>DankPyon_Footman</li>
+		<li>DankPyon_Billman</li>
+		<li>DankPyon_BrigandtThug</li>
+		<li>DankPyon_BrigandRaider</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -464,6 +472,14 @@
         <li>MedievalArmorDecent</li>
 		<li>PlateArmor</li>
 		<li>PlateArmour</li>
+		<li>MedievalArmorBasic</li>
+		<li>MedievalMilitaryBasic</li>
+		<li>MedievalMilitaryDecent</li>
+		<li>DankPyon_Archer</li>
+		<li>DankPyon_Footman</li>
+		<li>DankPyon_Billman</li>
+		<li>DankPyon_BrigandtThug</li>
+		<li>DankPyon_BrigandRaider</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -527,6 +543,9 @@
         <li>MedievalArmorDecent</li>
         <li>MedievalArmorElite</li>
 		<li>PrestigeCombatGear</li> <!-- As it exceeds FLAK Armor -->
+		<li>DankPyon_MercenaryHeavy</li>
+		<li>MedievalMilitaryAdvanced</li>
+		<li>MedievalPrestigeCombatGear</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -603,6 +622,7 @@
       <tags>
         <li>EgyptianRoyal</li>
 		<li>PrestigeCombatGear</li>
+		<li>DankPyon_NamedPlate</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>

@@ -694,7 +694,8 @@
       <li>Praetorian</li>
     </apparelTags>
     <apparelRequired>
-      <li>AR_LoricaMusculataR</li>
+		<li>Apparel_GaliaL</li>
+		<li>AR_LoricaMusculataR</li>
     </apparelRequired>
     <modExtensions>
 		<!--
@@ -1557,6 +1558,7 @@
       <li>Revolver</li>
       <li>SimpleGun</li>
 	  <li>OrientalHandCannon</li> <!-- From the T Samurai Mod, it's a hand mortar and very fitting -->
+	  <li>DankPyon_Handgonne</li>
     </weaponTags>
     <invFoodDef Inherit="False">AR_FryedMeat</invFoodDef>
     <techHediffsMoney>

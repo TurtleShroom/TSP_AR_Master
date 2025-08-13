@@ -57,13 +57,15 @@
         <li>Overhead</li>
       </layers>
       <tags>
-        <li>RomeSoldier</li>
-        <li>Barbarian</li>
-        <li>ClassicalMilitary</li>
-        <li>HellenicSoldier</li>
-        <li>NeolithicMilitary</li>
-        <li>Neolithic</li>
-        <li>Tribal</li>
+		<li>RomeSoldier</li>
+		<li>Barbarian</li>
+		<li>ClassicalMilitary</li>
+		<li>HellenicSoldier</li>
+		<li>NeolithicMilitary</li>
+		<li>Neolithic</li>
+		<li>Tribal</li>
+		<li>DankPyon_Mercenary</li>
+		<li>DankPyon_MercenaryHelmet</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -113,6 +115,9 @@
       <tags>
         <li>Tribal</li>
         <li>Neolithic</li>
+		<li>NeolithicMilitary</li>
+		<li>DankPyon_Mercenary</li>
+		<li>DankPyon_MercenaryHelmet</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -162,6 +167,7 @@
         <li>RomeSoldier</li>
         <li>RomeLegion</li>
         <li>ClassicalMilitary</li>
+		
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -448,8 +454,10 @@
         <li>Overhead</li>
       </layers>
       <tags>
-        <li>HellenicSoldier</li>
-        <li>ClassicalMilitary</li>
+		<li>HellenicSoldier</li>
+		<li>ClassicalMilitary</li>
+		<li>DankPyon_Mercenary</li>
+		<li>DankPyon_MercenaryHelmet</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -633,6 +641,11 @@
         <li>JeubWear</li>
         <li>ST_GnomeClothing</li>
         <li>ClassicalMilitary</li>
+		<li>DankPyon_Mercenary</li>
+		<li>DankPyon_MercenaryHelmet</li>
+		<li>MedievalMilitaryBasic</li>
+		<li>MedievalMilitary</li>
+		<li>DankPyon_BrigandThug</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -696,6 +709,7 @@
         <li>JeubKing</li>
         <li>JeubWear</li>
         <li>ClassicalMilitaryClassy</li>
+		<li>DankPyon_MercenaryHeavyHelmet</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -753,6 +767,8 @@
         <li>Toxotes</li>
         <li>BowMen</li>
         <li>ClassicalMilitary</li>
+		<li>DankPyon_ArbalesterHelmet</li>
+		<li>ClassicalArcher</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -810,6 +826,9 @@
         <li>HellenicSoldier</li>
         <li>Spartan</li>
         <li>ClassicalMilitary</li>
+        <li>MedievalMilitary</li>
+		<li>MedievalMilitaryBasic</li>
+		<li>MedievalMilitaryDecent</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -844,7 +863,7 @@
       <WorkToMake>4500</WorkToMake>
       <MaxHitPoints>200</MaxHitPoints>
       <Mass>2</Mass>
-      <StuffEffectMultiplierArmor>0.6</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierArmor>0.56</StuffEffectMultiplierArmor>
       <!-- By comparison, FLAK Armor is 0.7 -->
       <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
       <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
@@ -867,7 +886,12 @@
         <li>ClassicalMilitary</li>
         <li>Tribal</li>
         <li>MedievalMilitary</li>
+		<li>MedievalMilitaryBasic</li>
+		<li>MedievalMilitaryDecent</li>
+		<li>Medieval</li>
         <li>JeubWear</li>
+		<li>DankPyon_ArbalesterHelmet</li>
+		<li>DankPyon_Archer</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -993,6 +1017,7 @@
         <li>Barbarian</li>
         <li>Classical</li>
 		<li>VFEM2_Medieval</li>
+		
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>

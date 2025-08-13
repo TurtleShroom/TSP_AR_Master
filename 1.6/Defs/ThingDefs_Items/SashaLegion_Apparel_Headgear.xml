@@ -3,14 +3,14 @@
 
   <ThingDef ParentName="RomeArmourHelmetMakeableBase">
     <defName>Apparel_Legionarmorhelmet</defName>
-    <label>legion armor helmet</label>
+    <label>light legion armor helmet</label>
     <description>Legion helmet modeled after the ancient galia.</description>
     <techLevel>Medieval</techLevel>
     <recipeMaker>
       <researchPrerequisite>AR_Project_Segmental_Armour</researchPrerequisite>
       <unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
       <skillRequirements>
-        <Crafting>5</Crafting>
+        <Crafting>2</Crafting>
       </skillRequirements>
     </recipeMaker>
     <graphicData>
@@ -46,7 +46,13 @@
       </layers>
       <tags>
         <li>Roman</li>
+		<li>RomeSoldier</li>
+		<li>RomeLegion</li>
 		<li>ClassicalMilitary</li>
+		<li>DankPyon_ArbalesterHelmet</li>
+		<li>DankPyon_BrigandLeader</li>
+		<li>DankPyon_FootmanHelmet</li>
+		<li>DankPyon_BillmanHelmet</li>
       </tags>
       <defaultOutfitTags>
         <li>Roman</li>
@@ -120,6 +126,8 @@
       <tags>
         <li>Roman</li>
 		<li>ClassicalMilitary</li>
+		<li>RomeLegion</li>
+		<li>DankPyon_BillmanHelmet</li>
       </tags>
       <defaultOutfitTags>
         <li>Roman</li>
@@ -151,7 +159,7 @@
   
   <ThingDef ParentName="RomeArmourHelmetMakeableBase">
     <defName>Apparel_GaliaB</defName>
-    <label>galia</label>
+    <label>light galia</label>
     <description>A helmet worn by the Roman Legions. Gives moderate protection against sharp attacks. Not effective against blunt weapons.</description>
     <techLevel>Medieval</techLevel>
     <graphicData>
@@ -192,18 +200,24 @@
         <li>Overhead</li>
       </layers>
       <tags>
-        <li>Roman</li>
+		<li>Roman</li>
 		<li>ClassicalMilitary</li>
+		<li>DankPyon_MercenaryHeavy</li>
+		<li>DankPyon_ArbalesterHelmet</li>
+		<li>DankPyon_Archer</li>
+		<li>DankPyon_BillmanHelmet</li>
+		<li>RomeLegion</li>
       </tags>
       <defaultOutfitTags>
         <li>Roman</li>
+		<li>Soldier</li>
       </defaultOutfitTags>
     </apparel>
   </ThingDef>
   
    <ThingDef ParentName="RomeArmourHelmetMakeableBase">
     <defName>Apparel_GaliaC</defName>
-    <label>galia</label>
+    <label>light centurion's galia</label>
     <description>A helmet worn by the Roman Legions. Displayed crest shows rank of Centurion gives moderate protection against sharp attacks. Not effective against blunt weapons.</description>
     <techLevel>Medieval</techLevel>
     <graphicData>
@@ -245,7 +259,8 @@
       </layers>
       <tags>
         <li>Roman</li>
-		<li>ClassicalMilitary</li>
+		<li>ClassicalMilitaryClassy</li>
+		<li>Centurion</li>
       </tags>
       <defaultOutfitTags>
         <li>Roman</li>
@@ -256,7 +271,7 @@
   
   <ThingDef ParentName="RomeArmourHelmetMakeableBase">
     <defName>Apparel_GaliaL</defName>
-    <label>galia</label>
+    <label>legation galia</label>
     <description>A helmet worn by the Roman Legions. Displayed crest shows rank of Legate gives moderate protection against sharp attacks. Not effective against blunt weapons.</description>
     <techLevel>Medieval</techLevel>
     <graphicData>
@@ -297,8 +312,9 @@
         <li>Overhead</li>
       </layers>
       <tags>
-        <li>Roman</li>
-	<li>ClassicalMilitary</li>
+		<li>Roman</li>
+		<li>ClassicalMilitaryClassy</li>
+		<li>Praetorian</li>
       </tags>
       <defaultOutfitTags>
         <li>Roman</li>
@@ -348,6 +364,7 @@
       <tags>
         <li>Roman</li>
 		<li>ClassicalMilitary</li>
+		<li>RomeBannerman</li>
       </tags>
       <defaultOutfitTags>
         <li>Roman</li>
