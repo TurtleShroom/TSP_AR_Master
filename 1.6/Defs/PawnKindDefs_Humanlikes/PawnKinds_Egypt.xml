@@ -208,6 +208,7 @@
     <weaponTags>
       <li>EgyptianNoble</li>
       <li>OrientalMedium</li>
+	  <li>DankPyon_Grenade_PotFire</li>
     </weaponTags>
   </PawnKindDef>
   <PawnKindDef ParentName="EgyptBaseFighter">
@@ -398,6 +399,7 @@
       <li>EgyptianHeavy</li>
       <li>Lance</li>
 	  <li>DankPyon_Spetum</li>
+	  <li>DankPyon_Grenade_PotFire</li>
     </weaponTags>
     <modExtensions Inherit="False">
 		<!--

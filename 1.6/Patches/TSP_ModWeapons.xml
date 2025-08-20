@@ -1730,4 +1730,32 @@
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
 	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="DankPyon_Weapon_PotFire"]/weaponTags</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="DankPyon_Weapon_PotFire"]/weaponTags</xpath>
+			<value>
+				<li>DankPyon_Grenade_PotFire</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="Weapon_OilPot"]/weaponTags</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="Weapon_OilPot"]/weaponTags</xpath>
+			<value>
+				<li>DankPyon_Grenade_PotFire</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+	</Operation>
 </Patch>

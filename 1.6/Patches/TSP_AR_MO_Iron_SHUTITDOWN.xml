@@ -796,6 +796,7 @@
 					<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
 					<claimable>false</claimable>
 					<paintable>true</paintable>
+					<veinMineable>true</veinMineable>
 				</building>
 			</value>
 		</li>
@@ -813,6 +814,7 @@
 					<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
 					<claimable>true</claimable>
 					<paintable>true</paintable>
+					<veinMineable>true</veinMineable>
 				</building>
 			</value>
 		</li>

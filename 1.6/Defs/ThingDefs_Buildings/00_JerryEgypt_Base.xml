@@ -41,10 +41,10 @@
 		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
 		<filthLeaving>Filth_RubbleBuilding</filthLeaving>
 		<!-- <leaveResourcesWhenKilled Inherit="False">True</leaveResourcesWhenKilled> -->
-		<dominantStyleCategory MayRequire="Sarg.AlphaMemes" Inherit="False">AM_Kemetic</dominantStyleCategory>
+		<dominantStyleCategory MayRequire="Sarg.AlphaMemes,Ludeon.RimWorld.Ideology" Inherit="False">AM_Kemetic</dominantStyleCategory>
 		<canGenerateDefaultDesignator>true</canGenerateDefaultDesignator>
 		<statBases>
-			<StyleDominance MayRequire="Sarg.AlphaMemes">30</StyleDominance>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">30</StyleDominance>
 			<SellPriceFactor>1.25</SellPriceFactor>
 		</statBases>
 		<building>
@@ -76,6 +76,9 @@
 		<inspectorTabs>
 			<li>ITab_Art</li>
 		</inspectorTabs>
+		<placeWorkers>
+			<li>PlaceWorker_MeditationOffsetBuildingsNear</li>
+		</placeWorkers>
 		<tradeTags>
 			<li>Art</li>
 			<li>Egypt</li>

@@ -23,6 +23,7 @@
         <min>10</min>
         <max>20</max>
       </mineableScatterLumpSizeRange>
+	  <veinMineable>true</veinMineable>
     </building>
   </ThingDef>
   <ThingDef ParentName="RockBase">
@@ -49,6 +50,7 @@
         <min>20</min>
         <max>40</max>
       </mineableScatterLumpSizeRange>
+	  <veinMineable>true</veinMineable>
     </building>
   </ThingDef>
   <ThingDef ParentName="RockBase">
@@ -75,6 +77,7 @@
         <min>30</min>
         <max>60</max>
       </mineableScatterLumpSizeRange>
+	  <veinMineable>true</veinMineable>
     </building>
   </ThingDef>
 </Defs>

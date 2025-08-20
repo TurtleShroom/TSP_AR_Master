@@ -81,4 +81,26 @@
       </operations>
     </match>
   </Operation>
+  
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="DankPyon_Tar"]/stackLimit</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="DankPyon_Tar"]/stackLimit</xpath>
+			<value>
+				<stackLimit>500</stackLimit>
+			</value>
+		</match>
+		<!-- If it DOES NOT, add this instead. -->
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="DankPyon_Tar"]</xpath>
+			<value>
+				<stackLimit>500</stackLimit>
+			</value>
+		</nomatch>
+		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+	</Operation>
 </Patch>

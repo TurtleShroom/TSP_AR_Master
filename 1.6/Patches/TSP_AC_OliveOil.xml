@@ -10,6 +10,8 @@
 			<success>Always</success>
 			<value>
 				<li>AR_RawOlives</li>
+				<li MayRequire="sumika.nanohana">PlantOil</li>
+				<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
 			</value>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. -->
@@ -24,6 +26,8 @@
 			<success>Always</success>
 			<value>
 				<li>AR_RawOlives</li>
+				<li MayRequire="sumika.nanohana">PlantOil</li>
+				<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
 			</value>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. -->
