@@ -5,9 +5,9 @@
 	<!-- Special thanks to Aelanna for straight-up saving me scores of headaches! -->
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[@Name="GE_Hat"]/recipeMaker/researchPrerequisites</xpath>
+		<xpath>Defs/ThingDef[@Name="GE_Hat"]/recipeMaker/researchPrerequisites</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[@Name="GE_Hat"]/recipeMaker</xpath>
+			<xpath>Defs/ThingDef[@Name="GE_Hat"]/recipeMaker</xpath>
 			<success>Always</success>
 			<value>
 				<researchPrerequisites></researchPrerequisites>
@@ -17,9 +17,9 @@
 	
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[@Name="ObeliskSAM"]/researchPrerequisites</xpath>
+		<xpath>Defs/ThingDef[@Name="ObeliskSAM"]/researchPrerequisites</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[@Name="ObeliskSAM"]</xpath>
+			<xpath>Defs/ThingDef[@Name="ObeliskSAM"]</xpath>
 			<success>Always</success>
 			<value>
 				<researchPrerequisites></researchPrerequisites>
@@ -29,9 +29,9 @@
 	
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[@Name="Obelisk"]/comps</xpath>
+		<xpath>Defs/ThingDef[@Name="Obelisk"]/comps</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[@Name="Obelisk"]</xpath>
+			<xpath>Defs/ThingDef[@Name="Obelisk"]</xpath>
 			<success>Always</success>
 			<value>
 				<comps></comps>
@@ -41,9 +41,9 @@
 	
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[@Name="Obelisk"]/researchPrerequisites</xpath>
+		<xpath>Defs/ThingDef[@Name="Obelisk"]/researchPrerequisites</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[@Name="Obelisk"]</xpath>
+			<xpath>Defs/ThingDef[@Name="Obelisk"]</xpath>
 			<success>Always</success>
 			<value>
 				<researchPrerequisites></researchPrerequisites>
@@ -53,11 +53,11 @@
 	
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[@Name="ObeliskSAM"]/thingClass</xpath>
+    <xpath>Defs/ThingDef[@Name="ObeliskSAM"]/thingClass</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[@Name="ObeliskSAM"]/thingClass</xpath>
+      <xpath>Defs/ThingDef[@Name="ObeliskSAM"]/thingClass</xpath>
       <value>
 		<thingClass>Building_Art</thingClass>
       </value>
@@ -65,7 +65,7 @@
 	<!-- If it DOES NOT, add this instead. -->
 	<nomatch Class="PatchOperationAdd" MayRequire="sovereign.kemet">
 		<success>Always</success>
-		<xpath>/Defs/ThingDef[@Name="ObeliskSAM"]</xpath>
+		<xpath>Defs/ThingDef[@Name="ObeliskSAM"]</xpath>
 		<value>
 			<thingClass>Building_Art</thingClass>
 		</value>
@@ -75,11 +75,11 @@
 	
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[@Name="ObeliskSAM"]/canGenerateDefaultDesignator</xpath>
+    <xpath>Defs/ThingDef[@Name="ObeliskSAM"]/canGenerateDefaultDesignator</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[@Name="ObeliskSAM"]/canGenerateDefaultDesignator</xpath>
+      <xpath>Defs/ThingDef[@Name="ObeliskSAM"]/canGenerateDefaultDesignator</xpath>
       <value>
 		<canGenerateDefaultDesignator>true</canGenerateDefaultDesignator>
       </value>
@@ -87,7 +87,7 @@
 	<!-- If it DOES NOT, add this instead. -->
 	<nomatch Class="PatchOperationAdd">
 		<success>Always</success>
-		<xpath>/Defs/ThingDef[@Name="ObeliskSAM"]</xpath>
+		<xpath>Defs/ThingDef[@Name="ObeliskSAM"]</xpath>
 		<value>
 			<canGenerateDefaultDesignator>true</canGenerateDefaultDesignator>
 		</value>
@@ -97,9 +97,9 @@
   
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="GSE_ObeliskBig"]/researchPrerequisites</xpath>
+		<xpath>Defs/ThingDef[defName="GSE_ObeliskBig"]/researchPrerequisites</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="GSE_ObeliskBig"]</xpath>
+			<xpath>Defs/ThingDef[defName="GSE_ObeliskBig"]</xpath>
 			<success>Always</success>
 			<value>
 				<researchPrerequisites></researchPrerequisites>
@@ -109,9 +109,9 @@
 	
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="GSE_ObeliskBig"]/comps</xpath>
+		<xpath>Defs/ThingDef[defName="GSE_ObeliskBig"]/comps</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="GSE_ObeliskBig"]</xpath>
+			<xpath>Defs/ThingDef[defName="GSE_ObeliskBig"]</xpath>
 			<success>Always</success>
 			<value>
 				<comps></comps>
@@ -121,11 +121,11 @@
 	
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="GSE_ObeliskBig"]/canGenerateDefaultDesignator</xpath>
+    <xpath>Defs/ThingDef[defName="GSE_ObeliskBig"]/canGenerateDefaultDesignator</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="GSE_ObeliskBig"]/canGenerateDefaultDesignator</xpath>
+      <xpath>Defs/ThingDef[defName="GSE_ObeliskBig"]/canGenerateDefaultDesignator</xpath>
       <value>
 		<canGenerateDefaultDesignator>true</canGenerateDefaultDesignator>
       </value>
@@ -133,7 +133,7 @@
 	<!-- If it DOES NOT, add this instead. -->
 	<nomatch Class="PatchOperationAdd" MayRequire="sovereign.kemet">
 		<success>Always</success>
-		<xpath>/Defs/ThingDef[defName="GSE_ObeliskBig"]</xpath>
+		<xpath>Defs/ThingDef[defName="GSE_ObeliskBig"]</xpath>
 		<value>
 			<canGenerateDefaultDesignator>true</canGenerateDefaultDesignator>
 		</value>
@@ -143,11 +143,11 @@
   
 	<Operation Class="PatchOperationConditional" MayRequire="sovereign.kemet">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="GSE_ObeliskBig"]</xpath>
+		<xpath>Defs/ThingDef[defName="GSE_ObeliskBig"]</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="GSE_ObeliskBig"]/researchPrerequisites</xpath>
+			<xpath>Defs/ThingDef[defName="GSE_ObeliskBig"]/researchPrerequisites</xpath>
 			<value>
 				<li>AR_Project_Oriental_Culture</li>
 			</value>
@@ -157,11 +157,11 @@
 
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="GE_Hat_Seto"]</xpath>
+		<xpath>Defs/ThingDef[defName="GE_Hat_Seto"]</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[@Name="GE_Hat"]/recipeMaker/researchPrerequisites</xpath>
+			<xpath>Defs/ThingDef[@Name="GE_Hat"]/recipeMaker/researchPrerequisites</xpath>
 			<value>
 				<li>AR_Project_Oriental_Culture</li>
 			</value>
@@ -171,9 +171,9 @@
 	
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="GS_Sarcophagus"]/researchPrerequisites</xpath>
+		<xpath>Defs/ThingDef[defName="GS_Sarcophagus"]/researchPrerequisites</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="GS_Sarcophagus"]</xpath>
+			<xpath>Defs/ThingDef[defName="GS_Sarcophagus"]</xpath>
 			<success>Always</success>
 			<value>
 				<researchPrerequisites></researchPrerequisites>
@@ -183,11 +183,11 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="GS_Sarcophagus"]</xpath>
+		<xpath>Defs/ThingDef[defName="GS_Sarcophagus"]</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="GS_Sarcophagus"]/researchPrerequisites</xpath>
+			<xpath>Defs/ThingDef[defName="GS_Sarcophagus"]/researchPrerequisites</xpath>
 			<value>
 				<li>AR_Project_Oriental_Culture</li>
 			</value>
@@ -197,11 +197,11 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="GS_Sarcophagus"]/dominantStyleCategory</xpath>
+		<xpath>Defs/ThingDef[defName="GS_Sarcophagus"]/dominantStyleCategory</xpath>
 		<!-- If it DOES NOT, add this. -->
 		<nomatch Class="PatchOperationAdd">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="GS_Sarcophagus"]</xpath>
+			<xpath>Defs/ThingDef[defName="GS_Sarcophagus"]</xpath>
 			<value>
 				<dominantStyleCategory MayRequire="Sarg.AlphaMemes">AM_Kemetic</dominantStyleCategory>
 			</value>
@@ -211,11 +211,11 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="GS_Sarcophagus"]/statBases/StyleDominance</xpath>
+		<xpath>Defs/ThingDef[defName="GS_Sarcophagus"]/statBases/StyleDominance</xpath>
 		<!-- If it DOES NOT, add this. -->
 		<nomatch Class="PatchOperationAdd">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="GS_Sarcophagus"]/statBases</xpath>
+			<xpath>Defs/ThingDef[defName="GS_Sarcophagus"]/statBases</xpath>
 			<value>
 				<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">35</StyleDominance>
 			</value>
@@ -225,11 +225,11 @@
 	
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="GS_Sarcophagus"]/canGenerateDefaultDesignator</xpath>
+    <xpath>Defs/ThingDef[defName="GS_Sarcophagus"]/canGenerateDefaultDesignator</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="GS_Sarcophagus"]/canGenerateDefaultDesignator</xpath>
+      <xpath>Defs/ThingDef[defName="GS_Sarcophagus"]/canGenerateDefaultDesignator</xpath>
       <value>
 		<canGenerateDefaultDesignator>true</canGenerateDefaultDesignator>
       </value>
@@ -237,7 +237,7 @@
 	<!-- If it DOES NOT, add this instead. -->
 	<nomatch Class="PatchOperationAdd">
 		<success>Always</success>
-		<xpath>/Defs/ThingDef[defName="GS_Sarcophagus"]</xpath>
+		<xpath>Defs/ThingDef[defName="GS_Sarcophagus"]</xpath>
 		<value>
 			<canGenerateDefaultDesignator>true</canGenerateDefaultDesignator>
 		</value>
@@ -247,9 +247,9 @@
   
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional" MayRequire="sovereign.kemet">
-		<xpath>/Defs/ThingDef[defName="GSE_ObeliskBig"]/researchPrerequisites</xpath>
+		<xpath>Defs/ThingDef[defName="GSE_ObeliskBig"]/researchPrerequisites</xpath>
 		<nomatch Class="PatchOperationAdd" MayRequire="sovereign.kemet">
-			<xpath>/Defs/ThingDef[defName="GSE_ObeliskBig"]</xpath>
+			<xpath>Defs/ThingDef[defName="GSE_ObeliskBig"]</xpath>
 			<success>Always</success>
 			<value MayRequire="sovereign.kemet">
 				<researchPrerequisites></researchPrerequisites>
@@ -259,11 +259,11 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="GSE_ObeliskBig"]/researchPrerequisites</xpath>
+		<xpath>Defs/ThingDef[defName="GSE_ObeliskBig"]/researchPrerequisites</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="GSE_ObeliskBig"]/researchPrerequisites</xpath>
+			<xpath>Defs/ThingDef[defName="GSE_ObeliskBig"]/researchPrerequisites</xpath>
 			<value>
 				<li>AR_Project_Oriental_Culture</li>
 			</value>
@@ -273,11 +273,11 @@
   
 	<Operation Class="PatchOperationConditional" MayRequire="sovereign.kemet">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="GSE_ObeliskBig"]/dominantStyleCategory</xpath>
+		<xpath>Defs/ThingDef[defName="GSE_ObeliskBig"]/dominantStyleCategory</xpath>
 		<!-- If it DOES NOT, add this. -->
 		<nomatch Class="PatchOperationAdd" MayRequire="sovereign.kemet">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="GSE_ObeliskBig"]</xpath>
+			<xpath>Defs/ThingDef[defName="GSE_ObeliskBig"]</xpath>
 			<value MayRequire="sovereign.kemet">
 				<dominantStyleCategory MayRequire="Sarg.AlphaMemes">AM_Kemetic</dominantStyleCategory>
 			</value>
@@ -287,11 +287,11 @@
 	
 	<Operation Class="PatchOperationConditional" MayRequire="sovereign.kemet">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="GSE_ObeliskBig"]/statBases/StyleDominance</xpath>
+		<xpath>Defs/ThingDef[defName="GSE_ObeliskBig"]/statBases/StyleDominance</xpath>
 		<!-- If it DOES NOT, add this. -->
 		<nomatch Class="PatchOperationAdd" MayRequire="sovereign.kemet">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="GSE_ObeliskBig"]/statBases</xpath>
+			<xpath>Defs/ThingDef[defName="GSE_ObeliskBig"]/statBases</xpath>
 			<value MayRequire="sovereign.kemet">
 				<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">35</StyleDominance>
 			</value>
@@ -301,11 +301,11 @@
   
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="GSE_ObeliskBig"]/canGenerateDefaultDesignator</xpath>
+    <xpath>Defs/ThingDef[defName="GSE_ObeliskBig"]/canGenerateDefaultDesignator</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="GSE_ObeliskBig"]/canGenerateDefaultDesignator</xpath>
+      <xpath>Defs/ThingDef[defName="GSE_ObeliskBig"]/canGenerateDefaultDesignator</xpath>
       <value>
 		<canGenerateDefaultDesignator>true</canGenerateDefaultDesignator>
       </value>
@@ -313,7 +313,7 @@
 	<!-- If it DOES NOT, add this instead. -->
 	<nomatch Class="PatchOperationAdd">
 		<success>Always</success>
-		<xpath>/Defs/ThingDef[defName="GSE_ObeliskBig"]</xpath>
+		<xpath>Defs/ThingDef[defName="GSE_ObeliskBig"]</xpath>
 		<value>
 			<canGenerateDefaultDesignator>true</canGenerateDefaultDesignator>
 		</value>
@@ -323,9 +323,9 @@
   
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="GS_SarcGSE_ObeliskBigophagus"]/researchPrerequisites</xpath>
+		<xpath>Defs/ThingDef[defName="GS_SarcGSE_ObeliskBigophagus"]/researchPrerequisites</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="GS_SarcGSE_ObeliskBigophagus"]</xpath>
+			<xpath>Defs/ThingDef[defName="GS_SarcGSE_ObeliskBigophagus"]</xpath>
 			<success>Always</success>
 			<value>
 				<researchPrerequisites></researchPrerequisites>
@@ -335,11 +335,11 @@
 	
 	<Operation Class="PatchOperationConditional" MayRequire="sovereign.kemet">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="GS_SarcGSE_ObeliskBigophagus"]</xpath>
+		<xpath>Defs/ThingDef[defName="GS_SarcGSE_ObeliskBigophagus"]</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd" MayRequire="sovereign.kemet">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="GS_SarcGSE_ObeliskBigophagus"]/researchPrerequisites</xpath>
+			<xpath>Defs/ThingDef[defName="GS_SarcGSE_ObeliskBigophagus"]/researchPrerequisites</xpath>
 			<value MayRequire="sovereign.kemet">
 				<li>AR_Project_Oriental_Culture</li>
 			</value>
@@ -349,11 +349,11 @@
   
 	<Operation Class="PatchOperationConditional" MayRequire="sovereign.kemet">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="GS_SarcGSE_ObeliskBigophagus"]/dominantStyleCategory</xpath>
+		<xpath>Defs/ThingDef[defName="GS_SarcGSE_ObeliskBigophagus"]/dominantStyleCategory</xpath>
 		<!-- If it DOES NOT, add this. -->
 		<nomatch Class="PatchOperationAdd" MayRequire="sovereign.kemet">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="GS_SarcGSE_ObeliskBigophagus"]</xpath>
+			<xpath>Defs/ThingDef[defName="GS_SarcGSE_ObeliskBigophagus"]</xpath>
 			<value MayRequire="sovereign.kemet">
 				<dominantStyleCategory MayRequire="Sarg.AlphaMemes">AM_Kemetic</dominantStyleCategory>
 			</value>
@@ -363,11 +363,11 @@
 	
 	<Operation Class="PatchOperationConditional" MayRequire="sovereign.kemet">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="GS_SarcGSE_ObeliskBigophagus"]/statBases/StyleDominance</xpath>
+		<xpath>Defs/ThingDef[defName="GS_SarcGSE_ObeliskBigophagus"]/statBases/StyleDominance</xpath>
 		<!-- If it DOES NOT, add this. -->
 		<nomatch Class="PatchOperationAdd" MayRequire="sovereign.kemet">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="GS_SarcGSE_ObeliskBigophagus"]/statBases</xpath>
+			<xpath>Defs/ThingDef[defName="GS_SarcGSE_ObeliskBigophagus"]/statBases</xpath>
 			<value MayRequire="sovereign.kemet">
 				<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">35</StyleDominance>
 			</value>
@@ -377,11 +377,11 @@
   
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="GS_SarcGSE_ObeliskBigophagus"]/canGenerateDefaultDesignator</xpath>
+    <xpath>Defs/ThingDef[defName="GS_SarcGSE_ObeliskBigophagus"]/canGenerateDefaultDesignator</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="GS_SarcGSE_ObeliskBigophagus"]/canGenerateDefaultDesignator</xpath>
+      <xpath>Defs/ThingDef[defName="GS_SarcGSE_ObeliskBigophagus"]/canGenerateDefaultDesignator</xpath>
       <value>
 		<canGenerateDefaultDesignator>true</canGenerateDefaultDesignator>
       </value>
@@ -389,7 +389,7 @@
 	<!-- If it DOES NOT, add this instead. -->
 	<nomatch Class="PatchOperationAdd">
 		<success>Always</success>
-		<xpath>/Defs/ThingDef[defName="GS_SarcGSE_ObeliskBigophagus"]</xpath>
+		<xpath>Defs/ThingDef[defName="GS_SarcGSE_ObeliskBigophagus"]</xpath>
 		<value>
 			<canGenerateDefaultDesignator>true</canGenerateDefaultDesignator>
 		</value>
@@ -399,9 +399,9 @@
   
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="GSE_Monolith"]/researchPrerequisites</xpath>
+		<xpath>Defs/ThingDef[defName="GSE_Monolith"]/researchPrerequisites</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="GSE_Monolith"]</xpath>
+			<xpath>Defs/ThingDef[defName="GSE_Monolith"]</xpath>
 			<success>Always</success>
 			<value>
 				<researchPrerequisites></researchPrerequisites>
@@ -411,11 +411,11 @@
 	
 	<Operation Class="PatchOperationConditional" MayRequire="sovereign.kemet">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="GSE_Monolith"]</xpath>
+		<xpath>Defs/ThingDef[defName="GSE_Monolith"]</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd" MayRequire="sovereign.kemet">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="GSE_Monolith"]/researchPrerequisites</xpath>
+			<xpath>Defs/ThingDef[defName="GSE_Monolith"]/researchPrerequisites</xpath>
 			<value MayRequire="sovereign.kemet">
 				<li>AR_Project_Oriental_Culture</li>
 			</value>
@@ -425,11 +425,11 @@
   
 	<Operation Class="PatchOperationConditional" MayRequire="sovereign.kemet">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="GSE_Monolith"]/dominantStyleCategory</xpath>
+		<xpath>Defs/ThingDef[defName="GSE_Monolith"]/dominantStyleCategory</xpath>
 		<!-- If it DOES NOT, add this. -->
 		<nomatch Class="PatchOperationAdd" MayRequire="sovereign.kemet">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="GSE_Monolith"]</xpath>
+			<xpath>Defs/ThingDef[defName="GSE_Monolith"]</xpath>
 			<value MayRequire="sovereign.kemet">
 				<dominantStyleCategory MayRequire="Sarg.AlphaMemes">AM_Kemetic</dominantStyleCategory>
 			</value>
@@ -439,11 +439,11 @@
 	
 	<Operation Class="PatchOperationConditional" MayRequire="sovereign.kemet">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="GSE_Monolith"]/statBases/StyleDominance</xpath>
+		<xpath>Defs/ThingDef[defName="GSE_Monolith"]/statBases/StyleDominance</xpath>
 		<!-- If it DOES NOT, add this. -->
 		<nomatch Class="PatchOperationAdd" MayRequire="sovereign.kemet">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="GSE_Monolith"]/statBases</xpath>
+			<xpath>Defs/ThingDef[defName="GSE_Monolith"]/statBases</xpath>
 			<value MayRequire="sovereign.kemet">
 				<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">50</StyleDominance>
 			</value>
@@ -453,11 +453,11 @@
   
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="GSE_Monolith"]/canGenerateDefaultDesignator</xpath>
+    <xpath>Defs/ThingDef[defName="GSE_Monolith"]/canGenerateDefaultDesignator</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="GSE_Monolith"]/canGenerateDefaultDesignator</xpath>
+      <xpath>Defs/ThingDef[defName="GSE_Monolith"]/canGenerateDefaultDesignator</xpath>
       <value>
 		<canGenerateDefaultDesignator>true</canGenerateDefaultDesignator>
       </value>
@@ -465,7 +465,7 @@
 	<!-- If it DOES NOT, add this instead. -->
 	<nomatch Class="PatchOperationAdd" MayRequire="sovereign.kemet">
 		<success>Always</success>
-		<xpath>/Defs/ThingDef[defName="GSE_Monolith"]</xpath>
+		<xpath>Defs/ThingDef[defName="GSE_Monolith"]</xpath>
 		<value>
 			<canGenerateDefaultDesignator>true</canGenerateDefaultDesignator>
 		</value>
@@ -476,9 +476,9 @@
 
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="GSE_MonolithB"]/researchPrerequisites</xpath>
+		<xpath>Defs/ThingDef[defName="GSE_MonolithB"]/researchPrerequisites</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="GSE_MonolithB"]</xpath>
+			<xpath>Defs/ThingDef[defName="GSE_MonolithB"]</xpath>
 			<success>Always</success>
 			<value>
 				<researchPrerequisites></researchPrerequisites>
@@ -488,11 +488,11 @@
 	
 	<Operation Class="PatchOperationConditional" MayRequire="sovereign.kemet">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="GSE_MonolithB"]</xpath>
+		<xpath>Defs/ThingDef[defName="GSE_MonolithB"]</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="GSE_MonolithB"]/researchPrerequisites</xpath>
+			<xpath>Defs/ThingDef[defName="GSE_MonolithB"]/researchPrerequisites</xpath>
 			<value>
 				<li>AR_Project_Oriental_Culture</li>
 			</value>
@@ -502,11 +502,11 @@
 
 	<Operation Class="PatchOperationConditional" MayRequire="sovereign.kemet">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="GSE_MonolithB"]/dominantStyleCategory</xpath>
+		<xpath>Defs/ThingDef[defName="GSE_MonolithB"]/dominantStyleCategory</xpath>
 		<!-- If it DOES NOT, add this. -->
 		<nomatch Class="PatchOperationAdd" MayRequire="sovereign.kemet">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="GSE_MonolithB"]</xpath>
+			<xpath>Defs/ThingDef[defName="GSE_MonolithB"]</xpath>
 			<value MayRequire="sovereign.kemet">
 				<dominantStyleCategory MayRequire="Sarg.AlphaMemes">AM_Kemetic</dominantStyleCategory>
 			</value>
@@ -516,11 +516,11 @@
 	
 	<Operation Class="PatchOperationConditional" MayRequire="sovereign.kemet">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="GSE_MonolithB"]/statBases/StyleDominance</xpath>
+		<xpath>Defs/ThingDef[defName="GSE_MonolithB"]/statBases/StyleDominance</xpath>
 		<!-- If it DOES NOT, add this. -->
 		<nomatch Class="PatchOperationAdd" MayRequire="sovereign.kemet">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="GSE_MonolithB"]/statBases</xpath>
+			<xpath>Defs/ThingDef[defName="GSE_MonolithB"]/statBases</xpath>
 			<value MayRequire="sovereign.kemet">
 				<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">100</StyleDominance>
 			</value>
@@ -530,11 +530,11 @@
   
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="GSE_MonolithB"]/canGenerateDefaultDesignator</xpath>
+    <xpath>Defs/ThingDef[defName="GSE_MonolithB"]/canGenerateDefaultDesignator</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="GSE_MonolithB"]/canGenerateDefaultDesignator</xpath>
+      <xpath>Defs/ThingDef[defName="GSE_MonolithB"]/canGenerateDefaultDesignator</xpath>
       <value>
 		<canGenerateDefaultDesignator>true</canGenerateDefaultDesignator>
       </value>
@@ -542,7 +542,7 @@
 	<!-- If it DOES NOT, add this instead. -->
 	<nomatch Class="PatchOperationAdd" MayRequire="sovereign.kemet">
 		<success>Always</success>
-		<xpath>/Defs/ThingDef[defName="GSE_MonolithB"]</xpath>
+		<xpath>Defs/ThingDef[defName="GSE_MonolithB"]</xpath>
 		<value>
 			<canGenerateDefaultDesignator>true</canGenerateDefaultDesignator>
 		</value>
@@ -553,9 +553,9 @@
 
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="GSE_MonolithC"]/researchPrerequisites</xpath>
+		<xpath>Defs/ThingDef[defName="GSE_MonolithC"]/researchPrerequisites</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="GSE_MonolithC"]</xpath>
+			<xpath>Defs/ThingDef[defName="GSE_MonolithC"]</xpath>
 			<success>Always</success>
 			<value>
 				<researchPrerequisites></researchPrerequisites>
@@ -565,11 +565,11 @@
 	
 	<Operation Class="PatchOperationConditional" MayRequire="sovereign.kemet">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="GSE_MonolithC"]</xpath>
+		<xpath>Defs/ThingDef[defName="GSE_MonolithC"]</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="GSE_MonolithC"]/researchPrerequisites</xpath>
+			<xpath>Defs/ThingDef[defName="GSE_MonolithC"]/researchPrerequisites</xpath>
 			<value>
 				<li>AR_Project_Oriental_Culture</li>
 			</value>
@@ -579,11 +579,11 @@
   
 	<Operation Class="PatchOperationConditional" MayRequire="sovereign.kemet">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="GSE_MonolithC"]/dominantStyleCategory</xpath>
+		<xpath>Defs/ThingDef[defName="GSE_MonolithC"]/dominantStyleCategory</xpath>
 		<!-- If it DOES NOT, add this. -->
 		<nomatch Class="PatchOperationAdd" MayRequire="sovereign.kemet">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="GSE_MonolithC"]</xpath>
+			<xpath>Defs/ThingDef[defName="GSE_MonolithC"]</xpath>
 			<value MayRequire="sovereign.kemet">
 				<dominantStyleCategory MayRequire="Sarg.AlphaMemes">AM_Kemetic</dominantStyleCategory>
 			</value>
@@ -593,11 +593,11 @@
 	
 	<Operation Class="PatchOperationConditional" MayRequire="sovereign.kemet">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="GSE_MonolithC"]/statBases/StyleDominance</xpath>
+		<xpath>Defs/ThingDef[defName="GSE_MonolithC"]/statBases/StyleDominance</xpath>
 		<!-- If it DOES NOT, add this. -->
 		<nomatch Class="PatchOperationAdd" MayRequire="sovereign.kemet">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="GSE_MonolithC"]/statBases</xpath>
+			<xpath>Defs/ThingDef[defName="GSE_MonolithC"]/statBases</xpath>
 			<value MayRequire="sovereign.kemet">
 				<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">50</StyleDominance>
 			</value>
@@ -607,11 +607,11 @@
   
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="GSE_MonolithC"]/canGenerateDefaultDesignator</xpath>
+    <xpath>Defs/ThingDef[defName="GSE_MonolithC"]/canGenerateDefaultDesignator</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="GSE_MonolithC"]/canGenerateDefaultDesignator</xpath>
+      <xpath>Defs/ThingDef[defName="GSE_MonolithC"]/canGenerateDefaultDesignator</xpath>
       <value>
 		<canGenerateDefaultDesignator>true</canGenerateDefaultDesignator>
       </value>
@@ -619,7 +619,7 @@
 	<!-- If it DOES NOT, add this instead. -->
 	<nomatch Class="PatchOperationAdd" MayRequire="sovereign.kemet">
 		<success>Always</success>
-		<xpath>/Defs/ThingDef[defName="GSE_MonolithC"]</xpath>
+		<xpath>Defs/ThingDef[defName="GSE_MonolithC"]</xpath>
 		<value>
 			<canGenerateDefaultDesignator>true</canGenerateDefaultDesignator>
 		</value>
@@ -629,9 +629,9 @@
 
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="GS_SarcophagusB"]/researchPrerequisites</xpath>
+		<xpath>Defs/ThingDef[defName="GS_SarcophagusB"]/researchPrerequisites</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="GS_SarcophagusB"]</xpath>
+			<xpath>Defs/ThingDef[defName="GS_SarcophagusB"]</xpath>
 			<success>Always</success>
 			<value>
 				<researchPrerequisites></researchPrerequisites>
@@ -641,11 +641,11 @@
 	
 	<Operation Class="PatchOperationConditional" MayRequire="sovereign.kemet">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="GS_SarcophagusB"]</xpath>
+		<xpath>Defs/ThingDef[defName="GS_SarcophagusB"]</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="GS_SarcophagusB"]/researchPrerequisites</xpath>
+			<xpath>Defs/ThingDef[defName="GS_SarcophagusB"]/researchPrerequisites</xpath>
 			<value>
 				<li>AR_Project_Oriental_Culture</li>
 			</value>
@@ -655,11 +655,11 @@
   
 	<Operation Class="PatchOperationConditional" MayRequire="sovereign.kemet">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="GS_SarcophagusB"]/dominantStyleCategory</xpath>
+		<xpath>Defs/ThingDef[defName="GS_SarcophagusB"]/dominantStyleCategory</xpath>
 		<!-- If it DOES NOT, add this. -->
 		<nomatch Class="PatchOperationAdd" MayRequire="sovereign.kemet">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="GS_SarcophagusB"]</xpath>
+			<xpath>Defs/ThingDef[defName="GS_SarcophagusB"]</xpath>
 			<value MayRequire="sovereign.kemet">
 				<dominantStyleCategory MayRequire="Sarg.AlphaMemes">AM_Kemetic</dominantStyleCategory>
 			</value>
@@ -669,11 +669,11 @@
 	
 	<Operation Class="PatchOperationConditional" MayRequire="sovereign.kemet">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="GS_SarcophagusB"]/statBases/StyleDominance</xpath>
+		<xpath>Defs/ThingDef[defName="GS_SarcophagusB"]/statBases/StyleDominance</xpath>
 		<!-- If it DOES NOT, add this. -->
 		<nomatch Class="PatchOperationAdd" MayRequire="sovereign.kemet">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="GS_SarcophagusB"]/statBases</xpath>
+			<xpath>Defs/ThingDef[defName="GS_SarcophagusB"]/statBases</xpath>
 			<value MayRequire="sovereign.kemet">
 				<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">30</StyleDominance>
 			</value>
@@ -683,11 +683,11 @@
   
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="GS_SarcophagusB"]/canGenerateDefaultDesignator</xpath>
+    <xpath>Defs/ThingDef[defName="GS_SarcophagusB"]/canGenerateDefaultDesignator</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="GS_SarcophagusB"]/canGenerateDefaultDesignator</xpath>
+      <xpath>Defs/ThingDef[defName="GS_SarcophagusB"]/canGenerateDefaultDesignator</xpath>
       <value>
 		<canGenerateDefaultDesignator>true</canGenerateDefaultDesignator>
       </value>
@@ -695,7 +695,7 @@
 	<!-- If it DOES NOT, add this. -->
     <nomatch Class="PatchOperationAdd" MayRequire="sovereign.kemet">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="GS_SarcophagusB"]/canGenerateDefaultDesignator</xpath>
+      <xpath>Defs/ThingDef[defName="GS_SarcophagusB"]/canGenerateDefaultDesignator</xpath>
       <value>
 		<canGenerateDefaultDesignator>true</canGenerateDefaultDesignator>
       </value>
@@ -705,9 +705,9 @@
   
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="GS_HieroglyphicWall"]/researchPrerequisites</xpath>
+		<xpath>Defs/ThingDef[defName="GS_HieroglyphicWall"]/researchPrerequisites</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="GS_HieroglyphicWall"]</xpath>
+			<xpath>Defs/ThingDef[defName="GS_HieroglyphicWall"]</xpath>
 			<success>Always</success>
 			<value>
 				<researchPrerequisites></researchPrerequisites>
@@ -717,11 +717,11 @@
 	
 	<Operation Class="PatchOperationConditional" MayRequire="sovereign.kemet">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="GS_HieroglyphicWall"]</xpath>
+		<xpath>Defs/ThingDef[defName="GS_HieroglyphicWall"]</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="GS_HieroglyphicWall"]/researchPrerequisites</xpath>
+			<xpath>Defs/ThingDef[defName="GS_HieroglyphicWall"]/researchPrerequisites</xpath>
 			<value>
 				<li>AR_Project_Oriental_Culture</li>
 			</value>
@@ -731,11 +731,11 @@
 
 	<Operation Class="PatchOperationConditional" MayRequire="sovereign.kemet">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="GS_HieroglyphicWall"]/dominantStyleCategory</xpath>
+		<xpath>Defs/ThingDef[defName="GS_HieroglyphicWall"]/dominantStyleCategory</xpath>
 		<!-- If it does, add this. -->
 		<nomatch Class="PatchOperationAdd" MayRequire="sovereign.kemet">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="GS_HieroglyphicWall"]</xpath>
+			<xpath>Defs/ThingDef[defName="GS_HieroglyphicWall"]</xpath>
 			<value MayRequire="sovereign.kemet">
 				<dominantStyleCategory MayRequire="Sarg.AlphaMemes">AM_Kemetic</dominantStyleCategory>
 			</value>
@@ -745,11 +745,11 @@
 	
 	<Operation Class="PatchOperationConditional" MayRequire="sovereign.kemet">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="GS_HieroglyphicWall"]/statBases/StyleDominance</xpath>
+		<xpath>Defs/ThingDef[defName="GS_HieroglyphicWall"]/statBases/StyleDominance</xpath>
 		<!-- If it does, add this. -->
 		<nomatch Class="PatchOperationAdd" MayRequire="sovereign.kemet">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="GS_HieroglyphicWall"]/statBases</xpath>
+			<xpath>Defs/ThingDef[defName="GS_HieroglyphicWall"]/statBases</xpath>
 			<value MayRequire="sovereign.kemet">
 				<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">30</StyleDominance>
 			</value>
@@ -759,11 +759,11 @@
   
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="GS_HieroglyphicWall"]/canGenerateDefaultDesignator</xpath>
+    <xpath>Defs/ThingDef[defName="GS_HieroglyphicWall"]/canGenerateDefaultDesignator</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="GS_HieroglyphicWall"]/canGenerateDefaultDesignator</xpath>
+      <xpath>Defs/ThingDef[defName="GS_HieroglyphicWall"]/canGenerateDefaultDesignator</xpath>
       <value>
 		<canGenerateDefaultDesignator>true</canGenerateDefaultDesignator>
       </value>
@@ -771,7 +771,7 @@
 	<!-- If it DOES NOT, add this instead. -->
 	<nomatch Class="PatchOperationAdd" MayRequire="sovereign.kemet">
 		<success>Always</success>
-		<xpath>/Defs/ThingDef[defName="GS_HieroglyphicWall"]</xpath>
+		<xpath>Defs/ThingDef[defName="GS_HieroglyphicWall"]</xpath>
 		<value>
 			<canGenerateDefaultDesignator>true</canGenerateDefaultDesignator>
 		</value>
@@ -781,9 +781,9 @@
   
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[@Name="ObeliskSAM"]/researchPrerequisites</xpath>
+		<xpath>Defs/ThingDef[@Name="ObeliskSAM"]/researchPrerequisites</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[@Name="ObeliskSAM"]</xpath>
+			<xpath>Defs/ThingDef[@Name="ObeliskSAM"]</xpath>
 			<success>Always</success>
 			<value>
 				<researchPrerequisites></researchPrerequisites>
@@ -793,11 +793,11 @@
 	
 	<Operation Class="PatchOperationConditional" MayRequire="sovereign.kemet">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="SAM_ObeliskBig"]</xpath>
+		<xpath>Defs/ThingDef[defName="SAM_ObeliskBig"]</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[@Name="ObeliskSAM"]/researchPrerequisites</xpath>
+			<xpath>Defs/ThingDef[@Name="ObeliskSAM"]/researchPrerequisites</xpath>
 			<value>
 				<li>AR_Project_Oriental_Culture</li>
 			</value>
@@ -807,11 +807,11 @@
   
 	<Operation Class="PatchOperationConditional" MayRequire="sovereign.kemet">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="SAM_ObeliskBig"]/dominantStyleCategory</xpath>
+		<xpath>Defs/ThingDef[defName="SAM_ObeliskBig"]/dominantStyleCategory</xpath>
 		<!-- If it DOES NOT, add this. -->
 		<nomatch Class="PatchOperationAdd" MayRequire="sovereign.kemet">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[@Name="ObeliskSAM"]</xpath>
+			<xpath>Defs/ThingDef[@Name="ObeliskSAM"]</xpath>
 			<value MayRequire="sovereign.kemet">
 				<dominantStyleCategory MayRequire="Sarg.AlphaMemes">AM_Kemetic</dominantStyleCategory>
 			</value>
@@ -821,11 +821,11 @@
 	
 	<Operation Class="PatchOperationConditional" MayRequire="sovereign.kemet">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[@Name="ObeliskSAM"]/statBases/StyleDominance</xpath>
+		<xpath>Defs/ThingDef[@Name="ObeliskSAM"]/statBases/StyleDominance</xpath>
 		<!-- If it DOES NOT, add this. -->
 		<nomatch Class="PatchOperationAdd" MayRequire="sovereign.kemet">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[@Name="ObeliskSAM"]/statBases</xpath>
+			<xpath>Defs/ThingDef[@Name="ObeliskSAM"]/statBases</xpath>
 			<value MayRequire="sovereign.kemet">
 				<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">30</StyleDominance>
 			</value>
@@ -835,11 +835,11 @@
   
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[@Name="ObeliskSAM"]/canGenerateDefaultDesignator</xpath>
+    <xpath>Defs/ThingDef[@Name="ObeliskSAM"]/canGenerateDefaultDesignator</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[@Name="ObeliskSAM"]/canGenerateDefaultDesignator</xpath>
+      <xpath>Defs/ThingDef[@Name="ObeliskSAM"]/canGenerateDefaultDesignator</xpath>
       <value>
 		<canGenerateDefaultDesignator>true</canGenerateDefaultDesignator>
       </value>
@@ -847,7 +847,7 @@
 	<!-- If it DOES NOT, add this instead. -->
 	<nomatch Class="PatchOperationAdd">
 		<success>Always</success>
-		<xpath>/Defs/ThingDef[@Name="ObeliskSAM"]</xpath>
+		<xpath>Defs/ThingDef[@Name="ObeliskSAM"]</xpath>
 		<value>
 			<canGenerateDefaultDesignator>true</canGenerateDefaultDesignator>
 		</value>
@@ -857,11 +857,11 @@
   
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[@Name="Obelisk"]/thingClass</xpath>
+    <xpath>Defs/ThingDef[@Name="Obelisk"]/thingClass</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[@Name="Obelisk"]/thingClass</xpath>
+      <xpath>Defs/ThingDef[@Name="Obelisk"]/thingClass</xpath>
       <value>
 		<thingClass>Building_Art</thingClass>
       </value>
@@ -869,7 +869,7 @@
 	<!-- If it DOES NOT, add this instead. -->
 	<nomatch Class="PatchOperationAdd">
 		<success>Always</success>
-		<xpath>/Defs/ThingDef[@Name="Obelisk"]</xpath>
+		<xpath>Defs/ThingDef[@Name="Obelisk"]</xpath>
 		<value>
 			<thingClass>Building_Art</thingClass>
 		</value>
@@ -879,11 +879,11 @@
   
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[@Name="Obelisk"]/comps</xpath>
+    <xpath>Defs/ThingDef[@Name="Obelisk"]/comps</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[@Name="Obelisk"]/comps</xpath>
+      <xpath>Defs/ThingDef[@Name="Obelisk"]/comps</xpath>
       <value>
 		  <comps Inherit="False">
 			  <li>
@@ -927,11 +927,11 @@
   
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[@Name="ObeliskSAM"]/comps</xpath>
+    <xpath>Defs/ThingDef[@Name="ObeliskSAM"]/comps</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[@Name="ObeliskSAM"]/comps</xpath>
+      <xpath>Defs/ThingDef[@Name="ObeliskSAM"]/comps</xpath>
       <value>
 		  <comps Inherit="False">
 			  <li>
@@ -979,9 +979,9 @@
 
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="MeleeWeapon_AncientSword"]/recipeMaker/researchPrerequisites</xpath>
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_AncientSword"]/recipeMaker/researchPrerequisites</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="MeleeWeapon_AncientSword"]/recipeMaker</xpath>
+			<xpath>Defs/ThingDef[defName="MeleeWeapon_AncientSword"]/recipeMaker</xpath>
 			<success>Always</success>
 			<value>
 				<researchPrerequisites></researchPrerequisites>
@@ -992,11 +992,11 @@
 	<!--
 	<Operation Class="PatchOperationConditional">
 	Does this exist?
-		<xpath>/Defs/ThingDef[defName="MeleeWeapon_AncientSword"]</xpath>
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_AncientSword"]</xpath>
 		If it does, add this.
 		<match Class="PatchOperationAdd">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="MeleeWeapon_AncientSword"]/recipeMaker/researchPrerequisites</xpath>
+			<xpath>Defs/ThingDef[defName="MeleeWeapon_AncientSword"]/recipeMaker/researchPrerequisites</xpath>
 			<value>
 				<li>AR_Project_Oriental_Culture</li>
 			</value>
@@ -1007,9 +1007,9 @@
 	
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="MeleeWeapon_AncientSword"]/weaponTags</xpath>
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_AncientSword"]/weaponTags</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="MeleeWeapon_AncientSword"]</xpath>
+			<xpath>Defs/ThingDef[defName="MeleeWeapon_AncientSword"]</xpath>
 			<success>Always</success>
 			<value>
 				<weaponTags></weaponTags>
@@ -1019,9 +1019,9 @@
 	
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="MeleeWeapon_AncientSword"]/thingCategories</xpath>
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_AncientSword"]/thingCategories</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="MeleeWeapon_AncientSword"]</xpath>
+			<xpath>Defs/ThingDef[defName="MeleeWeapon_AncientSword"]</xpath>
 			<success>Always</success>
 			<value>
 				<thingCategories Inherit="False"></thingCategories>
@@ -1031,11 +1031,11 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="MeleeWeapon_AncientSword"]</xpath>
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_AncientSword"]</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="MeleeWeapon_AncientSword"]/weaponTags</xpath>
+			<xpath>Defs/ThingDef[defName="MeleeWeapon_AncientSword"]/weaponTags</xpath>
 			<value>
 				<li>EgyptianNoble</li>
 				<li>EgyptianHeavy</li>
@@ -1048,11 +1048,11 @@
 	<!--
 	<Operation Class="PatchOperationConditional">
 	Does this exist?
-		<xpath>/Defs/ThingDef[defName="MeleeWeapon_AncientSword"]</xpath>
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_AncientSword"]</xpath>
 		If it does, add this.
 		<match Class="PatchOperationAdd">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="MeleeWeapon_AncientSword"]/thingCategories</xpath>
+			<xpath>Defs/ThingDef[defName="MeleeWeapon_AncientSword"]/thingCategories</xpath>
 			<value>
 				<li>TSP_AR_RomanMelee</li>
 			</value>
@@ -1063,9 +1063,9 @@
 	
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="MeleeWeapon_Staff_Egypt"]/recipeMaker/researchPrerequisites</xpath>
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_Staff_Egypt"]/recipeMaker/researchPrerequisites</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="MeleeWeapon_Staff_Egypt"]/recipeMaker</xpath>
+			<xpath>Defs/ThingDef[defName="MeleeWeapon_Staff_Egypt"]/recipeMaker</xpath>
 			<success>Always</success>
 			<value>
 				<researchPrerequisites></researchPrerequisites>
@@ -1075,11 +1075,11 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="MeleeWeapon_Staff_Egypt"]</xpath>
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_Staff_Egypt"]</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="MeleeWeapon_Staff_Egypt"]/recipeMaker/researchPrerequisites</xpath>
+			<xpath>Defs/ThingDef[defName="MeleeWeapon_Staff_Egypt"]/recipeMaker/researchPrerequisites</xpath>
 			<value>
 				<li>AR_Project_Oriental_Culture</li>
 			</value>
@@ -1089,9 +1089,9 @@
 	
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="MeleeWeapon_Staff_Egypt"]/weaponTags</xpath>
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_Staff_Egypt"]/weaponTags</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="MeleeWeapon_Staff_Egypt"]</xpath>
+			<xpath>Defs/ThingDef[defName="MeleeWeapon_Staff_Egypt"]</xpath>
 			<success>Always</success>
 			<value>
 				<weaponTags></weaponTags>
@@ -1101,9 +1101,9 @@
 	
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="MeleeWeapon_Staff_Egypt"]/thingCategories</xpath>
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_Staff_Egypt"]/thingCategories</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="MeleeWeapon_Staff_Egypt"]</xpath>
+			<xpath>Defs/ThingDef[defName="MeleeWeapon_Staff_Egypt"]</xpath>
 			<success>Always</success>
 			<value>
 				<thingCategories Inherit="False"></thingCategories>
@@ -1113,11 +1113,11 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="MeleeWeapon_Staff_Egypt"]</xpath>
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_Staff_Egypt"]</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="MeleeWeapon_Staff_Egypt"]/thingCategories</xpath>
+			<xpath>Defs/ThingDef[defName="MeleeWeapon_Staff_Egypt"]/thingCategories</xpath>
 			<value>
 				<li>TSP_AR_RomanMelee</li>
 			</value>
@@ -1127,11 +1127,11 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="MeleeWeapon_Staff_Egypt"]</xpath>
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_Staff_Egypt"]</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="MeleeWeapon_Staff_Egypt"]/weaponTags</xpath>
+			<xpath>Defs/ThingDef[defName="MeleeWeapon_Staff_Egypt"]/weaponTags</xpath>
 			<value>
 				<li>EgyptianRoyal</li>
 				<!-- <li>HarrowedMeleeChampion</li> -->
@@ -1144,9 +1144,9 @@
 	
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="MeleeWeapon_AncientAXE"]/recipeMaker/researchPrerequisites</xpath>
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_AncientAXE"]/recipeMaker/researchPrerequisites</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="MeleeWeapon_AncientAXE"]/recipeMaker</xpath>
+			<xpath>Defs/ThingDef[defName="MeleeWeapon_AncientAXE"]/recipeMaker</xpath>
 			<success>Always</success>
 			<value>
 				<researchPrerequisites></researchPrerequisites>
@@ -1157,11 +1157,11 @@
 	<!--
 	<Operation Class="PatchOperationConditional">
 	Does this exist?
-		<xpath>/Defs/ThingDef[defName="MeleeWeapon_AncientAXE"]</xpath>
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_AncientAXE"]</xpath>
 		If it does, add this.
 		<match Class="PatchOperationAdd">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="MeleeWeapon_AncientAXE"]/recipeMaker/researchPrerequisites</xpath>
+			<xpath>Defs/ThingDef[defName="MeleeWeapon_AncientAXE"]/recipeMaker/researchPrerequisites</xpath>
 			<value>
 				<li>AR_Project_Oriental_Culture</li>
 			</value>
@@ -1172,9 +1172,9 @@
 	
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="MeleeWeapon_AncientAXE"]/weaponTags</xpath>
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_AncientAXE"]/weaponTags</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="MeleeWeapon_AncientAXE"]</xpath>
+			<xpath>Defs/ThingDef[defName="MeleeWeapon_AncientAXE"]</xpath>
 			<success>Always</success>
 			<value>
 				<weaponTags></weaponTags>
@@ -1184,9 +1184,9 @@
 	
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="MeleeWeapon_AncientAXE"]/thingCategories</xpath>
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_AncientAXE"]/thingCategories</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="MeleeWeapon_AncientAXE"]</xpath>
+			<xpath>Defs/ThingDef[defName="MeleeWeapon_AncientAXE"]</xpath>
 			<success>Always</success>
 			<value>
 				<thingCategories Inherit="False"></thingCategories>
@@ -1197,11 +1197,11 @@
 	<!--
 	<Operation Class="PatchOperationConditional">
 	Does this exist?
-		<xpath>/Defs/ThingDef[defName="MeleeWeapon_AncientAXE"]</xpath>
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_AncientAXE"]</xpath>
 		If it does, add this.
 		<match Class="PatchOperationAdd">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="MeleeWeapon_AncientAXE"]/thingCategories</xpath>
+			<xpath>Defs/ThingDef[defName="MeleeWeapon_AncientAXE"]/thingCategories</xpath>
 			<value>
 				<li>TSP_AR_RomanMelee</li>
 			</value>
@@ -1212,11 +1212,11 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="MeleeWeapon_AncientAXE"]</xpath>
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_AncientAXE"]</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="MeleeWeapon_AncientAXE"]/weaponTags</xpath>
+			<xpath>Defs/ThingDef[defName="MeleeWeapon_AncientAXE"]/weaponTags</xpath>
 			<value>
 				<li>EgyptianNoble</li>
 				<li>EgyptianHeavy</li>
@@ -1228,9 +1228,9 @@
 
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[@Name="GE_Hat"]/apparel/tags</xpath>
+		<xpath>Defs/ThingDef[@Name="GE_Hat"]/apparel/tags</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[@Name="GE_Hat"]/apparel</xpath>
+			<xpath>Defs/ThingDef[@Name="GE_Hat"]/apparel</xpath>
 			<success>Always</success>
 			<value>
 				<tags></tags>
@@ -1240,11 +1240,11 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[Name="GE_Hat_Seto"]</xpath>
+		<xpath>Defs/ThingDef[Name="GE_Hat_Seto"]</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[@Name="GE_Hat"]/apparel/tags</xpath>
+			<xpath>Defs/ThingDef[@Name="GE_Hat"]/apparel/tags</xpath>
 			<value>
 				<li>EgyptianNoble</li>
 				<li>EgyptianRoyal</li>
@@ -1257,9 +1257,9 @@
 	
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="GE_Hat_Seto"]/apparel/tags</xpath>
+		<xpath>Defs/ThingDef[defName="GE_Hat_Seto"]/apparel/tags</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="GE_Hat_Seto"]/apparel</xpath>
+			<xpath>Defs/ThingDef[defName="GE_Hat_Seto"]/apparel</xpath>
 			<success>Always</success>
 			<value>
 				<tags></tags>
@@ -1269,11 +1269,11 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[Name="GE_Hat_Seto"]/apparel/tags</xpath>
+		<xpath>Defs/ThingDef[Name="GE_Hat_Seto"]/apparel/tags</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="GE_Hat_Seto"]/apparel/tags</xpath>
+			<xpath>Defs/ThingDef[defName="GE_Hat_Seto"]/apparel/tags</xpath>
 			<value>
 				<li>EgyptianNoble</li>
 				<li>EgyptianRoyal</li>
@@ -1288,9 +1288,9 @@
 	
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="GE_Hat_priest"]/apparel/tags</xpath>
+		<xpath>Defs/ThingDef[defName="GE_Hat_priest"]/apparel/tags</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="GE_Hat_priest"]/apparel</xpath>
+			<xpath>Defs/ThingDef[defName="GE_Hat_priest"]/apparel</xpath>
 			<success>Always</success>
 			<value>
 				<tags></tags>
@@ -1300,11 +1300,11 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="GE_Hat_priest"]/apparel/tags</xpath>
+		<xpath>Defs/ThingDef[defName="GE_Hat_priest"]/apparel/tags</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="GE_Hat_priest"]/apparel/tags</xpath>
+			<xpath>Defs/ThingDef[defName="GE_Hat_priest"]/apparel/tags</xpath>
 			<value>
 				<li>EgyptianNoble</li>
 				<li>EgyptianRoyal</li>
@@ -1319,11 +1319,11 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="GE_Hat_cowl"]/apparel/tags</xpath>
+		<xpath>Defs/ThingDef[defName="GE_Hat_cowl"]/apparel/tags</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="GE_Hat_cowl"]/apparel/tags</xpath>
+			<xpath>Defs/ThingDef[defName="GE_Hat_cowl"]/apparel/tags</xpath>
 			<value>
 				<li>EgyptianNoble</li>
 				<li>EgyptianRoyal</li>

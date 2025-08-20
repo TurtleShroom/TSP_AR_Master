@@ -2,11 +2,11 @@
 <Patch>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="Apparel_FSDesertRobe"]</xpath>
+    <xpath>Defs/ThingDef[defName="Apparel_FSDesertRobe"]</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="Apparel_FSDesertRobe"]/apparel/tags</xpath>
+      <xpath>Defs/ThingDef[defName="Apparel_FSDesertRobe"]/apparel/tags</xpath>
       <value>
         <li>Muslim_apparel</li>
         <li>EgyptianAdvanced</li>
@@ -18,11 +18,11 @@
   <!--
   <Operation Class="PatchOperationConditional">
     Does this exist?
-    <xpath>/Defs/ThingDef[defName="Apparel_FSDesertRobe"]</xpath>
+    <xpath>Defs/ThingDef[defName="Apparel_FSDesertRobe"]</xpath>
     If it does, do this replacement.
     <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/PawnKindDef[defName="AR_Scribe"]/apparelRequired</xpath>
+      <xpath>Defs/PawnKindDef[defName="AR_Scribe"]/apparelRequired</xpath>
       <value>
         <apparelRequired>
           <li>Apparel_FSDesertRobe</li>
@@ -34,11 +34,11 @@
   -->
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="Apparel_FSDesertRobe"]</xpath>
+    <xpath>Defs/ThingDef[defName="Apparel_FSDesertRobe"]</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/PawnKindDef[defName="AR_ETrader"]/apparelRequired</xpath>
+      <xpath>Defs/PawnKindDef[defName="AR_ETrader"]/apparelRequired</xpath>
       <value>
         <apparelRequired>
           <li>Apparel_FSDesertRobe</li>
@@ -50,10 +50,10 @@
   <!--
 	<Operation Class="PatchOperationConditional">
 	Does this exist?
-		<xpath>/Defs/ThingDef[defName="SimpleWoodenShield"]</xpath>
+		<xpath>Defs/ThingDef[defName="SimpleWoodenShield"]</xpath>
 		If it does, add Mod support for the following Comps.
 		<match Class="PatchOperationAddModExtension">
-			<xpath>/Defs/PawnKindDef[defName="AR_ESpear"]</xpath>
+			<xpath>Defs/PawnKindDef[defName="AR_ESpear"]</xpath>
 			<value>
 				<li Class="AR_PawnShields.ShieldPawnGeneratorProperties">
 				<shieldMoney>

@@ -3,10 +3,10 @@
 <Patch>
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/RecipeDef[defName="Cook_RS_fried_something"]/ingredients</xpath>
+		<xpath>Defs/RecipeDef[defName="Cook_RS_fried_something"]/ingredients</xpath>
 		<!-- If it does, add this replacement. -->
 		<match Class="PatchOperationReplace">
-			<xpath>/Defs/RecipeDef[defName="Cook_RS_fried_something"]/ingredients</xpath>
+			<xpath>Defs/RecipeDef[defName="Cook_RS_fried_something"]/ingredients</xpath>
 			<success>Always</success>
 			<value>
 				<ingredients>
@@ -44,10 +44,10 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/RecipeDef[defName="Cook_RS_fried_something"]/fixedIngredientFilter</xpath>
+		<xpath>Defs/RecipeDef[defName="Cook_RS_fried_something"]/fixedIngredientFilter</xpath>
 		<!-- If it does, add this replacement. -->
 		<match Class="PatchOperationReplace">
-			<xpath>/Defs/RecipeDef[defName="Cook_RS_fried_something"]/fixedIngredientFilter</xpath>
+			<xpath>Defs/RecipeDef[defName="Cook_RS_fried_something"]/fixedIngredientFilter</xpath>
 			<success>Always</success>
 			<value>
 				<fixedIngredientFilter>
@@ -69,10 +69,10 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/RecipeDef[defName="Cook_RS_fried_something_bulkk"]/ingredients</xpath>
+		<xpath>Defs/RecipeDef[defName="Cook_RS_fried_something_bulkk"]/ingredients</xpath>
 		<!-- If it does, add this replacement. -->
 		<match Class="PatchOperationReplace">
-			<xpath>/Defs/RecipeDef[defName="Cook_RS_fried_something_bulkk"]/ingredients</xpath>
+			<xpath>Defs/RecipeDef[defName="Cook_RS_fried_something_bulkk"]/ingredients</xpath>
 			<success>Always</success>
 			<value>
 				<ingredients>
@@ -110,10 +110,10 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/RecipeDef[defName="Cook_RS_fried_something_bulkk"]/fixedIngredientFilter</xpath>
+		<xpath>Defs/RecipeDef[defName="Cook_RS_fried_something_bulkk"]/fixedIngredientFilter</xpath>
 		<!-- If it does, add this replacement. -->
 		<match Class="PatchOperationReplace">
-			<xpath>/Defs/RecipeDef[defName="Cook_RS_fried_something_bulkk"]/fixedIngredientFilter</xpath>
+			<xpath>Defs/RecipeDef[defName="Cook_RS_fried_something_bulkk"]/fixedIngredientFilter</xpath>
 			<success>Always</success>
 			<value>
 				<fixedIngredientFilter>

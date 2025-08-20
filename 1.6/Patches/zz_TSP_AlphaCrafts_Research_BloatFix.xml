@@ -3,14 +3,14 @@
 <Patch>
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/RecipeDef[defName="AC_PressOil"]</xpath>
+		<xpath>Defs/RecipeDef[defName="AC_PressOil"]</xpath>
 		<!-- If it does, LET'S FASTING GOOOOOOOO!! -->
 		<match Class="PatchOperationSequence">
 			<operations>
 				<!-- ARTISINAL OIL PRESSING -->
 				<li Class="PatchOperationInsert">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="AC_OilExtraction"]</xpath>
+					<xpath>Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="AC_OilExtraction"]</xpath>
 					<value>
 						<li>AR_Project_Mediterranean_Culture</li>
 					</value>
@@ -18,7 +18,7 @@
 				
 				<li Class="PatchOperationInsert">
 					<success>Always</success>
-					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="AC_OilExtraction"]</xpath>
+					<xpath>Defs/RecipeDef/researchPrerequisites/li[text()="AC_OilExtraction"]</xpath>
 					<value>
 						<li>AR_Project_Mediterranean_Culture</li>
 					</value>
@@ -26,7 +26,7 @@
 				
 				<li Class="PatchOperationInsert">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="AC_OilExtraction"]</xpath>
+					<xpath>Defs/ThingDef/researchPrerequisites/li[text()="AC_OilExtraction"]</xpath>
 					<value>
 						<li>AR_Project_Mediterranean_Culture</li>
 					</value>
@@ -34,7 +34,7 @@
 				
 				<li Class="PatchOperationInsert">
 					<success>Always</success>
-					<xpath>/Defs/TerrainDef/researchPrerequisites/li[text()="AC_OilExtraction"]</xpath>
+					<xpath>Defs/TerrainDef/researchPrerequisites/li[text()="AC_OilExtraction"]</xpath>
 					<value>
 						<li>AR_Project_Mediterranean_Culture</li>
 					</value>
@@ -42,32 +42,32 @@
 				
 				<li Class="PatchOperationRemove">
 					<success>Always</success>
-					<xpath>/Defs/ResearchProjectDef/prerequisites/li[text()="AC_OilExtraction"]</xpath>
+					<xpath>Defs/ResearchProjectDef/prerequisites/li[text()="AC_OilExtraction"]</xpath>
 				</li>
 				
 				<li Class="PatchOperationRemove">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="AC_OilExtraction"]</xpath>
+					<xpath>Defs/ThingDef/researchPrerequisites/li[text()="AC_OilExtraction"]</xpath>
 				</li>
 				
 				<li Class="PatchOperationRemove">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="AC_OilExtraction"]</xpath>
+					<xpath>Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="AC_OilExtraction"]</xpath>
 				</li>
 				
 				<li Class="PatchOperationRemove">
 					<success>Always</success>
-					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="AC_OilExtraction"]</xpath>
+					<xpath>Defs/RecipeDef/researchPrerequisites/li[text()="AC_OilExtraction"]</xpath>
 				</li>
 				
 				<li Class="PatchOperationRemove">
 					<success>Always</success>
-					<xpath>/Defs/TerrainDef/researchPrerequisites/li[text()="AC_OilExtraction"]</xpath>
+					<xpath>Defs/TerrainDef/researchPrerequisites/li[text()="AC_OilExtraction"]</xpath>
 				</li>
 				
 				<li Class="PatchOperationReplace">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef[researchPrerequisite="AC_OilExtraction"]/researchPrerequisite</xpath>
+					<xpath>Defs/ThingDef[researchPrerequisite="AC_OilExtraction"]/researchPrerequisite</xpath>
 					<value>
 						<researchPrerequisites>
 							<li>AR_Project_Mediterranean_Culture</li>
@@ -77,7 +77,7 @@
 				
 				<li Class="PatchOperationReplace">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef/recipeMaker[researchPrerequisite="AC_OilExtraction"]/researchPrerequisite</xpath>
+					<xpath>Defs/ThingDef/recipeMaker[researchPrerequisite="AC_OilExtraction"]/researchPrerequisite</xpath>
 					<value>
 						<researchPrerequisites>
 							<li>AR_Project_Mediterranean_Culture</li>
@@ -87,7 +87,7 @@
 				
 				<li Class="PatchOperationReplace">
 					<success>Always</success>
-					<xpath>/Defs/TerrainDef[researchPrerequisite="AC_OilExtraction"]/researchPrerequisite</xpath>
+					<xpath>Defs/TerrainDef[researchPrerequisite="AC_OilExtraction"]/researchPrerequisite</xpath>
 					<value>
 						<researchPrerequisites>
 							<li>AR_Project_Mediterranean_Culture</li>
@@ -97,12 +97,12 @@
 				
 				<li Class="PatchOperationRemove">
 					<success>Always</success>
-					<xpath>/Defs/ResearchProjectDef[defName="AC_OilExtraction"]</xpath>
+					<xpath>Defs/ResearchProjectDef[defName="AC_OilExtraction"]</xpath>
 				</li>
 				
 				<li Class="PatchOperationReplace">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef[defName="AC_OilPressWorkshop"]/thingCategories</xpath>
+					<xpath>Defs/ThingDef[defName="AC_OilPressWorkshop"]/thingCategories</xpath>
 					<value>
 						<thingCategories Inherit="False">
 							<li>BuildingsProduction</li>
@@ -112,24 +112,24 @@
 				
 				<li Class="PatchOperationRemove">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef[defName="AC_OilPressWorkshop"]/researchPrerequisites</xpath>
+					<xpath>Defs/ThingDef[defName="AC_OilPressWorkshop"]/researchPrerequisites</xpath>
 				</li>
 				
 				<!--
 				<li Class="PatchOperationRemove">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef[defName="AC_OilPressWorkshop"]/designationCategory</xpath>
+					<xpath>Defs/ThingDef[defName="AC_OilPressWorkshop"]/designationCategory</xpath>
 				</li>
 				-->
 				
 				<li Class="PatchOperationRemove">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef[defName="AC_OilPressWorkshop"]/costList</xpath>
+					<xpath>Defs/ThingDef[defName="AC_OilPressWorkshop"]/costList</xpath>
 				</li>
 				
 				<li Class="PatchOperationRemove">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef[defName="AC_OilPressWorkshop"]/costList</xpath>
+					<xpath>Defs/ThingDef[defName="AC_OilPressWorkshop"]/costList</xpath>
 				</li>
 			</operations>
 		</match>

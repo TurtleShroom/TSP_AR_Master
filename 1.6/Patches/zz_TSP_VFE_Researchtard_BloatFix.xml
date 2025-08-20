@@ -3,14 +3,14 @@
 <Patch>
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="VFEC_BlocksConcrete"]</xpath>
+		<xpath>Defs/ThingDef[defName="VFEC_BlocksConcrete"]</xpath>
 		<!-- If it does, LET'S FASTING GOOOOOOOO!! -->
 		<match Class="PatchOperationSequence">
 			<operations>
 				<!-- MOSAICS -->
 				<li Class="PatchOperationInsert">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="VFEC_Mosaics"]</xpath>
+					<xpath>Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="VFEC_Mosaics"]</xpath>
 					<value>
 						<li>Stonecutting</li>
 					</value>
@@ -18,7 +18,7 @@
 				
 				<li Class="PatchOperationInsert">
 					<success>Always</success>
-					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="VFEC_Mosaics"]</xpath>
+					<xpath>Defs/RecipeDef/researchPrerequisites/li[text()="VFEC_Mosaics"]</xpath>
 					<value>
 						<li>Stonecutting</li>
 					</value>
@@ -26,7 +26,7 @@
 				
 				<li Class="PatchOperationInsert">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="VFEC_Mosaics"]</xpath>
+					<xpath>Defs/ThingDef/researchPrerequisites/li[text()="VFEC_Mosaics"]</xpath>
 					<value>
 						<li>Stonecutting</li>
 					</value>
@@ -34,7 +34,7 @@
 				
 				<li Class="PatchOperationInsert">
 					<success>Always</success>
-					<xpath>/Defs/TerrainDef/researchPrerequisites/li[text()="VFEC_Mosaics"]</xpath>
+					<xpath>Defs/TerrainDef/researchPrerequisites/li[text()="VFEC_Mosaics"]</xpath>
 					<value>
 						<li>Stonecutting</li>
 					</value>
@@ -42,32 +42,32 @@
 				
 				<li Class="PatchOperationRemove">
 					<success>Always</success>
-					<xpath>/Defs/ResearchProjectDef/prerequisites/li[text()="VFEC_Mosaics"]</xpath>
+					<xpath>Defs/ResearchProjectDef/prerequisites/li[text()="VFEC_Mosaics"]</xpath>
 				</li>
 				
 				<li Class="PatchOperationRemove">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="VFEC_Mosaics"]</xpath>
+					<xpath>Defs/ThingDef/researchPrerequisites/li[text()="VFEC_Mosaics"]</xpath>
 				</li>
 				
 				<li Class="PatchOperationRemove">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="VFEC_Mosaics"]</xpath>
+					<xpath>Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="VFEC_Mosaics"]</xpath>
 				</li>
 				
 				<li Class="PatchOperationRemove">
 					<success>Always</success>
-					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="VFEC_Mosaics"]</xpath>
+					<xpath>Defs/RecipeDef/researchPrerequisites/li[text()="VFEC_Mosaics"]</xpath>
 				</li>
 				
 				<li Class="PatchOperationRemove">
 					<success>Always</success>
-					<xpath>/Defs/TerrainDef/researchPrerequisites/li[text()="VFEC_Mosaics"]</xpath>
+					<xpath>Defs/TerrainDef/researchPrerequisites/li[text()="VFEC_Mosaics"]</xpath>
 				</li>
 				
 				<li Class="PatchOperationReplace">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef[researchPrerequisite="VFEC_Mosaics"]/researchPrerequisite</xpath>
+					<xpath>Defs/ThingDef[researchPrerequisite="VFEC_Mosaics"]/researchPrerequisite</xpath>
 					<value>
 						<researchPrerequisites>
 							<li>Stonecutting</li>
@@ -77,7 +77,7 @@
 				
 				<li Class="PatchOperationReplace">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef/recipeMaker[researchPrerequisite="VFEC_Mosaics"]/researchPrerequisite</xpath>
+					<xpath>Defs/ThingDef/recipeMaker[researchPrerequisite="VFEC_Mosaics"]/researchPrerequisite</xpath>
 					<value>
 						<researchPrerequisites>
 							<li>Stonecutting</li>
@@ -87,7 +87,7 @@
 				
 				<li Class="PatchOperationReplace">
 					<success>Always</success>
-					<xpath>/Defs/TerrainDef[researchPrerequisite="VFEC_Mosaics"]/researchPrerequisite</xpath>
+					<xpath>Defs/TerrainDef[researchPrerequisite="VFEC_Mosaics"]/researchPrerequisite</xpath>
 					<value>
 						<researchPrerequisites>
 							<li>Stonecutting</li>
@@ -97,7 +97,7 @@
 				
 				<li Class="PatchOperationRemove">
 					<success>Always</success>
-					<xpath>/Defs/ResearchProjectDef[defName="VFEC_Mosaics"]</xpath>
+					<xpath>Defs/ResearchProjectDef[defName="VFEC_Mosaics"]</xpath>
 				</li>
 			</operations>
 		</match>
@@ -106,14 +106,14 @@
 
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="VFE_Pottery"]</xpath>
+		<xpath>Defs/ThingDef[defName="VFE_Pottery"]</xpath>
 		<!-- If it does, let's fasting GOOOOOOOO!! -->
 		<match Class="PatchOperationSequence">
 			<operations>
 				<!-- STATUARY -->
 				<li Class="PatchOperationInsert">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="VFE_Res_Statues"]</xpath>
+					<xpath>Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="VFE_Res_Statues"]</xpath>
 					<value>
 						<li>Stonecutting</li>
 					</value>
@@ -121,7 +121,7 @@
 				
 				<li Class="PatchOperationInsert">
 					<success>Always</success>
-					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="VFE_Res_Statues"]</xpath>
+					<xpath>Defs/RecipeDef/researchPrerequisites/li[text()="VFE_Res_Statues"]</xpath>
 					<value>
 						<li>Stonecutting</li>
 					</value>
@@ -129,7 +129,7 @@
 				
 				<li Class="PatchOperationInsert">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="VFE_Res_Statues"]</xpath>
+					<xpath>Defs/ThingDef/researchPrerequisites/li[text()="VFE_Res_Statues"]</xpath>
 					<value>
 						<li>Stonecutting</li>
 					</value>
@@ -137,17 +137,17 @@
 				
 				<li Class="PatchOperationRemove">
 					<success>Always</success>
-					<xpath>/Defs/ResearchProjectDef/prerequisites/li[text()="VFE_Res_Statues"]</xpath>
+					<xpath>Defs/ResearchProjectDef/prerequisites/li[text()="VFE_Res_Statues"]</xpath>
 				</li>
 				
 				<li Class="PatchOperationRemove">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="VFE_Res_Statues"]</xpath>
+					<xpath>Defs/ThingDef/researchPrerequisites/li[text()="VFE_Res_Statues"]</xpath>
 				</li>
 				
 				<li Class="PatchOperationReplace">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef[researchPrerequisite="VFE_Res_Statues"]/researchPrerequisite</xpath>
+					<xpath>Defs/ThingDef[researchPrerequisite="VFE_Res_Statues"]/researchPrerequisite</xpath>
 					<value>
 						<researchPrerequisites>
 							<li>Stonecutting</li>
@@ -157,7 +157,7 @@
 				
 				<li Class="PatchOperationReplace">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef/recipeMaker[researchPrerequisite="VFE_Res_Statues"]/researchPrerequisite</xpath>
+					<xpath>Defs/ThingDef/recipeMaker[researchPrerequisite="VFE_Res_Statues"]/researchPrerequisite</xpath>
 					<value>
 						<researchPrerequisites>
 							<li>Stonecutting</li>
@@ -167,17 +167,17 @@
 				
 				<li Class="PatchOperationRemove">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="VFE_Res_Statues"]</xpath>
+					<xpath>Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="VFE_Res_Statues"]</xpath>
 				</li>
 				
 				<li Class="PatchOperationRemove">
 					<success>Always</success>
-					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="VFE_Res_Statues"]</xpath>
+					<xpath>Defs/RecipeDef/researchPrerequisites/li[text()="VFE_Res_Statues"]</xpath>
 				</li>
 				
 				<li Class="PatchOperationRemove">
 					<success>Always</success>
-					<xpath>/Defs/ResearchProjectDef[defName="VFE_Res_Statues"]</xpath>
+					<xpath>Defs/ResearchProjectDef[defName="VFE_Res_Statues"]</xpath>
 				</li>
 				
 				
@@ -186,7 +186,7 @@
 				<!-- POTTERY -->
 				<li Class="PatchOperationInsert">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="VFE_Res_Pottery"]</xpath>
+					<xpath>Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="VFE_Res_Pottery"]</xpath>
 					<value>
 						<li>Stonecutting</li>
 					</value>
@@ -194,7 +194,7 @@
 				
 				<li Class="PatchOperationInsert">
 					<success>Always</success>
-					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="VFE_Res_Pottery"]</xpath>
+					<xpath>Defs/RecipeDef/researchPrerequisites/li[text()="VFE_Res_Pottery"]</xpath>
 					<value>
 						<li>Stonecutting</li>
 					</value>
@@ -202,7 +202,7 @@
 				
 				<li Class="PatchOperationInsert">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="VFE_Res_Pottery"]</xpath>
+					<xpath>Defs/ThingDef/researchPrerequisites/li[text()="VFE_Res_Pottery"]</xpath>
 					<value>
 						<li>Stonecutting</li>
 					</value>
@@ -210,17 +210,17 @@
 				
 				<li Class="PatchOperationRemove">
 					<success>Always</success>
-					<xpath>/Defs/ResearchProjectDef/prerequisites/li[text()="VFE_Res_Pottery"]</xpath>
+					<xpath>Defs/ResearchProjectDef/prerequisites/li[text()="VFE_Res_Pottery"]</xpath>
 				</li>
 				
 				<li Class="PatchOperationRemove">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="VFE_Res_Pottery"]</xpath>
+					<xpath>Defs/ThingDef/researchPrerequisites/li[text()="VFE_Res_Pottery"]</xpath>
 				</li>
 				
 				<li Class="PatchOperationReplace">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef[researchPrerequisite="VFE_Res_Pottery"]/researchPrerequisite</xpath>
+					<xpath>Defs/ThingDef[researchPrerequisite="VFE_Res_Pottery"]/researchPrerequisite</xpath>
 					<value>
 						<researchPrerequisites>
 							<li>Stonecutting</li>
@@ -230,7 +230,7 @@
 				
 				<li Class="PatchOperationReplace">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef/recipeMaker[researchPrerequisite="VFE_Res_Pottery"]/researchPrerequisite</xpath>
+					<xpath>Defs/ThingDef/recipeMaker[researchPrerequisite="VFE_Res_Pottery"]/researchPrerequisite</xpath>
 					<value>
 						<researchPrerequisites>
 							<li>Stonecutting</li>
@@ -240,17 +240,17 @@
 				
 				<li Class="PatchOperationRemove">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="VFE_Res_Pottery"]</xpath>
+					<xpath>Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="VFE_Res_Pottery"]</xpath>
 				</li>
 				
 				<li Class="PatchOperationRemove">
 					<success>Always</success>
-					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="VFE_Res_Pottery"]</xpath>
+					<xpath>Defs/RecipeDef/researchPrerequisites/li[text()="VFE_Res_Pottery"]</xpath>
 				</li>
 				
 				<li Class="PatchOperationRemove">
 					<success>Always</success>
-					<xpath>/Defs/ResearchProjectDef[defName="VFE_Res_Pottery"]</xpath>
+					<xpath>Defs/ResearchProjectDef[defName="VFE_Res_Pottery"]</xpath>
 				</li>
 				
 				
@@ -260,7 +260,7 @@
 				<!-- RUGS -->
 				<li Class="PatchOperationInsert">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="VFE_Res_Rugs"]</xpath>
+					<xpath>Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="VFE_Res_Rugs"]</xpath>
 					<value>
 						<li>CarpetMaking</li>
 					</value>
@@ -268,7 +268,7 @@
 				
 				<li Class="PatchOperationInsert">
 					<success>Always</success>
-					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="VFE_Res_Rugs"]</xpath>
+					<xpath>Defs/RecipeDef/researchPrerequisites/li[text()="VFE_Res_Rugs"]</xpath>
 					<value>
 						<li>CarpetMaking</li>
 					</value>
@@ -276,7 +276,7 @@
 				
 				<li Class="PatchOperationInsert">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="VFE_Res_Rugs"]</xpath>
+					<xpath>Defs/ThingDef/researchPrerequisites/li[text()="VFE_Res_Rugs"]</xpath>
 					<value>
 						<li>CarpetMaking</li>
 					</value>
@@ -284,17 +284,17 @@
 				
 				<li Class="PatchOperationRemove">
 					<success>Always</success>
-					<xpath>/Defs/ResearchProjectDef/prerequisites/li[text()="VFE_Res_Rugs"]</xpath>
+					<xpath>Defs/ResearchProjectDef/prerequisites/li[text()="VFE_Res_Rugs"]</xpath>
 				</li>
 				
 				<li Class="PatchOperationRemove">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="VFE_Res_Rugs"]</xpath>
+					<xpath>Defs/ThingDef/researchPrerequisites/li[text()="VFE_Res_Rugs"]</xpath>
 				</li>
 				
 				<li Class="PatchOperationReplace">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef[researchPrerequisite="VFE_Res_Rugs"]/researchPrerequisite</xpath>
+					<xpath>Defs/ThingDef[researchPrerequisite="VFE_Res_Rugs"]/researchPrerequisite</xpath>
 					<value>
 						<researchPrerequisites>
 							<li>CarpetMaking</li>
@@ -304,7 +304,7 @@
 				
 				<li Class="PatchOperationReplace">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef/recipeMaker[researchPrerequisite="VFE_Res_Rugs"]/researchPrerequisite</xpath>
+					<xpath>Defs/ThingDef/recipeMaker[researchPrerequisite="VFE_Res_Rugs"]/researchPrerequisite</xpath>
 					<value>
 						<researchPrerequisites>
 							<li>CarpetMaking</li>
@@ -314,17 +314,17 @@
 				
 				<li Class="PatchOperationRemove">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="VFE_Res_Rugs"]</xpath>
+					<xpath>Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="VFE_Res_Rugs"]</xpath>
 				</li>
 				
 				<li Class="PatchOperationRemove">
 					<success>Always</success>
-					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="VFE_Res_Rugs"]</xpath>
+					<xpath>Defs/RecipeDef/researchPrerequisites/li[text()="VFE_Res_Rugs"]</xpath>
 				</li>
 				
 				<li Class="PatchOperationRemove">
 					<success>Always</success>
-					<xpath>/Defs/ResearchProjectDef[defName="VFE_Res_Rugs"]</xpath>
+					<xpath>Defs/ResearchProjectDef[defName="VFE_Res_Rugs"]</xpath>
 				</li>
 			</operations>
 		</match>

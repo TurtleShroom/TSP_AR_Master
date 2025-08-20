@@ -2,7 +2,7 @@
 
 <Patch>
   <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/ThingDef[defName = "WaterTowerS"]</xpath>
+    <xpath>Defs/ThingDef[defName = "WaterTowerS"]</xpath>
     <match Class="PatchOperationSequence">
       <success>Always</success>
       <operations>
@@ -67,10 +67,10 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName = "WaterTowerS"]</xpath>
+    <xpath>Defs/ThingDef[defName = "WaterTowerS"]</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
-      <xpath>/Defs/ThingDef[defName="AR_1x2Fountain"]/designationCategory</xpath>
+      <xpath>Defs/ThingDef[defName="AR_1x2Fountain"]/designationCategory</xpath>
       <value>
         <designationCategory>Hygiene</designationCategory>
       </value>
@@ -79,10 +79,10 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName = "WaterTowerS"]</xpath>
+    <xpath>Defs/ThingDef[defName = "WaterTowerS"]</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
-      <xpath>/Defs/ThingDef[defName="AR_2x2Fountain"]/designationCategory</xpath>
+      <xpath>Defs/ThingDef[defName="AR_2x2Fountain"]/designationCategory</xpath>
       <value>
         <designationCategory>Hygiene</designationCategory>
       </value>
@@ -92,10 +92,10 @@
   <!-- When Pawns seek to gain Joy from the Fountain, it fulfills their Thirst Need -->
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="WaterTowerS"]</xpath>
+    <xpath>Defs/ThingDef[defName="WaterTowerS"]</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
-      <xpath>/Defs/JobDef[defName="AR_DrinkWaterJob"]/driverClass</xpath>
+      <xpath>Defs/JobDef[defName="AR_DrinkWaterJob"]/driverClass</xpath>
       <value>
         <driverClass>DubsBadHygiene.JobDriver_DrinkFromBasin</driverClass>
       </value>
@@ -106,9 +106,9 @@
 	<!-- Special thanks to Aelanna for straight-up saving me scores of headaches! -->
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ResearchProjectDef[defName="Plumbing"]/prerequisites</xpath>
+		<xpath>Defs/ResearchProjectDef[defName="Plumbing"]/prerequisites</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ResearchProjectDef[defName="Plumbing"]</xpath>
+			<xpath>Defs/ResearchProjectDef[defName="Plumbing"]</xpath>
 			<success>Always</success>
 			<value>
 				<prerequisites></prerequisites>
@@ -116,9 +116,9 @@
 		</nomatch>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ResearchProjectDef[defName="LogBoilers"]/tags</xpath>
+		<xpath>Defs/ResearchProjectDef[defName="LogBoilers"]/tags</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ResearchProjectDef[defName="LogBoilers"]</xpath>
+			<xpath>Defs/ResearchProjectDef[defName="LogBoilers"]</xpath>
 			<success>Always</success>
 			<value>
 				<tags></tags>
@@ -127,10 +127,10 @@
 	</Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ResearchProjectDef[defName="Plumbing"]</xpath>
+    <xpath>Defs/ResearchProjectDef[defName="Plumbing"]</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
-      <xpath>/Defs/ResearchProjectDef[defName="Plumbing"]/tags</xpath>
+      <xpath>Defs/ResearchProjectDef[defName="Plumbing"]/tags</xpath>
 	  <success>Always</success>
       <value>
         <!-- <li>ClassicStart</li> -->
@@ -146,10 +146,10 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ResearchProjectDef[defName="Plumbing"]</xpath>
+    <xpath>Defs/ResearchProjectDef[defName="Plumbing"]</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
-      <xpath>/Defs/ResearchProjectDef[defName="AR_Project_Water_Cooling"]/prerequisites</xpath>
+      <xpath>Defs/ResearchProjectDef[defName="AR_Project_Water_Cooling"]/prerequisites</xpath>
 	  <success>Always</success>
       <value>
         <prerequisites>
@@ -163,10 +163,10 @@
   
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ResearchProjectDef[defName="AR_Project_Water_Cooling"]</xpath>
+		<xpath>Defs/ResearchProjectDef[defName="AR_Project_Water_Cooling"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
-		<xpath>/Defs/ResearchProjectDef[defName="MultiSplitAirCon"]/prerequisites</xpath>
+		<xpath>Defs/ResearchProjectDef[defName="MultiSplitAirCon"]/prerequisites</xpath>
 			<value>
 				<prerequisites>
 					<!-- <li MayRequire="dubwise.dubsbadhygiene">Plumbing</li> -->

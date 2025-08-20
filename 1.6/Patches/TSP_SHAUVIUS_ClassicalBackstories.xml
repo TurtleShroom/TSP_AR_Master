@@ -9,7 +9,7 @@
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
 			<success>Always</success>
-			<xpath>/Defs/FactionDef[defName = "AR_Faction_Rome" or defName = "AR_Faction_Macedonia" or defName = "AR_Faction_Hellas"]/backstoryFilters</xpath>
+			<xpath>Defs/FactionDef[defName = "AR_Faction_Rome" or defName = "AR_Faction_Macedonia" or defName = "AR_Faction_Hellas"]/backstoryFilters</xpath>
 			<value>
 				<li MayRequire="shavius.classical.flavour">
 					<categories MayRequire="shavius.classical.flavour">
@@ -29,7 +29,7 @@
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
 			<success>Always</success>
-			<xpath>/Defs/FactionDef[@Name="HellenesBase"]/backstoryFilters</xpath>
+			<xpath>Defs/FactionDef[@Name="HellenesBase"]/backstoryFilters</xpath>
 			<value>
 				<li MayRequire="shavius.classical.flavour">
 					<categories MayRequire="shavius.classical.flavour">
@@ -49,7 +49,7 @@
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
 			<success>Always</success>
-			<xpath>/Defs/FactionDef[defName="AR_Faction_Sparta"]/backstoryFilters</xpath>
+			<xpath>Defs/FactionDef[defName="AR_Faction_Sparta"]/backstoryFilters</xpath>
 			<value>
 				<li MayRequire="shavius.classical.flavour">
 					<categories MayRequire="shavius.classical.flavour">

@@ -4,48 +4,48 @@
 <Patch>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VCE_RawOlives"]</xpath>
+    <xpath>Defs/ThingDef[defName="VCE_RawOlives"]</xpath>
     <!-- If it does, LET'S FASTING GOOOOOOOOOO!!! -->
     <match Class="PatchOperationSequence">
       <!-- <success>Always</success> -->
       <operations>
         <li Class="PatchOperationInsert">
-          <xpath>/Defs/RecipeDef/ingredients/li/filter/thingDefs/li[text()="VCE_RawOlives"]</xpath>
+          <xpath>Defs/RecipeDef/ingredients/li/filter/thingDefs/li[text()="VCE_RawOlives"]</xpath>
           <success>Always</success>
           <value>
             <li>AR_RawOlives</li>
           </value>
         </li>
         <li Class="PatchOperationInsert">
-          <xpath>/Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="VCE_RawOlives"]</xpath>
+          <xpath>Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="VCE_RawOlives"]</xpath>
           <success>Always</success>
           <value>
             <li>AR_RawOlives</li>
           </value>
         </li>
         <li Class="PatchOperationInsert">
-          <xpath>/Defs/RecipeDef/defaultIngredientFilter/thingDefs/li[text()="VCE_RawOlives"]</xpath>
+          <xpath>Defs/RecipeDef/defaultIngredientFilter/thingDefs/li[text()="VCE_RawOlives"]</xpath>
           <success>Always</success>
           <value>
             <li>AR_RawOlives</li>
           </value>
         </li>
         <li Class="PatchOperationInsert">
-          <xpath>/Defs/RecipeDef/ingredients/li/filter/thingDefs/li[text()="VCE_RawOlives"]</xpath>
+          <xpath>Defs/RecipeDef/ingredients/li/filter/thingDefs/li[text()="VCE_RawOlives"]</xpath>
           <success>Always</success>
           <value>
             <li>AR_RawOlives</li>
           </value>
         </li>
         <li Class="PatchOperationInsert">
-          <xpath>/Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="VCE_RawOlives"]</xpath>
+          <xpath>Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="VCE_RawOlives"]</xpath>
           <success>Always</success>
           <value>
             <li>AR_RawOlives</li>
           </value>
         </li>
         <li Class="PatchOperationInsert">
-          <xpath>/Defs/RecipeDef/defaultIngredientFilter/thingDefs/li[text()="VCE_RawOlives"]</xpath>
+          <xpath>Defs/RecipeDef/defaultIngredientFilter/thingDefs/li[text()="VCE_RawOlives"]</xpath>
           <success>Always</success>
           <value>
             <li>AR_RawOlives</li>
@@ -53,31 +53,31 @@
         </li>
         <li Class="PatchOperationRemove">
           <success>Always</success>
-          <xpath>/Defs/RecipeDef/ingredients/li/filter/li/thingDefs/li[text()="VCE_RawOlives"]</xpath>
+          <xpath>Defs/RecipeDef/ingredients/li/filter/li/thingDefs/li[text()="VCE_RawOlives"]</xpath>
         </li>
         <li Class="PatchOperationRemove">
           <success>Always</success>
-          <xpath>/Defs/RecipeDef/ingredients/li/filter/li/thingDefs/li[text()="VCE_RawOlives"]</xpath>
+          <xpath>Defs/RecipeDef/ingredients/li/filter/li/thingDefs/li[text()="VCE_RawOlives"]</xpath>
         </li>
         <li Class="PatchOperationRemove">
           <success>Always</success>
-          <xpath>/Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="VCE_RawOlives"]</xpath>
+          <xpath>Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="VCE_RawOlives"]</xpath>
         </li>
         <li Class="PatchOperationRemove">
           <success>Always</success>
-          <xpath>/Defs/RecipeDef/defaultIngredientFilter/thingDefs/li[text()="VCE_RawOlives"]</xpath>
+          <xpath>Defs/RecipeDef/defaultIngredientFilter/thingDefs/li[text()="VCE_RawOlives"]</xpath>
         </li>
         <li Class="PatchOperationRemove">
           <success>Always</success>
-          <xpath>/Defs/ThingDef[defName="VCE_RawOlives"]</xpath>
+          <xpath>Defs/ThingDef[defName="VCE_RawOlives"]</xpath>
         </li>
         <li Class="PatchOperationRemove">
           <success>Always</success>
-          <xpath>/Defs/BiomeDef/wildPlants/VCE_TreeOlive</xpath>
+          <xpath>Defs/BiomeDef/wildPlants/VCE_TreeOlive</xpath>
         </li>
         <li Class="PatchOperationRemove">
           <success>Always</success>
-          <xpath>/Defs/ThingDef[defName="VCE_TreeOlive"]</xpath>
+          <xpath>Defs/ThingDef[defName="VCE_TreeOlive"]</xpath>
         </li>
         <li Class="PatchOperationAdd">
           <success>Always</success>

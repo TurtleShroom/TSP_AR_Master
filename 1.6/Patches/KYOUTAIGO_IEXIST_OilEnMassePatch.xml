@@ -290,10 +290,10 @@
   
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/RecipeDef[defName="AC_PressOil"]/ingredients/li/filter/thingDefs</xpath>
+		<xpath>Defs/RecipeDef[defName="AC_PressOil"]/ingredients/li/filter/thingDefs</xpath>
 		<!-- If it DOES NOT, add this. -->
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/RecipeDef[defName="AC_PressOil"]/ingredients/li/filter/thingDefs</xpath>
+			<xpath>Defs/RecipeDef[defName="AC_PressOil"]/ingredients/li/filter/thingDefs</xpath>
 			<success>Always</success>
 			<value>
 				<li>AR_RawOlives</li>
@@ -305,10 +305,10 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/RecipeDef[defName="AC_PressOil"]/fixedIngredientFilter/thingDefs</xpath>
+		<xpath>Defs/RecipeDef[defName="AC_PressOil"]/fixedIngredientFilter/thingDefs</xpath>
 		<!-- If it DOES NOT, add this. -->
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/RecipeDef[defName="AC_PressOil"]/fixedIngredientFilter/thingDefs</xpath>
+			<xpath>Defs/RecipeDef[defName="AC_PressOil"]/fixedIngredientFilter/thingDefs</xpath>
 			<success>Always</success>
 			<value>
 				<li>AR_RawOlives</li>
@@ -320,10 +320,10 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/RecipeDef[defName="AC_PressOil"]/defaultIngredientFilter/thingDefs</xpath>
+		<xpath>Defs/RecipeDef[defName="AC_PressOil"]/defaultIngredientFilter/thingDefs</xpath>
 		<!-- If it DOES NOT, add this. -->
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/RecipeDef[defName="AC_PressOil"]/defaultIngredientFilter/thingDefs</xpath>
+			<xpath>Defs/RecipeDef[defName="AC_PressOil"]/defaultIngredientFilter/thingDefs</xpath>
 			<success>Always</success>
 			<value>
 				<li>AR_RawOlives</li>

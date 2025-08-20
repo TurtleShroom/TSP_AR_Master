@@ -5,9 +5,9 @@
 	<!-- Special thanks to Aelanna for straight-up saving me scores of headaches! -->
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/TerrainDef[defName="VFEC_BronzeTile"]/statBases/Cleanliness</xpath>
+		<xpath>Defs/TerrainDef[defName="VFEC_BronzeTile"]/statBases/Cleanliness</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/TerrainDef[defName="VFEC_BronzeTile"]/statBases</xpath>
+			<xpath>Defs/TerrainDef[defName="VFEC_BronzeTile"]/statBases</xpath>
 			<success>Always</success>
 			<value>
 				<Cleanliness>0.4</Cleanliness>
@@ -17,25 +17,25 @@
 
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Javelin"]</xpath>
+    <xpath>Defs/ThingDef[defName="VFEC_Javelin"]</xpath>
     <!-- If they do, SHUT IT DOWN. -->
     <match Class="PatchOperationRemove">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="VFEC_Javelin"]</xpath>
+      <xpath>Defs/ThingDef[defName="VFEC_Javelin"]</xpath>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
   </Operation>
   
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Tyrian"]</xpath>
+    <xpath>Defs/ThingDef[defName="VFEC_Tyrian"]</xpath>
     <!-- If it does, LET'S FASTING GOOOOOOOOOO!!! -->
     <match Class="PatchOperationSequence">
       <success>Always</success>
       <operations>
 				<li Class="PatchOperationInsert">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="VFEC_BronzeWorking"]</xpath>
+					<xpath>Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="VFEC_BronzeWorking"]</xpath>
 					<value>
 						<li>AR_Project_Metal_I</li>
 					</value>
@@ -43,7 +43,7 @@
 				
 				<li Class="PatchOperationInsert">
 					<success>Always</success>
-					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="VFEC_BronzeWorking"]</xpath>
+					<xpath>Defs/RecipeDef/researchPrerequisites/li[text()="VFEC_BronzeWorking"]</xpath>
 					<value>
 						<li>AR_Project_Metal_I</li>
 					</value>
@@ -51,7 +51,7 @@
 				
 				<li Class="PatchOperationInsert">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="VFEC_BronzeWorking"]</xpath>
+					<xpath>Defs/ThingDef/researchPrerequisites/li[text()="VFEC_BronzeWorking"]</xpath>
 					<value>
 						<li>AR_Project_Metal_I</li>
 					</value>
@@ -59,7 +59,7 @@
 				
 				<li Class="PatchOperationInsert">
 					<success>Always</success>
-					<xpath>/Defs/TerrainDef/researchPrerequisites/li[text()="VFEC_BronzeWorking"]</xpath>
+					<xpath>Defs/TerrainDef/researchPrerequisites/li[text()="VFEC_BronzeWorking"]</xpath>
 					<value>
 						<li>AR_Project_Metal_I</li>
 					</value>
@@ -67,32 +67,32 @@
 				
 				<li Class="PatchOperationRemove">
 					<success>Always</success>
-					<xpath>/Defs/ResearchProjectDef/prerequisites/li[text()="VFEC_BronzeWorking"]</xpath>
+					<xpath>Defs/ResearchProjectDef/prerequisites/li[text()="VFEC_BronzeWorking"]</xpath>
 				</li>
 				
 				<li Class="PatchOperationRemove">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="VFEC_BronzeWorking"]</xpath>
+					<xpath>Defs/ThingDef/researchPrerequisites/li[text()="VFEC_BronzeWorking"]</xpath>
 				</li>
 				
 				<li Class="PatchOperationRemove">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="VFEC_BronzeWorking"]</xpath>
+					<xpath>Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="VFEC_BronzeWorking"]</xpath>
 				</li>
 				
 				<li Class="PatchOperationRemove">
 					<success>Always</success>
-					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="VFEC_BronzeWorking"]</xpath>
+					<xpath>Defs/RecipeDef/researchPrerequisites/li[text()="VFEC_BronzeWorking"]</xpath>
 				</li>
 				
 				<li Class="PatchOperationRemove">
 					<success>Always</success>
-					<xpath>/Defs/TerainDef/researchPrerequisites/li[text()="VFEC_BronzeWorking"]</xpath>
+					<xpath>Defs/TerainDef/researchPrerequisites/li[text()="VFEC_BronzeWorking"]</xpath>
 				</li>
 				
 				<li Class="PatchOperationReplace">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef[researchPrerequisite="VFEC_BronzeWorking"]/researchPrerequisite</xpath>
+					<xpath>Defs/ThingDef[researchPrerequisite="VFEC_BronzeWorking"]/researchPrerequisite</xpath>
 					<value>
 						<researchPrerequisites>
 							<li>AR_Project_Metal_I</li>
@@ -102,7 +102,7 @@
 				
 				<li Class="PatchOperationReplace">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef/recipeMaker[researchPrerequisite="VFEC_BronzeWorking"]/researchPrerequisite</xpath>
+					<xpath>Defs/ThingDef/recipeMaker[researchPrerequisite="VFEC_BronzeWorking"]/researchPrerequisite</xpath>
 					<value>
 						<researchPrerequisites>
 							<li>AR_Project_Metal_I</li>
@@ -112,7 +112,7 @@
 				
 				<li Class="PatchOperationReplace">
 					<success>Always</success>
-					<xpath>/Defs/TerrainDef[researchPrerequisite="VFEC_BronzeWorking"]/researchPrerequisite</xpath>
+					<xpath>Defs/TerrainDef[researchPrerequisite="VFEC_BronzeWorking"]/researchPrerequisite</xpath>
 					<value>
 						<researchPrerequisites>
 							<li>AR_Project_Metal_I</li>
@@ -122,33 +122,33 @@
 		
         <li Class="PatchOperationRemove">
           <success>Always</success>
-          <xpath>/Defs/ResearchProjectDef[defName="VFEC_BronzeWorking"]</xpath>
+          <xpath>Defs/ResearchProjectDef[defName="VFEC_BronzeWorking"]</xpath>
         </li>
         <li Class="PatchOperationRemove">
           <success>Always</success>
-          <xpath>/Defs/ResearchProjectDef/prerequisites/li[text()="VFEC_BronzeWorking"]</xpath>
+          <xpath>Defs/ResearchProjectDef/prerequisites/li[text()="VFEC_BronzeWorking"]</xpath>
         </li>
         <li Class="PatchOperationRemove">
           <success>Always</success>
-          <xpath>/Defs/RecipeDef[defName="VFEC_Make_Bronze"]</xpath>
+          <xpath>Defs/RecipeDef[defName="VFEC_Make_Bronze"]</xpath>
         </li>
         <li Class="PatchOperationReplace">
           <success>Always</success>
-          <xpath>/Defs/FactionDef/modExtensions/li/senatorResearch/li[text()="VFEC_BronzeWorking"]</xpath>
+          <xpath>Defs/FactionDef/modExtensions/li/senatorResearch/li[text()="VFEC_BronzeWorking"]</xpath>
           <value>
             <li>AR_Project_Metal_II</li>
           </value>
         </li>
         <li Class="PatchOperationReplace">
           <success>Always</success>
-          <xpath>/Defs/TerrainDef[defName="VFEC_BronzeTile"]/label</xpath>
+          <xpath>Defs/TerrainDef[defName="VFEC_BronzeTile"]/label</xpath>
           <value>
             <label>bronze sterile tile</label>
           </value>
         </li>
         <li Class="PatchOperationReplace">
           <success>Always</success>
-          <xpath>/Defs/TerrainDef[defName="VFEC_BronzeTile"]/costList</xpath>
+          <xpath>Defs/TerrainDef[defName="VFEC_BronzeTile"]/costList</xpath>
           <value>
             <costList>
               <AR_Bronze MayRequire="mlie.ancientrimcore">25</AR_Bronze>
@@ -158,66 +158,66 @@
         </li>
         <li Class="PatchOperationReplace">
           <success>Always</success>
-          <xpath>/Defs/TerrainDef[defName="VFEC_BronzeTile"]/statBases/Cleanliness</xpath>
+          <xpath>Defs/TerrainDef[defName="VFEC_BronzeTile"]/statBases/Cleanliness</xpath>
           <value>
             <Cleanliness Inherit="False">0.4</Cleanliness>
           </value>
         </li>
         <li Class="PatchOperationRemove">
           <success>Always</success>
-          <xpath>/Defs/RecipeDef/ingredients/li/filter/thingDefs/li[text()="VFEC_Bronze"]</xpath>
+          <xpath>Defs/RecipeDef/ingredients/li/filter/thingDefs/li[text()="VFEC_Bronze"]</xpath>
         </li>
         <li Class="PatchOperationRemove">
           <success>Always</success>
-          <xpath>/Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="VFEC_Bronze"]</xpath>
+          <xpath>Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="VFEC_Bronze"]</xpath>
         </li>
         <li Class="PatchOperationRemove">
           <success>Always</success>
-          <xpath>/Defs/RecipeDef/defaultIngredientFilter/thingDefs/li[text()="VFEC_Bronze"]</xpath>
+          <xpath>Defs/RecipeDef/defaultIngredientFilter/thingDefs/li[text()="VFEC_Bronze"]</xpath>
         </li>
         <li Class="PatchOperationRemove">
           <success>Always</success>
-          <xpath>/Defs/TraderKindDef/stockGenerators/li[thingDef="VFEC_Bronze"]</xpath>
+          <xpath>Defs/TraderKindDef/stockGenerators/li[thingDef="VFEC_Bronze"]</xpath>
         </li>
         <li Class="PatchOperationRemove">
           <success>Always</success>
-          <xpath>/Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="VFEC_Bronze"]</xpath>
+          <xpath>Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="VFEC_Bronze"]</xpath>
         </li>
         <li Class="PatchOperationReplace">
           <success>Always</success>
-          <xpath>/Defs/RecipeDef/costList/VFEC_Bronze</xpath>
+          <xpath>Defs/RecipeDef/costList/VFEC_Bronze</xpath>
           <value>
             <AR_Bronze MayRequire="mlie.ancientrimcore">15</AR_Bronze>
           </value>
         </li>
         <li Class="PatchOperationReplace">
           <success>Always</success>
-          <xpath>/Defs/ThingDef/costList/VFEC_Bronze</xpath>
+          <xpath>Defs/ThingDef/costList/VFEC_Bronze</xpath>
           <value>
             <AR_Bronze MayRequire="mlie.ancientrimcore">15</AR_Bronze>
           </value>
         </li>
         <li Class="PatchOperationReplace">
           <success>Always</success>
-          <xpath>/Defs/RecipeDef/products/VFEC_Bronze</xpath>
+          <xpath>Defs/RecipeDef/products/VFEC_Bronze</xpath>
           <value>
             <AR_Bronze MayRequire="mlie.ancientrimcore">25</AR_Bronze>
           </value>
         </li>
         <li Class="PatchOperationInsert">
           <success>Always</success>
-          <xpath>/Defs/Thingdef/comps/li/fuelFilter/li[text()="VFEC_Bronze"]</xpath>
+          <xpath>Defs/Thingdef/comps/li/fuelFilter/li[text()="VFEC_Bronze"]</xpath>
           <value>
             <li>Hay</li>
           </value>
         </li>
         <li Class="PatchOperationRemove">
           <success>Always</success>
-          <xpath>/Defs/Thingdef/comps/li/fuelFilter/li[text()="VFEC_Bronze"]</xpath>
+          <xpath>Defs/Thingdef/comps/li/fuelFilter/li[text()="VFEC_Bronze"]</xpath>
         </li>
         <li Class="PatchOperationReplace">
           <success>Always</success>
-          <xpath>/Defs/ThingDef/costList/VFEC_Bronze</xpath>
+          <xpath>Defs/ThingDef/costList/VFEC_Bronze</xpath>
           <value>
             <AR_Bronze MayRequire="mlie.ancientrimcore">10</AR_Bronze>
           </value>
@@ -225,12 +225,12 @@
         <!--
 		<li Class="PatchOperationRemove">
 			<success>Always</success>
-			<xpath>/Defs/*/li[text()="VFEC_Bronze"]</xpath>
+			<xpath>Defs/*/li[text()="VFEC_Bronze"]</xpath>
 		</li>
 		-->
         <li Class="PatchOperationRemove">
           <success>Always</success>
-          <xpath>/Defs/ThingDef[defName="VFEC_Bronze"]</xpath>
+          <xpath>Defs/ThingDef[defName="VFEC_Bronze"]</xpath>
         </li>
         <li Class="PatchOperationAdd">
           <success>Always</success>
@@ -268,11 +268,11 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!--DO THE GENTILES KNOW? -->
-    <xpath>/Defs/RecipeDef[defName="Make_FromRubbish_VFEC_Bronze_WVC"]</xpath>
+    <xpath>Defs/RecipeDef[defName="Make_FromRubbish_VFEC_Bronze_WVC"]</xpath>
     <!-- If they do, SHUT IT DOWN. -->
     <match Class="PatchOperationRemove">
       <success>Always</success>
-      <xpath>/Defs/RecipeDef[defName="Make_FromRubbish_VFEC_Bronze_WVC"]</xpath>
+      <xpath>Defs/RecipeDef[defName="Make_FromRubbish_VFEC_Bronze_WVC"]</xpath>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
   </Operation>

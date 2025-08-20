@@ -4,9 +4,9 @@
 	<!-- Special thanks to Aelanna for straight-up saving me scores of headaches! -->
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/TerrainDef[@Name="AM_Floor_KemeticFineTiles"]/researchPrerequisites</xpath>
+		<xpath>Defs/TerrainDef[@Name="AM_Floor_KemeticFineTiles"]/researchPrerequisites</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/TerrainDef[@Name="AM_Floor_KemeticFineTiles"]</xpath>
+			<xpath>Defs/TerrainDef[@Name="AM_Floor_KemeticFineTiles"]</xpath>
 			<success>Always</success>
 			<value>
 				<researchPrerequisites Inherit="False"></researchPrerequisites>
@@ -15,31 +15,31 @@
 	</Operation>
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/MemeDef[defName="AM_Structure_Kemetism"]/addDesignators</xpath>
+    <xpath>Defs/MemeDef[defName="AM_Structure_Kemetism"]/addDesignators</xpath>
     <!-- If they do, SHUT IT DOWN. -->
     <match Class="PatchOperationRemove">
       <success>Always</success>
-      <xpath>/Defs/StyleCategoryDef[defName="AM_Kemetic"]/addDesignators</xpath>
+      <xpath>Defs/StyleCategoryDef[defName="AM_Kemetic"]/addDesignators</xpath>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/MemeDef[defName="AM_Structure_Kemetism"]/addDesignatorGroups</xpath>
+    <xpath>Defs/MemeDef[defName="AM_Structure_Kemetism"]/addDesignatorGroups</xpath>
     <!-- If they do, SHUT IT DOWN. -->
     <match Class="PatchOperationRemove">
       <success>Always</success>
-      <xpath>/Defs/StyleCategoryDef[defName="AM_Kemetic"]/addDesignatorGroups</xpath>
+      <xpath>Defs/StyleCategoryDef[defName="AM_Kemetic"]/addDesignatorGroups</xpath>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
+    <xpath>Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>/Defs/TerrainDef[@Name="AM_KemeticTileStoneBase"]/researchPrerequisites</xpath>
+      <xpath>Defs/TerrainDef[@Name="AM_KemeticTileStoneBase"]/researchPrerequisites</xpath>
       <value>
         <li>AR_Project_Oriental_Culture</li>
       </value>
@@ -48,11 +48,11 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
+    <xpath>Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>/Defs/TerrainDef[@Name="AM_Floor_KemeticFineTiles"]/researchPrerequisites</xpath>
+      <xpath>Defs/TerrainDef[@Name="AM_Floor_KemeticFineTiles"]/researchPrerequisites</xpath>
       <value>
         <li>AR_Project_Oriental_Culture</li>
       </value>
@@ -61,11 +61,11 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
+    <xpath>Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/TerrainDef[@Name="AM_KemeticTileStoneBase"]/canGenerateDefaultDesignator</xpath>
+      <xpath>Defs/TerrainDef[@Name="AM_KemeticTileStoneBase"]/canGenerateDefaultDesignator</xpath>
       <value>
         <canGenerateDefaultDesignator>true</canGenerateDefaultDesignator>
       </value>
@@ -74,11 +74,11 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
+    <xpath>Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>/Defs/TerrainDef[@Name="AM_KemeticFineStoneTiles"]</xpath>
+      <xpath>Defs/TerrainDef[@Name="AM_KemeticFineStoneTiles"]</xpath>
       <value>
         <canGenerateDefaultDesignator>true</canGenerateDefaultDesignator>
       </value>
@@ -87,11 +87,11 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
+    <xpath>Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="AM_KemeticSlab_Medium"]/researchPrerequisites</xpath>
+      <xpath>Defs/ThingDef[defName="AM_KemeticSlab_Medium"]/researchPrerequisites</xpath>
       <value>
         <li>AR_Project_Oriental_Culture</li>
       </value>
@@ -100,11 +100,11 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
+    <xpath>Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="AM_KemeticSlab_Broad"]/researchPrerequisites</xpath>
+      <xpath>Defs/ThingDef[defName="AM_KemeticSlab_Broad"]/researchPrerequisites</xpath>
       <value>
         <li>AR_Project_Oriental_Culture</li>
       </value>
@@ -115,11 +115,11 @@
   
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
+    <xpath>Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="AM_GrandGate"]/canGenerateDefaultDesignator</xpath>
+      <xpath>Defs/ThingDef[defName="AM_GrandGate"]/canGenerateDefaultDesignator</xpath>
       <value>
         <canGenerateDefaultDesignator>true</canGenerateDefaultDesignator>
       </value>
@@ -128,11 +128,11 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
+    <xpath>Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="AM_GrandGate"]/researchPrerequisites</xpath>
+      <xpath>Defs/ThingDef[defName="AM_GrandGate"]/researchPrerequisites</xpath>
       <value>
         <li>AR_Project_Oriental_Culture</li>
       </value>
@@ -143,11 +143,11 @@
   
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/MemeDef[defName="AM_FuturisticObelisk"]/canGenerateDefaultDesignator</xpath>
+    <xpath>Defs/MemeDef[defName="AM_FuturisticObelisk"]/canGenerateDefaultDesignator</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="AM_FuturisticObelisk"]/canGenerateDefaultDesignator</xpath>
+      <xpath>Defs/ThingDef[defName="AM_FuturisticObelisk"]/canGenerateDefaultDesignator</xpath>
       <value>
         <canGenerateDefaultDesignator>true</canGenerateDefaultDesignator>
       </value>
@@ -155,7 +155,7 @@
 	<!-- If it DOES NOT, add this. -->
     <nomatch Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="AM_FuturisticObelisk"]</xpath>
+      <xpath>Defs/ThingDef[defName="AM_FuturisticObelisk"]</xpath>
       <value>
         <canGenerateDefaultDesignator>true</canGenerateDefaultDesignator>
       </value>
@@ -164,11 +164,11 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
+    <xpath>Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="AM_FuturisticObelisk"]/researchPrerequisites</xpath>
+      <xpath>Defs/ThingDef[defName="AM_FuturisticObelisk"]/researchPrerequisites</xpath>
       <value>
         <li>AR_Project_Oriental_Culture</li>
 		<li MayRequire="VanillaExpanded.VFEArt">VFE_Res_Obelisk</li>
@@ -180,11 +180,11 @@
   
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
+    <xpath>Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="AM_FuturisticStele"]/canGenerateDefaultDesignator</xpath>
+      <xpath>Defs/ThingDef[defName="AM_FuturisticStele"]/canGenerateDefaultDesignator</xpath>
       <value>
         <canGenerateDefaultDesignator>true</canGenerateDefaultDesignator>
       </value>
@@ -193,11 +193,11 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
+    <xpath>Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="AM_FuturisticStele"]/researchPrerequisites</xpath>
+      <xpath>Defs/ThingDef[defName="AM_FuturisticStele"]/researchPrerequisites</xpath>
       <value>
         <li>AR_Project_Oriental_Culture</li>
       </value>
@@ -209,11 +209,11 @@
   
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
+    <xpath>Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="AM_FuturisticPyramid"]/canGenerateDefaultDesignator</xpath>
+      <xpath>Defs/ThingDef[defName="AM_FuturisticPyramid"]/canGenerateDefaultDesignator</xpath>
       <value>
         <canGenerateDefaultDesignator>true</canGenerateDefaultDesignator>
       </value>
@@ -222,11 +222,11 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
+    <xpath>Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="AM_FuturisticPyramid"]/researchPrerequisites</xpath>
+      <xpath>Defs/ThingDef[defName="AM_FuturisticPyramid"]/researchPrerequisites</xpath>
       <value>
         <li>AR_Project_Oriental_Culture</li>
       </value>
@@ -238,11 +238,11 @@
   
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
+    <xpath>Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="AM_Sphynx"]/canGenerateDefaultDesignator</xpath>
+      <xpath>Defs/ThingDef[defName="AM_Sphynx"]/canGenerateDefaultDesignator</xpath>
       <value>
         <canGenerateDefaultDesignator>true</canGenerateDefaultDesignator>
       </value>
@@ -251,11 +251,11 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
+    <xpath>Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="AM_Sphynx"]/researchPrerequisites</xpath>
+      <xpath>Defs/ThingDef[defName="AM_Sphynx"]/researchPrerequisites</xpath>
       <value>
         <li>AR_Project_Oriental_Culture</li>
       </value>
@@ -266,11 +266,11 @@
   
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
+    <xpath>Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="AM_GreatPyramid"]/canGenerateDefaultDesignator</xpath>
+      <xpath>Defs/ThingDef[defName="AM_GreatPyramid"]/canGenerateDefaultDesignator</xpath>
       <value>
         <canGenerateDefaultDesignator>true</canGenerateDefaultDesignator>
       </value>
@@ -279,11 +279,11 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
+    <xpath>Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="AM_GreatPyramid"]/researchPrerequisites</xpath>
+      <xpath>Defs/ThingDef[defName="AM_GreatPyramid"]/researchPrerequisites</xpath>
       <value>
         <li>AR_Project_Oriental_Culture</li>
       </value>
@@ -296,11 +296,11 @@
   <!-- Reconfigured Alpha Memes Pyramid for this Mod -->
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="AM_Pyramid"]</xpath>
+    <xpath>Defs/ThingDef[defName="AM_Pyramid"]</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="AM_Pyramid"]</xpath>
+      <xpath>Defs/ThingDef[defName="AM_Pyramid"]</xpath>
       <value>
         <ThingDef ParentName="SteleBase">
           <defName>AM_Pyramid</defName>
@@ -550,11 +550,11 @@
   
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="AM_GreatPyramid"]</xpath>
+		<xpath>Defs/ThingDef[defName="AM_GreatPyramid"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="AM_GreatPyramid"]</xpath>
+			<xpath>Defs/ThingDef[defName="AM_GreatPyramid"]</xpath>
 			<value>
 				<ThingDef ParentName="SteleBase">
 					<defName>AM_GreatPyramid</defName>

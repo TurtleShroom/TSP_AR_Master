@@ -1,25 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Patch>
   <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/ThingDef[defName="WDCoal"]</xpath>
+    <xpath>Defs/ThingDef[defName="WDCoal"]</xpath>
     <match Class="PatchOperationSequence">
       <operations>
         <!-->the smelter burns coal chunks<-->
         <li Class="PatchOperationAdd">
-          <xpath>/Defs/ThingDef[defName = "AR_Smelter"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+          <xpath>Defs/ThingDef[defName = "AR_Smelter"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
           <value>
             <li>WDCoal</li>
           </value>
         </li>
         <!-->the steel recipe uses coal istead of wood<-->
         <li Class="PatchOperationRemove">
-          <xpath>/Defs/recipeDef[defName = "AR_AlloySteel"]/ingredients</xpath>
+          <xpath>Defs/recipeDef[defName = "AR_AlloySteel"]/ingredients</xpath>
         </li>
         <li Class="PatchOperationRemove">
-          <xpath>/Defs/recipeDef[defName = "AR_AlloySteel"]/fixedIngredientFilter</xpath>
+          <xpath>Defs/recipeDef[defName = "AR_AlloySteel"]/fixedIngredientFilter</xpath>
         </li>
         <li Class="PatchOperationAdd">
-          <xpath>/Defs/recipeDef[defName = "AR_AlloySteel"]</xpath>
+          <xpath>Defs/recipeDef[defName = "AR_AlloySteel"]</xpath>
           <value>
             <ingredients>
               <li>
@@ -58,20 +58,20 @@
           </value>
         </li>
         <li Class="PatchOperationAdd">
-          <xpath>/Defs/recipeDef[defName = "AR_AlloySteel"]/recipeUsers</xpath>
+          <xpath>Defs/recipeDef[defName = "AR_AlloySteel"]/recipeUsers</xpath>
           <value>
             <li>MedTimes_FueledSmelter</li>
           </value>
         </li>
         <!-->the steel recipe uses coal istead of wood but in bulk<-->
         <li Class="PatchOperationRemove">
-          <xpath>/Defs/recipeDef[defName = "AR_AlloySteelBulk"]/ingredients</xpath>
+          <xpath>Defs/recipeDef[defName = "AR_AlloySteelBulk"]/ingredients</xpath>
         </li>
         <li Class="PatchOperationRemove">
-          <xpath>/Defs/recipeDef[defName = "AR_AlloySteelBulk"]/fixedIngredientFilter</xpath>
+          <xpath>Defs/recipeDef[defName = "AR_AlloySteelBulk"]/fixedIngredientFilter</xpath>
         </li>
         <li Class="PatchOperationAdd">
-          <xpath>/Defs/recipeDef[defName = "AR_AlloySteelBulk"]</xpath>
+          <xpath>Defs/recipeDef[defName = "AR_AlloySteelBulk"]</xpath>
           <value>
             <ingredients>
               <li>
@@ -112,20 +112,20 @@
           </value>
         </li>
         <li Class="PatchOperationAdd">
-          <xpath>/Defs/recipeDef[defName = "AR_AlloySteelBulk"]/recipeUsers</xpath>
+          <xpath>Defs/recipeDef[defName = "AR_AlloySteelBulk"]/recipeUsers</xpath>
           <value>
             <li>MedTimes_FueledSmelter</li>
           </value>
         </li>
         <!-- bronze alloys are made at medieval smelter -->
         <li Class="PatchOperationAdd">
-          <xpath>/Defs/recipeDef[defName = "AR_AlloyBronze"]/recipeUsers</xpath>
+          <xpath>Defs/recipeDef[defName = "AR_AlloyBronze"]/recipeUsers</xpath>
           <value>
             <li>MedTimes_FueledSmelter</li>
           </value>
         </li>
         <li Class="PatchOperationAdd">
-          <xpath>/Defs/recipeDef[defName = "AR_AlloyBronzeBulk"]/recipeUsers</xpath>
+          <xpath>Defs/recipeDef[defName = "AR_AlloyBronzeBulk"]/recipeUsers</xpath>
           <value>
             <li>MedTimes_FueledSmelter</li>
           </value>

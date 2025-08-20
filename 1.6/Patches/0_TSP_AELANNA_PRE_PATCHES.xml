@@ -4,9 +4,9 @@
   <!-- Special thanks to Aelanna for straight-up saving me scores of headaches! -->
   <!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
   <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/ResearchProjectDef[defName="VFEC_Mosaics"]/prerequisites</xpath>
+    <xpath>Defs/ResearchProjectDef[defName="VFEC_Mosaics"]/prerequisites</xpath>
     <nomatch Class="PatchOperationAdd">
-      <xpath>/Defs/ResearchProjectDef[defName="VFEC_Mosaics"]</xpath>
+      <xpath>Defs/ResearchProjectDef[defName="VFEC_Mosaics"]</xpath>
       <success>Always</success>
       <value>
         <prerequisites></prerequisites>
@@ -14,9 +14,9 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/ResearchProjectDef[defName="VFEC_Mosaics"]/tags</xpath>
+    <xpath>Defs/ResearchProjectDef[defName="VFEC_Mosaics"]/tags</xpath>
     <nomatch Class="PatchOperationAdd">
-      <xpath>/Defs/ResearchProjectDef[defName="VFEC_Mosaics"]</xpath>
+      <xpath>Defs/ResearchProjectDef[defName="VFEC_Mosaics"]</xpath>
       <success>Always</success>
       <value>
         <tags></tags>
@@ -25,9 +25,9 @@
   </Operation>
   <!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
   <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/ResearchProjectDef[defName="VFEC_Thermaebath"]/prerequisites</xpath>
+    <xpath>Defs/ResearchProjectDef[defName="VFEC_Thermaebath"]/prerequisites</xpath>
     <nomatch Class="PatchOperationAdd">
-      <xpath>/Defs/ResearchProjectDef[defName="VFEC_Thermaebath"]</xpath>
+      <xpath>Defs/ResearchProjectDef[defName="VFEC_Thermaebath"]</xpath>
       <success>Always</success>
       <value>
         <prerequisites></prerequisites>
@@ -36,9 +36,9 @@
   </Operation>
   <!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
   <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/ResearchProjectDef[defName="VFEC_Thermaebath"]/tags</xpath>
+    <xpath>Defs/ResearchProjectDef[defName="VFEC_Thermaebath"]/tags</xpath>
     <nomatch Class="PatchOperationAdd">
-      <xpath>/Defs/ResearchProjectDef[defName="VFEC_Thermaebath"]</xpath>
+      <xpath>Defs/ResearchProjectDef[defName="VFEC_Thermaebath"]</xpath>
       <success>Always</success>
       <value>
         <tags></tags>
@@ -47,9 +47,9 @@
   </Operation>
   <!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
   <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/ResearchProjectDef[defName="VFEC_MeatDrying"]/prerequisites</xpath>
+    <xpath>Defs/ResearchProjectDef[defName="VFEC_MeatDrying"]/prerequisites</xpath>
     <nomatch Class="PatchOperationAdd">
-      <xpath>/Defs/ResearchProjectDef[defName="VFEC_MeatDrying"]</xpath>
+      <xpath>Defs/ResearchProjectDef[defName="VFEC_MeatDrying"]</xpath>
       <success>Always</success>
       <value>
         <prerequisites></prerequisites>
@@ -58,9 +58,9 @@
   </Operation>
   <!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
   <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/ResearchProjectDef[defName="VFEC_MeatDrying"]/tags</xpath>
+    <xpath>Defs/ResearchProjectDef[defName="VFEC_MeatDrying"]/tags</xpath>
     <nomatch Class="PatchOperationAdd">
-      <xpath>/Defs/ResearchProjectDef[defName="VFEC_MeatDrying"]</xpath>
+      <xpath>Defs/ResearchProjectDef[defName="VFEC_MeatDrying"]</xpath>
       <success>Always</success>
       <value>
         <tags></tags>
@@ -69,9 +69,9 @@
   </Operation>
   <!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
   <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/ResearchProjectDef[defName="VFEM_MeatSmoking"]/prerequisites</xpath>
+    <xpath>Defs/ResearchProjectDef[defName="VFEM_MeatSmoking"]/prerequisites</xpath>
     <nomatch Class="PatchOperationAdd">
-      <xpath>/Defs/ResearchProjectDef[defName="VFEM_MeatSmoking"]</xpath>
+      <xpath>Defs/ResearchProjectDef[defName="VFEM_MeatSmoking"]</xpath>
       <success>Always</success>
       <value>
         <prerequisites></prerequisites>
@@ -80,9 +80,9 @@
   </Operation>
   <!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
   <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/ResearchProjectDef[defName="VFEM_MeatSmoking"]/tags</xpath>
+    <xpath>Defs/ResearchProjectDef[defName="VFEM_MeatSmoking"]/tags</xpath>
     <nomatch Class="PatchOperationAdd">
-      <xpath>/Defs/ResearchProjectDef[defName="VFEM_MeatSmoking"]</xpath>
+      <xpath>Defs/ResearchProjectDef[defName="VFEM_MeatSmoking"]</xpath>
       <success>Always</success>
       <value>
         <tags></tags>
@@ -91,9 +91,9 @@
   </Operation>
   <!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
   <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/ResearchProjectDef[defName="VFEC_MeatDrying"]/prerequisites</xpath>
+    <xpath>Defs/ResearchProjectDef[defName="VFEC_MeatDrying"]/prerequisites</xpath>
     <nomatch Class="PatchOperationAdd">
-      <xpath>/Defs/ResearchProjectDef[defName="VFEC_MeatDrying"]</xpath>
+      <xpath>Defs/ResearchProjectDef[defName="VFEC_MeatDrying"]</xpath>
       <success>Always</success>
       <value>
         <prerequisites></prerequisites>
@@ -102,9 +102,9 @@
   </Operation>
   <!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
   <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/ResearchProjectDef[defName="VFEC_MeatDrying"]/tags</xpath>
+    <xpath>Defs/ResearchProjectDef[defName="VFEC_MeatDrying"]/tags</xpath>
     <nomatch Class="PatchOperationAdd">
-      <xpath>/Defs/ResearchProjectDef[defName="VFEC_MeatDrying"]</xpath>
+      <xpath>Defs/ResearchProjectDef[defName="VFEC_MeatDrying"]</xpath>
       <success>Always</success>
       <value>
         <tags></tags>
@@ -113,9 +113,9 @@
   </Operation>
   <!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
   <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/ResearchProjectDef[defName="VFEC_CementMaking"]/prerequisites</xpath>
+    <xpath>Defs/ResearchProjectDef[defName="VFEC_CementMaking"]/prerequisites</xpath>
     <nomatch Class="PatchOperationAdd">
-      <xpath>/Defs/ResearchProjectDef[defName="VFEC_CementMaking"]</xpath>
+      <xpath>Defs/ResearchProjectDef[defName="VFEC_CementMaking"]</xpath>
       <success>Always</success>
       <value>
         <prerequisites></prerequisites>
@@ -124,9 +124,9 @@
   </Operation>
   <!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
   <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/ResearchProjectDef[defName="VFEC_CementMaking"]/tags</xpath>
+    <xpath>Defs/ResearchProjectDef[defName="VFEC_CementMaking"]/tags</xpath>
     <nomatch Class="PatchOperationAdd">
-      <xpath>/Defs/ResearchProjectDef[defName="VFEC_CementMaking"]</xpath>
+      <xpath>Defs/ResearchProjectDef[defName="VFEC_CementMaking"]</xpath>
       <success>Always</success>
       <value>
         <tags></tags>
@@ -135,9 +135,9 @@
   </Operation>
   <!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
   <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/ResearchProjectDef[defName="VFEC_Scorpion"]/prerequisites</xpath>
+    <xpath>Defs/ResearchProjectDef[defName="VFEC_Scorpion"]/prerequisites</xpath>
     <nomatch Class="PatchOperationAdd">
-      <xpath>/Defs/ResearchProjectDef[defName="VFEC_Scorpion"]</xpath>
+      <xpath>Defs/ResearchProjectDef[defName="VFEC_Scorpion"]</xpath>
       <success>Always</success>
       <value>
         <prerequisites></prerequisites>
@@ -146,9 +146,9 @@
   </Operation>
   <!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
   <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/ResearchProjectDef[defName="VFEC_Scorpion"]/tags</xpath>
+    <xpath>Defs/ResearchProjectDef[defName="VFEC_Scorpion"]/tags</xpath>
     <nomatch Class="PatchOperationAdd">
-      <xpath>/Defs/ResearchProjectDef[defName="VFEC_Scorpion"]</xpath>
+      <xpath>Defs/ResearchProjectDef[defName="VFEC_Scorpion"]</xpath>
       <success>Always</success>
       <value>
         <tags></tags>
@@ -157,9 +157,9 @@
   </Operation>
   <!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
   <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/ResearchProjectDef[defName="VFEC_TemperatureControl"]/prerequisites</xpath>
+    <xpath>Defs/ResearchProjectDef[defName="VFEC_TemperatureControl"]/prerequisites</xpath>
     <nomatch Class="PatchOperationAdd">
-      <xpath>/Defs/ResearchProjectDef[defName="VFEC_TemperatureControl"]</xpath>
+      <xpath>Defs/ResearchProjectDef[defName="VFEC_TemperatureControl"]</xpath>
       <success>Always</success>
       <value>
         <prerequisites></prerequisites>
@@ -168,9 +168,9 @@
   </Operation>
   <!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
   <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/ResearchProjectDef[defName="VFEC_TemperatureControl"]/tags</xpath>
+    <xpath>Defs/ResearchProjectDef[defName="VFEC_TemperatureControl"]/tags</xpath>
     <nomatch Class="PatchOperationAdd">
-      <xpath>/Defs/ResearchProjectDef[defName="VFEC_TemperatureControl"]</xpath>
+      <xpath>Defs/ResearchProjectDef[defName="VFEC_TemperatureControl"]</xpath>
       <success>Always</success>
       <value>
         <tags></tags>
@@ -179,9 +179,9 @@
   </Operation>
   <!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
   <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/ThingDef[defName="VFEC_MeleeWeapon_Spatha"]/thingCategories</xpath>
+    <xpath>Defs/ThingDef[defName="VFEC_MeleeWeapon_Spatha"]/thingCategories</xpath>
     <nomatch Class="PatchOperationAdd">
-      <xpath>/Defs/ThingDef[defName="VFEC_MeleeWeapon_Spatha"]</xpath>
+      <xpath>Defs/ThingDef[defName="VFEC_MeleeWeapon_Spatha"]</xpath>
       <success>Always</success>
       <value>
         <thingCategories></thingCategories>
@@ -190,9 +190,9 @@
   </Operation>
   <!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
   <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/FactionDef[@Name="VFEC_RepublicBase"]/requiredMemes</xpath>
+    <xpath>Defs/FactionDef[@Name="VFEC_RepublicBase"]/requiredMemes</xpath>
     <nomatch Class="PatchOperationAdd">
-      <xpath>/Defs/FactionDef[@Name="VFEC_RepublicBase"]</xpath>
+      <xpath>Defs/FactionDef[@Name="VFEC_RepublicBase"]</xpath>
       <success>Always</success>
       <value>
         <requiredMemes></requiredMemes>
@@ -201,9 +201,9 @@
   </Operation>
   <!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
   <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/ThingDef[defName="Apparel_FurStandard"]/thingCategories</xpath>
+    <xpath>Defs/ThingDef[defName="Apparel_FurStandard"]/thingCategories</xpath>
     <nomatch Class="PatchOperationAdd">
-      <xpath>/Defs/FactionDef[defName="Apparel_FurStandard"]</xpath>
+      <xpath>Defs/FactionDef[defName="Apparel_FurStandard"]</xpath>
       <success>Always</success>
       <value>
         <thingCategories></thingCategories>
@@ -212,9 +212,9 @@
   </Operation>
   <!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
   <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/ResearchProjectDef[defName="LogBoilers"]/prerequisites</xpath>
+    <xpath>Defs/ResearchProjectDef[defName="LogBoilers"]/prerequisites</xpath>
     <nomatch Class="PatchOperationAdd">
-      <xpath>/Defs/ResearchProjectDef[defName="LogBoilers"]</xpath>
+      <xpath>Defs/ResearchProjectDef[defName="LogBoilers"]</xpath>
       <success>Always</success>
       <value>
         <prerequisites></prerequisites>
@@ -223,9 +223,9 @@
   </Operation>
   <!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
   <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/ThingDef[defName="GreekSculpture"]/recipeMaker</xpath>
+    <xpath>Defs/ThingDef[defName="GreekSculpture"]/recipeMaker</xpath>
     <nomatch Class="PatchOperationAdd">
-      <xpath>/Defs/ThingDef[defName="GreekSculpture"]</xpath>
+      <xpath>Defs/ThingDef[defName="GreekSculpture"]</xpath>
       <success>Always</success>
       <value>
 		<recipeMaker></recipeMaker>
@@ -234,9 +234,9 @@
   </Operation>
   <!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
   <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/ThingDef[defName="GreekSculpture"]/recipeMaker/researchPrerequisites</xpath>
+    <xpath>Defs/ThingDef[defName="GreekSculpture"]/recipeMaker/researchPrerequisites</xpath>
     <nomatch Class="PatchOperationAdd">
-      <xpath>/Defs/ThingDef[defName="GreekSculpture"]/recipeMaker</xpath>
+      <xpath>Defs/ThingDef[defName="GreekSculpture"]/recipeMaker</xpath>
       <success>Always</success>
       <value>
         <researchPrerequisites></researchPrerequisites>
@@ -245,9 +245,9 @@
   </Operation>
   <!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
   <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/ThingDef[defName="GreekSculptureTerror"]/recipeMaker</xpath>
+    <xpath>Defs/ThingDef[defName="GreekSculptureTerror"]/recipeMaker</xpath>
     <nomatch Class="PatchOperationAdd">
-      <xpath>/Defs/ThingDef[defName="GreekSculptureTerror"]</xpath>
+      <xpath>Defs/ThingDef[defName="GreekSculptureTerror"]</xpath>
       <success>Always</success>
       <value>
 		<recipeMaker></recipeMaker>
@@ -256,9 +256,9 @@
   </Operation>
   <!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
   <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/ThingDef[defName="GreekSculptureTerror"]/recipeMaker/researchPrerequisites</xpath>
+    <xpath>Defs/ThingDef[defName="GreekSculptureTerror"]/recipeMaker/researchPrerequisites</xpath>
     <nomatch Class="PatchOperationAdd">
-      <xpath>/Defs/ThingDef[defName="GreekSculptureTerror"]/recipeMaker</xpath>
+      <xpath>Defs/ThingDef[defName="GreekSculptureTerror"]/recipeMaker</xpath>
       <success>Always</success>
       <value>
         <researchPrerequisites></researchPrerequisites>
@@ -267,9 +267,9 @@
   </Operation>
   
   <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_CenturionArmor"]/apparel</xpath>
+    <xpath>Defs/ThingDef[defName="VFEC_Apparel_CenturionArmor"]/apparel</xpath>
     <nomatch Class="PatchOperationAdd">
-      <xpath>/Defs/ThingDef[defName="VFEC_Apparel_CenturionArmor"]</xpath>
+      <xpath>Defs/ThingDef[defName="VFEC_Apparel_CenturionArmor"]</xpath>
       <success>Always</success>
       <value>
         <apparel></apparel>
@@ -278,9 +278,9 @@
   </Operation>
   
   <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_CenturionArmor"]/apparel/layers</xpath>
+    <xpath>Defs/ThingDef[defName="VFEC_Apparel_CenturionArmor"]/apparel/layers</xpath>
     <nomatch Class="PatchOperationAdd">
-      <xpath>/Defs/ThingDef[defName="VFEC_Apparel_CenturionArmor"]/apparel</xpath>
+      <xpath>Defs/ThingDef[defName="VFEC_Apparel_CenturionArmor"]/apparel</xpath>
       <success>Always</success>
       <value>
         <layers></layers>
@@ -289,9 +289,9 @@
   </Operation>
   
   <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/ThingDef[defName="AR_Sagum"]/apparel</xpath>
+    <xpath>Defs/ThingDef[defName="AR_Sagum"]/apparel</xpath>
     <nomatch Class="PatchOperationAdd">
-      <xpath>/Defs/ThingDef[defName="AR_Sagum"]</xpath>
+      <xpath>Defs/ThingDef[defName="AR_Sagum"]</xpath>
       <success>Always</success>
       <value>
         <apparel></apparel>
@@ -300,9 +300,9 @@
   </Operation>
   
   <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/ThingDef[defName="AR_Sagum"]/apparel/layers</xpath>
+    <xpath>Defs/ThingDef[defName="AR_Sagum"]/apparel/layers</xpath>
     <nomatch Class="PatchOperationAdd">
-      <xpath>/Defs/ThingDef[defName="AR_Sagum"]/apparel</xpath>
+      <xpath>Defs/ThingDef[defName="AR_Sagum"]/apparel</xpath>
       <success>Always</success>
       <value>
         <layers></layers>
@@ -311,9 +311,9 @@
   </Operation>
   
   <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/ThingDef[defName="AC_OilPressWorkshop"]/thingCategories</xpath>
+    <xpath>Defs/ThingDef[defName="AC_OilPressWorkshop"]/thingCategories</xpath>
     <nomatch Class="PatchOperationAdd">
-      <xpath>/Defs/ThingDef[defName="AC_OilPressWorkshop"]</xpath>
+      <xpath>Defs/ThingDef[defName="AC_OilPressWorkshop"]</xpath>
       <success>Always</success>
       <value>
         <thingCategories></thingCategories>
@@ -322,9 +322,9 @@
   </Operation>
   
   <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/ThingDef[defName="AC_OilPressWorkshop"]/minifiedDef</xpath>
+    <xpath>Defs/ThingDef[defName="AC_OilPressWorkshop"]/minifiedDef</xpath>
     <nomatch Class="PatchOperationAdd">
-      <xpath>/Defs/ThingDef[defName="AC_OilPressWorkshop"]</xpath>
+      <xpath>Defs/ThingDef[defName="AC_OilPressWorkshop"]</xpath>
       <success>Always</success>
       <value>
         <minifiedDef>MinifiedThing</minifiedDef>

@@ -5,9 +5,9 @@
 	<!-- Special thanks to Aelanna for straight-up saving me scores of headaches! -->
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[@Name="DankPyon_Base_Pants"]/apparel</xpath>
+		<xpath>Defs/ThingDef[@Name="DankPyon_Base_Pants"]/apparel</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[@Name="DankPyon_Base_Pants"]</xpath>
+			<xpath>Defs/ThingDef[@Name="DankPyon_Base_Pants"]</xpath>
 			<success>Always</success>
 			<value>
 				<apparel></apparel>
@@ -17,9 +17,9 @@
 	
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="DankPyon_Apparel_Hose"]/apparel</xpath>
+		<xpath>Defs/ThingDef[defName="DankPyon_Apparel_Hose"]/apparel</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="DankPyon_Apparel_Hose"]</xpath>
+			<xpath>Defs/ThingDef[defName="DankPyon_Apparel_Hose"]</xpath>
 			<success>Always</success>
 			<value>
 				<apparel></apparel>
@@ -29,10 +29,10 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="DankPyon_Apparel_Hose"]/apparel/developmentalStageFilter</xpath>
+		<xpath>Defs/ThingDef[defName="DankPyon_Apparel_Hose"]/apparel/developmentalStageFilter</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
-			<xpath>/Defs/ThingDef[defName="DankPyon_Apparel_Hose"]/apparel/developmentalStageFilter</xpath>
+			<xpath>Defs/ThingDef[defName="DankPyon_Apparel_Hose"]/apparel/developmentalStageFilter</xpath>
 			<success>Always</success>
 			<value>
 				<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
@@ -40,7 +40,7 @@
 		</match>
 		<!-- If it DOES NOT, add this instead. -->
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="DankPyon_Apparel_Hose"]/apparel</xpath>
+			<xpath>Defs/ThingDef[defName="DankPyon_Apparel_Hose"]/apparel</xpath>
 			<success>Always</success>
 			<value>
 				<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
@@ -50,9 +50,9 @@
 	
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="DankPyon_Apparel_Trousers"]/apparel</xpath>
+		<xpath>Defs/ThingDef[defName="DankPyon_Apparel_Trousers"]/apparel</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="DankPyon_Apparel_Trousers"]</xpath>
+			<xpath>Defs/ThingDef[defName="DankPyon_Apparel_Trousers"]</xpath>
 			<success>Always</success>
 			<value>
 				<apparel></apparel>
@@ -62,10 +62,10 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="DankPyon_Apparel_Trousers"]/apparel/developmentalStageFilter</xpath>
+		<xpath>Defs/ThingDef[defName="DankPyon_Apparel_Trousers"]/apparel/developmentalStageFilter</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
-			<xpath>/Defs/ThingDef[defName="DankPyon_Apparel_Trousers"]/apparel/developmentalStageFilter</xpath>
+			<xpath>Defs/ThingDef[defName="DankPyon_Apparel_Trousers"]/apparel/developmentalStageFilter</xpath>
 			<success>Always</success>
 			<value>
 				<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
@@ -73,7 +73,7 @@
 		</match>
 		<!-- If it DOES NOT, add this instead. -->
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="DankPyon_Apparel_Trousers"]/apparel</xpath>
+			<xpath>Defs/ThingDef[defName="DankPyon_Apparel_Trousers"]/apparel</xpath>
 			<success>Always</success>
 			<value>
 				<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
@@ -83,9 +83,9 @@
 	
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="DankPyon_Apparel_ChaussesPadded"]/apparel</xpath>
+		<xpath>Defs/ThingDef[defName="DankPyon_Apparel_ChaussesPadded"]/apparel</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="DankPyon_Apparel_ChaussesPadded"]</xpath>
+			<xpath>Defs/ThingDef[defName="DankPyon_Apparel_ChaussesPadded"]</xpath>
 			<success>Always</success>
 			<value>
 				<apparel></apparel>
@@ -95,10 +95,10 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="DankPyon_Apparel_ChaussesPadded"]/apparel/developmentalStageFilter</xpath>
+		<xpath>Defs/ThingDef[defName="DankPyon_Apparel_ChaussesPadded"]/apparel/developmentalStageFilter</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
-			<xpath>/Defs/ThingDef[defName="DankPyon_Apparel_ChaussesPadded"]/apparel/developmentalStageFilter</xpath>
+			<xpath>Defs/ThingDef[defName="DankPyon_Apparel_ChaussesPadded"]/apparel/developmentalStageFilter</xpath>
 			<success>Always</success>
 			<value>
 				<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
@@ -106,7 +106,7 @@
 		</match>
 		<!-- If it DOES NOT, add this instead. -->
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="DankPyon_Apparel_ChaussesPadded"]/apparel</xpath>
+			<xpath>Defs/ThingDef[defName="DankPyon_Apparel_ChaussesPadded"]/apparel</xpath>
 			<success>Always</success>
 			<value>
 				<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
@@ -116,9 +116,9 @@
 	
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="DankPyon_Headgear_RedBandana"]/apparel</xpath>
+		<xpath>Defs/ThingDef[defName="DankPyon_Headgear_RedBandana"]/apparel</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="DankPyon_Headgear_RedBandana"]</xpath>
+			<xpath>Defs/ThingDef[defName="DankPyon_Headgear_RedBandana"]</xpath>
 			<success>Always</success>
 			<value>
 				<apparel></apparel>
@@ -128,10 +128,10 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="DankPyon_Headgear_RedBandana"]/apparel/developmentalStageFilter</xpath>
+		<xpath>Defs/ThingDef[defName="DankPyon_Headgear_RedBandana"]/apparel/developmentalStageFilter</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
-			<xpath>/Defs/ThingDef[defName="DankPyon_Headgear_RedBandana"]/apparel/developmentalStageFilter</xpath>
+			<xpath>Defs/ThingDef[defName="DankPyon_Headgear_RedBandana"]/apparel/developmentalStageFilter</xpath>
 			<success>Always</success>
 			<value>
 				<developmentalStageFilter>Child, Adult</developmentalStageFilter>
@@ -139,40 +139,7 @@
 		</match>
 		<!-- If it DOES NOT, add this instead. -->
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="DankPyon_Headgear_RedBandana"]/apparel</xpath>
-			<success>Always</success>
-			<value>
-				<developmentalStageFilter>Child, Adult</developmentalStageFilter>
-			</value>
-		</nomatch>
-	</Operation>
-	
-	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
-	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="DankPyon_Headgear_Hood"]/apparel</xpath>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="DankPyon_Headgear_Hood"]</xpath>
-			<success>Always</success>
-			<value>
-				<apparel></apparel>
-			</value>
-		</nomatch>
-	</Operation>
-	
-	<Operation Class="PatchOperationConditional">
-	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="DankPyon_Headgear_Hood"]/apparel/developmentalStageFilter</xpath>
-		<!-- If it does, do this replacement. -->
-		<match Class="PatchOperationReplace">
-			<xpath>/Defs/ThingDef[defName="DankPyon_Headgear_Hood"]/apparel/developmentalStageFilter</xpath>
-			<success>Always</success>
-			<value>
-				<developmentalStageFilter>Child, Adult</developmentalStageFilter>
-			</value>
-		</match>
-		<!-- If it DOES NOT, add this instead. -->
-		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="DankPyon_Headgear_Hood"]/apparel</xpath>
+			<xpath>Defs/ThingDef[defName="DankPyon_Headgear_RedBandana"]/apparel</xpath>
 			<success>Always</success>
 			<value>
 				<developmentalStageFilter>Child, Adult</developmentalStageFilter>
@@ -182,9 +149,9 @@
 	
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="DankPyon_Headgear_Hood"]/apparel</xpath>
+		<xpath>Defs/ThingDef[defName="DankPyon_Headgear_Hood"]/apparel</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="DankPyon_Headgear_Hood"]</xpath>
+			<xpath>Defs/ThingDef[defName="DankPyon_Headgear_Hood"]</xpath>
 			<success>Always</success>
 			<value>
 				<apparel></apparel>
@@ -194,10 +161,10 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="DankPyon_Headgear_Hood"]/apparel/developmentalStageFilter</xpath>
+		<xpath>Defs/ThingDef[defName="DankPyon_Headgear_Hood"]/apparel/developmentalStageFilter</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
-			<xpath>/Defs/ThingDef[defName="DankPyon_Headgear_Hood"]/apparel/developmentalStageFilter</xpath>
+			<xpath>Defs/ThingDef[defName="DankPyon_Headgear_Hood"]/apparel/developmentalStageFilter</xpath>
 			<success>Always</success>
 			<value>
 				<developmentalStageFilter>Child, Adult</developmentalStageFilter>
@@ -205,40 +172,7 @@
 		</match>
 		<!-- If it DOES NOT, add this instead. -->
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="DankPyon_Headgear_Hood"]/apparel</xpath>
-			<success>Always</success>
-			<value>
-				<developmentalStageFilter>Child, Adult</developmentalStageFilter>
-			</value>
-		</nomatch>
-	</Operation>
-	
-	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
-	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="DankPyon_Headgear_ZweihandersHat"]/apparel</xpath>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="DankPyon_Headgear_ZweihandersHat"]</xpath>
-			<success>Always</success>
-			<value>
-				<apparel></apparel>
-			</value>
-		</nomatch>
-	</Operation>
-	
-	<Operation Class="PatchOperationConditional">
-	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="DankPyon_Headgear_ZweihandersHat"]/apparel/developmentalStageFilter</xpath>
-		<!-- If it does, do this replacement. -->
-		<match Class="PatchOperationReplace">
-			<xpath>/Defs/ThingDef[defName="DankPyon_Headgear_ZweihandersHat"]/apparel/developmentalStageFilter</xpath>
-			<success>Always</success>
-			<value>
-				<developmentalStageFilter>Child, Adult</developmentalStageFilter>
-			</value>
-		</match>
-		<!-- If it DOES NOT, add this instead. -->
-		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="DankPyon_Headgear_ZweihandersHat"]/apparel</xpath>
+			<xpath>Defs/ThingDef[defName="DankPyon_Headgear_Hood"]/apparel</xpath>
 			<success>Always</success>
 			<value>
 				<developmentalStageFilter>Child, Adult</developmentalStageFilter>
@@ -248,9 +182,9 @@
 	
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="DankPyon_Footwear_BootsLeather"]/apparel</xpath>
+		<xpath>Defs/ThingDef[defName="DankPyon_Headgear_Hood"]/apparel</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="DankPyon_Footwear_BootsLeather"]</xpath>
+			<xpath>Defs/ThingDef[defName="DankPyon_Headgear_Hood"]</xpath>
 			<success>Always</success>
 			<value>
 				<apparel></apparel>
@@ -260,10 +194,76 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="DankPyon_Footwear_BootsLeather"]/apparel/developmentalStageFilter</xpath>
+		<xpath>Defs/ThingDef[defName="DankPyon_Headgear_Hood"]/apparel/developmentalStageFilter</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
-			<xpath>/Defs/ThingDef[defName="DankPyon_Footwear_BootsLeather"]/apparel/developmentalStageFilter</xpath>
+			<xpath>Defs/ThingDef[defName="DankPyon_Headgear_Hood"]/apparel/developmentalStageFilter</xpath>
+			<success>Always</success>
+			<value>
+				<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+			</value>
+		</match>
+		<!-- If it DOES NOT, add this instead. -->
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="DankPyon_Headgear_Hood"]/apparel</xpath>
+			<success>Always</success>
+			<value>
+				<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+			</value>
+		</nomatch>
+	</Operation>
+	
+	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="DankPyon_Headgear_ZweihandersHat"]/apparel</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="DankPyon_Headgear_ZweihandersHat"]</xpath>
+			<success>Always</success>
+			<value>
+				<apparel></apparel>
+			</value>
+		</nomatch>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>Defs/ThingDef[defName="DankPyon_Headgear_ZweihandersHat"]/apparel/developmentalStageFilter</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="DankPyon_Headgear_ZweihandersHat"]/apparel/developmentalStageFilter</xpath>
+			<success>Always</success>
+			<value>
+				<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+			</value>
+		</match>
+		<!-- If it DOES NOT, add this instead. -->
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="DankPyon_Headgear_ZweihandersHat"]/apparel</xpath>
+			<success>Always</success>
+			<value>
+				<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+			</value>
+		</nomatch>
+	</Operation>
+	
+	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="DankPyon_Footwear_BootsLeather"]/apparel</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="DankPyon_Footwear_BootsLeather"]</xpath>
+			<success>Always</success>
+			<value>
+				<apparel></apparel>
+			</value>
+		</nomatch>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>Defs/ThingDef[defName="DankPyon_Footwear_BootsLeather"]/apparel/developmentalStageFilter</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="DankPyon_Footwear_BootsLeather"]/apparel/developmentalStageFilter</xpath>
 			<success>Always</success>
 			<value>
 				<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
@@ -271,7 +271,7 @@
 		</match>
 		<!-- If it DOES NOT, add this instead. -->
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="DankPyon_Footwear_BootsLeather"]/apparel</xpath>
+			<xpath>Defs/ThingDef[defName="DankPyon_Footwear_BootsLeather"]/apparel</xpath>
 			<success>Always</success>
 			<value>
 				<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
@@ -281,9 +281,9 @@
 	
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="DankPyon_Footwear_BootsSplinted"]/apparel</xpath>
+		<xpath>Defs/ThingDef[defName="DankPyon_Footwear_BootsSplinted"]/apparel</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="DankPyon_Footwear_BootsSplinted"]</xpath>
+			<xpath>Defs/ThingDef[defName="DankPyon_Footwear_BootsSplinted"]</xpath>
 			<success>Always</success>
 			<value>
 				<apparel></apparel>
@@ -293,10 +293,10 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="DankPyon_Footwear_BootsSplinted"]/apparel/developmentalStageFilter</xpath>
+		<xpath>Defs/ThingDef[defName="DankPyon_Footwear_BootsSplinted"]/apparel/developmentalStageFilter</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
-			<xpath>/Defs/ThingDef[defName="DankPyon_Footwear_BootsSplinted"]/apparel/developmentalStageFilter</xpath>
+			<xpath>Defs/ThingDef[defName="DankPyon_Footwear_BootsSplinted"]/apparel/developmentalStageFilter</xpath>
 			<success>Always</success>
 			<value>
 				<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
@@ -304,7 +304,7 @@
 		</match>
 		<!-- If it DOES NOT, add this instead. -->
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="DankPyon_Footwear_BootsSplinted"]/apparel</xpath>
+			<xpath>Defs/ThingDef[defName="DankPyon_Footwear_BootsSplinted"]/apparel</xpath>
 			<success>Always</success>
 			<value>
 				<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
@@ -314,9 +314,9 @@
 	
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="DankPyon_Footwear_BootsPlate"]/apparel</xpath>
+		<xpath>Defs/ThingDef[defName="DankPyon_Footwear_BootsPlate"]/apparel</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="DankPyon_Footwear_BootsPlate"]</xpath>
+			<xpath>Defs/ThingDef[defName="DankPyon_Footwear_BootsPlate"]</xpath>
 			<success>Always</success>
 			<value>
 				<apparel></apparel>
@@ -326,10 +326,10 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="DankPyon_Footwear_BootsPlate"]/apparel/developmentalStageFilter</xpath>
+		<xpath>Defs/ThingDef[defName="DankPyon_Footwear_BootsPlate"]/apparel/developmentalStageFilter</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
-			<xpath>/Defs/ThingDef[defName="DankPyon_Footwear_BootsPlate"]/apparel/developmentalStageFilter</xpath>
+			<xpath>Defs/ThingDef[defName="DankPyon_Footwear_BootsPlate"]/apparel/developmentalStageFilter</xpath>
 			<success>Always</success>
 			<value>
 				<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
@@ -337,7 +337,7 @@
 		</match>
 		<!-- If it DOES NOT, add this instead. -->
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="DankPyon_Footwear_BootsPlate"]/apparel</xpath>
+			<xpath>Defs/ThingDef[defName="DankPyon_Footwear_BootsPlate"]/apparel</xpath>
 			<success>Always</success>
 			<value>
 				<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
@@ -347,9 +347,9 @@
 	
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="DankPyon_Handwear_GlovesLeather"]/apparel</xpath>
+		<xpath>Defs/ThingDef[defName="DankPyon_Handwear_GlovesLeather"]/apparel</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="DankPyon_Handwear_GlovesLeather"]</xpath>
+			<xpath>Defs/ThingDef[defName="DankPyon_Handwear_GlovesLeather"]</xpath>
 			<success>Always</success>
 			<value>
 				<apparel></apparel>
@@ -359,10 +359,10 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="DankPyon_Handwear_GlovesLeather"]/apparel/developmentalStageFilter</xpath>
+		<xpath>Defs/ThingDef[defName="DankPyon_Handwear_GlovesLeather"]/apparel/developmentalStageFilter</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
-			<xpath>/Defs/ThingDef[defName="DankPyon_Handwear_GlovesLeather"]/apparel/developmentalStageFilter</xpath>
+			<xpath>Defs/ThingDef[defName="DankPyon_Handwear_GlovesLeather"]/apparel/developmentalStageFilter</xpath>
 			<success>Always</success>
 			<value>
 				<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
@@ -370,7 +370,7 @@
 		</match>
 		<!-- If it DOES NOT, add this instead. -->
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="DankPyon_Handwear_GlovesLeather"]/apparel</xpath>
+			<xpath>Defs/ThingDef[defName="DankPyon_Handwear_GlovesLeather"]/apparel</xpath>
 			<success>Always</success>
 			<value>
 				<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
@@ -380,9 +380,9 @@
 	
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="DankPyon_Handwear_GlovesSplinted"]/apparel</xpath>
+		<xpath>Defs/ThingDef[defName="DankPyon_Handwear_GlovesSplinted"]/apparel</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="DankPyon_Handwear_GlovesSplinted"]</xpath>
+			<xpath>Defs/ThingDef[defName="DankPyon_Handwear_GlovesSplinted"]</xpath>
 			<success>Always</success>
 			<value>
 				<apparel></apparel>
@@ -392,10 +392,10 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="DankPyon_Handwear_GlovesSplinted"]/apparel/developmentalStageFilter</xpath>
+		<xpath>Defs/ThingDef[defName="DankPyon_Handwear_GlovesSplinted"]/apparel/developmentalStageFilter</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
-			<xpath>/Defs/ThingDef[defName="DankPyon_Handwear_GlovesSplinted"]/apparel/developmentalStageFilter</xpath>
+			<xpath>Defs/ThingDef[defName="DankPyon_Handwear_GlovesSplinted"]/apparel/developmentalStageFilter</xpath>
 			<success>Always</success>
 			<value>
 				<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
@@ -403,7 +403,7 @@
 		</match>
 		<!-- If it DOES NOT, add this instead. -->
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="DankPyon_Handwear_GlovesSplinted"]/apparel</xpath>
+			<xpath>Defs/ThingDef[defName="DankPyon_Handwear_GlovesSplinted"]/apparel</xpath>
 			<success>Always</success>
 			<value>
 				<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
@@ -413,9 +413,9 @@
 	
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="DankPyon_Handwear_GlovesPlate"]/apparel</xpath>
+		<xpath>Defs/ThingDef[defName="DankPyon_Handwear_GlovesPlate"]/apparel</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="DankPyon_Handwear_GlovesPlate"]</xpath>
+			<xpath>Defs/ThingDef[defName="DankPyon_Handwear_GlovesPlate"]</xpath>
 			<success>Always</success>
 			<value>
 				<apparel></apparel>
@@ -425,10 +425,10 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="DankPyon_Handwear_GlovesPlate"]/apparel/developmentalStageFilter</xpath>
+		<xpath>Defs/ThingDef[defName="DankPyon_Handwear_GlovesPlate"]/apparel/developmentalStageFilter</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
-			<xpath>/Defs/ThingDef[defName="DankPyon_Handwear_GlovesPlate"]/apparel/developmentalStageFilter</xpath>
+			<xpath>Defs/ThingDef[defName="DankPyon_Handwear_GlovesPlate"]/apparel/developmentalStageFilter</xpath>
 			<success>Always</success>
 			<value>
 				<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
@@ -436,7 +436,7 @@
 		</match>
 		<!-- If it DOES NOT, add this instead. -->
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="DankPyon_Handwear_GlovesPlate"]/apparel</xpath>
+			<xpath>Defs/ThingDef[defName="DankPyon_Handwear_GlovesPlate"]/apparel</xpath>
 			<success>Always</success>
 			<value>
 				<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>

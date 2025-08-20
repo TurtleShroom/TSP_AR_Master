@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Patch>
   <Operation Class="PatchOperationAdd">
-    <xpath>/Defs/TraderKindDef[defName = "Orbital_BulkGoods"]/stockGenerators</xpath>
+    <xpath>Defs/TraderKindDef[defName = "Orbital_BulkGoods"]/stockGenerators</xpath>
     <value>
       <li Class="StockGenerator_SingleDef">
         <thingDef>AR_Bronze</thingDef>
@@ -27,7 +27,7 @@
     </value>
   </Operation>
   <Operation Class="PatchOperationAdd">
-    <xpath>/Defs/TraderKindDef[defName = "Caravan_Outlander_BulkGoods"]/stockGenerators</xpath>
+    <xpath>Defs/TraderKindDef[defName = "Caravan_Outlander_BulkGoods"]/stockGenerators</xpath>
     <value>
       <li Class="StockGenerator_SingleDef">
         <thingDef>AR_Bronze</thingDef>
@@ -53,7 +53,7 @@
     </value>
   </Operation>
   <Operation Class="PatchOperationAdd">
-    <xpath>/Defs/TraderKindDef[defName = "Base_Outlander_Standard"]/stockGenerators</xpath>
+    <xpath>Defs/TraderKindDef[defName = "Base_Outlander_Standard"]/stockGenerators</xpath>
     <value>
       <li Class="StockGenerator_SingleDef">
         <thingDef>AR_Bronze</thingDef>
@@ -79,7 +79,7 @@
     </value>
   </Operation>
   <Operation Class="PatchOperationAdd">
-    <xpath>/Defs/TraderKindDef[defName = "Caravan_Neolithic_BulkGoods"]/stockGenerators</xpath>
+    <xpath>Defs/TraderKindDef[defName = "Caravan_Neolithic_BulkGoods"]/stockGenerators</xpath>
     <value>
       <li Class="StockGenerator_SingleDef">
         <thingDef>AR_Bronze</thingDef>
@@ -105,7 +105,7 @@
     </value>
   </Operation>
   <Operation Class="PatchOperationAdd">
-    <xpath>/Defs/TraderKindDef[defName = "Base_Neolithic_Standard"]/stockGenerators</xpath>
+    <xpath>Defs/TraderKindDef[defName = "Base_Neolithic_Standard"]/stockGenerators</xpath>
     <value>
       <li Class="StockGenerator_SingleDef">
         <thingDef>AR_Bronze</thingDef>
@@ -132,10 +132,10 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/TraderKindDef[defName="VFEC_Caravan_Republic_BulkGoods"]</xpath>
+    <xpath>Defs/TraderKindDef[defName="VFEC_Caravan_Republic_BulkGoods"]</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
-      <xpath>/Defs/TraderKindDef[defName="VFEC_Caravan_Republic_BulkGoods"]/stockGenerators</xpath>
+      <xpath>Defs/TraderKindDef[defName="VFEC_Caravan_Republic_BulkGoods"]/stockGenerators</xpath>
       <value>
         <li Class="StockGenerator_SingleDef">
           <thingDef>AR_Bronze</thingDef>
@@ -163,7 +163,7 @@
     <!-- If the first XPATH does not exist, the original code stands. -->
   </Operation>
   <Operation Class="PatchOperationAdd">
-    <xpath>/Defs/TraderKindDef/stockGenerators/li[categoryDef="WeaponsMelee"]/..</xpath>
+    <xpath>Defs/TraderKindDef/stockGenerators/li[categoryDef="WeaponsMelee"]/..</xpath>
     <value>
       <li Class="StockGenerator_Category">
         <categoryDef>AR_CategoryShields</categoryDef>
@@ -178,10 +178,10 @@
   
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/TraderKindDef[defName="DankPyon_Base_Medieval_Standard"]</xpath>
+		<xpath>Defs/TraderKindDef[defName="DankPyon_Base_Medieval_Standard"]</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
-			<xpath>/Defs/TraderKindDef[defName = "DankPyon_Base_Medieval_Standard" or defName = "DankPyon_Caravan_Medieval_BulkGoodsMerchant" or defName = "DankPyon_Caravan_Medieval_RuinsMerchant" or defName = "DankPyon_Caravan_Medieval_BulkGoodsMerchant_Soren"]/stockGenerators</xpath>
+			<xpath>Defs/TraderKindDef[defName = "DankPyon_Base_Medieval_Standard" or defName = "DankPyon_Caravan_Medieval_BulkGoodsMerchant" or defName = "DankPyon_Caravan_Medieval_RuinsMerchant" or defName = "DankPyon_Caravan_Medieval_BulkGoodsMerchant_Soren"]/stockGenerators</xpath>
 			<value>
 				<li Class="StockGenerator_SingleDef">
 					<thingDef>AR_Bronze</thingDef>

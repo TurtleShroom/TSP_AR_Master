@@ -3,11 +3,11 @@
 <Patch>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="SAX_MealSketti"]</xpath>
+    <xpath>Defs/ThingDef[defName="SAX_MealSketti"]</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>/Defs/RecipeDef[defName="SAX_CookMealSketti"]</xpath>
+      <xpath>Defs/RecipeDef[defName="SAX_CookMealSketti"]</xpath>
       <value>
         <researchPrerequisite>AR_Project_Mediterranean_Culture</researchPrerequisite>
       </value>
@@ -16,11 +16,11 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="SAX_MealSketti"]</xpath>
+    <xpath>Defs/ThingDef[defName="SAX_MealSketti"]</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>/Defs/RecipeDef[defName="SAX_CookMealSpaghettiBulk"]</xpath>
+      <xpath>Defs/RecipeDef[defName="SAX_CookMealSpaghettiBulk"]</xpath>
       <value>
         <researchPrerequisite>AR_Project_Mediterranean_Culture</researchPrerequisite>
       </value>
@@ -29,11 +29,11 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/RecipeDef[defName="Make_CheesePizza"]</xpath>
+    <xpath>Defs/RecipeDef[defName="Make_CheesePizza"]</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/RecipeDef[defName="Make_CheesePizza"]/researchPrerequisite</xpath>
+      <xpath>Defs/RecipeDef[defName="Make_CheesePizza"]/researchPrerequisite</xpath>
       <value>
         <researchPrerequisite>AR_Project_Mediterranean_Culture</researchPrerequisite>
       </value>
@@ -42,11 +42,11 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/RecipeDef[defName="Make_WormPizza"]</xpath>
+    <xpath>Defs/RecipeDef[defName="Make_WormPizza"]</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/RecipeDef[defName="Make_WormPizza"]/researchPrerequisite</xpath>
+      <xpath>Defs/RecipeDef[defName="Make_WormPizza"]/researchPrerequisite</xpath>
       <value>
         <researchPrerequisite>AR_Project_Mediterranean_Culture</researchPrerequisite>
       </value>
@@ -55,11 +55,11 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/RecipeDef[defName="Make_VeggiePizza"]</xpath>
+    <xpath>Defs/RecipeDef[defName="Make_VeggiePizza"]</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/RecipeDef[defName="Make_VeggiePizza"]/researchPrerequisite</xpath>
+      <xpath>Defs/RecipeDef[defName="Make_VeggiePizza"]/researchPrerequisite</xpath>
       <value>
         <researchPrerequisite>AR_Project_Mediterranean_Culture</researchPrerequisite>
       </value>
@@ -68,11 +68,11 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/RecipeDef[defName="Make_MeatPizza"]</xpath>
+    <xpath>Defs/RecipeDef[defName="Make_MeatPizza"]</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/RecipeDef[defName="Make_MeatPizza"]/researchPrerequisite</xpath>
+      <xpath>Defs/RecipeDef[defName="Make_MeatPizza"]/researchPrerequisite</xpath>
       <value>
         <researchPrerequisite>AR_Project_Mediterranean_Culture</researchPrerequisite>
       </value>
@@ -81,31 +81,31 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/ResearchProjectDef[defName="pizzaTime"]</xpath>
+    <xpath>Defs/ResearchProjectDef[defName="pizzaTime"]</xpath>
     <!-- If they do, SHUT IT DOWN. -->
     <match Class="PatchOperationRemove">
       <success>Always</success>
-      <xpath>/Defs/ResearchProjectDef[defName="pizzaTime"]</xpath>
+      <xpath>Defs/ResearchProjectDef[defName="pizzaTime"]</xpath>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/RecipeDef[defName="Make_CheesePizza"]</xpath>
+    <xpath>Defs/RecipeDef[defName="Make_CheesePizza"]</xpath>
     <!-- If they do, SHUT IT DOWN. -->
     <match Class="PatchOperationRemove">
       <success>Always</success>
-      <xpath>/Defs/ResearchProjectDef/prequisites/li[text()="pizzaTime"]</xpath>
+      <xpath>Defs/ResearchProjectDef/prequisites/li[text()="pizzaTime"]</xpath>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/RecipeDef[defName="Make_CheesePizza"]</xpath>
+    <xpath>Defs/RecipeDef[defName="Make_CheesePizza"]</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="ST_CheesePizza"]/descriptionHyperlinks</xpath>
+      <xpath>Defs/ThingDef[defName="ST_CheesePizza"]/descriptionHyperlinks</xpath>
       <value>
         <descriptionHyperlinks>
           <ResearchProjectDef>AR_Project_Mediterranean_Culture</ResearchProjectDef>
@@ -116,11 +116,11 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/RecipeDef[defName="Make_WormPizza"]</xpath>
+    <xpath>Defs/RecipeDef[defName="Make_WormPizza"]</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="ST_WormPizza"]/descriptionHyperlinks</xpath>
+      <xpath>Defs/ThingDef[defName="ST_WormPizza"]/descriptionHyperlinks</xpath>
       <value>
         <descriptionHyperlinks>
           <ResearchProjectDef>AR_Project_Mediterranean_Culture</ResearchProjectDef>
@@ -131,11 +131,11 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/RecipeDef[defName="Make_VeggiePizza"]</xpath>
+    <xpath>Defs/RecipeDef[defName="Make_VeggiePizza"]</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="ST_VegetablePizza"]/descriptionHyperlinks</xpath>
+      <xpath>Defs/ThingDef[defName="ST_VegetablePizza"]/descriptionHyperlinks</xpath>
       <value>
         <descriptionHyperlinks>
           <ResearchProjectDef>AR_Project_Mediterranean_Culture</ResearchProjectDef>
@@ -146,11 +146,11 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/RecipeDef[defName="Make_MeatPizza"]</xpath>
+    <xpath>Defs/RecipeDef[defName="Make_MeatPizza"]</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="ST_MeatPizza"]/descriptionHyperlinks</xpath>
+      <xpath>Defs/ThingDef[defName="ST_MeatPizza"]/descriptionHyperlinks</xpath>
       <value>
         <descriptionHyperlinks>
           <ResearchProjectDef>AR_Project_Mediterranean_Culture</ResearchProjectDef>
@@ -161,11 +161,11 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/RecipeDef[defName="Make_MeatPizza"]</xpath>
+    <xpath>Defs/RecipeDef[defName="Make_MeatPizza"]</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/ThingDef/descriptionHyperlinks/ResearchProjectDef[text()="pizzaTime"]</xpath>
+      <xpath>Defs/ThingDef/descriptionHyperlinks/ResearchProjectDef[text()="pizzaTime"]</xpath>
       <value>
         <ResearchProjectDef>AR_Project_Mediterranean_Culture</ResearchProjectDef>
       </value>
@@ -174,11 +174,11 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/RecipeDef[defName="MakeBoringPizza"]/researchPrerequisite</xpath>
+    <xpath>Defs/RecipeDef[defName="MakeBoringPizza"]/researchPrerequisite</xpath>
     <!-- If it does, add this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName = "MakeBoringPizza" or defName = "MakeCheesePizza" or defName = "MakePepperoniPizza" or defName = "MakeCombinationPizza" or defName = "MakeBaconPizza" or defName = "MakeBulgogiPizza" or defName = "MakeVeggiePizza" or defName = "MakeSteakPizza" or defName = "MakeMeatBallPizza" or defName = "MakeBoomratPizza" or defName = "MakeAmbrosiaPizza" or defName = "MakeBoringPizzaBulk" or defName = "MakeCheesePizzaBulk" or defName = "MakePepperoniPizzaBulk" or defName = "MakeCombinationPizzaBulk" or defName = "MakeBaconPizzaBulk" or defName = "MakeBulgogiPizzaBulk" or defName = "MakeVeggiePizzaBulk" or defName = "MakeSteakPizzaBulk" or defName = "MakeMeatBallPizzaBulk" or defName = "MakeBoomratPizzaBulk" or defName = "MakeAmbrosiaPizzaBulk"]/researchPrerequisite</xpath>
+      <xpath>Defs/ThingDef[defName = "MakeBoringPizza" or defName = "MakeCheesePizza" or defName = "MakePepperoniPizza" or defName = "MakeCombinationPizza" or defName = "MakeBaconPizza" or defName = "MakeBulgogiPizza" or defName = "MakeVeggiePizza" or defName = "MakeSteakPizza" or defName = "MakeMeatBallPizza" or defName = "MakeBoomratPizza" or defName = "MakeAmbrosiaPizza" or defName = "MakeBoringPizzaBulk" or defName = "MakeCheesePizzaBulk" or defName = "MakePepperoniPizzaBulk" or defName = "MakeCombinationPizzaBulk" or defName = "MakeBaconPizzaBulk" or defName = "MakeBulgogiPizzaBulk" or defName = "MakeVeggiePizzaBulk" or defName = "MakeSteakPizzaBulk" or defName = "MakeMeatBallPizzaBulk" or defName = "MakeBoomratPizzaBulk" or defName = "MakeAmbrosiaPizzaBulk"]/researchPrerequisite</xpath>
       <value>
         <researchPrerequisite>AR_Project_Mediterranean_Culture</researchPrerequisite>
       </value>

@@ -5,10 +5,10 @@
     <operations>
       <!-->Smithing<-->
       <li Class="PatchOperationRemove">
-        <xpath>/Defs/ResearchProjectDef[defName = "Smithing"]/researchViewX</xpath>
+        <xpath>Defs/ResearchProjectDef[defName = "Smithing"]/researchViewX</xpath>
       </li>
       <li Class="PatchOperationReplace">
-        <xpath>/Defs/ResearchProjectDef[defName = "Smithing"]/researchViewY</xpath>
+        <xpath>Defs/ResearchProjectDef[defName = "Smithing"]/researchViewY</xpath>
         <value>
           <researchViewY>0</researchViewY>
           <researchViewX>3</researchViewX>
@@ -17,10 +17,10 @@
       </li>
       <!-->Long Blades<-->
       <li Class="PatchOperationRemove">
-        <xpath>/Defs/ResearchProjectDef[defName = "LongBlades"]/researchViewX</xpath>
+        <xpath>Defs/ResearchProjectDef[defName = "LongBlades"]/researchViewX</xpath>
       </li>
       <li Class="PatchOperationReplace">
-        <xpath>/Defs/ResearchProjectDef[defName = "LongBlades"]/researchViewY</xpath>
+        <xpath>Defs/ResearchProjectDef[defName = "LongBlades"]/researchViewY</xpath>
         <value>
           <researchViewY>1</researchViewY>
           <researchViewX>4</researchViewX>
@@ -29,10 +29,10 @@
       </li>
       <!-->Plate Armor<-->
       <li Class="PatchOperationRemove">
-        <xpath>/Defs/ResearchProjectDef[defName = "PlateArmor"]/researchViewX</xpath>
+        <xpath>Defs/ResearchProjectDef[defName = "PlateArmor"]/researchViewX</xpath>
       </li>
       <li Class="PatchOperationReplace">
-        <xpath>/Defs/ResearchProjectDef[defName = "PlateArmor"]/researchViewY</xpath>
+        <xpath>Defs/ResearchProjectDef[defName = "PlateArmor"]/researchViewY</xpath>
         <value>
           <researchViewY>2</researchViewY>
           <researchViewX>5</researchViewX>
@@ -40,7 +40,7 @@
         </value>
       </li>
       <li Class="PatchOperationReplace">
-        <xpath>/Defs/ResearchProjectDef[defName = "PlateArmor"]/prerequisites</xpath>
+        <xpath>Defs/ResearchProjectDef[defName = "PlateArmor"]/prerequisites</xpath>
         <value>
           <prerequisites>
             <li>AR_Project_Chainmail</li>
@@ -51,11 +51,11 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ResearchProjectDef[defName="ComplexClothing"]</xpath>
+    <xpath>Defs/ResearchProjectDef[defName="ComplexClothing"]</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>/Defs/ResearchProjectDef[defName="ComplexClothing"]/tags</xpath>
+      <xpath>Defs/ResearchProjectDef[defName="ComplexClothing"]/tags</xpath>
       <value>
         <li>EgyptStart</li>
         <li MayRequire="mlie.ancientrimcore">RomanStart</li>
@@ -68,9 +68,9 @@
   </Operation>
   <!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
   <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/ResearchProjectDef[defName="AirConditioning"]/prerequisites</xpath>
+    <xpath>Defs/ResearchProjectDef[defName="AirConditioning"]/prerequisites</xpath>
     <nomatch Class="PatchOperationAdd">
-      <xpath>/Defs/ResearchProjectDef[defName="AirConditioning"]</xpath>
+      <xpath>Defs/ResearchProjectDef[defName="AirConditioning"]</xpath>
       <success>Always</success>
       <value>
         <prerequisites></prerequisites>
@@ -79,10 +79,10 @@
 	</Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ResearchProjectDef[defName="AR_Project_Water_Cooling"]</xpath>
+    <xpath>Defs/ResearchProjectDef[defName="AR_Project_Water_Cooling"]</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
-      <xpath>/Defs/ResearchProjectDef[defName="AirConditioning"]/prerequisites</xpath>
+      <xpath>Defs/ResearchProjectDef[defName="AirConditioning"]/prerequisites</xpath>
       <value>
         <li MayRequire="dubwise.dubsbadhygiene">Plumbing</li>
         <li>AR_Project_Water_Cooling</li>
@@ -92,11 +92,11 @@
   </Operation>
 	<Operation Class="PatchOperationConditional">
 		<!-- Does this exist? -->
-		<xpath>/Defs/ResearchProjectDef[defName="Prosthetics"]/prerequisites</xpath>
+		<xpath>Defs/ResearchProjectDef[defName="Prosthetics"]/prerequisites</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
 			<success>Always</success>
-			<xpath>/Defs/ResearchProjectDef[defName="Prosthetics"]/prerequisites</xpath>
+			<xpath>Defs/ResearchProjectDef[defName="Prosthetics"]/prerequisites</xpath>
 			<value>
 				<prerequisites>
 					<li>Smithing</li>

@@ -5,9 +5,9 @@
 	<!-- Special thanks to Aelanna for straight-up saving me scores of headaches! -->
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]/weaponTags</xpath>
+		<xpath>Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]/weaponTags</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]</xpath>
+			<xpath>Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]</xpath>
 			<success>Always</success>
 			<value>
 				<weaponTags></weaponTags>
@@ -17,9 +17,9 @@
 	
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]/recipeMaker</xpath>
+		<xpath>Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]/recipeMaker</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]</xpath>
+			<xpath>Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]</xpath>
 			<success>Always</success>
 			<value>
 				<recipeMaker></recipeMaker>
@@ -37,14 +37,14 @@
 				<!--
 				<li Class="PatchOperationReplace">
 					<success>Always</success>
-					<xpath>/Defs/ResearchProjectDef[defName="VFEC_Scorpion"]/label</xpath>
+					<xpath>Defs/ResearchProjectDef[defName="VFEC_Scorpion"]/label</xpath>
 					<value>
 						<label>Manuballista</label>
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
 					<success>Always</success>
-					<xpath>/Defs/ResearchProjectDef[defName="VFEC_Scorpion"]/description</xpath>
+					<xpath>Defs/ResearchProjectDef[defName="VFEC_Scorpion"]/description</xpath>
 					<value>
 						<description>Construct Manuballistae, which are basically miniaturized, portable Scorpioes. Like its predecessors, a Manuballista was a torsion-based siege engines, except they were small enough to be used like later hand held crossbows.</description>
 					</value>
@@ -52,35 +52,35 @@
 				-->
 				<li Class="PatchOperationReplace">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]/label</xpath>
+					<xpath>Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]/label</xpath>
 					<value>
 						<label>Manuballista</label>
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]/description</xpath>
+					<xpath>Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]/description</xpath>
 					<value>
 						<description>The masterpiece of Roman siege technology. The Manuballista was invented as a further, portable improvement to the Scorpio. A Manuballista was a torsion-based siege engine small enough to be a hand held crossbow (as opposed to ballistae and the Scorpio). As with its predecessors, its shooting involved "storing" kinetic energy by applying torque (force applied to a rotating object) to ropes. Releasing this launched the missile to spectacular results. It shoots diverse kinds of munitions, such as jagged stones and single pointed bolts.</description>
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]/thingClass</xpath>
+					<xpath>Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]/thingClass</xpath>
 					<value>
 						<thingClass>ThingWithComps</thingClass>
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef[defName="VFEC_TurretGun_Scorpion"]/minifiedDef</xpath>
+					<xpath>Defs/ThingDef[defName="VFEC_TurretGun_Scorpion"]/minifiedDef</xpath>
 					<value>
 						<minifiedDef>MinifiedThing</minifiedDef>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]/weaponTags</xpath>
+					<xpath>Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]/weaponTags</xpath>
 					<value>
 						<li>NeolithicRangedChief</li>
 						<li>NeolithicChief</li>
@@ -95,7 +95,7 @@
 				</li>
 				<li Class="PatchOperationRemove">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef[defName="VFEC_Turret_Scorpion"]</xpath>
+					<xpath>Defs/ThingDef[defName="VFEC_Turret_Scorpion"]</xpath>
 				</li>
 				<li Class="PatchOperationAdd">
 					<success>Always</success>
@@ -130,7 +130,7 @@
 				</li>
 				<li Class="PatchOperationReplace">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]/recipeMaker</xpath>
+					<xpath>Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]/recipeMaker</xpath>
 					<value>
 						<recipeMaker>
 							<skillRequirements>
@@ -151,19 +151,19 @@
 				</li>
 				<li Class="PatchOperationRemove">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]/costList</xpath>
+					<xpath>Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]/costList</xpath>
 				</li>
 				<li Class="PatchOperationRemove">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]/stuffCategories</xpath>
+					<xpath>Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]/stuffCategories</xpath>
 				</li>
 				<li Class="PatchOperationRemove">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]/costStuffCount</xpath>
+					<xpath>Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]/costStuffCount</xpath>
 				</li>
 				<li Class="PatchOperationAdd">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]</xpath>
+					<xpath>Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]</xpath>
 					<value>
 						<costStuffCount>95</costStuffCount>
 						<stuffCategories Inherit="False">
@@ -187,13 +187,13 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]</xpath>
+		<xpath>Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]</xpath>
 		<!-- If it does, LET'S FASTING GOOOOOOOO!! -->
 		<match Class="PatchOperationSequence">
 			<operations>
 				<li Class="PatchOperationInsert">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="VFEC_Scorpion"]</xpath>
+					<xpath>Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="VFEC_Scorpion"]</xpath>
 					<value>
 						<li>AR_Project_Ballistae</li>
 					</value>
@@ -201,7 +201,7 @@
 				
 				<li Class="PatchOperationInsert">
 					<success>Always</success>
-					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="VFEC_Scorpion"]</xpath>
+					<xpath>Defs/RecipeDef/researchPrerequisites/li[text()="VFEC_Scorpion"]</xpath>
 					<value>
 						<li>AR_Project_Ballistae</li>
 					</value>
@@ -209,7 +209,7 @@
 				
 				<li Class="PatchOperationInsert">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="VFEC_Scorpion"]</xpath>
+					<xpath>Defs/ThingDef/researchPrerequisites/li[text()="VFEC_Scorpion"]</xpath>
 					<value>
 						<li>AR_Project_Ballistae</li>
 					</value>
@@ -217,7 +217,7 @@
 				
 				<li Class="PatchOperationInsert">
 					<success>Always</success>
-					<xpath>/Defs/TerrainDef/researchPrerequisites/li[text()="VFEC_Scorpion"]</xpath>
+					<xpath>Defs/TerrainDef/researchPrerequisites/li[text()="VFEC_Scorpion"]</xpath>
 					<value>
 						<li>AR_Project_Ballistae</li>
 					</value>
@@ -225,37 +225,37 @@
 				
 				<li Class="PatchOperationRemove">
 					<success>Always</success>
-					<xpath>/Defs/ResearchProjectDef/prerequisites/li[text()="VFEC_Scorpion"]</xpath>
+					<xpath>Defs/ResearchProjectDef/prerequisites/li[text()="VFEC_Scorpion"]</xpath>
 				</li>
 				
 				<li Class="PatchOperationRemove">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="VFEC_Scorpion"]</xpath>
+					<xpath>Defs/ThingDef/researchPrerequisites/li[text()="VFEC_Scorpion"]</xpath>
 				</li>
 				
 				<li Class="PatchOperationRemove">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="VFEC_Scorpion"]</xpath>
+					<xpath>Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="VFEC_Scorpion"]</xpath>
 				</li>
 				
 				<li Class="PatchOperationRemove">
 					<success>Always</success>
-					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="VFEC_Scorpion"]</xpath>
+					<xpath>Defs/RecipeDef/researchPrerequisites/li[text()="VFEC_Scorpion"]</xpath>
 				</li>
 				
 				<li Class="PatchOperationRemove">
 					<success>Always</success>
-					<xpath>/Defs/TerrainDef/researchPrerequisites/li[text()="VFEC_Scorpion"]</xpath>
+					<xpath>Defs/TerrainDef/researchPrerequisites/li[text()="VFEC_Scorpion"]</xpath>
 				</li>
 				
 				<li Class="PatchOperationRemove">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef/plant/sowResearchPrerequisites/li[text()="VFEC_Scorpion"]</xpath>
+					<xpath>Defs/ThingDef/plant/sowResearchPrerequisites/li[text()="VFEC_Scorpion"]</xpath>
 				</li>
 				
 				<li Class="PatchOperationReplace">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef[researchPrerequisite="VFEC_Scorpion"]/researchPrerequisite</xpath>
+					<xpath>Defs/ThingDef[researchPrerequisite="VFEC_Scorpion"]/researchPrerequisite</xpath>
 					<value>
 						<researchPrerequisites>
 							<li>AR_Project_Ballistae</li>
@@ -265,7 +265,7 @@
 				
 				<li Class="PatchOperationReplace">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef/recipeMaker[researchPrerequisite="VFEC_Scorpion"]/researchPrerequisite</xpath>
+					<xpath>Defs/ThingDef/recipeMaker[researchPrerequisite="VFEC_Scorpion"]/researchPrerequisite</xpath>
 					<value>
 						<researchPrerequisites>
 							<li>AR_Project_Ballistae</li>
@@ -275,7 +275,7 @@
 				
 				<li Class="PatchOperationReplace">
 					<success>Always</success>
-					<xpath>/Defs/TerrainDef[researchPrerequisite="VFEC_Scorpion"]/researchPrerequisite</xpath>
+					<xpath>Defs/TerrainDef[researchPrerequisite="VFEC_Scorpion"]/researchPrerequisite</xpath>
 					<value>
 						<researchPrerequisites>
 							<li>AR_Project_Ballistae</li>
@@ -285,7 +285,7 @@
 				
 				<li Class="PatchOperationRemove">
 					<success>Always</success>
-					<xpath>/Defs/ResearchProjectDef[defName="VFEC_Scorpion"]</xpath>
+					<xpath>Defs/ResearchProjectDef[defName="VFEC_Scorpion"]</xpath>
 				</li>
 			</operations>
 		</match>
@@ -295,11 +295,11 @@
 	<!--
 	<Operation Class="PatchOperationConditional">
 	 DO THE GENTILES KNOW?
-		<xpath>/Defs/JobDef[defName="VFEC_SetupScorpion"]</xpath>
+		<xpath>Defs/JobDef[defName="VFEC_SetupScorpion"]</xpath>
 		If they do, SHUT IT DOWN.
 		<match Class="PatchOperationRemove">
 			<success>Always</success>
-			<xpath>/Defs/JobDef[defName="VFEC_SetupScorpion"]</xpath>
+			<xpath>Defs/JobDef[defName="VFEC_SetupScorpion"]</xpath>
 		</match>
 		If the first XPATH does not exist, the original code stands.
 	</Operation>
@@ -307,22 +307,22 @@
 
 	<Operation Class="PatchOperationConditional">
 		<!-- DO THE GENTILES KNOW? -->
-		<xpath>/Defs/RaidStrategyDef[defName="VFEC_ScorpionRaid"]</xpath>
+		<xpath>Defs/RaidStrategyDef[defName="VFEC_ScorpionRaid"]</xpath>
 		<!-- If they do, SHUT IT DOWN. -->
 		<match Class="PatchOperationRemove">
 			<success>Always</success>
-			<xpath>/Defs/RaidStrategyDef[defName="VFEC_ScorpionRaid"]</xpath>
+			<xpath>Defs/RaidStrategyDef[defName="VFEC_ScorpionRaid"]</xpath>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. -->
 	</Operation>
   
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="VFEC_TurretGun_Scorpion"]/statBases/MarketValue</xpath>
+		<xpath>Defs/ThingDef[defName="VFEC_TurretGun_Scorpion"]/statBases/MarketValue</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]/statBases/MarketValue</xpath>
+			<xpath>Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]/statBases/MarketValue</xpath>
 			<value>
 				<MarketValue>102</MarketValue>
 			</value>
@@ -330,7 +330,7 @@
 		<!-- If it DOES NOT, add this. -->
 		<nomatch Class="PatchOperationAdd">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]/statBases</xpath>
+			<xpath>Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]/statBases</xpath>
 			<value>
 				<MarketValue>102</MarketValue>
 			</value>
@@ -340,11 +340,11 @@
 
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]/tradeability</xpath>
+		<xpath>Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]/tradeability</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]/tradeability</xpath>
+			<xpath>Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]/tradeability</xpath>
 			<value>
 				<tradeability>All</tradeability>
 			</value>
@@ -352,7 +352,7 @@
 		<!-- If it DOES NOT, add this. -->
 		<nomatch Class="PatchOperationAdd">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]</xpath>
+			<xpath>Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]</xpath>
 			<value>
 				<tradeability>All</tradeability>
 			</value>
@@ -362,11 +362,11 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]/generateCommonality</xpath>
+		<xpath>Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]/generateCommonality</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]/generateCommonality</xpath>
+			<xpath>Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]/generateCommonality</xpath>
 			<value>
 				<generateCommonality>0.5</generateCommonality>
 			</value>
@@ -374,7 +374,7 @@
 		<!-- If it DOES NOT, add this. -->
 		<nomatch Class="PatchOperationAdd">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]</xpath>
+			<xpath>Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]</xpath>
 			<value>
 				<generateCommonality>0.5</generateCommonality>
 			</value>
@@ -387,11 +387,11 @@
   <!--
   <Operation Class="PatchOperationConditional">
     Does this exist?
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
+    <xpath>Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
     If it does, add this.
     <match Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>/Defs/ResearchProjectDef[defName="VFEC_Scorpion"]/prerequisites</xpath>
+      <xpath>Defs/ResearchProjectDef[defName="VFEC_Scorpion"]/prerequisites</xpath>
       <value>
         <li>AR_Project_Ballistae</li>
       </value>
@@ -401,11 +401,11 @@
   
   <Operation Class="PatchOperationConditional">
     Does this exist?
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
+    <xpath>Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
     If it does, do this replacement.
     <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/ResearchProjectDef[defName="VFEC_Scorpion"]/tab</xpath>
+      <xpath>Defs/ResearchProjectDef[defName="VFEC_Scorpion"]/tab</xpath>
       <value>
         <tab>AR_ResearchTab</tab>
       </value>
@@ -416,11 +416,11 @@
   This is too advanced to start out having it.
   <Operation Class="PatchOperationConditional">
     DO THE GENTILES KNOW?
-    <xpath>/Defs/ResearchProjectDef[defName="VFEC_Scorpion"]</xpath>
+    <xpath>Defs/ResearchProjectDef[defName="VFEC_Scorpion"]</xpath>
     If they do, SHUT IT DOWN.
     <match Class="PatchOperationRemove">
       <success>Always</success>
-      <xpath>/Defs/ResearchProjectDef[defName="VFEC_Scorpion"]/tags</xpath>
+      <xpath>Defs/ResearchProjectDef[defName="VFEC_Scorpion"]/tags</xpath>
     </match>
     If the first XPATH does not exist, the original code stands.
   </Operation>
@@ -429,11 +429,11 @@
   <!--
   <Operation Class="PatchOperationConditional">
     Does this exist?
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
+    <xpath>Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
     If it does, do this replacement.
     <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]/verbs/li/defaultProjectile</xpath>
+      <xpath>Defs/ThingDef[defName="VFEC_Weapon_Scorpion"]/verbs/li/defaultProjectile</xpath>
       <value>
         <defaultProjectile>AR_Bullet_Scorpio</defaultProjectile>
       </value>
@@ -445,11 +445,11 @@
   <!--
   <Operation Class="PatchOperationConditional">
     Does this exist?
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
+    <xpath>Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
     If it does, do this replacement.
     <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/ResearchProjectDef[defName="VFEC_Scorpion"]/researchViewX</xpath>
+      <xpath>Defs/ResearchProjectDef[defName="VFEC_Scorpion"]/researchViewX</xpath>
       <value>
         <researchViewX>6</researchViewX>
       </value>
@@ -459,11 +459,11 @@
   
   <Operation Class="PatchOperationConditional">
     Does this exist?
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
+    <xpath>Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
     If it does, do this replacement.
     <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/ResearchProjectDef[defName="VFEC_Scorpion"]/researchViewY</xpath>
+      <xpath>Defs/ResearchProjectDef[defName="VFEC_Scorpion"]/researchViewY</xpath>
       <value>
         <researchViewY>3</researchViewY>
       </value>

@@ -3,10 +3,10 @@
 <Patch>
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/RecipeDef[defName="AC_PressOil"]</xpath>
+		<xpath>Defs/RecipeDef[defName="AC_PressOil"]</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
-			<xpath>/Defs/RecipeDef[defName="AC_PressOil"]/ingredients/li/filter/thingDefs</xpath>
+			<xpath>Defs/RecipeDef[defName="AC_PressOil"]/ingredients/li/filter/thingDefs</xpath>
 			<success>Always</success>
 			<value>
 				<li>AR_RawOlives</li>
@@ -19,10 +19,10 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/RecipeDef[defName="AC_PressOil"]</xpath>
+		<xpath>Defs/RecipeDef[defName="AC_PressOil"]</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
-			<xpath>/Defs/RecipeDef[defName="AC_PressOil"]/fixedIngredientFilter/thingDefs</xpath>
+			<xpath>Defs/RecipeDef[defName="AC_PressOil"]/fixedIngredientFilter/thingDefs</xpath>
 			<success>Always</success>
 			<value>
 				<li>AR_RawOlives</li>
@@ -35,10 +35,10 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="AC_OilPressWorkshop"]/thingCategories</xpath>
+		<xpath>Defs/ThingDef[defName="AC_OilPressWorkshop"]/thingCategories</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
-			<xpath>/Defs/ThingDef[defName="AC_OilPressWorkshop"]/thingCategories</xpath>
+			<xpath>Defs/ThingDef[defName="AC_OilPressWorkshop"]/thingCategories</xpath>
 			<success>Always</success>
 			<value>
 				<thingCategories Inherit="False">

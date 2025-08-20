@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Patch>
   <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/ThingDef[defName="Momigalite"]</xpath>
+    <xpath>Defs/ThingDef[defName="Momigalite"]</xpath>
     <match Class="PatchOperationSequence">
       <operations>
         <li Class="PatchOperationAdd">
-          <xpath>/Defs/ThingDef[defName = "AR_Smelter"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+          <xpath>Defs/ThingDef[defName = "AR_Smelter"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
           <value>
             <li>Momigalite</li>
           </value>

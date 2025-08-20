@@ -2,11 +2,11 @@
 <Patch>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="AM_BlocksPristineLimestone"]</xpath>
+    <xpath>Defs/ThingDef[defName="AM_BlocksPristineLimestone"]</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[@Name="AM_StoneBlocksBase"]/tradeability</xpath>
+      <xpath>Defs/ThingDef[@Name="AM_StoneBlocksBase"]/tradeability</xpath>
       <value>
         <tradeability>All</tradeability>
       </value>
@@ -15,11 +15,11 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="AM_BlocksPristineLimestone"]</xpath>
+    <xpath>Defs/ThingDef[defName="AM_BlocksPristineLimestone"]</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[@Name="AM_StoneBlocksBase"]/stuffProps/commonality</xpath>
+      <xpath>Defs/ThingDef[@Name="AM_StoneBlocksBase"]/stuffProps/commonality</xpath>
       <value>
         <commonality>0.5</commonality>
       </value>
@@ -28,11 +28,11 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="AM_BlocksPristineLimestone"]</xpath>
+    <xpath>Defs/ThingDef[defName="AM_BlocksPristineLimestone"]</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[@Name="AM_StoneBlocksBase"]/stuffProps/commonality</xpath>
+      <xpath>Defs/ThingDef[@Name="AM_StoneBlocksBase"]/stuffProps/commonality</xpath>
       <value>
         <commonality>0.5</commonality>
       </value>
@@ -41,11 +41,11 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="AM_BlocksPristineLimestone"]/generateCommonality</xpath>
+    <xpath>Defs/ThingDef[defName="AM_BlocksPristineLimestone"]/generateCommonality</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="AM_BlocksPristineLimestone"]/generateCommonality</xpath>
+      <xpath>Defs/ThingDef[defName="AM_BlocksPristineLimestone"]/generateCommonality</xpath>
       <value>
         <generateCommonality>0.001</generateCommonality>
       </value>
@@ -54,11 +54,11 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="AM_BlocksPristineLimestone"]/generateAllowChance</xpath>
+    <xpath>Defs/ThingDef[defName="AM_BlocksPristineLimestone"]/generateAllowChance</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="AM_BlocksPristineLimestone"]/generateAllowChance</xpath>
+      <xpath>Defs/ThingDef[defName="AM_BlocksPristineLimestone"]/generateAllowChance</xpath>
       <value>
         <generateAllowChance>0.001</generateAllowChance>
       </value>
@@ -67,11 +67,11 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="AM_BlocksPristineLimestone"]</xpath>
+    <xpath>Defs/ThingDef[defName="AM_BlocksPristineLimestone"]</xpath>
     <!-- If it does, do add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="AM_BlocksPristineLimestone"]</xpath>
+      <xpath>Defs/ThingDef[defName="AM_BlocksPristineLimestone"]</xpath>
       <value>
         <tradeability>All</tradeability>
       </value>

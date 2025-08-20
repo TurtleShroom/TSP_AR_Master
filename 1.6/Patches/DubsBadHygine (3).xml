@@ -5,9 +5,9 @@
 	<!-- Special thanks to Aelanna for straight-up saving me scores of headaches! -->
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="DankPyon_Fountain1x1c"]/thingClass</xpath>
+		<xpath>Defs/ThingDef[defName="DankPyon_Fountain1x1c"]/thingClass</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="DankPyon_Fountain1x1c"]</xpath>
+			<xpath>Defs/ThingDef[defName="DankPyon_Fountain1x1c"]</xpath>
 			<success>Always</success>
 			<value>
 				<thingClass>Building</thingClass>
@@ -17,9 +17,9 @@
 	
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="DankPyon_Fountain2x2c"]/thingClass</xpath>
+		<xpath>Defs/ThingDef[defName="DankPyon_Fountain2x2c"]/thingClass</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="DankPyon_Fountain2x2c"]</xpath>
+			<xpath>Defs/ThingDef[defName="DankPyon_Fountain2x2c"]</xpath>
 			<success>Always</success>
 			<value>
 				<thingClass>Building</thingClass>
@@ -29,9 +29,9 @@
 	
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="DankPyon_BarrelWater"]/thingClass</xpath>
+		<xpath>Defs/ThingDef[defName="DankPyon_BarrelWater"]/thingClass</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="DankPyon_BarrelWater"]</xpath>
+			<xpath>Defs/ThingDef[defName="DankPyon_BarrelWater"]</xpath>
 			<success>Always</success>
 			<value>
 				<thingClass>Building</thingClass>
@@ -41,9 +41,9 @@
 	
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="DankPyon_Fountain1x1c"]/designationCategory</xpath>
+		<xpath>Defs/ThingDef[defName="DankPyon_Fountain1x1c"]/designationCategory</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="DankPyon_Fountain1x1c"]</xpath>
+			<xpath>Defs/ThingDef[defName="DankPyon_Fountain1x1c"]</xpath>
 			<success>Always</success>
 			<value>
 				<designationCategory>Temperature</designationCategory>
@@ -53,9 +53,9 @@
 	
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="DankPyon_Fountain2x2c"]/designationCategory</xpath>
+		<xpath>Defs/ThingDef[defName="DankPyon_Fountain2x2c"]/designationCategory</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="DankPyon_Fountain2x2c"]</xpath>
+			<xpath>Defs/ThingDef[defName="DankPyon_Fountain2x2c"]</xpath>
 			<success>Always</success>
 			<value>
 				<designationCategory>Temperature</designationCategory>
@@ -65,9 +65,9 @@
 	
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="DankPyon_BarrelWater"]/designationCategory</xpath>
+		<xpath>Defs/ThingDef[defName="DankPyon_BarrelWater"]/designationCategory</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="DankPyon_BarrelWater"]</xpath>
+			<xpath>Defs/ThingDef[defName="DankPyon_BarrelWater"]</xpath>
 			<success>Always</success>
 			<value>
 				<designationCategory>Temperature</designationCategory>
@@ -77,10 +77,10 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="DankPyon_BarrelWater"]/designationCategory</xpath>
+		<xpath>Defs/ThingDef[defName="DankPyon_BarrelWater"]/designationCategory</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
-			<xpath>/Defs/ThingDef[defName = "DankPyon_Fountain1x1c" or defName = "DankPyon_Fountain2x2c" or defName = "DankPyon_BarrelWater"]/designationCategory</xpath>
+			<xpath>Defs/ThingDef[defName = "DankPyon_Fountain1x1c" or defName = "DankPyon_Fountain2x2c" or defName = "DankPyon_BarrelWater"]/designationCategory</xpath>
 			<value>
 				<designationCategory>Temperature</designationCategory>
 			</value>
@@ -90,9 +90,9 @@
 	
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="DankPyon_Fountain1x1c"]/comps</xpath>
+		<xpath>Defs/ThingDef[defName="DankPyon_Fountain1x1c"]/comps</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="DankPyon_Fountain1x1c"]</xpath>
+			<xpath>Defs/ThingDef[defName="DankPyon_Fountain1x1c"]</xpath>
 			<success>Always</success>
 			<value>
 				<comps></comps>
@@ -102,9 +102,9 @@
 	
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="DankPyon_Fountain2x2c"]/comps</xpath>
+		<xpath>Defs/ThingDef[defName="DankPyon_Fountain2x2c"]/comps</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="DankPyon_Fountain2x2c"]</xpath>
+			<xpath>Defs/ThingDef[defName="DankPyon_Fountain2x2c"]</xpath>
 			<success>Always</success>
 			<value>
 				<comps></comps>
@@ -114,9 +114,9 @@
 	
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="DankPyon_BarrelWater"]/comps</xpath>
+		<xpath>Defs/ThingDef[defName="DankPyon_BarrelWater"]/comps</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="DankPyon_BarrelWater"]</xpath>
+			<xpath>Defs/ThingDef[defName="DankPyon_BarrelWater"]</xpath>
 			<success>Always</success>
 			<value>
 				<comps></comps>
@@ -125,7 +125,7 @@
 	</Operation>
   
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName = "WaterTowerS"]</xpath>
+		<xpath>Defs/ThingDef[defName = "WaterTowerS"]</xpath>
 		<match Class="PatchOperationSequence">
 			<operations>
 				<li Class="PatchOperationReplace" MayRequire="dankpyon.medieval.overhaul,dubwise.dubsbadhygiene">
@@ -163,7 +163,7 @@
 				</li>
 				
 				<li Class="PatchOperationReplace" MayRequire="dankpyon.medieval.overhaul,dubwise.dubsbadhygiene">
-					<xpath>/Defs/ThingDef[defName="DankPyon_BarrelWater"]/comps</xpath>
+					<xpath>Defs/ThingDef[defName="DankPyon_BarrelWater"]/comps</xpath>
 					<success>Always</success>
 					<value>
 						<comps>
@@ -198,7 +198,7 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="WaterWellInlet"]</xpath>
+		<xpath>Defs/ThingDef[defName="WaterWellInlet"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/ThingDef[defName = "DankPyon_Fountain1x1c" or defName = "DankPyon_Fountain2x2c"]/designationCategory</xpath>
@@ -212,7 +212,7 @@
 
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="WaterWellInlet"]</xpath>
+		<xpath>Defs/ThingDef[defName="WaterWellInlet"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/ThingDef[defName="DankPyon_BarrelWater"]/designationCategory</xpath>

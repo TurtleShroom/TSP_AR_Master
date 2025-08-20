@@ -2,7 +2,7 @@
 <Patch>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="AM_BlocksPristineLimestone"]</xpath>
+    <xpath>Defs/ThingDef[defName="AM_BlocksPristineLimestone"]</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
@@ -39,7 +39,7 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="AM_BlocksPristineLimestone"]</xpath>
+    <xpath>Defs/ThingDef[defName="AM_BlocksPristineLimestone"]</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
@@ -124,7 +124,7 @@
   
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="BlocksAurelianStone"]</xpath>
+    <xpath>Defs/ThingDef[defName="BlocksAurelianStone"]</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>

@@ -45,9 +45,9 @@
 	<!-- Special thanks to Aelanna for straight-up saving me scores of headaches! -->
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="GS_HieroglyphicWall"]/comps</xpath>
+		<xpath>Defs/ThingDef[defName="GS_HieroglyphicWall"]/comps</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="GS_HieroglyphicWall"]</xpath>
+			<xpath>Defs/ThingDef[defName="GS_HieroglyphicWall"]</xpath>
 			<success>Always</success>
 			<value>
 				<comps></comps>
@@ -57,9 +57,9 @@
 	
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="GS_HieroglyphicWall"]/drawStyleCategory</xpath>
+		<xpath>Defs/ThingDef[defName="GS_HieroglyphicWall"]/drawStyleCategory</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="GS_HieroglyphicWall"]</xpath>
+			<xpath>Defs/ThingDef[defName="GS_HieroglyphicWall"]</xpath>
 			<success>Always</success>
 			<value>
 				<drawStyleCategory>Walls</drawStyleCategory>
@@ -69,11 +69,11 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/TerrainDef[@Name="AM_KemeticTileStoneBase"]/designationCategory</xpath>
+		<xpath>Defs/TerrainDef[@Name="AM_KemeticTileStoneBase"]/designationCategory</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
 			<success>Always</success>
-			<xpath>/Defs/TerrainDef[@Name="AM_KemeticTileStoneBase"]/designationCategory</xpath>
+			<xpath>Defs/TerrainDef[@Name="AM_KemeticTileStoneBase"]/designationCategory</xpath>
 			<value>
 				<designationCategory>Jerry</designationCategory>
 			</value>
@@ -81,7 +81,7 @@
 		<!-- If it DOES NOT, add this instead. -->
 		<nomatch Class="PatchOperationAdd">
 			<success>Always</success>
-			<xpath>/Defs/TerrainDef[@Name="AM_KemeticTileStoneBase"]</xpath>
+			<xpath>Defs/TerrainDef[@Name="AM_KemeticTileStoneBase"]</xpath>
 			<value>
 				<designationCategory>Jerry</designationCategory>
 			</value>
@@ -91,11 +91,11 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/TerrainDef[@Name="AM_KemeticFineStoneTiles"]/designationCategory</xpath>
+		<xpath>Defs/TerrainDef[@Name="AM_KemeticFineStoneTiles"]/designationCategory</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
 			<success>Always</success>
-			<xpath>/Defs/TerrainDef[@Name="AM_KemeticFineStoneTiles"]/designationCategory</xpath>
+			<xpath>Defs/TerrainDef[@Name="AM_KemeticFineStoneTiles"]/designationCategory</xpath>
 			<value>
 				<designationCategory>Jerry</designationCategory>
 			</value>
@@ -103,7 +103,7 @@
 		<!-- If it DOES NOT, add this instead. -->
 		<nomatch Class="PatchOperationAdd">
 			<success>Always</success>
-			<xpath>/Defs/TerrainDef[@Name="AM_KemeticFineStoneTiles"]</xpath>
+			<xpath>Defs/TerrainDef[@Name="AM_KemeticFineStoneTiles"]</xpath>
 			<value>
 				<designationCategory>Jerry</designationCategory>
 			</value>
@@ -113,11 +113,11 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/TerrainDef[@Name="AM_KemeticFineStoneTiles"]/designationCategory</xpath>
+		<xpath>Defs/TerrainDef[@Name="AM_KemeticFineStoneTiles"]/designationCategory</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="AM_KemeticSlab_Medium"]/designationCategory</xpath>
+			<xpath>Defs/ThingDef[defName="AM_KemeticSlab_Medium"]/designationCategory</xpath>
 			<value>
 				<designationCategory>Jerry</designationCategory>
 			</value>
@@ -125,7 +125,7 @@
 		<!-- If it DOES NOT, add this instead. -->
 		<nomatch Class="PatchOperationAdd">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="AM_KemeticSlab_Medium"]</xpath>
+			<xpath>Defs/ThingDef[defName="AM_KemeticSlab_Medium"]</xpath>
 			<value>
 				<designationCategory>Jerry</designationCategory>
 			</value>
@@ -135,11 +135,11 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="AM_KemeticSlab_Broad"]/designationCategory</xpath>
+		<xpath>Defs/ThingDef[defName="AM_KemeticSlab_Broad"]/designationCategory</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="AM_KemeticSlab_Broad"]/designationCategory</xpath>
+			<xpath>Defs/ThingDef[defName="AM_KemeticSlab_Broad"]/designationCategory</xpath>
 			<value>
 				<designationCategory>Jerry</designationCategory>
 			</value>
@@ -147,7 +147,7 @@
 		<!-- If it DOES NOT, add this instead. -->
 		<nomatch Class="PatchOperationAdd">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="AM_KemeticSlab_Broad"]</xpath>
+			<xpath>Defs/ThingDef[defName="AM_KemeticSlab_Broad"]</xpath>
 			<value>
 				<designationCategory>Jerry</designationCategory>
 			</value>
@@ -157,11 +157,11 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="AM_Sphynx"]/designationCategory</xpath>
+		<xpath>Defs/ThingDef[defName="AM_Sphynx"]/designationCategory</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="AM_Sphynx"]/designationCategory</xpath>
+			<xpath>Defs/ThingDef[defName="AM_Sphynx"]/designationCategory</xpath>
 			<value>
 				<designationCategory>Jerry</designationCategory>
 			</value>
@@ -169,7 +169,7 @@
 		<!-- If it DOES NOT, add this instead. -->
 		<nomatch Class="PatchOperationAdd">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="AM_Sphynx"]</xpath>
+			<xpath>Defs/ThingDef[defName="AM_Sphynx"]</xpath>
 			<value>
 				<designationCategory>Jerry</designationCategory>
 			</value>
@@ -179,11 +179,11 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="AM_GrandGate"]/designationCategory</xpath>
+		<xpath>Defs/ThingDef[defName="AM_GrandGate"]/designationCategory</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="AM_GrandGate"]/designationCategory</xpath>
+			<xpath>Defs/ThingDef[defName="AM_GrandGate"]/designationCategory</xpath>
 			<value>
 				<designationCategory>Jerry</designationCategory>
 			</value>
@@ -191,7 +191,7 @@
 		<!-- If it DOES NOT, add this instead. -->
 		<nomatch Class="PatchOperationAdd">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="AM_GrandGate"]</xpath>
+			<xpath>Defs/ThingDef[defName="AM_GrandGate"]</xpath>
 			<value>
 				<designationCategory>Jerry</designationCategory>
 			</value>
@@ -201,11 +201,11 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="AM_FuturisticObelisk"]/designationCategory</xpath>
+		<xpath>Defs/ThingDef[defName="AM_FuturisticObelisk"]/designationCategory</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="AM_FuturisticObelisk"]/designationCategory</xpath>
+			<xpath>Defs/ThingDef[defName="AM_FuturisticObelisk"]/designationCategory</xpath>
 			<value>
 				<designationCategory>Jerry</designationCategory>
 			</value>
@@ -213,7 +213,7 @@
 		<!-- If it DOES NOT, add this instead. -->
 		<nomatch Class="PatchOperationAdd">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="AM_FuturisticObelisk"]</xpath>
+			<xpath>Defs/ThingDef[defName="AM_FuturisticObelisk"]</xpath>
 			<value>
 				<designationCategory>Jerry</designationCategory>
 			</value>
@@ -223,11 +223,11 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="AM_FuturisticPyramid"]/designationCategory</xpath>
+		<xpath>Defs/ThingDef[defName="AM_FuturisticPyramid"]/designationCategory</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="AM_FuturisticPyramid"]/designationCategory</xpath>
+			<xpath>Defs/ThingDef[defName="AM_FuturisticPyramid"]/designationCategory</xpath>
 			<value>
 				<designationCategory>Jerry</designationCategory>
 			</value>
@@ -235,7 +235,7 @@
 		<!-- If it DOES NOT, add this instead. -->
 		<nomatch Class="PatchOperationAdd">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="AM_FuturisticPyramid"]</xpath>
+			<xpath>Defs/ThingDef[defName="AM_FuturisticPyramid"]</xpath>
 			<value>
 				<designationCategory>Jerry</designationCategory>
 			</value>
@@ -245,11 +245,11 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="AM_FuturisticStele"]/designationCategory</xpath>
+		<xpath>Defs/ThingDef[defName="AM_FuturisticStele"]/designationCategory</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="AM_FuturisticStele"]/designationCategory</xpath>
+			<xpath>Defs/ThingDef[defName="AM_FuturisticStele"]/designationCategory</xpath>
 			<value>
 				<designationCategory>Jerry</designationCategory>
 			</value>
@@ -257,7 +257,7 @@
 		<!-- If it DOES NOT, add this instead. -->
 		<nomatch Class="PatchOperationAdd">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="AM_FuturisticStele"]</xpath>
+			<xpath>Defs/ThingDef[defName="AM_FuturisticStele"]</xpath>
 			<value>
 				<designationCategory>Jerry</designationCategory>
 			</value>
@@ -267,11 +267,11 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="GS_Sarcophagus"]/designationCategory</xpath>
+		<xpath>Defs/ThingDef[defName="GS_Sarcophagus"]/designationCategory</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="GS_Sarcophagus"]/designationCategory</xpath>
+			<xpath>Defs/ThingDef[defName="GS_Sarcophagus"]/designationCategory</xpath>
 			<value>
 				<designationCategory>Jerry</designationCategory>
 			</value>
@@ -279,7 +279,7 @@
 		<!-- If it DOES NOT, add this instead. -->
 		<nomatch Class="PatchOperationAdd">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="GS_Sarcophagus"]</xpath>
+			<xpath>Defs/ThingDef[defName="GS_Sarcophagus"]</xpath>
 			<value>
 				<designationCategory>Jerry</designationCategory>
 			</value>
@@ -290,11 +290,11 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[@Name="Obelisk"]</xpath>
+		<xpath>Defs/ThingDef[@Name="Obelisk"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[@Name="Obelisk"]</xpath>
+			<xpath>Defs/ThingDef[@Name="Obelisk"]</xpath>
 			<value>
 				<ThingDef Name="Obelisk" ParentName="ObeliskSAM_Jerry_NormalArt" Abstract="True">
 					<!--
@@ -350,11 +350,11 @@
 				
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="GSE_ObeliskBig"]</xpath>
+		<xpath>Defs/ThingDef[defName="GSE_ObeliskBig"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="GSE_ObeliskBig"]</xpath>
+			<xpath>Defs/ThingDef[defName="GSE_ObeliskBig"]</xpath>
 			<value>
 				<ThingDef ParentName="Obelisk">
 					<defName>GSE_ObeliskBig</defName>
@@ -403,11 +403,11 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- DO THE GENTILES KNOW? -->
-		<xpath>/Defs/ThingDef[defName="GS_HieroglyphicWall"]/placingDraggableDimensions</xpath>
+		<xpath>Defs/ThingDef[defName="GS_HieroglyphicWall"]/placingDraggableDimensions</xpath>
 		<!-- If they do, SHUT IT DOWN. -->
 		<match Class="PatchOperationRemove">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="GS_HieroglyphicWall"]/placingDraggableDimensions</xpath>
+			<xpath>Defs/ThingDef[defName="GS_HieroglyphicWall"]/placingDraggableDimensions</xpath>
 		</match>
 		<!-- If the original XPATH does not exist, the original code stands. -->
 	</Operation>

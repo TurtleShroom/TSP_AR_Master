@@ -2,11 +2,11 @@
 <Patch>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="MeleeWeapon_StoneHammer"]</xpath>
+    <xpath>Defs/ThingDef[defName="MeleeWeapon_StoneHammer"]</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="MeleeWeapon_StoneHammer"]/weaponTags</xpath>
+      <xpath>Defs/ThingDef[defName="MeleeWeapon_StoneHammer"]/weaponTags</xpath>
       <value>
         <li>EgyptianLight</li>
         <li>Toolagri</li>
@@ -16,11 +16,11 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="MeleeWeapon_StoneSpear"]</xpath>
+    <xpath>Defs/ThingDef[defName="MeleeWeapon_StoneSpear"]</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="MeleeWeapon_StoneSpear"]/weaponTags</xpath>
+      <xpath>Defs/ThingDef[defName="MeleeWeapon_StoneSpear"]/weaponTags</xpath>
       <value>
         <li>Javiliner</li>
       </value>
@@ -29,11 +29,11 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="RangedWeapon_LeatherSling"]</xpath>
+    <xpath>Defs/ThingDef[defName="RangedWeapon_LeatherSling"]</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="RangedWeapon_LeatherSling"]/weaponTags</xpath>
+      <xpath>Defs/ThingDef[defName="RangedWeapon_LeatherSling"]/weaponTags</xpath>
       <value>
         <li>Slinger</li>
         <li>NeolithicRangedBasic</li>
@@ -44,11 +44,11 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="RangedWeapon_LeatherSling"]</xpath>
+    <xpath>Defs/ThingDef[defName="RangedWeapon_LeatherSling"]</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="RangedWeapon_LeatherSling"]</xpath>
+      <xpath>Defs/ThingDef[defName="RangedWeapon_LeatherSling"]</xpath>
       <value>
         <generateCommonality Inherit="False">0.4</generateCommonality>
         <!-- The AR Mod series' version is more powerful as well as more common -->
@@ -58,11 +58,11 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="MeleeWeapon_StoneAxe"]</xpath>
+    <xpath>Defs/ThingDef[defName="MeleeWeapon_StoneAxe"]</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="MeleeWeapon_StoneAxe"]/weaponTags</xpath>
+      <xpath>Defs/ThingDef[defName="MeleeWeapon_StoneAxe"]/weaponTags</xpath>
       <value>
         <li>Axe</li>
         <li>WoodcuttingHatchet</li>
@@ -79,9 +79,9 @@
 	<!-- Special thanks to Aelanna for straight-up saving me scores of headaches! -->
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="MeleeWeapon_StoneAxe"]/generateCommonality</xpath>
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_StoneAxe"]/generateCommonality</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="MeleeWeapon_StoneAxe"]</xpath>
+			<xpath>Defs/ThingDef[defName="MeleeWeapon_StoneAxe"]</xpath>
 			<success>Always</success>
 			<value>
 				<generateCommonality>0.4</generateCommonality>
@@ -92,11 +92,11 @@
   
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="MeleeWeapon_StoneAxe"]/generateCommonality</xpath>
+    <xpath>Defs/ThingDef[defName="MeleeWeapon_StoneAxe"]/generateCommonality</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="MeleeWeapon_StoneAxe"]/generateCommonality</xpath>
+      <xpath>Defs/ThingDef[defName="MeleeWeapon_StoneAxe"]/generateCommonality</xpath>
       <value>
         <generateCommonality Inherit="False">0.4</generateCommonality>
       </value>
@@ -105,11 +105,11 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="MeleeWeapon_StoneSword"]</xpath>
+    <xpath>Defs/ThingDef[defName="MeleeWeapon_StoneSword"]</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="MeleeWeapon_StoneSword"]/weaponTags</xpath>
+      <xpath>Defs/ThingDef[defName="MeleeWeapon_StoneSword"]/weaponTags</xpath>
       <value>
         <li>Axe</li>
         <li>Barbarian</li>
@@ -122,9 +122,9 @@
   
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="MeleeWeapon_StoneSword"]/generateCommonality</xpath>
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_StoneSword"]/generateCommonality</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="MeleeWeapon_StoneSword"]</xpath>
+			<xpath>Defs/ThingDef[defName="MeleeWeapon_StoneSword"]</xpath>
 			<success>Always</success>
 			<value>
 				<generateCommonality>0.3</generateCommonality>
@@ -134,11 +134,11 @@
   
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="MeleeWeapon_StoneSword"]/generateCommonality</xpath>
+    <xpath>Defs/ThingDef[defName="MeleeWeapon_StoneSword"]/generateCommonality</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="MeleeWeapon_StoneSword"]/generateCommonality</xpath>
+      <xpath>Defs/ThingDef[defName="MeleeWeapon_StoneSword"]/generateCommonality</xpath>
       <value>
         <generateCommonality Inherit="False">0.3</generateCommonality>
       </value>
@@ -158,11 +158,11 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="SimpleWoodenShield"]/description</xpath>
+    <xpath>Defs/ThingDef[defName="SimpleWoodenShield"]/description</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="SimpleWoodenShield"]/description</xpath>
+      <xpath>Defs/ThingDef[defName="SimpleWoodenShield"]/description</xpath>
       <value>
         <description>A primitive, a basic shield can be used to offer some protection for low-ranking (and expendable) soldiers. While it can deflect arrows, its usage against bullets is minimal.</description>
       </value>
@@ -172,9 +172,9 @@
   
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="SimpleWoodenShield"]/generateCommonality</xpath>
+		<xpath>Defs/ThingDef[defName="SimpleWoodenShield"]/generateCommonality</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="SimpleWoodenShield"]</xpath>
+			<xpath>Defs/ThingDef[defName="SimpleWoodenShield"]</xpath>
 			<success>Always</success>
 			<value>
 				<generateCommonality>0.4</generateCommonality>
@@ -184,11 +184,11 @@
   
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="SimpleWoodenShield"]/generateCommonality</xpath>
+    <xpath>Defs/ThingDef[defName="SimpleWoodenShield"]/generateCommonality</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="SimpleWoodenShield"]/generateCommonality</xpath>
+      <xpath>Defs/ThingDef[defName="SimpleWoodenShield"]/generateCommonality</xpath>
       <value>
         <generateCommonality>0.4</generateCommonality>
       </value>
@@ -197,11 +197,11 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="SimpleWoodenShield"]</xpath>
+    <xpath>Defs/ThingDef[defName="SimpleWoodenShield"]</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="SimpleWoodenShield"]/weaponTags</xpath>
+      <xpath>Defs/ThingDef[defName="SimpleWoodenShield"]/weaponTags</xpath>
       <value>
         <li>ShieldsOrientLight</li>
         <li>ShieldsPersianLight</li>
@@ -224,11 +224,11 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="Maasi"]/description</xpath>
+    <xpath>Defs/ThingDef[defName="Maasi"]/description</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="Maasi"]/description</xpath>
+      <xpath>Defs/ThingDef[defName="Maasi"]/description</xpath>
       <value>
         <description>As hideous as it is effective, this ugly shield is common throughout parts of Old Earth's sub-Saharan Africa and has many different names. In southern Africa, it is traditionally made of leather (such as cow hide), while in other parts of the continent, it is made of wood. \n \n On Old Earth, no soldier in the history of Ancient Egypt would be caught dead with something this ugly and simplistic, but the eons separating the Pharaohs of the Rim from their original counterparts led to widespread incorporation of this shield into the arsenal of light skirmishers and low-ranking soldiery.</description>
       </value>
@@ -237,11 +237,11 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="Maasi"]</xpath>
+    <xpath>Defs/ThingDef[defName="Maasi"]</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="Maasi"]</xpath>
+      <xpath>Defs/ThingDef[defName="Maasi"]</xpath>
       <value>
         <generateCommonality>0.35</generateCommonality>
       </value>
@@ -250,11 +250,11 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="Maasi"]/weaponTags</xpath>
+    <xpath>Defs/ThingDef[defName="Maasi"]/weaponTags</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="Maasi"]/weaponTags</xpath>
+      <xpath>Defs/ThingDef[defName="Maasi"]/weaponTags</xpath>
       <value>
         <li>ShieldsNubian</li>
         <li>ShieldsMaasi</li>
@@ -265,11 +265,11 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="SimpleWoodenShield"]</xpath>
+    <xpath>Defs/ThingDef[defName="SimpleWoodenShield"]</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>/Defs/PawnKindDef[defName="SimpleWoodenShield"]/modExtensions/li/shieldTags</xpath>
+      <xpath>Defs/PawnKindDef[defName="SimpleWoodenShield"]/modExtensions/li/shieldTags</xpath>
       <value>
           <li>ShieldsNubian</li>
           <li>ShieldsPersianLight</li>
@@ -280,9 +280,9 @@
   
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="MeleeWeapon_qiang"]/weaponTags</xpath>
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_qiang"]/weaponTags</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="MeleeWeapon_qiang"]</xpath>
+			<xpath>Defs/ThingDef[defName="MeleeWeapon_qiang"]</xpath>
 			<success>Always</success>
 			<value>
 				<weaponTags></weaponTags>
@@ -292,9 +292,9 @@
 	
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="MeleeWeapon_qiang"]/recipeMaker/researchPrerequisites</xpath>
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_qiang"]/recipeMaker/researchPrerequisites</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="MeleeWeapon_qiang"]/recipeMaker</xpath>
+			<xpath>Defs/ThingDef[defName="MeleeWeapon_qiang"]/recipeMaker</xpath>
 			<success>Always</success>
 			<value>
 				<researchPrerequisites></researchPrerequisites>
@@ -304,9 +304,9 @@
 	
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="MeleeWeapon_qiang"]/recipeMaker/researchPrerequisites</xpath>
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_qiang"]/recipeMaker/researchPrerequisites</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="MeleeWeapon_qiang"]/recipeMaker</xpath>
+			<xpath>Defs/ThingDef[defName="MeleeWeapon_qiang"]/recipeMaker</xpath>
 			<success>Always</success>
 			<value>
 				<researchPrerequisites></researchPrerequisites>
@@ -316,9 +316,9 @@
 	
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="MeleeWeapon_famufu"]/weaponTags</xpath>
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_famufu"]/weaponTags</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="MeleeWeapon_famufu"]</xpath>
+			<xpath>Defs/ThingDef[defName="MeleeWeapon_famufu"]</xpath>
 			<success>Always</success>
 			<value>
 				<weaponTags></weaponTags>
@@ -328,9 +328,9 @@
 	
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="MeleeWeapon_famufu"]/recipeMaker/researchPrerequisites</xpath>
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_famufu"]/recipeMaker/researchPrerequisites</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="MeleeWeapon_famufu"]/recipeMaker</xpath>
+			<xpath>Defs/ThingDef[defName="MeleeWeapon_famufu"]/recipeMaker</xpath>
 			<success>Always</success>
 			<value>
 				<researchPrerequisites></researchPrerequisites>
@@ -340,9 +340,9 @@
 	
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="MeleeWeapon_zhanmadao"]/weaponTags</xpath>
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_zhanmadao"]/weaponTags</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="MeleeWeapon_zhanmadao"]</xpath>
+			<xpath>Defs/ThingDef[defName="MeleeWeapon_zhanmadao"]</xpath>
 			<success>Always</success>
 			<value>
 				<weaponTags></weaponTags>
@@ -352,9 +352,9 @@
 	
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="MeleeWeapon_zhanmadao"]/recipeMaker/researchPrerequisites</xpath>
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_zhanmadao"]/recipeMaker/researchPrerequisites</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="MeleeWeapon_zhanmadao"]/recipeMaker</xpath>
+			<xpath>Defs/ThingDef[defName="MeleeWeapon_zhanmadao"]/recipeMaker</xpath>
 			<success>Always</success>
 			<value>
 				<researchPrerequisites></researchPrerequisites>
@@ -364,11 +364,11 @@
   
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="MeleeWeapon_qiang"]/weaponTags</xpath>
+    <xpath>Defs/ThingDef[defName="MeleeWeapon_qiang"]/weaponTags</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName =  "MeleeWeapon_qiang" or defName = "MeleeWeapon_famufu" or defName = "MeleeWeapon_zhanmadao"]/weaponTags</xpath>
+      <xpath>Defs/ThingDef[defName =  "MeleeWeapon_qiang" or defName = "MeleeWeapon_famufu" or defName = "MeleeWeapon_zhanmadao"]/weaponTags</xpath>
       <value>
         <li>Lance</li>
       </value>
@@ -378,9 +378,9 @@
   
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="MeleeWeapon_zhanmadao"]/weaponTags</xpath>
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_zhanmadao"]/weaponTags</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="MeleeWeapon_zhanmadao"]</xpath>
+			<xpath>Defs/ThingDef[defName="MeleeWeapon_zhanmadao"]</xpath>
 			<success>Always</success>
 			<value>
 				<weaponTags></weaponTags>
@@ -390,9 +390,9 @@
 	
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="MeleeWeapon_zhanmadao"]/recipeMaker/researchPrerequisites</xpath>
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_zhanmadao"]/recipeMaker/researchPrerequisites</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="MeleeWeapon_zhanmadao"]/recipeMaker</xpath>
+			<xpath>Defs/ThingDef[defName="MeleeWeapon_zhanmadao"]/recipeMaker</xpath>
 			<success>Always</success>
 			<value>
 				<researchPrerequisites></researchPrerequisites>
@@ -402,11 +402,11 @@
   
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="MeleeWeapon_qiang"]/weaponTags</xpath>
+    <xpath>Defs/ThingDef[defName="MeleeWeapon_qiang"]/weaponTags</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName =  "MeleeWeapon_qiang" or defName = "MeleeWeapon_famufu" or defName = "MeleeWeapon_zhanmadao"]/weaponTags</xpath>
+      <xpath>Defs/ThingDef[defName =  "MeleeWeapon_qiang" or defName = "MeleeWeapon_famufu" or defName = "MeleeWeapon_zhanmadao"]/weaponTags</xpath>
       <value>
         <li>Lance</li>
       </value>
@@ -416,11 +416,11 @@
   
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="MeleeWeapon_famufu"]/weaponTags</xpath>
+    <xpath>Defs/ThingDef[defName="MeleeWeapon_famufu"]/weaponTags</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="MeleeWeapon_famufu"]/weaponTags</xpath>
+      <xpath>Defs/ThingDef[defName="MeleeWeapon_famufu"]/weaponTags</xpath>
       <value>
         <li>WoodcuttingHatchet</li>
 		<li>NeolithicMeleeChief</li>
@@ -439,11 +439,11 @@
   
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="MeleeWeapon_zhanmadao"]/weaponTags</xpath>
+    <xpath>Defs/ThingDef[defName="MeleeWeapon_zhanmadao"]/weaponTags</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="MeleeWeapon_zhanmadao"]/weaponTags</xpath>
+      <xpath>Defs/ThingDef[defName="MeleeWeapon_zhanmadao"]/weaponTags</xpath>
       <value>
         <li>NeolithicMeleeHeavy</li>
 		<li>HorseChopinator</li>
@@ -460,11 +460,11 @@
   
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="MeleeWeapon_feiyan"]/weaponTags</xpath>
+    <xpath>Defs/ThingDef[defName="MeleeWeapon_feiyan"]/weaponTags</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="MeleeWeapon_feiyan"]/weaponTags</xpath>
+      <xpath>Defs/ThingDef[defName="MeleeWeapon_feiyan"]/weaponTags</xpath>
       <value>
         <li>MedievalMeleeBasic</li>
 		<li>ClassicalMilitary</li>
@@ -477,11 +477,11 @@
   
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="MeleeWeapon_sanjiebian"]/weaponTags</xpath>
+    <xpath>Defs/ThingDef[defName="MeleeWeapon_sanjiebian"]/weaponTags</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="MeleeWeapon_sanjiebian"]/weaponTags</xpath>
+      <xpath>Defs/ThingDef[defName="MeleeWeapon_sanjiebian"]/weaponTags</xpath>
       <value>
         <li>Whip</li>
 		<li>WoodBeetMelee</li>
@@ -496,11 +496,11 @@
   
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="MeleeWeapon_yanyuedao"]/weaponTags</xpath>
+    <xpath>Defs/ThingDef[defName="MeleeWeapon_yanyuedao"]/weaponTags</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="MeleeWeapon_yanyuedao"]/weaponTags</xpath>
+      <xpath>Defs/ThingDef[defName="MeleeWeapon_yanyuedao"]/weaponTags</xpath>
       <value>
 		<li>WoodBeetMelee</li>
 		<li>JeubMelee</li>
@@ -514,9 +514,9 @@
   
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="MeleeWeapon_niuweidao"]/weaponTags</xpath>
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_niuweidao"]/weaponTags</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="MeleeWeapon_niuweidao"]</xpath>
+			<xpath>Defs/ThingDef[defName="MeleeWeapon_niuweidao"]</xpath>
 			<success>Always</success>
 			<value>
 				<weaponTags></weaponTags>
@@ -526,9 +526,9 @@
 	
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="MeleeWeapon_niuweidao"]/recipeMaker/researchPrerequisites</xpath>
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_niuweidao"]/recipeMaker/researchPrerequisites</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="MeleeWeapon_niuweidao"]/recipeMaker</xpath>
+			<xpath>Defs/ThingDef[defName="MeleeWeapon_niuweidao"]/recipeMaker</xpath>
 			<success>Always</success>
 			<value>
 				<researchPrerequisites></researchPrerequisites>
@@ -538,9 +538,9 @@
 	
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="MeleeWeapon_yanyuedao"]/weaponTags</xpath>
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_yanyuedao"]/weaponTags</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="MeleeWeapon_yanyuedao"]</xpath>
+			<xpath>Defs/ThingDef[defName="MeleeWeapon_yanyuedao"]</xpath>
 			<success>Always</success>
 			<value>
 				<weaponTags></weaponTags>
@@ -550,9 +550,9 @@
 	
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="MeleeWeapon_yanyuedao"]/recipeMaker/researchPrerequisites</xpath>
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_yanyuedao"]/recipeMaker/researchPrerequisites</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="MeleeWeapon_yanyuedao"]/recipeMaker</xpath>
+			<xpath>Defs/ThingDef[defName="MeleeWeapon_yanyuedao"]/recipeMaker</xpath>
 			<success>Always</success>
 			<value>
 				<researchPrerequisites></researchPrerequisites>
@@ -562,9 +562,9 @@
 	
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="MeleeWeapon_feiyan"]/weaponTags</xpath>
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_feiyan"]/weaponTags</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="MeleeWeapon_feiyan"]</xpath>
+			<xpath>Defs/ThingDef[defName="MeleeWeapon_feiyan"]</xpath>
 			<success>Always</success>
 			<value>
 				<weaponTags></weaponTags>
@@ -574,9 +574,9 @@
 	
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="MeleeWeapon_feiyan"]/recipeMaker/researchPrerequisites</xpath>
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_feiyan"]/recipeMaker/researchPrerequisites</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="MeleeWeapon_feiyan"]/recipeMaker</xpath>
+			<xpath>Defs/ThingDef[defName="MeleeWeapon_feiyan"]/recipeMaker</xpath>
 			<success>Always</success>
 			<value>
 				<researchPrerequisites></researchPrerequisites>
@@ -586,9 +586,9 @@
 	
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="MeleeWeapon_sanjiebian"]/weaponTags</xpath>
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_sanjiebian"]/weaponTags</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="MeleeWeapon_sanjiebian"]</xpath>
+			<xpath>Defs/ThingDef[defName="MeleeWeapon_sanjiebian"]</xpath>
 			<success>Always</success>
 			<value>
 				<weaponTags></weaponTags>
@@ -598,9 +598,9 @@
 	
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="MeleeWeapon_sanjiebian"]/recipeMaker/researchPrerequisites</xpath>
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_sanjiebian"]/recipeMaker/researchPrerequisites</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="MeleeWeapon_sanjiebian"]/recipeMaker</xpath>
+			<xpath>Defs/ThingDef[defName="MeleeWeapon_sanjiebian"]/recipeMaker</xpath>
 			<success>Always</success>
 			<value>
 				<researchPrerequisites></researchPrerequisites>
@@ -610,9 +610,9 @@
 	
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="MeleeWeapon_gun"]/weaponTags</xpath>
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_gun"]/weaponTags</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="MeleeWeapon_gun"]</xpath>
+			<xpath>Defs/ThingDef[defName="MeleeWeapon_gun"]</xpath>
 			<success>Always</success>
 			<value>
 				<weaponTags></weaponTags>
@@ -622,9 +622,9 @@
 	
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="MeleeWeapon_gun"]/recipeMaker/researchPrerequisites</xpath>
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_gun"]/recipeMaker/researchPrerequisites</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="MeleeWeapon_gun"]/recipeMaker</xpath>
+			<xpath>Defs/ThingDef[defName="MeleeWeapon_gun"]/recipeMaker</xpath>
 			<success>Always</success>
 			<value>
 				<researchPrerequisites></researchPrerequisites>
@@ -634,9 +634,9 @@
 	
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="MeleeWeapon_niuweidao"]/weaponTags</xpath>
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_niuweidao"]/weaponTags</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="MeleeWeapon_niuweidao"]</xpath>
+			<xpath>Defs/ThingDef[defName="MeleeWeapon_niuweidao"]</xpath>
 			<success>Always</success>
 			<value>
 				<weaponTags></weaponTags>
@@ -646,9 +646,9 @@
 	
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="MeleeWeapon_niuweidao"]/recipeMaker/researchPrerequisites</xpath>
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_niuweidao"]/recipeMaker/researchPrerequisites</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="MeleeWeapon_niuweidao"]/recipeMaker</xpath>
+			<xpath>Defs/ThingDef[defName="MeleeWeapon_niuweidao"]/recipeMaker</xpath>
 			<success>Always</success>
 			<value>
 				<researchPrerequisites></researchPrerequisites>
@@ -658,76 +658,76 @@
   
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-	<xpath>/Defs/ThingDef[defName="MeleeWeapon_qiang"]</xpath>
+	<xpath>Defs/ThingDef[defName="MeleeWeapon_qiang"]</xpath>
 		<!-- If it does, LET'S FASTING GOOOOOOOOOO!!! -->
 		<match Class="PatchOperationSequence">
 			<operations>
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="MeleeWeapon_qiang"]/thingSetMakerTags</xpath>
+					<xpath>Defs/ThingDef[defName="MeleeWeapon_qiang"]/thingSetMakerTags</xpath>
 					<success>Always</success>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="MeleeWeapon_qiang"]/recipeMaker/researchPrerequisite</xpath>
+					<xpath>Defs/ThingDef[defName="MeleeWeapon_qiang"]/recipeMaker/researchPrerequisite</xpath>
 					<success>Always</success>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="MeleeWeapon_famufu"]/thingSetMakerTags</xpath>
+					<xpath>Defs/ThingDef[defName="MeleeWeapon_famufu"]/thingSetMakerTags</xpath>
 					<success>Always</success>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="MeleeWeapon_famufu"]/recipeMaker/researchPrerequisite</xpath>
+					<xpath>Defs/ThingDef[defName="MeleeWeapon_famufu"]/recipeMaker/researchPrerequisite</xpath>
 					<success>Always</success>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="MeleeWeapon_zhanmadao"]/thingSetMakerTags</xpath>
+					<xpath>Defs/ThingDef[defName="MeleeWeapon_zhanmadao"]/thingSetMakerTags</xpath>
 					<success>Always</success>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="MeleeWeapon_zhanmadao"]/recipeMaker/researchPrerequisite</xpath>
+					<xpath>Defs/ThingDef[defName="MeleeWeapon_zhanmadao"]/recipeMaker/researchPrerequisite</xpath>
 					<success>Always</success>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="MeleeWeapon_niuweidao"]/thingSetMakerTags</xpath>
+					<xpath>Defs/ThingDef[defName="MeleeWeapon_niuweidao"]/thingSetMakerTags</xpath>
 					<success>Always</success>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="MeleeWeapon_niuweidao"]/recipeMaker/researchPrerequisite</xpath>
+					<xpath>Defs/ThingDef[defName="MeleeWeapon_niuweidao"]/recipeMaker/researchPrerequisite</xpath>
 					<success>Always</success>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="MeleeWeapon_gun"]/thingSetMakerTags</xpath>
+					<xpath>Defs/ThingDef[defName="MeleeWeapon_gun"]/thingSetMakerTags</xpath>
 					<success>Always</success>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="MeleeWeapon_gun"]/recipeMaker/researchPrerequisite</xpath>
+					<xpath>Defs/ThingDef[defName="MeleeWeapon_gun"]/recipeMaker/researchPrerequisite</xpath>
 					<success>Always</success>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="MeleeWeapon_sanjiebian"]/thingSetMakerTags</xpath>
+					<xpath>Defs/ThingDef[defName="MeleeWeapon_sanjiebian"]/thingSetMakerTags</xpath>
 					<success>Always</success>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="MeleeWeapon_sanjiebian"]/recipeMaker/researchPrerequisite</xpath>
+					<xpath>Defs/ThingDef[defName="MeleeWeapon_sanjiebian"]/recipeMaker/researchPrerequisite</xpath>
 					<success>Always</success>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="MeleeWeapon_feiyan"]/thingSetMakerTags</xpath>
+					<xpath>Defs/ThingDef[defName="MeleeWeapon_feiyan"]/thingSetMakerTags</xpath>
 					<success>Always</success>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="MeleeWeapon_feiyan"]/recipeMaker/researchPrerequisite</xpath>
+					<xpath>Defs/ThingDef[defName="MeleeWeapon_feiyan"]/recipeMaker/researchPrerequisite</xpath>
 					<success>Always</success>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="MeleeWeapon_yanyuedao"]/thingSetMakerTags</xpath>
+					<xpath>Defs/ThingDef[defName="MeleeWeapon_yanyuedao"]/thingSetMakerTags</xpath>
 					<success>Always</success>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="MeleeWeapon_yanyuedao"]/recipeMaker/researchPrerequisite</xpath>
+					<xpath>Defs/ThingDef[defName="MeleeWeapon_yanyuedao"]/recipeMaker/researchPrerequisite</xpath>
 					<success>Always</success>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>/Defs/ThingDef[defName="MeleeWeapon_qiang"]/recipeMaker/researchPrerequisites</xpath>
+					<xpath>Defs/ThingDef[defName="MeleeWeapon_qiang"]/recipeMaker/researchPrerequisites</xpath>
 					<success>Always</success>
 					<value>
 						<researchPrerequisites>
@@ -737,7 +737,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>/Defs/ThingDef[defName="MeleeWeapon_famufu"]/recipeMaker/researchPrerequisites</xpath>
+					<xpath>Defs/ThingDef[defName="MeleeWeapon_famufu"]/recipeMaker/researchPrerequisites</xpath>
 					<success>Always</success>
 					<value>
 						<researchPrerequisites>
@@ -747,7 +747,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>/Defs/ThingDef[defName="MeleeWeapon_zhanmadao"]/recipeMaker/researchPrerequisites</xpath>
+					<xpath>Defs/ThingDef[defName="MeleeWeapon_zhanmadao"]/recipeMaker/researchPrerequisites</xpath>
 					<success>Always</success>
 					<value>
 						<researchPrerequisites>
@@ -758,76 +758,76 @@
 				</li>
 				
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="MeleeWeapon_qiang"]/costList</xpath>
+					<xpath>Defs/ThingDef[defName="MeleeWeapon_qiang"]/costList</xpath>
 					<success>Always</success>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="MeleeWeapon_qiang"]/costStuffCount</xpath>
+					<xpath>Defs/ThingDef[defName="MeleeWeapon_qiang"]/costStuffCount</xpath>
 					<success>Always</success>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="MeleeWeapon_famufu"]/costList</xpath>
+					<xpath>Defs/ThingDef[defName="MeleeWeapon_famufu"]/costList</xpath>
 					<success>Always</success>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="MeleeWeapon_famufu"]/costStuffCount</xpath>
+					<xpath>Defs/ThingDef[defName="MeleeWeapon_famufu"]/costStuffCount</xpath>
 					<success>Always</success>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="MeleeWeapon_zhanmadao"]/costList</xpath>
+					<xpath>Defs/ThingDef[defName="MeleeWeapon_zhanmadao"]/costList</xpath>
 					<success>Always</success>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="MeleeWeapon_zhanmadao"]/costStuffCount</xpath>
+					<xpath>Defs/ThingDef[defName="MeleeWeapon_zhanmadao"]/costStuffCount</xpath>
 					<success>Always</success>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="MeleeWeapon_niuweidao"]/costList</xpath>
+					<xpath>Defs/ThingDef[defName="MeleeWeapon_niuweidao"]/costList</xpath>
 					<success>Always</success>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="MeleeWeapon_niuweidao"]/costStuffCount</xpath>
+					<xpath>Defs/ThingDef[defName="MeleeWeapon_niuweidao"]/costStuffCount</xpath>
 					<success>Always</success>
 				</li>
 				
 				<!-- 
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="MeleeWeapon_gun"]/costList</xpath>
+					<xpath>Defs/ThingDef[defName="MeleeWeapon_gun"]/costList</xpath>
 					<success>Always</success>
 				</li>
 				
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="MeleeWeapon_gun"]/costStuffCount</xpath>
+					<xpath>Defs/ThingDef[defName="MeleeWeapon_gun"]/costStuffCount</xpath>
 					<success>Always</success>
 				</li>
 				-->
 				
 				<!--
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="MeleeWeapon_sanjiebian"]/costList</xpath>
+					<xpath>Defs/ThingDef[defName="MeleeWeapon_sanjiebian"]/costList</xpath>
 					<success>Always</success>
 				</li>
 				
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="MeleeWeapon_sanjiebian"]/costStuffCount</xpath>
+					<xpath>Defs/ThingDef[defName="MeleeWeapon_sanjiebian"]/costStuffCount</xpath>
 					<success>Always</success>
 				</li>
 				-->
 				
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="MeleeWeapon_feiyan"]/costList</xpath>
+					<xpath>Defs/ThingDef[defName="MeleeWeapon_feiyan"]/costList</xpath>
 					<success>Always</success>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="MeleeWeapon_feiyan"]/costStuffCount</xpath>
+					<xpath>Defs/ThingDef[defName="MeleeWeapon_feiyan"]/costStuffCount</xpath>
 					<success>Always</success>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="MeleeWeapon_yanyuedao"]/costList</xpath>
+					<xpath>Defs/ThingDef[defName="MeleeWeapon_yanyuedao"]/costList</xpath>
 					<success>Always</success>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="MeleeWeapon_yanyuedao"]/costStuffCount</xpath>
+					<xpath>Defs/ThingDef[defName="MeleeWeapon_yanyuedao"]/costStuffCount</xpath>
 					<success>Always</success>
 				</li>
 				
@@ -837,51 +837,51 @@
 				
 
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="MeleeWeapon_qiang"]/stuffCategories</xpath>
+					<xpath>Defs/ThingDef[defName="MeleeWeapon_qiang"]/stuffCategories</xpath>
 					<success>Always</success>
 				</li>
 
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="MeleeWeapon_famufu"]/stuffCategories</xpath>
+					<xpath>Defs/ThingDef[defName="MeleeWeapon_famufu"]/stuffCategories</xpath>
 					<success>Always</success>
 				</li>
 				
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="MeleeWeapon_zhanmadao"]/stuffCategories</xpath>
+					<xpath>Defs/ThingDef[defName="MeleeWeapon_zhanmadao"]/stuffCategories</xpath>
 					<success>Always</success>
 				</li>
 
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="MeleeWeapon_niuweidao"]/stuffCategories</xpath>
+					<xpath>Defs/ThingDef[defName="MeleeWeapon_niuweidao"]/stuffCategories</xpath>
 					<success>Always</success>
 				</li>
 
 				<!--
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="MeleeWeapon_gun"]/stuffCategories</xpath>
+					<xpath>Defs/ThingDef[defName="MeleeWeapon_gun"]/stuffCategories</xpath>
 					<success>Always</success>
 				</li>
 				-->
 
 				<!--
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="MeleeWeapon_sanjiebian"]/stuffCategories</xpath>
+					<xpath>Defs/ThingDef[defName="MeleeWeapon_sanjiebian"]/stuffCategories</xpath>
 					<success>Always</success>
 				</li>				
 				-->
 
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="MeleeWeapon_feiyan"]/stuffCategories</xpath>
+					<xpath>Defs/ThingDef[defName="MeleeWeapon_feiyan"]/stuffCategories</xpath>
 					<success>Always</success>
 				</li>
 
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="MeleeWeapon_yanyuedao"]/stuffCategories</xpath>
+					<xpath>Defs/ThingDef[defName="MeleeWeapon_yanyuedao"]/stuffCategories</xpath>
 					<success>Always</success>
 				</li>
 				
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName="MeleeWeapon_zhanmadao"]</xpath>
+					<xpath>Defs/ThingDef[defName="MeleeWeapon_zhanmadao"]</xpath>
 					<success>Always</success>
 					<value>
 						<costStuffCount>180</costStuffCount>
@@ -900,7 +900,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName="MeleeWeapon_qiang"]</xpath>
+					<xpath>Defs/ThingDef[defName="MeleeWeapon_qiang"]</xpath>
 					<success>Always</success>
 					<value>
 						<costStuffCount>200</costStuffCount>
@@ -919,7 +919,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName="MeleeWeapon_feiyan"]</xpath>
+					<xpath>Defs/ThingDef[defName="MeleeWeapon_feiyan"]</xpath>
 					<success>Always</success>
 					<value>
 						<costStuffCount>105</costStuffCount>
@@ -938,7 +938,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>/Defs/ThingDef[defName="MeleeWeapon_feiyan"]/recipeMaker/researchPrerequisites</xpath>
+					<xpath>Defs/ThingDef[defName="MeleeWeapon_feiyan"]/recipeMaker/researchPrerequisites</xpath>
 					<success>Always</success>
 					<value>
 						<researchPrerequisites>
@@ -948,7 +948,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName="MeleeWeapon_yanyuedao"]</xpath>
+					<xpath>Defs/ThingDef[defName="MeleeWeapon_yanyuedao"]</xpath>
 					<success>Always</success>
 					<value>
 						<costStuffCount>185</costStuffCount>
@@ -967,7 +967,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>/Defs/ThingDef[defName="MeleeWeapon_yanyuedao"]/recipeMaker/researchPrerequisites</xpath>
+					<xpath>Defs/ThingDef[defName="MeleeWeapon_yanyuedao"]/recipeMaker/researchPrerequisites</xpath>
 					<success>Always</success>
 					<value>
 						<researchPrerequisites>
@@ -978,7 +978,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName="MeleeWeapon_yanyuedao"]</xpath>
+					<xpath>Defs/ThingDef[defName="MeleeWeapon_yanyuedao"]</xpath>
 					<success>Always</success>
 					<value>
 						<costStuffCount>185</costStuffCount>
@@ -999,7 +999,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>/Defs/ThingDef[defName="MeleeWeapon_yanyuedao"]/recipeMaker/researchPrerequisites</xpath>
+					<xpath>Defs/ThingDef[defName="MeleeWeapon_yanyuedao"]/recipeMaker/researchPrerequisites</xpath>
 					<success>Always</success>
 					<value>
 						<researchPrerequisites>
@@ -1010,7 +1010,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName = "MeleeWeapon_sanjiebian" or defName = "MeleeWeapon_gun"]/stuffCategories</xpath>
+					<xpath>Defs/ThingDef[defName = "MeleeWeapon_sanjiebian" or defName = "MeleeWeapon_gun"]/stuffCategories</xpath>
 					<success>Always</success>
 					<value>
 						<li>Fabric</li>
@@ -1018,7 +1018,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>/Defs/ThingDef[defName="MeleeWeapon_gun"]/recipeMaker/researchPrerequisites</xpath>
+					<xpath>Defs/ThingDef[defName="MeleeWeapon_gun"]/recipeMaker/researchPrerequisites</xpath>
 					<success>Always</success>
 					<value>
 						<researchPrerequisites>
@@ -1035,11 +1035,11 @@
 	
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="CGMeleeWeapon_Partisan"]/weaponTags</xpath>
+    <xpath>Defs/ThingDef[defName="CGMeleeWeapon_Partisan"]/weaponTags</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="CGMeleeWeapon_Partisan"]/weaponTags</xpath>
+      <xpath>Defs/ThingDef[defName="CGMeleeWeapon_Partisan"]/weaponTags</xpath>
       <value>
         <li>Lance</li>
 		<li>SpearMen</li>
@@ -1051,11 +1051,11 @@
   
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="CGMeleeWeapon_Partisan"]/recipeMaker/researchPrerequisite</xpath>
+    <xpath>Defs/ThingDef[defName="CGMeleeWeapon_Partisan"]/recipeMaker/researchPrerequisite</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="CGMeleeWeapon_Partisan"]/recipeMaker/researchPrerequisite</xpath>
+      <xpath>Defs/ThingDef[defName="CGMeleeWeapon_Partisan"]/recipeMaker/researchPrerequisite</xpath>
       <value>
 			<researchPrerequisites>
 				<li>AR_Project_Polearms</li>
@@ -1067,11 +1067,11 @@
   
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEM2_MeleeWeapon_Halberd"]/weaponTags</xpath>
+    <xpath>Defs/ThingDef[defName="VFEM2_MeleeWeapon_Halberd"]/weaponTags</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="VFEM2_MeleeWeapon_Halberd"]/weaponTags</xpath>
+      <xpath>Defs/ThingDef[defName="VFEM2_MeleeWeapon_Halberd"]/weaponTags</xpath>
       <value>
         <li>Lance</li>
 		<li>SpearMen</li>
@@ -1085,11 +1085,11 @@
   
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEM2_MeleeWeapon_Pike"]/weaponTags</xpath>
+    <xpath>Defs/ThingDef[defName="VFEM2_MeleeWeapon_Pike"]/weaponTags</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="VFEM2_MeleeWeapon_Pike"]/weaponTags</xpath>
+      <xpath>Defs/ThingDef[defName="VFEM2_MeleeWeapon_Pike"]/weaponTags</xpath>
       <value>
         <li>Lance</li>
 		<li>SpearMen</li>
@@ -1104,11 +1104,11 @@
   
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="DankPyon_MeleeWeapon_MilitiaSpear"]/weaponTags</xpath>
+    <xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_MilitiaSpear"]/weaponTags</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="DankPyon_MeleeWeapon_MilitiaSpear"]/weaponTags</xpath>
+      <xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_MilitiaSpear"]/weaponTags</xpath>
       <value>
 		<li>SurvivalistMelee</li>
 		<li>SimpleSpear</li>
@@ -1120,11 +1120,11 @@
   
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="DankPyon_MeleeWeapon_BoarSpear"]/weaponTags</xpath>
+    <xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_BoarSpear"]/weaponTags</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="DankPyon_MeleeWeapon_BoarSpear"]/weaponTags</xpath>
+      <xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_BoarSpear"]/weaponTags</xpath>
       <value>
 		<li>SpearMen</li>
 		<li>Spear</li>
@@ -1138,11 +1138,11 @@
   
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="DankPyon_MeleeWeapon_FightingSpear"]/weaponTags</xpath>
+    <xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_FightingSpear"]/weaponTags</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="DankPyon_MeleeWeapon_FightingSpear"]/weaponTags</xpath>
+      <xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_FightingSpear"]/weaponTags</xpath>
       <value>
 		  <li>HellenicHeavy</li>
 		  <li>ClassicalAdvanced</li>
@@ -1155,11 +1155,11 @@
   
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="DankPyon_MeleeWeapon_Warfork"]/weaponTags</xpath>
+    <xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_Warfork"]/weaponTags</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="DankPyon_MeleeWeapon_Warfork"]/weaponTags</xpath>
+      <xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_Warfork"]/weaponTags</xpath>
       <value>
 		<li>SimpleSpear</li>
 		<li>SpearMen</li>
@@ -1186,11 +1186,11 @@
   
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="DankPyon_MeleeWeapon_Pitchfork"]/weaponTags</xpath>
+    <xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_Pitchfork"]/weaponTags</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="DankPyon_MeleeWeapon_Pitchfork"]/weaponTags</xpath>
+      <xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_Pitchfork"]/weaponTags</xpath>
       <value>
 		<li>Toolagri</li>
 		<li>CallOfCthulhu_Farmer</li>
@@ -1218,11 +1218,11 @@
   
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="DankPyon_MeleeWeapon_Swordlance"]/weaponTags</xpath>
+    <xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_Swordlance"]/weaponTags</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="DankPyon_MeleeWeapon_Swordlance"]/weaponTags</xpath>
+      <xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_Swordlance"]/weaponTags</xpath>
       <value>
 		<li>Lance</li>
 		<li>PeeledWeapon</li>
@@ -1243,11 +1243,11 @@
   
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="DankPyon_MeleeWeapon_Pike"]/weaponTags</xpath>
+    <xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_Pike"]/weaponTags</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="DankPyon_MeleeWeapon_Pike"]/weaponTags</xpath>
+      <xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_Pike"]/weaponTags</xpath>
       <value>
         <li>Lance</li>
 		<!-- <li>SpearMen</li> -->
@@ -1263,11 +1263,11 @@
   
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="DankPyon_MeleeWeapon_Billhook"]/weaponTags</xpath>
+    <xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_Billhook"]/weaponTags</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="DankPyon_MeleeWeapon_Billhook"]/weaponTags</xpath>
+      <xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_Billhook"]/weaponTags</xpath>
       <value>
 		<!-- <li>SpearMen</li> -->
 		<li>HarrierMelee</li>
@@ -1281,11 +1281,11 @@
   
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="Bow_War"]/weaponTags</xpath>
+    <xpath>Defs/ThingDef[defName="Bow_War"]/weaponTags</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="Bow_War"]/weaponTags</xpath>
+      <xpath>Defs/ThingDef[defName="Bow_War"]/weaponTags</xpath>
       <value>
 		<li>BowMen</li>
 		<li>WoodBeetRanged</li>
@@ -1297,11 +1297,11 @@
   
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="DankPyon_Bow_Hunting"]/weaponTags</xpath>
+    <xpath>Defs/ThingDef[defName="DankPyon_Bow_Hunting"]/weaponTags</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="DankPyon_Bow_Hunting"]/weaponTags</xpath>
+      <xpath>Defs/ThingDef[defName="DankPyon_Bow_Hunting"]/weaponTags</xpath>
       <value>
 		<li>BowMen</li>
 		<li>BeetRanged</li>
@@ -1315,11 +1315,11 @@
   
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="DankPyon_MeleeWeapon_NobleSword"]/weaponTags</xpath>
+    <xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_NobleSword"]/weaponTags</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="DankPyon_MeleeWeapon_NobleSword"]/weaponTags</xpath>
+      <xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_NobleSword"]/weaponTags</xpath>
       <value>
 		<li>Praetorian</li>
 		<li>RomeOfficer</li>
@@ -1330,11 +1330,11 @@
   
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="DankPyon_MeleeWeapon_FightingSpear"]/weaponTags</xpath>
+    <xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_FightingSpear"]/weaponTags</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="DankPyon_MeleeWeapon_FightingSpear"]/weaponTags</xpath>
+      <xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_FightingSpear"]/weaponTags</xpath>
       <value>
 		<li>SpearMen</li>
 		<li>Hastatus</li>
@@ -1346,11 +1346,11 @@
   
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="DankPyon_MeleeWeapon_ArmingSword"]/weaponTags</xpath>
+    <xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_ArmingSword"]/weaponTags</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="DankPyon_MeleeWeapon_ArmingSword"]/weaponTags</xpath>
+      <xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_ArmingSword"]/weaponTags</xpath>
       <value>
 		<li>RomeSoldier</li>
 		<li>ClassicalAdvanced</li>
@@ -1362,11 +1362,11 @@
   
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_MeleeWeapon_Dagger"]/weaponTags</xpath>
+    <xpath>Defs/ThingDef[defName="VFEC_MeleeWeapon_Dagger"]/weaponTags</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="VFEC_MeleeWeapon_Dagger"]/weaponTags</xpath>
+      <xpath>Defs/ThingDef[defName="VFEC_MeleeWeapon_Dagger"]/weaponTags</xpath>
       <value>
 		<li>Dagger</li>
 		<li>Knife</li>
@@ -1377,11 +1377,11 @@
   
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="DankPyon_MeleeWeapon_FencingSword"]/weaponTags</xpath>
+    <xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_FencingSword"]/weaponTags</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="DankPyon_MeleeWeapon_FencingSword"]/weaponTags</xpath>
+      <xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_FencingSword"]/weaponTags</xpath>
       <value>
 			<li>PeeledMelee</li>
 			<li>PeeledMeleeDecent</li>
@@ -1396,11 +1396,11 @@
   
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="DankPyon_MeleeWeapon_Greatsword"]/weaponTags</xpath>
+    <xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_Greatsword"]/weaponTags</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="DankPyon_MeleeWeapon_Greatsword"]/weaponTags</xpath>
+      <xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_Greatsword"]/weaponTags</xpath>
 		<value>
 			<li>LongSword</li>
 		</value>
@@ -1410,11 +1410,11 @@
   
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="DankPyon_MeleeWeapon_Longsword"]/weaponTags</xpath>
+    <xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_Longsword"]/weaponTags</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="DankPyon_MeleeWeapon_Longsword"]/weaponTags</xpath>
+      <xpath>Defs/ThingDef[defName="DankPyon_MeleeWeapon_Longsword"]/weaponTags</xpath>
       <value>
 		<li>LongSword</li>
 		<li>RomeOfficer</li>
@@ -1429,11 +1429,11 @@
   
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="Gun_Revolver"]</xpath>
+		<xpath>Defs/ThingDef[defName="Gun_Revolver"]</xpath>
 		<!-- If it does, insert this in the same bracket as the sibling bracket. -->
 		<match Class="PatchOperationInsert">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef/weaponTags/li[text()="Longsword"]</xpath>
+			<xpath>Defs/ThingDef/weaponTags/li[text()="Longsword"]</xpath>
 			<value>
 				<li>LongSword</li>
 				<li>DankPyon_Longsword</li>
@@ -1444,11 +1444,11 @@
 
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="Gun_Revolver"]</xpath>
+		<xpath>Defs/ThingDef[defName="Gun_Revolver"]</xpath>
 		<!-- If it does, insert this in the same bracket as the sibling bracket. -->
 		<match Class="PatchOperationInsert">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef/weaponTags/li[text()="LongSword"]</xpath>
+			<xpath>Defs/ThingDef/weaponTags/li[text()="LongSword"]</xpath>
 			<value>
 				<li>Longsword</li>
 				<li>DankPyon_Longsword</li>
@@ -1459,11 +1459,11 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="Gun_Revolver"]</xpath>
+		<xpath>Defs/ThingDef[defName="Gun_Revolver"]</xpath>
 		<!-- If it does, insert this in the same bracket as the sibling bracket. -->
 		<match Class="PatchOperationInsert">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef/weaponTags/li[text()="DankPyon_Longsword"]</xpath>
+			<xpath>Defs/ThingDef/weaponTags/li[text()="DankPyon_Longsword"]</xpath>
 			<value>
 				<li>Longsword</li>
 				<li>LongSword</li>
@@ -1474,11 +1474,11 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="Gun_Revolver"]</xpath>
+		<xpath>Defs/ThingDef[defName="Gun_Revolver"]</xpath>
 		<!-- If it does, insert this in the same bracket as the sibling bracket. -->
 		<match Class="PatchOperationInsert">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef/weaponTags/li[text()="Knife"]</xpath>
+			<xpath>Defs/ThingDef/weaponTags/li[text()="Knife"]</xpath>
 			<value>
 				<li>K4GKnife</li>
 				<li>Dagger</li>
@@ -1489,11 +1489,11 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="Gun_Revolver"]</xpath>
+		<xpath>Defs/ThingDef[defName="Gun_Revolver"]</xpath>
 		<!-- If it does, insert this in the same bracket as the sibling bracket. -->
 		<match Class="PatchOperationInsert">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef/weaponTags/li[text()="K4GKnife"]</xpath>
+			<xpath>Defs/ThingDef/weaponTags/li[text()="K4GKnife"]</xpath>
 			<value>
 				<li>Knife</li>
 				<li>Dagger</li>
@@ -1504,11 +1504,11 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="Gun_Revolver"]</xpath>
+		<xpath>Defs/ThingDef[defName="Gun_Revolver"]</xpath>
 		<!-- If it does, insert this in the same bracket as the sibling bracket. -->
 		<match Class="PatchOperationInsert">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef/weaponTags/li[text()="DankPyon_Hatchet"]</xpath>
+			<xpath>Defs/ThingDef/weaponTags/li[text()="DankPyon_Hatchet"]</xpath>
 			<value>
 				<li>Axe</li>
 				<li>CallOfCthulhu_Lumberjack</li>
@@ -1522,11 +1522,11 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="Gun_Revolver"]</xpath>
+		<xpath>Defs/ThingDef[defName="Gun_Revolver"]</xpath>
 		<!-- If it does, insert this in the same bracket as the sibling bracket. -->
 		<match Class="PatchOperationInsert">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef/weaponTags/li[text()="Axe"]</xpath>
+			<xpath>Defs/ThingDef/weaponTags/li[text()="Axe"]</xpath>
 			<value>
 				<li>CallOfCthulhu_Lumberjack</li>
 				<li>WoodcuttingHatchet</li>
@@ -1540,11 +1540,11 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="Gun_Revolver"]</xpath>
+		<xpath>Defs/ThingDef[defName="Gun_Revolver"]</xpath>
 		<!-- If it does, insert this in the same bracket as the sibling bracket. -->
 		<match Class="PatchOperationInsert">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef/weaponTags/li[text()="CallOfCthulhu_Lumberjack"]</xpath>
+			<xpath>Defs/ThingDef/weaponTags/li[text()="CallOfCthulhu_Lumberjack"]</xpath>
 			<value>
 				<li>WoodcuttingHatchet</li>
 				<li>SurvivalistMelee</li>
@@ -1558,11 +1558,11 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="Gun_Revolver"]</xpath>
+		<xpath>Defs/ThingDef[defName="Gun_Revolver"]</xpath>
 		<!-- If it does, insert this in the same bracket as the sibling bracket. -->
 		<match Class="PatchOperationInsert">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef/weaponTags/li[text()="DankPyon_WoodcuttersAxe"]</xpath>
+			<xpath>Defs/ThingDef/weaponTags/li[text()="DankPyon_WoodcuttersAxe"]</xpath>
 			<value>
 				<li>WoodcuttingHatchet</li>
 				<li>SurvivalistMelee</li>
@@ -1576,10 +1576,10 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="VFEM2_MeleeWeapon_Halberd"]</xpath>
+		<xpath>Defs/ThingDef[defName="VFEM2_MeleeWeapon_Halberd"]</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "VFEM2_MeleeWeapon_Halberd"]/weaponTags</xpath>
+			<xpath>Defs/ThingDef[defName = "VFEM2_MeleeWeapon_Halberd"]/weaponTags</xpath>
 			<value>
 				<li>SpearMen</li>
 				<li>Spear</li>
@@ -1591,10 +1591,10 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="VFEM2_MeleeWeapon_Standard"]</xpath>
+		<xpath>Defs/ThingDef[defName="VFEM2_MeleeWeapon_Standard"]</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "VFEM2_MeleeWeapon_Standard"]/weaponTags</xpath>
+			<xpath>Defs/ThingDef[defName = "VFEM2_MeleeWeapon_Standard"]/weaponTags</xpath>
 			<value>
 				<li>PeeledWeapon</li>
 				<li>PeeledMelee</li>
@@ -1610,10 +1610,10 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="VFEM2_MeleeWeapon_Pike"]</xpath>
+		<xpath>Defs/ThingDef[defName="VFEM2_MeleeWeapon_Pike"]</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "VFEM2_MeleeWeapon_Pike"]/weaponTags</xpath>
+			<xpath>Defs/ThingDef[defName = "VFEM2_MeleeWeapon_Pike"]/weaponTags</xpath>
 			<value>
 				<li>SpearMen</li>
 				<li>Spear</li>
@@ -1632,11 +1632,11 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="Gun_Revolver"]</xpath>
+		<xpath>Defs/ThingDef[defName="Gun_Revolver"]</xpath>
 		<!-- If it does, insert this in the same bracket as the sibling bracket. -->
 		<match Class="PatchOperationInsert">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef/weaponTags/li[text()="Longsword"]</xpath>
+			<xpath>Defs/ThingDef/weaponTags/li[text()="Longsword"]</xpath>
 			<value>
 				<li>LongSword</li>
 				<li>DankPyon_Longsword</li>
@@ -1647,11 +1647,11 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="Gun_Revolver"]</xpath>
+		<xpath>Defs/ThingDef[defName="Gun_Revolver"]</xpath>
 		<!-- If it does, insert this in the same bracket as the sibling bracket. -->
 		<match Class="PatchOperationInsert">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef/weaponTags/li[text()="LongSword"]</xpath>
+			<xpath>Defs/ThingDef/weaponTags/li[text()="LongSword"]</xpath>
 			<value>
 				<li>Longsword</li>
 				<li>DankPyon_Longsword</li>
@@ -1662,11 +1662,11 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="Gun_Revolver"]</xpath>
+		<xpath>Defs/ThingDef[defName="Gun_Revolver"]</xpath>
 		<!-- If it does, insert this in the same bracket as the sibling bracket. -->
 		<match Class="PatchOperationInsert">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef/weaponTags/li[text()="DankPyon_Longsword"]</xpath>
+			<xpath>Defs/ThingDef/weaponTags/li[text()="DankPyon_Longsword"]</xpath>
 			<value>
 				<li>LongSword</li>
 				<li>Longsword</li>
@@ -1677,11 +1677,11 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="TSF_Hand_Mortar"]/weaponTags</xpath>
+		<xpath>Defs/ThingDef[defName="TSF_Hand_Mortar"]/weaponTags</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="TSF_Hand_Mortar"]/weaponTags</xpath>
+			<xpath>Defs/ThingDef[defName="TSF_Hand_Mortar"]/weaponTags</xpath>
 			<value>
 				<li>VFEM2_MedievalRangedChempowder</li>
 			</value>
@@ -1691,11 +1691,11 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="TSF_Tanegashima_Matchlock"]/weaponTags</xpath>
+		<xpath>Defs/ThingDef[defName="TSF_Tanegashima_Matchlock"]/weaponTags</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="TSF_Tanegashima_Matchlock"]/weaponTags</xpath>
+			<xpath>Defs/ThingDef[defName="TSF_Tanegashima_Matchlock"]/weaponTags</xpath>
 			<value>
 				<li>VFEM2_MedievalRangedChempowder</li>
 			</value>
@@ -1705,11 +1705,11 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="TSF_Tanegashima_Short"]/weaponTags</xpath>
+		<xpath>Defs/ThingDef[defName="TSF_Tanegashima_Short"]/weaponTags</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="TSF_Tanegashima_Short"]/weaponTags</xpath>
+			<xpath>Defs/ThingDef[defName="TSF_Tanegashima_Short"]/weaponTags</xpath>
 			<value>
 				<li>VFEM2_MedievalRangedChempowder</li>
 			</value>
@@ -1719,11 +1719,11 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="HSTanegashimaRifle"]/weaponTags</xpath>
+		<xpath>Defs/ThingDef[defName="HSTanegashimaRifle"]/weaponTags</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="HSTanegashimaRifle"]/weaponTags</xpath>
+			<xpath>Defs/ThingDef[defName="HSTanegashimaRifle"]/weaponTags</xpath>
 			<value>
 				<li>VFEM2_MedievalRangedChempowder</li>
 			</value>
@@ -1733,11 +1733,11 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="DankPyon_Weapon_PotFire"]/weaponTags</xpath>
+		<xpath>Defs/ThingDef[defName="DankPyon_Weapon_PotFire"]/weaponTags</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="DankPyon_Weapon_PotFire"]/weaponTags</xpath>
+			<xpath>Defs/ThingDef[defName="DankPyon_Weapon_PotFire"]/weaponTags</xpath>
 			<value>
 				<li>DankPyon_Grenade_PotFire</li>
 			</value>
@@ -1747,11 +1747,11 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="Weapon_OilPot"]/weaponTags</xpath>
+		<xpath>Defs/ThingDef[defName="Weapon_OilPot"]/weaponTags</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="Weapon_OilPot"]/weaponTags</xpath>
+			<xpath>Defs/ThingDef[defName="Weapon_OilPot"]/weaponTags</xpath>
 			<value>
 				<li>DankPyon_Grenade_PotFire</li>
 			</value>
