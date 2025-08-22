@@ -119,7 +119,7 @@
 				<ingredientFilter>
 					<thingDefs>
 						<li>AR_Iron</li>
-						<li>AR_Copper</li>
+						<!-- <li>AR_Copper</li> -->
 					</thingDefs>
 				</ingredientFilter>
 			</value>
@@ -145,7 +145,7 @@
 		</li>
 		<li Class="PatchOperationReplace">
 			<success>Always</success>
-			<xpath>Defs/ThingDef[defName="DankPyon_MakeIngots_Iron"]/products</xpath>
+			<xpath>Defs/RecipeDef[defName="DankPyon_MakeIngots_Iron"]/products</xpath>
 			<value>
 				<products>
 					<AR_Iron>30</AR_Iron>
@@ -154,7 +154,7 @@
 		</li>
 		<li Class="PatchOperationReplace">
 			<success>Always</success>
-			<xpath>Defs/ThingDef[defName="DankPyon_MakeIngots_IronBulk"]/products</xpath>
+			<xpath>Defs/RecipeDef[defName="DankPyon_MakeIngots_IronBulk"]/products</xpath>
 			<value>
 				<products>
 					<AR_Iron>900</AR_Iron>
@@ -163,7 +163,7 @@
 		</li>
 		<li Class="PatchOperationReplace">
 			<success>Always</success>
-			<xpath>Defs/ThingDef[defName="DankPyon_MakeIngots_IronExtraBulk"]/products</xpath>
+			<xpath>Defs/RecipeDef[defName="DankPyon_MakeIngots_IronExtraBulk"]/products</xpath>
 			<value>
 				<products>
 					<AR_Iron>1800</AR_Iron>
@@ -590,8 +590,9 @@
 					<AR_Copper>10</AR_Copper>
 					<AR_Iron>10</AR_Iron>
 					<AR_Bronze>10</AR_Bronze>
-					<Steel>5</Steel>
+					<Steel>3</Steel>
 					<ST_Tin MayRequire="tsp.isengriff.bronzecoppertin.split">30</ST_Tin>
+					<DankPyon_ComponentBasic>1</DankPyon_ComponentBasic>
 				</smeltProducts>
 			</value>
 		</li>
@@ -609,7 +610,7 @@
 			<xpath>Defs/ThingDef[defName="DankPyon_BallistaBolt"]/costList</xpath>
 			<value>
 				<costList>
-					<AR_Bronze>2</AR_Bronze>
+					<AR_Bronze>1</AR_Bronze>
 				</costList>
 			</value>
 		</li>
@@ -636,7 +637,7 @@
 			<xpath>Defs/ThingDef[defName="DankPyon_Handgonne"]/costList</xpath>
 			<value>
 				<costList>
-					<AR_Bronze>75</AR_Bronze>
+					<AR_Bronze>60</AR_Bronze>
 				</costList>
 			</value>
 		</li>
@@ -710,9 +711,7 @@
 			<success>Always</success>
 			<xpath>Defs/ThingDef/building[mineableThing="DankPyon_IronIngot"]/mineableThing</xpath>
 			<value>
-				<costList>
-					<mineableThing>DankPyon_IronIngot</mineableThing>
-				</costList>
+				<mineableThing>AR_Iron</mineableThing>
 			</value>
 		</li>
 		<li Class="PatchOperationReplace">
@@ -720,7 +719,7 @@
 			<xpath>Defs/ThingDef[defName="DankPyon_Golem_Iron"]/butcherProducts</xpath>
 			<value>
 				<butcherProducts>
-					<AR_Iron>300</AR_Iron>
+					<AR_Iron>400</AR_Iron>
 				</butcherProducts>
 			</value>
 		</li>
@@ -728,7 +727,7 @@
 			<success>Always</success>
 			<xpath>Defs/ThingDef/building[mineableThing="DankPyon_IronIngot"]/mineableThing</xpath>
 			<value>
-				<mineableThing>DankPyon_IronIngot</mineableThing>
+				<mineableThing>AR_Iron</mineableThing>
 			</value>
 		</li>
 		<li Class="PatchOperationReplace">
@@ -767,20 +766,6 @@
 			</value>
 		</li>
 		<li Class="PatchOperationReplace">
-			<success>Always</success>
-			<xpath>Defs/ThingDef[defName="AR_IronMineral"]/building/mineableThing</xpath>
-			<value>
-				<mineableThing>DankPyon_IronOre</mineableThing>
-			</value>
-		</li>
-		<li Class="PatchOperationReplace">
-			<success>Always</success>
-			<xpath>Defs/ThingDef[defName="AR_IronMineral"]/building/mineableYield</xpath>
-			<value>
-				<mineableYield>2</mineableYield>
-			</value>
-		</li>
-		<li Class="PatchOperationReplace">
 			<xpath>Defs/ThingDef[defName="DankPyon_NaturalWall_Clay"]/building</xpath>
 			<success>Always</success>
 			<value>
@@ -792,7 +777,7 @@
 					<mineableDropChance>2</mineableDropChance>
 					<smoothedThing>DankPyon_SmoothedClay</smoothedThing>
 					<mineableScatterCommonality>2</mineableScatterCommonality>
-					<mineableScatterLumpSizeRange>29~47</mineableScatterLumpSizeRange>
+					<mineableScatterLumpSizeRange>29~64</mineableScatterLumpSizeRange>
 					<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
 					<claimable>false</claimable>
 					<paintable>true</paintable>
@@ -821,4 +806,29 @@
       </operations>
     </match>
   </Operation>
+  
+  
+	<Operation Class="PatchOperationConditonal">
+	<!-- Does this exist? -->
+		<xpath>Defs/ThingDef[defName="DankPyon_IronOre"</xpath>
+		<!-- If it does, LET'S FASTING GOOOOOO!!! -->
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="AR_IronMineral"]/building/mineableThing</xpath>
+					<value>
+						<mineableThing>DankPyon_IronOre</mineableThing>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="AR_IronMineral"]/building/mineableYield</xpath>
+					<value>
+						<mineableYield>2</mineableYield>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
 </Patch>
