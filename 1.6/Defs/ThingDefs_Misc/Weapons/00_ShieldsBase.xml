@@ -23,8 +23,8 @@
 			<layers>
 				<li>VFEC_OuterShell</li>
 			</layers>
-		<countsAsClothingForNudity>true</countsAsClothingForNudity>
-		<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+			<countsAsClothingForNudity>true</countsAsClothingForNudity>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 		</apparel>
         <comps>
             <li>
@@ -129,7 +129,7 @@
 			<li>Aquila</li>
 		  </weaponTags>
 		  <comps>
-			<li Class="VFECore.CompProperties_Shield" MayRequire="TSP.VFEBustedStupidOskar">
+			<li Class="VFECore.CompProperties_Shield" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
 				<shieldTags>
 					<li>Sasha_RomeStandard</li>
 					<li>Aquilia</li>

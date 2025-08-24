@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <Defs>
   <ThingDef ParentName="Sasha_Roman_BaseShield">
     <defName>AR_Pelte</defName>
     <label>Pelte</label>
-    <description>A light shield ideal for skirmishers, like the Greek peltasts who got their name from this device. While it was used primarily by Greeks on Old Earth, classical antiquity civilizations on the Rim all use it to some extent.</description>
-    <equipmentType>None</equipmentType>
+    <description>A light shield ideal for skirmishers, like the Greek peltasts who got their name from this device. While it was used primarily by Greeks on Old Earth, classical antiquity and medieval civilizations on the Rim all use it to some extent.</description>
+    <!-- <!-- <equipmentType>None</equipmentType> --> -->
+	<thingClass>VEF.Apparels.Apparel_Shield</thingClass>
     <graphicData>
       <texPath>Items/Shields/Pelte_south</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -36,10 +38,11 @@
       <li>ShieldsOrientLight</li>
     </weaponTags>
     <comps>
-            <li Class="VFECore.CompProperties_Shield" MayRequire="TSP.VFEBustedStupidOskar">
+            <li Class="VFECore.CompProperties_Shield" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
                 <shieldTags>
 					<li>ShieldsGreek</li>
 					<li>ShieldsGreekLight</li>
+					<li>DankPyon_RoundShield</li>
                 </shieldTags>
                 <useDeflectMetalEffect>false</useDeflectMetalEffect>
                 <coveredBodyPartGroups>

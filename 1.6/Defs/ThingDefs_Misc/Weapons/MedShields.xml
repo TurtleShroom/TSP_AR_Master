@@ -5,7 +5,7 @@
   <ThingDef ParentName="Sasha_Roman_BaseShield" Name="AR_Scutum" Abstract="true">
     <description>The "scales" that make up a turtle's shell are called "scutes", and this is the reason why. A scutum is a rectangular shield known to be used by the Legions of Rome. Its shape is ideal to perform the 'testudo' formation (from where "testudines," meaning "turtle," originates), where the Legionaries create a cube of shields, nearly immune to arrow fire. It is made of three glued layers of wood with a bronze overlay.</description>
 	<thingClass>VEF.Apparels.Apparel_Shield</thingClass>
-    <equipmentType>None</equipmentType>
+    <!-- <equipmentType>None</equipmentType> -->
     <techLevel>Neolithic</techLevel>
     <statBases>
       <WorkToMake>10000</WorkToMake>
@@ -53,7 +53,7 @@
     </recipeMaker>
 	<comps>
 			<!--
-            <li Class="VFECore.CompProperties_Shield" MayRequire="TSP.VFEBustedStupidOskar">
+            <li Class="VFECore.CompProperties_Shield" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
                 <shieldTags>
                     <li>ShieldsRomeLegion</li>
 					<li>Scutum</li>
@@ -127,7 +127,7 @@
 			<damageToFatigueFactor>0.005</damageToFatigueFactor>
 		</li>
 		-->
-            <li Class="VFECore.CompProperties_Shield" MayRequire="TSP.VFEBustedStupidOskar">
+            <li Class="VFECore.CompProperties_Shield" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
                 <shieldTags>
                     <li>ShieldsRomeLegion</li>
                 </shieldTags>
@@ -173,7 +173,7 @@
       <drawSize>(1.2, 1.2)</drawSize>
     </graphicData>
     <comps>
-            <li Class="VFECore.CompProperties_Shield" MayRequire="TSP.VFEBustedStupidOskar">
+            <li Class="VFECore.CompProperties_Shield" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
                 <shieldTags>
                     <li>ShieldsRomeLegion</li>
                 </shieldTags>
@@ -239,14 +239,14 @@
   <ThingDef ParentName="AR_Scutum">
     <defName>AR_ScutumC</defName>
     <label>Scutum (wings)</label>
-    <equipmentType>None</equipmentType>
+    <!-- <equipmentType>None</equipmentType> -->
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
       <texPath>Items/Shields/Scutum3_south</texPath>
       <drawSize>(1.2, 1.2)</drawSize>
     </graphicData>
     <comps>
-            <li Class="VFECore.CompProperties_Shield" MayRequire="TSP.VFEBustedStupidOskar">
+            <li Class="VFECore.CompProperties_Shield" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
                 <shieldTags>
                     <li>ShieldsRomeLegion</li>
                 </shieldTags>
@@ -312,14 +312,14 @@
   <ThingDef ParentName="AR_Scutum">
     <defName>AR_ScutumD</defName>
     <label>Scutum (testudo)</label>
-    <equipmentType>None</equipmentType>
+    <!-- <equipmentType>None</equipmentType> -->
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
       <texPath>Items/Shields/Scutum4_south</texPath>
       <drawSize>(1.2, 1.2)</drawSize>
     </graphicData>
     <comps>
-            <li Class="VFECore.CompProperties_Shield" MayRequire="TSP.VFEBustedStupidOskar">
+            <li Class="VFECore.CompProperties_Shield" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
                 <shieldTags>
                     <li>ShieldsRomeLegion</li>
                 </shieldTags>
@@ -402,7 +402,7 @@
             <Mass>2.5</Mass>
         </statBases>
         <comps>            
-            <li Class="VFECore.CompProperties_Shield" MayRequire="TSP.VFEBustedStupidOskar">
+            <li Class="VFECore.CompProperties_Shield" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
                 <shieldTags>
 					<li>ShieldsRomeLegion</li>
                     <li>Scutum</li>
@@ -450,7 +450,7 @@
       <drawSize>(1.2, 1.2)</drawSize>
     </graphicData>
     <description>Small circular shield used by the by the Centurions and by light infantry of the Roman Legions.</description>
-    <equipmentType>None</equipmentType>
+    <!-- <equipmentType>None</equipmentType> -->
     <techLevel>Neolithic</techLevel>
     <statBases>
       <WorkToMake>5000</WorkToMake>
@@ -488,7 +488,7 @@
       </li>
     </tools>
     <comps>
-            <li Class="VFECore.CompProperties_Shield" MayRequire="TSP.VFEBustedStupidOskar">
+            <li Class="VFECore.CompProperties_Shield" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
                 <shieldTags>
                     <li>ShieldsRomeLight</li>
                 </shieldTags>
@@ -553,7 +553,7 @@
   </ThingDef>
   <!-- 0==============================0 Greek 0==============================0 -->
   <ThingDef ParentName="RomeShields" Name="Hoplon" Abstract="true">
-    <equipmentType>None</equipmentType>
+    <!-- <equipmentType>None</equipmentType> -->
     <techLevel>Neolithic</techLevel>
     <statBases>
       <WorkToMake>10000</WorkToMake>
@@ -601,7 +601,7 @@
       <li>ShieldHoplite</li>
     </weaponTags>
     <comps>
-            <li Class="VFECore.CompProperties_Shield" MayRequire="TSP.VFEBustedStupidOskar">
+            <li Class="VFECore.CompProperties_Shield" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
                 <shieldTags>
                     <li>ShieldsGreek</li>
 					<li>ShieldHoplite</li>
@@ -680,7 +680,7 @@
       <li>ShieldsGreekMacedon</li>
     </weaponTags>
     <comps>
-            <li Class="VFECore.CompProperties_Shield" MayRequire="TSP.VFEBustedStupidOskar">
+            <li Class="VFECore.CompProperties_Shield" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
                 <shieldTags>
                     <li>ShieldsGreek</li>
 					<li>ShieldHoplite</li>
@@ -759,7 +759,7 @@
       <li>ShieldsGreekSparta</li>
     </weaponTags>
     <comps>
-            <li Class="VFECore.CompProperties_Shield" MayRequire="TSP.VFEBustedStupidOskar">
+            <li Class="VFECore.CompProperties_Shield" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
                 <shieldTags>
                     <li>ShieldsGreek</li>
 					<li>ShieldHoplite</li>

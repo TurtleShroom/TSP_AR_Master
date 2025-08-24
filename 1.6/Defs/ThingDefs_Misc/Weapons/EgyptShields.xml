@@ -27,7 +27,7 @@
       <texPath>Items/Shields/Tower_south</texPath>
       <drawSize>(1.2, 1.2)</drawSize>
     </graphicData>
-    <equipmentType>None</equipmentType>
+    <!-- <equipmentType>None</equipmentType> -->
     <techLevel>Neolithic</techLevel>
     <statBases>
       <WorkToMake>10000</WorkToMake>
@@ -73,7 +73,7 @@
       </li>
     </tools>
     <comps>
-            <li Class="VFECore.CompProperties_Shield" MayRequire="TSP.VFEBustedStupidOskar">
+            <li Class="VFECore.CompProperties_Shield" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
                 <shieldTags>
                     <li>EgyptShield</li>
 					<li>Egypt</li>

@@ -57,7 +57,7 @@
       <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
       <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
     </stuffCategories>
-    <costStuffCount>40</costStuffCount>
+    <costStuffCount>140</costStuffCount>
     <placeWorkers>
       <li>PlaceWorker_CoolerSimple</li>
       <li>PlaceWorker_MeditationOffsetBuildingsNear</li>

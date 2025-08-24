@@ -810,7 +810,7 @@
   
 	<Operation Class="PatchOperationConditonal">
 	<!-- Does this exist? -->
-		<xpath>Defs/ThingDef[defName="DankPyon_IronOre"</xpath>
+		<xpath>Defs/ThingDef[defName="DankPyon_IronOre"]</xpath>
 		<!-- If it does, LET'S FASTING GOOOOOO!!! -->
 		<match Class="PatchOperationSequence">
 			<operations>

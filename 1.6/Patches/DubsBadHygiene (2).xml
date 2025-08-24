@@ -145,6 +145,9 @@
             <li Class="DubsBadHygiene.CompProperties_Pipe">
               <mode>Sewage</mode>
             </li>
+			<li Class="DubsBadHygiene.CompProperties_Pipe">
+                <mode>Air</mode>
+            </li>
             <li Class="CompProperties_Forbiddable"></li>
           </value>
         </li>
