@@ -5,10 +5,10 @@
     <defName>AR_Pelte</defName>
     <label>Pelte</label>
     <description>A light shield ideal for skirmishers, like the Greek peltasts who got their name from this device. While it was used primarily by Greeks on Old Earth, classical antiquity and medieval civilizations on the Rim all use it to some extent.</description>
-    <!-- <!-- <equipmentType>None</equipmentType> --> -->
+    <!-- <equipmentType>None</equipmentType> -->
 	<thingClass>VEF.Apparels.Apparel_Shield</thingClass>
     <graphicData>
-      <texPath>Items/Shields/Pelte_south</texPath>
+      <texPath>Items/Shields/Pelte/Pelte_south</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(0.7, 0.7 )</drawSize>
     </graphicData>
@@ -38,7 +38,7 @@
       <li>ShieldsOrientLight</li>
     </weaponTags>
     <comps>
-            <li Class="VFECore.CompProperties_Shield" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+            <li Class="VEF.Apparels.CompProperties_Shield" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
                 <shieldTags>
 					<li>ShieldsGreek</li>
 					<li>ShieldsGreekLight</li>
@@ -54,7 +54,7 @@
 					<li>Feet</li>
                 </coveredBodyPartGroups>
                 <offHandGraphicData>
-                    <texPath>Items/Shields/Pelte</texPath>
+                    <texPath>Items/Shields/Pelte/Pelte</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
                     <shaderType>CutoutComplex</shaderType>
                     <drawSize>0.79</drawSize>

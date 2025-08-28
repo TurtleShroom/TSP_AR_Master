@@ -129,7 +129,7 @@
 			<li>Aquila</li>
 		  </weaponTags>
 		  <comps>
-			<li Class="VFECore.CompProperties_Shield" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+			<li Class="VEF.Apparels.CompProperties_Shield" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
 				<shieldTags>
 					<li>Sasha_RomeStandard</li>
 					<li>Aquilia</li>

@@ -24,7 +24,7 @@
 	<thingClass>VEF.Apparels.Apparel_Shield</thingClass>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
-      <texPath>Items/Shields/Tower_south</texPath>
+      <texPath>Items/Shields/Tower/Tower_south</texPath>
       <drawSize>(1.2, 1.2)</drawSize>
     </graphicData>
     <!-- <equipmentType>None</equipmentType> -->
@@ -73,7 +73,7 @@
       </li>
     </tools>
     <comps>
-            <li Class="VFECore.CompProperties_Shield" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+            <li Class="VEF.Apparels.CompProperties_Shield" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
                 <shieldTags>
                     <li>EgyptShield</li>
 					<li>Egypt</li>
@@ -89,7 +89,7 @@
 					<li>Feet</li>
                 </coveredBodyPartGroups>
                 <offHandGraphicData>
-                    <texPath>Items/Shields/Tower</texPath>
+                    <texPath>Items/Shields/Tower/Tower</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
                     <shaderType>CutoutComplex</shaderType>
                     <drawSize>1.3</drawSize>

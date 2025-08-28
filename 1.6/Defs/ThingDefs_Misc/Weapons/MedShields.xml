@@ -53,7 +53,7 @@
     </recipeMaker>
 	<comps>
 			<!--
-            <li Class="VFECore.CompProperties_Shield" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+            <li Class="VEF.Apparels.CompProperties_Shield" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
                 <shieldTags>
                     <li>ShieldsRomeLegion</li>
 					<li>Scutum</li>
@@ -97,7 +97,7 @@
     <label>Scutum (lightning)</label>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
-      <texPath>Items/Shields/Scutum1_south</texPath>
+      <texPath>Items/Shields/Scutum1/Scutum1_south</texPath>
       <drawSize>(1.2, 1.2)</drawSize>
     </graphicData>
     <comps>
@@ -127,7 +127,7 @@
 			<damageToFatigueFactor>0.005</damageToFatigueFactor>
 		</li>
 		-->
-            <li Class="VFECore.CompProperties_Shield" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+            <li Class="VEF.Apparels.CompProperties_Shield" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
                 <shieldTags>
                     <li>ShieldsRomeLegion</li>
                 </shieldTags>
@@ -140,7 +140,7 @@
 					<li>Legs</li>
                 </coveredBodyPartGroups>
                 <offHandGraphicData>
-                    <texPath>Items/Shields/Scutum1</texPath>
+                    <texPath>Items/Shields/Scutum1/Scutum1</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
                     <shaderType>CutoutComplex</shaderType>
                     <drawSize>1.2</drawSize>
@@ -169,11 +169,11 @@
     <label>Scutum (laurel wreath)</label>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
-      <texPath>Items/Shields/Scutum2_south</texPath>
+      <texPath>Items/Shields/Scutum2/Scutum2_south</texPath>
       <drawSize>(1.2, 1.2)</drawSize>
     </graphicData>
     <comps>
-            <li Class="VFECore.CompProperties_Shield" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+            <li Class="VEF.Apparels.CompProperties_Shield" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
                 <shieldTags>
                     <li>ShieldsRomeLegion</li>
                 </shieldTags>
@@ -186,7 +186,7 @@
 					<li>Legs</li>
                 </coveredBodyPartGroups>
                 <offHandGraphicData>
-                    <texPath>Items/Shields/Scutum2</texPath>
+                    <texPath>Items/Shields/Scutum2/Scutum2</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
                     <shaderType>CutoutComplex</shaderType>
                     <drawSize>1.2</drawSize>
@@ -242,11 +242,11 @@
     <!-- <equipmentType>None</equipmentType> -->
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
-      <texPath>Items/Shields/Scutum3_south</texPath>
+      <texPath>Items/Shields/Scutum3/Scutum3_south</texPath>
       <drawSize>(1.2, 1.2)</drawSize>
     </graphicData>
     <comps>
-            <li Class="VFECore.CompProperties_Shield" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+            <li Class="VEF.Apparels.CompProperties_Shield" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
                 <shieldTags>
                     <li>ShieldsRomeLegion</li>
                 </shieldTags>
@@ -259,7 +259,7 @@
 					<li>Legs</li>
                 </coveredBodyPartGroups>
                 <offHandGraphicData>
-                    <texPath>Items/Shields/Scutum3</texPath>
+                    <texPath>Items/Shields/Scutum3/Scutum3</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
                     <shaderType>CutoutComplex</shaderType>
                     <drawSize>1.2</drawSize>
@@ -315,11 +315,11 @@
     <!-- <equipmentType>None</equipmentType> -->
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
-      <texPath>Items/Shields/Scutum4_south</texPath>
+      <texPath>Items/Shields/Scutum4/Scutum4_south</texPath>
       <drawSize>(1.2, 1.2)</drawSize>
     </graphicData>
     <comps>
-            <li Class="VFECore.CompProperties_Shield" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+            <li Class="VEF.Apparels.CompProperties_Shield" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
                 <shieldTags>
                     <li>ShieldsRomeLegion</li>
                 </shieldTags>
@@ -332,7 +332,7 @@
 					<li>Legs</li>
                 </coveredBodyPartGroups>
                 <offHandGraphicData>
-                    <texPath>Items/Shields/Scutum4</texPath>
+                    <texPath>Items/Shields/Scutum4/Scutum4</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
                     <shaderType>CutoutComplex</shaderType>
                     <drawSize>1.2</drawSize>
@@ -402,7 +402,7 @@
             <Mass>2.5</Mass>
         </statBases>
         <comps>            
-            <li Class="VFECore.CompProperties_Shield" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+            <li Class="VEF.Apparels.CompProperties_Shield" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
                 <shieldTags>
 					<li>ShieldsRomeLegion</li>
                     <li>Scutum</li>
@@ -446,7 +446,7 @@
     <label>Parma</label>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
-      <texPath>Items/Shields/Parma_south</texPath>
+      <texPath>Items/Shields/Parma/Parma_south</texPath>
       <drawSize>(1.2, 1.2)</drawSize>
     </graphicData>
     <description>Small circular shield used by the by the Centurions and by light infantry of the Roman Legions.</description>
@@ -488,7 +488,7 @@
       </li>
     </tools>
     <comps>
-            <li Class="VFECore.CompProperties_Shield" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+            <li Class="VEF.Apparels.CompProperties_Shield" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
                 <shieldTags>
                     <li>ShieldsRomeLight</li>
                 </shieldTags>
@@ -500,7 +500,7 @@
                     <li>Hands</li>
                 </coveredBodyPartGroups>
                 <offHandGraphicData>
-                    <texPath>Items/Shields/Parma</texPath>
+                    <texPath>Items/Shields/Parma/Parma</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
                     <shaderType>CutoutComplex</shaderType>
                     <drawSize>1.2</drawSize>
@@ -592,7 +592,7 @@
     <label>Hoplon</label>
     <description>Circular, convex shield known to be used by the famous Greek spear men, the Hoplites, who got their name by this devise. This shield is made of wood and covered by a layer of bronze</description>
     <graphicData>
-      <texPath>Items/Shields/HoplonBlank_south</texPath>
+      <texPath>Items/Shields/HoplonBlank/HoplonBlank_south</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(0.7, 0.7 )</drawSize>
     </graphicData>
@@ -601,7 +601,7 @@
       <li>ShieldHoplite</li>
     </weaponTags>
     <comps>
-            <li Class="VFECore.CompProperties_Shield" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+            <li Class="VEF.Apparels.CompProperties_Shield" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
                 <shieldTags>
                     <li>ShieldsGreek</li>
 					<li>ShieldHoplite</li>
@@ -616,7 +616,7 @@
                     <li>Hands</li>
                 </coveredBodyPartGroups>
                 <offHandGraphicData>
-                    <texPath>Items/Shields/HoplonBlank</texPath>
+                    <texPath>Items/Shields/HoplonBlank/HoplonBlank</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
                     <shaderType>CutoutComplex</shaderType>
                     <drawSize>1.2</drawSize>
@@ -672,7 +672,7 @@
     <label>Macedonian Hoplon</label>
     <description>Circular, convex shield known to be used by the famous Greek spear men, the Hoplites, who got their name by this devise. This shield is made of wood and covered by a layer of bronze. The star drawn on its canter is the emblem of the Macedonian Diadochus' house sigil.</description>
     <graphicData>
-      <texPath>Items/Shields/HoplonMacedon_south</texPath>
+      <texPath>Items/Shields/HoplonMacedon/HoplonMacedon_south</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(0.7, 0.7 )</drawSize>
     </graphicData>
@@ -680,9 +680,10 @@
       <li>ShieldsGreekMacedon</li>
     </weaponTags>
     <comps>
-            <li Class="VFECore.CompProperties_Shield" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+            <li Class="VEF.Apparels.CompProperties_Shield" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
                 <shieldTags>
                     <li>ShieldsGreek</li>
+					<li>ShieldsGreekMacedon</li>
 					<li>ShieldHoplite</li>
 					<li>ShieldsHoplite</li>
 					<li>Hoplite</li>
@@ -695,7 +696,7 @@
                     <li>Hands</li>
                 </coveredBodyPartGroups>
                 <offHandGraphicData>
-                    <texPath>Items/Shields/HoplonMacedon</texPath>
+                    <texPath>Items/Shields/HoplonMacedon/HoplonMacedon</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
                     <shaderType>CutoutComplex</shaderType>
                     <drawSize>1.2</drawSize>
@@ -751,7 +752,7 @@
     <label>Spartan Hoplon</label>
     <description>Circular, convex shield known to be used by the famous Greek spear men, the Hoplites, who got their name by this devise. This shield is made of wood and covered by a layer of bronze. The letter 'Lambda' on its center is the first letter of the region around Sparta, which is called "Laconia".</description>
     <graphicData>
-      <texPath>Items/Shields/HoplonSparta_south</texPath>
+      <texPath>Items/Shields/HoplonSparta/HoplonSparta_south</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(0.7, 0.7 )</drawSize>
     </graphicData>
@@ -759,12 +760,16 @@
       <li>ShieldsGreekSparta</li>
     </weaponTags>
     <comps>
-            <li Class="VFECore.CompProperties_Shield" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+            <li Class="VEF.Apparels.CompProperties_Shield" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
                 <shieldTags>
+					<!--
                     <li>ShieldsGreek</li>
 					<li>ShieldHoplite</li>
 					<li>ShieldsHoplite</li>
 					<li>Hoplite</li>
+					-->
+					<li>ShieldsGreekSparta</li>
+					<li>ShieldsSparta</li>
                 </shieldTags>
                 <useDeflectMetalEffect>false</useDeflectMetalEffect>
                 <coveredBodyPartGroups>
@@ -774,7 +779,7 @@
                     <li>Hands</li>
                 </coveredBodyPartGroups>
                 <offHandGraphicData>
-                    <texPath>Items/Shields/HoplonSparta</texPath>
+                    <texPath>Items/Shields/HoplonSparta/HoplonSparta</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
                     <shaderType>CutoutComplex</shaderType>
                     <drawSize>0.7</drawSize>

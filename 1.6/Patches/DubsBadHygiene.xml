@@ -166,7 +166,8 @@
 		<xpath>Defs/ResearchProjectDef[defName="AR_Project_Water_Cooling"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
-		<xpath>Defs/ResearchProjectDef[defName="MultiSplitAirCon"]/prerequisites</xpath>
+			<xpath>Defs/ResearchProjectDef[defName="MultiSplitAirCon"]/prerequisites</xpath>
+			<success>Always</success>
 			<value>
 				<prerequisites>
 					<!-- <li MayRequire="dubwise.dubsbadhygiene">Plumbing</li> -->

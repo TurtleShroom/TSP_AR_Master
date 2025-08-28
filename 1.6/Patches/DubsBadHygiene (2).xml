@@ -145,9 +145,12 @@
             <li Class="DubsBadHygiene.CompProperties_Pipe">
               <mode>Sewage</mode>
             </li>
+			<!-- WHY CAN'T THEY HAVE BOTH?! -->
+			<!--
 			<li Class="DubsBadHygiene.CompProperties_Pipe">
                 <mode>Air</mode>
             </li>
+			-->
             <li Class="CompProperties_Forbiddable"></li>
           </value>
         </li>
