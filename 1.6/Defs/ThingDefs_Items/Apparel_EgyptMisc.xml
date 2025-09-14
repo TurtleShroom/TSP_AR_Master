@@ -187,12 +187,14 @@
 		<li>Tribal</li>
 		<li>Neolithic</li>
 		<li>EgyptDress</li>
+		<li>Cult</li>
       </tags>
       <gender>Female</gender>
-	  <canBeGeneratedToSatisfyWarmth Inherit="False">true</canBeGeneratedToSatisfyWarmth>
+		<canBeGeneratedToSatisfyWarmth Inherit="False">true</canBeGeneratedToSatisfyWarmth>
+		<canBeGeneratedToSatisfyToxicEnvironmentResistance MayRequire="ludeon.rimworld.biotech" Inherit="False">false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
       <defaultOutfitTags>
         <li>Worker</li>
-		<li>Soldier</li>
+		<!-- <li>Soldier</li> -->
         <li>Slave</li>
       </defaultOutfitTags>
     </apparel>

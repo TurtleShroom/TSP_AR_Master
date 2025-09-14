@@ -131,4 +131,188 @@
 		</nomatch>
 		<!-- If the first XPATH does not exist, the original code stands. -->
 	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>Defs/ThingCategoryDef[defName="DankPyon_Wood"]/parent</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>Defs/ThingCategoryDef[defName="DankPyon_Wood"]/parent</xpath>
+			<value>
+				<parent>DankPyon_RawWood</parent>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>Defs/ThingDef[defName="DankPyon_Citrine"]</xpath>
+		<!-- If it does, insert this in the same bracket. -->
+		<match Class="PatchOperationInsert">
+			<xpath>Defs/ThingDef/stuffProps/categories/li[text()="DankPyon_Gems"]</xpath>
+			<success>Always</success>
+			<value>
+				<li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_Crystalline</li>
+				<li MayRequire="kikohi.jewelry">Gemstones</li>
+				<li>Stony</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_VolcanicEbony"]</xpath>
+		<!-- If it does, insert this in the same bracket. -->
+		<match Class="PatchOperationInsert">
+			<xpath>Defs/ThingDef/stuffProps/categories/li[text()="Mashed_Ashlands_Crystalline"]</xpath>
+			<success>Always</success>
+			<value>
+				<li MayRequire="dankpyon.medieval.overhaul">DankPyon_Gems</li>
+				<li MayRequire="kikohi.jewelry">Gemstones</li>
+				<li>Stony</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>Defs/ThingDef[defName="DankPyon_BarrelGrape"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="DankPyon_BarrelGrape"]/building/fixedStorageSettings/filter/thingDefs</xpath>
+			<success>Always</success>
+			<value>
+				<li MayRequire="mlie.ancientrimcore">AR_RawGrapes</li>
+				<li MayRequire="oskarpotocki.vfe.medieval2">VFEM2_RawGrapes</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>Defs/ThingDef[defName="DankPyon_BarrelGrape"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="DankPyon_BarrelGrape"]/building/defaultStorageSettings/filter/thingDefs</xpath>
+			<success>Always</success>
+			<value>
+				<li MayRequire="mlie.ancientrimcore">AR_RawGrapes</li>
+				<li MayRequire="oskarpotocki.vfe.medieval2">VFEM2_RawGrapes</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>Defs/ThingDef[defName="DankPyon_HideoutRusticBarrelBigGrape"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="DankPyon_HideoutRusticBarrelBigGrape"]/modExtensions/li/randomItems</xpath>
+			<success>Always</success>
+			<value>
+				<li MayRequire="mlie.ancientrimcore">AR_RawGrapes</li>
+				<li MayRequire="oskarpotocki.vfe.medieval2">VFEM2_RawGrapes</li>
+				<li MayRequire="mlie.ancientrimcore">AR_RawGrapes</li>
+				<li MayRequire="oskarpotocki.vfe.medieval2">VFEM2_RawGrapes</li>
+				<li MayRequire="mlie.ancientrimcore">AR_RawGrapes</li>
+				<li MayRequire="oskarpotocki.vfe.medieval2">VFEM2_RawGrapes</li>
+				<li MayRequire="mlie.ancientrimcore">AR_RawGrapes</li>
+				<li MayRequire="mlie.ancientrimcore">AR_RawGrapes</li>
+				<li MayRequire="mlie.ancientrimcore">AR_RawGrapes</li>
+				<li MayRequire="mlie.ancientrimcore">AR_RawGrapes</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>Defs/ThingDef[defName="DankPyon_HideoutBarrelGrape"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="DankPyon_HideoutBarrelGrape"]/modExtensions/li/randomItems</xpath>
+			<success>Always</success>
+			<value>
+				<li MayRequire="mlie.ancientrimcore">AR_RawGrapes</li>
+				<li MayRequire="oskarpotocki.vfe.medieval2">VFEM2_RawGrapes</li>
+				<li MayRequire="mlie.ancientrimcore">AR_RawGrapes</li>
+				<li MayRequire="oskarpotocki.vfe.medieval2">VFEM2_RawGrapes</li>
+				<li MayRequire="mlie.ancientrimcore">AR_RawGrapes</li>
+				<li MayRequire="oskarpotocki.vfe.medieval2">VFEM2_RawGrapes</li>
+				<li MayRequire="mlie.ancientrimcore">AR_RawGrapes</li>
+				<li MayRequire="mlie.ancientrimcore">AR_RawGrapes</li>
+				<li MayRequire="mlie.ancientrimcore">AR_RawGrapes</li>
+				<li MayRequire="mlie.ancientrimcore">AR_RawGrapes</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>Defs/ThingDef[defName="DankPyon_HideoutRackMixed"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="DankPyon_HideoutRackMixed"]/modExtensions/li/randomItems</xpath>
+			<success>Always</success>
+			<value>
+				<li MayRequire="mlie.ancientrimcore">AR_Lance</li>
+				<li MayRequire="mlie.ancientrimcore">AR_Lance</li>
+				<li MayRequire="mlie.ancientrimcore">AR_Lance</li>
+				<li MayRequire="mlie.ancientrimcore">AR_Lance</li>
+				<li MayRequire="mlie.ancientrimcore">AR_Falx</li>
+				<li MayRequire="mlie.ancientrimcore">AR_Khopesh</li>
+				<li MayRequire="mlie.ancientrimcore">AR_Xiphos</li>
+				<li MayRequire="mlie.ancientrimcore">AR_Falcata</li>
+				<li MayRequire="oskarpotocki.vfe.classical">VFEC_MeleeWeapon_Spatha</li>
+				<li MayRequire="oskarpotocki.vfe.classical">VFEC_MeleeWeapon_Spatha</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>Defs/ThingDef[defName="DankPyon_HideoutShelfFilledWine"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="DankPyon_HideoutShelfFilledWine"]/modExtensions/li/randomItems</xpath>
+			<success>Always</success>
+			<value>
+				<li MayRequire="mlie.ancientrimcore">AR_Wine</li>
+				<li MayRequire="mlie.ancientrimcore">AR_Wine</li>
+				<li MayRequire="mlie.ancientrimcore">AR_Wine</li>
+				<li MayRequire="mlie.ancientrimcore">AR_Wine</li>
+				<li MayRequire="mlie.ancientrimcore">AR_Wine</li>
+				<li MayRequire="mlie.ancientrimcore">AR_Wine</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>Defs/ThingDef[defName="DankPyon_HideoutDryingRack_Big"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="DankPyon_HideoutDryingRack_Big"]/modExtensions/li/randomItems</xpath>
+			<success>Always</success>
+			<value>
+				<li MayRequire="oskarpotocki.vfe.classical">VFEC_Jerky</li>
+				<li MayRequire="oskarpotocki.vfe.classical">VFEC_Jerky</li>
+				<li MayRequire="oskarpotocki.vfe.classical">VFEC_Jerky</li>
+				<li MayRequire="oskarpotocki.vfe.classical">VFEC_Jerky</li>
+				<li MayRequire="oskarpotocki.vfe.classical">VFEC_Jerky</li>
+				<li MayRequire="oskarpotocki.vfe.classical">VFEC_Jerky</li>
+				<li MayRequire="oskarpotocki.vfe.classical">VFEC_Jerky</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
 </Patch>

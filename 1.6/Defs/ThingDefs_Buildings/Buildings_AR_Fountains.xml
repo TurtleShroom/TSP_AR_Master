@@ -49,13 +49,16 @@
     </statBases>
     <selectable>true</selectable>
     <stuffCategories>
-      <li>Metallic</li>
-      <li>Stony</li>
-      <!-- Mod support -->
-      <li MayRequire="Dubwise.Rimefeller">Plastic</li>
-      <li MayRequire="Dubwise.Rimefeller">Composite</li>
-      <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
-      <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+		<li>Metallic</li>
+		<li>Stony</li>
+		<!-- Mod support -->
+		<li MayRequire="Dubwise.Rimefeller">Plastic</li>
+		<li MayRequire="Dubwise.Rimefeller">Composite</li>
+		<li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+		<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+		<li MayRequire="dankpyon.medieval.overhaul">DankPyon_Gems</li>
+		<li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_Crystalline</li>
+		<li MayRequire="kikohi.jewelry">Gemstones</li>
     </stuffCategories>
     <costStuffCount>140</costStuffCount>
     <placeWorkers>
@@ -165,13 +168,16 @@
     </statBases>
     <selectable>true</selectable>
     <stuffCategories>
-      <li>Metallic</li>
-      <li>Stony</li>
-      <!-- Mod support -->
-      <li MayRequire="Dubwise.Rimefeller">Plastic</li>
-      <li MayRequire="Dubwise.Rimefeller">Composite</li>
-      <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
-      <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+		<li>Metallic</li>
+		<li>Stony</li>
+		<!-- Mod support -->
+		<li MayRequire="Dubwise.Rimefeller">Plastic</li>
+		<li MayRequire="Dubwise.Rimefeller">Composite</li>
+		<li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+		<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+		<li MayRequire="dankpyon.medieval.overhaul">DankPyon_Gems</li>
+		<li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_Crystalline</li>
+		<li MayRequire="kikohi.jewelry">Gemstones</li>
     </stuffCategories>
     <costStuffCount>120</costStuffCount>
     <placeWorkers>

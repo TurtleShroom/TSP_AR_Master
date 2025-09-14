@@ -32,7 +32,7 @@
       </researchPrerequisites>
     </recipeMaker>
   </ThingDef>
-  <ThingDef Name="Mosaic" ParentName="SculptureBase" Abstract="True">
+  <ThingDef Name="AR_Mosaic" ParentName="SculptureBase" Abstract="True">
 	<thingClass>Building_Art</thingClass>
     <description>Many pieces of stone, like tiny tiles put together, into an artwork.</description>
     <altitudeLayer>FloorEmplacement</altitudeLayer>
@@ -55,7 +55,7 @@
     <passability>Standable</passability>
     <pathCost>0</pathCost>
   </ThingDef>
-  <ThingDef ParentName="Mosaic">
+  <ThingDef ParentName="AR_Mosaic">
     <defName>AR_1x1Mosaic</defName>
     <label>Mosaic (1x1)</label>
     <graphicData>
@@ -73,7 +73,7 @@
     <costStuffCount>10</costStuffCount>
     <size>(1,1)</size>
   </ThingDef>
-  <ThingDef ParentName="Mosaic">
+  <ThingDef ParentName="AR_Mosaic">
     <defName>AR_2x1Mosaic</defName>
     <label>Mosaic (2x1)</label>
     <graphicData>
@@ -90,7 +90,7 @@
     <costStuffCount>20</costStuffCount>
     <size>(2,1)</size>
   </ThingDef>
-  <ThingDef ParentName="Mosaic">
+  <ThingDef ParentName="AR_Mosaic">
     <defName>AR_2x2Mosaic</defName>
     <label>Mosaic (2x2)</label>
     <graphicData>
@@ -107,7 +107,7 @@
     <costStuffCount>40</costStuffCount>
     <size>(2,2)</size>
   </ThingDef>
-  <ThingDef ParentName="Mosaic">
+  <ThingDef ParentName="AR_Mosaic">
     <defName>AR_3x2Mosaic</defName>
     <label>Mosaic (3x2)</label>
     <graphicData>
@@ -124,7 +124,7 @@
     <costStuffCount>60</costStuffCount>
     <size>(3,2)</size>
   </ThingDef>
-  <ThingDef ParentName="Mosaic">
+  <ThingDef ParentName="AR_Mosaic">
     <defName>AR_3x3Mosaic</defName>
     <label>Mosaic (3x3)</label>
     <graphicData>

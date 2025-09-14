@@ -396,7 +396,7 @@
 				<!-- needler98.dune -->
 				<!-- SPICE ZONE (DUNE) -->
 				
-				<SpiceDesert MayRequire="comigogames.biomes.greaterswamps">0.05</SpiceDesert>
+				<SpiceDesert MayRequire="needler98.dune">0.05</SpiceDesert>
 				
 				
 				<!-- _________________ -->
@@ -789,7 +789,7 @@
 				<!-- needler98.dune -->
 				<!-- SPICE ZONE (DUNE) -->
 				
-				<SpiceDesert MayRequire="comigogames.biomes.greaterswamps">0</SpiceDesert>
+				<SpiceDesert MayRequire="needler98.dune">0</SpiceDesert>
 				
 				
 				<!-- _________________ -->
@@ -1173,7 +1173,7 @@
 				<!-- needler98.dune -->
 				<!-- SPICE ZONE (DUNE) -->
 				
-				<SpiceDesert MayRequire="comigogames.biomes.greaterswamps">0</SpiceDesert>
+				<SpiceDesert MayRequire="needler98.dune">0</SpiceDesert>
 				
 				
 				<!-- _________________ -->

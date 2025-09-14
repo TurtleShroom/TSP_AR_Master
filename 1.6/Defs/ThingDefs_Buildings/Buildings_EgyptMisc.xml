@@ -127,6 +127,10 @@
           </li>
         </offsets>
       </li>
+		<li Class="Museums.ThingCompProperties_WatchableMuseumBuilding" MayRequire="nightmare.museums" Inherit="False">
+			<compClass MayRequire="nightmare.museums">Museums.ThingComp_WatchableMuseumBuilding</compClass>
+			<onlyWatchableIfContainingItem MayRequire="nightmare.museums">false</onlyWatchableIfContainingItem>
+		</li>
     </comps>
     <costStuffCount>110</costStuffCount>
     <altitudeLayer>Building</altitudeLayer>

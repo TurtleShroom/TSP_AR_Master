@@ -308,6 +308,7 @@
       <li>RomeSoldier</li>
       <li>Javeliner</li>
       <li>Lance</li>
+	  <li>K4GLegionMilitary</li>
     </weaponTags>
     <techHediffsMoney>
       <min>200</min>
@@ -322,6 +323,7 @@
       <li>RomeSoldier</li>
       <!-- <li>RomeCivil</li> -->
       <li>RomeLegion</li>
+	  <li>K4GLegionMilitary</li>
     </apparelTags>
     <apparelRequired>
       <li>AR_LoricaSegmentata</li>
@@ -379,6 +381,7 @@
       <li>Hastatus</li>
 	  <li>DankPyon_Warfork</li>
 	  <li>DankPyon_Falchion</li>
+	  <li>K4GLegionMilitary</li>
     </weaponTags>
     <techHediffsMoney>
       <min>90</min>
@@ -394,6 +397,7 @@
       <li>RomeSoldier</li>
       <li>RomeCivil</li>
       <li>Classical</li>
+	  <li>K4GLegionMilitary</li>
     </apparelTags>
     <apparelRequired>
     </apparelRequired>
@@ -455,6 +459,7 @@
 	  <li>MedievalRanged</li>
       <li>MedievalRangedBasic</li>
       <li>MedievalRangedDecent</li>
+	  <li>K4GLegionMilitary</li>
     </weaponTags>
     <techHediffsMoney>
       <min>200</min>
@@ -468,6 +473,7 @@
     <apparelTags>
       <li>RomeSoldier</li>
       <li>RomeCivil</li>
+	  <li>K4GLegionMilitary</li>
     </apparelTags>
     <apparelRequired></apparelRequired>
   </PawnKindDef>
@@ -507,6 +513,7 @@
       <li>SpearMen</li>
       <li>Lance</li>
       <li>NeolithicMeleeAdvanced</li>
+	  <li>K4GLegionMilitary</li>
     </weaponTags>
     <techHediffsMoney>
       <min>200</min>
@@ -520,6 +527,7 @@
     <apparelTags>
       <li>RomeSoldier</li>
       <li>RomeCivil</li>
+	  <li>K4GLegionMilitary</li>
     </apparelTags>
     <apparelRequired>
       <li>AR_LoricaHamata</li>
@@ -583,6 +591,7 @@
 	  <li>RomeOfficer</li>
 	  <li>DankPyon_Longsword</li>
 	  <li>DankPyon_Greatsword</li>
+	  <li>K4GLegionMilitary</li>
     </weaponTags>
     <techHediffsMoney>
       <min>200</min>
@@ -599,6 +608,7 @@
       <li>Centurion</li>
       <!-- <li>ClassicalMilitary</li> -->
       <li>ClassicalMilitaryClassy</li>
+	  <li>K4GLegionMilitary</li>
     </apparelTags>
     <apparelRequired>
       <li>AR_LoricaSegmentata</li>
@@ -670,6 +680,7 @@
       <li>NeolithicMeleeAdvanced</li>
 	  <li>ClassicalAdvanced</li>
 	  <li>Praetorian</li>
+	  <li>K4GLegionMilitary</li>
     </weaponTags>
     <techHediffsMoney>
       <min>200</min>
@@ -692,6 +703,7 @@
       <li>RomeCivil</li>
       <li>RomeOfficer</li>
       <li>Praetorian</li>
+	  <li>K4GLegionMilitary</li>
     </apparelTags>
     <apparelRequired>
 		<li>Apparel_GaliaL</li>
@@ -765,6 +777,7 @@
       <li>Lance</li>
 	  <li>ClassicalAdvanced</li>
 	  <li>DankPyon_MeleeWeapon_NobleSword</li>
+	  <li>K4GLegionMilitary</li>
     </weaponTags>
     <techHediffsMoney>
       <min>200</min>
@@ -787,6 +800,7 @@
       <li>Hellenic</li>
       <li>RomeOfficer</li>
       <li>ClassicalMilitaryClassy</li>
+	  <li>K4GLegionMilitary</li>
     </apparelTags>
     <apparelRequired>
       <li>AR_LoricaMusculataG</li>
@@ -859,6 +873,7 @@
       <li>LongSword</li>
 	  <li>ClassicalAdvanced</li>
 	  <li>DankPyon_MeleeWeapon_NobleSword</li>
+	  <li>K4GLegionMilitary</li>
     </weaponTags>
     <techHediffsMoney>
       <min>200</min>
@@ -884,6 +899,7 @@
       <li>RomeLegion</li>
       <li>Legate</li>
       <li>ClassicalMilitaryClassy</li>
+	  <li>K4GLegionMilitary</li>
     </apparelTags>
     <apparelRequired>
       <li MayRequire="Mlie.AncientRimCore">Apparel_GaliaL</li>
@@ -1575,12 +1591,11 @@
       <li>StoneskinGland</li>
     </techHediffsRequired>
     <apparelTags>
-      <li>Spartan</li>
-      <!--
-		<li>Praetorian</li>
-		-->
-      <li>Toxotes</li>
-	  <!-- <li>ShieldsGreekSparta</li> -->
+		<li>Spartan</li>
+		<!-- <li>Praetorian</li> -->
+		<li>Toxotes</li>
+		<!-- <li>ShieldsGreekSparta</li> -->
+		<li>K4GLegionMilitary</li>
     </apparelTags>
     <apparelRequired>
       <li>AR_Chalmys</li>
