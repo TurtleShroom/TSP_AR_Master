@@ -1,4 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+
 <Patch>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
@@ -1757,5 +1758,41 @@
 			</value>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>Defs/ThingDef[defName="RapidFire_Slingshot"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="RapidFire_Slingshot"]/weaponTags</xpath>
+			<value>
+				<li>WoodBeetRanged</li>
+				<li>BeetRanged</li>
+				<li>Slinger</li>
+				<li>NeolithicRangedBasic</li>
+				<li>Barbarian</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>Defs/ThingDef[defName="PrecisionShooting_Slingshot"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="PrecisionShooting_Slingshot"]/weaponTags</xpath>
+			<value>
+				<li>WoodBeetRanged</li>
+				<li>BeetRanged</li>
+				<li>Slinger</li>
+				<li>NeolithicRangedBasic</li>
+				<li>Barbarian</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
 	</Operation>
 </Patch>
