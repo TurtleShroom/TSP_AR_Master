@@ -2484,4 +2484,121 @@
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
 	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>Defs/ResearchProjectDef[defName="ComplexFurniture"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ResearchProjectDef[defName="ComplexFurniture"]/prerequisites</xpath>
+			<success>Always</success>
+			<value>
+				<prerequisites Inherit="False">
+					<li MayRequire="mlie.ancientrimcore">AR_Project_Metal_I</li>
+					<li MayRequire="dankpyon.medieval.overhaul">DankPyon_RusticFurniture</li>
+				</prerequisites>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+    </Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>Defs/ResearchProjectDef[defName="DankPyon_TextileSpinning"]/prequisites</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ResearchProjectDef[defName="CarpetMaking"]/prerequisites</xpath>
+			<success>Always</success>
+			<value>
+				<prerequisites Inherit="False">
+					<li MayRequire="dankpyon.medieval.overhaul">DankPyon_TextileSpinning</li>
+				</prerequisites>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+    </Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>Defs/ResearchProjectDef[defName="DankPyon_TextileSpinning"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ResearchProjectDef[defName="ComplexClothing"]/prerequisites</xpath>
+			<success>Always</success>
+			<value>
+				<prerequisites Inherit="False">
+					<li MayRequire="dankpyon.medieval.overhaul">DankPyon_TextileSpinning</li>
+				</prerequisites>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+    </Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>Defs/ResearchProjectDef[defName="DankPyon_Engineering"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ResearchProjectDef[defName="DankPyon_Engineering"]/prerequisites</xpath>
+			<success>Always</success>
+			<value>
+				<prerequisites Inherit="False">
+					<li MayRequire="oskarpotocki.vfe.medieval2">VFEM2_ComplexWorkshops</li>
+					<li MayRequire="mlie.ancientrimcore">AR_Project_Mechanical_Weapons</li>
+					<li MayRequire="mlie.ancientrimcore">AR_Project_Metal_II</li>
+					<li>Smithing</li>
+				</prerequisites>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+    </Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>Defs/ResearchProjectDef[defName="VFEM2_ComplexWorkshops"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ResearchProjectDef[defName="VFEM2_ComplexWorkshops"]/prerequisites</xpath>
+			<success>Always</success>
+			<value>
+				<prerequisites Inherit="False">
+					<li>ComplexFurniture</li>
+					<li MayRequire="mlie.ancientrimcore">AR_Project_Metal_II</li>
+					<li>Smithing</li>
+				</prerequisites>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+    </Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>Defs/ResearchProjectDef[defName="DankPyon_RoyalRusticFurniture"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ResearchProjectDef[defName="VFEE_NobleDecorations"]/prerequisites</xpath>
+			<success>Always</success>
+			<value>
+				<prerequisites Inherit="False">
+					<li MayRequire="oskarpotocki.vfe.medieval2">DankPyon_RoyalRusticFurniture</li>
+					<li>ComplexFurniture</li>
+				</prerequisites>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+    </Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>Defs/ResearchProjectDef[defName="Stonecutting"]/prerequisites</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ResearchProjectDef[defName="Stonecutting"]/prerequisites</xpath>
+			<success>Always</success>
+			<value>
+				<prerequisites Inherit="False"></prerequisites>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+    </Operation>
 </Patch>
