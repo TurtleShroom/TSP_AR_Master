@@ -157,7 +157,7 @@
 			<xpath>Defs/RecipeDef[defName="DankPyon_MakeIngots_IronBulk"]/products</xpath>
 			<value>
 				<products>
-					<AR_Iron>900</AR_Iron>
+					<AR_Iron>750</AR_Iron>
 				</products>
 			</value>
 		</li>
@@ -166,7 +166,7 @@
 			<xpath>Defs/RecipeDef[defName="DankPyon_MakeIngots_IronExtraBulk"]/products</xpath>
 			<value>
 				<products>
-					<AR_Iron>1800</AR_Iron>
+					<AR_Iron>1400</AR_Iron>
 				</products>
 			</value>
 		</li>
@@ -500,7 +500,7 @@
 					<ComponentIndustrial>1</ComponentIndustrial>
 					<WoodLog>200</WoodLog>
 					<AR_Bronze>80</AR_Bronze>
-					<DankPyon_ComponentBasic>20</DankPyon_ComponentBasic>
+					<DankPyon_ComponentBasic>10</DankPyon_ComponentBasic>
 				</costList>
 			</value>
 		</li>
@@ -512,7 +512,7 @@
 					<ComponentIndustrial>1</ComponentIndustrial>
 					<WoodLog>200</WoodLog>
 					<AR_Bronze>80</AR_Bronze>
-					<DankPyon_ComponentBasic>20</DankPyon_ComponentBasic>
+					<DankPyon_ComponentBasic>10</DankPyon_ComponentBasic>
 				</costList>
 			</value>
 		</li>
@@ -531,7 +531,7 @@
 			<value>
 				<costList>
 					<AR_Bronze>10</AR_Bronze>
-					<DankPyon_ComponentBasic>10</DankPyon_ComponentBasic>
+					<DankPyon_ComponentBasic>2</DankPyon_ComponentBasic>
 				</costList>
 			</value>
 		</li>
@@ -541,7 +541,7 @@
 			<value>
 				<costList>
 					<AR_Bronze>100</AR_Bronze>
-					<DankPyon_ComponentBasic>25</DankPyon_ComponentBasic>
+					<DankPyon_ComponentBasic>10</DankPyon_ComponentBasic>
 					<ComponentIndustrial>1</ComponentIndustrial>
 				</costList>
 			</value>
@@ -589,9 +589,9 @@
 				<smeltProducts>
 					<AR_Copper>10</AR_Copper>
 					<AR_Iron>10</AR_Iron>
-					<AR_Bronze>10</AR_Bronze>
+					<AR_Bronze>3</AR_Bronze>
 					<Steel>3</Steel>
-					<ST_Tin MayRequire="tsp.isengriff.bronzecoppertin.split">30</ST_Tin>
+					<ST_Tin MayRequire="tsp.isengriff.bronzecoppertin.split">15</ST_Tin>
 					<DankPyon_ComponentBasic>1</DankPyon_ComponentBasic>
 				</smeltProducts>
 			</value>
@@ -796,6 +796,7 @@
 					<mineableYield>2</mineableYield>
 					<mineableDropChance>1</mineableDropChance>
 					<smoothedThing />
+					<mineableScatterCommonality>0</mineableScatterCommonality>
 					<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
 					<claimable>true</claimable>
 					<paintable>true</paintable>
