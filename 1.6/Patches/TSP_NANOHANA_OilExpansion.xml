@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>Defs/ThingDef[defName="nataneOilPan_empty"]</xpath>
+		<!-- If it does, LET'S FASTING GOOOOOO!!! -->
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="nataneOilPan_empty"]/recipeMaker</xpath>
+					<success>Always</success>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="nataneOilPan_empty"]/costList</xpath>
+					<success>Always</success>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="nataneOilPan_empty"]/costStuffCount</xpath>
+					<success>Always</success>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="nataneOilPan_empty"]/stuffCategories</xpath>
+					<success>Always</success>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/RecipeDef[defName="TSP_NANOHANA_MakeRapeseedPan"]</xpath>
+					<success>Always</success>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName="An_don"]/costList</xpath>
+					<success>Always</success>
+					<value>
+						<costList>
+							<nataneOilPan_empty>1</nataneOilPan_empty>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName="nataneLamp"]/costList</xpath>
+					<success>Always</success>
+					<value>
+						<costList>
+							<nataneOilPan_empty>1</nataneOilPan_empty>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<success>Always</success>
+					<value>
+						<RecipeDef>
+							<defName>TSP_NANOHANA_MakeRapeseedPan</defName>
+							<label>make oil fire pan</label>
+							<description>Create a pan designed to hold oil and sustain its combustion without accidentally starting a fire.</description>
+							<jobString Inherit="False">fashioning oil pan</jobString>
+							<workSkillLearnFactor>5</workSkillLearnFactor>
+							<dontShowIfAnyIngredientMissing>false</dontShowIfAnyIngredientMissing>
+							<uiIconThing>nataneOilPan_empty</uiIconThing>
+							<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+							<workSkill>Crafting</workSkill>
+							<effectWorking>Smelt</effectWorking>
+							<ingredients>
+								<li>
+									<filter>
+										<customSummary>stone, steel, metals</customSummary>
+										<categories>
+											<li>StoneBlocks</li>
+										</categories>
+										<disallowedCategories>
+											<li>Textiles</li>
+											<li>Wools</li>
+											<li>Leathers</li>
+											<li MayRequire="sarg.rimbees">RB_BeeswaxCategory</li>
+										</disallowedCategories>
+										<thingDefs>
+											<li>Steel</li>
+											<li MayRequire="mlie.ancientrimcore">AR_Bronze</li>
+											<li MayRequire="mlie.ancientrimcore">AR_Iron</li>
+											<li MayRequire="mlie.ancientrimcore">AR_Copper</li>
+										</thingDefs>
+									</filter>
+									<count>3</count>
+								</li>
+								<li>
+									<filter>
+										<customSummary MayRequire="sarg.rimbees">chemfuel, oil, pollen, hay, wood, beeswax, textiles</customSummary>
+										<categories>
+											<li MayRequire="sarg.rimbees">RB_BeeswaxCategory</li>
+											<li>Wools</li>
+											<li>Textiles</li>
+											<li>Leathers</li>
+										</categories>
+										<disallowedCategories>
+											<li>StoneBlocks</li>
+										</disallowedCategories>
+										<disallowedThingDefs>
+											<li MayRequire="mlie.ancientrimcore">AR_Bronze</li>
+											<li MayRequire="mlie.ancientrimcore">AR_Iron</li>
+											<li MayRequire="mlie.ancientrimcore">AR_Copper</li>
+										</disallowedThingDefs>
+										<thingDefs>
+											<li>Chemfuel</li>
+											<li>Hay</li>
+											<li>WoodLog</li>
+											<li>Cloth</li>
+											<li MayRequire="sera.apinialienrace">ApiniPollen</li>
+											<li MayRequire="sarg.alphabiomes">GU_RedWood</li>
+											<li MayRequire="sarg.alphabiomes">AB_MushroomWoodLog</li>
+											<li MayRequire="sihv.rombones">BoneItem</li>
+											<li MayRequire="drzhivago.docshitty">DungLog</li>
+											<li MayRequire="tsp.bathroomhumor">DungLog</li>
+											<li MayRequire="dankpyon.medieval.overhaul">DankPyon_Fat</li>
+											<li MayRequire="dankpyon.medieval.overhaul">DankPyon_Tallow</li>
+										</thingDefs>
+									</filter>
+									<count>2</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<categories>
+									<li MayRequire="sarg.rimbees">RB_BeeswaxCategory</li>
+									<li>StoneBlocks</li>
+									<li>Wools</li>
+									<li>Textiles</li>
+									<li>Leathers</li>
+								</categories>
+								<thingDefs>
+									<li>Chemfuel</li>
+									<li>Hay</li>
+									<li>WoodLog</li>
+									<li MayRequire="sumika.nanohana">PlantOil</li>
+									<li MayRequire="sera.apinialienrace">ApiniPollen</li>
+									<li MayRequire="sarg.alphabiomes">GU_RedWood</li>
+									<li MayRequire="sarg.alphabiomes">AB_MushroomWoodLog</li>
+									<li MayRequire="sihv.rombones">BoneItem</li>
+									<li MayRequire="drzhivago.docshitty">DungLog</li>
+									<li MayRequire="tsp.bathroomhumor">DungLog</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<defaultIngredientFilter>
+								<categories>
+									<li>StoneBlocks</li>
+								</categories>
+								<thingDefs>
+									<li>Hay</li>
+									<li>Chemfuel</li>
+									<li MayRequire="dankpyon.medieval.overhaul">DankPyon_Fat</li>
+									<li MayRequire="mlie.ancientrimcore">AR_Iron</li>
+									<li MayRequire="sihv.rombones">BoneItem</li>
+									<li MayRequire="drzhivago.docshitty">DungLog</li>
+									<li MayRequire="tsp.bathroomhumor">DungLog</li>
+								</thingDefs>
+							</defaultIngredientFilter>
+							<recipeUsers Inherit="False">
+								<li>FueledSmithy</li>
+								<li>ElectricSmithy</li>
+								<li>TableStonecutter</li>
+								<li>CraftingSpot</li>
+								<li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Workbench</li>
+							</recipeUsers>
+							<products Inherit="False">
+								<nataneOilPan_empty>1</nataneOilPan_empty>
+							</products>
+							<researchPrerequisites>
+								<!-- <li>Stonecutting</li> -->
+							</researchPrerequisites>
+						</RecipeDef>
+					</value>
+				</li>
+			</operations>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+</Patch>

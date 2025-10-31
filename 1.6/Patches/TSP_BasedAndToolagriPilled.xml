@@ -928,4 +928,133 @@
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
 	</Operation>
+	
+	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_Torch"]/weaponTags</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="MeleeWeapon_Torch"]</xpath>
+			<success>Always</success>
+			<value>
+				<weaponTags></weaponTags>
+			</value>
+		</nomatch>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_Torch"]</xpath>
+		<!-- If it does, insert this in the same bracket as the sibling bracket. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="MeleeWeapon_Torch"]/weaponTags</xpath>
+			<value>
+				<li>Torch</li>
+				<li>SurvivalistMelee</li>
+				<li>HarrierMelee</li>
+				<li>WoodBeetMelee</li>
+				<li>DankPyon_Pitchfork</li>
+				<li>NeolithicMeleeBasic</li>
+				<li>MedievalMeleeBasic</li>
+				<li>Toolagri</li>
+				<li>DankPyon_Bludgeon</li>
+				<li>HSEdoClanPeasant</li>				
+				<li>RWPMelee</li>
+				<li>GnomeSimpleMelee</li>
+				<li>WoodBeetMelee</li>
+				<li>JeubMelee</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+	</Operation>
+	
+	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_Hoe"]/weaponTags</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="MeleeWeapon_Hoe"]</xpath>
+			<success>Always</success>
+			<value>
+				<weaponTags></weaponTags>
+			</value>
+		</nomatch>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_Hoe"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="MeleeWeapon_Hoe"]/weaponTags</xpath>
+			<success>Always</success>
+			<value>
+				<li>CallOfCthulhu_Farmer</li>
+				<li>WeebGirlWeaponry</li>
+				<li>WeebMinorGear</li>
+				<li>MedievalMeleeBasic</li>
+				<li>Toolagri</li>
+				<li>PeeledWeapon</li>
+				<li>PeeledWeaponMelee</li>
+				<li>PeeledWeaponBasic</li>
+				<li>GnomeSimpleMelee</li>
+				<li>HSEdoClanPeasant</li>
+				<li>SurvivalistMelee</li>
+				<li>RWPMelee</li>
+				<li>GnomeMelee</li>
+				<li>GnomeSimpleMelee</li>
+				<li>BeetMelee</li>
+				<li>WoodBeetMelee</li>
+				<li>GoblinMelee</li>
+				<li>FrogmanMelee</li>
+				<li>JeubMelee</li>
+				<li>HSEdoClanPeasant</li>
+				<li>SurvivalistMelee</li>
+				<li>DankPyon_Pitchfork</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_Pitchfork"]/weaponTags</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="MeleeWeapon_Pitchfork"]</xpath>
+			<success>Always</success>
+			<value>
+				<weaponTags></weaponTags>
+			</value>
+		</nomatch>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_Pitchfork"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="MeleeWeapon_Pitchfork"]/weaponTags</xpath>
+			<success>Always</success>
+			<value>
+				<li>CallOfCthulhu_Farmer</li>
+				<li>PeeledWeapon</li>
+				<li>PeeledWeaponBasic</li>
+				<li>PeeledWeaponDecent</li>
+				<li>Medieval</li>
+				<li>MedievalMeleeBasic</li>
+				<li>Toolagri</li>
+				<li>RWPMelee</li>
+				<li>GnomeMelee</li>
+				<li>GnomeSimpleMelee</li>
+				<li>BeetMelee</li>
+				<li>WoodBeetMelee</li>
+				<li>GoblinMelee</li>
+				<li>FrogmanMelee</li>
+				<li>JeubMelee</li>
+				<li>HSEdoClanPeasant</li>
+				<li>SurvivalistMelee</li>
+				<li>DankPyon_Pitchfork</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
 </Patch>

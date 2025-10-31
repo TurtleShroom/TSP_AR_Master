@@ -2090,7 +2090,7 @@
 				<doers>
 					<li Class="MedievalOverhaul.BookOutcomeProperties_GainResearchDefinable">
 						<researchProjects>
-							<li>
+							<li MayRequire="mlie.ancientrimcore">
 								<researchProject>AR_Project_Mechanical_Weapons</researchProject>
 								<gainMultiplier>1</gainMultiplier>
 							</li>
@@ -2113,7 +2113,7 @@
 				<doers>
 					<li Class="MedievalOverhaul.BookOutcomeProperties_GainResearchDefinable">
 						<researchProjects>
-							<li>
+							<li MayRequire="mlie.ancientrimcore">
 								<researchProject>AR_Project_Mechanical_Weapons</researchProject>
 								<gainMultiplier>2</gainMultiplier>
 							</li>
@@ -2136,16 +2136,20 @@
 				<doers>
 					<li Class="MedievalOverhaul.BookOutcomeProperties_GainResearchDefinable">
 						<researchProjects>
-							<li>
+							<li MayRequire="mlie.ancientrimcore">
 								<researchProject>AR_Project_Metal_I</researchProject>
 								<gainMultiplier>3</gainMultiplier>
 							</li>
-							<li>
+							<li MayRequire="mlie.ancientrimcore">
 								<researchProject>AR_Project_Metal_II</researchProject>
 								<gainMultiplier>2</gainMultiplier>
 							</li>
-							<li>
+							<li MayRequire="mlie.ancientrimcore">
 								<researchProject>AR_Project_Metal_III</researchProject>
+								<gainMultiplier>1</gainMultiplier>
+							</li>
+							<li>
+								<researchProject>Machining</researchProject>
 								<gainMultiplier>1</gainMultiplier>
 							</li>
 						</researchProjects>
@@ -2217,7 +2221,7 @@
 				<doers>
 					<li Class="MedievalOverhaul.BookOutcomeProperties_GainResearchDefinable">
 						<researchProjects>
-							<li>
+							<li MayRequire="mlie.ancientrimcore">
 								<researchProject>AR_Project_Mechanical_Weapons</researchProject>
 								<gainMultiplier>2</gainMultiplier>
 							</li>
@@ -2302,6 +2306,10 @@
 								<researchProject>AR_Project_Ballistae</researchProject>
 								<gainMultiplier>1</gainMultiplier>
 							</li>
+							<li>
+								<researchProject>RecurveBow</researchProject>
+								<gainMultiplier>3</gainMultiplier>
+							</li>
 						</researchProjects>
 					</li>
 				</doers>
@@ -2346,7 +2354,11 @@
 						<researchProjects>
 							<li>
 								<researchProject>DrugProduction</researchProject>
-								<gainMultiplier>2</gainMultiplier>
+								<gainMultiplier>3</gainMultiplier>
+							</li>
+							<li>
+								<researchProject>MedicineProduction</researchProject>
+								<gainMultiplier>1</gainMultiplier>
 							</li>
 						</researchProjects>
 					</li>
@@ -2563,7 +2575,7 @@
 			<value>
 				<prerequisites Inherit="False">
 					<li>ComplexFurniture</li>
-					<li MayRequire="mlie.ancientrimcore">AR_Project_Metal_II</li>
+					<li MayRequire="mlie.ancientrimcore">AR_Project_Metal_I</li>
 					<li>Smithing</li>
 				</prerequisites>
 			</value>

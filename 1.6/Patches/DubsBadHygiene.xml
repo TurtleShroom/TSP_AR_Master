@@ -17,7 +17,7 @@
 						<heatPerSecond>-20</heatPerSecond>
 						<heatPushMinTemperature>26</heatPushMinTemperature>
 					</li>
-					<li Class="DubsBadHygiene.CompProperties_Pipe">
+					<li Class="DubsBadHygiene.CompProperties_Pipe" MayRequire="dubwise.dubsbadhygiene">
 						<mode>Sewage</mode>
 					</li>
 					<li Class="CompProperties_Forbiddable"></li>
