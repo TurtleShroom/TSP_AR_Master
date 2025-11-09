@@ -53,6 +53,10 @@
 							</li>
 						</offsets>
 					</li>
+					<li Class="Museums.ThingCompProperties_WatchableMuseumBuilding" MayRequire="nightmare.core,nightmare.museums">
+						<compClass>Museums.ThingComp_WatchableMuseumBuilding</compClass>
+						<onlyWatchableIfContainingItem>false</onlyWatchableIfContainingItem>
+					</li>
 				</comps>
 			</value>
         </li>

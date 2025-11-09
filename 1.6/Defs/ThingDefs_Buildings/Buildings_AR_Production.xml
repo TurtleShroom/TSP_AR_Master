@@ -80,6 +80,7 @@
           <li MayRequire="Dajian.ChiTeaditional.Expanded">SZ_LinkChuJu</li>
 		  <li MayRequire="oskarpotocki.vfe.medieval2">VFEM2_ForgeBellows</li>
 		  <li MayRequire="oskarpotocki.vfe.medieval2">VFEM2_SmithingAnvil</li>
+		  <li MayRequire="dankpyon.medieval.overhaul">DankPyon_QuenchingBucket</li>
         </linkableFacilities>
       </li>
     </comps>
@@ -128,11 +129,22 @@
     </statBases>
     <size>(1,1)</size>
     <costList>
-      <AR_Bronze>200</AR_Bronze>
+      <AR_Bronze>100</AR_Bronze>
     </costList>
     <stuffCategories>
-      <li>Stony</li>
-      <li>Woody</li>
+		<li>Stony</li>
+		<li>Woody</li>
+		<li>Metallic</li>
+
+		<!-- Mod support -->
+		<li MayRequire="Dubwise.Rimefeller">Plastic</li>
+		<li MayRequire="Dubwise.Rimefeller">Composite</li>
+		<li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+		<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+		<li MayRequire="biomesteam.biomescore">BMT_ChitinStuff</li>
+		<li MayRequire="sarg.rimbees">RB_Waxy</li>
+		<li MayRequire="eltwofour.mantodeanrace">L24_Stuff_MantodeanOrganic</li>
+		<li MayRequire="gguake.race.vivi">VV_Wax</li>
     </stuffCategories>
     <costStuffCount>25</costStuffCount>
     <researchPrerequisites>

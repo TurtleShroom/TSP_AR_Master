@@ -100,7 +100,7 @@
       <Mass>0.3</Mass>
     </statBases>
     <equippedStatOffsets>
-      <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.1</SlaveSuppressionOffset>
+      <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.3</SlaveSuppressionOffset>
     </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
@@ -154,6 +154,7 @@
     <costStuffCount>60</costStuffCount>
     <stuffCategories>
       <li>Fabric</li>
+	  <li>Leathery</li>
     </stuffCategories>
     <statBases>
 		<MarketValue>9</MarketValue>
@@ -190,11 +191,11 @@
 		<li>Cult</li>
       </tags>
       <gender>Female</gender>
-		<canBeGeneratedToSatisfyWarmth Inherit="False">true</canBeGeneratedToSatisfyWarmth>
+		<canBeGeneratedToSatisfyWarmth Inherit="False">false</canBeGeneratedToSatisfyWarmth>
 		<canBeGeneratedToSatisfyToxicEnvironmentResistance MayRequire="ludeon.rimworld.biotech" Inherit="False">false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
       <defaultOutfitTags>
         <li>Worker</li>
-		<!-- <li>Soldier</li> -->
+		<li>Soldier</li>
         <li>Slave</li>
       </defaultOutfitTags>
     </apparel>
@@ -344,6 +345,7 @@
       <gender>Female</gender>
       <defaultOutfitTags>
         <li>Worker</li>
+		<li>Soldier</li>
       </defaultOutfitTags>
     </apparel>
     <colorGenerator Class="ColorGenerator_Options">

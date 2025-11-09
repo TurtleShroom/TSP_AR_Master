@@ -167,7 +167,6 @@
         <li>RomeSoldier</li>
         <li>RomeLegion</li>
         <li>ClassicalMilitary</li>
-		
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -892,6 +891,8 @@
         <li>JeubWear</li>
 		<li>DankPyon_ArbalesterHelmet</li>
 		<li>DankPyon_Archer</li>
+		<li>DankPyon_Mercenary</li>
+		<li>DankPyon_MercenaryHelmet</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -965,6 +966,7 @@
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
+		<li>Soldier</li>
       </defaultOutfitTags>
     </apparel>
     <recipeMaker>
@@ -1017,7 +1019,6 @@
         <li>Barbarian</li>
         <li>Classical</li>
 		<li>VFEM2_Medieval</li>
-		
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>

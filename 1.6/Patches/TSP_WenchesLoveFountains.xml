@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- I should get the wench a fountain. Wenches love fountains. -->
+<Patch>
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>Defs/ThingDef[defName="MF_CorporateSimpleOfficeDesk"]</xpath>
+		<!-- If it does, LET'S FASTING GOOOOO!!! -->
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RoyalTitleDef[defName="MF_Supervisor"]/bedroomRequirements/li[6]/things</xpath>
+					<success>Always</success>
+					<value>
+						<li MayRequire="mlie.ancientrimcore">AR_1x2Fountain</li>
+						<li MayRequire="mlie.ancientrimcore">AR_2x2Fountain</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RoyalTitleDef[defName="MF_Manager"]/bedroomRequirements/li[7]/things</xpath>
+					<success>Always</success>
+					<value>
+						<li MayRequire="mlie.ancientrimcore">AR_1x2Fountain</li>
+						<li MayRequire="mlie.ancientrimcore">AR_2x2Fountain</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RoyalTitleDef[defName="MF_GeneralManager"]/bedroomRequirements/li[7]/things</xpath>
+					<success>Always</success>
+					<value>
+						<li MayRequire="mlie.ancientrimcore">AR_1x2Fountain</li>
+						<li MayRequire="mlie.ancientrimcore">AR_2x2Fountain</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RoyalTitleDef[defName="MF_RegionalExecutive"]/bedroomRequirements/li[5]/things</xpath>
+					<success>Always</success>
+					<value>
+						<li MayRequire="mlie.ancientrimcore">AR_1x2Fountain</li>
+						<li MayRequire="mlie.ancientrimcore">AR_2x2Fountain</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RoyalTitleDef[@Name="MF_BaseCorporateTitleNPC"]/bedroomRequirements/li[5]/things</xpath>
+					<success>Always</success>
+					<value>
+						<li Class="RoomRequirement_ThingAnyOf">
+							<things>
+								<li MayRequire="mlie.ancientrimcore">AR_1x2Fountain</li>
+								<li MayRequire="mlie.ancientrimcore">AR_2x2Fountain</li>
+							</things>
+						</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+</Patch>

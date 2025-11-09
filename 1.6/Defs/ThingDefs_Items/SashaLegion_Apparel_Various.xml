@@ -170,13 +170,14 @@
     </stuffCategories>
     <tradeability>All</tradeability>
     <statBases>
-      <MaxHitPoints>100</MaxHitPoints>
-      <WorkToMake>1800</WorkToMake>
-      <Mass>0.5</Mass>
-      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.55</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.55</StuffEffectMultiplierInsulation_Heat>
-      <EquipDelay>1.5</EquipDelay>
+		<MarketValue>18</MarketValue>
+		<MaxHitPoints>100</MaxHitPoints>
+		<WorkToMake>300</WorkToMake>
+		<Mass>0.5</Mass>
+		<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+		<StuffEffectMultiplierInsulation_Cold>0.55</StuffEffectMultiplierInsulation_Cold>
+		<StuffEffectMultiplierInsulation_Heat>0.55</StuffEffectMultiplierInsulation_Heat>
+		<EquipDelay>1.5</EquipDelay>
     </statBases>
     <thingCategories Inherit="False">
       <li>Apparel</li>
@@ -195,32 +196,40 @@
         <li>OnSkin</li>
       </layers>
       <tags>
-          <li>Roman</li>
-          <li>RomeCivil</li>
-          <li>RomePlayer</li>
-          <li>RomeLegion</li>
-          <li>RomeNoble</li>
-          <li>RomeOfficer</li>
-          <li>RomeRoyal</li>
-          <li>RomeEmperor</li>
-          <li>Praetorian</li>
-          <li>Hellenic</li>
-          <li>Spartan</li>
-          <li>Macedon</li>
-          <li>Classical</li>
-          <li>ClassicalSimple</li>
-          <li>ClassicalMilitary</li>
-          <li>RomeBannerman</li>
-          <li>OniWear</li>
-          <li>BeetWear</li>
-          <li>JeubWear</li>
-          <li>GoblinWear</li>
-          <li>FrogmanWear</li>
-          <li>Tribal</li>
-		  <li>EgyptianBasic</li>
-		  <li>Medieval</li>
+		<li>Roman</li>
+		<li>RomeCivil</li>
+		<li>RomePlayer</li>
+		<li>RomeLegion</li>
+		<li>RomeNoble</li>
+		<li>RomeOfficer</li>
+		<li>RomeRoyal</li>
+		<li>RomeEmperor</li>
+		<li>Praetorian</li>
+		<li>Hellenic</li>
+		<li>Spartan</li>
+		<li>Macedon</li>
+		<li>Classical</li>
+		<li>ClassicalSimple</li>
+		<li>ClassicalMilitary</li>
+		<li>RomeBannerman</li>
+		<li>OniWear</li>
+		<li>BeetWear</li>
+		<li>JeubWear</li>
+		<li>GoblinWear</li>
+		<li>FrogmanWear</li>
+		<li>Tribal</li>
+		<li>EgyptianBasic</li>
+		<li>Medieval</li>
+		<li>OniWear</li>
+		<li>Muslim_apparel</li>
+		<li>DankPyon_Peasant</li>
       </tags>
       <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+        <li>Slave</li>
+      </defaultOutfitTags>
     </apparel>
     <recipeMaker>
       <recipeUsers>
@@ -300,6 +309,7 @@
       </tags>
       <defaultOutfitTags>
         <li>Roman</li>
+		<li>Soldier</li>
       </defaultOutfitTags>
       <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
     </apparel>
@@ -373,6 +383,7 @@
       </tags>
       <defaultOutfitTags>
         <li>Roman</li>
+		<li>Soldier</li>
       </defaultOutfitTags>
       <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
     </apparel>
