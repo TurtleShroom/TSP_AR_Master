@@ -45,7 +45,7 @@
 				</li>
 				
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/RoyalTitleDef[@Name="MF_BaseCorporateTitleNPC"]/bedroomRequirements/li[5]/things</xpath>
+					<xpath>Defs/RoyalTitleDef[@Name="MF_BaseCorporateTitleNPC"]/bedroomRequirements</xpath>
 					<success>Always</success>
 					<value>
 						<li Class="RoomRequirement_ThingAnyOf">
@@ -54,6 +54,23 @@
 								<li MayRequire="mlie.ancientrimcore">AR_2x2Fountain</li>
 							</things>
 						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<xpath>Defs/RoyalTitleDef/bedroomRequirements/li/things/li[text()="TubeTelevision"]</xpath>
+					<success>Always</success>
+					<value>
+						<li MayRequire="mlie.ancientrimcore">AR_1x2Fountain</li>
+						<li MayRequire="mlie.ancientrimcore">AR_2x2Fountain</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<xpath>Defs/RoyalTitleDef/bedroomRequirements/li/things/li[text()="MegascreenTelevision"]</xpath>
+					<success>Always</success>
+					<value>
+						<li MayRequire="mlie.ancientrimcore">AR_2x2Fountain</li>
 					</value>
 				</li>
 			</operations>

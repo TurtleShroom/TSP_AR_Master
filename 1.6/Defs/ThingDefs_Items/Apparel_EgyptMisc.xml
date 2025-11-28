@@ -112,6 +112,8 @@
       </layers>
 	  <gender>Male</gender>
       <tags>
+		<li>Egypt</li>
+		<li>EgyptBasic</li>
         <li>EgyptianBasic</li>
 		<li>EgyptianAdvanced</li>
 		<li>EgyptianNoble</li>
@@ -188,6 +190,7 @@
 		<li>Tribal</li>
 		<li>Neolithic</li>
 		<li>EgyptDress</li>
+		<li>EgyptianDress</li>
 		<li>Cult</li>
       </tags>
       <gender>Female</gender>
@@ -265,6 +268,8 @@
       <tags>
         <li>EgyptianNoble</li>
 		<li>EgyptDress_Fancy</li>
+		<li>EgyptDressFancy</li>
+		<li>EgyptianDressFancy</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
@@ -483,6 +488,7 @@
 		<li>DankPyon_Footman</li>
 		<li>DankPyon_Billman</li>
 		<li>DankPyon_BrigandtThug</li>
+		<li>DankPyon_BrigandThug</li>
 		<li>DankPyon_BrigandRaider</li>
       </tags>
       <defaultOutfitTags>

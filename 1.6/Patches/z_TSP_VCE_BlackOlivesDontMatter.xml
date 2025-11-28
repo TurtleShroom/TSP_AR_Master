@@ -137,5 +137,330 @@
     </match>
   </Operation>
   
-  
+
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>Defs/ThingDef[defName="OilLamps_OliveTree"]</xpath>
+		<!-- If it does, LET'S FASTING GOOOOOOOOOO!!! -->
+		<match Class="PatchOperationSequence">
+			<!-- <success>Always</success> -->
+			<operations>
+				<li Class="PatchOperationInsert">
+					<xpath>Defs/RecipeDef/ingredients/li/filter/thingDefs/li[text()="OilLamps_RawOlives"]</xpath>
+					<success>Always</success>
+					<value>
+						<li MayRequire="mlie.ancientrimcore">AR_RawOlives</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<xpath>Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="OilLamps_RawOlives"]</xpath>
+					<success>Always</success>
+					<value>
+						<li MayRequire="mlie.ancientrimcore">AR_RawOlives</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<xpath>Defs/RecipeDef/defaultIngredientFilter/thingDefs/li[text()="OilLamps_RawOlives"]</xpath>
+					<success>Always</success>
+					<value>
+						<li MayRequire="mlie.ancientrimcore">AR_RawOlives</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<xpath>Defs/RecipeDef/ingredients/li/filter/thingDefs/li[text()="OilLamps_RawOlives"]</xpath>
+					<success>Always</success>
+					<value>
+						<li MayRequire="mlie.ancientrimcore">AR_RawOlives</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<xpath>Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="OilLamps_RawOlives"]</xpath>
+					<success>Always</success>
+					<value>
+						<li MayRequire="mlie.ancientrimcore">AR_RawOlives</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<xpath>Defs/RecipeDef/defaultIngredientFilter/thingDefs/li[text()="OilLamps_RawOlives"]</xpath>
+					<success>Always</success>
+					<value>
+						<li MayRequire="mlie.ancientrimcore">AR_RawOlives</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/RecipeDef/ingredients/li/filter/li/thingDefs/li[text()="OilLamps_RawOlives"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/RecipeDef/ingredients/li/filter/li/thingDefs/li[text()="OilLamps_RawOlives"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="OilLamps_RawOlives"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/RecipeDef/defaultIngredientFilter/thingDefs/li[text()="OilLamps_RawOlives"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/costList/OilLamps_RawOlives</xpath>
+					<value>
+						<li MayRequire="mlie.ancientrimcore">AR_RawOlives</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="OilLamps_RawOlives"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="OilLamps_OliveTree"]/plant/harvestedThingDef</xpath>
+					<value>
+						<harvestedThingDef>AR_RawOlives</harvestedThingDef>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="OilLamps_OliveTree"]/plant/sowTags</xpath>
+					<value>
+						<sowTags Inherit="False" IsNull="True"></sowTags>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/BiomeDef/wildPlants/OilLamps_OliveTree</xpath>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<success>Always</success>
+					<xpath>/Defs</xpath>
+					<value>
+						<!-- Now we add it back -->
+						<ThingDef ParentName="BaseFilth">
+							<defName>OilLamps_RawOlives</defName>
+							<label>Pikesmith Olives (ERROR)</label>
+							<description>The TurtleShroom Storytime Mod removes the Pikesmith Oil Lamp Mod's olives. If you are seeing this, you are witnessing an error. Please report it to TurtleShroom.</description>
+							<selectable>true</selectable>
+							<statBases>
+								<MarketValue>0</MarketValue>
+								<Beauty>0</Beauty>
+								<Cleanliness>1</Cleanliness>
+							</statBases>
+							<graphicData>
+								<texPath>Things/Items/Raw/OilLamps_RawOlives</texPath>
+								<graphicClass>Graphic_Single</graphicClass>
+							</graphicData>
+							<filth>
+								<ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+								<disappearsInDays>0.001~0.05</disappearsInDays>
+								<rainWashes>true</rainWashes>
+								<cleaningWorkToReduceThickness>1</cleaningWorkToReduceThickness>
+								<canFilthAttach>false</canFilthAttach>
+								<cleaningSound>Vomit</cleaningSound>
+							</filth>
+						</ThingDef>
+					</value>
+				</li>
+				
+
+				<li Class="PatchOperationInsert">
+					<xpath>Defs/RecipeDef/ingredients/li/filter/thingDefs/li[text()="OilLamps_OliveOil"]</xpath>
+					<success>Always</success>
+					<value>
+						<li MayRequire="mlie.ancientrimcore">AR_OliveOil</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<xpath>Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="OilLamps_OliveOil"]</xpath>
+					<success>Always</success>
+					<value>
+						<li MayRequire="mlie.ancientrimcore">AR_OliveOil</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<xpath>Defs/RecipeDef/defaultIngredientFilter/thingDefs/li[text()="OilLamps_OliveOil"]</xpath>
+					<success>Always</success>
+					<value>
+						<li MayRequire="mlie.ancientrimcore">AR_OliveOil</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<xpath>Defs/RecipeDef/ingredients/li/filter/thingDefs/li[text()="OilLamps_OliveOil"]</xpath>
+					<success>Always</success>
+					<value>
+						<li MayRequire="mlie.ancientrimcore">AR_OliveOil</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<xpath>Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="OilLamps_OliveOil"]</xpath>
+					<success>Always</success>
+					<value>
+						<li MayRequire="mlie.ancientrimcore">AR_OliveOil</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<xpath>Defs/RecipeDef/defaultIngredientFilter/thingDefs/li[text()="OilLamps_OliveOil"]</xpath>
+					<success>Always</success>
+					<value>
+						<li MayRequire="mlie.ancientrimcore">AR_OliveOil</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/RecipeDef/ingredients/li/filter/li/thingDefs/li[text()="OilLamps_OliveOil"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/RecipeDef/ingredients/li/filter/li/thingDefs/li[text()="OilLamps_OliveOil"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="OilLamps_OliveOil"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/RecipeDef/defaultIngredientFilter/thingDefs/li[text()="OilLamps_OliveOil"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/costList/OilLamps_OliveOil</xpath>
+					<value>
+						<li MayRequire="mlie.ancientrimcore">AR_OliveOil</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="OilLamps_OliveOil"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ResearchProjectDef[defName="OilLamps_OilPressResearch"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<success>Always</success>
+					<xpath>/Defs</xpath>
+					<value>
+						<!-- Now we add it back -->
+						<ThingDef ParentName="BaseFilth">
+							<defName>OilLamps_OliveOil</defName>
+							<label>Pikesmith Olives (ERROR)</label>
+							<description>The TurtleShroom Storytime Mod removes the Pikesmith Oil Lamp Mod's olives. If you are seeing this, you are witnessing an error. Please report it to TurtleShroom.</description>
+							<selectable>true</selectable>
+							<statBases>
+								<MarketValue>0</MarketValue>
+								<Beauty>0</Beauty>
+								<Cleanliness>1</Cleanliness>
+							</statBases>
+							<graphicData>
+								<texPath>Things/Items/Raw/OilLamps_RawOlives</texPath>
+								<graphicClass>Graphic_Single</graphicClass>
+							</graphicData>
+							<filth>
+								<ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+								<disappearsInDays>0.001~0.05</disappearsInDays>
+								<rainWashes>true</rainWashes>
+								<cleaningWorkToReduceThickness>1</cleaningWorkToReduceThickness>
+								<canFilthAttach>false</canFilthAttach>
+								<cleaningSound>Vomit</cleaningSound>
+							</filth>
+						</ThingDef>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="OilLamps_OilPress"]/size</xpath>
+					<value>
+						<size>(1,1)</size>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="OilLamps_OilPress"]/interactionCellOffset</xpath>
+					<value>
+						<interactionCellOffset>(1,0,0)</interactionCellOffset>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="OilLamps_OilPress"]/researchPrerequisites</xpath>
+					<value>
+						<researchPrerequisites Inherit="False">
+							<li MayRequire="mlie.ancientrimcore">AR_Project_Mediterranean_Culture</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/RecipeDef[defName="OilLamps_MakeOliveOil"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites Inherit="False">
+							<li MayRequire="mlie.ancientrimcore">AR_Project_Mediterranean_Culture</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/RecipeDef[defName="OilLamps_MakeOliveOil"]/recipeUsers</xpath>
+					<value>
+						<recipeUsers Inherit="False" IsNull="True"></recipeUsers>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="OilLamps_OilLamp"]/researchPrerequisites</xpath>
+					<value>
+						<researchPrerequisites Inherit="False">
+							<li MayRequire="mlie.ancientrimcore">AR_Project_Mediterranean_Culture</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="OilLamps_OilLamp"]/comps/li/fuelFilter/thingDefs</xpath>
+					<value>
+						<li MayRequire="mlie.ancientrimcore">AR_OliveOil</li>
+						<li MayRequire="sarg.alphacrafts">AC_Oil</li>
+						<li MayRequire="lyinlen.crusaderwhale">CW_WhaleOil</li>
+						<li MayRequire="sumika.nanohana">PlantOil</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
 </Patch>

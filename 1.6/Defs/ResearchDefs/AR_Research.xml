@@ -36,6 +36,20 @@
       <li MayRequire="morishep.tarojun.onioftherim">OotR_OniStart</li>
     </tags>
     <tab>AR_ResearchTab</tab>
+		<generalRules>
+            <rulesStrings>
+				<li>subject->Joys of Running Water</li>
+				<li>subject->Cooling by Evaporation</li>
+				<li>subject->Plumbing the Founts</li>
+				<li>subject->Fount of Water</li>
+				<li>subject->Cisterns and You</li>
+				<li>subject_story->enthused about fountains</li>
+				<li>subject_story->pumped water into decorative sculptures</li>
+				<li>subject_story->carved beautiful stone fountains</li>
+				<li>subject_gerund->shooting water upwards from a sculpture</li>
+				<li>subject_gerund->plumbing fountains</li>
+            </rulesStrings>
+        </generalRules>
     <researchViewX>3</researchViewX>
     <researchViewY>1</researchViewY>
   </ResearchProjectDef>
@@ -61,6 +75,21 @@
     </tags>
     <techLevel>Neolithic</techLevel>
     <tab>AR_ResearchTab</tab>
+		<generalRules>
+            <rulesStrings>
+				<li>subject->Copper and Tin</li>
+				<li>subject->Bronze Age Basics</li>
+				<li>subject->Alloys of Bronze</li>
+				<li>subject->Basic Metallurgy</li>
+				<li>subject->Bronze Making</li>
+				<li>subject_story->combined copper and tin</li>
+				<li>subject_story->pioneered basic metallurgy among his tribe</li>
+				<li>subject_story->taught his tribe to smelt bronze</li>
+				<li>subject_story->established primitive forges</li>
+				<li>subject_gerund->smelting bronze</li>
+				<li>subject_gerund->making bronze alloys in a crucible</li>
+            </rulesStrings>
+        </generalRules>
     <researchViewX>4</researchViewX>
     <researchViewY>0</researchViewY>
   </ResearchProjectDef>
@@ -80,6 +109,18 @@
       <li MayRequire="sz.tw.new.guohun">SZ_Start</li>
     </tags>
     <tab>AR_ResearchTab</tab>
+		<generalRules>
+            <rulesStrings>
+				<li>subject->Steel Steel Steel!</li>
+				<li>subject->Steel You Away</li>
+				<li>subject->Iron Metallurgy</li>
+				<li>subject->Wonders of Steel</li>
+				<li>subject_story->steeled himself away until he figured out how to combine iron and carbon</li>
+				<li>subject_story->advanced his tribe to a new age of weaponry</li>
+				<li>subject_story->established a new way to make swords and spears</li>
+				<li>subject_gerund->combining iron and carbon</li>
+            </rulesStrings>
+        </generalRules>
     <researchViewX>5</researchViewX>
     <researchViewY>0</researchViewY>
   </ResearchProjectDef>
@@ -99,6 +140,16 @@
     <techprintCount>4</techprintCount>
     <techprintCommonality>1</techprintCommonality>
     <techprintMarketValue>500</techprintMarketValue>
+		<generalRules>
+            <rulesStrings>
+				<li>subject->Plasteel: the Metal of the Future</li>
+				<li>subject->On the Way to Plasteel</li>
+				<li>subject_story->smelted futuristic metals</li>
+				<li>subject_story->accidentally created Plasteel in an experiment</li>
+				<li>subject_story->made the ultimate useful metal</li>
+				<li>subject_gerund->smelted Plasteel</li>
+            </rulesStrings>
+        </generalRules>
     <heldByFactionCategoryTags>
       <li>UnknownFaction</li>
       <li>Empire</li>
@@ -122,6 +173,24 @@
       <li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_MedievalStart</li>
       <li MayRequire="sz.tw.new.guohun">SZ_Start</li>
     </tags>
+		<generalRules>
+            <rulesStrings>
+				<li>subject->Don't Poke Your Eyes Out: a Polearm Tutorial</li>
+				<li>subject->Really Big Spears and Other Stuff With Which to Stab</li>
+				<li>subject->Sir Lance-a-Lot's Diary</li>
+				<li>subject->There Are Many Like It, but This Lance Is Mine</li>
+				<li>subject->Stabby Sticks</li>
+				<li>subject_story->impaled the Grinch with a thirty-nine and one-half foot pole</li>
+				<li>subject_story->made a spear but LONGER</li>
+				<li>subject_story->showed off his LONG BOI spear</li>
+				<li>subject_story->marvelled at poking people from a distance</li>
+				<li>subject_gerund->fashioning pikes</li>
+				<li>subject_gerund->fashioning lances</li>
+				<li>subject_gerund->fashioning helberds</li>
+				<li>subject_gerund->fashioning polearms</li>
+				<li>subject_gerund->training pikemen</li>
+            </rulesStrings>
+        </generalRules>
     <researchViewX>5</researchViewX>
     <researchViewY>1</researchViewY>
   </ResearchProjectDef>
@@ -138,6 +207,17 @@
       <li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_MedievalStart</li>
       <li MayRequire="sz.tw.new.guohun">SZ_Start</li>
     </tags>
+		<generalRules>
+            <rulesStrings>
+				<li>subject->To Stop a Stab: the Art and Science of Chainmail</li>
+				<li>subject->Interlinking Metal as Clothes</li>
+				<li>subject->Can't Stab This</li>
+				<li>subject_story->fashioned interlocking chains of steel to fight off stabbing</li>
+				<li>subject_story->developed practical, useful armor</li>
+				<li>subject_story->dominated local blacksmithing through masterful use of chainmail</li>
+				<li>subject_gerund->fashioning chainmail</li>
+            </rulesStrings>
+        </generalRules>
     <techLevel>Neolithic</techLevel>
     <tab>AR_ResearchTab</tab>
     <researchViewX>4</researchViewX>

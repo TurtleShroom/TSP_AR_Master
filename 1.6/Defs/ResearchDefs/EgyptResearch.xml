@@ -14,6 +14,22 @@
       <li MayRequire="VanillaExpanded.VFEArt">VFE_Res_Obelisk</li>
     </prerequisites>
     <tab>AR_ResearchTab</tab>
+		<generalRules>
+            <rulesStrings>
+				<li>subject->Secrets of the Pyramids</li>
+				<li>subject->Operation Stony Kitty</li>
+				<li>subject->Kemitic Advancements</li>
+				<li>subject->Architecture of the Pharaohs</li>
+				<li>subject->Ways of the Nile</li>
+				<li>subject->Ju Ahet</li>
+				<li>subject_story->rediscovered how to decypher hieroglyphics</li>
+				<li>subject_story->erected great obelisks and pillars</li>
+				<li>subject_story->proclaimed himself a god</li>
+				<li>subject_story->entombed mummified corpses</li>
+				<li>subject_gerund->constructing beautiful masonry</li>
+				<li>subject_gerund->building pyramids</li>
+            </rulesStrings>
+        </generalRules>
     <researchViewX>0</researchViewX>
     <researchViewY>2</researchViewY>
   </ResearchProjectDef>

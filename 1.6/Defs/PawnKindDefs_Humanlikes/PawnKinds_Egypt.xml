@@ -70,6 +70,7 @@
       <li>OrientalLight</li>
       <li>EgyptianLight</li>
       <li>EgyptianBasic</li>
+	  <li>EgyptDress</li>
     </apparelTags>
   </PawnKindDef>
   <PawnKindDef Name="EgyptBaseFighterB" ParentName="PawnEgyptBase" Abstract="True">
@@ -104,6 +105,7 @@
       <li>OrientalMedium</li>
       <li>OrientalHeavy</li>
       <li>EgyptianBasic</li>
+	  <li>EgyptDress</li>
     </apparelTags>
   </PawnKindDef>
   <PawnKindDef Name="EgyptCitizen" ParentName="PawnEgyptBase">
@@ -148,6 +150,7 @@
     <apparelTags>
       <li>EgyptianBasic</li>
 	  <li>EgyptianDress</li>
+	  <li>EgyptDress</li>
     </apparelTags>
   </PawnKindDef>
   <PawnKindDef ParentName="EgyptNoble">

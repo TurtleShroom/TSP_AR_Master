@@ -116,6 +116,7 @@
     <thingCategories>
       <li MayRequire="VanillaExpanded.VCookE">VCE_Condiments</li>
       <li MayRequire="tikubonn.RimSeasoning">RimSeasoning_Seasoning</li>
+	  <li MayRequire="pikesmith.oillamps">OilLamps_Oils</li>
       <li>PlantMatter</li>
     </thingCategories>
     <soundInteract>Standard_Drop</soundInteract>

@@ -15,6 +15,25 @@
 	  <li MayRequire="mlie.ancientrimcore">LowHellenicStart</li>
       <li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
     </tags>
+		<generalRules>
+            <rulesStrings>
+				<li>subject->Secrets of the Dream That is Rome</li>
+				<li>subject->Tactics of Greeco-Roman Splendor</li>
+				<li>subject->Greek Ways of Life</li>
+				<li>subject->Roman Ways of Life</li>
+				<li>subject_story->contemplated the Dream That is Rome</li>
+				<li>subject_story->discovered the wonders of olives and pomegranates</li>
+				<li>subject_story->relaxed on a kline chaise lounge in a symposium</li>
+				<li>subject_story->thought about Rome daily</li>
+				<li>subject_gerund->brewing Mediterranean wine</li>
+				<li>subject_gerund->thinking of Rome</li>
+                <li MayRequire="pikesmith.oillamps">subject->First Impressions</li>
+				<li MayRequire="pikesmith.oillamps">subject_story->squished some olives under foot</li>
+                <li MayRequire="pikesmith.oillamps">subject_story->unlocked the secrets of pressing oil from olives</li>
+                <li MayRequire="pikesmith.oillamps">subject_story->pioneered the use of new tools to increase harvest</li>
+                <li MayRequire="pikesmith.oillamps">subject_gerund->contemplating advanced uses of flammable oils</li>
+            </rulesStrings>
+        </generalRules>
     <tab>AR_ResearchTab</tab>
     <researchViewX>0</researchViewX>
     <researchViewY>0</researchViewY>
