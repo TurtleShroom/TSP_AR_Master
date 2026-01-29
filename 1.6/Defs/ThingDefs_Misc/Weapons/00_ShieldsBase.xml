@@ -18,7 +18,7 @@
 				<li>Soldier</li>
 			</defaultOutfitTags>
 			<bodyPartGroups>
-				<li>Hands</li>
+				<li>Shoulders</li>
 			</bodyPartGroups>
 			<layers>
 				<li>VFEC_OuterShell</li>
@@ -69,7 +69,7 @@
 	<ThingDef ParentName="Sasha_Roman_BaseShield">
 		  <defName>Roman_Standard</defName>
 		  <label>Aquilia</label>
-		  <description>The Aquilla or eagle standard, the prized possession of the legion in serves with.</description>
+		  <description>The Aquilla or Eagle Standard, the prized possession of the Legion with which it serves.</description>
 		  <thingClass>VEF.Apparels.Apparel_Shield</thingClass>
 		  <graphicData>
 			<texPath>Things/Pawn/Weapons/Shields/Standard</texPath>
