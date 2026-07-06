@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>Defs/ThingDef[defName="VFEFactory_Conveyor"]</xpath>
+		<!-- If it does, do this replacement -->
+		<match Class="PatchOperatioReplace">
+			<xpath>Defs/PipeSystem.ProcessDef[defName="VFEFactory_AlloyBronze"]/results</xpath>
+			<succes>Always</succes>
+			<value>
+				<results Inherit="False">
+					<li>
+						<thing>AR_Bronze</thing>
+						<count>20</count>
+					</li>
+				</results>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>Defs/ThingDef[defName="VFEFactory_Conveyor"]</xpath>
+		<!-- If it does, do this replacement -->
+		<match Class="PatchOperatioReplace">
+			<xpath>Defs/PipeSystem.ProcessDef[defName="VFEFactory_AlloyBronze"]/researchPrerequisites</xpath>
+			<succes>Always</succes>
+			<value>
+				<researchPrerequisites Inherit="False">
+					<li>VFE_BasicFactories</li>
+				</researchPrerequisites>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+</Patch>
