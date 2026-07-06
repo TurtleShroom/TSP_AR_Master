@@ -3,11 +3,36 @@
   <RulePackDef>
     <defName>NamerPersonEgypt</defName>
     <rulePack>
-      <rulesStrings>
-        <li>name->[NamesEgypt] of [NamesEgypt]</li>
-        <li>name->[NamesEgypt] [NamesEgypt]</li>
-        <li>name->[NamesEgypt] the [Numbers]</li>
-      </rulesStrings>
+		<rulesStrings>
+			<li>name->[NamesEgypt] of [NamesEgypt]</li>
+			<li>name->[NamesEgypt] [NamesEgypt]</li>
+			<li>name->[NamesEgypt] the [Numbers]</li>
+			<li>name->[NamesEgypt] [Last]</li>
+			<li>r_name->[NamesEgypt] [Last]</li>
+			<!--
+			<li>r_name(p=3)->[FirstMale] [Last]</li>
+			<li>r_name->[FirstMale] '[Prenomen]' [Last]</li>
+			<li>r_name(p=3)->[FirstFemale] [Last]</li>
+			<li>r_name->[FirstFemale] '[Prenomen]' [Last]</li>
+			-->
+					
+			<li>Prenomen->Nisut</li>
+			<li>Prenomen->Za</li>
+			<li>Prenomen->Za-Netger</li>
+			<li>Prenomen->Za-Nesut</li>
+			<li>Prenomen->Nomarch</li>
+			<li>Prenomen->Hi</li>
+			<li>Prenomen->Hi-Nesut</li>
+			<li>Prenomen->Hi-Netjer</li>
+			<li>Prenomen->He of the Two Ladies</li>
+			<li>Prenomen->Netjer</li>
+		</rulesStrings>
+			<rulesFiles>
+				<li>FirstMale->Names/ODLS_Egypt_FirstMale</li>
+				<li>FirstFemale->Names/ODLS_Egypt_FirstFemale</li>
+				<li>Prenomen->Names/ODLS_Egypt_TitlePrenomen</li>
+				<li>Last->Names/ODLS_Egypt_Last</li>
+			</rulesFiles>
       <rulesRaw>
         <li Class="Rule_File">
           <keyword>Numbers</keyword>
@@ -24,8 +49,16 @@
     <defName>NamerSettlementEgypt</defName>
     <rulePack>
       <rulesStrings>
-        <li>name->[NamesEgypt]</li>
-      </rulesStrings>
+        <li>name(p=2)->[NamesEgypt]</li>
+		<li>name->[KemetSettlementUpper]</li>
+		<li>name->[KemetSettlementLower]</li>
+		<li>r_name->[KemetSettlementUpper]</li>
+		<li>r_name->[KemetSettlementLower]</li>
+ 	  </rulesStrings>
+	  <rulesFiles>
+		<li>KemetSettlementUpper->Names/ODLS_Egypt_SettlementUpper</li>
+		<li>KemetSettlementLower->Names/ODLS_Egypt_SettlementLower</li>
+	  </rulesFiles>
       <rulesRaw>
         <li Class="Rule_File">
           <keyword>NamesEgypt</keyword>
@@ -34,6 +67,7 @@
       </rulesRaw>
     </rulePack>
   </RulePackDef>
+  
   <RulePackDef>
     <defName>NamerFactionEgypt</defName>
     <rulePack>

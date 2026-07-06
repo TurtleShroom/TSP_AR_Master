@@ -29,7 +29,7 @@
       <downloadUrl>https://github.com/emipa606/AncientRimCore/releases/latest</downloadUrl>
     </li>
     <li>
-      <packageId>Mlie.AncientRimOrientalDesertEdition</packageId>
+      <packageId>Mlie.AncientRimCore</packageId>
       <displayName>Ancient Rim - Oriental/Desert Edition</displayName>
       <steamWorkshopUrl>steam://url/CommunityFilePage/2458187428</steamWorkshopUrl>
       <downloadUrl>https://github.com/emipa606/AncientRimOrientalDesertEdition/releases/latest</downloadUrl>
@@ -39,7 +39,7 @@
     <li>jecrell.jecstools</li>
     <li>CarnySenpai.EnableOversizedWeapons</li>
     <li>Mlie.AncientRimCore</li>
-    <li>Mlie.AncientRimOrientalDesertEdition</li>
+    <li>Mlie.AncientRimCore</li>
     <li>vanillaexpanded.vmemese</li>
     <li>sarg.alphamemes</li>
     <li>wvc.sergkart.itt.techtreepatch</li>

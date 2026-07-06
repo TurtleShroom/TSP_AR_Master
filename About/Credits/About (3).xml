@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>Ancient Rim - Oriental/Desert Edition (Continued)</name>
-  <packageId>Mlie.AncientRimOrientalDesertEdition</packageId>
+  <packageId>Mlie.AncientRimCore</packageId>
   <author>Koni</author>
   <url>https://github.com/emipa606/AncientRimOrientalDesertEdition</url>
   <supportedVersions>

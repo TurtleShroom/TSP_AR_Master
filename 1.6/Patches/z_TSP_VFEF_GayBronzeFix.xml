@@ -5,9 +5,9 @@
 	<!-- Does this exist? -->
 		<xpath>Defs/ThingDef[defName="VFEFactory_Conveyor"]</xpath>
 		<!-- If it does, do this replacement -->
-		<match Class="PatchOperatioReplace">
+		<match Class="PatchOperationReplace">
 			<xpath>Defs/PipeSystem.ProcessDef[defName="VFEFactory_AlloyBronze"]/results</xpath>
-			<succes>Always</succes>
+			<success>Always</success>
 			<value>
 				<results Inherit="False">
 					<li>
@@ -24,9 +24,9 @@
 	<!-- Does this exist? -->
 		<xpath>Defs/ThingDef[defName="VFEFactory_Conveyor"]</xpath>
 		<!-- If it does, do this replacement -->
-		<match Class="PatchOperatioReplace">
+		<match Class="PatchOperationReplace">
 			<xpath>Defs/PipeSystem.ProcessDef[defName="VFEFactory_AlloyBronze"]/researchPrerequisites</xpath>
-			<succes>Always</succes>
+			<success>Always</success>
 			<value>
 				<researchPrerequisites Inherit="False">
 					<li>VFE_BasicFactories</li>

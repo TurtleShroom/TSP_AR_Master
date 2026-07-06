@@ -190,6 +190,7 @@
         <kindDef>Peaceful</kindDef>
 		<commonality>50</commonality>
         <options>
+		  <AR_Scribe>0.1</AR_Scribe>
           <TSP_AR_EPeasant_InAnkhaZone MayRequire="razar1.ankharace">15</TSP_AR_EPeasant_InAnkhaZone>
 		  <TSP_AR_ELight_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ELight_InAnkhaZone>
 		  <TSP_AR_ESpear_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESpear_InAnkhaZone>
