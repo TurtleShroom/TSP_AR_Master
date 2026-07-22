@@ -9,6 +9,12 @@
 			<li>name->[NamesEgypt] the [Numbers]</li>
 			<li>name->[NamesEgypt] [Last]</li>
 			<li>r_name->[NamesEgypt] [Last]</li>
+			<li>name->[Last] [NamesEgypt]</li>
+			<li>r_name->[Last] [NamesEgypt]</li>
+			<li>r_name->[NamesEgypt] '[Last]' [NamesEgypt]</li>
+			<li>name->[NamesEgypt] '[Last]' [NamesEgypt]</li>
+			<li>name(p=0.2)->[NamesEgypt] '[Prenomen]' [NamesEgypt]</li>
+			<li>name(p=0.2)->[NamesEgypt] '[Prenomen]' [Last]</li>
 			<!--
 			<li>r_name(p=3)->[FirstMale] [Last]</li>
 			<li>r_name->[FirstMale] '[Prenomen]' [Last]</li>

@@ -15,7 +15,7 @@
 		<factionNameMaker>NamerFactionKemetic</factionNameMaker>
 		<settlementNameMaker>NamerSettlementKemetic</settlementNameMaker>
 		<!-- <melaninRange>0.5~1</melaninRange> -->
-		<allowedCultures>
+		<allowedCultures Inherit="False">
 			<li>Rahism</li>
 		</allowedCultures>
 		<backstoryFilters>
@@ -75,7 +75,7 @@
 		<fixedLeaderKinds>
 			<li>AR_Pharao</li>
 		</fixedLeaderKinds>
-		<allowedCultures>
+		<allowedCultures Inherit="False">
 			<li>Rahism</li>
 		</allowedCultures>
 		<structureMemeWeights>
