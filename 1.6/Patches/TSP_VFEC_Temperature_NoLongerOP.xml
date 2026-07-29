@@ -24,7 +24,7 @@
 			<success>Always</success>
 			<xpath>Defs/ResearchProjectDef[defName="VFEC_WoodfiredCrematorium"]/prerequisites</xpath>
 			<value>
-				<li>VFEC_TemperatureControl</li>
+				<li MayRequire="oskarpotocki.vfe.classical">VFEC_TemperatureControl</li>
 			</value>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. -->

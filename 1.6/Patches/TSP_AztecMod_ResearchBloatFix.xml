@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>Defs/ThingDef[defName="aztecarsenal_Macuahuitl"]</xpath>
+		<!-- If it does, LET'S FASTING GOOOOO!!! -->
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="aztecarsenal_Macuahuitl"]/researchPrerequisite</xpath>
+					<success>Always</success>
+					<value>
+						<researchPrerequisites Inherit="False">
+							<li>RecurveBow</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="aztecarsenal_blowgun_sedative"]/researchPrerequisite</xpath>
+					<success>Always</success>
+					<value>
+						<researchPrerequisites Inherit="False">
+							<li>RecurveBow</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="aztecarsenal_blowgun_poison"]/researchPrerequisite</xpath>
+					<success>Always</success>
+					<value>
+						<researchPrerequisites Inherit="False">
+							<li>RecurveBow</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="aztecarsenal_blowgun_poison"]/researchPrerequisite</xpath>
+					<success>Always</success>
+					<value>
+						<researchPrerequisites Inherit="False">
+							<li>RecurveBow</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="aztecarsenal_blowgun_sedative"]/recipeMaker/researchPrerequisite</xpath>
+					<success>Always</success>
+					<value>
+						<researchPrerequisites Inherit="False">
+							<li>RecurveBow</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="aztecarsenal_blowgun_poison"]/recipeMaker/researchPrerequisite</xpath>
+					<success>Always</success>
+					<value>
+						<researchPrerequisites Inherit="False">
+							<li>RecurveBow</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="aztecarsenal_blowgun_poison"]/recipeMaker/researchPrerequisite</xpath>
+					<success>Always</success>
+					<value>
+						<researchPrerequisites Inherit="False">
+							<li>RecurveBow</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ResearchProjectDef[defName="aztecarsenal_melee_project"]</xpath>
+					<success>Always</success>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ResearchProjectDef[defName="aztecarsenal_blowgun_project"]</xpath>
+					<success>Always</success>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ResearchProjectDef[defName="aztecarsenal_sling_project"]</xpath>
+					<success>Always</success>
+				</li>
+				
+				<!-- https://www.steamcommunity.com/sharedfiles/filedetails/?id=2820945620 -->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ResearchProjectDef[defName = "RecurveBow"]/label</xpath>
+					<success>Always</success>
+					<value>
+						<label>neolithic weapons</label>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
