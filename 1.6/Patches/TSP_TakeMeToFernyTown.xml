@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationConditional">
+		<!-- Does this exist? -->
+		<xpath>Defs/ThingDef[defName="SeedPackingBench"]</xpath>
+		<!-- If so, add this. -->
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<RecipeDef MayRequire="ferny.progressionagriculture">
+					<defName>TSP_Ferny_AR_SeedGeneration</defName>
+					<label>acquire specialist seed pods</label>
+					<description>We have the Research, now it's time for the seeds! LET'S FREAKING GOOOOOO!!!</description>
+					<jobString>generating specialist seed pods</jobString>
+					<workAmount>175</workAmount>
+					<workSpeedStat>CookSpeed</workSpeedStat>
+					<effectWorking>Cook</effectWorking>
+					<soundWorking>Recipe_CookMeal</soundWorking>
+					<!-- <unfinishedThingDef>TSP_ST_Unfinished</unfinishedThingDef> -->
+					<recipeUsers Inherit="False">
+						<li MayRequire="ferny.progressionagriculture">SeedPackingCraftingSpot</li>
+						<li MayRequire="ferny.progressionagriculture">SeedPackingBench</li>
+						<!-- <li MayRequire="vanillaexpanded.vcooke">VCE_CondimentPrepTable</li> -->
+					</recipeUsers>
+					<ingredients Inherit="False"></ingredients> <!-- None! -->
+					<fixedIngredientFilter Inherit="False">
+						<categories></categories>
+						<thingDefs></thingDefs>
+						<disallowedThingDefs></disallowedThingDefs>
+						<disallowedCategories></disallowedCategories>
+					</fixedIngredientFilter>
+					<researchPrerequisites Inherit="False">
+						<li>AR_Project_Mediterranean_Culture</li>
+						<li MayRequire="ferny.progressionagriculture">Ferny_SeedPackingBench</li>
+					</researchPrerequisites>
+					<products>
+						<AR_PlantArtichoke_SeedBundle>1</AR_PlantArtichoke_SeedBundle>
+						<AR_PlantGrape_SeedBundle>1</AR_PlantGrape_SeedBundle>
+						<!-- <AR_TreeOlive_SeedBundle>1</AR_TreeOlive_SeedBundle> -->
+						<!-- <AR_TreePomegranate_SeedBundle>1</AR_TreePomegranate_SeedBundle> -->
+					</products>
+				</RecipeDef>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+</Patch>

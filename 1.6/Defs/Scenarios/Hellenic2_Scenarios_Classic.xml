@@ -83,6 +83,37 @@
           <def MayRequire="oskarpotocki.vfe.classical">VFEC_Senators</def>
           <numSenators MayRequire="oskarpotocki.vfe.classical">1</numSenators>
         </li>
+		
+		<li Class="ProgressionAgriculture.ScenPart_StartingSeeds" MayRequire="ferny.progressionagriculture">
+			<def>Ferny_StartingSeeds</def>
+			<thingDef>AR_PlantArtichoke_SeedBundle</thingDef>
+		</li>
+		
+		<li Class="ProgressionAgriculture.ScenPart_StartingSeeds" MayRequire="ferny.progressionagriculture">
+			<def>Ferny_StartingSeeds</def>
+			<thingDef>AR_PlantGrape_SeedBundle</thingDef>
+		</li>
+		
+		<!--
+		<li Class="ProgressionAgriculture.ScenPart_StartingSeeds" MayRequire="ferny.progressionagriculture">
+			<def>Ferny_StartingSeeds</def>
+			<thingDef>AR_TreeOlive_SeedBundle</thingDef>
+		</li>
+		<li Class="ProgressionAgriculture.ScenPart_StartingSeeds" MayRequire="ferny.progressionagriculture">
+			<def>Ferny_StartingSeeds</def>
+			<thingDef>AR_TreePomegranate_SeedBundle</thingDef>
+		</li>
+		-->
+		
+		<li Class="ProgressionAgriculture.ScenPart_StartingSeeds" MayRequire="ferny.progressionagriculture,sumika.nanohana">
+			<def>Ferny_StartingSeeds</def>
+			<thingDef>nanohana_SeedBundle</thingDef>
+		</li>
+		
+		<li Class="RandomVegetables.ScenPart_RandomSeedBundles" MayRequire="ferny.progressionagriculture">
+			<_itemCount>1</_itemCount>
+			<def>RandomSeedBundles</def>
+		</li>
 
 
         <!-- Game start dialog -->
