@@ -13,6 +13,9 @@
         <li>Custom6</li>
       </linkFlags>
       <shaderType>CutoutComplex</shaderType>
+	  <damageData Inherit="False">
+		<enabled>false</enabled>
+	  </damageData>
     </graphicData>
     <altitudeLayer Inherit="False">MoteOverhead</altitudeLayer>
     <!-- One of the highest Layers, just below Weather, it makes it so that Pawns always walk UNDER it -->

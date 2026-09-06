@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <Patch>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
@@ -143,7 +144,7 @@
             <text>Squabbling in the senate and cutthroat politics left you with distaste for anything regarding the will of the people. You deserve so much more - as your blood is royal and your wreath is golden. You gathered a few of the senators that sided with you and left the comforts of the Republic. It is time you formed your own empire, on your terms, and under your rule.</text>
             <closeSound>GameStartSting</closeSound>
           </li>
-          <li Class="KCSG.ScenPart_AddStartingStructure">
+          <li Class="KCSG.ScenPart_AddStartingStructure" MayRequire="oskarpotocki.vfe.classical">
             <def>VFEC_AddStartingStructure</def>
             <structureLabel>A small camp</structureLabel>
             <nearMapCenter>True</nearMapCenter>
@@ -230,6 +231,7 @@
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
   </Operation>
+  
   <Operation Class="PatchOperationConditional" MayRequire="oskarpotocki.vfe.classical">
     <!-- Dpes this exist? -->
     <xpath MayRequire="oskarpotocki.vfe.classical">/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>

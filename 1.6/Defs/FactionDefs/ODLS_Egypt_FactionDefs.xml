@@ -74,11 +74,12 @@
 		<settlementNameMaker>NamerSettlementKemetic</settlementNameMaker>
 		<fixedLeaderKinds>
 			<li>AR_Pharao</li>
+			<li>TSP_AR_Cleopatra</li>
 		</fixedLeaderKinds>
 		<allowedCultures Inherit="False">
 			<li>Rahism</li>
 		</allowedCultures>
-		<structureMemeWeights>
+		<structureMemeWeights MayRequire="Sarg.AlphaMemes">
 			<AM_Structure_Kemetism MayRequire="Sarg.AlphaMemes">999</AM_Structure_Kemetism>
 		</structureMemeWeights>
 		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
