@@ -204,6 +204,7 @@
       <li>CraftingSpot</li>
       <li>Brewery</li>
       <li MayRequire="mlie.takisrandomstuff">ButcherSpot</li>
+	  <li MayRequire="nemo.wine">WinePress</li>
     </recipeUsers>
   </RecipeDef>
   <!-- cooking -->

@@ -91,6 +91,8 @@
 		<li>sovereign.kemet</li>
 		<li>wpm.jerry</li>
 		<li>dankpyon.medieval.overhaul</li>
+		<li>nemo.wine</li>
+		<li>whitlocktech.winecompat</li>
 	</loadAfter>
 	<incompatibleWith>
 		<li>kirboh.vfe.classical.bronzeispretty</li>

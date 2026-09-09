@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<ReplaceLib.ReplacerDef MayRequire="ferny.replacelib">
+		<defName>TSP_Ferny_VFEM_AR_CuckWineMust</defName>
+		<replacers>
+			<li MayRequire="oskarpotocki.vfe.medieval2,mlie.ancientrimcore">
+				<replace>VFEM2_Must</replace>
+				<with>AR_Mash</with>
+			</li>
+			<li MayRequire="dankpyon.medieval.overhaul,mlie.ancientrimcore">
+				<replace>DankPyon_MustWine</replace>
+				<with>AR_Mash</with>
+			</li>
+		</replacers>
+	</ReplaceLib.ReplacerDef>
+</Defs>
