@@ -180,6 +180,7 @@
 				<li>AR_RawGrapes</li>
 				<li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_RawGrapes</li>
 				<li MayRequire="oskarpotocki.vfe.medieval2">VFEM2_RawGrapes</li>
+				<li MayRequire="dankpyon.medieval.overhaul">DankPyon_RawGrapes</li>
           </thingDefs>
         </filter>
         <count>25</count>
@@ -190,6 +191,7 @@
 			<li>AR_RawGrapes</li>
 			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_RawGrapes</li>
 			<li MayRequire="oskarpotocki.vfe.medieval2">VFEM2_RawGrapes</li>
+			<li MayRequire="dankpyon.medieval.overhaul">DankPyon_RawGrapes</li>
       </thingDefs>
     </fixedIngredientFilter>
 	<defaultIngredientFilter>
