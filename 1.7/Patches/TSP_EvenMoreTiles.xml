@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>Defs/ThingDef[defName="L24_Manto_Chitin"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<success>Always</success>
+			<value>
+				<TerrainDef ParentName="RoundMosaikBase" MayRequire="eltwofour.mantodeanrace">
+					<defName MayRequire="eltwofour.mantodeanrace">TSP_AR_Mantodean_Mosaik_ChitinA</defName>
+					<label MayRequire="eltwofour.mantodeanrace">roundish Mantodean mosaic A</label>
+					<description>Taking a very long time to lay, the mosaic is the most attractive flooring that can be found in a Roman home. It can also be found in any mansion of other civilized peoples. \n \n		
+					Empire Report: \n
+					Nothing says "home sweet home" like walking into one's noble manor and stomping on the floors made out of the ground up bodies of your enemies. By the Emperor, I hate those bugs.</description>
+					<texturePath MayRequire="eltwofour.mantodeanrace">Floors/roundishnegative</texturePath>
+					<color MayRequire="eltwofour.mantodeanrace">(84,98,62)</color>
+					<costList MayRequire="eltwofour.mantodeanrace">
+						<L24_Manto_Chitin MayRequire="eltwofour.mantodeanrace">10</L24_Manto_Chitin>
+					</costList>
+				</TerrainDef>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>Defs/ThingDef[defName="L24_Manto_Carapace"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<success>Always</success>
+			<value>
+				<TerrainDef ParentName="RoundMosaikBase" MayRequire="eltwofour.mantodeanrace">
+					<defName MayRequire="eltwofour.mantodeanrace">TSP_AR_Mantodean_Mosaik_ChitinB</defName>
+					<label MayRequire="eltwofour.mantodeanrace">roundish Mantodean mosaic B</label>
+					<description>Taking a very long time to lay, the mosaic is the most attractive flooring that can be found in a Roman home. It can also be found in any mansion of other civilized peoples. \n \n		
+					Empire Report: \n
+					Nothing says "home sweet home" like walking into one's noble manor and stomping on the floors made out of the ground up bodies of your enemies. By the Emperor, I hate those bugs.</description>
+					<texturePath MayRequire="eltwofour.mantodeanrace">Floors/roundishnegative</texturePath>
+					<color MayRequire="eltwofour.mantodeanrace">(195,210,150)</color>
+					<costList MayRequire="eltwofour.mantodeanrace">
+						<L24_Manto_Carapace MayRequire="eltwofour.mantodeanrace">25</L24_Manto_Carapace>
+					</costList>
+				</TerrainDef>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>Defs/ThingDef[defName="L24_Manto_Propolis"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<success>Always</success>
+			<value>
+				<TerrainDef ParentName="RoundMosaikBase" MayRequire="eltwofour.mantodeanrace">
+					<defName MayRequire="eltwofour.mantodeanrace">TSP_AR_Mantodean_Propolis_ChitinC</defName>
+					<label MayRequire="eltwofour.mantodeanrace">roundish Mantodean mosaic C</label>
+					<description>Taking a very long time to lay, the mosaic is the most attractive flooring that can be found in a Roman home. It can also be found in any mansion of other civilized peoples. \n \n		
+					Empire Report: \n
+					Mantodean propolis-stone is a strong and oddly beautiful material. Nothing says "home sweet home" like walking into one's noble manor and stomping on the plunder you took from your enemies. By the Emperor, I hate those bugs.</description>
+					<texturePath MayRequire="eltwofour.mantodeanrace">Floors/roundishnegative</texturePath>
+					<color MayRequire="eltwofour.mantodeanrace">(110,140,75)</color>
+					<costList MayRequire="eltwofour.mantodeanrace">
+						<L24_Manto_Propolis MayRequire="eltwofour.mantodeanrace">10</L24_Manto_Propolis>
+					</costList>
+				</TerrainDef>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>Defs/ThingDef[defName="BlocksAurelianStone"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<success>Always</success>
+			<value>
+				<TerrainDef ParentName="RoundMosaikBase" MayRequire="pphhyy.gulden">
+					<defName MayRequire="pphhyy.gulden">TSP_AR_PPHHYY_Mosaik_ForestOfGold</defName>
+					<label MayRequire="pphhyy.gulden">roundish Aurelian mosaic</label>
+					<texturePath MayRequire="pphhyy.gulden">Floors/roundishnegative</texturePath>
+					<color MayRequire="pphhyy.gulden">(174,154,118)</color>
+					<costList MayRequire="pphhyy.gulden">
+						<BlocksAurelianStone MayRequire="pphhyy.gulden">20</BlocksAurelianStone>
+					</costList>
+				</TerrainDef>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_BlocksBasalt"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<success>Always</success>
+			<value>
+				<TerrainDef ParentName="RoundMosaikBase" MayRequire="sirmashedpotato.ashlands">
+					<defName MayRequire="sirmashedpotato.ashlands">TSP_AR_MashedForBrains_Mosaik_AshenBasalt</defName>
+					<label MayRequire="sirmashedpotato.ashlands">roundish ashen basalt mosaic</label>
+					<texturePath MayRequire="sirmashedpotato.ashlands">Floors/roundishnegative</texturePath>
+					<color MayRequire="sirmashedpotato.ashlands">(106,104,105)</color>
+					<costList MayRequire="sirmashedpotato.ashlands">
+						<Mashed_Ashlands_BlocksBasalt MayRequire="sirmashedpotato.ashlands">15</Mashed_Ashlands_BlocksBasalt>
+					</costList>
+				</TerrainDef>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>Defs/ThingDef[defName="Asbestos_Tile"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<success>Always</success>
+			<value>
+				<TerrainDef ParentName="RoundMosaikBase" MayRequire="TSP.Isengriff.Storytime">
+					<defName MayRequire="TSP.Isengriff.Storytime">TSP_AR_Mesothelioma_Mosaik</defName>
+					<label MayRequire="TSP.Isengriff.Storytime">roundish asbestine mosaic</label>
+					<texturePath MayRequire="TSP.Isengriff.Storytime">Floors/roundishnegative</texturePath>
+					<color MayRequire="TSP.Isengriff.Storytime" Inherit="False">(145,157,118)</color>
+					<costList MayRequire="TSP.Isengriff.Storytime">
+						<Asbestos_Tile MayRequire="TSP.Isengriff.Storytime">10</Asbestos_Tile>
+					</costList>
+				</TerrainDef>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional" MayRequire="oskarpotocki.vfe.classical">
+	<!-- Does this exist? -->
+		<xpath MayRequire="oskarpotocki.vfe.classical">/Defs/ThingDef[defName="VFEC_BlocksConcrete"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd" MayRequire="oskarpotocki.vfe.classical">
+			<xpath MayRequire="oskarpotocki.vfe.classical">/Defs</xpath>
+			<success MayRequire="oskarpotocki.vfe.classical">Always</success>
+			<value MayRequire="oskarpotocki.vfe.classical">
+				<TerrainDef ParentName="RoundMosaikBase" MayRequire="oskarpotocki.vfe.classical">
+					<defName MayRequire="oskarpotocki.vfe.classical">TSP_AR_VFE_Mosaik_BloatConcrete</defName>
+					<label MayRequire="oskarpotocki.vfe.classical">roundish concrete mosaic</label>
+					<texturePath MayRequire="oskarpotocki.vfe.classical">Floors/roundishnegative</texturePath>
+					<color MayRequire="oskarpotocki.vfe.classical">(84,84,76)</color>
+					<costList MayRequire="oskarpotocki.vfe.classical">
+						<VFEC_BlocksConcrete MayRequire="oskarpotocki.vfe.classical">5</VFEC_BlocksConcrete>
+					</costList>
+				</TerrainDef>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+</Patch>

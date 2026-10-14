@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<RulePackDef>
+		<defName>ArtDescription_TSP_AR_JerryArt_Description_Master</defName>
+		<include>
+			<li>GlobalUtility</li>
+			<li>ArtDescriptionUtility_Global</li>
+			<li>NamerPersonEgypt</li>
+			<li>NamerSettlementEgypt</li>
+			<li>NamerFactionEgypt</li>
+			<li>TalelessImages</li>
+			<li>NamerFactionEgyptReference</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>JerryGifts->[Vegetable]s</li>
+				<li>JerryGifts->[Color] [Vegetable]s</li>
+				<li>JerryGifts->[Gore] of a [AnimalGroup] of [Animal]s</li>
+				<li>JerryGifts->fattened [Animal]s</li>
+				<li>JerryGifts->[TreeType] logs</li>
+				<li>JerryGifts->score pads depicting [Game]</li>
+				<li>JerryGifts->[Weapons]</li>
+				<li>JerryGifts->[Apparel]</li>
+				<li>JerryGifts->[Animal]'s [Gore]</li>
+				<li>JerryGifts->shells of a [PersonJob]'s turtle</li>
+				<li>JerryGifts->dilapidated [Mechanoid]s</li>
+				<li>JerryGifts->sculptures shaped like [Shape]s</li>
+				<li>JerryGifts->statues of Pharaoh Jerry</li>
+				<li>JerryColonyNeutralOrGood->[AdjectiveFriendly] [Community]</li>
+				<li>JerryColonyNeutralOrGood->[AdjectiveNeutral] [Community]</li>
+				<li>JerryWinsBattle->dunking on of</li>
+				<li>JerryWinsBattle->routing [Trans]</li>
+				<li>JerryWinsBattle->curb stomp [Trans]</li>
+				<li>JerryWinsBattle->ROFL-stomp [Trans]</li>
+				<li>JerryWinsBattle(p=2)->defeat of</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>NamesEgypt</keyword>
+					<path>Words/Foreign/NamesEgypt</path>
+				</li>
+			</rulesRaw>
+			<rulesFiles></rulesFiles>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>ArtDescription_TSP_AR_JerryArt_SOV</defName>
+		<include>
+			<li>ArtDescription_TSP_AR_JerryArt_Description_Master</li>
+			<li>NamerPersonEgypt</li>
+			<li>NamerSettlementEgypt</li>
+			<li>NamerFactionEgypt</li>
+			<li>TalelessImages</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_art_description->This Kemetic monolith is a Monument of the Ancients inspired by [NamerFactionEgypt] art. It is a [artstyle_adj] [depiction] of the [AdjectiveFriendly] Pharaoh Jerry and the ancestors of the [AdjectiveFriendly] [Community]. Together, they are offering up [Quantity_adjphrase] [JerryGifts] as gifts to the [AdjectiveAny] deities of Jerry's [ConceptPositive]. [artconjunction] [subimageplural] are watching the ritual in the background. The descendents of this [JerryColonyNeutralOrGood] must have forgotten this until now. They should probably start remembering!</li>
+				<li>physical_description_root->[r_art_description]</li>
+				<li>context_sentence->Jerry!!</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>ArtDescription_TSP_AR_JerryArt_WES</defName>
+		<include>
+			<li>ArtDescription_TSP_AR_JerryArt_Description_Master</li>
+			<li>NamerPersonEgypt</li>
+			<li>NamerSettlementEgypt</li>
+			<li>NamerFactionEgypt</li>
+			<li>TalelessImages</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_art_description->This Monument of the Defeat of the Hateful draws from the artistic heritage of [NamerFactionEgypt]. It is a [artstyle_adj] [depiction] of the [AdjectiveFriendly] Pharaoh Jerry and the ancestors of the [AdjectiveFriendly] [Community] in a great battle against a common foe. Shown advancing and in command, Jerry is [emotional_expression] alongside his charging soldiers. Specifically, this monolith describes a [AdjectiveBadass] [JerryWinsBattle] a [AdjectiveLarge], [AdjectiveAngsty] [Community] of [Quantity_adjphrase] [Enemy]s of this colony. The two sides [symbolizes] Jerry's sovereingty and [ConceptPositive] regardless of the battle's outcome. [side_position], multiple [Character]s who were allied with the losing [Community] are impaled on [TreeType]s. [side_position] [AnimalGroup] of [Animal]s is feasting on the [Gore] of the men of the losing [Community]. This battle apparently took place on a [TerrainFeature] ages ago and was fought primarily using [Weapon]s. [artconjunction] Jerry's eyes are [composition] and burning with a [AdjectiveBadass] expression of [ConceptAny].</li>
+				<li>physical_description_root->[r_art_description]</li>
+				<li>context_sentence->Jerry!!</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>ArtDescription_TSP_AR_JerryArt_FLAME</defName>
+		<include>
+			<li>ArtDescription_TSP_AR_JerryArt_Description_Master</li>
+			<li>NamerPersonEgypt</li>
+			<li>NamerSettlementEgypt</li>
+			<li>NamerFactionEgypt</li>
+			<li>TalelessImages</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_art_description->This is a Statue of Jerry of the Flame based on the artistic heritage of [NamerFactionEgypt]. It depicts Pharaoh Jerry [desc_pawn] amidst a [AdjectiveBadass], great conflagration. The [AdjectiveLarge] fire is described as [Color] and [symbolizes] [ConceptAny], illustrating Jerry's approach to [TalkTopicAny]. [side_position], a [Community] of [Character]s, part of Jerry's [PersonAlly]s, is assuming a [Shape] formation to put out the flames, led by one of Jerry's servants, [NamesEgypt] [NamesEgypt], who [idles] at a vantage point. [artconjunction] the overall [depiction] is designed so that [style_clause].</li>
+				<li>physical_description_root->[r_art_description]</li>
+				<li>context_sentence->Jerry!!</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>

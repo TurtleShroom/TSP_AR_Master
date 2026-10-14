@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+	  <!--Obelisk new-->
+	  
+	   <ThingDef ParentName="ObeliskSAM_Jerry_NormalArt">
+		<defName>SAM_ObeliskBig</defName>
+		<label>rectangular Egyptian obelisk</label>
+		<description>A monolithic, rectangular pillar that has strange symbols on it.</description>
+		<graphicData>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <texPath>Things/Building/Obelisk/ObeliskBigB</texPath>
+		  <drawSize>(9,9)</drawSize>
+		  <drawOffset>(0,0,2)</drawOffset>
+		</graphicData>
+		<size>(2,3)</size>
+		<statBases>
+		  <MaxHitPoints>350</MaxHitPoints>
+		  <Beauty>100</Beauty>
+		  <Mass>800</Mass>
+		  <WorkToMake>5000</WorkToMake>
+		  <Flammability>0</Flammability>
+		</statBases>
+		<costStuffCount>80</costStuffCount>
+	</ThingDef>
+	  
+	<ThingDef ParentName="ObeliskSAM_Jerry_NormalArt">
+		<defName>SAM_ObeliskBig_SpouterOfWater</defName>
+		<label>strange Egyptian obelisk</label>
+		<description>A monolithic, rectangular pillar that has strange symbols on it. Viewers get a suspicious feeling that they are being insulted by its writings when they stare at it long enough.</description>
+		<graphicData>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <texPath>Things/Building/Obelisk/ObeliskBigD</texPath>
+		  <drawSize>(9,9)</drawSize>
+		  <drawOffset>(0,0,2)</drawOffset>
+		</graphicData>
+		<size>(2,2)</size>
+		<statBases>
+		  <MaxHitPoints>350</MaxHitPoints>
+		  <Beauty>100</Beauty>
+		  <Mass>80</Mass>
+		  <WorkToMake>5000</WorkToMake>
+		  <Flammability>0</Flammability>
+		</statBases>
+		<costStuffCount>80</costStuffCount>
+	</ThingDef>
+  
+     <ThingDef ParentName="ObeliskSAM_Jerry_NormalArt">
+		<defName>Sam_Monolith</defName>
+		<label>Monolith of the Royal Beasts</label>
+		<description>A monolith carved with hieroglyphics that describe forgotten events of the past.</description>
+		<graphicData>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <texPath>Things/Building/Obelisk/CatRaptor</texPath>
+		  <drawSize>(5,5)</drawSize>
+		</graphicData>
+		<size>(4,4)</size>
+		<statBases>
+		  <MaxHitPoints>500</MaxHitPoints>
+		  <Beauty>200</Beauty>
+		  <Mass>300</Mass>
+		  <WorkToMake>9000</WorkToMake>
+		  <Flammability>0</Flammability>
+		</statBases>
+		<costStuffCount>300</costStuffCount>
+		<comps></comps>
+	</ThingDef>
+	
+    <ThingDef ParentName="ObeliskSAM_Jerry">
+		<defName>Jerry_statue_small</defName>
+		<label>Jerry of the Flame statue</label>
+		<description>A cute statue of a physically stunning Egyptian Pharaoh, apparently named Jerry.</description>
+		<graphicData>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <texPath>Things/Building/Obelisk/Jerry</texPath>
+		  <drawSize>(2,2)</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<statBases>
+		  <MaxHitPoints>500</MaxHitPoints>
+		  <Beauty>200</Beauty>
+		  <Mass>300</Mass>
+		  <WorkToMake>9000</WorkToMake>
+		  <Flammability>0</Flammability>
+		</statBases>
+		<costStuffCount>100</costStuffCount>
+		<comps>
+			<li Class="CompProperties_Art" Inherit="False">
+				<nameMaker>NamerArtSculpture</nameMaker>
+				<descriptionMaker>ArtDescription_TSP_AR_JerryArt_FLAME</descriptionMaker>
+				<canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+				<minQualityForArtistic>Awful</minQualityForArtistic>
+			</li>
+		</comps>
+	</ThingDef>
+  
+	<ThingDef ParentName="ObeliskSAM_Jerry">
+		<defName>Jerry_statue_big</defName>
+		<label>Pharaoh Jerry relief</label>
+		<description>A cute, man-sized statue of a physically stunning Pharaoh deity, apparently named Jerry.</description>
+		<graphicData>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <texPath>Things/Building/Obelisk/Jerry</texPath>
+		  <drawSize>(5,5)</drawSize>
+		</graphicData>
+		<size>(4,4)</size>
+		<statBases>
+		  <MaxHitPoints>500</MaxHitPoints>
+		  <Beauty>200</Beauty>
+		  <Mass>300</Mass>
+		  <WorkToMake>9000</WorkToMake>
+		  <Flammability>0</Flammability>
+		</statBases>
+		<costStuffCount>100</costStuffCount>
+			<comps>
+				<li Class="CompProperties_Art" Inherit="False">
+					<nameMaker>NamerArtSculpture</nameMaker>
+					<descriptionMaker>ArtDescription_TSP_AR_JerryArt_FLAME</descriptionMaker>
+					<canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+					<minQualityForArtistic>Awful</minQualityForArtistic>
+				</li>
+			</comps>
+	</ThingDef>
+  
+  
+       <ThingDef ParentName="ObeliskSAM_Jerry">
+			<defName>Sov_Monolith</defName>
+			<label>Monolith of the Ancients</label>
+			<description>A monolith that describes how Jerry gave many gifts to this colony's gods, long before this colony existed. The descendents of this great colony must have forgotten this until now. They should probably start remembering.</description>
+			<graphicData>
+			  <graphicClass>Graphic_Single</graphicClass>
+			  <texPath>Things/Building/Obelisk/Sov</texPath>
+			  <drawSize>(5,5)</drawSize>
+			</graphicData>
+			<size>(4,4)</size>
+			<statBases>
+			  <MaxHitPoints>500</MaxHitPoints>
+			  <Beauty>200</Beauty>
+			  <Mass>300</Mass>
+			  <WorkToMake>9000</WorkToMake>
+			  <Flammability>0</Flammability>
+			</statBases>
+			<costStuffCount>300</costStuffCount>
+			<comps>
+				<li Class="CompProperties_Art" Inherit="False">
+					<nameMaker>NamerArtSarcophagusPlate</nameMaker>
+					<descriptionMaker>ArtDescription_TSP_AR_JerryArt_SOV</descriptionMaker>
+					<canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+					<minQualityForArtistic>Awful</minQualityForArtistic>
+				</li>
+			</comps>
+		</ThingDef>
+  
+  
+         <ThingDef ParentName="ObeliskSAM_Jerry">
+			<defName>wes_Monolith</defName>
+			<label>Monolith of the Defeat of the Hateful</label>
+			<description>Revenge was taken and justice archived. This monolith describes a glorious defeat of an enemy of this colony.</description>
+			<graphicData>
+			  <graphicClass>Graphic_Single</graphicClass>
+			  <texPath>Things/Building/Obelisk/Wes</texPath>
+			  <drawSize>(5,5)</drawSize>
+			</graphicData>
+			<size>(4,4)</size>
+			<statBases>
+			  <MaxHitPoints>500</MaxHitPoints>
+			  <Beauty>200</Beauty>
+			  <Mass>300</Mass>
+			  <WorkToMake>9000</WorkToMake>
+			  <Flammability>0</Flammability>
+			</statBases>
+			<costStuffCount>300</costStuffCount>
+			<comps>
+				<li Class="CompProperties_Art" Inherit="False">
+					<nameMaker>NamerArtWeapon</nameMaker>
+					<descriptionMaker>ArtDescription_TSP_AR_JerryArt_WES</descriptionMaker>
+					<canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+					<minQualityForArtistic>Awful</minQualityForArtistic>
+				</li>
+			</comps>
+		</ThingDef>
+</Defs>

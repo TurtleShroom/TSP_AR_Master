@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+<HairDef>
+    <label>Caesar</label>
+    <styleGender>Male</styleGender>
+    <texPath>Things/Pawn/Humanlike/Hair/Caesar</texPath>
+	<category>Rural</category>
+    <defName>Roman_Hair_Caesar</defName>
+		<styleTags>
+			<li>Rural</li>
+		</styleTags>
+  </HairDef>
+  
+  <HairDef>
+    <label>Scipio</label>
+    <styleGender>Male</styleGender>
+    <texPath>Things/Pawn/Humanlike/Hair/Scipio</texPath>
+	<category>Rural</category>
+    <defName>Roman_Hair_Scipio</defName>
+		<styleTags>
+			<li>Rural</li>
+		</styleTags>
+  </HairDef>
+
+  <HairDef>
+    <label>Carthage</label>
+    <styleGender>Male</styleGender>
+    <texPath>Things/Pawn/Humanlike/Hair/Carthage</texPath>
+	<category>Rural</category>
+    <defName>Roman_Hair_Carthage</defName>
+		<styleTags>
+			<li>Rural</li>
+		</styleTags>
+  </HairDef>
+
+  <HairDef>
+    <label>Cleopatra</label>
+    <styleGender>Female</styleGender>
+    <texPath>Things/Pawn/Humanlike/Hair/Cleopatra</texPath>
+	<category>Rural</category>
+    <defName>Roman_Hair_Cleopatra</defName>
+		<styleTags>
+			<li>Rural</li>
+		</styleTags>
+  </HairDef>
+  
+    <HairDef>
+    <label>Helena</label>
+    <styleGender>Female</styleGender>
+    <texPath>Things/Pawn/Humanlike/Hair/Helena</texPath>
+	<category>Rural</category>
+    <defName>Roman_Hair_Helena</defName>
+		<styleTags>
+			<li>Rural</li>
+		</styleTags>
+  </HairDef>
+</Defs>

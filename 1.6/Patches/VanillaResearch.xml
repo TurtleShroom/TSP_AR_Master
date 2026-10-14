@@ -107,4 +107,48 @@
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. -->
 	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<!-- Does this exist? -->
+		<xpath>Defs/ResearchProjectDef[defName="Electricity"]/prerequisites</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ResearchProjectDef[defName="Electricity"]/prerequisites</xpath>
+			<value>
+				<li MayRequire="mlie.ancientrimcore">AR_Project_Metal_II</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="BasicMechtech"]/prerequisites</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName="BasicMechtech"]</xpath>
+			<success>Always</success>
+			<value>
+				<prerequisites></prerequisites>
+			</value>
+		</nomatch>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<!-- Does this exist? -->
+		<xpath>Defs/ResearchProjectDef[defName="BasicMechtech"]/prerequisites</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>Defs/ResearchProjectDef[defName="BasicMechtech"]/prerequisites</xpath>
+			<value>
+				<prerequisites>
+					<li MayRequire="mlie.ancientrimcore">AR_Project_Metal_II</li>
+					<li>Electricity</li>
+					<li>Machining</li>
+				</prerequisites>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
 </Patch>

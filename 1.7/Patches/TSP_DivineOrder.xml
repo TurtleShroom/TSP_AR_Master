@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+	<!-- Armor Body -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="BotchJob_DivineOrderPlateArmor"]/recipeMaker/researchPrerequisite</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BotchJob_DivineOrderPlateArmor"]/recipeMaker/researchPrerequisite</xpath>
+			<success>Always</success>
+			<value>
+				<researchPrerequisites>
+					<li>BotchJob_DivineOrderSmithing</li>
+					<li>AR_Project_Segmental_Armour</li>
+				</researchPrerequisites>
+			</value>
+		</match>
+	</Operation>
+				
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="BotchJob_DivineOrderBreastplate"]/recipeMaker/researchPrerequisite</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BotchJob_DivineOrderBreastplate"]/recipeMaker/researchPrerequisite</xpath>
+			<success>Always</success>
+			<value>
+				<researchPrerequisites>
+					<li>BotchJob_DivineOrderSmithing</li>
+					<li>AR_Project_Segmental_Armour</li>
+				</researchPrerequisites>
+			</value>
+		</match>
+	</Operation>
+	
+	<!-- Leather+Metal Armor -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="BotchJob_DivineOrderCowledHelmet"]/recipeMaker/researchPrerequisite</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BotchJob_DivineOrderCowledHelmet"]/recipeMaker/researchPrerequisite</xpath>
+			<success>Always</success>
+			<value>
+				<researchPrerequisites>
+					<li>BotchJob_DivineOrderSmithing</li>
+				</researchPrerequisites>
+			</value>
+		</match>
+	</Operation>
+				
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="BotchJob_DivineOrderSkirmisherArmor"]/recipeMaker/researchPrerequisite</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BotchJob_DivineOrderSkirmisherArmor"]/recipeMaker/researchPrerequisite</xpath>
+			<success>Always</success>
+			<value>
+				<researchPrerequisites>
+					<li>BotchJob_DivineOrderSmithing</li>
+				</researchPrerequisites>
+			</value>
+		</match>
+	</Operation>
+				
+	<!-- Crusader -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="BotchJob_CrusaderHelmet"]/recipeMaker/researchPrerequisite</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BotchJob_CrusaderHelmet"]/recipeMaker/researchPrerequisite</xpath>
+			<success>Always</success>
+			<value>
+				<researchPrerequisites>
+					<li>BotchJob_DivineOrderEliteArmor</li>
+					<li>PlateArmor</li>
+				</researchPrerequisites>
+			</value>
+		</match>
+	</Operation>
+				
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="BotchJob_CrusaderArmor"]/recipeMaker/researchPrerequisite</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BotchJob_CrusaderArmor"]/recipeMaker/researchPrerequisite</xpath>
+			<success>Always</success>
+			<value>
+				<researchPrerequisites>
+					<li>BotchJob_DivineOrderEliteArmor</li>
+					<li>PlateArmor</li>
+				</researchPrerequisites>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="BotchJob_DivineOrderEliteArmor"]/prerequisites</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName="BotchJob_DivineOrderEliteArmor"]/prerequisites</xpath>
+			<success>Always</success>
+			<value>
+				<li>AR_Project_Segmental_Armour</li>
+			</value>
+		</match>
+	</Operation>
+</Patch>
