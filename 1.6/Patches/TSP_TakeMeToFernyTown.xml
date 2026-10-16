@@ -10,7 +10,7 @@
 			<value>
 				<RecipeDef MayRequire="ferny.progressionagriculture">
 					<defName>TSP_Ferny_AR_SeedGeneration</defName>
-					<label>acquire specialist seed pods</label>
+					<label>acquire Mediterranean seed pods</label>
 					<description>We have the Research, now it's time for the seeds! LET'S FREAKING GOOOOOO!!!</description>
 					<jobString>generating specialist seed pods</jobString>
 					<workAmount>175</workAmount>

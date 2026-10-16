@@ -210,14 +210,18 @@
 			<def>Ferny_StartingSeeds</def>
 			<thingDef>AR_PlantGrape_SeedBundle</thingDef>
 		</li>
+		<!--
 		<li Class="ProgressionAgriculture.ScenPart_StartingSeeds" MayRequire="ferny.progressionagriculture">
 			<def>Ferny_StartingSeeds</def>
 			<thingDef>AR_TreeOlive_SeedBundle</thingDef>
 		</li>
+		-->
+		<!--
 		<li Class="ProgressionAgriculture.ScenPart_StartingSeeds" MayRequire="ferny.progressionagriculture">
 			<def>Ferny_StartingSeeds</def>
 			<thingDef>AR_TreePomegranate_SeedBundle</thingDef>
 		</li>
+		-->
 		<li Class="ProgressionAgriculture.ScenPart_StartingSeeds" MayRequire="ferny.progressionagriculture,sumika.nanohana">
 			<def>Ferny_StartingSeeds</def>
 			<thingDef>nanohana_SeedBundle</thingDef>
@@ -486,14 +490,18 @@ AVE CAESAR!
 				<def>Ferny_StartingSeeds</def>
 				<thingDef>AR_PlantGrape_SeedBundle</thingDef>
 			</li>
+			<!--
 			<li Class="ProgressionAgriculture.ScenPart_StartingSeeds" MayRequire="ferny.progressionagriculture">
 				<def>Ferny_StartingSeeds</def>
 				<thingDef>AR_TreeOlive_SeedBundle</thingDef>
 			</li>
+			-->
+			<!--
 			<li Class="ProgressionAgriculture.ScenPart_StartingSeeds" MayRequire="ferny.progressionagriculture">
 				<def>Ferny_StartingSeeds</def>
 				<thingDef>AR_TreePomegranate_SeedBundle</thingDef>
 			</li>
+			-->
 			<li Class="ProgressionAgriculture.ScenPart_StartingSeeds" MayRequire="ferny.progressionagriculture,sumika.nanohana">
 				<def>Ferny_StartingSeeds</def>
 				<thingDef>nanohana_SeedBundle</thingDef>
