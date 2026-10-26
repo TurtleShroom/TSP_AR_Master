@@ -1,0 +1,1239 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>Defs/ThingDef[defName="AR_Lance"]</xpath>
+		<!-- If it does, LET'S FASTING GOOOOOOOO!! -->
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="BA_BasicPolearms"]</xpath>
+					<value>
+						<li>AR_Project_Polearms</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>Defs/RecipeDef/researchPrerequisites/li[text()="BA_BasicPolearms"]</xpath>
+					<value>
+						<li>AR_Project_Polearms</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/researchPrerequisites/li[text()="BA_BasicPolearms"]</xpath>
+					<value>
+						<li>AR_Project_Polearms</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>Defs/TerrainDef/researchPrerequisites/li[text()="BA_BasicPolearms"]</xpath>
+					<value>
+						<li>AR_Project_Polearms</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ResearchProjectDef/prerequisites/li[text()="BA_BasicPolearms"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ResearchProjectDef/hiddenPrerequisites/li[text()="BA_BasicPolearms"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/researchPrerequisites/li[text()="BA_BasicPolearms"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="BA_BasicPolearms"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/RecipeDef/researchPrerequisites/li[text()="BA_BasicPolearms"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/TerrainDef/researchPrerequisites/li[text()="BA_BasicPolearms"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ResearchProjectDef/hiddenPrerequisites/li[text()="BA_BasicPolearms"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[researchPrerequisite="BA_BasicPolearms"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>AR_Project_Polearms</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/recipeMaker[researchPrerequisite="BA_BasicPolearms"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>AR_Project_Polearms</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/TerrainDef[researchPrerequisite="BA_BasicPolearms"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>AR_Project_Polearms</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="BA_MilitaryPolearms"]</xpath>
+					<value>
+						<li>AR_Project_Polearms</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>Defs/RecipeDef/researchPrerequisites/li[text()="BA_MilitaryPolearms"]</xpath>
+					<value>
+						<li>AR_Project_Polearms</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/researchPrerequisites/li[text()="BA_MilitaryPolearms"]</xpath>
+					<value>
+						<li>AR_Project_Polearms</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>Defs/TerrainDef/researchPrerequisites/li[text()="BA_MilitaryPolearms"]</xpath>
+					<value>
+						<li>AR_Project_Polearms</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ResearchProjectDef/prerequisites/li[text()="BA_MilitaryPolearms"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ResearchProjectDef/hiddenPrerequisites/li[text()="BA_MilitaryPolearms"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/researchPrerequisites/li[text()="BA_MilitaryPolearms"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="BA_MilitaryPolearms"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/RecipeDef/researchPrerequisites/li[text()="BA_MilitaryPolearms"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/TerrainDef/researchPrerequisites/li[text()="BA_MilitaryPolearms"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[researchPrerequisite="BA_MilitaryPolearms"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>AR_Project_Polearms</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/recipeMaker[researchPrerequisite="BA_MilitaryPolearms"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>AR_Project_Polearms</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/TerrainDef[researchPrerequisite="BA_MilitaryPolearms"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>AR_Project_Polearms</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="BA_NoblePolearms"]</xpath>
+					<value>
+						<li>AR_Project_Polearms</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>Defs/RecipeDef/researchPrerequisites/li[text()="BA_NoblePolearms"]</xpath>
+					<value>
+						<li>AR_Project_Polearms</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/researchPrerequisites/li[text()="BA_NoblePolearms"]</xpath>
+					<value>
+						<li>AR_Project_Polearms</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>Defs/TerrainDef/researchPrerequisites/li[text()="BA_NoblePolearms"]</xpath>
+					<value>
+						<li>AR_Project_Polearms</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ResearchProjectDef/prerequisites/li[text()="BA_NoblePolearms"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ResearchProjectDef/hiddenPrerequisites/li[text()="BA_NoblePolearms"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/researchPrerequisites/li[text()="BA_NoblePolearms"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="BA_NoblePolearms"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/RecipeDef/researchPrerequisites/li[text()="BA_NoblePolearms"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/TerrainDef/researchPrerequisites/li[text()="BA_NoblePolearms"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[researchPrerequisite="BA_NoblePolearms"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>AR_Project_Polearms</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/recipeMaker[researchPrerequisite="BA_NoblePolearms"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>AR_Project_Polearms</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/TerrainDef[researchPrerequisite="BA_NoblePolearms"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>AR_Project_Polearms</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ResearchProjectDef[defName="BA_BasicPolearms"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ResearchProjectDef[defName="BA_MilitaryPolearms"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ResearchProjectDef[defName="BA_NoblePolearms"]</xpath>
+				</li>
+			</operations>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>Defs/ThingDef[defName="AR_Lance"]</xpath>
+		<!-- If it does, LET'S FASTING GOOOOOOOO!! -->
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="BA_ChainArmor"]</xpath>
+					<value>
+						<li>AR_Project_Chainmail</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>Defs/RecipeDef/researchPrerequisites/li[text()="BA_ChainArmor"]</xpath>
+					<value>
+						<li>AR_Project_Chainmail</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/researchPrerequisites/li[text()="BA_ChainArmor"]</xpath>
+					<value>
+						<li>AR_Project_Chainmail</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>Defs/TerrainDef/researchPrerequisites/li[text()="BA_ChainArmor"]</xpath>
+					<value>
+						<li>AR_Project_Chainmail</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ResearchProjectDef/prerequisites/li[text()="BA_ChainArmor"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ResearchProjectDef/hiddenPrerequisites/li[text()="BA_ChainArmor"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/researchPrerequisites/li[text()="BA_ChainArmor"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="BA_ChainArmor"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/RecipeDef/researchPrerequisites/li[text()="BA_ChainArmor"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/TerrainDef/researchPrerequisites/li[text()="BA_ChainArmor"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[researchPrerequisite="BA_ChainArmor"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>AR_Project_Chainmail</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/recipeMaker[researchPrerequisite="BA_ChainArmor"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>AR_Project_Chainmail</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/TerrainDef[researchPrerequisite="BA_ChainArmor"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>AR_Project_Chainmail</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ResearchProjectDef[defName="BA_ChainArmor"]</xpath>
+				</li>
+			</operations>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>Defs/ThingDef[defName="AR_Lance"]</xpath>
+		<!-- If it does, LET'S FASTING GOOOOOOOO!! -->
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="BA_Crossbow"]</xpath>
+					<value>
+						<li>AR_Project_Mechanical_Weapons</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>Defs/RecipeDef/researchPrerequisites/li[text()="BA_Crossbow"]</xpath>
+					<value>
+						<li>AR_Project_Mechanical_Weapons</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/researchPrerequisites/li[text()="BA_Crossbow"]</xpath>
+					<value>
+						<li>AR_Project_Mechanical_Weapons</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>Defs/TerrainDef/researchPrerequisites/li[text()="BA_Crossbow"]</xpath>
+					<value>
+						<li>AR_Project_Mechanical_Weapons</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ResearchProjectDef/prerequisites/li[text()="BA_Crossbow"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ResearchProjectDef/hiddenPrerequisites/li[text()="BA_Crossbow"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/researchPrerequisites/li[text()="BA_Crossbow"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="BA_Crossbow"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/RecipeDef/researchPrerequisites/li[text()="BA_Crossbow"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/TerrainDef/researchPrerequisites/li[text()="BA_Crossbow"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[researchPrerequisite="BA_Crossbow"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>AR_Project_Mechanical_Weapons</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/recipeMaker[researchPrerequisite="BA_Crossbow"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>AR_Project_Mechanical_Weapons</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/TerrainDef[researchPrerequisite="BA_Crossbow"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>AR_Project_Mechanical_Weapons</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="BA_HeavyCrossbow"]</xpath>
+					<value>
+						<li>AR_Project_Ballistae</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>Defs/RecipeDef/researchPrerequisites/li[text()="BA_HeavyCrossbow"]</xpath>
+					<value>
+						<li>AR_Project_Ballistae</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/researchPrerequisites/li[text()="BA_HeavyCrossbow"]</xpath>
+					<value>
+						<li>AR_Project_Ballistae</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>Defs/TerrainDef/researchPrerequisites/li[text()="BA_HeavyCrossbow"]</xpath>
+					<value>
+						<li>AR_Project_Ballistae</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ResearchProjectDef/prerequisites/li[text()="BA_HeavyCrossbow"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ResearchProjectDef/hiddenPrerequisites/li[text()="BA_HeavyCrossbow"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/researchPrerequisites/li[text()="BA_HeavyCrossbow"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="BA_HeavyCrossbow"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/RecipeDef/researchPrerequisites/li[text()="BA_HeavyCrossbow"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/TerrainDef/researchPrerequisites/li[text()="BA_HeavyCrossbow"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[researchPrerequisite="BA_HeavyCrossbow"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>AR_Project_Ballistae</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/recipeMaker[researchPrerequisite="BA_HeavyCrossbow"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>AR_Project_Ballistae</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/TerrainDef[researchPrerequisite="BA_HeavyCrossbow"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>AR_Project_Ballistae</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ResearchProjectDef[defName="BA_Crossbow"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ResearchProjectDef[defName="BA_HeavyCrossbow"]</xpath>
+				</li>
+			</operations>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>Defs/ResearchProjectDef[defName="LongBlades"]</xpath>
+		<!-- If it does, LET'S FASTING GOOOOOOOO!! -->
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="BA_BasicBlades"]</xpath>
+					<value>
+						<li>LongBlades</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>Defs/RecipeDef/researchPrerequisites/li[text()="BA_BasicBlades"]</xpath>
+					<value>
+						<li>LongBlades</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/researchPrerequisites/li[text()="BA_BasicBlades"]</xpath>
+					<value>
+						<li>LongBlades</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>Defs/TerrainDef/researchPrerequisites/li[text()="BA_BasicBlades"]</xpath>
+					<value>
+						<li>LongBlades</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ResearchProjectDef/prerequisites/li[text()="BA_BasicBlades"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ResearchProjectDef/hiddenPrerequisites/li[text()="BA_BasicBlades"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/researchPrerequisites/li[text()="BA_BasicBlades"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="BA_BasicBlades"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/RecipeDef/researchPrerequisites/li[text()="BA_BasicBlades"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/TerrainDef/researchPrerequisites/li[text()="BA_BasicBlades"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[researchPrerequisite="BA_BasicBlades"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>LongBlades</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/recipeMaker[researchPrerequisite="BA_BasicBlades"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>LongBlades</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/TerrainDef[researchPrerequisite="BA_BasicBlades"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>LongBlades</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ResearchProjectDef[defName="BA_BasicBlades"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="BA_MilitaryBlades"]</xpath>
+					<value>
+						<li>LongBlades</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>Defs/RecipeDef/researchPrerequisites/li[text()="BA_MilitaryBlades"]</xpath>
+					<value>
+						<li>LongBlades</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/researchPrerequisites/li[text()="BA_MilitaryBlades"]</xpath>
+					<value>
+						<li>LongBlades</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>Defs/TerrainDef/researchPrerequisites/li[text()="BA_MilitaryBlades"]</xpath>
+					<value>
+						<li>LongBlades</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ResearchProjectDef/prerequisites/li[text()="BA_MilitaryBlades"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ResearchProjectDef/hiddenPrerequisites/li[text()="BA_MilitaryBlades"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/researchPrerequisites/li[text()="BA_MilitaryBlades"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="BA_MilitaryBlades"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/RecipeDef/researchPrerequisites/li[text()="BA_MilitaryBlades"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/TerrainDef/researchPrerequisites/li[text()="BA_MilitaryBlades"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[researchPrerequisite="BA_MilitaryBlades"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>LongBlades</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/recipeMaker[researchPrerequisite="BA_MilitaryBlades"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>LongBlades</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/TerrainDef[researchPrerequisite="BA_MilitaryBlades"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>LongBlades</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ResearchProjectDef[defName="BA_MilitaryBlades"]</xpath>
+				</li>
+			</operations>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>Defs/ResearchProjectDef[defName="LongBlades"]</xpath>
+		<!-- If it does, LET'S FASTING GOOOOOOOO!! -->
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="BA_BasicMaces"]</xpath>
+					<value>
+						<li>LongBlades</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>Defs/RecipeDef/researchPrerequisites/li[text()="BA_BasicMaces"]</xpath>
+					<value>
+						<li>LongBlades</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/researchPrerequisites/li[text()="BA_BasicMaces"]</xpath>
+					<value>
+						<li>LongBlades</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>Defs/TerrainDef/researchPrerequisites/li[text()="BA_BasicMaces"]</xpath>
+					<value>
+						<li>LongBlades</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ResearchProjectDef/prerequisites/li[text()="BA_BasicMaces"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ResearchProjectDef/hiddenPrerequisites/li[text()="BA_BasicMaces"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/researchPrerequisites/li[text()="BA_BasicMaces"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="BA_BasicMaces"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/RecipeDef/researchPrerequisites/li[text()="BA_BasicMaces"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/TerrainDef/researchPrerequisites/li[text()="BA_BasicMaces"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[researchPrerequisite="BA_BasicMaces"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>LongBlades</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/recipeMaker[researchPrerequisite="BA_BasicMaces"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>LongBlades</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/TerrainDef[researchPrerequisite="BA_BasicMaces"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>LongBlades</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ResearchProjectDef[defName="BA_BasicMaces"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="BA_MilitaryMaces"]</xpath>
+					<value>
+						<li>LongBlades</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>Defs/RecipeDef/researchPrerequisites/li[text()="BA_MilitaryMaces"]</xpath>
+					<value>
+						<li>LongBlades</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/researchPrerequisites/li[text()="BA_MilitaryMaces"]</xpath>
+					<value>
+						<li>LongBlades</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>Defs/TerrainDef/researchPrerequisites/li[text()="BA_MilitaryMaces"]</xpath>
+					<value>
+						<li>LongBlades</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ResearchProjectDef/prerequisites/li[text()="BA_MilitaryMaces"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ResearchProjectDef/hiddenPrerequisites/li[text()="BA_MilitaryMaces"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/researchPrerequisites/li[text()="BA_MilitaryMaces"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="BA_MilitaryMaces"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/RecipeDef/researchPrerequisites/li[text()="BA_MilitaryMaces"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/TerrainDef/researchPrerequisites/li[text()="BA_MilitaryMaces"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[researchPrerequisite="BA_MilitaryMaces"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>LongBlades</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/recipeMaker[researchPrerequisite="BA_MilitaryMaces"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>LongBlades</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/TerrainDef[researchPrerequisite="BA_MilitaryMaces"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>LongBlades</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ResearchProjectDef[defName="BA_MilitaryMaces"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="BA_NobleMaces"]</xpath>
+					<value>
+						<li>LongBlades</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>Defs/RecipeDef/researchPrerequisites/li[text()="BA_NobleMaces"]</xpath>
+					<value>
+						<li>LongBlades</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/researchPrerequisites/li[text()="BA_NobleMaces"]</xpath>
+					<value>
+						<li>LongBlades</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>Defs/TerrainDef/researchPrerequisites/li[text()="BA_NobleMaces"]</xpath>
+					<value>
+						<li>LongBlades</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ResearchProjectDef/prerequisites/li[text()="BA_NobleMaces"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ResearchProjectDef/hiddenPrerequisites/li[text()="BA_NobleMaces"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/researchPrerequisites/li[text()="BA_NobleMaces"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="BA_NobleMaces"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/RecipeDef/researchPrerequisites/li[text()="BA_NobleMaces"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/TerrainDef/researchPrerequisites/li[text()="BA_NobleMaces"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[researchPrerequisite="BA_NobleMaces"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>LongBlades</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/recipeMaker[researchPrerequisite="BA_NobleMaces"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>LongBlades</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/TerrainDef[researchPrerequisite="BA_NobleMaces"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>LongBlades</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ResearchProjectDef[defName="BA_NobleMaces"]</xpath>
+				</li>
+			</operations>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>Defs/ResearchProjectDef[defName="LongBlades"]</xpath>
+		<!-- If it does, LET'S FASTING GOOOOOOOO!! -->
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="BA_AdornedArmor"]</xpath>
+					<value>
+						<li MayRequire="Ludeon.Royalty">NobleApparel</li>
+						<li>PlateArmor</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>Defs/RecipeDef/researchPrerequisites/li[text()="BA_AdornedArmor"]</xpath>
+					<value>
+						<li MayRequire="Ludeon.Royalty">NobleApparel</li>
+						<li>PlateArmor</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/researchPrerequisites/li[text()="BA_AdornedArmor"]</xpath>
+					<value>
+						<li MayRequire="Ludeon.Royalty">NobleApparel</li>
+						<li>PlateArmor</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>Defs/TerrainDef/researchPrerequisites/li[text()="BA_AdornedArmor"]</xpath>
+					<value>
+						<li MayRequire="Ludeon.Royalty">NobleApparel</li>
+						<li>PlateArmor</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ResearchProjectDef/prerequisites/li[text()="BA_AdornedArmor"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ResearchProjectDef/hiddenPrerequisites/li[text()="BA_AdornedArmor"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/researchPrerequisites/li[text()="BA_AdornedArmor"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="BA_AdornedArmor"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/RecipeDef/researchPrerequisites/li[text()="BA_AdornedArmor"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/TerrainDef/researchPrerequisites/li[text()="BA_AdornedArmor"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[researchPrerequisite="BA_AdornedArmor"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li MayRequire="Ludeon.Royalty">NobleApparel</li>
+							<li>PlateArmor</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef/recipeMaker[researchPrerequisite="BA_AdornedArmor"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li MayRequire="Ludeon.Royalty">NobleApparel</li>
+							<li>PlateArmor</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/TerrainDef[researchPrerequisite="BA_AdornedArmor"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li MayRequire="Ludeon.Royalty">NobleApparel</li>
+							<li>PlateArmor</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ResearchProjectDef[defName="BA_AdornedArmor"]</xpath>
+				</li>
+			</operations>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+</Patch>

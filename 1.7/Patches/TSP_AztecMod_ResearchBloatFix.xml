@@ -187,6 +187,36 @@
 					<success>Always</success>
 				</li>
 				
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ResearchProjectDef[defName="aztecarsenal_blowgun_poison"]</xpath>
+					<success>Always</success>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ResearchProjectDef/hiddenPrerequisites/li[text()="aztecarsenal_blowgun_poison"]</xpath>
+					<success>Always</success>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ResearchProjectDef/hiddenPrerequisites/li[text()="aztecarsenal_melee_project"]</xpath>
+					<success>Always</success>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ResearchProjectDef/hiddenPrerequisites/li[text()="aztecarsenal_blowgun_project"]</xpath>
+					<success>Always</success>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ResearchProjectDef/hiddenPrerequisites/li[text()="aztecarsenal_sling_project"]</xpath>
+					<success>Always</success>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ResearchProjectDef/hiddenPrerequisites/li[text()="aztecarsenal_Macuahuitl"]</xpath>
+					<success>Always</success>
+				</li>
+				
 				<!-- https://www.steamcommunity.com/sharedfiles/filedetails/?id=2820945620 -->
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/ResearchProjectDef[defName = "RecurveBow"]/label</xpath>

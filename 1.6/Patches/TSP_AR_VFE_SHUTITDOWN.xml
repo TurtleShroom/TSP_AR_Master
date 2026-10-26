@@ -72,6 +72,11 @@
 				
 				<li Class="PatchOperationRemove">
 					<success>Always</success>
+					<xpath>Defs/ResearchProjectDef/hiddenPrerequisites/li[text()="VFEC_BronzeWorking"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
 					<xpath>Defs/ThingDef/researchPrerequisites/li[text()="VFEC_BronzeWorking"]</xpath>
 				</li>
 				
@@ -206,14 +211,14 @@
         </li>
         <li Class="PatchOperationInsert">
           <success>Always</success>
-          <xpath>Defs/Thingdef/comps/li/fuelFilter/li[text()="VFEC_Bronze"]</xpath>
+          <xpath>Defs/ThingDef/comps/li/fuelFilter/li[text()="VFEC_Bronze"]</xpath>
           <value>
             <li>Hay</li>
           </value>
         </li>
         <li Class="PatchOperationRemove">
           <success>Always</success>
-          <xpath>Defs/Thingdef/comps/li/fuelFilter/li[text()="VFEC_Bronze"]</xpath>
+          <xpath>Defs/ThingDef/comps/li/fuelFilter/li[text()="VFEC_Bronze"]</xpath>
         </li>
         <li Class="PatchOperationReplace">
           <success>Always</success>
@@ -240,7 +245,7 @@
             <ThingDef ParentName="BaseFilth">
               <defName>VFEC_Bronze</defName>
               <label>copper-clad steel (ERROR)</label>
-              <description>This is not bronze. This is bloat. This is an offense to all things good and decent. This mocks copper. This mocks tin. This even mocks arsenic, back when that was used to make bronze. Friends don't let their friends use this trash. If you see this garbage in your game, alert Mlie or TurtleShroom. \n \n If this is detected within the game, an error has occured, because the Ancient Rim Mod's author did not clean out all references to its Thing Def. It is not supposed to exist if you have the Ancient Rim installed. (Seriously though, whoever decided to make this "alloy" up needs a whooping.)</description>
+              <description>This is not bronze. This is bloat. This is an offense to all things good and decent. This mocks copper. This mocks tin. This even mocks arsenic, back when that was used to make bronze. Friends don't let their friends use this trash. If you see this garbage in your game, PLEASE alert TurtleShroom. \n \n If this is detected within the game, an error has occured, because the Ancient Rim Mod's author did not clean out all references to its Thing Def. It is not supposed to exist if you have the Ancient Rim installed. (Seriously though, whoever decided to make this "alloy" up needs a whooping.)</description>
               <selectable>true</selectable>
               <statBases>
                 <MarketValue>0</MarketValue>
@@ -266,6 +271,7 @@
       </operations>
     </match>
   </Operation>
+  
   <Operation Class="PatchOperationConditional">
     <!--DO THE GENTILES KNOW? -->
     <xpath>Defs/RecipeDef[defName="Make_FromRubbish_VFEC_Bronze_WVC"]</xpath>
@@ -273,6 +279,17 @@
     <match Class="PatchOperationRemove">
       <success>Always</success>
       <xpath>Defs/RecipeDef[defName="Make_FromRubbish_VFEC_Bronze_WVC"]</xpath>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+  </Operation>
+  
+  <Operation Class="PatchOperationConditional">
+    <!--DO THE GENTILES KNOW? -->
+    <xpath>Defs/ThingDef/comps/li/fuelFilter/li[text()="VFEC_Bronze"]</xpath>
+    <!-- If they do, SHUT IT DOWN. -->
+    <match Class="PatchOperationRemove">
+      <success>Always</success>
+      <xpath>Defs/ThingDef/comps/li/fuelFilter/li[text()="VFEC_Bronze"]</xpath>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
   </Operation>

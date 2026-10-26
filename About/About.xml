@@ -116,6 +116,16 @@
 		<li>dankpyon.medieval.overhaul</li>
 		<li>nemo.wine</li>
 		<li>whitlocktech.winecompat</li>
+		<li>rimdream.rimcuisine</li>
+		<li>al9000.tastycore</li>
+		<li>al9000.highmedieval</li>
+		<li>al9000.tastysteppe</li>
+		<li>al9000.shiningarmor</li>
+		<li>al9000.fireandsteel</li>
+		<li>athelas.medievaltotalrim.core</li>
+		<li>athelas.medievaltotalrim.armory</li>
+		<li>athelas.medievaltotalrim.mongols</li>
+		<li>athelas.medievaltotalrim.ideology</li>
 	</loadAfter>
 	<incompatibleWith>
 		<li>kirboh.vfe.classical.bronzeispretty</li>
