@@ -82,6 +82,9 @@
 		<li>DankPyon_Polehammer</li>
 		<li>DankPyon_Pike</li>
 		<li>VFEM2_Medieval</li>
+		<li>BA_Weapon_Spear</li>
+		<li>BA_Weapon_SteppeLance</li>
+		<li>BA_Weapon_Glaive</li>
     </weaponTags>
     <tools>
       <li>
@@ -161,6 +164,8 @@
 		<li>Sword</li>
 		<li>GnomeMelee</li>
 		<li>DankPyon_MilitiaSpear</li>
+		<li>BA_Weapon_Spear</li>
+		<li>BA_Weapon_HorsemansAxe</li>
     </weaponTags>
     <tools>
       <li>
@@ -215,7 +220,7 @@
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
-    <generateCommonality>0.24</generateCommonality>
+    <generateCommonality>0.14</generateCommonality>
     <statBases>
       <WorkToMake>1200</WorkToMake>
       <!-- Same as Club -->

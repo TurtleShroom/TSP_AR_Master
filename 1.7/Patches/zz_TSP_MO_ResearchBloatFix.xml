@@ -2464,6 +2464,14 @@
 								<researchProject>Pemmican</researchProject>
 								<gainMultiplier>1</gainMultiplier>
 							</li>
+							<li MayRequire="vanillaexpanded.vcooke">
+								<researchProject>VCE_SoupCooking</researchProject>
+								<gainMultiplier>3</gainMultiplier>
+							</li>
+							<li MayRequire="vanillaexpanded.vcooke">
+								<researchProject>VCE_Grilling</researchProject>
+								<gainMultiplier>3</gainMultiplier>
+							</li>
 						</researchProjects>
 					</li>
 				</doers>

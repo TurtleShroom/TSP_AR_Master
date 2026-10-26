@@ -28,6 +28,9 @@
         </disallowedThingDefs>
       </defaultIngredientFilter>
     </recipeMaker>
+	<weaponTags>
+		<li>Egypt</li>
+	</weaponTags>
     <inspectorTabs Inherit="False">
       <li>ITab_Art</li>
     </inspectorTabs>
@@ -75,6 +78,7 @@
       <li>GnomeMelee</li>
 	  <li>SurvivalistMelee</li>
 	  <li>HarrierMelee</li>
+	  <li>BA_Weapon_SteppeAxe</li>
     </weaponTags>
     <tools>
       <li>
@@ -144,14 +148,17 @@
       <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
     </stuffCategories>
     <weaponTags>
-      <li>Axe</li>
-      <li>EgyptianNoble</li>
-      <li>EgyptianHeavy</li>
-      <!-- Mod Support -->
-      <li>PeeledWeapon</li>
-      <li>PeeledWeaponMelee</li>
-      <li>PeeledWeaponMeleeBasic</li>
-      <li>GnomeMelee</li>
+		<li>Axe</li>
+		<li>EgyptianNoble</li>
+		<li>EgyptianHeavy</li>
+
+		<!-- Mod Support -->
+		<li>PeeledWeapon</li>
+		<li>PeeledWeaponMelee</li>
+		<li>PeeledWeaponMeleeBasic</li>
+		<li>GnomeMelee</li>
+		<li>BA_Weapon_EngravedFlangedMace</li>
+		<li>BA_Weapon_EngravedHorsemansAxe</li>
     </weaponTags>
     <tools>
       <li>
@@ -206,13 +213,16 @@
       <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
     </stuffCategories>
     <weaponTags>
-      <li>EgyptianNoble</li>
-      <li>EgyptianHeavy</li>
-      <!-- Mod Support -->
-      <li>PeeledWeapon</li>
-      <li>PeeledWeaponMelee</li>
-      <li>PeeledWeaponMeleeBasic</li>
-      <li>GnomeMelee</li>
+		<li>EgyptianNoble</li>
+		<li>EgyptianHeavy</li>
+
+		<!-- Mod Support -->
+		<li>PeeledWeapon</li>
+		<li>PeeledWeaponMelee</li>
+		<li>PeeledWeaponMeleeBasic</li>
+		<li>GnomeMelee</li>
+		<li>BA_Weapon_EngravedFlangedMace</li>
+		<li>BA_Weapon_EngravedHorsemansAxe</li>
     </weaponTags>
     <tools>
       <li>

@@ -71,6 +71,7 @@
       <li>MedievalMeleeAdvanced</li>
       <li>ClassicalTrader</li>
       <li>ClassicalAdvanced</li>
+	  <li>BA_Weapon_HorsemansAxe</li>
     </weaponTags>
     <tools>
       <li>
@@ -134,6 +135,8 @@
       <li>Classical</li>
       <li>ClassicalSimple</li>
       <li>Hastatus</li>
+	  <li>BA_Weapon_HorsemansAxe</li>
+	  <li>BA_Weapon_FlangedMace</li>
     </weaponTags>
     <tools>
       <li>
