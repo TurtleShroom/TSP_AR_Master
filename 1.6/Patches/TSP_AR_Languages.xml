@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>Defs/FactionLanguages.LanguageFamilyDef[defName="Human"]</xpath>
+		<!-- If it does, LET'S FREAKING GOOOOO!!! -->
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/FactionLanguages.LanguageFamilyDef[defName="Human"]/factionDialects</xpath>
+					<success>Always</success>
+					<value>
+						<li>
+							<dialectDef>TSP_AR_GreekRome_Tongue</dialectDef>
+							<factions>
+								<li>Hellen</li>
+								<li>HellenesCivil</li>
+								<li>PlayerHellenes</li>
+								<li>AR_Faction_Macedonia</li>
+								<li>AR_Faction_Hellas</li>
+								<li>AR_Faction_Rome</li>
+								<li>AR_PlayerFaction</li>
+								<li>AR_Faction_Sparta</li>
+								<li MayRequire="oskarpotocki.vfe.classical">VFEC_CentralRepublic</li>
+								<li MayRequire="oskarpotocki.vfe.classical">VFEC_WesternRepublic</li>
+								<li MayRequire="oskarpotocki.vfe.classical">VFEC_EasternRepublic</li>
+								<li MayRequire="oskarpotocki.vfe.classical">VFEC_NewEmpire</li>
+							</factions>
+						</li>
+						<li>
+							<dialectDef>TSP_AR_Egypt_Tongue</dialectDef>
+							<factions>
+								<li>AR_Faction_Egypt</li>
+								<li>KhepriPlayerFaction</li>
+								<li>UpperKemet</li>
+							</factions>
+						</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+</Patch>
