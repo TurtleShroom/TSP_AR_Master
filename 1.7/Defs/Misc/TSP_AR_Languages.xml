@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<FactionLanguages.DialectDef MayRequire="dimonsever000.factionlanguages">
+		<defName>TSP_AR_GreekRome_Tongue</defName>
+		<label>Greeco-Roman</label>
+		<description>A language family mixing Classical Greek, Classical Latin, and Vulgar Latin by way of generations of interactions between Greek and Roman city-states. The tongues closely resemble their original, ancient Old Earth counterparts, allowing for real-time, contemporary study of what those languages must have sounded like five thousand years ago.</description>
+		<nameMaker>NamerSettlementGreek</nameMaker>
+		<!-- <learningDifficulty>1</learningDifficulty> -->
+	</FactionLanguages.DialectDef>
+	
+	<FactionLanguages.DialectDef MayRequire="dimonsever000.factionlanguages">
+		<defName>TSP_AR_Egypt_Tongue</defName>
+		<label>Egyptian</label>
+		<description>The tongue of the pharaohs, written in hyroglyphics, that set mankind's imagination on fire. Already ancient when Rome was born, this language is a time capsule of a seven thousand year legacy, which, astonishingly, has survived even as Egypt changed hands in countless religions and peoples over the eons.</description>
+		<nameMaker>NamerSettlementKemetic</nameMaker>
+		<!-- <learningDifficulty>1</learningDifficulty> -->
+	</FactionLanguages.DialectDef>
+</Defs>
