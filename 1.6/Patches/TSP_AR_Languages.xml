@@ -14,26 +14,28 @@
 						<li>
 							<dialectDef>TSP_AR_GreekRome_Tongue</dialectDef>
 							<factions>
-								<li>Hellen</li>
-								<li>HellenesCivil</li>
-								<li>PlayerHellenes</li>
-								<li>AR_Faction_Macedonia</li>
-								<li>AR_Faction_Hellas</li>
-								<li>AR_Faction_Rome</li>
-								<li>AR_PlayerFaction</li>
-								<li>AR_Faction_Sparta</li>
+								<li MayRequire="mlie.ancientrimcore">HellenesCivil</li>
+								<li MayRequire="mlie.ancientrimcore">PlayerHellenes</li>
+								<li MayRequire="mlie.ancientrimcore">AR_Faction_Macedonia</li>
+								<li MayRequire="mlie.ancientrimcore">AR_Faction_Hellas</li>
+								<li MayRequire="mlie.ancientrimcore">AR_Faction_Rome</li>
+								<li MayRequire="mlie.ancientrimcore">AR_PlayerFaction</li>
+								<li MayRequire="mlie.ancientrimcore">AR_Faction_Sparta</li>
 								<li MayRequire="oskarpotocki.vfe.classical">VFEC_CentralRepublic</li>
 								<li MayRequire="oskarpotocki.vfe.classical">VFEC_WesternRepublic</li>
 								<li MayRequire="oskarpotocki.vfe.classical">VFEC_EasternRepublic</li>
 								<li MayRequire="oskarpotocki.vfe.classical">VFEC_NewEmpire</li>
+								<li MayRequire="k4g.fellowship">K4G_Fellowship</li>
+								<li MayRequire="baskerville.hellsingarmsultimate">HSAU_Iscariot</li>
+								<li MayRequire="baskerville.hellsingarmsultimate">HSAU_PlayerFaction_Iscariot</li>
 							</factions>
 						</li>
 						<li>
 							<dialectDef>TSP_AR_Egypt_Tongue</dialectDef>
 							<factions>
-								<li>AR_Faction_Egypt</li>
-								<li>KhepriPlayerFaction</li>
-								<li>UpperKemet</li>
+								<li MayRequire="mlie.ancientrimcore">AR_Faction_Egypt</li>
+								<li MayRequire="mlie.ancientrimcore">KhepriPlayerFaction</li>
+								<li MayRequire="mlie.ancientrimcore">UpperKemet</li>
 							</factions>
 						</li>
 					</value>
