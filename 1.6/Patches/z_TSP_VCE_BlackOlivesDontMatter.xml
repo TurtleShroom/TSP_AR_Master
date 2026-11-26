@@ -236,7 +236,7 @@
 					<success>Always</success>
 					<xpath>Defs/ThingDef/costList/OilLamps_RawOlives</xpath>
 					<value>
-						<AR_RawOlives>5</AR_RawOlives>
+						<AR_RawOlives MayRequire="mlie.ancientrimcore">5</AR_RawOlives>
 					</value>
 				</li>
 				
@@ -371,7 +371,7 @@
 					<success>Always</success>
 					<xpath>Defs/ThingDef/costList/OilLamps_OliveOil</xpath>
 					<value>
-						<AR_OliveOil>1</AR_OliveOil>
+						<AR_OliveOil MayRequire="mlie.ancientrimcore">1</AR_OliveOil>
 					</value>
 				</li>
 				

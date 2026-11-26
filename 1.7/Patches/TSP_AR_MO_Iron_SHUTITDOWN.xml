@@ -49,7 +49,7 @@
 			<success>Always</success>
 			<xpath>Defs/ThingDef/costList/DankPyon_IronIngot</xpath>
 			<value>
-				<AR_Iron>12</AR_Iron>
+				<AR_Iron MayRequire="mlie.ancientrimcore">12</AR_Iron>
 			</value>
 		</li>
         <li Class="PatchOperationRemove">
