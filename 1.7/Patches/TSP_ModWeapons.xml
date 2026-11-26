@@ -1,6 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
 <Patch>
+	<!-- Aelanna's Model No-Match Detector and Insertion Code -->
+	<!-- Special thanks to Aelanna for straight-up saving me scores of headaches! -->
+	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="FM_Weapon_ThornSpear"]/weaponTags</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="FM_Weapon_ThornSpear"]</xpath>
+			<success>Always</success>
+			<value>
+				<weaponTags></weaponTags>
+			</value>
+		</nomatch>
+	</Operation>
+	
+	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="FM_Weapon_SporeBlowgun"]/weaponTags</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="FM_Weapon_SporeBlowgun"]</xpath>
+			<success>Always</success>
+			<value>
+				<weaponTags></weaponTags>
+			</value>
+		</nomatch>
+	</Operation>
+
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
     <xpath>Defs/ThingDef[defName="MeleeWeapon_StoneHammer"]</xpath>
@@ -1780,7 +1806,7 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>Defs/ThingDef[defName="PrecisionShooting_Slingshot"]</xpath>
+		<xpath>Defs/ThingDef[defName="PrecisionShooting_Slingshot"]/weaponTags</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
 			<success>Always</success>
@@ -1791,6 +1817,44 @@
 				<li>Slinger</li>
 				<li>NeolithicRangedBasic</li>
 				<li>Barbarian</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>Defs/ThingDef[defName="FM_Weapon_SporeBlowgun"]/weaponTags</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="FM_Weapon_SporeBlowgun"]/weaponTags</xpath>
+			<value>
+				<li>WoodBeetMelee</li>
+				<li>Slinger</li>
+				<li>NeolithicRangedBasic</li>
+				<li>Barbarian</li>
+				<li>FrogManMelee</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>Defs/ThingDef[defName="FM_Weapon_ThornSpear"]/weaponTags</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="FM_Weapon_ThornSpear"]/weaponTags</xpath>
+			<value>
+				<li>WoodBeetRanged</li>
+				<li>NeolithicMeleeBasic</li>
+				<li>NeolithicMelee</li>
+				<li>Barbarian</li>
+				<li>FrogManMelee</li>
+				<li>Spear</li>
+				<li>SpearMen</li>
 			</value>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. -->
